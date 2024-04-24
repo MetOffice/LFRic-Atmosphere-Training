@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>4. Introduction to Global Modelling with Momentum® &mdash; NG-UX v1 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=5cb08e4e"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            NG-UX
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">4. Introduction to Global Modelling with Momentum®</a><ul>
+<li><a class="reference internal" href="#introduction-to-global-coupled-model-configurations">Introduction to global coupled model configurations</a></li>
+<li><a class="reference internal" href="#tools-for-running-global-coupled-model-configurations">Tools for running global coupled model configurations</a></li>
+<li><a class="reference internal" href="#introduction-to-workflows">Introduction to workflows</a></li>
+<li><a class="reference internal" href="#practical-1-navigating-a-gc-lfric-workflow">Practical 1 - Navigating a GC-LFRic workflow</a></li>
+<li><a class="reference internal" href="#inputs-and-outputs-for-gc-lfric-workflows">Inputs and outputs for GC-LFRic workflows</a></li>
+<li><a class="reference internal" href="#editing-a-gc-lfric-workflow">Editing a GC-LFRic workflow</a></li>
+<li><a class="reference internal" href="#tracking-the-progress-of-your-workflow">Tracking the progress of your workflow</a></li>
+<li><a class="reference internal" href="#practical-2-running-a-gc-lfric-workflow">Practical 2 - Running a GC-LFRic Workflow</a><ul>
+<li><a class="reference internal" href="#aims-and-objectives">Aims and objectives</a></li>
+<li><a class="reference internal" href="#how-would-you-design-your-experiment">How would you design your experiment?</a></li>
+<li><a class="reference internal" href="#a-real-world-example">A real world example</a></li>
+<li><a class="reference internal" href="#main-practical">Main Practical</a></li>
+<li><a class="reference internal" href="#adding-a-new-diagnostic">Adding a new diagnostic</a></li>
+<li><a class="reference internal" href="#experiment-1-co2-x-10">Experiment 1 - CO2 x 10</a></li>
+<li><a class="reference internal" href="#experiment-2-reduce-the-rotation-of-the-earth">Experiment 2 – Reduce the rotation of the earth</a></li>
+<li><a class="reference internal" href="#experiment-3-coupling-remove-influence-of-evaporation-from-ocean">Experiment 3 – coupling remove influence of evaporation from ocean</a></li>
+<li><a class="reference internal" href="#experiment-4-make-sea-ice-black">Experiment 4 – make sea ice black</a></li>
+<li><a class="reference internal" href="#plotting-your-data">Plotting your data</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">NG-UX</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">4. Introduction to Global Modelling with Momentum®</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/global_modelling.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="introduction-to-global-modelling-with-momentum">
+<h1>4. Introduction to Global Modelling with Momentum®<a class="headerlink" href="#introduction-to-global-modelling-with-momentum" title="Link to this heading"></a></h1>
+<p>In this module you will learn how the Met Office global models are configured and run within the Momentum® Framework.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>See the <span class="guilabel">suite conf</span> section in the Rose edit GUI.</p>
+</div>
+<section id="introduction-to-global-coupled-model-configurations">
+<h2>Introduction to global coupled model configurations<a class="headerlink" href="#introduction-to-global-coupled-model-configurations" title="Link to this heading"></a></h2>
+</section>
+<section id="tools-for-running-global-coupled-model-configurations">
+<h2>Tools for running global coupled model configurations<a class="headerlink" href="#tools-for-running-global-coupled-model-configurations" title="Link to this heading"></a></h2>
+</section>
+<section id="introduction-to-workflows">
+<h2>Introduction to workflows<a class="headerlink" href="#introduction-to-workflows" title="Link to this heading"></a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>On Version Control -</p>
+</div>
+</section>
+<section id="practical-1-navigating-a-gc-lfric-workflow">
+<h2>Practical 1 - Navigating a GC-LFRic workflow<a class="headerlink" href="#practical-1-navigating-a-gc-lfric-workflow" title="Link to this heading"></a></h2>
+</section>
+<section id="inputs-and-outputs-for-gc-lfric-workflows">
+<h2>Inputs and outputs for GC-LFRic workflows<a class="headerlink" href="#inputs-and-outputs-for-gc-lfric-workflows" title="Link to this heading"></a></h2>
+</section>
+<section id="editing-a-gc-lfric-workflow">
+<h2>Editing a GC-LFRic workflow<a class="headerlink" href="#editing-a-gc-lfric-workflow" title="Link to this heading"></a></h2>
+</section>
+<section id="tracking-the-progress-of-your-workflow">
+<h2>Tracking the progress of your workflow<a class="headerlink" href="#tracking-the-progress-of-your-workflow" title="Link to this heading"></a></h2>
+</section>
+<section id="practical-2-running-a-gc-lfric-workflow">
+<h2>Practical 2 - Running a GC-LFRic Workflow<a class="headerlink" href="#practical-2-running-a-gc-lfric-workflow" title="Link to this heading"></a></h2>
+<section id="aims-and-objectives">
+<h3>Aims and objectives<a class="headerlink" href="#aims-and-objectives" title="Link to this heading"></a></h3>
+<p>The aim of this tutorial is to gain experience in running and analyzing climate models.​</p>
+<ul class="simple">
+<li><p>Copy the GC5-LFRic climate model ​</p></li>
+<li><p>Add extra diagnostics to the ocean, atmosphere and sea-ice ​</p></li>
+<li><p>Running the climate model for 1 month on an HPC ​</p></li>
+<li><p>Set up a range of other climate models where various parameters are changed to generate interesting results. ​</p></li>
+<li><p>Visualize these results using Python/Iris.</p></li>
+</ul>
+</section>
+<section id="how-would-you-design-your-experiment">
+<h3>How would you design your experiment?<a class="headerlink" href="#how-would-you-design-your-experiment" title="Link to this heading"></a></h3>
+<p>What parameters do you want to test​</p>
+<ul class="simple">
+<li><p>Think about where you might change this – is it in the configuration namelist settings within the workflow or in a source code?​</p></li>
+<li><p>Browse the source code and workflow to look see how you might make this change. ​</p></li>
+<li><p>What diagnostic would you plot to see the change?​</p></li>
+<li><p>Write your hypothesis on your post-it note and then we will discuss options</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you design your own experiment with a code or configuration change, be ready to do lots of debugging. If you want an example which is tried and tested, use the given examples below.</p>
+</div>
+</section>
+<section id="a-real-world-example">
+<h3>A real world example<a class="headerlink" href="#a-real-world-example" title="Link to this heading"></a></h3>
+<p>Kuhlbrodt, T., Jones, C. G., Sellar, A., Storkey, D., Blockley, E., Stringer, M., et al. (2018). The low-resolution version of HadGEM3 GC3.1: Development and evaluation for global climate. Journal of Advances in Modeling Earth Systems, 10, 2865–2888. <a class="reference external" href="https://doi.org/10.1029">https://doi.org/10.1029</a>/2018MS001370​</p>
+<p>​To achieve an acceptable simulation of Arctic sea ice thickness it proved necessary to reduce the albedo of snow on sea-ice by 2% in N96O1 for both infra-red (0.70 reduced to 0.68) and visible (0.98 to 0.96) parts of the solar spectrum, with all values well within observational constraints. This change was required due to the 1° ocean model failing to advect sufficient warm water into the Arctic Ocean through the narrow straits connecting the Atlantic with the Arctic</p>
+</section>
+<section id="main-practical">
+<h3>Main Practical<a class="headerlink" href="#main-practical" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Run a simulation a with different experimental setup​</p></li>
+<li><p>Either use an existing experiment or your previous hypothesis​</p></li>
+<li><p>Create a branch for each new experiment (to limit the new workflow IDs created)​</p></li>
+<li><p>Plot the data and look for evidence of changes</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Feel free to enlarge the size of these changes (e.g. 20x CO2) if your analysis is not detecting much of an impact. Copy the output files (files explained at the end of the last section) to your local Linux workstation and analyse the files using ​Python/​Iris. Try to plot differences between the experiments and the control in the fields that you think will be most strongly affected. If possible make a prediction at what these differences might show before you do the plots. Were your predictions right?</p>
+</div>
+</section>
+<section id="adding-a-new-diagnostic">
+<h3>Adding a new diagnostic<a class="headerlink" href="#adding-a-new-diagnostic" title="Link to this heading"></a></h3>
+<p>The atmospheric diagnostic “v component of wind on pressure levels” is missing from this model. Use the following instructions to add it back to the configuration.</p>
+<ul class="simple">
+<li><p>cd into <a href="#id1"><span class="problematic" id="id2">``</span></a>app/lfric_atm/file``​</p></li>
+<li><p>open <code class="docutils literal notranslate"><span class="pre">file_def_diags_user_temp.xml​</span></code></p></li>
+<li><p>find <a href="#id3"><span class="problematic" id="id4">``</span></a>lfric_pressure_level_tdaym``​</p></li>
+<li><p>add in a new field for <code class="docutils literal notranslate"><span class="pre">v_in_w3</span></code></p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/diagnostic.png"><img alt="_images/diagnostic.png" src="_images/diagnostic.png" style="width: 650px; height: 130px;" /></a>
+</section>
+<section id="experiment-1-co2-x-10">
+<h3>Experiment 1 - CO2 x 10<a class="headerlink" href="#experiment-1-co2-x-10" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>cd into <code class="docutils literal notranslate"><span class="pre">app/lfric_atm</span></code></p></li>
+<li><p>open the <code class="docutils literal notranslate"><span class="pre">rose-app.conf</span></code></p></li>
+<li><p>search for <code class="docutils literal notranslate"><span class="pre">co2_mix_ratio</span></code></p></li>
+<li><p>change this value from 5.60353e-04 to 5.60353e-03</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/exp1.png"><img alt="_images/exp1.png" src="_images/exp1.png" style="width: 650px; height: 120px;" /></a>
+</section>
+<section id="experiment-2-reduce-the-rotation-of-the-earth">
+<h3>Experiment 2 – Reduce the rotation of the earth<a class="headerlink" href="#experiment-2-reduce-the-rotation-of-the-earth" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>cd <code class="docutils literal notranslate"><span class="pre">app/lfric_atm</span></code></p></li>
+<li><p>open <code class="docutils literal notranslate"><span class="pre">rose-app-conf</span></code></p></li>
+<li><p>change <code class="docutils literal notranslate"><span class="pre">omega</span></code></p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/exp2.png"><img alt="_images/exp2.png" src="_images/exp2.png" style="width: 650px; height: 160px;" /></a>
+</section>
+<section id="experiment-3-coupling-remove-influence-of-evaporation-from-ocean">
+<h3>Experiment 3 – coupling remove influence of evaporation from ocean<a class="headerlink" href="#experiment-3-coupling-remove-influence-of-evaporation-from-ocean" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>cd <code class="docutils literal notranslate"><span class="pre">app/coupled/file</span></code></p></li>
+<li><p>open <code class="docutils literal notranslate"><span class="pre">namcouple</span></code></p></li>
+<li><p>Observe namcouple file – what is it setting?</p></li>
+<li><p>adjust definition of coupling for <code class="docutils literal notranslate"><span class="pre">lf_evap</span></code></p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/exp3.png"><img alt="_images/exp3.png" src="_images/exp3.png" style="width: 650px; height: 280px;" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Note on the namcouple file</p>
+</div>
+</section>
+<section id="experiment-4-make-sea-ice-black">
+<h3>Experiment 4 – make sea ice black<a class="headerlink" href="#experiment-4-make-sea-ice-black" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>create JULES branch - See: Working Practices: Create a ticket, Working Practices: Create a branch</p></li>
+<li><p>adjust hard coded values for the albedo in <code class="docutils literal notranslate"><span class="pre">src/control/shared/jules_sea_seaice_mod.F90</span></code></p></li>
+</ul>
+<p>(set <code class="docutils literal notranslate"><span class="pre">calbicev_cice</span></code>, <code class="docutils literal notranslate"><span class="pre">albicei_cice</span></code>, <code class="docutils literal notranslate"><span class="pre">albsnowv_cice</span></code>, <code class="docutils literal notranslate"><span class="pre">albsnowi_cice</span></code>, <code class="docutils literal notranslate"><span class="pre">albpondv_cice</span></code>, <code class="docutils literal notranslate"><span class="pre">albpondi_cice</span></code>, <code class="docutils literal notranslate"><span class="pre">dalb_mlt_cice</span></code>, <code class="docutils literal notranslate"><span class="pre">dalb_mlts_v_cice</span></code> and <code class="docutils literal notranslate"><span class="pre">dalb_mlts_i_cice</span></code> to 0.0)</p>
+<ul class="simple">
+<li><p>point your LFRic build setup in <code class="docutils literal notranslate"><span class="pre">paramerts.sh</span></code> to you JULES branch and adjust your workflow to use your adjusted model build</p></li>
+<li><p>build the model and run your experiment</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/exp4.png"><img alt="_images/exp4.png" src="_images/exp4.png" style="width: 650px; height: 400px;" /></a>
+</section>
+<section id="plotting-your-data">
+<h3>Plotting your data<a class="headerlink" href="#plotting-your-data" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Script:/home/h02/lroberts/ngux/lfric_exercise/iris_ngux_module3.py</p></li>
+<li><p>Select data for your control and experimental setups</p></li>
+<li><p>Choose the diagnostic to plot</p></li>
+<li><p>Run the script</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/plotting.png"><img alt="_images/plotting.png" src="_images/plotting.png" style="width: 650px; height: 200px;" /></a>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Luke Roberts.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
