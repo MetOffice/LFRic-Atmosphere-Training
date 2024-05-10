@@ -3,7 +3,10 @@ A repository to host training for LFRic Atmosphere. Developed by the NGMS 'NG-UX
 
 ## Build the documentation (at the Met Office)
 
+```
 module load scitools
+
 make html
+```
 
 You can then find the documentation in `build/html/index.html`.
