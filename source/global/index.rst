@@ -5,7 +5,7 @@
    :name: global
    :maxdepth: 2
 
-This module covers how the Met Office global models are developed, configured and run within the Momentum® Framework.
+This module covers how the Met Office's global models are developed, configured and run within the Momentum® Framework.
 
 .. admonition:: Aims and objectives
 
@@ -253,13 +253,13 @@ Practical 2 - Running a GC-LFRic Workflow
 Aims and objectives
 ^^^^^^^^^^^^^^^^^^^
 
-The aim of this practical is to gain experience in running and analyzing climate models.​
+The aim of this practical is to gain experience in running and analysing climate models.​ You will:
 
-* Copy the GC5-LFRic climate model ​
+* Copy the GC5-LFRic workflow ​
 * Add extra diagnostics to the ocean, atmosphere and sea-ice ​
-* Running the climate model for 1 month on an HPC ​
+* Run the climate workflow for 1 month on an HPC ​
 * Set up a range of other climate models where various parameters are changed to generate interesting results. ​
-* Visualize these results using Python/Iris.
+* Visualise these results using Python/Iris.
 
 
 .. admonition:: Thought experiment: How would you design your experiment?
