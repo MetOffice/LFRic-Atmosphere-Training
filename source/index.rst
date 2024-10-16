@@ -6,8 +6,8 @@
 Momentum® Training - Introduction to LFRic
 =====================================================
 
-The Momentum® Framework is a specialised software system designed for predicting earth’s environment. It is developed and utilised by the Met Office and its partners in the Momentum® Partnership. The system includes rigorously evaluated science configurations that define the setups for producing predictions with Momentum®. These configurations are available for both global and regional prediction systems. 
-
+The`Momentum® Framework <https://www.metoffice.gov.uk/research/approach/modelling-systems/momentum>`_ is a specialised software system designed for predicting earth’s environment. It is developed and utilised by the Met Office and its partners in the Momentum® Partnership. The system includes rigorously evaluated science configurations that define the setups for producing predictions with Momentum®. These configurations are available for both global and regional prediction systems. 
+||||
 .. image:: /_static/momentum_logo.png
    :width: 700px
 
