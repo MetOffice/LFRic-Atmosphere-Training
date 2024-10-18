@@ -1,5 +1,5 @@
-1. Introduction to Momentum® and LFRic
-======================================
+1. Introduction to Momentum and LFRic
+=====================================
 
 
 .. toctree::
@@ -20,7 +20,7 @@ We therefore have a single tracable science configuration suitable for numerical
 The need for next generation modelling systems
 ----------------------------------------------
 
-The Met Office, as well all Momentum® Parnters have run the Unified Model since 1990's. We’re continually improving our weather and climate models to meet the societal demands for increased accuracy. 
+The Met Office, as well all `Momentum Parnters <https://www.metoffice.gov.uk/research/approach/collaboration/momentum-partnership>`_  have run the Unified Model since 1990's. We’re continually improving our weather and climate models to meet the societal demands for increased accuracy. 
 This has been achieved through a combination of approaches:
 
 * Increasing the resolution of our models to capture finer scale features and hence improve accuracy. Currently we run our global model at 10 kilometres but we would like to run it at higher resolutions.
