@@ -292,12 +292,12 @@ Adding a new diagnostic
 
 The atmospheric diagnostic “v component of wind on pressure levels" is missing from this model. Use the following instructions to add it back to the configuration.
 
-* cd into ``app/lfric_atm/file``​
+* cd into ``app/lfric_atm/file``
 * open ``file_def_diags_user_temp.xml​``
-* find ``lfric_pressure_level_tdaym``​
+* find ``lfric_pressure_level_tdaym``
 * add in a new field for ``v_in_w3``
 
-.. code-block:: fotran
+.. code-block:: fortran
    :caption: trunk/app/lfric_atm/file/file_def_diags_user_temp.xml
    :emphasize-lines: 3
 
@@ -315,7 +315,7 @@ Experiment 1 - CO2 x 10
 * search for ``co2_mix_ratio``
 * change this value from 5.60353e-04 to 5.60353e-03
 
-.. code-block:: fotran
+.. code-block:: fortran
    :caption: trunk/app/lfric_atm/rose-app.conf
    :emphasize-lines: 6
 
@@ -339,7 +339,7 @@ Experiment 2 – Reduce the rotation of the earth
 * open ``rose-app-conf``
 * change ``omega``
 
-.. code-block:: fotran
+.. code-block:: fortran
    :caption: trunk/app/lfric_atm/rose-app.conf
    :emphasize-lines: 4
 
@@ -360,7 +360,7 @@ Experiment 3 – coupling remove influence of evaporation from ocean
 * Observe namcouple file – what is it setting?
 * adjust definition of coupling for ``lf_evap``
 
-.. code-block:: fotran
+.. code-block:: text
    :caption: trunk/app/coupled/file/namcouple
    :emphasize-lines: 1, 8
 
@@ -388,7 +388,7 @@ Experiment 4 – make sea ice black
 
 * build the model and run your experiment
 
-.. code-block:: fotran
+.. code-block:: fortran
    :caption: src/control/shared/jules_sea_seaice_mod.F90
    :emphasize-lines: 2, 4, 6, 8, 10, 12
 
