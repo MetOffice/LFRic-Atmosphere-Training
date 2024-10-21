@@ -292,9 +292,9 @@ Adding a new diagnostic
 
 The atmospheric diagnostic “v component of wind on pressure levels" is missing from this model. Use the following instructions to add it back to the configuration.
 
-* cd into ``app/lfric_atm/file``​
+* cd into ``app/lfric_atm/file``
 * open ``file_def_diags_user_temp.xml​``
-* find ``lfric_pressure_level_tdaym``​
+* find ``lfric_pressure_level_tdaym``
 * add in a new field for ``v_in_w3``
 
 .. code-block:: fotran
