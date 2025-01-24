@@ -11,8 +11,8 @@ sys.path.append(os.path.abspath('../lib/'))
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'Momentum Training - LFRic'
-copyright = '2024, Luke Roberts'
-author = 'Luke Roberts'
+copyright = 'Met Office'
+author = 'Met Office'
 release = 'v1'
 
 # -- General configuration ---------------------------------------------------
