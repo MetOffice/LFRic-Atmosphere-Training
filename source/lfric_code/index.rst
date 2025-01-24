@@ -1,5 +1,5 @@
-2. The LFRic code structure
-===========================================
+2. LFRic code structure
+=======================
 
 .. toctree::
    :name: lfric_code
