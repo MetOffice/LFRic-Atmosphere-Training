@@ -6,7 +6,7 @@
 Momentum Training - LFRic Atmosphere
 ====================================
 
-`Momentum® <https://www.metoffice.gov.uk/research/approach/modelling-systems/momentum>`_ is a software framework for modelling Earth’s environment, developed and used by the `Momentum Partnership <https://www.metoffice.gov.uk/research/approach/collaboration/momentum-partnership>`_. The framework includes rigorously evaluated Science Configurations, which define how to configure components of the framework to build prediction and projection systems, both regional and global.
+**Momentum**:sup:`®` is a software framework for modelling Earth’s environment, developed and used by the `Momentum Partnership <https://www.metoffice.gov.uk/research/approach/collaboration/momentum-partnership>`_. The framework includes rigorously evaluated Science Configurations, which define how to configure components of the framework to build prediction and projection systems, both regional and global.
 
 .. image:: /_static/momentum_logo.png
    :width: 700px
