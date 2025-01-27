@@ -41,7 +41,7 @@ jobs:
       - name: Create environment for lfric-atmos-training (to build documentation)
         run: |
           conda update conda
-          conda create --name ${ENV_NAME} python=3 -c conda-forge sphinx
+          conda create --name ${ENV_NAME} python=3 sphinx -c conda-forge -y
 
       - name: Build documentation
         run: |
