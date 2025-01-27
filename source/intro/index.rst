@@ -28,6 +28,16 @@ Componenets of the `Momentum  <https://www.metoffice.gov.uk/research/approach/mo
 
 The development approach of Momentum uniquely separates the development of components, Science Configurations, and systems. Each has its own release cycle, but they build on each other. The naming and numbering convention for Momentum Science Configurations is a continuation from the Unified Model software ecosystem to reflect the gradual introduction of the framework into research and operations. The Global Coupled Science Configuration GC6 and the Regional Atmosphere and Land configuration RAL4 will both use the LFRic Atmosphere model and mark the first Science Configurations built with Momentum.
 
+LFRic Atmosphere history and features
+-------------------------------------
+LFRic atmosphere has been developed by the Met Office and Momentum Parnters <https://www.metoffice.gov.uk/research/approach/collaboration/momentum-partnership>` to replace the Unified Model. LFRic Atmosphere has ...
+
+
+
+
+
+BHF ToDo: delete / resue the following:
+
 The need for next generation modelling systems
 ----------------------------------------------
 
@@ -65,5 +75,5 @@ Together, these have resulted in increasingly powerful supercomputers, which in 
    :width: 650px
 
 
-
+          
 .. note:: 
