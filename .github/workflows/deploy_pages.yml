@@ -41,7 +41,7 @@ jobs:
       - name: Create environment for lfric-atmos-training (to build documentation)
         run: |
           conda update conda
-          conda create --name ${ENV_NAME} python=3 sphinx -c conda-forge -y
+          conda env create --name ${ENV_NAME} --file environment.yml
 
       - name: Build documentation
         run: |
@@ -53,7 +53,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           name: github-pages
-          path: _build/html
+          path: build/html
 
   # Deployment job
   deploy:
