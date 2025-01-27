@@ -1,21 +1,32 @@
-1. Introduction to Momentum and LFRic
-=====================================
-
+1. Introduction to LFRic Atmosphere
+===================================
 
 .. toctree::
    :name: intro
    :maxdepth: 2
 
+Seamless Modelling
+------------------
+Since the 1990's the Met Office strategy has been to develop a single model family used for prediction across a range of timescales​. This means the same dynamical core and, where possible, the same parameterization schemes are used across a broad range of spatial and temporal scales​. The image below shows Met Office prediction and projection systems configured for applications on different scales, ranging from a few days to hundreds of years​.
 
-The Momentum Frameworks seamless modelling hierarchy
-----------------------------------------------------
-Since the 1990's the Met Office strategy has been to develop a single model family used for prediction across a range of timescales​. This means the same dynamical core and, where possible, the same parameterization schemes are used across a broad range of spatial and temporal scales on a traceable framework​.
-
-We therefore have a single tracable science configuration suitable for numerical weather prediction (NWP), seasonal forecasting and climate modelling with forecast times ranging from a few days to hundreds of years​ which can be used for regional and global forecasting​.
-
-.. image:: /_static/intro_seamless.png
+.. figure:: /_static/intro_seamless.png
    :width: 650px
 
+   Spatial and temporal scales of Met Office prediction and projection systems.
+           
+The seamless modelling approach approach, first introduced with the Unified Model, is used for LFRic Atmosphere the atmospheric model of Momenetum, The Unified Earth Environment Prediction Framework.
+
+Componenents, Science Configurations, and Systems
+--------------------------------------------------
+Componenets of the `Momentum  <https://www.metoffice.gov.uk/research/approach/modelling-systems/momentum>`_ Framework, like the the atmospheric model LFRic Atmosphere, are combined to prediction and projection systems, like the ones mentioned in the grafic in the seamless modelling section. Science Configurations are rigorously tested and define the exact setup for the individual model components. These configurations are distinguished between regional and global configurations. Additionally, there are coupled Science Configurations which detail multi-model setups, e.g. an atmosphere – ocean model.
+
+.. figure:: /_static/intro_components.png
+   :width: 650px
+   :alt: Components of prediction and projection systems
+
+   Key functional components needed to build prediction and proejection systems with the Momentum Framework.
+
+The development approach of Momentum uniquely separates the development of components, Science Configurations, and systems. Each has its own release cycle, but they build on each other. The naming and numbering convention for Momentum Science Configurations is a continuation from the Unified Model software ecosystem to reflect the gradual introduction of the framework into research and operations. The Global Coupled Science Configuration GC6 and the Regional Atmosphere and Land configuration RAL4 will both use the LFRic Atmosphere model and mark the first Science Configurations built with Momentum.
 
 The need for next generation modelling systems
 ----------------------------------------------
@@ -53,12 +64,6 @@ Together, these have resulted in increasingly powerful supercomputers, which in 
 .. image:: /_static/intro_timeline.png
    :width: 650px
 
-
-Benefits
---------
-
-.. image:: /_static/intro_components.png
-   :width: 650px
 
 
 .. note:: 
