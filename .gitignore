@@ -1,5 +1,6 @@
 *.py[co]
 *.egg-info/
+*.bat
 build
 build/*
 build/*/*
