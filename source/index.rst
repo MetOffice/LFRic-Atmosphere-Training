@@ -11,7 +11,7 @@ Momentum Training - LFRic Atmosphere
 .. image:: /_static/momentum_logo.png
    :width: 700px
 
-Momentum follows a seamless modelling approach, using the same model components across temporal and spatial scales, similar to the `Unified Model <https://www.metoffice.gov.uk/research/approach/modelling-systems/unified-model>`_. The framework includes model components for the atmosphere, land surface, ocean, sea-ice, and other parts of the Earth system. It contains software for data assimilation, verification, and technical tasks like workflow management.
+`Momentum <https://www.metoffice.gov.uk/research/approach/modelling-systems/momentum>`_ follows a seamless modelling approach, using the same model components across temporal and spatial scales, similar to the `Unified Model <https://www.metoffice.gov.uk/research/approach/modelling-systems/unified-model>`_. The framework includes model components for the atmosphere, land surface, ocean, sea-ice, and other parts of the Earth system. It contains software for data assimilation, verification, and technical tasks like workflow management.
 
 **LFRic Atmosphere** is the atmospheric model component of Momentum. It is the successor to the Unified Model. This course is designed for new users of LFRic Atmosphere. See the `Momentum website <https://www.metoffice.gov.uk/research/approach/modelling-systems/momentum>`_ for information about the other components of the modelling framework.
 
