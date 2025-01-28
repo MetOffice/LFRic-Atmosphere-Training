@@ -1,10 +1,10 @@
 # LFRic-Atmosphere-Training
 
-This repository hosts the materials developed to support self-learning of the Momentum LFRic-Atmosphere. This training is designed to provide an introductory level training for the LFRic-Atmospheric model, as well as its associated workflows. The training material includes modules on various topics such as the motivation behind the development of LFRic, an overview of the model, development working practices, visualisation of mesh data, LFRic based Science Configurations, and practical exercises for hands-on learning.
+This repository hosts the materials developed to support self-learning of the Momentum LFRic Atmosphere. This training is designed to provide an introductory level training for the LFRic Atmospheric model, as well as its associated workflows. The training material includes modules on various topics such as the motivation behind the development of LFRic, an overview of the model, development working practices, visualisation of mesh data, LFRic based Science Configurations, and practical exercises for hands-on learning.
 
-The training is structured to cater to users with different levels of expertise, from beginners to advanced users. It covers essential aspects like understanding model input and output files, navigating code repositories, and running model configurations. The goal is to make the training accessible and beneficial for all Momentum users, ensuring they can effectively use the LFRic-Atmosphere model.
+The training is structured to cater to users with different levels of expertise, from beginners to advanced users. It covers essential aspects like understanding model input and output files, navigating code repositories, and running model configurations. The goal is to make the training accessible and beneficial for all Momentum users, ensuring they can effectively use the LFRic Atmosphere model.
 
-The LFRic-Atmosphere self-learning training can be found at <https://metoffice.github.io/LFRic-Atmosphere-Training>
+The LFRic Atmosphere self-learning training can be found at <https://metoffice.github.io/LFRic-Atmosphere-Training>
 
 ## Contributing & Development
 
@@ -51,7 +51,7 @@ conda env create --file environment.yml
 Now activate the development environment with Conda:
 
 ```bash
-conda activate LFRic-Atmosphere-Training
+conda activate lfric-atmosphere-training
 ```
 
 Once the development environment is set up you are ready to build the training materials.
@@ -60,7 +60,7 @@ Once the development environment is set up you are ready to build the training m
 
 The training materials are based on [Sphinx](https://www.sphinx-doc.org) and can be built using the provided Makefile on any desired target format. However, we aim to display the content as HTML pages, and any contributions should ensure these are produced correctly.
 
-To build the LFRic-Atmosphere training materials in HTML format run the following command:
+To build the LFRic Atmosphere training materials in HTML format run the following command:
 
 ```bash
 make html
