@@ -13,7 +13,7 @@ Since the 1990's the Met Office strategy has been to develop a single model fami
    :width: 650px
 
    Spatial and temporal scales of Met Office prediction and projection systems.
-           
+
 The seamless modelling approach approach, first introduced with the Unified Model, is used for LFRic Atmosphere the atmospheric model of Momenetum, The Unified Earth Environment Prediction Framework.
 
 Componenents, Science Configurations, and Systems
@@ -28,19 +28,20 @@ Componenets of the `Momentum  <https://www.metoffice.gov.uk/research/approach/mo
 
 The development approach of Momentum uniquely separates the development of components, Science Configurations, and systems. Each has its own release cycle, but they build on each other. The naming and numbering convention for Momentum Science Configurations is a continuation from the Unified Model software ecosystem to reflect the gradual introduction of the framework into research and operations. The Global Coupled Science Configuration GC6 and the Regional Atmosphere and Land configuration RAL4 will both use the LFRic Atmosphere model and mark the first Science Configurations built with Momentum.
 
-LFRic Atmosphere history and features
+LFRic Atmosphere features and history
 -------------------------------------
-LFRic atmosphere has been developed by the Met Office and Momentum Parnters <https://www.metoffice.gov.uk/research/approach/collaboration/momentum-partnership>` to replace the Unified Model. LFRic Atmosphere has ...
+LFRic Atmosphere has been `developed <https://www.metoffice.gov.uk/research/news/2019/gungho-and-lfric>`_ by the Met Office and partners to replace the Unified Model. LFRic Atmosphere inherited its physics parameterisations from the Unified Model. It uses the land surface model `JULES <https://jules.jchmr.org/about>`_, radiative transfer code `SOCRATES <https://code.metoffice.gov.uk/trac/socrates>`_, Cloud and Aerosol Interacting Microphysics `CASIM <https://code.metoffice.gov.uk/trac/monc/wiki/CASIMDocStart>`_ and the chemistry and aerosols model `UKCA <https://www.metoffice.gov.uk/research/approach/collaboration/jwcrp/ukca>`_. LFRic Atmosphere uses same the terrain follwoing vertical coordinates as the UM but has a cubed sphere mesh, a new mixed finite-element dynamical core GungHo and a new coding infrastructure structucture.
 
+.. figure:: /_static/lfric_mesh_and_vertical_grid.png
+   :width: 650px
+   :alt: lfric mesh and vertical grid
 
-
-
+   Cubed sphere mesh and terrain following verstical coordinates used by LFRic Atmosphere.
 
 BHF ToDo: delete / resue the following:
 
 The need for next generation modelling systems
 ----------------------------------------------
-
 The Met Office, as well all `Momentum Parnters <https://www.metoffice.gov.uk/research/approach/collaboration/momentum-partnership>`_  have run the Unified Model since 1990's. We’re continually improving our weather and climate models to meet the societal demands for increased accuracy. 
 This has been achieved through a combination of approaches:
 
