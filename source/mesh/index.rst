@@ -1,5 +1,5 @@
-3. Unstructured data with LFRic
-===============================
+2. LFRic mesh and data
+======================
 
 .. toctree::
    :name: mesh
