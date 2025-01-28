@@ -26,8 +26,8 @@ Contents of the training course
    :maxdepth: 1
 
    intro/index
-   lfric_code/index
    mesh/index
+   lfric_code/index
    global/index
    regional/index
 
