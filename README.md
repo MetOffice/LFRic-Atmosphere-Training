@@ -8,7 +8,7 @@ The LFRic Atmosphere self-learning training can be found at <https://metoffice.g
 
 ## Contributing & Development
 
-The preferred way to contribute to LFRic-Atmosphere-Training is to fork the main repository, then submit a "pull request" (PR). When updating this training material, aim for clear and easy-to-understand contnent. Please keep in mind that this training is intended for an introductory level training.
+The preferred way to contribute to LFRic-Atmosphere-Training is to fork the main repository, then submit a "pull request" (PR). When updating this training material, aim for clear and easy-to-understand content. Please keep in mind that this training is intended for an introductory level training.
 
 To [create a fork](https://github.com/MetOffice/LFRic-Atmosphere-Training/fork)
 under your own account. Use the following commands to clone the correct repository and create a `latest` branch pointing to the [`main` branch in this repository](https://github.com/MetOffice/LFRic-Atmosphere-Training/tree/main).
