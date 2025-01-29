@@ -24,7 +24,6 @@ concurrency:
 
 env:
   ENV_NAME: lfric-atmos-training
-  MO_ARTIFACTORY: metoffice.jfrog.io
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -37,6 +36,15 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
+
+      # Runs a single command using the runners shell
+      - name: Setup conda authentication with Met Office Artifactory
+        run: |
+          cat > ~/.netrc << EOF
+          machine ${MO_ARTIFACTORY}
+          password ${{ secrets.ARTIFACTORY_API_KEY }}
+          EOF
+          chmod 0600 ~/.netrc
 
       - name: Create environment for lfric-atmos-training (to build documentation)
         run: |
