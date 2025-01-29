@@ -1,6 +1,6 @@
 # LFRic-Atmosphere-Training
 
-This repository hosts the materials developed to support self-learning of the Momentum LFRic Atmosphere. This training is designed to provide an introductory level training for the LFRic Atmospheric model, as well as its associated workflows. The training material includes modules on various topics such as the motivation behind the development of LFRic, an overview of the model, development working practices, visualisation of mesh data, LFRic based Science Configurations, and practical exercises for hands-on learning.
+This repository hosts the materials for self-learning of the Momentum LFRic Atmosphere. This training is designed to provide an introductory level training for the LFRic Atmospheric model and its associated workflows. The training material includes an overview about the model, development working practices, visualisation of mesh data, LFRic based Science Configurations, and practical exercises for hands-on learning.
 
 The training is structured to cater to users with different levels of expertise, from beginners to advanced users. It covers essential aspects like understanding model input and output files, navigating code repositories, and running model configurations. The goal is to make the training accessible and beneficial for all Momentum users, ensuring they can effectively use the LFRic Atmosphere model.
 
@@ -8,7 +8,7 @@ The LFRic Atmosphere self-learning training can be found at <https://metoffice.g
 
 ## Contributing & Development
 
-The preferred way to contribute to LFRic-Atmosphere-Training is to fork the main repository, then submit a "pull request" (PR). When updating this training material, aim for clear and easy-to-understand contnent. Please keep in mind that this intended for an introductory level training.
+The preferred way to contribute to LFRic-Atmosphere-Training is to fork the main repository, then submit a "pull request" (PR). When updating this training material, aim for clear and easy-to-understand contnent. Please keep in mind that this training is intended for an introductory level training.
 
 To [create a fork](https://github.com/MetOffice/LFRic-Atmosphere-Training/fork)
 under your own account. Use the following commands to clone the correct repository and create a `latest` branch pointing to the [`main` branch in this repository](https://github.com/MetOffice/LFRic-Atmosphere-Training/tree/main).
@@ -77,4 +77,4 @@ That concludes the process! Youâ€™ll find the generated HTML files within the â€
 
 ## Contacts
 
-If you want to get in contact with us, or have any questions, don't hesitate to email the [Momentum Partnership Team](mailto:Momentum_Partnership@metoffice.gov.uk).
+If you want to get in contact with us don't hesitate to email the [Momentum Partnership Team](mailto:Momentum_Partnership@metoffice.gov.uk).
