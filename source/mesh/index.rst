@@ -14,6 +14,33 @@ This module introduces the unstructured world of meshes which are now used in LF
    * To become familiar with 
 
 
+Cubed sphere mesh
+-----------------
+
+LFRic Atmosphere uses a cubed sphere mesh. Meshes are named after the number cubes used in one dimension. The visualisation shows an C16 mesh.
+
+.. video:: /_static/mesh_animation.mp4
+   :autoplay:
+   :loop:
+
+.. list-table:: Mesh Resolutions
+   :header-rows: 1
+
+   * - LFRic Mesh
+     - ≈ dx [km]
+   * - C48​
+     - 192.1
+   * - C128
+     - 72.0
+   * - C448
+     - 20.6
+   * - C896
+     - 10.3
+   * - C1808
+     - 5.1
+   * - C9216
+     - 1.0
+     
 The structured world
 --------------------
 

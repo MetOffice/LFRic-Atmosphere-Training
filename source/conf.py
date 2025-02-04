@@ -19,7 +19,8 @@ release = 'v1'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = ['sphinx_rtd_theme',
-             'sphinxcontrib.quizdown']
+             'sphinxcontrib.quizdown',
+             'sphinxcontrib.video']
 
 
 templates_path = ['_templates']
