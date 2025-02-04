@@ -19,7 +19,9 @@ Cubed sphere mesh
 
 LFRic Atmosphere uses a cubed sphere mesh. Meshes are named after the number cubes used in one dimension. The visualisation shows an C16 mesh.
 
-**ADD_MESH_AINIMATION_HERE**
+.. video:: /_static/mesh_animation.mp4
+   :autoplay:
+   :loop:
 
 .. list-table:: Mesh Resolutions
    :header-rows: 1
