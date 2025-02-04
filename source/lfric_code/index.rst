@@ -29,6 +29,16 @@ Scientific operations on full field are implemented in the Algorithm layer. Kern
 
   Separation of Natural and Computational Science in the PSyKAl architecture.
 
+
+Video Example
+-------------
+This is an example on adding a video on Sphinx based on HTML5 standard
+
+.. video:: /_static/mesh_animation.mp4
+   :autoplay:
+   :loop:
+
+
 Practical 1: Model Build
 ------------------------
 
