@@ -17,13 +17,17 @@ This module introduces the unstructured world of meshes which are now used in LF
 Cubed sphere mesh
 -----------------
 
-LFRic Atmosphere uses a cubed sphere mesh. Meshes are named after the number cubes used in one dimension. The visualisation shows an C16 mesh.
+LFRic Atmosphere uses a cubed sphere mesh. Meshes are named after the number cells along one edge of the cube. The visualisation shows an C16 mesh, which represents the Earth surface by 6 x 16 x 16 = 1536 cells ("squares") in each horizontal layer. Most cell corners have four neighbour cells but at the corners of the cube only three cells meet.
 
 .. video:: /_static/mesh_animation.mp4
    :autoplay:
    :loop:
+   
+*Visualisation of a C16 mesh and how the mesh on a cube is projected to a sphere.*
+   
+The used projection of squares to a sphere causes that mesh sizes have different lengths in km. Representative length scales for mesh resolutions are given in the table below.
 
-.. list-table:: Mesh Resolutions
+.. list-table:: Cubed Sphere Mesh Resolutions
    :header-rows: 1
 
    * - LFRic Mesh
