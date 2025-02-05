@@ -25,7 +25,7 @@ LFRic Atmosphere uses a cubed sphere mesh. Meshes are named after the number cel
    
 *Visualisation of a C16 mesh and how the mesh on a cube is projected to a sphere.*
    
-The used projection of squares to a sphere causes that mesh sizes have different lengths in km. Representative length scales for mesh resolutions are given in the table below.
+The used projection of squares on a cube surface to a sphere causes that mesh sizes have different lengths in km. Representative length scales for mesh resolutions are given in the table below.
 
 .. list-table:: Cubed Sphere Mesh Resolutions
    :header-rows: 1
