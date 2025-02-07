@@ -20,7 +20,6 @@ Cubed sphere mesh
 LFRic Atmosphere uses a cubed sphere mesh. Meshes are named after the number cells along one edge of the cube. The visualisation shows an C16 mesh, which represents the Earth surface by 6 x 16 x 16 = 1536 cells ("squares") in each horizontal layer. Most cell corners have four neighbour cells but at the corners of the cube only three cells meet.
 
 .. video:: /_static/mesh_animation.mp4
-   :autoplay:
    :loop:
    
 *Visualisation of a C16 mesh and how the mesh on a cube is projected to a sphere.*
