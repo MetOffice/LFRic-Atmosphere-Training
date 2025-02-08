@@ -15,10 +15,24 @@ In this section LFRic Atmosphere is introduced from a software perspective.
 
 Code Repositories
 -----------------
-The model LFRic Atmosphere is an LFRic Science Application hosted in the `LFRic Apps <https://code.metoffice.gov.uk/trac/lfric_apps>`_ repository. LFRic Apps is the top level home for the model code of LFRic Atmosphere but also includes other `LFRic Science Applications <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/applications>`_, e.g. a linear model for data assimilation and an application for regridding to other LFRic meshes and creation of boundary conditions for regional model configurations. The dynamical core `GungHo <https://www.metoffice.gov.uk/research/news/2019/gungho-and-lfric>`_ of LFRic Atmosphere is part of the code in LFRic Apps.
+The LFRic Atmosphere model is hosted in the `LFRic Apps <https://code.metoffice.gov.uk/trac/lfric_apps>`_ repository, which also includes other `LFRic Science Applications <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/applications>`_ like a linear model for data assimilation and an application for regridding and creating boundary conditions.
 
-Code for LFRic Atmosphere is not only found in LFRic Apps but also contained in the LFRic Infrastructure repository `LFRic Core <https://code.metoffice.gov.uk/trac/lfric>`_ and in repositories containing model physics. The file `dependencies.sh <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/dependencies.sh>`_ defines included science code versions from other repositories like `JULES <https://code.metoffice.gov.uk/trac/jules>`_ or `SOCRATES <https://code.metoffice.gov.uk/trac/socrates>`_.
+The dynamical core `GungHo <https://www.metoffice.gov.uk/research/news/2019/gungho-and-lfric>`_ and the main model physics are part of LFRic Apps. The infrastructure repository LFRic Core contains function spaces, solvers, matrix operations, clock and calendar code, and diagnostics. Larger science packages, such as the land surface model, are stored in their own repositories for modularity. The versions used in LFRic Atmosphere are defined in  `dependencies.sh <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/dependencies.sh>`_.
 
+.. list-table:: Modular science codes included in LFRic Atmosphere.
+   :header-rows: 1
+
+   * - Science Code
+     - Description
+   * - `CASIM <https://code.metoffice.gov.uk/trac/monc/wiki/CASIMDocStart>`_ 
+     - Cloud and Aerosol Interacting Microphysics     
+   * - `JULES <https://code.metoffice.gov.uk/trac/jules>`_
+     - Land surface model
+   * - `SOCRATES <https://code.metoffice.gov.uk/trac/socrates>`_
+     - Radiatve transfer code
+   * - `UKCA <https://www.metoffice.gov.uk/research/approach/collaboration/jwcrp/ukca>`_
+     - Chemistry and aerosols model
+   
 PSyKAl and PSyclone
 -------------------
 LFRic uses a domain specific language to separate computational science from natural science in the programming. The software architecture to do this is called `PSyKAl <https://psyclone.readthedocs.io/en/stable/introduction_to_psykal.html>`_, which stands for `Parallel System <https://psyclone.readthedocs.io/en/stable/introduction_to_psykal.html#psy-layer>`_, `Kernel <https://psyclone.readthedocs.io/en/stable/introduction_to_psykal.html#kernel-layer>`_, and `Algorithm <https://psyclone.readthedocs.io/en/stable/introduction_to_psykal.html#algorithm-layer>`_.
