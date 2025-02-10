@@ -25,11 +25,11 @@ The dynamical core `GungHo <https://www.metoffice.gov.uk/research/news/2019/gung
    * - Science Code
      - Description
    * - `CASIM <https://code.metoffice.gov.uk/trac/monc/wiki/CASIMDocStart>`_ 
-     - Cloud and Aerosol Interacting Microphysics     
+     - Cloud and aerosol microphysics
    * - `JULES <https://code.metoffice.gov.uk/trac/jules>`_
-     - Land surface model
+     - Land surface model, including surface fluxes, hydrology, carbon cycle, and vegitation
    * - `SOCRATES <https://code.metoffice.gov.uk/trac/socrates>`_
-     - Radiatve transfer code
+     - Radiatve transfer scheme
    * - `UKCA <https://www.metoffice.gov.uk/research/approach/collaboration/jwcrp/ukca>`_
      - Chemistry and aerosols model
    
