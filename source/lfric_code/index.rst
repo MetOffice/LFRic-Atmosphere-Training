@@ -29,7 +29,7 @@ The dynamical core `GungHo <https://www.metoffice.gov.uk/research/news/2019/gung
    * - `JULES <https://code.metoffice.gov.uk/trac/jules>`_
      - Land surface model, including surface fluxes, hydrology, carbon cycle, and vegetation
    * - `SOCRATES <https://code.metoffice.gov.uk/trac/socrates>`_
-     - Radiatve transfer scheme
+     - Radiative transfer scheme
    * - `UKCA <https://www.metoffice.gov.uk/research/approach/collaboration/jwcrp/ukca>`_
      - Chemistry and aerosols model
    
