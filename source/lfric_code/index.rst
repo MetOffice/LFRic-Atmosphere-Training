@@ -13,13 +13,16 @@ In this section LFRic Atmosphere is introduced from a software perspective.
    * To learn how to compile the model and be aware of involved steps.
    * To become familiar with working practises required for model development.
 
+
+LFRic Science Applications 
+---------------------------
+The model LFRic Atmosphere is a `LFRic Science Applications <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/applications>`_ build on top of the LFRic Infrastructure. There are also other LFRic Science Applications build with the same infrastructure code, e.g. a linear model for data assimilation and an application for regridding and creating boundary conditions.
+
 Code Repositories
 -----------------
-The LFRic Atmosphere model has its main home in the `LFRic Apps <https://code.metoffice.gov.uk/trac/lfric_apps>`_ repository, which also includes other `LFRic Science Applications <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/applications>`_ like a linear model for data assimilation and an application for regridding and creating boundary conditions.
+Code is distributed across several repositories: The LFRic Infrastructure repository `LFRic Core <https://code.metoffice.gov.uk/trac/lfric>`_ contains function spaces, solvers, matrix operations, clock and calendar code, and diagnostics. The top-level repository for the model LFRic Atmosphere is the `LFRic Apps <https://code.metoffice.gov.uk/trac/lfric_apps>`_ repository, which also includes other LFRic Science Applications. It contains the dynamical core `GungHo <https://www.metoffice.gov.uk/research/news/2019/gungho-and-lfric>`_ and the main model physics of LFRic Atmosphere. Larger science packages, such as the land surface model, are stored in their own repositories for modularity but compiled with LFRic Atmosphere as one single executable. The versions of the codes from theses repositories used in LFRic Atmosphere are defined in `dependencies.sh <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/dependencies.sh>`_.
 
-The dynamical core `GungHo <https://www.metoffice.gov.uk/research/news/2019/gungho-and-lfric>`_ and the main model physics are included in the LFRic Apps repository. However, source code for LFRic Atmosphere is spread across several repositories. The infrastructure repository `LFRic Core <https://code.metoffice.gov.uk/trac/lfric>`_ contains function spaces, solvers, matrix operations, clock and calendar code, and diagnostics. Larger science packages, such as the land surface model, are stored in their own repositories for modularity. The versions used in LFRic Atmosphere are defined in `dependencies.sh <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/dependencies.sh>`_.
-
-.. list-table:: Science codes included in LFRic Atmosphere with individual repositories
+.. list-table:: Science codes included in LFRic Atmosphere with individual repositories.
    :header-rows: 1
 
    * - Science Code
