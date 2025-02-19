@@ -33,7 +33,7 @@ Code is distributed across several repositories: The LFRic Infrastructure reposi
      - Land surface model, including surface fluxes, hydrology, carbon cycle, and vegetation
    * - `SOCRATES <https://code.metoffice.gov.uk/trac/socrates>`_
      - Radiative transfer scheme
-   * - `UKCA <https://www.metoffice.gov.uk/research/approach/collaboration/jwcrp/ukca>`_
+   * - `UKCA <https://code.metoffice.gov.uk/trac/ukca>`_
      - Chemistry and aerosols model
    
 PSyKAl and PSyclone
