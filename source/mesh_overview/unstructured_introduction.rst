@@ -1,5 +1,5 @@
 The unstructured world
-----------------------
+======================
 
 In an unstructured mesh world:
 one convention can describe any layout, even fully irregular layouts
@@ -38,7 +38,7 @@ UGRID description of unstructured data includes:
    :width: 650px
 
 Cubed sphere mesh
-^^^^^^^^^^^^^^^^^
+-----------------
 
 LFRic Atmosphere uses a cubed sphere mesh. Meshes are named after the number cells along one edge of the cube. The visualisation shows an C16 mesh, which represents the Earth surface by 6 x 16 x 16 = 1536 cells ("squares") in each horizontal layer. Most cell corners have four neighbour cells but at the corners of the cube only three cells meet.
 
@@ -69,17 +69,16 @@ The used projection of squares on a cube surface to a sphere causes that mesh si
 
 
 Tools for unstructured data
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------
 
 .. image:: /_static/unstructured_tools.png
    :width: 650px
 
 Regridding unstructured data
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+----------------------------
 
 .. image:: /_static/regrid.png
    :width: 400px
 
 Visualising unstructured data
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
+-----------------------------

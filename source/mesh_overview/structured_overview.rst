@@ -1,7 +1,7 @@
 The structured world
---------------------
+====================
 
-In a structured grid world: 
+In a structured grid world:
 
 * 1D coordinates arrays combine to give multi-D spatial locations
 * data shape = locations shape
