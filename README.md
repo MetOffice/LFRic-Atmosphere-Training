@@ -51,7 +51,7 @@ conda env create --file environment.yml
 Now activate the development environment with Conda:
 
 ```bash
-conda activate lfric-atmosphere-training
+conda activate lfric-atmos-training
 ```
 
 Once the development environment is set up you are ready to build the training materials.
