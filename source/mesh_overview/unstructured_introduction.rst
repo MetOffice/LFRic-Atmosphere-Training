@@ -1,34 +1,3 @@
-2. LFRic mesh and data
-======================
-
-.. toctree::
-   :name: mesh
-   :maxdepth: 2
-
-This module introduces the unstructured world of meshes which are now used in LFRic. 
-
-.. admonition:: Aims and objectives
-
-   * To understand 
-   * To be aware of 
-   * To become familiar with 
-
-
-The structured world
---------------------
-
-In a structured grid world: 
-
-* 1D coordinates arrays combine to give multi-D spatial locations
-* data shape = locations shape
-* data ‘neighbours’ = spatial ‘neighbours’
-* data axes = spatial directions e.g. rows west to east, columns north to south
-
-.. image:: /_static/structured_world.svg
-   :width: 650px
-
-
-
 The unstructured world
 ----------------------
 
@@ -68,27 +37,18 @@ UGRID description of unstructured data includes:
 .. image:: /_static/mesh3.png
    :width: 650px
 
-
 Tools for unstructured data
----------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: /_static/unstructured_tools.png
    :width: 650px
 
 Regridding unstructured data
-----------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: /_static/regrid.png
    :width: 400px
 
 Visualising unstructured data
------------------------------
-
-
-Practical using unstrucutrued data in Jupyter Lab
-------------------------------------------------- 
-
-To put this all into practice, there are 5 Jupyter notebooks. 
-
-You can access them here: https://github.com/scitools-classroom/iris-mesh-tutorial
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
