@@ -75,10 +75,10 @@ Tools for unstructured data
    :width: 650px
 
 Regridding unstructured data
-----------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: /_static/regrid.png
    :width: 400px
 
 Visualising unstructured data
------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
