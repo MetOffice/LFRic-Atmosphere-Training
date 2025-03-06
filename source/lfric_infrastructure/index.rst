@@ -12,5 +12,7 @@ In this section LFRic Atmosphere is introduced from a software perspective.
 
 
 .. include:: science_apps.rst
+.. include:: code_repositories.rst
+.. include:: psykal_infrastructure.rst
 .. include:: working_practices.rst
 .. include:: practical_exercises.rst

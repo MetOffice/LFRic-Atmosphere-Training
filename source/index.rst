@@ -31,7 +31,7 @@ Contents of the training course
 .. toctree::
    :maxdepth: 1
 
-   intruduction/index.rst
+   introduction/index.rst
    mesh_overview/index.rst
    lfric_infrastructure/index.rst
    gc_science_configs/index.rst
