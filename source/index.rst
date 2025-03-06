@@ -31,10 +31,10 @@ Contents of the training course
 .. toctree::
    :maxdepth: 1
 
-   intro/index
-   mesh/index
-   lfric_code/index
-   global/index
-   regional/index
+   introduction/index.rst
+   mesh_overview/index.rst
+   lfric_infrastructure/index.rst
+   gc_science_configs/index.rst
+   ral_science_configs/index.rst
 
 
