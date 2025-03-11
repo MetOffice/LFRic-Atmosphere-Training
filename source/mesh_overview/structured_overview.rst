@@ -10,7 +10,7 @@ Each element in the array represents a distinct location in the physical world.
 
 The below image visualises this concept:
 
-* In this 2D array, the rows represent the West to East direction, and the columns represent the North to South direction.
+* In this 2D array, the rows represent the West to East direction, and the columns represent the South to North direction.
 * Neighbouring data points in the array are also neighbours in the physical space. This spatial organisation simplifies how we relate computational data to real-world positions.
   
 .. image:: /_static/structured_world.svg
