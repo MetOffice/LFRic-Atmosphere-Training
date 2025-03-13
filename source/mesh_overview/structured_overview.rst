@@ -1,8 +1,8 @@
 The Structured World
 =====================
 
-In a structured grid, we use 1-dimensional coordinate arrays that combine to form multi-dimensional spatial locations.
-This method of organising data allows for systematic and efficient storage of data across a spatial domain.
+In a structured grid, 1-dimensional coordinate arrays are combined to form multi-dimensional spatial locations.
+Organising data in this manner allows for systematic and efficient storage of data across a spatial domain.
 
 Consider a 2-dimensional array representing geographical data in a structured grid. 
 In this context, the shape of the data in the array corresponds directly to the shape of the physical space we are modelling—in this case, Earth's surface. 
