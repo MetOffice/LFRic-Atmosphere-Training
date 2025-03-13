@@ -8,7 +8,7 @@ Consider a 2-dimensional array representing geographical data in a structured gr
 In this context, the shape of the data in the array corresponds directly to the shape of the physical space we are modelling—in this case, Earth's surface. 
 Each element in the array represents a distinct location in the physical world. 
 
-The below image visualises this concept:
+The figure below visualises this concept:
 
 * In this 2D array, the rows represent the West to East direction, and the columns represent the South to North direction.
 * Neighbouring data points in the array are also neighbours in the physical space. This spatial organisation simplifies how we relate computational data to real-world positions.
