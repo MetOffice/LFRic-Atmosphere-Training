@@ -10,14 +10,13 @@ Each element in the array represents a distinct location in the physical world.
 
 The figure below visualises this concept:
 
-* In this 2D array, the rows represent the West to East direction, and the columns represent the South to North direction.
+* In the 2D array below, the rows represent the West to East direction, and the columns represent the South to North direction.
 * Neighbouring data points in the array are also neighbours in the physical space. This spatial organisation simplifies how we relate computational data to real-world positions.
-  
+*The alignment between data points and physical space provides a clear, intuitive structure that makes it easy to manipulate and analyse the data.
+ 
 .. image:: /_static/structured_world.svg
    :width: 650px
 
-In this model, the data axes directly align with the array axes—rows and columns. 
-This alignment provides a clear, intuitive structure that makes it easy to manipulate and analyze the data.
 
 Key Characteristics of Structured Grids
 ----------------------------------------
