@@ -12,7 +12,7 @@ The figure below visualises this concept:
 
 * In the 2D array below, the rows represent the West to East direction, and the columns represent the South to North direction.
 * Neighbouring data points in the array are also neighbours in the physical space. This spatial organisation simplifies how we relate computational data to real-world positions.
-*The alignment between data points and physical space provides a clear, intuitive structure that makes it easy to manipulate and analyse the data.
+* The alignment between data points and physical space provides a clear, intuitive structure that makes it easy to manipulate and analyse the data.
  
 .. image:: /_static/structured_world.svg
    :width: 650px
@@ -45,6 +45,7 @@ While structured grids work well in many cases, they do have some limitations:
    :width: 300px
    :align: center
 
+  
 2.	Limited flexibility: 
 
    The structured grid approach is less flexible in handling complex geometries and topologies. When trying to represent regions of interest that do not align well with the grid, or when working with more complex meshes, structured grids fall short.
