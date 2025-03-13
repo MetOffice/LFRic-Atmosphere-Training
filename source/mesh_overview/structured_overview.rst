@@ -43,6 +43,7 @@ While structured grids work well in many cases, they do have some limitations:
 
 .. image:: /_static/singularity.png
    :width: 300px
+   :align: center
 
 2.	Limited flexibility: 
 
