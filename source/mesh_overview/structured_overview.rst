@@ -1,4 +1,4 @@
-The Structured World
+The structured world
 =====================
 
 In a structured grid, 1-dimensional coordinate arrays are combined to form multi-dimensional spatial locations.
@@ -18,29 +18,33 @@ The figure below visualises this concept:
    :width: 650px
 
 
-Key Characteristics of Structured Grids
+Key characteristics of structured grids
 ----------------------------------------
-1. Data Alignment with Physical Space:
+1. Data alignment with physical space:
    
    The 2D array's shape and arrangement directly correspond to physical space, useful for weather simulations and environmental modelling.
 
-2. Neighbouring Relationships:
+2. Neighbouring relationships:
    
    Adjacent points in the data array are also spatial neighbours, important for interpolation, integration, and modelling interactions.
 
-3. Predictable Layout:
+3. Predictable layout:
    
    The grid is arranged in a regular pattern (e.g., latitude-longitude or Cartesian coordinates), simplifying computational operations due to predictable relationships between data points.
 
-Challenges with Structured Grids
+Challenges with structured grids
 ---------------------------------
 While structured grids work well in many cases, they do have some limitations:
 
-1.	Singularities at the Poles: 
+1.	Singularities at the poles: 
 
    One of the most well-known issues with structured grids, particularly in Earth-system modelling, is the singularity at the poles. At the North and South Poles, grid cells become excessively compressed, leading to inaccuracies and computational challenges. This is a direct result of representing a spherical Earth with a flat grid, which leads to distortion near the poles.
+   The figure below demostrates singularities at poles.
 
-2.	Limited Flexibility: 
+.. image:: /_static/singularity.png
+   :width: 300px
+
+2.	Limited flexibility: 
 
    The structured grid approach is less flexible in handling complex geometries and topologies. When trying to represent regions of interest that do not align well with the grid, or when working with more complex meshes, structured grids fall short.
 
