@@ -5,7 +5,7 @@ Practical Exercises
 Practical 1: Model Build
 ------------------------
 
-Check out the source code and run lfric_atm_developer `rose stem test <https://metomi.github.io/rose/doc/html/     tutorial/rose/furthertopics/rose-stem.html>`_ and the related `Cylc <https://cylc.github.io/cylc-doc/latest/html/  index.html>`_ workflow to compile the model:
+Check out the source code and run lfric_atm_developer `rose stem test <https://metomi.github.io/rose/doc/html/tutorial/rose/furthertopics/rose-stem.html>`_ and the related `Cylc <https://cylc.github.io/cylc-doc/latest/html/  index.html>`_ workflow to compile the model:
 
 .. code-block:: bash
    :linenos:
