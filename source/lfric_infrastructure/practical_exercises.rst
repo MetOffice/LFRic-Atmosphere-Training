@@ -15,12 +15,22 @@ LFRic Apps Standard Suites are availble for several computers. Workflow IDs name
    rosie co u-dn674
    mv ~/roses/u-dn674 ~/cylc-src/lfric_apps_standard_suite
 
-For other platforms chose appropiate alternative workflow IDs. Please change to ``~/cylc-src/lfric_apps_standard_suite`` explore the workflow. It extracts the model code, builds the excutable and runs a global model. It also builds the mesh generator and creates a low resolution C12 mesh as input for the model. Start the workflow with
+For other platforms chose appropiate alternative workflow IDs.
+
+Change to ``~/cylc-src/lfric_apps_standard_suite`` explore the workflow in a text editor, look at its `graph <https://cylc.github.io/cylc-doc/stable/html/glossary.html#term-graph>`_ and the `apps <https://metomi.github.io/rose/doc/html/tutorial/rose/applications.html>`_. The standard suite extracts the model code, builds the excutable and runs a global model. It also builds the mesh generator and creates a low resolution C12 mesh as an input for the model.
+
+
+.. figure:: /_static/3/lfric_apps_standard_suite.svg
+  :width: 400px
+
+  Graph of the LFRic Apps Standard Suite.
+
+Start the workflow with
 
 .. code-block:: bash
    :linenos:
    
-   cd ~/roses/lfric_apps_standard_suite
+   cd ~/cylc-src/lfric_apps_standard_suite
    cylc vip
 
 Look at the workflow in the cylchub GUI while it is running, explore the model output in ``~/cylc-run/lfric_apps_standard_suite/``, and the logs Cylc Review.
