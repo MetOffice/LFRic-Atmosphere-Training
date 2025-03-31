@@ -42,7 +42,7 @@ Let's do two simple configuration changes to gain more expirence with the LFRic 
 
 Re-run the workflow for both experiments individually (or on top of each other) and compare the number of produced NetCDF files. Did the forecast length change as expected?
 
-Hint: In the workflow directory ``~/cylc-src/lfric_apps_standard_suite`` navigate to ``app/lfric_atm`` and edit the configuration with rose edit (or a text editor). You need to to modify the variables ``timestep_end`` and ``dt``. The NetCDF files can be found under the path ``~/cylc-run/lfric_apps_standard_suite/run?/work/1/lfric_atm/*nc``.
+Hint: In the workflow directory ``~/cylc-src/lfric_apps_standard_suite`` navigate to ``app/lfric_atm`` and edit the configuration ``rose-app.conf`` with ``rose edit`` (or a text editor). You need to to modify the variables ``timestep_end`` and ``dt``. The NetCDF files can be found under the path ``~/cylc-run/lfric_apps_standard_suite/run?/work/1/lfric_atm/*nc``.
 
 Practical 2: Model build and  stem tests
 ----------------------------------------
