@@ -7,7 +7,7 @@ Building and running the model is usually done via `Cylc workflows <https://cylc
 Practical 1: Standard Suite
 ---------------------------
 
-LFRic Apps Standard Suites are availble for several computers. Workflow IDs names are documented on the `LFRic Apps wiki pages <https://code.metoffice.gov.uk/trac/lfric_apps#WorkingwithLFRicApps>`_. Assuming you want to run the exercise on the Met Office Azure Spice platform you can checkout the standard suite with
+LFRic Apps Standard Suites are availble for several computers. Workflow IDs are documented on the `LFRic Apps wiki pages <https://code.metoffice.gov.uk/trac/lfric_apps#WorkingwithLFRicApps>`_. Assuming you want to run the exercise on the Met Office Azure Spice platform you can checkout the standard suite with
 
 .. code-block:: bash
    :linenos:
