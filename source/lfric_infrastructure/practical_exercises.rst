@@ -2,7 +2,7 @@
 Practical Exercises
 ===================
 
-Building and running the model is usually done via `Cylc workflows <https://cylc.github.io/cylc-doc/latest/html/tutorial/introduction.html#what-is-a-workflow>`_. The follwing exercises demonstrates how to run a simplified development setup and tests. These workflows are intended for model and workflow development. Model applications for global and regional modelling are follwowing later in this training.
+Building and running the model is usually done via `Cylc workflows <https://cylc.github.io/cylc-doc/latest/html/tutorial/introduction.html#what-is-a-workflow>`_. The following exercises demonstrates how to run a simplified development setup and tests. These workflows are intended for model and workflow development. Model applications for global and regional modelling are following later in this training.
 
 
 .. include:: practical_standart_suite.rst
