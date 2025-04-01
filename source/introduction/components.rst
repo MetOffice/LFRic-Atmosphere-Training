@@ -3,7 +3,7 @@ Components, Science Configurations, and Systems
 
 Components of the `Momentum  <https://www.metoffice.gov.uk/research/approach/modelling-systems/momentum>`_ Framework, like the atmospheric model LFRic Atmosphere, are combined to prediction and projection systems, like the ones mentioned in the graphic in the seamless modelling section. Science Configurations are rigorously tested  and define the exact setup for the individual model components. These configurations are distinguished between regional and global configurations. Additionally, there are coupled Science Configurations which detail multi-model setups, e.g. an atmosphere – ocean model.
 
-.. figure:: /_static/intro_components.png
+.. figure:: /_static/1/intro_components.png
    :width: 650px
    :alt: Components of prediction and projection systems
 
