@@ -28,7 +28,7 @@ Start the workflow with
    cd ~/cylc-src/lfric_apps_standard_suite
    cylc vip
 
-Look at the workflow in the `Cylc UI <https://cylc.github.io/cylc-doc/latest/html/user-guide/running-workflows/tasks-jobs-ui.html>`_ (started with command cylc gui) while it is running, explore the model output in ``~/cylc-run/lfric_apps_standard_suite/``, and the logs in `Cylc Review <https://cylchub/services/cylc-review/>`_. Find out from the logs how many time steps have been executed and locate the output files in NetCDF format.
+Look at the workflow in the `Cylc UI <https://cylc.github.io/cylc-doc/latest/html/user-guide/running-workflows/tasks-jobs-ui.html>`_ (started with command ``cylc gui``) while it is running, explore the model output in ``~/cylc-run/lfric_apps_standard_suite/``, and the logs in `Cylc Review <https://cylchub/services/cylc-review/>`_ or ``~/cylc-run/lfric_apps_standard_suite/run1//log//job/1/``. Find out from the logs how many time steps have been executed and locate the output files in NetCDF format.
 
 Let's do two simple configuration changes to gain more experience with the LFRic Apps Standard Suite:
 
