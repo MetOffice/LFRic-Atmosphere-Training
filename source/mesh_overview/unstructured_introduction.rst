@@ -34,7 +34,7 @@ UGRID description of unstructured data
    :align: right
    :width: 160px
 
-This approach is more flexible than structured grids because the nodes, edges, and faces do not need to align with predefined grid lines, such as latitude or longitude. 
+This UGRID format is more flexible than structured grids because the nodes, edges, and faces do not need to align with predefined grid lines, such as latitude or longitude. 
 Consequently, the spatial position of an element is independent of its position along the grid dimensions, offering a much more adaptable system. 
 Additionally, the UGRID format allows for mixing faces of different geometries, including 3-sided, 4-sided, 5-sided, and even n-sided faces. 
 This further increases the flexibility of the mesh, allowing for complex geometries that structured grids cannot accommodate.
