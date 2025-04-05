@@ -51,7 +51,7 @@ While structured grids work well in many cases, they do have some limitations:
    The structured grid approach is less flexible in handling complex geometries and topologies. When trying to represent regions of interest that do not align well with the grid, or when working with more complex meshes, structured grids fall short.
 
 How to address these challenges?
--------------------------------
+---------------------------------
 Unstructured meshes overcome issues like singularities. One example is the cubed-sphere which consists of dividing the Earth's surface into six square faces, which are then mapped onto a sphere. 
 This approach removes polar singularities and provides an even distribution of data points, preventing excessive compression near the poles, leading to more accurate and stable computations.
 However, it brings new challenges in efficiently organising and representing the data, as assigning a 2-dimensional format can be difficult due to its non-standard layout. 
