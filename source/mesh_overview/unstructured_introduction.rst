@@ -6,8 +6,7 @@ As computational models evolve, especially in the realm of climate and weather m
 This training will explore how unstructured data is transforming workflows, why it is important, and how scientists can adapt their practices to support these advancements.
 
 Unstructured meshes offer greater flexibility and precision compared to structured grids, making them essential for data evaluation and verification. 
-The LFRic model is replacing the Unified Model (UM) in weather and climate forecasting, marking a shift in computational science towards unstructured meshes. 
-During the transition, it is important to consider how to involve the UM Partnership in this change. The following sections will explore the challenges and benefits of unstructured data and the technical details of using the UGRID format.
+The section will explore the challenges and benefits of unstructured data and the technical details of using the UGRID format.
 
 Features of unstructured meshes in the LFRic model
 --------------------------------------------------
