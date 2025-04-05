@@ -123,9 +123,9 @@ Tools for unstructured data
 
 As described in the previous sections, LFRic is using an unstructured mesh - cubed-sphere mesh - in the UGRID format. Understanding how to effectively work with this data requires the use of specialized tools. In this section, attention will be given to the tooling available for handling UGRID data and how these tools fit into the broader ecosystem.
 
-The AVD team has developed a suite of common tooling within the Scientific Python ecosystem, which provides a foundation for managing and analyzing complex scientific data. This toolkit includes a variety of libraries and resources designed to assist in the manipulation of unstructured data formats, such as UGRID.
+A suite of common tooling was developed within the Scientific Python ecosystem, which provides a foundation for managing and analysing complex scientific data. This toolkit includes a variety of libraries and resources designed to assist in the manipulation of unstructured data formats, such as UGRID.
 
-One of the most widely used tools in the Met Office for handling scientific data is Iris. Iris is a powerful library that facilitates the analysis of meteorological and climate data, and it is specifically designed to work with both structured and unstructured grids. It offers a range of functions that simplify the manipulation and visualization of data, making it a key component in many data processing workflows.
+A widely used tool for handling scientific data is Iris. Iris is a powerful library that facilitates the analysis of meteorological and climate data, and it is specifically designed to work with both structured and unstructured grids. It offers a range of functions that simplify the manipulation and visualization of data, making it a key component in many data processing workflows.
 
 In this session, a brief overview of the basics of Iris will be provided, including its core features and functionalities. 
 
