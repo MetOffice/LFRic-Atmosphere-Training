@@ -85,7 +85,7 @@ nstead, the coordinates map to the mesh dimension. If you want to extract data f
 
 Let’s consider an example. To find the location of a specific element, such as a face, you need to examine its connectivity and perform an indexing operation to fetch the relevant data. This process has to be repeated for all 5 million faces in the mesh. The operation involves determining which faces are within the specified region and which are not. This is a computationally intensive task, requiring specialized libraries and powerful computing resources.
 
-When dealing with Limited Area Models (LAMs), we focus on a smaller section of the LFRic sphere. While the LFRic LAM grids and UM LAM grids may appear similar on the surface (using rotated poles and grid boxes arranged into rows and columns), LFRic will output UGRID data. Therefore, the UGRID tools and operations are also applicable to LFRic LAMs.
+When dealing with Limited Area Models (LAMs), we focus on a smaller section of the LFRic cube-sphere. While the LFRic LAM grids may appear similar to a structured lat-lon grid on the surface (using rotated poles and grid boxes arranged into rows and columns), LFRic will output UGRID data. Therefore, the UGRID tools and operations are also applicable to LFRic LAMs.
 
 Cubed sphere mesh
 -----------------
