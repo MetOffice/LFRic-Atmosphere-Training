@@ -39,7 +39,7 @@ Consequently, the spatial position of an element is independent of its position 
 Additionally, the UGRID format allows for mixing faces of different geometries, including 3-sided, 4-sided, 5-sided, and even n-sided faces. 
 This further increases the flexibility of the mesh, allowing for complex geometries that structured grids cannot accommodate.
 
-All model data in this system will be placed either on faces or edges, never on the nodes. For instance, data such as fluxes and vectors typically resides on edges, while other physical quantities are placed on faces. 
+In the context of our LFRic atmosphere unstructured mesh, all model data will be placed either on faces or edges, never on the nodes. For instance, data such as fluxes and vectors typically resides on edges, while other physical quantities are placed on faces. 
 Furthermore, each vertical layer shares the same horizontal coordinates, simplifying data handling across layers.
 
 This unstructured mesh approach, which permits mixing different face geometries and the freedom to attach data to various mesh elements, demonstrates a level of flexibility that is difficult to achieve with structured grids.
