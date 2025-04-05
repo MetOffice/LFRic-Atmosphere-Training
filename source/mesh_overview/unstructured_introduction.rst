@@ -8,21 +8,21 @@ The unstructured world section will explore how unstructured data is transformin
 Unstructured meshes offer greater flexibility and precision compared to structured grids, making them essential for data evaluation and verification. 
 The section will explore the challenges and benefits of unstructured data and the technical details of using the UGRID format.
 
-Features of unstructured meshes in the LFRic model
+Features of unstructured meshes in LFRic atmosphere model
 --------------------------------------------------
 
-The LFRic model offers greater flexibility, scalability, and precision by moving away from the UM’s structured grid and using unstructured meshes. Here's why this transition matters:
+Thanks to its use of an unstructured mesh, LFRic atmosphere offers greater flexibility, scalability, and precision. Some benefits of using an unstructured mesh instead of a structured grid are: 
 
-* Improved Resolution: Unstructured meshes provide more accurate representations of complex shapes and regions, allowing for higher-resolution simulations.
+* **Improved Resolution**: Unstructured meshes provide more accurate representations of complex shapes and regions, allowing for higher-resolution simulations.
 
-* Flexibility: Unstructured meshes can easily adapt to different features like coastlines and mountains without changing the grid.
+* **Flexibility**: Unstructured meshes can easily adapt to different features like coastlines and mountains without changing the grid.
 
-* Efficiency: LFRic improves computational efficiency by optimizing resource use and supporting advanced parallelization.
+* **Efficiency**: LFRic improves computational efficiency by optimizing resource use and supporting advanced parallelization.
 
-* Scalability: Unstructured meshes enable higher-order methods, making it easier to scale models for larger, more detailed simulations.
+* **Scalability**: Unstructured meshes enable higher-order methods, making it easier to scale models for larger, more detailed simulations.
 
 To fully benefit from these features, working with unstructured data and understanding the UGRID format, which efficiently handles this type of data, is essential.
-The figure below shows examples of unstructured mesh.
+The figure below shows examples of unstructured meshes.
 
 .. image:: /_static/unstructured_examples.png
    :width: 650px
