@@ -41,7 +41,7 @@ While structured grids work well in many cases, they do have some limitations:
    One of the most well-known issues with structured grids, particularly in Earth-system modelling, is the singularity at the poles. At the North and South Poles, grid cells become excessively compressed, leading to inaccuracies and computational challenges. This is a direct result of representing a spherical Earth with a flat grid, which leads to distortion near the poles.
    The figure below demostrates singularities at poles.
 
-.. image:: /_static/singularity.png
+.. image:: /_static/singularities.png
    :width: 300px
    :align: center
 
