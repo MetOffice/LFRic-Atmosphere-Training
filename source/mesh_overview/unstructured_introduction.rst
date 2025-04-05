@@ -121,7 +121,7 @@ The used projection of squares on a cube surface to a sphere causes that mesh si
 Tools for unstructured data
 ---------------------------
 
-The data from LFRic has already been identified as being in the UGRID format. Understanding how to effectively work with this data requires the use of specialized tools. In this section, attention will be given to the tooling available for handling UGRID data and how these tools fit into the broader ecosystem.
+As described in the previous sections, LFRic is using an unstructured mesh - cubed-sphere mesh - in the UGRID format. Understanding how to effectively work with this data requires the use of specialized tools. In this section, attention will be given to the tooling available for handling UGRID data and how these tools fit into the broader ecosystem.
 
 The AVD team has developed a suite of common tooling within the Scientific Python ecosystem, which provides a foundation for managing and analyzing complex scientific data. This toolkit includes a variety of libraries and resources designed to assist in the manipulation of unstructured data formats, such as UGRID.
 
