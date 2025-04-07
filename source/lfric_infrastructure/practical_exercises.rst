@@ -10,10 +10,10 @@ Building and running the model is usually done via `Cylc workflows <https://cylc
 .. include:: practical_standart_suite.rst
 
 
-Practical 2: Model build and  stem tests
+Practical 3: Model build and  stem tests
 ----------------------------------------
 
-Check out the source code and run lfric_atm_developer `rose stem test <https://metomi.github.io/rose/doc/html/tutorial/rose/furthertopics/rose-stem.html>`_ and the related `Cylc <https://cylc.github.io/cylc-doc/latest/html/  index.html>`_ workflow to compile the model:
+Check out the source code and run lfric_atm_developer `rose stem test <https://metomi.github.io/rose/doc/html/tutorial/rose/furthertopics/rose-stem.html>`_ and the related `Cylc <https://cylc.github.io/cylc-doc/latest/html/index.html>`_ workflow to compile the model:
 
 .. code-block:: bash
    :linenos:
@@ -29,7 +29,7 @@ Check out the source code and run lfric_atm_developer `rose stem test <https://m
 
 
 
-Practical 3: Code change
+Practical 4: Code change
 ------------------------
 
 

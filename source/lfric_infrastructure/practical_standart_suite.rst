@@ -1,5 +1,5 @@
 
-Practical 1: Standard Suite
+Practical 2: Standard Suite
 ---------------------------
 
 This practical introduces the LFRic Apps Standard Suite to learn how to run the model in a simple workflow, find the output, read the logs, and make a simple configuration change.

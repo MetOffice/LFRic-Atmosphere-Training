@@ -1,5 +1,5 @@
 
-Practical 0: Run model from command line
+Practical 1: Run model from command line
 ----------------------------------------
 
 Before showing how to run the model as part of Cylc workflows this practical introduces the LFRic Atmosphere as a command line application. It shows how the model can be build and run from the command line, and how one can add a message to the log file.
