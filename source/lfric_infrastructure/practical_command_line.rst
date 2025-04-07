@@ -40,7 +40,7 @@ Change to that folder and run the example:
    cd applications/lfric_atm/example      
    ../bin/lfric_atm configuration.nml
 
-The namelist file configuration.nml controls how the model is run. Redirect the standard output to a text file to examine later:
+The namelist file ``configuration.nml`` controls how the model is run. Redirect the standard output to a text file to examine later:
 
 .. code-block:: bash
    :linenos:
@@ -51,7 +51,7 @@ Explore the file ``log.txt`` and the other output files.
 
 **Add debug output to model log**
 
-To gain first familiarity with the model try to add your own print statement at the end of each time step (and a different one print statement after time step 72). Search the code for the log messages available in ``log.txt`` (e.g. with ``grep -R "End of timestep" *``) to find where to change the code and write such an output. Adjust the code, re-compile, and re-run the model.
+To gain first familiarity with the model try to add your own print statement at the end of each time step (and a different print statement after time step 72). Search the code for the log messages available in ``log.txt`` (e.g. with ``grep -R "End of timestep" *``) to find where to change the code and write such an output. Adjust the code, re-compile, and re-run the model.
 
 **Hint:** You can write to standard out by adding the following Fortran code
 
