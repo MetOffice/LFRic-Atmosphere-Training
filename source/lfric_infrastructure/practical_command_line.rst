@@ -2,7 +2,7 @@
 Practical 1: Run model from command line
 ----------------------------------------
 
-Before showing how to run the model as part of Cylc workflows this practical introduces the LFRic Atmosphere as a command line application. It shows how the model can be build and run from the command line, and how one can add a message to the log file.
+Before showing how to run the model as part of Cylc workflows this practical introduces the LFRic Atmosphere as a command line application. It shows how the model can be built and run from the command line, and how one can add a message to the log file.
 
 Use `fcm <https://metomi.github.io/fcm/doc/user_guide/annex_quick_ref.html>`_ to checkout the code:
 
@@ -12,7 +12,7 @@ Use `fcm <https://metomi.github.io/fcm/doc/user_guide/annex_quick_ref.html>`_ to
    mkdir practical_command_line ; cd  practical_command_line
    fcm co fcm:lfric_apps.x-tr lfric_apps
    
-The model build requires you to have the needed enviroment modules availble. Assuming you want to run this practical on the Met Office Azure Spice platform, you can load the module and set the compiler with:
+The model build requires you to have the needed environment modules available. Assuming you want to run this practical on the Met Office Azure Spice platform, you can load the module and set the compiler with:
 
 .. code-block:: bash
    :linenos:
@@ -20,7 +20,7 @@ The model build requires you to have the needed enviroment modules availble. Ass
    ml use ~lfricadmin/lmod
    ml lfric
 
-See the documentation for the `LFRic Development Enviroment <https://code.metoffice.gov.uk/trac/lfric/wiki/DevelopmentEnvironment>`_ for how to activate the environment for other platforms. Now complie the model with:
+See the documentation for the `LFRic Development Enviroment <https://code.metoffice.gov.uk/trac/lfric/wiki/DevelopmentEnvironment>`_ for how to activate the environment for other platforms. Now compile the model with:
 
 .. code-block:: bash
    :linenos:
@@ -28,7 +28,7 @@ See the documentation for the `LFRic Development Enviroment <https://code.metoff
    
    ./build/local_build.py -a lfric_atm
 
-The code contains an example configuration, colloquially called "canned configuration", in  the namelist file `applications/lfric_atm/example/configuration.nml <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/applications/lfric_atm/example/configuration.nml>`_. This conifguration stets up a "single column" run of LFRic Atmosphere. It is configured to use the mesh file in example directory which is, in reality, not a single column mesh, but a 2x2 biperiodic mesh. However, the configuration is designed in such a way as each column is computed independently from the other columns and, in fact, gives identical results for each column.
+The code contains an example configuration, colloquially called "canned configuration", in  the namelist file `applications/lfric_atm/example/configuration.nml <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/applications/lfric_atm/example/configuration.nml>`_. This configuration sets up a "single column" run of LFRic Atmosphere. It is configured to use the mesh file in example directory which is, in reality, not a single column mesh, but a 2x2 biperiodic mesh. However, the configuration is designed in such a way as each column is computed independently from the other columns and, in fact, gives identical results for each column.
 
 Change to that folder and run the example:
 
@@ -50,9 +50,9 @@ Explore the file ``log.txt`` and the other output files.
 
 **Add debug output to model log**
 
-To gain first familarity with the model try to add your own print statement at the end of each time step (and a different one print statement after time step 72). Search the for the log messeages availble in ``log.txt`` (e.g. with ``grep -R "End of timestep" *``) to find where to change the code write such output. Adjust the code, re-compile, and re-run the model.
+To gain first familiarity with the model try to add your own print statement at the end of each time step (and a different one print statement after time step 72). Search the code for the log messages available in ``log.txt`` (e.g. with ``grep -R "End of timestep" *``) to find where to change the code and write such an output. Adjust the code, re-compile, and re-run the model.
 
-**Hint:** You can write to standard out by adding the the following Fortran code
+**Hint:** You can write to standard out by adding the following Fortran code
 
 .. code-block:: fortran
    :linenos:
@@ -66,4 +66,4 @@ To gain first familarity with the model try to add your own print statement at t
     endif
     call log_event( log_scratch_space, LOG_LEVEL_INFO )
 
-at the end of of the subroutine gungho_step in the file `gungho_step_mod.x90 <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/science/gungho/source/driver/gungho_step_mod.x90?rev=9055#L217>`_  in the folder ``science/gungho/source/driver``.
+at the end of the subroutine gungho_step in the file `gungho_step_mod.x90 <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/science/gungho/source/driver/gungho_step_mod.x90?rev=9055#L217>`_  in the folder ``science/gungho/source/driver``.
