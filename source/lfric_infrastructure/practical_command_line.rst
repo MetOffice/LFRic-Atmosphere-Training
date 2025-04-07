@@ -2,14 +2,15 @@
 Practical 1: Run model from command line
 ----------------------------------------
 
-Before showing how to run the model as part of Cylc workflows this practical introduces the LFRic Atmosphere as a command line application. It shows how the model can be built and run from the command line, and how one can add a message to the standard output of the model.
+Before showing how to run the model as part of Cylc workflows, this practical introduces LFRic Atmosphere as a command line application. It demonstrates how the model can be built and run from the command line, and how to add a message to the standard output of the model.
 
 Use `fcm <https://metomi.github.io/fcm/doc/user_guide/annex_quick_ref.html>`_ to checkout the code:
 
 .. code-block:: text
    :linenos:
        
-   mkdir practical_command_line ; cd  practical_command_line
+   mkdir practical_command_line
+   cd  practical_command_line
    fcm co fcm:lfric_apps.x-tr lfric_apps
    
 The model build requires you to have the needed environment modules available. Assuming you want to run this practical on the Met Office Azure Spice platform, you can load the module and set the compiler with:
