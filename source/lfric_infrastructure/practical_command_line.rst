@@ -6,7 +6,7 @@ Before showing how to run the model as part of Cylc workflows this practical int
 
 Use `fcm <https://metomi.github.io/fcm/doc/user_guide/annex_quick_ref.html>`_ to checkout the code:
 
-.. code-block:: bash
+.. code-block:: text
    :linenos:
        
    mkdir practical_command_line ; cd  practical_command_line
@@ -24,6 +24,7 @@ See the documentation for the `LFRic Development Enviroment <https://code.metoff
 
 .. code-block:: bash
    :linenos:
+   :emphasize-lines: 1
    
    ./build/local_build.py -a lfric_atm
 
@@ -31,8 +32,9 @@ The code contains an example configuration, colloquially called "canned configur
 
 Change to that folder and run the example:
 
-.. code-block:: bash
+.. code-block:: text
    :linenos:
+   :emphasize-lines: 2
    
    cd applications/lfric_atm/example      
    ../bin/lfric_atm configuration.nml
