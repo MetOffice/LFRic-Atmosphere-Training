@@ -13,7 +13,7 @@ Use `fcm <https://metomi.github.io/fcm/doc/user_guide/annex_quick_ref.html>`_ to
    cd  practical_command_line
    fcm co fcm:lfric_apps.x-tr lfric_apps
    
-The model build requires you to have the needed environment modules available. Assuming you want to run this practical on the Met Office Azure Spice platform, you can load the module and set the compiler with:
+The model build requires you to load environment modules on most platforms. Assuming you want to run this practical on the Met Office Azure Spice platform, you can load the module and set the compiler with:
 
 .. code-block:: bash
    :linenos:
@@ -30,7 +30,7 @@ See the documentation for the `LFRic Development Enviroment <https://code.metoff
    cd lfric_apps
    ./build/local_build.py -a lfric_atm
 
-The code contains an example configuration, colloquially called "canned configuration", in  the namelist file `applications/lfric_atm/example/configuration.nml <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/applications/lfric_atm/example/configuration.nml>`_. This configuration sets up a "single column" run of LFRic Atmosphere. It is configured to use the mesh file in the `example <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/applications/lfric_atm/example>`_ directory which is, in reality, not a single column mesh, but a 2x2 biperiodic mesh. However, the configuration is designed in such a way as each column is computed independently from the other columns and, in fact, gives identical results for each column.
+The code contains an example configuration, colloquially called "canned configuration", in  the namelist file `applications/lfric_atm/example/configuration.nml <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/applications/lfric_atm/example/configuration.nml>`_. This configuration sets up a "single column" run of LFRic Atmosphere. It is configured to use the mesh file in the `example <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/applications/lfric_atm/example>`_ directory which is, in reality, not a single column mesh, but a 2x2 biperiodic mesh. However, the configuration is designed in such a way that each column is computed independently from the other columns and, in fact, gives identical results for each column.
 
 Change to that folder and run the example:
 
