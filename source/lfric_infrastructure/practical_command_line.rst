@@ -24,8 +24,9 @@ See the documentation for the `LFRic Development Enviroment <https://code.metoff
 
 .. code-block:: bash
    :linenos:
-   :emphasize-lines: 1
+   :emphasize-lines: 2
    
+   cd lfric_apps
    ./build/local_build.py -a lfric_atm
 
 The code contains an example configuration, colloquially called "canned configuration", in  the namelist file `applications/lfric_atm/example/configuration.nml <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/applications/lfric_atm/example/configuration.nml>`_. This configuration sets up a "single column" run of LFRic Atmosphere. It is configured to use the mesh file in example directory which is, in reality, not a single column mesh, but a 2x2 biperiodic mesh. However, the configuration is designed in such a way as each column is computed independently from the other columns and, in fact, gives identical results for each column.
