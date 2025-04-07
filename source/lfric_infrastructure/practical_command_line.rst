@@ -2,7 +2,7 @@
 Practical 1: Run model from command line
 ----------------------------------------
 
-Before showing how to run the model as part of Cylc workflows this practical introduces the LFRic Atmosphere as a command line application. It shows how the model can be built and run from the command line, and how one can add a message to the log file.
+Before showing how to run the model as part of Cylc workflows this practical introduces the LFRic Atmosphere as a command line application. It shows how the model can be built and run from the command line, and how one can add a message to the standard output of the model.
 
 Use `fcm <https://metomi.github.io/fcm/doc/user_guide/annex_quick_ref.html>`_ to checkout the code:
 
