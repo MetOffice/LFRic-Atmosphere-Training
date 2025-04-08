@@ -104,8 +104,8 @@ For unstructured data visualisation, PyVista and GeoVista are the primary tools 
 
 For instance, a C48 mesh has approximately 13,000 faces, and a C1048 mesh (approximately 9.55 km grid spacing at the equator) would require excessive computation and memory resources for Matplotlib and Cartopy. It would take them around 13.5s to render a C48 and 2h for a C1048! With PyVista, a C48 mesh can be rendered in 369 ms, while a C1048 mesh takes 3.87 seconds.
 
-Unstructured visualization tools include VTK, a GPU-accelerated toolkit for visualization and mesh processing, and Paraview, a parallel visualization application. PyVista provides a high-level interface for 3D visualization, and GeoVista manages cartographic elements. The combination of these tools offers a paradigm shift by enabling efficient GPU-powered visualization and interactive user experiences.
+Unstructured visualisation tools include VTK, a GPU-accelerated toolkit for visualisation and mesh processing, and Paraview, a parallel visualisation application. PyVista provides a high-level interface for 3D visualisation , and GeoVista manages cartographic elements. The combination of these tools offers a paradigm shift by enabling efficient GPU-powered visualisation and interactive user experiences.
 
-PyVista is a 3D visualization engine that leverages GPU power for scalable rendering. It offers both visualization and computational capabilities, including a high-level API and filters. PyVista integrates seamlessly with modern scientific workflows, such as Jupyter notebooks.
+PyVista is a 3D visualisation engine that leverages GPU power for scalable rendering. It offers both visualisation and computational capabilities, including a high-level API and filters. PyVista integrates seamlessly with modern scientific workflows, such as Jupyter notebooks.
 
 GeoVista provides cartographic capabilities for PyVista, supporting various map projections, coastlines, texture mapping, and regional extraction. It is compatible with Iris, as well as other scientific libraries like NumPy and Xarray.
