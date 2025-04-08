@@ -3,6 +3,7 @@ The unstructured world
 
 Unstructured meshes and the UGRID format represent the future of scientific data delivery.
 As computational models evolve, especially in the realm of climate and weather modelling, transitioning to these new formats will be crucial for effective data handling. 
+
 .. important::
     The unstructured world section will explore how unstructured data is transforming workflows, why it is important, and how scientists can adapt their practices to support these advancements.
 
@@ -41,6 +42,7 @@ Additionally, the UGRID format allows for mixing faces of different geometries, 
 This further increases the flexibility of the mesh, allowing for complex geometries that structured grids cannot accommodate.
 
 In the context of our LFRic atmosphere unstructured mesh, all model data will be placed either on faces or edges, never on the nodes. For instance, data such as fluxes and vectors typically resides on edges, while other physical quantities are placed on faces. 
+
 Furthermore, each vertical layer shares the same horizontal coordinates, simplifying data handling across layers.
 
 This unstructured mesh approach, which permits mixing different face geometries and the freedom to attach data to various mesh elements, demonstrates a level of flexibility that is difficult to achieve with structured grids.
@@ -66,6 +68,7 @@ in the case of the Unified Model (UM) on the left, 13,400 data points (points an
 Flexibility vs. data volume
 ++++++++++++++++++++++++++++
 To put this into perspective, imagine data is described by a newspaper. In the structured grid approach, it's like reading a pamphlet—simple and compact. In the unstructured case, however, it's like reading an entire novel. 
+
 To put this into perspective, imagine data is described by a newspaper. In the structured grid approach, it's like reading a pamphlet—simple and compact. In the unstructured case, however, it's like reading an entire novel. This illustrate an important concept:
 .. important:: 
    While unstructured data offers greater flexibility, it also comes with a higher data cost.
@@ -124,17 +127,43 @@ The used projection of squares on a cube surface to a sphere causes that mesh si
 Tools for unstructured data
 ---------------------------
 
-As described in the previous sections, LFRic is using an unstructured mesh - cubed-sphere mesh - in the UGRID format. Understanding how to effectively work with this data requires the use of specialized tools. In this section, attention will be given to the tooling available for handling UGRID data and how these tools fit into the broader ecosystem.
+As described in the previous sections, LFRic is using an unstructured mesh - cubed-sphere mesh - in the UGRID format. Understanding how to effectively work with this data requires the use of specialized tools. 
+
+.. admonition:: Topic
+
+      In this section, attention will be given to:
+      the tooling available for handling UGRID data 
+      and how these tools fit into the broader ecosystem.
 
 A suite of common tooling was developed within the Scientific Python ecosystem, which provides a foundation for managing and analysing complex scientific data. This toolkit includes a variety of libraries and resources designed to assist in the manipulation of unstructured data formats, such as UGRID.
 
 A widely used tool for handling scientific data is Iris. Iris is a powerful library that facilitates the analysis of meteorological and climate data, and it is specifically designed to work with both structured and unstructured grids. It offers a range of functions that simplify the manipulation and visualization of data, making it a key component in many data processing workflows.
 
-In this session, a brief overview of the basics of Iris will be provided, including its core features and functionalities. 
-
+In this session, a brief overview of the basics of Iris will be provided, including its core features and functionalities.  
 
 .. image:: /_static/unstructured_tools.png
    :width: 650px
+
+Iris – basics and scope
+++++++++++++++++++++++++
+
+Iris is a Python-based ecosystem and package used for the manipulation of UM data during post-processing. 
+It is open-source and has been included in other tools, such as ESMValTool and MetPlus, which are based on it. 
+Iris offers a unified view of data as cubes and supports metadata-aware processing. It provides analysis capabilities in mathematics, statistics, large data handling, and regridding. For visualisation, Iris relies on Matplotlib and Cartopy.
+
+.. image:: /_static/unstructured_tools.png
+   :width: 650px
+
+The core of Iris is built around CF and Numpy. CF (Climate and Forecast) conventions allow Iris to work with the encoding of climate and forecast data stored in netCDF files. Numpy, the fundamental package for numerical computations in Python, supports large-scale data processing by leveraging FORTRAN and C++ for heavy computations.
+
+Numpy facilitates the mathematical operations required for large datasets. Operations involving substantial numerical crunching are offloaded to efficient implementations in FORTRAN and C++, as Python itself is an interpreted language and is not optimized for such intensive tasks.   
+
+In traditional structured grid systems, data is plotted in 2D using Matplotlib. Cartopy, a tool used for cartographic elements, assists in this process.
+
+For unstructured grids, PyVista and VTK replace Matplotlib. VTK is a versatile tool used for both visualization and mesh processing through C++ implementation, which also supports number crunching. GeoVista handles the cartographic elements in unstructured grids, performing similar functions as Cartopy. Both PyVista and GeoVista can leverage GPU acceleration, enhancing performance for both graphical rendering and computational analysis.
+
+Despite the underlying usage of languages like FORTRAN and C++ in visualisation tools, Python serves as the interface for data interaction with these tools during user workflows.
+
 
 Regridding unstructured data
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
