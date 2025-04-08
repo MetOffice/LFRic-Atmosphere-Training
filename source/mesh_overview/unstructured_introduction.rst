@@ -3,27 +3,28 @@ The unstructured world
 
 Unstructured meshes and the UGRID format represent the future of scientific data delivery.
 As computational models evolve, especially in the realm of climate and weather modelling, transitioning to these new formats will be crucial for effective data handling. 
-This training will explore how unstructured data is transforming workflows, why it is important, and how scientists can adapt their practices to support these advancements.
+
+.. important::
+    The unstructured world section will explore how unstructured data is transforming workflows, why it is important, and how scientists can adapt their practices to support these advancements.
 
 Unstructured meshes offer greater flexibility and precision compared to structured grids, making them essential for data evaluation and verification. 
-The LFRic model is replacing the Unified Model (UM) in weather and climate forecasting, marking a shift in computational science towards unstructured meshes. 
-During the transition, it is important to consider how to involve the UM Partnership in this change. The following sections will explore the challenges and benefits of unstructured data and the technical details of using the UGRID format.
+The section will explore the challenges and benefits of unstructured data and the technical details of using the UGRID format.
 
-Features of unstructured meshes in the LFRic model
----------------------------------------------------
+Features of unstructured meshes in LFRic atmosphere model
+--------------------------------------------------
 
-The LFRic model offers greater flexibility, scalability, and precision by moving away from the UM’s structured grid and using unstructured meshes. Here's why this transition matters:
+Thanks to its use of an unstructured mesh, LFRic atmosphere offers greater flexibility, scalability, and precision. Some benefits of using an unstructured mesh instead of a structured grid are: 
 
-* Improved Resolution: Unstructured meshes provide more accurate representations of complex shapes and regions, allowing for higher-resolution simulations.
+* **Improved Resolution**: Unstructured meshes provide more accurate representations of complex shapes and regions, allowing for higher-resolution simulations.
 
-* Flexibility: Unstructured meshes can easily adapt to different features like coastlines and mountains without changing the grid.
+* **Flexibility**: Unstructured meshes can easily adapt to different features like coastlines and mountains without changing the grid.
 
-* Efficiency: LFRic improves computational efficiency by optimizing resource use and supporting advanced parallelization.
+* **Efficiency**: LFRic improves computational efficiency by optimizing resource use and supporting advanced parallelization.
 
-* Scalability: Unstructured meshes enable higher-order methods, making it easier to scale models for larger, more detailed simulations.
+* **Scalability**: Unstructured meshes enable higher-order methods, making it easier to scale models for larger, more detailed simulations.
 
 To fully benefit from these features, working with unstructured data and understanding the UGRID format, which efficiently handles this type of data, is essential.
-The figure below shows examples of unstructured mesh.
+The figure below shows examples of unstructured meshes.
 
 .. image:: /_static/unstructured_examples.png
    :width: 650px
@@ -35,12 +36,13 @@ UGRID description of unstructured data
    :align: right
    :width: 160px
 
-This approach is more flexible than structured grids because the nodes, edges, and faces do not need to align with predefined grid lines, such as latitude or longitude. 
+The UGRID format is more flexible than structured grids because the nodes, edges, and faces do not need to align with predefined grid lines, such as latitude or longitude. 
 Consequently, the spatial position of an element is independent of its position along the grid dimensions, offering a much more adaptable system. 
 Additionally, the UGRID format allows for mixing faces of different geometries, including 3-sided, 4-sided, 5-sided, and even n-sided faces. 
 This further increases the flexibility of the mesh, allowing for complex geometries that structured grids cannot accommodate.
 
-All model data in this system will be placed either on faces or edges, never on the nodes. For instance, data such as fluxes and vectors typically resides on edges, while other physical quantities are placed on faces. 
+In the context of our LFRic atmosphere unstructured mesh, all model data will be placed either on faces or edges, never on the nodes. For instance, data such as fluxes and vectors typically resides on edges, while other physical quantities are placed on faces. 
+
 Furthermore, each vertical layer shares the same horizontal coordinates, simplifying data handling across layers.
 
 This unstructured mesh approach, which permits mixing different face geometries and the freedom to attach data to various mesh elements, demonstrates a level of flexibility that is difficult to achieve with structured grids.
@@ -66,7 +68,10 @@ in the case of the Unified Model (UM) on the left, 13,400 data points (points an
 Flexibility vs. data volume
 ++++++++++++++++++++++++++++
 To put this into perspective, imagine data is described by a newspaper. In the structured grid approach, it's like reading a pamphlet—simple and compact. In the unstructured case, however, it's like reading an entire novel. 
-This illustrates that while unstructured data offers greater flexibility, it also comes with a higher data cost.
+
+To put this into perspective, imagine data is described by a newspaper. In the structured grid approach, it's like reading a pamphlet—simple and compact. In the unstructured case, however, it's like reading an entire novel. This illustrate an important concept:
+.. important:: 
+   While unstructured data offers greater flexibility, it also comes with a higher data cost.
 
 UGRID can support both 2D and 3D meshes. In the GungHo formulation, cells are 3D, and it's even possible to represent LFRic data on a 3D UGRID mesh using irregular cubes. 
 For example, fluxes could be represented on all six faces of a cube—four horizontal directions plus upward and downward directions. However, to minimize the amount of coordinate data and reduce processing time, we currently focus on 2D meshes for diagnostic data output, especially for typical use cases.
@@ -86,7 +91,7 @@ nstead, the coordinates map to the mesh dimension. If you want to extract data f
 
 Let’s consider an example. To find the location of a specific element, such as a face, you need to examine its connectivity and perform an indexing operation to fetch the relevant data. This process has to be repeated for all 5 million faces in the mesh. The operation involves determining which faces are within the specified region and which are not. This is a computationally intensive task, requiring specialized libraries and powerful computing resources.
 
-When dealing with Limited Area Models (LAMs), we focus on a smaller section of the LFRic sphere. While the LFRic LAM grids and UM LAM grids may appear similar on the surface (using rotated poles and grid boxes arranged into rows and columns), LFRic will output UGRID data. Therefore, the UGRID tools and operations are also applicable to LFRic LAMs.
+When dealing with Limited Area Models (LAMs), we focus on a smaller section of the LFRic cube-sphere. While the LFRic LAM grids may appear similar to a structured lat-lon grid on the surface (using rotated poles and grid boxes arranged into rows and columns), LFRic will output UGRID data. Therefore, the UGRID tools and operations are also applicable to LFRic LAMs.
 
 Cubed sphere mesh
 -----------------
@@ -95,8 +100,8 @@ LFRic Atmosphere uses a cubed sphere mesh. Meshes are named after the number cel
 
 .. video:: /_static/mesh_animation.mp4
    :loop:
-
-*Visualisation of a C16 mesh and how the mesh on a cube is projected to a sphere.*
+   :align: center
+   :caption: Visualisation of a C16 mesh and how the mesh on a cube is projected to a sphere.
 
 The used projection of squares on a cube surface to a sphere causes that mesh sizes have different lengths in km. Representative length scales for mesh resolutions are given in the table below.
 
