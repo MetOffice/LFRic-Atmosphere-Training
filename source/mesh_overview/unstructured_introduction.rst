@@ -157,7 +157,7 @@ In traditional structured grid systems, data is plotted in 2D using Matplotlib. 
 
 For unstructured grids, PyVista and VTK replace Matplotlib. VTK is a versatile tool used for both visualization and mesh processing through C++ implementation, which also supports number crunching. GeoVista handles the cartographic elements in unstructured grids, performing similar functions as Cartopy. Both PyVista and GeoVista can leverage GPU acceleration, enhancing performance for both graphical rendering and computational analysis.
 
-Despite the underlying usage of languages like FORTRAN and C++ in visualization tools, Python serves as the interface for data interaction with these tools during user workflows.
+Despite the underlying usage of languages like FORTRAN and C++ in visualisation tools, Python serves as the interface for data interaction with these tools during user workflows.
 
 
 Regridding unstructured data
