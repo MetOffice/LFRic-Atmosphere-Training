@@ -3,7 +3,8 @@ The unstructured world
 
 Unstructured meshes and the UGRID format represent the future of scientific data delivery.
 As computational models evolve, especially in the realm of climate and weather modelling, transitioning to these new formats will be crucial for effective data handling. 
-The unstructured world section will explore how unstructured data is transforming workflows, why it is important, and how scientists can adapt their practices to support these advancements.
+.. important::
+    The unstructured world section will explore how unstructured data is transforming workflows, why it is important, and how scientists can adapt their practices to support these advancements.
 
 Unstructured meshes offer greater flexibility and precision compared to structured grids, making them essential for data evaluation and verification. 
 The section will explore the challenges and benefits of unstructured data and the technical details of using the UGRID format.
