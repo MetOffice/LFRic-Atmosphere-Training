@@ -11,7 +11,7 @@ Unstructured meshes offer greater flexibility and precision compared to structur
 The section will explore the challenges and benefits of unstructured data and the technical details of using the UGRID format.
 
 Features of unstructured meshes in LFRic atmosphere model
---------------------------------------------------
+----------------------------------------------------------
 
 Thanks to its use of an unstructured mesh, LFRic atmosphere offers greater flexibility, scalability, and precision. Some benefits of using an unstructured mesh instead of a structured grid are: 
 
@@ -70,8 +70,8 @@ Flexibility vs. data volume
 To put this into perspective, imagine data is described by a newspaper. In the structured grid approach, it's like reading a pamphlet—simple and compact. In the unstructured case, however, it's like reading an entire novel. 
 
 To put this into perspective, imagine data is described by a newspaper. In the structured grid approach, it's like reading a pamphlet—simple and compact. In the unstructured case, however, it's like reading an entire novel. This illustrate an important concept:
-.. important:: 
-   While unstructured data offers greater flexibility, it also comes with a higher data cost.
+
+.. important:: While unstructured data offers greater flexibility, it also comes with a higher data cost.
 
 UGRID can support both 2D and 3D meshes. In the GungHo formulation, cells are 3D, and it's even possible to represent LFRic data on a 3D UGRID mesh using irregular cubes. 
 For example, fluxes could be represented on all six faces of a cube—four horizontal directions plus upward and downward directions. However, to minimize the amount of coordinate data and reduce processing time, we currently focus on 2D meshes for diagnostic data output, especially for typical use cases.
