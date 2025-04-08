@@ -100,7 +100,7 @@ Key features of regridding include:
 
 Visualising unstructured data
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-For unstructured data visualization, PyVista and GeoVista are the primary tools used. While Matplotlib and Cartopy have traditionally been used for structured data, these tools do not scale well for large unstructured grids.
+For unstructured data visualisation, PyVista and GeoVista are the primary tools used. While Matplotlib and Cartopy have traditionally been used for structured data, these tools do not scale well and struggle to handle high-resolution unstructured meshes.
 
 Traditional tools such as Matplotlib and Cartopy struggle to handle high-resolution unstructured grids. For instance, a C48 mesh has approximately 13,000 faces, and a C1048 mesh (approximately 9.55 km grid spacing at the equator) would require excessive computation and memory resources. With PyVista, a C48 mesh can be rendered in 369 ms, while a C1048 mesh takes 3.87 seconds.
 
