@@ -86,7 +86,13 @@ Each regridder offers various features, including the ability to read and write 
 
 For datasets with masked data, the regridding process ensures that the mask is handled correctly. If the mask from the source grid covers more than a specified threshold of a target grid cell, that target cell is included in the mask. Otherwise, it is excluded from the target grid.
 
-Key features of regridding include flexibility in selecting regridders, the ability to preserve metadata, and efficient handling of masked data.
+Key features of regridding include:
+
+- flexibility in selecting regridders, 
+- the ability to preserve metadata, and 
+- efficient handling of masked data.
+
+
 
 
 .. image:: /_static/regrid.png
