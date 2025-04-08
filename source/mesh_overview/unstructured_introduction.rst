@@ -76,7 +76,7 @@ Tools for unstructured data
 
 Regridding unstructured data
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-In the unstructured grid context, ESMF (Earth System Modelling Framework) is utilized for regridding tasks. Regridding allows for comparison between datasets defined on different meshes, enabling analysis that requires data on specific local representations, such as OSGB, or requires computations suited to structured grids, like zonal means.
+In the unstructured mesh context, [ESMF ](https://earthsystemmodeling.org/)(Earth System Modelling Framework) is utilised for regridding tasks. Regridding allows for comparison between datasets defined on different meshes, enabling analysis that requires data on specific local representations, such as OSGB (Ordnance Survey National Grid) in Britain, or requires computations suited to structured grids, like zonal means.
 
 The regridding process in the unstructured world follows two primary steps: preparation and execution. During the preparation phase, the source and target grids are compared, and weights are calculated using ESMF. The preparation step is computationally intensive, particularly with unstructured grids. In the execution phase, the calculated weights are applied to the data, and a new cube is constructed. This phase typically involves Python libraries such as DASK and SciPy.
 
