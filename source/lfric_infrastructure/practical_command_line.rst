@@ -7,7 +7,6 @@ Before showing how to run the model as part of Cylc workflows, this practical in
 Use subversion to checkout the code:
 
 .. code-block:: text
-   :linenos:
        
    mkdir practical_command_line
    cd  practical_command_line
@@ -16,7 +15,6 @@ Use subversion to checkout the code:
 The model build requires you to load environment modules on most platforms. Assuming you want to run this practical on the Met Office Azure Spice platform, you can load the module and set the compiler with:
 
 .. code-block:: bash
-   :linenos:
       
    ml use ~lfricadmin/lmod
    ml lfric
@@ -24,7 +22,6 @@ The model build requires you to load environment modules on most platforms. Assu
 See the documentation for the `LFRic Development Environment <https://code.metoffice.gov.uk/trac/lfric/wiki/DevelopmentEnvironment>`_ for how to activate the environment for other platforms. Now compile the model with:
 
 .. code-block:: text
-   :linenos:
    :emphasize-lines: 2
    
    cd lfric_apps
@@ -35,7 +32,6 @@ The code contains an example configuration, colloquially called "canned configur
 Change to that folder and run the example:
 
 .. code-block:: text
-   :linenos:
    :emphasize-lines: 2
    
    cd applications/lfric_atm/example      
@@ -44,7 +40,6 @@ Change to that folder and run the example:
 The namelist file ``configuration.nml`` controls how the model is run. Redirect the standard output to a text file to examine later:
 
 .. code-block:: bash
-   :linenos:
       
    ../bin/lfric_atm configuration.nml > log.txt
 
@@ -57,7 +52,6 @@ To gain familiarity with the model, try to add your own print statement at the e
 .. hint:: You can write to standard out by adding the following Fortran code
 
    .. code-block:: fortran
-      :linenos:
 
       write( log_scratch_space, '(A)' ) "###_DEBUG_#1 END OF TIME STEP"
       call log_event( log_scratch_space, LOG_LEVEL_INFO )

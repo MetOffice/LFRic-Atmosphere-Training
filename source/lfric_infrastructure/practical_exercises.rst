@@ -16,7 +16,6 @@ Practical 3: Model build and  stem tests
 Check out the source code and run lfric_atm_developer `rose stem test <https://metomi.github.io/rose/doc/html/tutorial/rose/furthertopics/rose-stem.html>`_ and the related `Cylc <https://cylc.github.io/cylc-doc/latest/html/index.html>`_ workflow to compile the model:
 
 .. code-block:: bash
-   :linenos:
    :emphasize-lines: 4,5
 
    fcm co fcm:lfric_apps.x_tr lfric_apps_tr

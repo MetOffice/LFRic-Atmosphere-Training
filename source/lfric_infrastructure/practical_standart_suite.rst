@@ -7,7 +7,6 @@ This practical introduces the LFRic Apps Standard Suite to learn how to run the 
 LFRic Apps Standard Suites are available for several computers. Workflow IDs are documented on the `LFRic Apps wiki pages <https://code.metoffice.gov.uk/trac/lfric_apps#WorkingwithLFRicApps>`_. Assuming you want to run the exercise on the Met Office Azure Spice platform, you can checkout the standard suite with:
 
 .. code-block:: bash
-   :linenos:
    
    rosie co u-dn674
    mv ~/roses/u-dn674 ~/cylc-src/lfric_apps_standard_suite
@@ -25,7 +24,6 @@ Change to ``~/cylc-src/lfric_apps_standard_suite`` and explore the workflow in a
 Start the workflow with:
 
 .. code-block:: bash
-   :linenos:
    
    cd ~/cylc-src/lfric_apps_standard_suite
    cylc vip
