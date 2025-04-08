@@ -102,7 +102,7 @@ Visualising unstructured data
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 For unstructured data visualisation, PyVista and GeoVista are the primary tools used. While Matplotlib and Cartopy have traditionally been used for structured data, these tools do not scale well and struggle to handle high-resolution unstructured meshes.
 
-Traditional tools such as Matplotlib and Cartopy struggle to handle high-resolution unstructured grids. For instance, a C48 mesh has approximately 13,000 faces, and a C1048 mesh (approximately 9.55 km grid spacing at the equator) would require excessive computation and memory resources. With PyVista, a C48 mesh can be rendered in 369 ms, while a C1048 mesh takes 3.87 seconds.
+For instance, a C48 mesh has approximately 13,000 faces, and a C1048 mesh (approximately 9.55 km grid spacing at the equator) would require excessive computation and memory resources for Matplotlib and Cartopy. It would take them around 13.5s to render a C48 and 2h for a C1048! With PyVista, a C48 mesh can be rendered in 369 ms, while a C1048 mesh takes 3.87 seconds.
 
 Unstructured visualization tools include VTK, a GPU-accelerated toolkit for visualization and mesh processing, and Paraview, a parallel visualization application. PyVista provides a high-level interface for 3D visualization, and GeoVista manages cartographic elements. The combination of these tools offers a paradigm shift by enabling efficient GPU-powered visualization and interactive user experiences.
 
