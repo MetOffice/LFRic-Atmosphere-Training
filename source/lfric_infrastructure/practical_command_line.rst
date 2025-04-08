@@ -21,7 +21,7 @@ The model build requires you to load environment modules on most platforms. Assu
    ml use ~lfricadmin/lmod
    ml lfric
 
-See the documentation for the `LFRic Development Enviroment <https://code.metoffice.gov.uk/trac/lfric/wiki/DevelopmentEnvironment>`_ for how to activate the environment for other platforms. Now compile the model with:
+See the documentation for the `LFRic Development Environment <https://code.metoffice.gov.uk/trac/lfric/wiki/DevelopmentEnvironment>`_ for how to activate the environment for other platforms. Now compile the model with:
 
 .. code-block:: text
    :linenos:
