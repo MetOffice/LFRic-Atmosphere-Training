@@ -166,10 +166,37 @@ Despite the underlying usage of languages like FORTRAN and C++ in visualisation 
 
 
 Regridding unstructured data
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In the unstructured mesh context, [ESMF ](https://earthsystemmodeling.org/) (Earth System Modelling Framework) is utilised for regridding tasks. Regridding allows for comparison between datasets defined on different meshes, enabling analysis that requires data on specific local representations, such as OSGB (Ordnance Survey National Grid) in Britain, or requires computations suited to structured grids, like zonal means.
+
+The regridding process in the unstructured world follows two primary steps: preparation and execution. During the preparation phase, the source and target grids are compared, and weights are calculated using ESMF. The preparation step is computationally intensive, particularly with unstructured grids. In the execution phase, the calculated weights are applied to the data, and a new cube is constructed. This phase typically involves Python libraries such as DASK and SciPy.
+
+Different types of regridders are available depending on the source and target grid types. These include Mesh-to-Grid, Grid-to-Mesh, and Area-Weighted Regridders.
+
+Each regridder offers various features, including the ability to read and write cubes, perform area-weighted regridding, and preserve metadata during operations. Additionally, the capability to load and save regridders is supported.
+
+For datasets with masked data, the regridding process ensures that the mask is handled correctly. If the mask from the source grid covers more than a specified threshold of a target grid cell, that target cell is included in the mask. Otherwise, it is excluded from the target grid.
+
+Key features of regridding include:
+
+- flexibility in selecting regridders, 
+- the ability to preserve metadata, and 
+- efficient handling of masked data.
+
+
+
 
 .. image:: /_static/regrid.png
    :width: 400px
 
 Visualising unstructured data
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+For unstructured data visualisation, PyVista and GeoVista are the primary tools used. While Matplotlib and Cartopy have traditionally been used for structured data, these tools do not scale well and struggle to handle high-resolution unstructured meshes.
+
+For instance, a C48 mesh has approximately 13,000 faces, and a C1048 mesh (approximately 9.55 km grid spacing at the equator) would require excessive computation and memory resources for Matplotlib and Cartopy. It would take them around 13.5s to render a C48 and 2h for a C1048! With PyVista, a C48 mesh can be rendered in 369 ms, while a C1048 mesh takes 3.87 seconds.
+
+Unstructured visualisation tools include VTK, a GPU-accelerated toolkit for visualisation and mesh processing, and Paraview, a parallel visualisation application. PyVista provides a high-level interface for 3D visualisation , and GeoVista manages cartographic elements. The combination of these tools offers a paradigm shift by enabling efficient GPU-powered visualisation and interactive user experiences.
+
+PyVista is a 3D visualisation engine that leverages GPU power for scalable rendering. It offers both visualisation and computational capabilities, including a high-level API and filters. PyVista integrates seamlessly with modern scientific workflows, such as Jupyter notebooks.
+
+GeoVista provides cartographic capabilities for PyVista, supporting various map projections, coastlines, texture mapping, and regional extraction. It is compatible with Iris, as well as other scientific libraries like NumPy and Xarray.
