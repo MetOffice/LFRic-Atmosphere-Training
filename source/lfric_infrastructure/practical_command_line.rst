@@ -51,7 +51,7 @@ The namelist file ``configuration.nml`` configures the model run. Redirect the s
 
 Explore the file ``log.txt`` and the other output files.
 
-**Add debug output to model**
+**Add info message to model output**
 
 To gain familiarity with the model, try to add your own print statement at the end of each time step (and a different print statement after time step 72). Search the code for the log messages available in ``log.txt`` (e.g. with ``grep -R "End of timestep" *``) to find where to change the code and write such an output. Adjust the code, re-compile, and re-run the model. Can you see your new message in the output?
 
@@ -59,13 +59,13 @@ To gain familiarity with the model, try to add your own print statement at the e
 
    .. code-block:: fortran
 
-      write( log_scratch_space, '(A)' ) "###_DEBUG_#1 END OF TIME STEP"
+      write( log_scratch_space, '(A)' ) "###_INFO_#1 END OF TIME STEP"
       call log_event( log_scratch_space, LOG_LEVEL_INFO )
 
       if (model_clock%get_step() .lt. 72) then
-         write( log_scratch_space, '(A)' ) "###_DEBUG_#2 THE WEATHER IS FINE 20 DEG C"
+         write( log_scratch_space, '(A)' ) "###_INFO_#2 THE WEATHER IS FINE 20 DEG C"
       else
-         write( log_scratch_space, '(A)' ) "###_DEBUG_#2 ENJOY THE MODEL TUTORIAL" 
+         write( log_scratch_space, '(A)' ) "###_INFO_#2 ENJOY THE MODEL TUTORIAL"
       endif
       call log_event( log_scratch_space, LOG_LEVEL_INFO )
 
