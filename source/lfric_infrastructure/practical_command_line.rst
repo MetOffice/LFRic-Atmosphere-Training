@@ -29,7 +29,7 @@ See the documentation for the `LFRic Development Environment <https://code.metof
    cd lfric_apps
    ./build/local_build.py -a lfric_atm
 
-The compiled model executable ``lfric_atm`` will be in the folder ``applications/lfric_atm/bin/`` once the compilation finished.
+The compliation will take some time and uses code from the different repositories, algorithms, and kernels. It invokes PSyclone, compiles, and links the code. The compiled model executable ``lfric_atm`` will be in the folder ``applications/lfric_atm/bin/`` once the compilation finished.
 
 **Run the model**
 
