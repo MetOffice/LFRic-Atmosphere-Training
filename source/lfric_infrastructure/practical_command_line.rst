@@ -43,7 +43,7 @@ Change to that folder and run the example:
    cd applications/lfric_atm/example      
    ../bin/lfric_atm configuration.nml
 
-The namelist file ``configuration.nml`` controls how the model is run. Redirect the standard output to a text file to examine later:
+The namelist file ``configuration.nml`` configures the model run. Redirect the standard output to a text file to examine later:
 
 .. code-block:: bash
       
