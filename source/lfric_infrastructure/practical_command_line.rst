@@ -4,6 +4,8 @@ Practical 1: Run model from command line
 
 Before showing how to run the model as part of Cylc workflows, this practical introduces LFRic Atmosphere as a command line application. It demonstrates how the model can be built and run from the command line, and how to add a message to the standard output of the model.
 
+**Compile the model**
+
 Use subversion to checkout the code:
 
 .. code-block:: text
@@ -28,6 +30,8 @@ See the documentation for the `LFRic Development Environment <https://code.metof
    ./build/local_build.py -a lfric_atm
 
 The compiled model executable ``lfric_atm`` will be in the folder ``applications/lfric_atm/bin/`` once the compilation finished.
+
+**Run the model**
 
 The code contains an example configuration, colloquially called "canned configuration", in  the namelist file `applications/lfric_atm/example/configuration.nml <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/applications/lfric_atm/example/configuration.nml>`_. This configuration sets up a "single column" run of LFRic Atmosphere. It is configured to use the mesh file in the `example <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/applications/lfric_atm/example>`_ directory which is, in reality, not a single column mesh, but a 2x2 biperiodic mesh. However, the configuration is designed in such a way that each column is computed independently from the other columns and, in fact, gives identical results for each column.
 
