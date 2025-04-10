@@ -1,5 +1,6 @@
+*********************
 The structured world
-=====================
+*********************
 
 In a structured grid, 1-dimensional coordinate arrays are combined to form multi-dimensional spatial locations.
 Organising data in this manner allows for systematic and efficient storage of data across a spatial domain.
