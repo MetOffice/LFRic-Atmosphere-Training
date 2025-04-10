@@ -49,7 +49,7 @@ The namelist file ``configuration.nml`` configures the model run. Redirect the s
       
    ../bin/lfric_atm configuration.nml > log.txt
 
-Explore the file ``log.txt`` and the other output files which include three NetCDF files, log messages from the I/O system, and run time profiling.
+Explore the file ``log.txt`` and the other output files which include three NetCDF files, log messages from the I/O system, run time profiling, and checksums of model fields after the last time step for tests.
 
 .. note::  The NetCDF ouput is configured by the file `iodef.xml  <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/applications/lfric_atm/example/iodef.xml#L46>`_ in the example directory.
 
