@@ -72,7 +72,7 @@ Adjust the code, re-compile, and re-run the model. Can you see your new message 
       call log_event( log_scratch_space, LOG_LEVEL_INFO )
 
       if (model_clock%get_step() .lt. 72) then
-         write( log_scratch_space, '(A)' ) "###_INFO_#2 THE WEATHER IS FINE 20 DEG C"
+         write( log_scratch_space, '(A)' ) "###_INFO_#2 THE WEATHER IS FINE"
       else
          write( log_scratch_space, '(A)' ) "###_INFO_#2 ENJOY THE MODEL TUTORIAL"
       endif
