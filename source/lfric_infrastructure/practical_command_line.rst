@@ -68,19 +68,19 @@ To gain familiarity with the model, try to add your own print statement at the e
 
 Adjust the code, re-compile, and re-run the model. Can you see your new message in the output?
 
-.. hint:: You can write to standard out by adding the following Fortran code
+.. hint:: You can write to standard out by adding the following Fortran code at the end of the subroutine gungho_step in the file `gungho_step_mod.x90 <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/science/gungho/source/driver/gungho_step_mod.x90?rev=9055#L217>`_ in the folder ``science/gungho/source/driver``:
 
-   .. code-block:: fortran
+   .. collapse:: Fortran code to write info message
 
-      write( log_scratch_space, '(A)' ) "###_INFO_#1 END OF TIME STEP"
-      call log_event( log_scratch_space, LOG_LEVEL_INFO )
+      .. code-block:: fortran
+         
+                      write( log_scratch_space, '(A)' ) "###_INFO_#1 END OF TIME STEP"
+                      call log_event( log_scratch_space, LOG_LEVEL_INFO )
 
-      if (model_clock%get_step() .lt. 72) then
-         write( log_scratch_space, '(A)' ) "###_INFO_#2 THE WEATHER IS FINE"
-      else
-         write( log_scratch_space, '(A)' ) "###_INFO_#2 ENJOY THE MODEL TUTORIAL"
-      endif
-      call log_event( log_scratch_space, LOG_LEVEL_INFO )
-
-   at the end of the subroutine gungho_step in the file `gungho_step_mod.x90 <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/science/gungho/source/driver/gungho_step_mod.x90?rev=9055#L217>`_ in the folder ``science/gungho/source/driver``.
+                      if (model_clock%get_step() .lt. 72) then
+                         write( log_scratch_space, '(A)' ) "###_INFO_#2 THE WEATHER IS FINE"
+                      else
+                         write( log_scratch_space, '(A)' ) "###_INFO_#2 ENJOY THE MODEL TUTORIAL"
+                      endif
+                      call log_event( log_scratch_space, LOG_LEVEL_INFO )
 
