@@ -1,8 +1,10 @@
 name: lfric-atmos-training
 channels:
 - conda-forge
+
 dependencies:
 - python>=3.6
 - sphinx
 - sphinx_rtd_theme
 - sphinxcontrib-video
+- sphinx-toolbox
