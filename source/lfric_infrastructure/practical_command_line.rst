@@ -14,14 +14,18 @@ Use subversion to checkout the code:
    cd  practical_command_line
    svn co https://code.metoffice.gov.uk/svn/lfric_apps/main/trunk lfric_apps
    
-The model build requires you to load environment modules on most platforms. Assuming you want to run this practical on the Met Office Azure Spice platform, you can load the module and set the compiler with:
+This exercise requires to setup the build environment correctly and to select the compiler. The instructions for this depend on where you run this exercise. Setup commands for some supported platforms are provided below:
 
-.. code-block:: bash
-      
-   ml use ~lfricadmin/lmod
-   ml lfric
+.. collapse:: Met Office Azure Spice
 
-See the documentation for the `LFRic Development Environment <https://code.metoffice.gov.uk/trac/lfric/wiki/DevelopmentEnvironment>`_ for how to activate the environment for other platforms. Now compile the model with:
+              .. code-block:: text
+
+                              ml use ~lfricadmin/lmod
+                              ml lfric
+
+See the documentation for the `LFRic Development Environment <https://code.metoffice.gov.uk/trac/lfric/wiki/DevelopmentEnvironment>`_ for how to activate the environment for other platforms.
+
+Now compile the model with:
 
 .. code-block:: text
    :emphasize-lines: 2
