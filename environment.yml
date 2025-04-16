@@ -8,3 +8,6 @@ dependencies:
 - sphinx_rtd_theme
 - sphinxcontrib-video
 - sphinx-toolbox
+- pip:
+  # works for pip packages
+  - git+https://github.com/bonartm/sphinxcontrib-quizdown.git

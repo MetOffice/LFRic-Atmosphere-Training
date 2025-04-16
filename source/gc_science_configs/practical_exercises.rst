@@ -22,15 +22,15 @@ Look for the workflow which fulfills these criteria **C64 coupled climate standa
 Exercise 2: Explore tasks in a GC-LFRic workflow
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Checkout the global coupled workflow - ``rosie checkout <suite-id>``
+Checkout the global coupled workflow - ``rosie checkout <suite-id>``
 
 Move to directory containing the workflow and explore the files inside- ``cd ~/roses/<suite-id>``
 
 Start workflow in hold mode to explore cylc gui - ``rose suite-run -- --hold``
 
-Q – How do you change views from 1 to 2 to 3?
+Q - How do you change views from 1 to 2 to 3?
 
-Q – Which task is where the forecast runs?
+Q - Which task is where the forecast runs?
 
 
 nputs and outputs for GC-LFRic workflows
@@ -115,7 +115,7 @@ The aim of this practical is to gain experience in running and analysing climate
 
    As scientists we want to explore how climate models perform and respond to changes. How sensitive are they to   CO2 or what impact does an eddy parameterisation have on ocean circulation. **Think** about what parameters you    would want to test within a global model? Once you have an idea, think about the next questions. <200b>
 
-   * Where you might change this – is it in the **configuration namelist** settings within the workflow or in a ** source code**?<200b>
+   * Where you might change this - is it in the **configuration namelist** settings within the workflow or in a ** source code**?<200b>
 
    * Browse the source code and workflow to look see how you might make this change. <200b>
 
@@ -158,10 +158,10 @@ The atmospheric diagnostic “v component of wind on pressure levels" is missing
 
 Experiment 1 - CO2 x 10
 ^^^^^^^^^^^^^^^^^^^^^^^
-* cd into ``app/lfric_atm`` 
+* cd into ``app/lfric_atm``
 * open the ``rose-app.conf``
 * search for ``co2_mix_ratio``
-* change this value from 5.60353e-04 to 5.60353e-03
+* change this value from 5.60353e-04 to 5.60353e-03
 
 .. code-block:: fortran
    :caption: trunk/app/lfric_atm/rose-app.conf
@@ -181,7 +181,7 @@ Experiment 1 - CO2 x 10
     so2_mix_ratio=0.0
 
 
-Experiment 2 – Reduce the rotation of the earth
+Experiment 2 - Reduce the rotation of the earth
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 * cd ``app/lfric_atm``
 * open ``rose-app-conf``
@@ -200,11 +200,11 @@ Experiment 2 – Reduce the rotation of the earth
     rd=287.05
     scaling_factor=1.0
 
-Experiment 3 – coupling remove influence of evaporation from ocean
+Experiment 3 - coupling remove influence of evaporation from ocean
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 * cd ``app/coupled/file``
 * open ``namcouple``
-* Observe namcouple file – what is it setting?
+* Observe namcouple file - what is it setting?
 * adjust definition of coupling for ``lf_evap``
 
 .. code-block:: text
@@ -223,10 +223,10 @@ Experiment 3 – coupling remove influence of evaporation from ocean
 
 .. note:: Note on the namcouple file......
 
-Experiment 4 – make sea ice black
+Experiment 4 - make sea ice black
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* create JULES branch - See: Working Practices: Create a ticket, Working Practices: Create a branch 
+* create JULES branch - See: Working Practices: Create a ticket, Working Practices: Create a branch
 
 * adjust hard coded values for the albedo in ``src/control/shared/jules_sea_seaice_mod.F90`` 
   (set ``calbicev_cice``, ``albicei_cice``, ``albsnowv_cice``, ``albsnowi_cice``, ``albpondv_cice``,               ``albpondi_cice``, ``dalb_mlt_cice``, ``dalb_mlts_v_cice`` and ``dalb_mlts_i_cice`` to 0.0)
@@ -262,7 +262,7 @@ Plotting your data
 
 * Script:/home/h02/lroberts/ngux/lfric_exercise/iris_ngux_module3.py
 
-* Select data for your control and experimental setups 
+* Select data for your control and experimental setups
 
 * Choose the diagnostic to plot
 
@@ -271,3 +271,4 @@ Plotting your data
 
 .. image:: /_static/plotting.png
    :width: 650px
+   
