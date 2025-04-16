@@ -1,11 +1,13 @@
 name: lfric-atmos-training
 channels:
 - conda-forge
+
 dependencies:
 - python>=3.6
 - sphinx
 - sphinx_rtd_theme
 - sphinxcontrib-video
+- sphinx-toolbox
 - pip:
   # works for pip packages
   - git+https://github.com/bonartm/sphinxcontrib-quizdown.git
