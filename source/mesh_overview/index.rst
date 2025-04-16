@@ -10,6 +10,10 @@ This module introduces the unstructured world of meshes which are now used in LF
    * To be aware of
    * To become familiar with
 
-.. include:: structured_overview.rst
-.. include:: unstructured_introduction.rst
-.. include:: practical_exercises.rst
+.. toctree::
+   :maxdepth: 1
+   :caption: Contents
+
+   structured/structured_overview
+   unstructured/unstructured_introduction
+   exercises/practical_exercises
