@@ -7,7 +7,7 @@ The Iris Mesh Tutorial provides training on handling LFRic unstructured mesh dat
 All tutorial content is delivered through interactive Jupyter notebooks, which combine explanatory material and practical exercises for students.
 There are five Jupyter notebook which the sections below provide guidance on how to access them.
 
-Download the tutorial from GitLab
+Download the tutorial from GitHub
 -------------------------------------
 
 To download the tutorial materials, follow these steps:
