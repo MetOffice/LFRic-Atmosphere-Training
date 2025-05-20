@@ -2,7 +2,7 @@
 Practical using unstrucutrued data in Jupyter Lab
 **************************************************
 
-The Iris Mesh Tutorial provides training on handling LFRic unstructured mesh data using Iris and related tools.
+The Mesh Tutorial provides training on handling LFRic unstructured mesh data.
 
 All tutorial content is delivered through interactive Jupyter notebooks, which combine explanatory material and practical exercises for students.
 There are five Jupyter notebook which the sections below provide guidance on how to access them.
