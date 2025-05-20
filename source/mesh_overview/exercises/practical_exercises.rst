@@ -18,7 +18,7 @@ To download the tutorial materials, follow these steps:
 
  .. code-block:: console
 
-     mkdir iris-tutorials
+     mkdir data-tutorials
      cd iris-tutorials
 
 3. Clone the repository into the new directory:
