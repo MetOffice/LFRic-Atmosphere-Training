@@ -54,7 +54,7 @@ Once the environment is set up:
     
     conda activate meshtut_safelocked_env
 
-2. Navigate to the /notebooks directory inside the cloned repository:
+2. Navigate to the notebooks directory inside the cloned repository:
 
  .. code-block:: console
 
