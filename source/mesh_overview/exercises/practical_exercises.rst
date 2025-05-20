@@ -1,6 +1,6 @@
-**************************************************
-Practical using unstrucutrued data in Jupyter Lab
-**************************************************
+************************************
+Practical using unstrucutrued data
+************************************
 
 The Mesh Tutorial provides training on handling LFRic unstructured mesh data.
 
@@ -8,7 +8,7 @@ All tutorial content is delivered through interactive Jupyter notebooks, which c
 There are five Jupyter notebook which the sections below provide guidance on how to access them.
 
 Download the tutorial from GitHub
--------------------------------------
+----------------------------------
 
 To download the tutorial materials, follow these steps:
 
