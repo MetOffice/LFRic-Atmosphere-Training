@@ -67,7 +67,7 @@ Once the environment is set up:
     jupyter lab
 
 .. important::
-    Always launch Jupyter Lab from within the /notebooks directory to ensure that paths and files are correctly located.
+    Always launch Jupyter Lab from within the notebooks directory to ensure that paths and files are correctly located.
 
 After running the jupyter lab command, a new browser window or tab should automatically open, displaying the Jupyter Lab interface.
 If the browser does not open automatically, you can manually copy and paste the URL displayed in the terminal into your browser.
