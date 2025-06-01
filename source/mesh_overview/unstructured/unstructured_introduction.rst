@@ -202,160 +202,88 @@ PyVista is a 3D visualisation engine that leverages GPU power for scalable rende
 
 GeoVista provides cartographic capabilities for PyVista, supporting various map projections, coastlines, texture mapping, and regional extraction. It is compatible with Iris, as well as other scientific libraries like NumPy and Xarray.
 
-.. admonition:: Quiz
+.. quizdown::
 
-   **1. What are two reasons for moving from structured to unstructured meshes in climate and weather models?** 
+   ## What is the main reason for moving from structured to unstructured meshes in climate and weather models?
+   - [ ] Simpler array indexing 
+   - [ ] Compatibility with Excel 
+   - [x] Increased flexibility and precision
+   - [ ] Reduced data storage size
+   - [ ] Compatibility with point data in Geographic information System
 
-      a) Simpler array indexing 
+   ## Is this sentence true or false: The UGRID format forces data to align with predefined latitude-longitude grid lines.
+   - [ ] true
+   - [x] false
 
-      b) Compatibility with Excel 
+   ## In LFRic, where is model data placed in the unstructured mesh?
+   - [ ] Only on nodes
+   - [ ] Only on edges
+   - [x] On faces and edges
+   - [ ] Randomly assigned
 
-      c) Increased flexibility and precision 
-
-      d) Reduced data storage size 
-
-      e) Compatibility with point data in Geographic information System
-
-      *Answer: c and e*
-
-   **2. Is this sentence true or false: The UGRID format forces data to align with predefined latitude-longitude grid lines.** 
-
- 	   *Answer: false*
-
-   **3. In LFRic, where is model data placed in the unstructured mesh?** 
-
-      a) Only on nodes 
-
-      b) Only on edges
-
-      c) On faces and edges 
-
-      d) Randomly assigned
- 	
-      *Answer: c*
-
-   **4. Match the feature with its benefit.**
-
-      a) Scalability 
-
-      b) Flexibility 
-
-      c) Improved Resolution 
-
-      d) Efficiency
-
-
-      A) Can adapt to coastlines and mountains
-
-      B) Allows larger, more detailed simulations
-
-      C) Provides accurate representation of complex areas
-      
-      D) Optimizes resource use
+   ## What does each element in an unstructured mesh (e.g., node, edge, face) have that differs from structured grids?
+   - [x] Each element has its own independent description of geographic location
+   - [ ] All of them have the same size
+   - [ ] All of them the same shapes
    
-      *Answer: a-B, b-A, c-C, d-D* 
+   ## In an unstructured mesh with 5 million cells, approximately how many data points are required to describe the domain?
+   - [ ] 5 million
+   - [ ] 13400
+   - [x] 40 million
+   - [ ] 10 million
 
-   **5. What does each element in an unstructured mesh (e.g., node, edge, face) have that differs from structured grids?** 
+   ## Is the following sentence true or false: Unstructured meshes reduce the amount of coordinate data needed compared to structured grids.
+   - [x] false
+   - [ ] true
 
- 
-	   *Answer: Each element has its own independent description of geographic location.* 
+   ## Describe the “newspaper” analogy used to compare structured and unstructured data.
+   - [x] Structured data is like a pamphlet (compact and simple), while unstructured data is like a novel (detailed and complex).
+   - [ ] Structured data is like a handwritten journal, while unstructured data is like a spreadsheet with labeled rows.
+   - [ ] Structured data is like a comic book with speech bubbles, while unstructured data is like a dictionary.
+   - [ ] Structured data is like a calendar (organized and dated), while unstructured data is like a stack of letters with no order.
 
+   ## In a C16 mesh, how many cells exist per horizontal layer?
+   - [x] 1536
+   - [ ] 256
+   - [ ] 16
+   - [ ] 6
 
-   **6. In an unstructured mesh with 5 million cells, approximately how many data points are required to describe the domain?** 
+   ## Fill in the Blank: A C448 mesh has an approximate horizontal resolution of _______ km.
+   - [ ] 26.6
+   - [ ] 16.2
+   - [ ] 36.2
+   - [x] 20.6
 
-      a) 5 million 
-      b) 13,400 
-      c) 40 million 
-      d) 10 million 
- 
-      *Answer: c* 
+   ## What is the role of Iris in the context of UGRID data?
+   - [ ] GPU rendering
+   - [x] Mathematical and statistical analysis
+   - [ ] File compression
+   - [ ] Cloud storage
 
+   ## Is the following sentence true or false: PyVista and GeoVista are preferred over Matplotlib for high-resolution unstructured mesh visualisation.
+   - [x] true
+   - [ ] false
 
-   **7. Is the following sentence true or false: Unstructured meshes reduce the amount of coordinate data needed compared to structured grids.** 
+   ## What is Iris used for?
+   - [ ] Cartographic visualisation for unstructured data
+   - [x] Earth Science data processing
+   - [ ] 3D mesh visualisation and GPU acceleration
+   - [ ] Low-level mesh and visualisation backend
+
+   ## What tool is used to compute regirding weights in the unstructured world?
+   - [ ] NumPy
+   - [ ] Cartopy
+   - [x] ESMF
+   - [ ] Matplotlib
+
+   ## Why is regirding more computationally expensive in unstructured grids?
+   - [ ] Because each element must be described individually
+   - [ ] Because weights must be computed for non-aligned, irregular shapes
+   - [x] Both of them
+   - [ ] None of them
+
+   ## Is the following sentence true or false: During regirding, metadata can be preserved using appropriate tools and configurations.
+   - [x] true
+   - [ ] false
+
   
-      *Answer: false* 
-
-   **8. Describe the “newspaper” analogy used to compare structured and unstructured data.**
-
- 
- 	   *Answer: Structured data is like a pamphlet (compact and simple), while unstructured data is like a novel (detailed and complex).* 
-
-
-   **9. In a C16 mesh, how many cells exist per horizontal layer?**
-
-      a) 1536
-      b) 256
-      c) 16
-      d) 6 
-
-      *Answer: a (6 * 16 * 16)* 
-
-   **10. Fill in the Blank: A C448 mesh has an approximate horizontal resolution of _______ km.** 
-
- 
-      *Answer: 20.6* 
-
-
-   **11. What is the role of Iris in the context of UGRID data?**
-
-      a) GPU rendering 
-
-      b) Mathematical and statistical analysis 
-
-      c) File compression 
-
-      d) Cloud storage 
-  
-      *Answer: b*
-
-   **12. Is the following sentence true or false: PyVista and GeoVista are preferred over Matplotlib for high-resolution unstructured mesh visualisation.** 
-
- 
-	   *Answer: true*
-
-
-   **13. Match the tool to its function.** 
-
-      a) Iris 
-
-      b) PyVista 
-
-      c) GeoVista 
-
-      d) VTK 
-
-      A) Cartographic visualisation for unstructured data 
-
-      B) Earth Science data processing 
-
-      C) 3D mesh visualisation and GPU acceleration 
-
-      D) Low-level mesh and visualisation backend 
-
-      
-      *Answer: a-B, b-C, c-A, d-D* 
-
-
-   **14. What tool is used to compute regirding weights in the unstructured world?** 
- 	 
-      a) NumPy 
-
-      b) Cartopy
-
-      c) ESMF 
-
-      d) Matplotlib 
- 
-      *Answer: c*
-
-   **15. Why is regirding more computationally expensive in unstructured grids?**
-
-      *Answer: Because each element must be described individually, and weights must be computed for non-aligned, irregular shapes.* 
-
-
-   **16. Is the following sentence true or false: During regirding, metadata can be preserved using appropriate tools and configurations.** 
-
-      *Answer: true*
-
-
-   **17. Explain one scenario in environmental science where an unstructured mesh provides significant advantages over a structured grid.**
