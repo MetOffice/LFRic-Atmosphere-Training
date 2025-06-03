@@ -61,8 +61,8 @@ Let's learn more about unstructured meshes in the next section!
 .. quizdown::
 
    ## What is a structured grid?
-   - [ ] A grid where 1D coordinate arrays are combined to form multi-dimensional spatial locations 
-   - [x] A random arrangement of spatial data with no pattern 
+   - [x] A grid where 1D coordinate arrays are combined to form multi-dimensional spatial locations 
+   - [ ] A random arrangement of spatial data with no pattern 
    - [ ] A grid where each point represents time instead of space
    - [ ] A grid based on unstructured data relationships
 
