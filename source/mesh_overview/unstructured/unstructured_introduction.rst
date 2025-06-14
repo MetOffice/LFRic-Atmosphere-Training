@@ -205,85 +205,133 @@ GeoVista provides cartographic capabilities for PyVista, supporting various map 
 .. quizdown::
 
    ## What is the main reason for moving from structured to unstructured meshes in climate and weather models?
-   - [ ] Simpler array indexing 
-   - [ ] Compatibility with Excel 
+   - [ ] Simpler array indexing
+      > No. Unstructured meshes complicate indexing compared to structured ones.
+   - [ ] Compatibility with Excel
+      > Excel compatibility is irrelevant in this context.
    - [x] Increased flexibility and precision
+      > Correct! They offer adaptive resolution and better fit for irregular domains.
    - [ ] Reduced data storage size
+      > No. Unstructured grids often require more metadata, not less.
    - [ ] Compatibility with point data in Geographic information System
+      > While relevant, it’s not the primary reason for the transition.
 
    ## Is this sentence true or false: The UGRID format forces data to align with predefined latitude-longitude grid lines.
    - [ ] true
    - [x] false
+      > Correct! UGRID supports flexible, irregular grid representations.
 
    ## In LFRic, where is model data placed in the unstructured mesh?
    - [ ] Only on nodes
+      > LFRic uses more than just nodes for data placement.
    - [ ] Only on edges
+      > Edges alone don’t provide enough flexibility or resolution.
    - [x] On faces and edges
+      > Correct! Data is placed on both faces and edges.
    - [ ] Randomly assigned
+      > Incorrect! Placement is carefully structured even in unstructured meshes.
 
    ## What does each element in an unstructured mesh (e.g., node, edge, face) have that differs from structured grids?
    - [x] Each element has its own independent description of geographic location
+      > Correct! Unlike structured grids, unstructured grids explicitly define each element’s location.
    - [ ] All of them have the same size
+      > Incorrect! Unstructured grids support variable cell sizes.
    - [ ] All of them the same shapes
+      > No, they can vary in shape depending on geometry needs.
    
    ## In an unstructured mesh with 5 million cells, approximately how many data points are required to describe the domain?
    - [ ] 5 million
+      > This underestimates the complexity—more elements are needed. Hint: Think about vertices, edges, and faces.
    - [ ] 13400
+      > Far too low—this wouldn't even cover vertices.
    - [x] 40 million
+      > Correct! Describing all nodes, edges, faces, and connectivity inflates data.
    - [ ] 10 million
+      > Hint: Is this enough to capture edges and faces too?
 
    ## Is the following sentence true or false: Unstructured meshes reduce the amount of coordinate data needed compared to structured grids.
    - [x] false
+      > Correct! More coordinate data is needed for flexibility and accuracy.
    - [ ] true
 
    ## Describe the “newspaper” analogy used to compare structured and unstructured data.
    - [x] Structured data is like a pamphlet (compact and simple), while unstructured data is like a novel (detailed and complex).
+      > Correct! A pamphlet is compact and ordered, just like structured data.
    - [ ] Structured data is like a handwritten journal, while unstructured data is like a spreadsheet with labeled rows.
+      > Hint: Does this clarify complexity and structure?
    - [ ] Structured data is like a comic book with speech bubbles, while unstructured data is like a dictionary.
+      > This analogy doesn’t meaningfully reflect mesh types.
    - [ ] Structured data is like a calendar (organized and dated), while unstructured data is like a stack of letters with no order.
+      > While plausible, it’s not the analogy used here.
 
    ## In a C16 mesh, how many cells exist per horizontal layer?
    - [x] 1536
+      > Correct! C16 meshes have 1536 horizontal cells.
    - [ ] 256
+      > Incorrect! C16 implies higher density than 256 cells.
    - [ ] 16
+      > No.This refers to resolution tier, not literal cell count.
    - [ ] 6
+      > Far too low for any realistic mesh resolution.
 
    ## Fill in the Blank: A C448 mesh has an approximate horizontal resolution of _______ km.
    - [ ] 26.6
+      > Incorrect! C448 implies higher resolution.
    - [ ] 16.2
+      > Too fine for C448.
    - [ ] 36.2
    - [x] 20.6
+      > Correct! C448 approximates 20.6 km horizontal resolution.
 
    ## What is the role of Iris in the context of UGRID data?
    - [ ] GPU rendering
+      > No. This is not Iris’s function.
    - [x] Mathematical and statistical analysis
+      > Correct! Iris is a Python library for analyzing Earth science data.
    - [ ] File compression
+      > Iris is not a compression utility.
    - [ ] Cloud storage
+      > Cloud storage is unrelated to Iris’s core functionality.
 
    ## Is the following sentence true or false: PyVista and GeoVista are preferred over Matplotlib for high-resolution unstructured mesh visualisation.
    - [x] true
    - [ ] false
+      > Matplotlib lacks native support for unstructured 3D mesh visualization.
 
    ## What is Iris used for?
    - [ ] Cartographic visualisation for unstructured data
+      > No. Iris focuses more on analysis than mapping.
    - [x] Earth Science data processing
+      > Correct! Iris helps process, analyze, and transform scientific datasets. 
    - [ ] 3D mesh visualisation and GPU acceleration
+      > These are handled by tools like PyVista, not Iris.
    - [ ] Low-level mesh and visualisation backend
+      > Incorrect—this refers to libraries like VTK or GeoVista.
 
    ## What tool is used to compute regirding weights in the unstructured world?
    - [ ] NumPy
+      > NumPy is general-purpose and doesn’t support regridding directly.
    - [ ] Cartopy
+      > Cartopy is used for maps, not computing interpolation weights.
    - [x] ESMF
+      > Correct! ESMF (Earth System Modeling Framework) handles regridding, especially for unstructured grids.
    - [ ] Matplotlib
+      > Matplotlib only handles plotting—not weight generation.
 
    ## Why is regirding more computationally expensive in unstructured grids?
    - [ ] Because each element must be described individually
+      > Partially correct, but there's more.
    - [ ] Because weights must be computed for non-aligned, irregular shapes
+      > Also true, but not the full answer.
    - [x] Both of them
+      > Correct! Describing each element and computing complex weights both increase the cost.
    - [ ] None of them
+      > Incorrect! Both factors are key challenges.
 
    ## Is the following sentence true or false: During regirding, metadata can be preserved using appropriate tools and configurations.
    - [x] true
+      > Correct! Libraries like Iris and xESMF preserve metadata when properly configured.
    - [ ] false
+      > Not necessarily, correct tools retain it.
 
   
