@@ -1,7 +1,7 @@
 Assessment and Evaluation of GC configurations
 ==============================================
 
-At the Met Office and across the Partnership, continual evaluation and verification of model output is an          essential part of the development of models. Comparison of model climatology with climatologies from observations  or reanalyses is key to identify systematic biases or model trends.
+At the Met Office and across the Partnership, continual evaluation and verification of model outputs is an essential part of the development process. Comparison of model climatology with those from observations or reanalyses is key to identify systematic biases or model trends.
 
 The Met Office maintains routine tools for validation of GC configurations:
 

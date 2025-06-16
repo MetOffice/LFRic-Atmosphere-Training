@@ -1,5 +1,6 @@
+***********************
 The unstructured world
-======================
+***********************
 
 Unstructured meshes and the UGRID format represent the future of scientific data delivery.
 As computational models evolve, especially in the realm of climate and weather modelling, transitioning to these new formats will be crucial for effective data handling. 
@@ -100,8 +101,8 @@ LFRic Atmosphere uses a cubed sphere mesh. Meshes are named after the number cel
 
 .. video:: /_static/mesh_animation.mp4
    :loop:
-   :align: center
-   :caption: Visualisation of a C16 mesh and how the mesh on a cube is projected to a sphere.
+
+*Visualisation of a C16 mesh and how the mesh on a cube is projected to a sphere.*
 
 The used projection of squares on a cube surface to a sphere causes that mesh sizes have different lengths in km. Representative length scales for mesh resolutions are given in the table below.
 
