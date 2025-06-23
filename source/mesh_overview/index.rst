@@ -14,6 +14,6 @@ This module introduces the unstructured world of meshes which are now used in LF
    :maxdepth: 1
    :caption: Contents
 
-   structured/structured_overview
-   unstructured/unstructured_introduction
+   structured/index.rst
+   unstructured/index.rst
    exercises/practical_exercises

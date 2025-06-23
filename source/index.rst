@@ -37,4 +37,3 @@ Contents of the training course
    gc_science_configs/index.rst
    ral_science_configs/index.rst
 
-
