@@ -47,7 +47,7 @@ This quiz reviews the main ideas from the chapter and tests understanding of the
        > Correct! Unlike structured grids, unstructured grids explicitly define each element’s location.
    1. [ ] All of them have the same size
        > Incorrect! Unstructured grids support variable cell sizes.
-   1. [ ] All of them the same shapes
+   1. [ ] All of them have the same shapes
        > No, they can vary in shape depending on geometry needs.
    
    ## In an unstructured mesh with 5 million cells, approximately how many data points are required to describe the domain?
