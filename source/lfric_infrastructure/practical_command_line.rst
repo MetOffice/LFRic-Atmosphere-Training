@@ -1,12 +1,12 @@
 
-Practical 1: Run model from command line
+Practical 1: Run the model from command line
 ----------------------------------------
 
 Before showing how to run the model as part of Cylc workflows, this practical introduces LFRic Atmosphere as a command line application. It demonstrates how the model can be built and run from the command line, and how to add a message to the standard output of the model.
 
 **Compile the model**
 
-Use subversion to checkout the code:
+Use Subversion to checkout the code:
 
 .. code-block:: text
        
@@ -33,7 +33,7 @@ Now compile the model with:
    cd lfric_apps
    ./build/local_build.py -a lfric_atm
 
-The compliation will take some time and uses code from the different repositories, algorithms, and kernels. It invokes PSyclone, compiles, and links the code. The compiled model executable ``lfric_atm`` will be in the folder ``applications/lfric_atm/bin/`` once the compilation finished.
+The compilation will take some time and uses code from the different repositories, algorithms, and kernels. It invokes PSyclone, compiles, and links the code. The compiled model executable ``lfric_atm`` will be in the folder ``applications/lfric_atm/bin/`` once the compilation finished.
 
 **Run the model**
 
@@ -55,7 +55,7 @@ The namelist file ``configuration.nml`` configures the model run. Redirect the s
 
 Explore the file ``log.txt`` and the other output files which include log messages from the I/O system, run time profiling, `checksums <https://github.com/MetOffice/simulation-systems/discussions/370>`_ of model fields after the last time step for tests, and three NetCDF files. Using the knowledge from module 2 of this training it is possible to open these files and explore the data produced by the model run.
 
-.. note::  The NetCDF ouput is configured by the file `iodef.xml  <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/applications/lfric_atm/example/iodef.xml#L46>`_ in the example directory. It controls the output streams, filenames, written fields, and output frequency.
+.. note::  The NetCDF output is configured by the file `iodef.xml  <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/applications/lfric_atm/example/iodef.xml#L46>`_ in the example directory. It controls the output streams, filenames, written fields, and output frequency.
 
 **Add info message to model output**
 
