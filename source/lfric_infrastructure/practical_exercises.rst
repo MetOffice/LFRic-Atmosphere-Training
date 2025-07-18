@@ -12,7 +12,3 @@ Building and running the model is usually done via `Cylc workflows <https://cylc
 .. include:: practical_stem_test.rst
 
 
-Practical 4: Code change
-------------------------
-
-
