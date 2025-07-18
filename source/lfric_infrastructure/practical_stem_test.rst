@@ -32,3 +32,6 @@ Change to ``lfric_apps`` and confirm that it contains your modified code:
    cylc play <working copy name> # hint: working copy name is lfric_apps
    cylc gui
 
+All tasks in the rose stem test workflow should complete - just adding a few lines to the log files does not break any of the tests. You find output of the rose-stem test in the file ``~/cylc-run/<suite_name>/trac.log`` as explained in the `Testing Your Change <https://metoffice.github.io/simulation-systems/WorkingPractices/testing.html#trac-log>`_ pages.
+
+Let's explore a code change which changes model results next:
