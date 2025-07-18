@@ -9,23 +9,7 @@ Building and running the model is usually done via `Cylc workflows <https://cylc
 
 .. include:: practical_standart_suite.rst
 
-
-Practical 3: Model build and  stem tests
-----------------------------------------
-
-Check out the source code and run lfric_atm_developer `rose stem test <https://metomi.github.io/rose/doc/html/tutorial/rose/furthertopics/rose-stem.html>`_ and the related `Cylc <https://cylc.github.io/cylc-doc/latest/html/index.html>`_ workflow to compile the model:
-
-.. code-block:: bash
-   :emphasize-lines: 4,5
-
-   fcm co fcm:lfric_apps.x_tr lfric_apps_tr
-   cd lfric_apps_tr
-   export CYLC_VERSION=8
-   rose stem --group=lfric_atm_developer
-   cylc play <working copy name>
-   cylc gui
-
-
+.. include:: practical_stem_test.rst
 
 
 Practical 4: Code change
