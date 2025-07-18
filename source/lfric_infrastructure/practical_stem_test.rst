@@ -1,7 +1,7 @@
 Practical 3: Run automated model tests
 --------------------------------------
 
-After learning how to run LFRic Atmosphere as a standalone :ref:`command line application <practical_3_1-caption>` and as part of a :ref:`Cylc workflow <practical_3_2-caption>` this practical introduces the running the automated `rose stem <https://metomi.github.io/rose/doc/html/tutorial/rose/furthertopics/rose-stem.html>`_ tests which are required for model code development follwing the :ref:`working-practices-caption`.
+After learning how to run LFRic Atmosphere as a standalone :ref:`command line application <practical_3_1-caption>` and as part of a :ref:`Cylc workflow <practical_3_2-caption>` this practical introduces running the automated `rose stem <https://metomi.github.io/rose/doc/html/tutorial/rose/furthertopics/rose-stem.html>`_ tests which are required for model code development follwing the :ref:`working-practices-caption`.
 
 Set-up a practical folder and copy in the model code:
 
