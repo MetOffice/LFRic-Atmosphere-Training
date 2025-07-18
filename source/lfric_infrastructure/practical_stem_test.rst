@@ -11,13 +11,13 @@ Set-up a practical folder and copy in the model code:
    cd  practical_stem_test
    fcm co fcm:lfric_apps.x_tr lfric_apps
 
-In the :ref:`command line application practical <practical_3_1-caption>` you modfied the the source code file :ref:`gungho_step_mod.x90 <practical_3_1-hint_code>`. Here you can test if this change is complient with the automated tests. Copy your modified code into the pristine code directory:
+In the :ref:`command line application <practical_3_1-caption>` practical you modfied the source code file :ref:`gungho_step_mod.x90 <practical_3_1-hint_code>`. Here you can test if this change is complient with the automated tests. Copy your modified code into the pristine code directory:
 
 .. code-block:: bash
 
    cp ../practical_command_line/lfric_apps/science/gungho/source/driver/gungho_step_mod.x90 lfric_apps/science/gungho/source/driver/gungho_step_mod.x90
 
-Change to ``lfric_apps`` and confirm that is contains your modified code:
+Change to ``lfric_apps`` and confirm that it contains your modified code:
 
 .. code-block:: bash
 
