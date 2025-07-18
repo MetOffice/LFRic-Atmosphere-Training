@@ -24,11 +24,11 @@ Change to ``lfric_apps`` and confirm that it contains your modified code:
    cd lfric_apps
    svn diff
 
-And now run the test
+**Run the rose stem tests**
 
 .. code-block:: bash
 
    rose stem --group=lfric_atm_developer
-   cylc play <working copy name>
+   cylc play <working copy name> # hint: working copy name is lfric_apps
    cylc gui
 
