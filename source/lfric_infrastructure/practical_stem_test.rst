@@ -38,6 +38,10 @@ A summary of the rose stem test results can be found in the file ``~/cylc-run/lf
 
 .. hint:: Given the benign nature of the model change, we expect all tasks in the rose stem test suite to pass. However, this depends on how the change was implemented. If you copied the :ref:`code <practical_3_1-hint_code>` from the hint in Practical 1 into ``gungho_step_mod.x90``, everything should work as intended.
 
-   To explore how the testing framework handles style violations, you can deliberately introduce a trailing whitespace in your code - for example, by adding a space at the end of a line in ``gungho_step_mod.x90``. This will cause the ``style_checker`` task to fail, demonstrating how the system enforces coding standards.
+**Break the stem test**
 
-   To avoid running the full test workflow again, use the command ``rose stem --group=scripts`` to run only the relevant style-checking tests.
+To explore how the testing framework handles style violations, you can deliberately introduce a trailing whitespace in your code - for example, by adding a space at the end of a line in ``gungho_step_mod.x90``. This will cause the ``style_checker`` task to fail, demonstrating how the system enforces coding standards.
+
+To avoid running the full test workflow again, use the command ``rose stem --group=scripts`` to run only the relevant style-checking tests.
+
+.. hint:: The error message will be in ``~/cylc-run/lfric_apps/run*/log/job/1/style_checker/01/job.err``.
