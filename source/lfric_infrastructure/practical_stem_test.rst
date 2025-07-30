@@ -1,7 +1,9 @@
-Practical 3: Run automated model tests
---------------------------------------
+Practical 3: Run integration tests
+----------------------------------
 
-After learning how to run LFRic Atmosphere as a standalone :ref:`command line application <practical_3_1-caption>` and as part of a :ref:`Cylc workflow <practical_3_2-caption>`, this practical introduces the automated `rose stem <https://metomi.github.io/rose/doc/html/tutorial/rose/furthertopics/rose-stem.html>`_ tests. These tests are required for model code development in accordance with the :ref:`working-practices-caption`.
+In earlier exercises, you learned how to check out the model, modify the source, and run it from the :ref:`command line <practical_3_1-caption>` and via :ref:`Cylc <practical_3_2-caption>`.
+
+This practical introduces integration testing using `rose stem <https://metomi.github.io/rose/doc/html/tutorial/rose/furthertopics/rose-stem.html>`_, which helps ensure your changes work correctly within the system. These tests are essential for contributing code in line with model development :ref:`working practices <working-practices-caption>`.
 
 Set up a new folder for this practical and copy in the model code:
 
