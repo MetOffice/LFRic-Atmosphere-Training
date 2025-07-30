@@ -19,7 +19,7 @@ Change to ``~/cylc-src/lfric_apps_standard_suite`` and explore the workflow in a
 .. figure:: /_static/3/lfric_apps_standard_suite.svg
   :width: 400px
 
-  Graph of the LFRic Apps Standard Suite, a toy model for testing, learning, and developing.
+  Graph of the LFRic Apps Standard Suite, a toy model for testing, learning, and developing - visualised with cylc graph.
 
 Start the workflow with:
 
