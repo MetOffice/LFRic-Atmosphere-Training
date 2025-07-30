@@ -5,7 +5,7 @@ In earlier exercises, you learned how to check out the model, modify the source,
 
 This practical introduces integration testing using `rose stem <https://metomi.github.io/rose/doc/html/tutorial/rose/furthertopics/rose-stem.html>`_, which helps ensure your changes work correctly within the system. These tests are essential for contributing code in line with model development :ref:`working practices <working-practices-caption>`.
 
-Set up a new folder for this practical and copy in the model code:
+Set up a new directory for this practical and copy in the model code:
 
 .. code-block:: bash
 
