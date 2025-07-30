@@ -28,6 +28,8 @@ Change into the ``lfric_apps`` directory and confirm that it contains your modif
 
 **Run the rose stem tests**
 
+Rose stem tests are organised into `groups <https://metoffice.github.io/simulation-systems/WorkingPractices/TestSuites/lfric_apps.html#rose-stem>`_, allowing you to run only a subset of tests relevant to your changes. Here we want to run the ``lfric_atm_developer`` group:
+
 .. code-block:: bash
 
    rose stem --group=lfric_atm_developer
@@ -44,11 +46,13 @@ A summary of the rose stem test results can be found in the file ``~/cylc-run/lf
 
 To explore how the testing framework handles style violations, you can deliberately introduce a trailing whitespace in your code - for example, by adding a space at the end of a line in ``gungho_step_mod.x90``. This will cause the ``style_checker`` task to fail, demonstrating how the system enforces coding standards.
 
-Rose stem tests are organised into `groups <https://metoffice.github.io/simulation-systems/WorkingPractices/TestSuites/lfric_apps.html#rose-stem>`_, allowing you to run only a subset of tests relevant to your changes. For example, to avoid running the full test workflow, you can use:
+To avoid running the full test workflow, you can use:
 
 .. code-block:: bash
 
    rose stem --group=scripts
+   cylc play <working copy name>
+   cylc gui
 
 This runs only the style-checking tests. Other groups, such as ``lfric_atm_developer``, are available for different testing scopes depending on your development focus.
 
