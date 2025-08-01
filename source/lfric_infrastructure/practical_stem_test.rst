@@ -44,18 +44,17 @@ Then, check out the branch using your MOSRS ``USERNAME``:
 
 *3. Apply and Commit Your Changes*
 
-Copy the modified source file from the earlier :ref:`command line practical <practical_3_1-caption>` into your working copy:
+Implement the modified source file from the earlier :ref:`command line practical <practical_3_1-caption>` into your working copy in:
 
 .. code-block:: bash
 
-  cd vn2.2_practical_stem_test
-  cp ../practical_command_line/lfric_apps/science/gungho/source/driver/gungho_step_mod.x90
-                science/gungho/source/driver/gungho_step_mod.x90
+   vn2.2_practical_stem_test/practical_command_line/lfric_apps/science/gungho/source/driver/gungho_step_mod.x90
 
 Then commit the change to version control:
 
 .. code-block:: bash
 
+  cd vn2.2_practical_stem_tes
   svn ci -m "Add log output to gungho_step"
 
 Verify that your `change <https://code.metoffice.gov.uk/trac/lfric_apps/changeset/12764/main/branches/dev/bjoernfock/vn2.2_practical_stem_test>`_ has been successfully uploaded to the repository.
