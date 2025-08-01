@@ -9,37 +9,56 @@ In the :ref:`command line application <practical_3_1-caption>` practical, you mo
 
 **Document and version control your code changes**
 
-First you should `create a ticket <https://metoffice.github.io/simulation-systems/WorkingPractices/tickets.html#>`_ by opening a `new ticket <https://code.metoffice.gov.uk/trac/lfric_apps/newticket>`_ on the LFRic apps ticketing system.
+Before running integration tests, it's important to document your changes and manage them using version control. This ensures traceability and compliance with LFRic model development practices.
+
+*1. Create a Ticket*
+
+Start with `creating a ticket <https://metoffice.github.io/simulation-systems/WorkingPractices/tickets.html#>`_ by opening a `new ticket <https://code.metoffice.gov.uk/trac/lfric_apps/newticket>`_ on the LFRic Apps ticketing system to document your model experiment.
 
 .. figure:: /_static/3/practical_rose_stem_ticket.png
   :width: 625px
 
   LFRic Apps ticket for documenting your model experiment.
 
-That will give you a ticket to associate with your branch. Second, you need to `create and checkout a branch <https://metoffice.github.io/simulation-systems/WorkingPractices/branches.html>`_:
+This ticket will provide a reference number to associate with your development branch.
+
+*2. Create and Checkout a Branch*
+
+Use `fcm bc <https://metomi.github.io/fcm/doc/user_guide/code_management.html#svn_branching>`_ to `create a branch <https://metoffice.github.io/simulation-systems/WorkingPractices/branches.html>`_:
 
 .. code-block:: bash
 
    fcm bc --ticket=NNN --type=dev branchname fcm:lfric_apps.x_tr@vnXX.Y
 
-Use your ticket number ``NNN``, a sensible ``branchname`` such as practical_stem_test and a `release version <https://code.metoffice.gov.uk/trac/lfric_apps/wiki#Releases>`_ ``vnXX.Y`` like vn2.2 when creating you branch.
+Replace:
 
-Checkout the code using your ``USERNAME``:
+- ``NNN`` with your ticket number,
+- ``branchname`` with a descriptive name (e.g. practical_stem_test),
+- ``vnXX.Y`` with the `release version <https://code.metoffice.gov.uk/trac/lfric_apps/wiki#Releases>`_ (e.g. vn2.2).
+
+Then, check out the branch using your MOSRS ``USERNAME``:
 
 .. code-block:: bash
 
    svn co https://code.metoffice.gov.uk/svn/lfric_apps/main/branches/dev/USERNAME/vn2.2_practical_stem_test vn2.2_practical_stem_test
 
-Copy the changes from the :ref:`command line application <practical_3_1-caption>` practical and put it under version control:
+*3. Apply and Commit Your Changes*
+
+Copy the modified source file from the earlier :ref:`command line practical <practical_3_1-caption>` into your working copy:
 
 .. code-block:: bash
 
   cd vn2.2_practical_stem_test
   cp ../practical_command_line/lfric_apps/science/gungho/source/driver/gungho_step_mod.x90
                 science/gungho/source/driver/gungho_step_mod.x90
+
+Then commit the change to version control:
+
+.. code-block:: bash
+
   svn ci -m "Add log output to gungho_step"
 
-Check in the version control system that you uploaded the `code channge <https://code.metoffice.gov.uk/trac/lfric_apps/changeset/12764/main/branches/dev/bjoernfock/vn2.2_practical_stem_test>`_.
+Verify that your `change <https://code.metoffice.gov.uk/trac/lfric_apps/changeset/12764/main/branches/dev/bjoernfock/vn2.2_practical_stem_test>`_ has been successfully uploaded to the repository.
 
 **Run the rose stem tests**
 
