@@ -5,6 +5,8 @@ In earlier exercises, you learned how to check out the model, modify the source,
 
 This practical introduces integration testing using `rose stem <https://metomi.github.io/rose/doc/html/tutorial/rose/furthertopics/rose-stem.html>`_, which helps ensure your changes work correctly within the system. These tests are essential for contributing code in line with model development :ref:`working practices <working-practices-caption>`.
 
+In the :ref:`command line application <practical_3_1-caption>` practical, you modified the source code file :ref:`gungho_step_mod.x90 <practical_3_1-hint_code>`. Here, you can test whether this change is compliant with the automated rose stem tests.
+
 **Document and version control your code changes**
 
 First you should `create a ticket <https://metoffice.github.io/simulation-systems/WorkingPractices/tickets.html#>`_ by opening a `new ticket <https://code.metoffice.gov.uk/trac/lfric_apps/newticket>`_ on the LFRic apps ticketing system.
@@ -16,10 +18,26 @@ First you should `create a ticket <https://metoffice.github.io/simulation-system
 
 That will give you a ticket to associate with your branch. Second, you need to `create and checkout a branch <https://metoffice.github.io/simulation-systems/WorkingPractices/branches.html>`_:
 
+.. code-block:: bash
 
+   fcm bc --ticket=NNN --type=dev branchname fcm:lfric_apps.x_tr@vnXX.Y
 
+Use your ticket number ``NNN``, a sensible ``branchname`` such as practical_stem_test and a `release version <https://code.metoffice.gov.uk/trac/lfric_apps/wiki#Releases>`_ ``vnXX.Y`` like vn2.2 when creating you branch.
 
+Checkout the code using your ``USERNAME``:
 
+.. code-block:: bash
+
+   svn co https://code.metoffice.gov.uk/svn/lfric_apps/main/branches/dev/USERNAME/vn2.2_practical_stem_test vn2.2_practical_stem_test
+
+Copy the changes from the :ref:`command line application <practical_3_1-caption>` practical and put it under version control:
+
+.. code-block:: bash
+
+  cd vn2.2_practical_stem_test
+  cp ../practical_command_line/lfric_apps/science/gungho/source/driver/gungho_step_mod.x90
+                lfric_apps/science/gungho/source/driver/gungho_step_mod.x90
+  svn ci -m "Add log output to gungho_step"
 
 
 
