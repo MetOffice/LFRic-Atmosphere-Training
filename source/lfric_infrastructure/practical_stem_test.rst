@@ -36,33 +36,10 @@ Copy the changes from the :ref:`command line application <practical_3_1-caption>
 
   cd vn2.2_practical_stem_test
   cp ../practical_command_line/lfric_apps/science/gungho/source/driver/gungho_step_mod.x90
-                lfric_apps/science/gungho/source/driver/gungho_step_mod.x90
+                science/gungho/source/driver/gungho_step_mod.x90
   svn ci -m "Add log output to gungho_step"
 
-
-
-**DRAFT SECTION TO BE REMOVED:**
-
-Set up a new directory for this practical and copy in the model code:
-
-.. code-block:: bash
-
-   mkdir practical_stem_test
-   cd  practical_stem_test
-   fcm co fcm:lfric_apps.x_tr lfric_apps
-
-In the :ref:`command line application <practical_3_1-caption>` practical, you modified the source code file :ref:`gungho_step_mod.x90 <practical_3_1-hint_code>`. Here, you can test whether this change is compliant with the automated rose stem tests. Copy your modified file into the pristine code directory:
-
-.. code-block:: bash
-
-   cp ../practical_command_line/lfric_apps/science/gungho/source/driver/gungho_step_mod.x90 lfric_apps/science/gungho/source/driver/gungho_step_mod.x90
-
-Change into the ``lfric_apps`` directory and confirm that it contains your modified code:
-
-.. code-block:: bash
-
-   cd lfric_apps
-   svn diff
+Check in the version control system that you uploaded the `code channge <https://code.metoffice.gov.uk/trac/lfric_apps/changeset/12764/main/branches/dev/bjoernfock/vn2.2_practical_stem_test>`_.
 
 **Run the rose stem tests**
 
