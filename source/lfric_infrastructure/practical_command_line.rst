@@ -1,6 +1,7 @@
+.. _practical_3_1-caption:
 
 Practical 1: Run the model from command line
-----------------------------------------
+--------------------------------------------
 
 Before showing how to run the model as part of Cylc workflows, this practical introduces LFRic Atmosphere as a command line application. It demonstrates how the model can be built and run from the command line, and how to add a message to the standard output of the model.
 
@@ -9,11 +10,11 @@ Before showing how to run the model as part of Cylc workflows, this practical in
 Use Subversion to checkout the code:
 
 .. code-block:: text
-       
+
    mkdir practical_command_line
    cd  practical_command_line
    svn co https://code.metoffice.gov.uk/svn/lfric_apps/main/trunk lfric_apps
-   
+
 This exercise requires to setup the build environment correctly and to select the compiler. The instructions for this depend on where you run this exercise. Setup commands for some supported platforms are provided below:
 
 .. collapse:: Met Office Azure Spice
@@ -29,7 +30,7 @@ Now compile the model with:
 
 .. code-block:: text
    :emphasize-lines: 2
-   
+
    cd lfric_apps
    ./build/local_build.py -a lfric_atm
 
@@ -43,14 +44,14 @@ Change to that folder and run the example:
 
 .. code-block:: text
    :emphasize-lines: 2
-   
-   cd applications/lfric_atm/example      
+
+   cd applications/lfric_atm/example
    ../bin/lfric_atm configuration.nml
 
 The namelist file ``configuration.nml`` configures the model run. Redirect the standard output to a text file to examine later:
 
 .. code-block:: bash
-      
+
    ../bin/lfric_atm configuration.nml > log.txt
 
 Explore the file ``log.txt`` and the other output files which include log messages from the I/O system, run time profiling, `checksums <https://github.com/MetOffice/simulation-systems/discussions/370>`_ of model fields after the last time step for tests, and three NetCDF files. Using the knowledge from module 2 of this training it is possible to open these files and explore the data produced by the model run.
@@ -68,19 +69,21 @@ To gain familiarity with the model, try to add your own print statement at the e
 
 Adjust the code, re-compile, and re-run the model. Can you see your new message in the output?
 
+.. _practical_3_1-hint_code:
+
 .. hint:: You can write to standard out by adding the following Fortran code at the end of the subroutine gungho_step in the file `gungho_step_mod.x90 <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/science/gungho/source/driver/gungho_step_mod.x90?rev=9055#L217>`_ in the folder ``science/gungho/source/driver``:
 
    .. collapse:: Fortran code to write info message
 
       .. code-block:: fortran
-         
-                      write( log_scratch_space, '(A)' ) "###_INFO_#1 END OF TIME STEP"
-                      call log_event( log_scratch_space, LOG_LEVEL_INFO )
 
-                      if (model_clock%get_step() .lt. 72) then
-                         write( log_scratch_space, '(A)' ) "###_INFO_#2 THE WEATHER IS FINE"
-                      else
-                         write( log_scratch_space, '(A)' ) "###_INFO_#2 ENJOY THE MODEL TUTORIAL"
-                      endif
-                      call log_event( log_scratch_space, LOG_LEVEL_INFO )
+                      write( log_scratch_space, '(A)' ) "###_INFO_#1 END OF TIME STEP"  
+                      call log_event( log_scratch_space, LOG_LEVEL_INFO )  
+
+                      if (model_clock%get_step() .lt. 72) then  
+                         write( log_scratch_space, '(A)' ) "###_INFO_#2 THE WEATHER IS FINE"  
+                      else  
+                         write( log_scratch_space, '(A)' ) "###_INFO_#2 ENJOY THE MODEL TUTORIAL"  
+                      endif  
+                      call log_event( log_scratch_space, LOG_LEVEL_INFO )  
 

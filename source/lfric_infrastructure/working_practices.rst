@@ -1,3 +1,5 @@
+.. _working-practices-caption:
+
 Working Practices
 =================
 
