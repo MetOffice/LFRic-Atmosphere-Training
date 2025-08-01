@@ -33,7 +33,7 @@ Q - How do you change views from 1 to 2 to 3?
 Q - Which task is where the forecast runs?
 
 
-nputs and outputs for GC-LFRic workflows
+Inputs and outputs for GC-LFRic workflows
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
@@ -96,7 +96,7 @@ Tracking the progress of your workflow
    - [ ] geovista
 
 
-ractical 2 - Running a GC-LFRic Workflow
+Practical 2 - Running a GC-LFRic Workflow
 -----------------------------------------
 
 Aims and objectives
@@ -113,7 +113,7 @@ The aim of this practical is to gain experience in running and analysing climate
 
 .. admonition:: Thought experiment: How would you design your experiment?
 
-   As scientists we want to explore how climate models perform and respond to changes. How sensitive are they to   CO2 or what impact does an eddy parameterisation have on ocean circulation. **Think** about what parameters you    would want to test within a global model? Once you have an idea, think about the next questions. <200b>
+   As scientists we want to explore how climate models perform and respond to changes. How sensitive are they to   CO2 or what impact does an eddy parametrisation have on ocean circulation. **Think** about what parameters you    would want to test within a global model? Once you have an idea, think about the next questions. <200b>
 
    * Where you might change this - is it in the **configuration namelist** settings within the workflow or in a ** source code**?<200b>
 
@@ -228,7 +228,7 @@ Experiment 4 - make sea ice black
 
 * create JULES branch - See: Working Practices: Create a ticket, Working Practices: Create a branch
 
-* adjust hard coded values for the albedo in ``src/control/shared/jules_sea_seaice_mod.F90`` 
+* adjust hard coded values for the albedo in ``src/control/shared/jules_sea_seaice_mod.F90``
   (set ``calbicev_cice``, ``albicei_cice``, ``albsnowv_cice``, ``albsnowi_cice``, ``albpondv_cice``,               ``albpondi_cice``, ``dalb_mlt_cice``, ``dalb_mlts_v_cice`` and ``dalb_mlts_i_cice`` to 0.0)
 
 * point your LFRic build setup in ``paramerts.sh`` to you JULES branch and adjust your workflow to use your        adjusted model build
@@ -271,4 +271,3 @@ Plotting your data
 
 .. image:: /_static/plotting.png
    :width: 650px
-   
