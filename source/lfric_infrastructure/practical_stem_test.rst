@@ -5,6 +5,26 @@ In earlier exercises, you learned how to check out the model, modify the source,
 
 This practical introduces integration testing using `rose stem <https://metomi.github.io/rose/doc/html/tutorial/rose/furthertopics/rose-stem.html>`_, which helps ensure your changes work correctly within the system. These tests are essential for contributing code in line with model development :ref:`working practices <working-practices-caption>`.
 
+**Document and version control your code changes**
+
+First you should `create a ticket <https://metoffice.github.io/simulation-systems/WorkingPractices/tickets.html#>`_ by opening a `new ticket <https://code.metoffice.gov.uk/trac/lfric_apps/newticket>`_ on the LFRic apps ticketing system.
+
+.. figure:: /_static/3/practical_rose_stem_ticket.png
+  :width: 625px
+
+  LFRic Apps ticket for documenting your model experiment.
+
+That will give you a ticket to associate with your branch. Second, you need to `create and checkout a branch <https://metoffice.github.io/simulation-systems/WorkingPractices/branches.html>`_:
+
+
+
+
+
+
+
+
+**DRAFT SECTION TO BE REMOVED:**
+
 Set up a new directory for this practical and copy in the model code:
 
 .. code-block:: bash
