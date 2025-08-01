@@ -35,7 +35,7 @@ Cylc - workflow engine
 .. image:: /_static/cylc.gif
    :width: 700px
 
-.. note:: 
+.. note::
    * Comprehensive guides and training for cylc can be found here: https://cylc.github.io/cylc-doc.
    * The cylc GitHub discourse can be used for discussions: https://cylc.discourse.group.
 
@@ -61,8 +61,8 @@ Cylc - workflow engine
 
    ## What is the correct definition for a cylc workflow?
 
-   - [ ] a system for managing repetitive processes and tasks which occur in a particular order 
-   - [x] a general-purpose workflow engine that also orchestrates cycling systems very efficiently
+   - [ ] a system for managing repetitive processes and tasks which occur in a particular order
+   - [x] a general-purpose workflow engine that also orchestrates cycling systems very efficiently
    - [ ] a system for delivering climate data to customers
 
    ## In what file would you find the owner of the workflow you are using?

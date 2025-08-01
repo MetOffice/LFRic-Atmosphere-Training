@@ -1,6 +1,6 @@
-***********************************
+**********************************
 The structured world - review quiz
-***********************************
+**********************************
 
 The following quiz reviews key concepts introduced in this chapter. Each question is designed to assess comprehension of the material in a focused and practical manner.
 
@@ -8,7 +8,7 @@ The following quiz reviews key concepts introduced in this chapter. Each questio
     Unless otherwise specified, each question has only one correct answer.
 
 .. quizdown::
-   
+
    ---
    shuffleQuestions: true
    shuffleAnswers: true
@@ -24,7 +24,7 @@ The following quiz reviews key concepts introduced in this chapter. Each questio
    1. [ ] A grid based on unstructured data relationships
        > This describes an unstructured grid, not a structured one.
 
-   ## In a structured 2D grid representing Earth’s surface, what direction do rows typically represent?
+   ## In a structured 2D grid representing Earth's surface, what direction do rows typically represent?
    1. [ ] South to North
        > Columns represent longitude, while rows represent latitude.
    1. [ ] North to South
@@ -66,14 +66,14 @@ The following quiz reviews key concepts introduced in this chapter. Each questio
 
    ## What are some solutions to the problem of polar singularities in structured grids? (select all that apply)
    - [ ] Using larger grid cells near the poles
-      > This doesn’t solve the singularity problem.
+      > This doesn't solve the singularity problem.
    - [x] Switching to an unstructured mesh like the cubed-sphere
       > Correct! Cubed-sphere meshes eliminate pole singularities.
    - [ ] Ignoring data near the poles
       > Not a viable solution—this just discards valuable data.
    - [ ] Replacing grid points with 3D coordinates
-      > Changing coordinate representation doesn’t remove pole distortion.
-   - [x] Describing a reduced (or thinned) Gaussian grid as used at European Centre for Medium-Range Weather Forecasts  (ECMWF) 
+      > Changing coordinate representation doesn't remove pole distortion.
+   - [x] Describing a reduced (or thinned) Gaussian grid as used at European Centre for Medium-Range Weather Forecasts  (ECMWF)
       > Correct! Thinned grids reduce grid point density near the poles to manage singularities.
    - [x] Rotating the pole
       > Correct! Pole rotation can shift singularities away from important analysis areas.

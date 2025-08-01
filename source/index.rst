@@ -6,7 +6,7 @@
 Momentum Training - LFRic Atmosphere
 ====================================
 
-**Momentum**:sup:`®` is a software framework for modelling Earth’s environment, developed and used by the `Momentum Partnership <https://www.metoffice.gov.uk/research/approach/collaboration/momentum-partnership>`_. The framework includes rigorously evaluated Science Configurations, which define how to configure components of the framework to build prediction and projection systems, both regional and global.
+**Momentum**:sup:`®` is a software framework for modelling Earth's environment, developed and used by the `Momentum Partnership <https://www.metoffice.gov.uk/research/approach/collaboration/momentum-partnership>`_. The framework includes rigorously evaluated Science Configurations, which define how to configure components of the framework to build prediction and projection systems, both regional and global.
 
 .. image:: /_static/momentum_logo.png
    :width: 700px
@@ -15,10 +15,10 @@ Momentum Training - LFRic Atmosphere
 
 **LFRic Atmosphere** is the atmospheric model component of Momentum. It is the successor to the Unified Model. This course is designed for new users of LFRic Atmosphere. See the `Momentum website <https://www.metoffice.gov.uk/research/approach/modelling-systems/momentum>`_ for information about the other components of the modelling framework.
 
-.. note:: 
+.. note::
    **Target users and prior knowledge**: This course is designed for new users of LFRic who have a general background in climate science. It is assumed you will have experience in working in linux terminal and have basic understanding of python and other coding languages. Throughout the course there will be notes on where to refresh skills needed for each section.
 
-   Before diving into this course, it’s helpful to have some foundational knowledge in the following areas:
+   Before diving into this course, it's helpful to have some foundational knowledge in the following areas:
 
    - Workflow engine `Cylc <https://cylc.github.io/cylc-doc/stable/html/tutorial/index.html>`_:  A system that automatically executes tasks according to schedules and dependencies.
    - Configuration management system `Rose <https://metomi.github.io/rose/doc/html/tutorial/rose/index.html>`_: A toolkit for writing, editing, and running application configurations.

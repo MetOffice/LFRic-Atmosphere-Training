@@ -1,6 +1,6 @@
-************************************
-Practical using unstrucutrued data
-************************************
+*********************************
+Practical using unstructured data
+*********************************
 
 The Mesh Tutorial provides training on handling LFRic unstructured mesh data.
 
@@ -51,7 +51,7 @@ Once the environment is set up:
 1. Activate the environment:
 
  .. code-block:: console
-    
+
     conda activate meshtut_safelocked_env
 
 2. Navigate to the notebooks directory inside the cloned repository:
