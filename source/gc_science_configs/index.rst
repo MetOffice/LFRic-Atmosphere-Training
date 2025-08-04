@@ -14,4 +14,5 @@ This module covers how the Met Office's global models are developed, configured 
 .. include:: gc_introduction.rst
 .. include:: tools.rst
 .. include:: model_evaluation.rst
+.. include:: model_development.rst
 .. include:: practical_exercises.rst

@@ -1,0 +1,100 @@
+---
+title: GC Configurations Quiz
+description: Test your understanding of Global Coupled (GC) configurations.
+shuffle: true
+show_answers: true
+show_score: true
+show_correct_answers: true
+show_incorrect_answers: true
+show_question_count: true
+---
+
+## What is a science configuration in the context of Met Office modelling?
+- [ ] A real-time weather forecast
+- [x] A frozen package of mature science settings tested across timescales
+- [ ] A software update for the Unified Model
+- [ ] A set of climate observations
+
+## Which of the following is *not* one of the Met Office’s four core models?
+- [ ] Unified Model (UM)
+- [ ] NEMO
+- [ ] CICE
+- [x] WRF
+
+## What does GAL stand for in the GC configuration?
+- [ ] Global Atmospheric Layer
+- [x] Global Atmosphere Land
+- [ ] General Atmospheric Logic
+- [ ] Global Analysis Loop
+
+## What is the purpose of the OASIS coupler in GC configurations?
+- [ ] To simulate sea ice melting
+- [x] To couple the GAL and GOSI components
+- [ ] To visualize model outputs
+- [ ] To replace the Unified Model
+
+## Which GC configuration was the last to use the Unified Model (UM)?
+- [ ] GC3.1
+- [ ] GC4
+- [x] GC5
+- [ ] GC6
+
+## What is LFRic named after?
+- [ ] A famous climate model
+- [ ] A British mathematician
+- [x] Lewis Fry Richardson
+- [ ] A programming language
+
+## How are the GAL and GOSI components coupled?
+- [ ] Intra-model coupling
+- [x] Inter-model coupling via OASIS
+- [ ] Manual data transfer
+- [ ] Shared memory execution
+
+## Are GC configurations used only for climate projections?
+- [ ] Yes, only for long-term climate studies
+- [x] No, they are used across weather and climate timescales
+- [ ] Only for seasonal forecasts
+- [ ] Only for operational NWP
+
+## What is the first GC configuration to use LFRic operationally?
+- [ ] GC4
+- [ ] GC5
+- [ ] GC5-LFRic
+- [x] GC6
+
+## What are PEGs and CoGs?
+- [ ] Types of model components
+- [x] Evaluation and collaboration groups within the GC development process
+- [ ] Ocean modelling tools
+- [ ] Coupling interfaces
+
+## What is the main advantage of the seamless modelling strategy?
+- [ ] It reduces the need for ocean models
+- [x] It enables consistent modelling across timescales and spatial resolutions
+- [ ] It simplifies data storage
+- [ ] It avoids the need for testing
+
+## Which of the following systems has implemented a GC configuration?
+- [x] UKESM1.1
+- [ ] GFS
+- [ ] ICON
+- [ ] ERA5
+
+## What is the role of the GMED team?
+- [ ] To run operational forecasts
+- [x] To evaluate and develop GC configurations collaboratively
+- [ ] To manage IT infrastructure
+- [ ] To publish climate reports
+
+## Why are the atmosphere and land models integrated into a single executable?
+- [ ] To reduce memory usage
+- [x] Because they are physically interconnected and exchange data every timestep
+- [ ] To simplify the codebase
+- [ ] To allow for manual tuning
+
+## How long is the typical development cycle for a GC configuration?
+- [ ] 6 months
+- [ ] 1 year
+- [x] Approximately 2 years
+- [ ] 5 years

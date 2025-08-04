@@ -22,7 +22,7 @@ Look for the workflow which fulfills these criteria **C64 coupled climate standa
 Exercise 2: Explore tasks in a GC-LFRic workflow
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Checkout the global coupled workflow - ``rosie checkout <suite-id>``
+Checkout the global coupled workflow - ``rosie checkout <suite-id>`` 
 
 Move to directory containing the workflow and explore the files inside- ``cd ~/roses/<suite-id>``
 
@@ -96,7 +96,7 @@ Tracking the progress of your workflow
    - [ ] geovista
 
 
-ractical 2 - Running a GC-LFRic Workflow
+Practical 2 - Running a GC-LFRic Workflow
 -----------------------------------------
 
 Aims and objectives

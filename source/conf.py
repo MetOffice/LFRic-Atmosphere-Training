@@ -21,6 +21,7 @@ release = 'v1'
 extensions = ['sphinx_rtd_theme',
               'sphinx_toolbox.collapse',
               'sphinxcontrib.quizdown',
+              'sphinx_exercise',
               'sphinxcontrib.video']
 
 

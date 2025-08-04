@@ -3,6 +3,94 @@ Tools for running GC model configurations
 
 NWP and climate models have a large numbers of jobs which are executed at regular intervals to process new data and generate new forecasts. Dependence between these forecast cycles creates a single never-ending workflow, which NWP workflow schedulers have traditionally ignored. Met Office science configurations are built on **Rose** and **Cylc (“Silk”)** to manage infinite cycling workflows efficiently even after delays in real-time operation, or in historical runs, when cycles can typically interleave for much-increased throughput.
 
+.. _mosrs_github_wikitickets:
+
+MOSRS Overview
+--------------
+
+The Met Office Science Repository Service (MOSRS) is a platform used to manage and store scientific software and related resources developed by the Met Office and its collaborators. It provides version control, access management, and collaboration tools for a range of scientific projects, including atmospheric and climate modeling.
+
+Key features of MOSRS include:
+
+* **Centralized Repository:** Stores source code, documentation, and configuration files for various science projects.
+* **Access Control:** Manages user permissions to ensure secure and appropriate access to resources.
+* **Collaboration:** Facilitates collaboration between scientists, developers, and external partners.
+* **Documentation:** Hosts comprehensive documentation for science configurations, model development, and workflows.
+* **Issue Tracking:** Integrates with ticketing systems to track bugs, feature requests, and development tasks.
+
+MOSRS is essential for ensuring reproducibility, transparency, and efficient management of scientific software and configurations within the Met Office community.
+
+GC Model on MOSRS
+-----------------
+
+On MOSRS, the GC model and its associated science configurations are organized and maintained to support both development and operational use.
+
+Details about the GC model on MOSRS include:
+
+* **Repository Structure:** The GC model source code, configuration files, and documentation are stored in dedicated repositories. These repositories are organized by model version (e.g., UM-based or LFRic-based GC) and by release cycle.
+* **Science Configurations:** Each GC configuration defines a specific set of model settings, parameterizations, and input data for a particular scientific or operational purpose. These configurations are version-controlled and documented within MOSRS.
+* **Development Workflow:** Scientists and developers use MOSRS to collaborate on model development, propose changes, and review updates. Branching and merging workflows help manage contributions and maintain stability.
+* **Release Process:** New GC model versions and configurations are released through a controlled process, with documentation and release notes stored alongside the code.
+* **Documentation:** Detailed documentation is provided for each GC configuration, including scientific rationale, technical setup, and usage instructions. This ensures users can reproduce experiments and understand configuration differences.
+* **Integration with Wiki Tickets:** Tasks, bug reports, and feature requests related to the GC model are tracked using the MOSRS wiki ticket system, supporting transparent and organized development.
+
+By hosting the GC model on MOSRS, the Met Office ensures that model development is collaborative, traceable, and accessible to authorized users.
+
+Release Process for Configurations
+----------------------------------
+
+Releasing a new GC configuration involves several coordinated steps to ensure quality, reproducibility, and traceability:
+
+1. **Development and Testing:** Scientists and developers implement changes or new features in a development branch. Rigorous testing and validation are performed to ensure scientific correctness and technical stability.
+2. **Documentation:** Comprehensive documentation is prepared, detailing the scientific rationale, technical setup, and any changes from previous configurations.
+3. **Review and Approval:** The proposed configuration and its documentation are reviewed by peers or designated reviewers. Feedback is addressed before proceeding.
+4. **Versioning and Tagging:** Once approved, the configuration is merged into the main repository and assigned a version number or tag for traceability.
+5. **Release Notes:** Release notes summarizing the changes, new features, and known issues are published alongside the configuration.
+6. **Distribution:** The released configuration is made available to users through MOSRS, with clear instructions for access and use.
+
+Differences Between Configurations and Their Development
+--------------------------------------------------------
+
+GC configurations differ in their scientific aims, parameterizations, input data, and technical setups. For example, some configurations may target operational forecasting, while others are designed for research experiments or specific scientific studies.
+
+Development of configurations typically involves:
+
+* **Defining Scientific Objectives:** Each configuration is tailored to meet specific research or operational goals.
+* **Selecting Parameterizations:** Choices are made regarding physical and chemical processes to include or modify.
+* **Input Data Preparation:** Appropriate datasets are selected and pre-processed for the configuration.
+* **Testing and Validation:** Configurations undergo testing to ensure they produce scientifically valid results.
+* **Documentation:** Each configuration is documented to describe its purpose, setup, and differences from others.
+
+Differences Between UM and LFRic GC Configurations
+--------------------------------------------------
+
+The GC model has been implemented using both the Unified Model (UM) and LFRic frameworks, resulting in distinct configuration approaches:
+
+* **UM-based GC Configurations:** Built on the established Unified Model infrastructure, these configurations use legacy code and workflows. They are widely used for operational and research purposes and have a mature set of parameterizations and tools.
+* **LFRic-based GC Configurations:** Developed using the newer LFRic infrastructure, these configurations leverage modern software engineering practices, improved scalability, and flexibility. LFRic-based configurations may differ in available features, parameterizations, and workflows as development progresses.
+
+Key differences include the underlying model architecture, supported features, and the maturity of the configuration and workflow tools. Users should consult documentation to understand the specific capabilities and limitations of each version.
+
+Wiki Tickets on MOSRS
+---------------------
+
+Wiki tickets on MOSRS are used to manage and track updates, bug fixes, and feature requests for the GC models. They provide a transparent and organized way for developers and scientists to coordinate work, document progress, and communicate about ongoing tasks.
+
+Typical usage of wiki tickets for updating GC models includes:
+
+* **Creating a Ticket:** When a new issue, enhancement, or update is needed for a GC model or configuration, a ticket is created in the MOSRS wiki ticket system. The ticket should describe the problem or proposed change, relevant background, and any supporting information.
+* **Assigning and Prioritizing:** Tickets can be assigned to specific team members and prioritized based on urgency or project timelines.
+* **Tracking Progress:** As work progresses, ticket comments and status updates are used to document discussions, decisions, and implementation steps. This ensures all contributors are informed and can collaborate effectively.
+* **Linking to Code Changes:** Tickets are often linked to specific branches or commits in the repository, providing traceability between the ticket and the code or configuration updates.
+* **Review and Closure:** Once the update is complete and reviewed, the ticket is closed with a summary of the resolution and any relevant documentation links.
+
+Using wiki tickets ensures that updates to GC models are well-documented, reviewed, and traceable, supporting reproducible and collaborative development within the MOSRS environment.
+
+GitHub Overview
+---------------
+
+**PENDING**
+
 Rose - managing model configurations
 ------------------------------------
 
