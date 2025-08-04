@@ -2,7 +2,7 @@
 1. Introduction to LFRic Atmosphere
 ***********************************
 
-This module provides an intrduction to the LFRic Atmosphere model and the Momentum Framwork.
+This module provides an introduction to the LFRic Atmosphere model and the Momentum Framework.
 
 .. admonition:: Aims and objectives
 
