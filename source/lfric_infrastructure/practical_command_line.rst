@@ -89,4 +89,4 @@ Adjust the code, re-compile, and re-run the model. Can you see your new message 
 
 Code changes like you have implmeneted here belong into version control. Practical 3 will introduce ticketing and version control for LFRic code.
 
-.. important:: Changes like the one you've implemented here should be tracked using version control. This ensures traceability and supports collaborative development. You'll learn how to document and manage your code changes using tickets and branches in Practical 3.
+.. note:: Changes like the one you've implemented here should be tracked using version control. This ensures traceability and supports collaborative development. You'll learn how to document and manage your code changes using tickets and branches in Practical 3.
