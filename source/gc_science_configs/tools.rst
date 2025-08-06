@@ -3,8 +3,6 @@ Tools for running GC model configurations
 
 NWP and climate models have a large numbers of jobs which are executed at regular intervals to process new data and generate new forecasts. Dependence between these forecast cycles creates a single never-ending workflow, which NWP workflow schedulers have traditionally ignored. Met Office science configurations are built on **Rose** and **Cylc (“Silk”)** to manage infinite cycling workflows efficiently even after delays in real-time operation, or in historical runs, when cycles can typically interleave for much-increased throughput.
 
-.. _mosrs_github_wikitickets:
-
 MOSRS Overview
 --------------
 

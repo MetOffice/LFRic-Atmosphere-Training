@@ -4,9 +4,9 @@ Introduction to Global Coupled (GC) configurations
 Introduction and Seamless Modelling
 -----------------------------------
 
-The Met Office's global coupled (GC) models are built upon the Met Office's core models, which are modular components that can be combined in various ways to create *science configurations*. A science configuration is a frozen package of mature science settings which has been rigorously tested across seamless timescales from NWP to climate.
+The Momentum framework's global coupled (GC) models are built upon core models, which are modular components that can be combined in various ways to create *science configurations*. A science configuration is a frozen package of mature science settings which has been rigorously tested across seamless timescales from NWP to climate.
 
-The GC science configurations are central to the Met Office's *seamless modelling strategy*, which is an approach that enables the use of the same science configuration to simulate a wide range of timescales -- from numerical weather prediction (NWP) to seasonal forecasts and climate projections -- and spatial resolutions, from metres to hundreds of kilometres. By testing the consistency of the configuration across these scales, the approach supports accurate and reliable predictions of weather, climate, and environmental processes. Furthermore, the modular nature of the core models allows for flexibility and adaptability in the modelling process and development, enabling scientists to tailor configurations to specific research needs or operational requirements.
+The GC science configurations are central to the Momentum framework's :ref:`seamless-modelling` strategy. By testing the consistency of the configuration across temporal and spatial scales, the approach supports accurate and reliable predictions of weather, climate, and environmental processes. Furthermore, the modular nature of the core models allows for flexibility and adaptability in the modelling process and development, enabling scientists to tailor configurations to specific research needs or operational requirements.
 
 .. image:: /_static/seamless_modelling.png
    :width: 650px
@@ -14,16 +14,16 @@ The GC science configurations are central to the Met Office's *seamless modellin
 Core Models, Science Configurations, and GMED
 ---------------------------------------------
 
-The Met Office develops four core models: 
+The Momentum framework develops four core models: 
 
-* **Atmosphere**: LFRic
+* **Atmosphere**: `LFRic <https://www.metoffice.gov.uk/research/approach/modelling-systems/lfric>`_
 
-* **Ocean**: Nucleus for European Modelling of the Ocean (NEMO)
+* **Ocean**: Nucleus for European Modelling of the Ocean (`NEMO <https://www.nemo-ocean.eu/>`_)
 
-* **Land**: Joint UK Land Environment Simulator (JULES) 
+* **Land**: Joint UK Land Environment Simulator (`JULES <https://jules.jchmr.org/>`_)
 
-* **Sea Ice**: Sea Ice modelling Integrated Initiative (SI³)
-  
+* **Sea Ice**: Sea Ice modelling Integrated Initiative (`SI³ <https://zenodo.org/records/7534900#.Y8GIF-xKg-Q>`_)
+
 In the GC approach, the atmosphere and land models are integrated together to form a *Global Atmosphere Land* (GAL) model, and the Ocean and Sea Ice models are integrated to yield the *Global Ocean and Sea Ice* (GOSI) model. The reason for this is that the atmosphere-land (ocean-sea ice) processes are physically interconnected, meaning the two models need to exchange data every timestep, requiring them to be contained in a single executable. This is known as *intra-model coupling*.
 
 The GAL and GOSI models are coupled to form the GC configuration. This is done via the *OASIS* coupler. OASIS allows for the exchange of information between the different components of the model at varied resolutions and timescales, known as *inter-model* coupling. This alternative approach is necessary because ocean and sea ice processes typically evolve on longer timescales and larger spatial scales than atmospheric and land processes meaning that they cannot efficiently be combined in the same executable.
@@ -33,7 +33,7 @@ More specifically, a science configuration is when a defined version of each of 
 .. image:: /_static/components.png
    :width: 650px
 
-Once a GC configuration is defined, it can be used for different systems at the Met Office and across the Partnership. For example:
+Once a GC configuration is defined, it can be used for different systems at the Met Office and across the Momentum partnership. For example:
 
 * **GC3.1** was implemented in **UKESM1.1** for CMIP6
 
@@ -41,7 +41,7 @@ Once a GC configuration is defined, it can be used for different systems at the 
 
 * **GC4** was implemented for **ACCESS-S1** (the Bureau of Meteorology's seasonal system)
 
-Each GC configuration goes through an approximate 2-year development cycle, where it is tested for key systematic errors. The configuration has individual component testing and package testing, with continuous evaluation and verification. This is done by the Global Model Evaluation and Development (GMED) team, which is part of the Met Office's Science and Technology Partnership.
+Each GC configuration goes through an approximate 2-year development cycle, where it is tested for key systematic errors. The configuration has individual component testing and package testing, with continuous evaluation and verification. This is done by the Momentum Partnership.
 
 The GMED team has strong links throughout the Momentum Partnership to ensure that the GC configurations are developed and evaluated in a collaborative manner, utilising the expertise of scientists from different centres and regions. This pooling of knowledge and resource helps to ensure that the configurations are robust, reliable, and suitable for a wide range of applications while also accelerating the development process.
 
@@ -58,7 +58,7 @@ The GMED team has strong links throughout the Momentum Partnership to ensure tha
 .. image:: /_static/seamless_dev_cycle.png
    :width: 650px
 
-In July 2022, the final UM-based GC configuration was released, 'GC5', before the implementation of the LFRic atmospheric model into GC configurations. LFRic is the next-generation atmospheric model being developed by the Met Office, which is designed to be more modular and flexible than the UM. It is intended to replace the UM in future GC configurations, allowing for more efficient and effective modelling of atmospheric processes.
+In July 2022, the final UM-based GC configuration was released, 'GC5', before the implementation of the LFRic atmospheric model into GC configurations. LFRic is the next-generation atmospheric model being developed by the Momentum framework, which is designed to be more modular and flexible than the UM. It is intended to replace the UM in future GC configurations, allowing for more efficient and effective modelling of atmospheric processes.
 
 .. admonition:: Fun fact!
 

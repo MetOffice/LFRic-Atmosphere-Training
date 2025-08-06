@@ -71,7 +71,7 @@ Tracking the progress of your workflow
 
    - [ ] Met Office
    - [x] NIWA
-   - [ ] University of Cambridge
+   - [ ] University of Exeter
    - [ ] IBM
 
    ## What is the equivalent UM resolution of C64 and its real world value?
