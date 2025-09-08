@@ -102,38 +102,38 @@ Practical 2 - Running a GC-LFRic Workflow
 Aims and objectives
 ^^^^^^^^^^^^^^^^^^^
 
-The aim of this practical is to gain experience in running and analysing climate models.<200b> You will:
+The aim of this practical is to gain experience in running and analysing climate models. You will:
 
-* Copy the GC5-LFRic workflow <200b>
-* Add extra diagnostics to the ocean, atmosphere and sea-ice <200b>
-* Run the climate workflow for 1 month on an HPC <200b>
-* Set up a range of other climate models where various parameters are changed to generate interesting results.     <200b>
+* Copy the GC5-LFRic workflow 
+* Add extra diagnostics to the ocean, atmosphere and sea-ice 
+* Run the climate workflow for 1 month on an HPC 
+* Set up a range of other climate models where various parameters are changed to generate interesting results.     
 * Visualise these results using Python/Iris.
 
 
 .. admonition:: Thought experiment: How would you design your experiment?
 
-   As scientists we want to explore how climate models perform and respond to changes. How sensitive are they to   CO2 or what impact does an eddy parametrisation have on ocean circulation. **Think** about what parameters you    would want to test within a global model? Once you have an idea, think about the next questions. <200b>
+   As scientists we want to explore how climate models perform and respond to changes. How sensitive are they to   CO2 or what impact does an eddy parametrisation have on ocean circulation. **Think** about what parameters you would want to test within a global model? Once you have an idea, think about the next questions.
 
-   * Where you might change this - is it in the **configuration namelist** settings within the workflow or in a ** source code**?<200b>
+   * Where you might change this - is it in the **configuration namelist** settings within the workflow or in a ** source code**?
 
-   * Browse the source code and workflow to look see how you might make this change. <200b>
+   * Browse the source code and workflow to look see how you might make this change. 
 
-   * What **diagnostic** would you plot to see the change?<200b>
+   * What **diagnostic** would you plot to see the change?
 
 .. Caution:: If you decide to test your own experiment with a code or configuration change, be ready to do lots of debugging! If you want an example which is tried and tested, use the given examples below.
 
 Main Practical
 ^^^^^^^^^^^^^^
-* Run a simulation a with different experimental setup<200b>
+* Run a simulation a with different experimental setup
 
-* Either use an existing experiment or your previous hypothesis<200b>
+* Either use an existing experiment or your previous hypothesis
 
-* Create a branch for each new experiment (to limit the new workflow IDs created)<200b>
+* Create a branch for each new experiment (to limit the new workflow IDs created)
 
 * Plot the data and look for evidence of changes
 
-.. note:: Feel free to enlarge the size of these changes (e.g. 20x CO2) if your analysis is not detecting much of  an impact. Copy the output files (files explained at the end of the last section) to your local Linux workstation  and analyse the files using <200b>Python/<200b>Iris. Try to plot differences between the experiments and the       control in the fields that you think will be most strongly affected. If possible make a prediction at what these   differences might show before you do the plots. Were your predictions right?
+.. note:: Feel free to enlarge the size of these changes (e.g. 20x CO2) if your analysis is not detecting much of  an impact. Copy the output files (files explained at the end of the last section) to your local Linux workstation  and analyse the files using Python/Iris. Try to plot differences between the experiments and the       control in the fields that you think will be most strongly affected. If possible make a prediction at what these   differences might show before you do the plots. Were your predictions right?
 
 
 Adding a new diagnostic
@@ -142,7 +142,7 @@ Adding a new diagnostic
 The atmospheric diagnostic “v component of wind on pressure levels" is missing from this model. Use the following  instructions to add it back to the configuration.
 
 * cd into ``app/lfric_atm/file``
-* open ``file_def_diags_user_temp.xml<200b>``
+* open ``file_def_diags_user_temp.xml``
 * find ``lfric_pressure_level_tdaym``
 * add in a new field for ``v_in_w3``
 
