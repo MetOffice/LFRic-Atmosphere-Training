@@ -1,8 +1,6 @@
 *****************************
 Exercises in Global Modelling
 *****************************
-Aims and objectives
-^^^^^^^^^^^^^^^^^^^
 
 The aim of this practical is to gain experience in running and analysing climate models. You will:
 
@@ -14,7 +12,7 @@ The aim of this practical is to gain experience in running and analysing climate
 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Contents
 
    running/running.rst
