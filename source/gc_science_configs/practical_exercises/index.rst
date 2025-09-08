@@ -1,17 +1,23 @@
 *****************************
 Exercises in Global Modelling
 *****************************
+Aims and objectives
+^^^^^^^^^^^^^^^^^^^
 
-This module covers how the Met Office's global models are developed, configured and run within the Momentum® Framework.
+The aim of this practical is to gain experience in running and analysing climate models. You will:
 
-.. admonition:: Aims and objectives
+* Copy the GC5-LFRic workflow 
+* Add extra diagnostics to the ocean, atmosphere and sea-ice 
+* Run the climate workflow for 1 month on an HPC 
+* Set up a range of other climate models where various parameters are changed to generate interesting results.     
+* Visualise these results using Python/Iris.
 
-   * To understand
-   * To be aware of
-   * To become familiar with
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Contents
 
-   practical_exercises
+   running/running.rst
+   navigation/navigation.rst
+   plotting/plotting.rst
+   experiments/index.rst
