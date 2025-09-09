@@ -147,7 +147,7 @@ In this session, a brief overview of the basics of Iris will be provided, includ
 Iris - basics and scope
 +++++++++++++++++++++++
 
-Iris is a Python-based ecosystem and package used for the manipulation of UM data during post-processing.
+Iris is a Python-based ecosystem and package used for the manipulation of LFRic data during post-processing.
 It is open-source and has been included in other tools, such as ESMValTool and MetPlus, which are based on it.
 Iris offers a unified view of data as cubes and supports metadata-aware processing. It provides analysis capabilities in mathematics, statistics, large data handling, and regridding. For visualisation, Iris relies on Matplotlib and Cartopy.
 

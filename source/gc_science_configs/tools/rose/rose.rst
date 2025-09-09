@@ -7,7 +7,7 @@ Rose - managing model configurations
    :width: 200px
 
 * Rose is a tool for writing, editing, updating, and running configurations of applications
-* Rose allows top-level configuration of applications for workflows used for LFRic and UM model experiments
+* Rose allows top-level configuration of applications for workflows used for LFRic model experiments
 * Developed by the Met Office, but not LFRic specific (i.e. used for NEMO as well)
 
 **Rose configurations** are directories containing a Rose configuration file along with other optional assets which define behaviours such as execution, file installation, and environment variables.

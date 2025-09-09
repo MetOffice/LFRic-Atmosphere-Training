@@ -72,13 +72,6 @@ Tracking the progress of your workflow
    - [ ] University of Exeter
    - [ ] IBM
 
-   ## What is the equivalent UM resolution of C64 and its real world value?
-
-   - [ ] n96 and 200km
-   - [ ] n216 and 60km
-   - [ ] n48 and 115km
-   - [x] n96 and 135km
-
    ## Which templating languages are available to add logics and automation to suite.rc files?
 
    - [x] jinja2

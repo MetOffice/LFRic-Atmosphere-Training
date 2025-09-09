@@ -19,7 +19,7 @@ The GMED team has strong links throughout the Momentum Partnership to ensure tha
 .. image:: /_static/seamless_dev_cycle.png
    :width: 650px
 
-In July 2022, the final UM-based GC configuration was released, 'GC5', before the implementation of the LFRic atmospheric model into GC configurations. LFRic is the next-generation atmospheric model being developed by the Momentum framework, which is designed to be more modular and flexible than the UM. It is intended to replace the UM in future GC configurations, allowing for more efficient and effective modelling of atmospheric processes.
+In July 2022, the final UM-based GC configuration was released, 'GC5', before the implementation of the LFRic atmospheric model into GC configurations. LFRic is the next-generation atmospheric model being developed by the Momentum framework, which is designed to be more modular and flexible than its predecessor.
 
 .. admonition:: Fun fact!
 

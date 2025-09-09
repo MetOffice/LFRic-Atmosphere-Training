@@ -30,41 +30,6 @@ Details about the GC model on MOSRS include:
 
 By hosting the GC model on MOSRS, the Met Office ensures that model development is collaborative, traceable, and accessible to authorized users.
 
-Release Process for Configurations
-----------------------------------
-
-Releasing a new GC configuration involves several coordinated steps to ensure quality, reproducibility, and traceability:
-
-1. **Development and Testing:** Scientists and developers implement changes or new features in a development branch. Rigorous testing and validation are performed to ensure scientific correctness and technical stability.
-2. **Documentation:** Comprehensive documentation is prepared, detailing the scientific rationale, technical setup, and any changes from previous configurations.
-3. **Review and Approval:** The proposed configuration and its documentation are reviewed by peers or designated reviewers. Feedback is addressed before proceeding.
-4. **Versioning and Tagging:** Once approved, the configuration is merged into the main repository and assigned a version number or tag for traceability.
-5. **Release Notes:** Release notes summarizing the changes, new features, and known issues are published alongside the configuration.
-6. **Distribution:** The released configuration is made available to users through MOSRS, with clear instructions for access and use.
-
-Differences Between Configurations and Their Development
---------------------------------------------------------
-
-GC configurations differ in their scientific aims, parameterizations, input data, and technical setups. For example, some configurations may target operational forecasting, while others are designed for research experiments or specific scientific studies.
-
-Development of configurations typically involves:
-
-* **Defining Scientific Objectives:** Each configuration is tailored to meet specific research or operational goals.
-* **Selecting Parameterizations:** Choices are made regarding physical and chemical processes to include or modify.
-* **Input Data Preparation:** Appropriate datasets are selected and pre-processed for the configuration.
-* **Testing and Validation:** Configurations undergo testing to ensure they produce scientifically valid results.
-* **Documentation:** Each configuration is documented to describe its purpose, setup, and differences from others.
-
-Differences Between UM and LFRic GC Configurations
---------------------------------------------------
-
-The GC model has been implemented using both the Unified Model (UM) and LFRic frameworks, resulting in distinct configuration approaches:
-
-* **UM-based GC Configurations:** Built on the established Unified Model infrastructure, these configurations use legacy code and workflows. They are widely used for operational and research purposes and have a mature set of parameterizations and tools.
-* **LFRic-based GC Configurations:** Developed using the newer LFRic infrastructure, these configurations leverage modern software engineering practices, improved scalability, and flexibility. LFRic-based configurations may differ in available features, parameterizations, and workflows as development progresses.
-
-Key differences include the underlying model architecture, supported features, and the maturity of the configuration and workflow tools. Users should consult documentation to understand the specific capabilities and limitations of each version.
-
 Wiki Tickets on MOSRS
 ---------------------
 
@@ -79,4 +44,3 @@ Typical usage of wiki tickets for updating GC models includes:
 * **Review and Closure:** Once the update is complete and reviewed, the ticket is closed with a summary of the resolution and any relevant documentation links.
 
 Using wiki tickets ensures that updates to GC models are well-documented, reviewed, and traceable, supporting reproducible and collaborative development within the MOSRS environment.
-
