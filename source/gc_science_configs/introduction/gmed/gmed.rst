@@ -21,10 +21,6 @@ The GMED team has strong links throughout the Momentum Partnership to ensure tha
 
 In July 2022, the final UM-based GC configuration was released, 'GC5', before the implementation of the LFRic atmospheric model into GC configurations. LFRic is the next-generation atmospheric model being developed by the Momentum framework, which is designed to be more modular and flexible than its predecessor.
 
-.. admonition:: Fun fact!
-
-   LFRic, pronounced "elfrick", was named after Lewis Fry Richardson, a pioneering British meteorologist who made significant contributions to the field of numerical weather prediction. His methods laid the groundwork for modern weather forecasting, and the name LFRic pays homage to his legacy in atmospheric science.
-
 Following GC5-UM, there was a project associated with the Next Generation Modelling System (NGMS) programme to develop a GC5-LFRic science configuration. This was a like-for-like LFRic version of GC5, for purely research and validation purposes. The GC5-LFRic configuration will not be released as a science configuration, but it has been used to validate the LFRic model in a coupled configuration and will be the basis for the next science configuration, GC6.
 
 GC6 will be the first operational use of LFRic in a science configuration at the Met Office and across the Momentum Partnership. GC6 will be implemented in PS49 and in UKESM3 for CMIP8. The development of GC6 is ongoing, with the first release expected in early 2026.
