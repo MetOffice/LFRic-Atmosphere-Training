@@ -8,9 +8,9 @@ Met Office science configurations are built on **Rose** and **Cylc (“Silk”)*
 
 .. admonition:: Aims and objectives
 
-   * To understand
-   * To be aware of
-   * To become familiar with
+   * To be able to identify the tools used to manage and run Momentum science configurations
+   * Direct you to resources for learning more about these tools
+   * Familiarise you with the tools and processes used to manage and run Momentum science configurations
 
 .. toctree::
    :maxdepth: 1
