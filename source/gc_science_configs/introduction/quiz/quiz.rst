@@ -138,33 +138,33 @@ Quiz: GC Configurations
 
    ## What is the role of the GMED team?
    > hint: They're the brains behind GC development.
-   2. [ ] To run operational forecasts
+   1. [ ] To run operational forecasts
    > Try again! Running forecasts is not their main role.
-   3. [x] To evaluate and develop GC configurations collaboratively
+   1. [x] To evaluate and develop GC configurations collaboratively
    > Correct! The GMED team focuses on evaluating and developing GC configurations.
-   4. [ ] To manage IT infrastructure
+   1. [ ] To manage IT infrastructure
    > Try again! IT management is not their focus.
-   5. [ ] To publish climate reports
+   1. [ ] To publish climate reports
    > Try again! Publishing reports is not their main role.
 
    ## Why are the atmosphere and land models integrated into a single executable?
    > hint: They need to talk to each other every timestep.
-   6. [ ] To reduce memory usage
+   1. [ ] To reduce memory usage
    > Try again! Memory usage is not the main reason.
-   7. [x] Because they are physically interconnected and exchange data every timestep
+   1. [x] Because they are physically interconnected and exchange data every timestep
    > Correct! The atmosphere and land models are closely linked and need to exchange data frequently.
-   8. [ ] To simplify the codebase
+   1. [ ] To simplify the codebase
    > Try again! Code simplicity is not the main reason.
-   9. [ ] To allow for manual tuning
+   1. [ ] To allow for manual tuning
    > Try again! Manual tuning is not the reason.
 
    ## How long is the typical development cycle for a GC configuration?
    > hint: It's how long it took to construct the Panama canal.
-   10. [ ] 6 months
+   1. [ ] 6 months
    > Try again! The development cycle is longer than that.
-   11. [ ] 1 year
+   1. [ ] 1 year
    > Try again! The development cycle is longer than that.
-   12. [x] Approximately 2 years
+   1. [x] Approximately 2 years
    > Correct! The development cycle is about 2 years.
-   13. [ ] 5 years
+   1. [ ] 5 years
    > Try again! The development cycle is shorter than that.
