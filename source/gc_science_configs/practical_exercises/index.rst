@@ -12,7 +12,7 @@ The aim of this practical is to gain experience in running and analysing climate
 
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 1
    :caption: Contents
 
    running/running.rst

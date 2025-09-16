@@ -30,7 +30,7 @@ Contents of the training course
 -------------------------------
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 1
 
    introduction/index.rst
    mesh_overview/index.rst

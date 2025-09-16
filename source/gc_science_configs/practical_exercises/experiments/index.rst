@@ -27,7 +27,7 @@ Main Practical
 .. note:: Feel free to enlarge the size of these changes (e.g. 20x CO2) if your analysis is not detecting much of  an impact. Copy the output files (files explained at the end of the last section) to your local Linux workstation  and analyse the files using Python/Iris. Try to plot differences between the experiments and the control in the fields that you think will be most strongly affected. If possible make a prediction at what these   differences might show before you do the plots. Were your predictions right?
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Contents
 
    add_diag/add_diag.rst

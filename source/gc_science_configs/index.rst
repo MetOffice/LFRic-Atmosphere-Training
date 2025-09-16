@@ -12,7 +12,7 @@ This module covers how the Met Office's global models are developed, configured 
    * To checkout, edit and run a global model
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Contents
 
    introduction/index.rst
