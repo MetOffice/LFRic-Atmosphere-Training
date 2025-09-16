@@ -24,7 +24,7 @@ Momentum Training - LFRic Atmosphere
    - Configuration management system `Rose <https://metomi.github.io/rose/doc/html/tutorial/rose/index.html>`_: A toolkit for writing, editing, and running application configurations.
    - Version control with `FCM <https://metomi.github.io/fcm/doc/user_guide/>`_ and `Git <https://www.astropython.com/git-novice/>`_: Tools for tracking and managing changes in code.
 
----------
+-------------------------------
 
 Contents of the training course
 -------------------------------
@@ -35,6 +35,4 @@ Contents of the training course
    introduction/index.rst
    mesh_overview/index.rst
    lfric_infrastructure/index.rst
-   gc_science_configs/index.rst
-   ral_science_configs/index.rst
-
+   modelling/index.rst

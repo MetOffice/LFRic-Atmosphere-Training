@@ -1,7 +1,10 @@
-Assessment and Evaluation of GC configurations
-==============================================
+Assessment and evaluation of model configurations
+=================================================
 
 At the Met Office and across the Partnership, continual evaluation and verification of model outputs is an essential part of the development process. Comparison of model climatology with those from observations or reanalyses is key to identify systematic biases or model trends.
+
+GC evaluation tools
+-------------------
 
 The Met Office maintains routine tools for validation of GC configurations:
 
@@ -12,3 +15,11 @@ The Met Office maintains routine tools for validation of GC configurations:
 
 .. image:: /_static/autoassess.png
    :width: 700px
+
+Regional evaluation tools
+-------------------------
+
+  And for regional configurations:
+
+* `CSET <https://metoffice.github.io/CSET/index.html>`_
+* *Any others*

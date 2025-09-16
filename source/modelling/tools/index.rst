@@ -1,5 +1,5 @@
 **************************
-Tools for Global Modelling
+Tools for Modelling
 **************************
 
 NWP and climate models have a large numbers of jobs which are executed at regular intervals to process new data and generate new forecasts. Dependence between these forecast cycles creates a single never-ending workflow, which NWP workflow schedulers have traditionally ignored.
