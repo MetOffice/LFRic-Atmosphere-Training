@@ -16,7 +16,7 @@ Rose configurations may be used standalone or in combination with the Cylc workf
 
 **Why Use Rose Configurations?**
 
-With Rose configurations, the inputs and environment required for a particular purpose can be encapsulated in a simple human-readable configuration. Configuration settings can have metadata associated with them which may be    used for multiple purposes including automatic checking and transforming. Rose configurations can be edited either using a text editor or with the rose config-edit GUI which makes use of metadata for display and on-the-fly validation purposes.
+With Rose configurations, the inputs and environment required for a particular purpose can be encapsulated in a simple human-readable configuration. Configuration settings can have metadata associated with them which may be used for multiple purposes including automatic checking and transforming. Rose configurations can be edited either using a text editor or with the rose config-edit GUI which makes use of metadata for display and on-the-fly validation purposes.
 
 
 .. note:: More information and training material: https://metomi.github.io/rose/doc/html/tutorial/rose/metadata.html
