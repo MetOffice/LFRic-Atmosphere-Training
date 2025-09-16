@@ -24,16 +24,16 @@ Quiz: GC Configurations
    1. [ ] A software update for LFRic
    > Try again! It's not just a software update.
    1. [ ] A set of climate observations
-   > Try again! It's not just observations.
+   > No, but climate observations are important for evaluating science configurations.
 
    ## Which of the following is *not* one of the Momentum framework’s four core models?
    > hint: One of these is popular in the US, not the UK.
-   1. [ ] LFRic
-   > Try again! LFRic is the atmospheric model in the Momentum framework.
+   1. [ ] LFRic Atmosphere
+   > Try again! LFRic Atmosphere is the atmospheric model in the Momentum framework.
    1. [ ] NEMO
    > Try again! NEMO is the ocean model in the Momentum framework.
    1. [ ] CICE
-   > Try again! CICE is the sea ice model in the Momentum framework.
+   > Try again! SI³ is the sea ice model in the Momentum framework.
    1. [x] WRF
    > Correct! WRF is not part of the Momentum framework; it's a different atmospheric model.
 
@@ -51,7 +51,7 @@ Quiz: GC Configurations
    ## What is the purpose of the OASIS coupler in GC configurations?
    > hint: Think of OASIS as a matchmaker for model components.
    1. [ ] To simulate sea ice melting
-   > Try again! OASIS does more than just that.
+   > Try again! OASIS couples the sea ice model with the atmospheric model but it does not simulate sea ice melting
    1. [x] To couple the GAL and GOSI components
    > Correct! OASIS couples the GAL and GOSI components.
    1. [ ] To visualize model outputs
@@ -136,46 +136,35 @@ Quiz: GC Configurations
    1. [ ] It avoids the need for testing
    > Try again! Testing is still essential.
 
-   ## Which of the following systems has implemented a Momentum GC configuration?
-   > hint: Only one of these has "UK" in its name.
-   1. [x] UKESM1.1
-   > Correct! UKESM1.1 uses GC3.1.
-   1. [ ] GFS
-   > Try again! GFS is not part of the Momentum framework.
-   1. [ ] ICON
-   > Try again! ICON is not part of the Momentum framework.
-   1. [ ] ERA5
-   > Try again! ERA5 is a reanalysis dataset, not a model configuration.
-
    ## What is the role of the GMED team?
    > hint: They're the brains behind GC development.
-   1. [ ] To run operational forecasts
+   2. [ ] To run operational forecasts
    > Try again! Running forecasts is not their main role.
-   1. [x] To evaluate and develop GC configurations collaboratively
+   3. [x] To evaluate and develop GC configurations collaboratively
    > Correct! The GMED team focuses on evaluating and developing GC configurations.
-   1. [ ] To manage IT infrastructure
+   4. [ ] To manage IT infrastructure
    > Try again! IT management is not their focus.
-   1. [ ] To publish climate reports
+   5. [ ] To publish climate reports
    > Try again! Publishing reports is not their main role.
 
    ## Why are the atmosphere and land models integrated into a single executable?
    > hint: They need to talk to each other every timestep.
-   1. [ ] To reduce memory usage
+   6. [ ] To reduce memory usage
    > Try again! Memory usage is not the main reason.
-   1. [x] Because they are physically interconnected and exchange data every timestep
+   7. [x] Because they are physically interconnected and exchange data every timestep
    > Correct! The atmosphere and land models are closely linked and need to exchange data frequently.
-   1. [ ] To simplify the codebase
+   8. [ ] To simplify the codebase
    > Try again! Code simplicity is not the main reason.
-   1. [ ] To allow for manual tuning
+   9. [ ] To allow for manual tuning
    > Try again! Manual tuning is not the reason.
 
    ## How long is the typical development cycle for a GC configuration?
    > hint: It's how long it took to construct the Panama canal.
-   1. [ ] 6 months
+   10. [ ] 6 months
    > Try again! The development cycle is longer than that.
-   1. [ ] 1 year
+   11. [ ] 1 year
    > Try again! The development cycle is longer than that.
-   1. [x] Approximately 2 years
+   12. [x] Approximately 2 years
    > Correct! The development cycle is about 2 years.
-   1. [ ] 5 years
+   13. [ ] 5 years
    > Try again! The development cycle is shorter than that.
