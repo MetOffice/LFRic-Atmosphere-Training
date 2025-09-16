@@ -32,7 +32,7 @@ Quiz: GC Configurations
    > Try again! LFRic Atmosphere is the atmospheric model in the Momentum framework.
    1. [ ] NEMO
    > Try again! NEMO is the ocean model in the Momentum framework.
-   1. [ ] CICE
+   1. [ ] SI³
    > Try again! SI³ is the sea ice model in the Momentum framework.
    1. [x] WRF
    > Correct! WRF is not part of the Momentum framework; it's a different atmospheric model.
