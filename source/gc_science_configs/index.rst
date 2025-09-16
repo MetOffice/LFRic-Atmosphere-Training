@@ -11,7 +11,11 @@ This module covers how the Met Office's global models are developed, configured 
    * To become familiar with the MOSRS and wiki ticketing and documentation
    * To checkout, edit and run a global model
 
-.. include:: gc_introduction.rst
-.. include:: tools.rst
-.. include:: model_evaluation.rst
-.. include:: practical_exercises.rst
+.. toctree::
+   :maxdepth: 1
+   :caption: Contents
+
+   introduction/index.rst
+   tools/index.rst
+   med/index.rst
+   practical_exercises/index.rst
