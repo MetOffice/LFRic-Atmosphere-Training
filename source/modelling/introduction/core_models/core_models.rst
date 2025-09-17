@@ -20,8 +20,6 @@ The GAL and GOSI models are coupled to form the GC configuration. This is done v
 
 *In the limited area model configurations... *
 
-*In the limited area model configurations... *
-
 .. admonition:: Fun fact!
 
    LFRic, pronounced "elfrick", was named after Lewis Fry Richardson, a pioneering British meteorologist who made significant contributions to the field of numerical weather prediction. His methods laid the groundwork for modern weather forecasting, and the name LFRic pays homage to his legacy in atmospheric science.
