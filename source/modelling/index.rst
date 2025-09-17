@@ -13,7 +13,7 @@ This module covers how the Met Office's models are developed, configured and run
    * To checkout, edit, and run a regional model
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Contents
 
    introduction/index.rst
