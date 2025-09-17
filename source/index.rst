@@ -25,7 +25,6 @@ Momentum Training - LFRic Atmosphere
    - Version control with `FCM <https://metomi.github.io/fcm/doc/user_guide/>`_ and `Git <https://www.astropython.com/git-novice/>`_: Tools for tracking and managing changes in code.
 
 -------------------------------
-
 Contents of the training course
 -------------------------------
 

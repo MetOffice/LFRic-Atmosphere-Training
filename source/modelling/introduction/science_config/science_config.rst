@@ -1,8 +1,7 @@
 **********************
 Science Configurations
 **********************
-A science configuration defines the settings for a combination of core models, such as specifications for parameterisations and numerics. Science configurations are tested and evaluated across a set of model resolutions to ensure they meet the required standards for accuracy and reliability. Once the evaluation is complete, the configuration is frozen, numbered, and released as a package that can be used to build modelling systems for research and operational purposes; this is illustrated in the diagram below.
-
+A science configuration is when a defined version of each of the core models is combined together with a set of science settings, such as parameterisations and resolutions, to create a complete model system. The science configuration is then tested and evaluated to ensure that it meets the required standards for accuracy and reliability. Once this is done, the configuration is frozen, numbered, and released as a package that can be used for research and operational purposes; this is illustrated in the diagram below.
 
 .. image:: /_static/components.png
    :width: 650px
