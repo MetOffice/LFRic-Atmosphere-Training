@@ -2,7 +2,7 @@
 Model Evaluation and Development
 ********************************
 
-This module covers how the Met Office's models are developed and evaluated within the Momentum® Framework.
+This section covers how the Met Office's models are developed and evaluated within the Momentum® Framework.
 
 .. admonition:: Aims and objectives
 
