@@ -1,14 +1,14 @@
-********************************
-Model Evaluation and Development
-********************************
+**************************
+Evaluation and Development
+**************************
 
-This section covers how the Met Office's models are developed and evaluated within the Momentum® Framework.
+This section covers how the science configurations are developed and evaluated within the Momentum® Framework.
 
 .. admonition:: Aims and objectives
 
-   * To be able to identify the tools involved in model evaluation and development
+   * To be able to identify the tools involved in evaluation and development
    * Direct you to resources for learning more about these processes and tools
-   * Familiarise you with the processes involved in model evaluation and development
+   * Familiarise you with the processes involved in evaluation and development
   
 .. toctree::
    :maxdepth: 1

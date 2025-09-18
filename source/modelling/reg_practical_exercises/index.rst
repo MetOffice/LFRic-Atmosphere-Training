@@ -1,8 +1,8 @@
-*****************************
-Exercises in Regional Modelling
-*****************************
+************************************
+Exercises in Regional Configurations
+************************************
 
-The aim of this practical is to gain experience in running and analysing limited area models. You will:
+The aim of this practical is to gain experience in running and analysing limited area configurations. You will:
 
 * ....
 * ....

@@ -1,7 +1,7 @@
-Assessment and evaluation of model configurations
-=================================================
+Assessment and evaluation of science configurations
+===================================================
 
-At the Met Office and across the Partnership, continual evaluation and verification of model outputs is an essential part of the development process. Comparison of model climatology with those from observations or reanalyses is key to identify systematic biases or model trends.
+Across the Partnership, continual evaluation and verification of science configuration outputs is an essential part of the development process. Comparison of modelled climatology with those from observations or reanalyses is key to identify systematic biases or science configuration trends.
 
 GC evaluation tools
 -------------------

@@ -1,8 +1,8 @@
-***********
-Core Models
-***********
+****************
+Component Models
+****************
 
-The Momentum framework develops four core models: 
+The Momentum framework develops four component models: 
 
 * **Atmosphere**: `LFRic Atmosphere <https://www.metoffice.gov.uk/research/approach/modelling-systems/lfric>`_
 
@@ -22,4 +22,4 @@ The GAL and GOSI models are coupled to form the GC configuration. This is done v
 
 .. admonition:: Fun fact!
 
-   LFRic, pronounced "elfrick", was named after Lewis Fry Richardson, a pioneering British meteorologist who made significant contributions to the field of numerical weather prediction. His methods laid the groundwork for modern weather forecasting, and the name LFRic pays homage to his legacy in atmospheric science.
+   LFRic, pronounced "elfrick", was named after Lewis Fry Richardson, a pioneering British mathematician who made significant contributions to the field of numerical weather prediction. His methods laid the groundwork for modern weather forecasting, and the name LFRic pays homage to his legacy in atmospheric science.
