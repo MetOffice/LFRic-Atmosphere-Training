@@ -1,3 +1,5 @@
+.. _seamless-modelling:
+
 Seamless Modelling
 ==================
 
