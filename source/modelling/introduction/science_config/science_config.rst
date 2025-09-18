@@ -6,7 +6,7 @@ A science configuration defines the settings for a component or combination of c
 .. image:: /_static/components.png
    :width: 650px
 
-Workflows can be built around the released science configuration to create prediction and projection systems. These workflows utilise the Momentum technical infrastucture to manage and run these systems integrating for example, software builds, data assimilation, and post-processing to generate forecasts and projections.
+Workflows can be built around the released science configuration to create prediction and projection systems. These workflows utilise the Momentum technical infrastructure to manage and run these systems, integrating, for example, software builds, data assimilation, and post-processing to generate forecasts and projections.
 
 Once a science configuration is defined, it can be used for different systems across the Momentum Partnership. For example:
 
