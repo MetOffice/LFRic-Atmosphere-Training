@@ -41,8 +41,8 @@ jobs:
       - name: Set up Artifactory credentials
         uses: MetOffice/action-setup-artifactory@v1
           with:
-            username: ${{ secrets.ART_USER }}  # replace with your shared username variable
-            api-key: ${{ secrets.ART_KEY }}  # replace with your key variable
+            username: ${{ secrets.ARTIFACTORY_API_USER }}
+            api-key: ${{ secrets.ARTIFACTORY_API_KEY }}
 
       - name: Sort out conda channels in ~/.condarc
         run: |
