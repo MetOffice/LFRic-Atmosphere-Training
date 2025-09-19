@@ -17,13 +17,17 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup conda authentication with Met Office Artifactory
+      - name: Set up Artifactory credentials
+        uses: MetOffice/action-setup-artifactory@v1
+          with:
+            username: ${{ secrets.ART_USER }}  # replace with your shared username variable
+            api-key: ${{ secrets.ART_KEY }}  # replace with your key variable
+
+      - name: Sort out conda channels in ~/.condarc
         run: |
-          cat > ~/.netrc << EOF
-          machine ${MO_ARTIFACTORY}
-          password ${{ secrets.ARTIFACTORY_API_KEY }}
-          EOF
-          chmod 0600 ~/.netrc
+          conda config --remove channels defaults
+          conda config --add channels conda-forge
+          conda config --set channel_priority strict
 
       - name: Set up conda environment
         run: |
