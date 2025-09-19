@@ -29,9 +29,6 @@ jobs:
           conda config --add channels conda-forge
           conda config --set channel_priority strict
 
-      - name: debug
-        run: cat ~/.netrc
-
       - name: Set up conda environment
         run: |
           conda update conda
