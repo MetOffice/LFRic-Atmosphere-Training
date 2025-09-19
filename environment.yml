@@ -5,9 +5,10 @@ channels:
 dependencies:
 - python>=3.6
 - sphinx
-- sphinx_rtd_theme
+- pydata-sphinx-theme
 - sphinxcontrib-video
 - sphinx-toolbox
 - pip:
   # works for pip packages
   - git+https://github.com/bonartm/sphinxcontrib-quizdown.git
+
