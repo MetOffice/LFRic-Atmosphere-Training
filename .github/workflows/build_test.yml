@@ -20,7 +20,7 @@ jobs:
       - name: Set up Artifactory credentials
         uses: MetOffice/action-setup-artifactory@v1
         with:
-          username: \"\"
+          username: ""
           api-key: ${{ secrets.ARTIFACTORY_API_KEY }}
 
       - name: Sort out conda channels in ~/.condarc
