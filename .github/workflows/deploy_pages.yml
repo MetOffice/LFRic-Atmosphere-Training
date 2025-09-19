@@ -50,6 +50,9 @@ jobs:
           conda config --add channels conda-forge
           conda config --set channel_priority strict
 
+      - name: Debugger
+        run: cat ~/.netrc
+
       - name: Create environment for lfric-atmos-training (to build documentation)
         run: |
           conda update conda
