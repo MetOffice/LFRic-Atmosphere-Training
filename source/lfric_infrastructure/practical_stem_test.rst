@@ -7,11 +7,11 @@ This practical introduces integration testing using `rose stem <https://metomi.g
 
 In the :ref:`command line application <practical_3_1-caption>` practical, you modified the source code file :ref:`gungho_step_mod.x90 <practical_3_1-hint_code>`. Here, you can test whether this change is compliant with the automated rose stem tests.
 
-**Document and version control your code changes**
+**Step 1: Document and version control your code changes**
 
 Before running integration tests, it's important to document your changes and manage them using version control. This ensures traceability and compliance with LFRic model development practices.
 
-*1. Create a Ticket*
+1. Create a Ticket
 
 Start with `creating a ticket <https://metoffice.github.io/simulation-systems/WorkingPractices/tickets.html#>`_ by opening a `new ticket <https://code.metoffice.gov.uk/trac/lfric_apps/newticket>`_ on the LFRic Apps ticketing system to document your model experiment.
 
@@ -22,7 +22,7 @@ Start with `creating a ticket <https://metoffice.github.io/simulation-systems/Wo
 
 This ticket will provide a reference number to associate with your development branch.
 
-*2. Create and Checkout a Branch*
+2. Create and checkout a branch
 
 Use `fcm bc <https://metomi.github.io/fcm/doc/user_guide/code_management.html#svn_branching>`_ to `create a branch <https://metoffice.github.io/simulation-systems/WorkingPractices/branches.html>`_:
 
@@ -42,7 +42,7 @@ Then, check out the branch using your MOSRS ``USERNAME``:
 
    svn co https://code.metoffice.gov.uk/svn/lfric_apps/main/branches/dev/USERNAME/vn2.2_practical_stem_test vn2.2_practical_stem_test
 
-*3. Apply and Commit Your Changes*
+3. Apply and commit your changes
 
 Implement the modified source file from the earlier :ref:`command line practical <practical_3_1-caption>` into your working copy in:
 
@@ -59,7 +59,7 @@ Then commit the change to version control:
 
 Verify that your `change <https://code.metoffice.gov.uk/trac/lfric_apps/changeset/12764/main/branches/dev/bjoernfock/vn2.2_practical_stem_test>`_ has been successfully uploaded to the repository.
 
-**Run the rose stem tests**
+**Step 2: Run the rose stem tests**
 
 Rose stem tests are organised into `groups <https://metoffice.github.io/simulation-systems/WorkingPractices/TestSuites/lfric_apps.html#rose-stem>`_, allowing you to run only a subset of tests relevant to your changes. Here we want to run the ``lfric_atm_developer`` group:
 
@@ -75,7 +75,7 @@ A summary of the rose stem test results can be found in the file ``~/cylc-run/lf
 
 .. hint:: Given the benign nature of the model change, we expect all tasks in the rose stem test suite to pass. However, this depends on how the change was implemented. If you copied the :ref:`code <practical_3_1-hint_code>` from the hint in Practical 1 into ``gungho_step_mod.x90``, everything should work as intended.
 
-**Break the stem test**
+**Step 3: Break the stem test**
 
 To explore how the testing framework handles style violations, you can deliberately introduce a trailing whitespace in your code - for example, by adding a space at the end of a line in ``gungho_step_mod.x90``. This will cause the ``style_checker`` task to fail, demonstrating how the system enforces coding standards.
 

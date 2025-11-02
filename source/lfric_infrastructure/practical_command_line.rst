@@ -3,89 +3,112 @@
 Practical 1: Run the model from command line
 --------------------------------------------
 
-Before showing how to run the model as part of Cylc workflows, this practical introduces LFRic Atmosphere as a command line application. It demonstrates how the model can be built and run from the command line, and how to add a message to the standard output of the model.
+Before showing how to run LFRic Atmosphere as part of Cylc workflows, this practical introduces it as a command line application. It demonstrates how to:
 
-**Compile the model**
+*	Build and run the model from the command line.
+*	Add custom messages to the model’s standard output.
 
-Use Subversion to checkout the code:
+**Step 1: Compile the model**
 
-.. code-block:: text
+1. Checkout the code using Subversion (SVN):
 
-   mkdir practical_command_line
-   cd  practical_command_line
-   svn co https://code.metoffice.gov.uk/svn/lfric_apps/main/trunk lfric_apps
+   .. code-block:: text
 
-This exercise requires to setup the build environment correctly and to select the compiler. The instructions for this depend on where you run this exercise. Setup commands for some supported platforms are provided below:
+      mkdir practical_command_line
+      cd  practical_command_line
+      svn co https://code.metoffice.gov.uk/svn/lfric_apps/main/trunk lfric_apps
 
-.. collapse:: Met Office Azure Spice
+2.	Set up the build environment and select the compiler.
 
-              .. code-block:: text
+ Instructions depend on your platform. For Met Office Azure Spice, use:
 
-                              ml use ~lfricadmin/lmod
-                              ml lfric
+   .. collapse:: Met Office Azure Spice
 
-See the documentation for the `LFRic Development Environment <https://code.metoffice.gov.uk/trac/lfric/wiki/DevelopmentEnvironment>`_ for how to activate the environment for other platforms.
+                 .. code-block:: text
 
-Now compile the model with:
+                                 ml use ~lfricadmin/lmod
+                                 ml lfric
 
-.. code-block:: text
-   :emphasize-lines: 2
+ For other platforms, see the `LFRic Development Environment <https://code.metoffice.gov.uk/trac/lfric/wiki/DevelopmentEnvironment>`_ .
 
-   cd lfric_apps
-   ./build/local_build.py -a lfric_atm
+3. Compile the model
 
-The compilation will take some time and uses code from the different repositories, algorithms, and kernels. It invokes PSyclone, compiles, and links the code. The compiled model executable ``lfric_atm`` will be in the folder ``applications/lfric_atm/bin/`` once the compilation finished.
+   .. code-block:: text
+      :emphasize-lines: 2
 
-**Run the model**
+      cd lfric_apps
+      ./build/local_build.py -a lfric_atm
+
+ The compilation may take some time and uses code from the different repositories, algorithms, and kernels. It invokes PSyclone, compiles, and links the code. The compiled model executable ``lfric_atm`` will be in the folder ``applications/lfric_atm/bin/`` once the compilation finished.
+
+**Step 2: Run the model**
 
 The code contains an example configuration, colloquially called "canned configuration", in  the namelist file `applications/lfric_atm/example/configuration.nml <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/applications/lfric_atm/example/configuration.nml>`_. This configuration sets up a "single column" run of LFRic Atmosphere. It is configured to use the mesh file in the `example <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/applications/lfric_atm/example>`_ directory which is, in reality, not a single column mesh, but a 2x2 biperiodic mesh. However, the configuration is designed in such a way that each column is computed independently from the other columns and, in fact, gives identical results for each column.
 
-Change to that folder and run the example:
+1. Navigate to the example configuration directory:
 
-.. code-block:: text
-   :emphasize-lines: 2
+   .. code-block:: text
+      :emphasize-lines: 2
 
-   cd applications/lfric_atm/example
-   ../bin/lfric_atm configuration.nml
+      cd applications/lfric_atm/example
+      ../bin/lfric_atm configuration.nml
 
-The namelist file ``configuration.nml`` configures the model run. Redirect the standard output to a text file to examine later:
+
+2.	Run the example with a “single-column” configuration:
+
+   .. code-block:: text
+      :emphasize-lines: 1
+
+      ../bin/lfric_atm configuration.nml
+
+ The namelist file ``configuration.nml`` configures the model run.
+ 
+ 
+3. Redirect the standard output to a text file to examine later:
 
 .. code-block:: bash
 
    ../bin/lfric_atm configuration.nml > log.txt
 
-Explore the file ``log.txt`` and the other output files which include log messages from the I/O system, run time profiling, `checksums <https://github.com/MetOffice/simulation-systems/discussions/370>`_ of model fields after the last time step for tests, and three NetCDF files. Using the knowledge from module 2 of this training it is possible to open these files and explore the data produced by the model run.
+
+4.	Explore the outputs:
+
+ ``log.txt`` and the other output files contain log messages from the I/O system, run time profiling, `checksums <https://github.com/MetOffice/simulation-systems/discussions/370>`_ of model fields after the last time step for tests, and three NetCDF files. Using the knowledge from module 2 of this training it is possible to open these files and explore the data produced by the model run.
 
 .. note::  The NetCDF output is configured by the file `iodef.xml  <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/applications/lfric_atm/example/iodef.xml#L46>`_ in the example directory. It controls the output streams, filenames, written fields, and output frequency.
 
-**Add info message to model output**
+**Step 3: Add a custom message to model output**
 
-To gain familiarity with the model, try to add your own print statement at the end of each time step (and a different print statement after time step 72).
+To gain familiarity with the model:
 
-.. hint:: Search the code for the log messages available in ``log.txt`` (e.g. with ``grep -R "End of timestep" *``) to find where to change the code and write such an output.
+1. Add your own print statement at the end of each time step (and a different print statement after time step 72).
+
+ .. hint:: Search the code for the log messages available in ``log.txt`` (e.g. with ``grep -R "End of timestep" *``) to find where to change the code and write such an output.
 
 
-.. important:: Note that you have to edit the file ``gungho_step_mod.x90`` in `science/gungho/source/driver <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/science/gungho/source/driver/>`_  not the autogenerated ``gungho_step_mod.f90`` in ``applications/lfric_atm/working/build_lfric_atm/driver``.
+ .. important:: Note that you have to edit the file ``gungho_step_mod.x90`` in `science/gungho/source/driver <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/science/gungho/source/driver/>`_  not the autogenerated ``gungho_step_mod.f90`` in ``applications/lfric_atm/working/build_lfric_atm/driver``.
 
-Adjust the code, re-compile, and re-run the model. Can you see your new message in the output?
+2.	Adjust the code, re-compile, and re-run the model.
 
-.. _practical_3_1-hint_code:
+ You will see your new message in the output.
 
-.. hint:: You can write to standard out by adding the following Fortran code at the end of the subroutine gungho_step in the file `gungho_step_mod.x90 <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/science/gungho/source/driver/gungho_step_mod.x90?rev=9055#L217>`_ in the folder ``science/gungho/source/driver``:
+   .. _practical_3_1-hint_code:
 
-   .. collapse:: Fortran code to write info message
+   .. hint:: You can write to standard output by adding the following Fortran code at the end of the subroutine gungho_step in the file `gungho_step_mod.x90 <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/science/gungho/source/driver/gungho_step_mod.x90?rev=9055#L217>`_ in the folder ``science/gungho/source/driver``:
 
-      .. code-block:: fortran
+      .. collapse:: Fortran code to write info message
 
-                      write( log_scratch_space, '(A)' ) "###_INFO_#1 END OF TIME STEP"  
-                      call log_event( log_scratch_space, LOG_LEVEL_INFO )  
+         .. code-block:: fortran
 
-                      if (model_clock%get_step() .lt. 72) then  
-                         write( log_scratch_space, '(A)' ) "###_INFO_#2 THE WEATHER IS FINE"  
-                      else  
-                         write( log_scratch_space, '(A)' ) "###_INFO_#2 ENJOY THE MODEL TUTORIAL"  
-                      endif  
-                      call log_event( log_scratch_space, LOG_LEVEL_INFO )  
+                         write( log_scratch_space, '(A)' ) "###_INFO_#1 END OF TIME STEP"  
+                         call log_event( log_scratch_space, LOG_LEVEL_INFO )  
+
+                         if (model_clock%get_step() .lt. 72) then  
+                            write( log_scratch_space, '(A)' ) "###_INFO_#2 THE WEATHER IS FINE"  
+                         else  
+                            write( log_scratch_space, '(A)' ) "###_INFO_#2 ENJOY THE MODEL TUTORIAL"  
+                         endif  
+                         call log_event( log_scratch_space, LOG_LEVEL_INFO )  
 
 Code changes like you have implmeneted here belong into version control. Practical 3 will introduce ticketing and version control for LFRic code.
 
