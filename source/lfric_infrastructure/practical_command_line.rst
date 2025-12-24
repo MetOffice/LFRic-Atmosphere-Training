@@ -110,6 +110,6 @@ To gain familiarity with the model:
                          endif  
                          call log_event( log_scratch_space, LOG_LEVEL_INFO )  
 
-Code changes like you have implmeneted here belong into version control. Practical 3 will introduce ticketing and version control for LFRic code.
+Code changes like you have implemented here belong into version control. Practical 3 will introduce ticketing and version control for LFRic code.
 
 .. note:: Changes like the one you've implemented here should be tracked using version control. This ensures traceability and supports collaborative development. You'll learn how to document and manage your code changes using tickets and branches in Practical 3.
