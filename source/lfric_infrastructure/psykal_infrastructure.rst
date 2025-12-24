@@ -1,7 +1,7 @@
 PSyKAl and PSyclone
 ===================
 
-LFRic is designed so scientists and software engineers can work on different parts of the code. To do this, LFRic uses a domain-specific language (DSL) — a special 
+LFRic is designed so scientists and software engineers can work on different parts of the code independently. To implement this separation of concerns, LFRic uses a domain-specific language (DSL) — a special 
 programming layer — that separates:
 
 *	**Natural science code**: equations and models that describe the atmosphere, physics, and other scientific processes.
