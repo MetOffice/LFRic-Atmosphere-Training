@@ -13,7 +13,12 @@ Now that you ran the LFRic atmosphere model from the command line, this second p
 
 LFRic Apps Standard Suites are available for several computing platforms. Workflow IDs are documented on the `LFRic Apps wiki pages <https://code.metoffice.gov.uk/trac/lfric_apps#WorkingwithLFRicApps>`_. 
 
-For the Met Office Azure Spice platform, checkout the Standard Suite with:
+
+Instructions to checkout the Standard Suite depend on your platform. For Met Office Azure Spice, use:
+   .. collapse:: Met Office Azure Spice
+                 .. code-block:: text
+                                 rosie co u-dn674
+                                 mv ~/roses/u-dn674 ~/cylc-src/lfric_apps_standard_suite
 
 .. code-block:: bash
    
