@@ -3,7 +3,7 @@
 Practical 2: Running the LFRic Apps Standard Suite
 --------------------------------------------------
 
-This practical introduces the LFRic Apps Standard Suite. You will learn how to:
+Now that you ran the LFRic atmosphere model from the command line, this second practical will introduce how to run it as part of a Cylc workflow. For that we will be using the LFRic Apps Standard Suite. You will learn how to:
 
 * Run the model in a simple workflow
 * Locate model outputs and logs
