@@ -15,10 +15,13 @@ LFRic Apps Standard Suites are available for several computing platforms. Workfl
 
 
 Instructions to checkout the Standard Suite depend on your platform. For Met Office Azure Spice, use:
-   .. collapse:: Met Office Azure Spice
-                 .. code-block:: text
-                                 rosie co u-dn674
-                                 mv ~/roses/u-dn674 ~/cylc-src/lfric_apps_standard_suite
+
+.. collapse:: Met Office Azure Spice
+
+      .. code-block:: bash
+     
+         rosie co u-dn674
+         mv ~/roses/u-dn674 ~/cylc-src/lfric_apps_standard_suite
 
 .. code-block:: bash
    
