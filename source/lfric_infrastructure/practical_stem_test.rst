@@ -11,9 +11,9 @@ In the :ref:`command line application <practical_3_1-caption>` practical, you mo
 
 Before running integration tests, it's important to document your changes and manage them using version control. This ensures traceability and compliance with LFRic model development practices.
 
-1. Create an issue
+1. Create a Ticket
 
-Start with `creating an issue <https://metoffice.github.io/simulation-systems/WorkingPractices/gh_dev_init.html#create-an-issue>`_ by opening a `new issue <https://github.com/MetOffice/lfric_apps/issues>`_ on the LFRic Apps GitHub to document your model experiment.
+Start with `creating a ticket <https://metoffice.github.io/simulation-systems/WorkingPractices/working_practices.html>`_ by opening a `new ticket <https://code.metoffice.gov.uk/trac/lfric_apps/newticket>`_ on the LFRic Apps GitHub to document your model experiment.
 
 .. figure:: /_static/3/practical_rose_stem_ticket.png
   :width: 625px
@@ -24,7 +24,7 @@ This ticket will provide a reference number to associate with your development b
 
 2. Create and checkout a branch
 
-Use `fcm bc <https://metomi.github.io/fcm/doc/user_guide/code_management.html#svn_branching>`_ to `create a branch <https://metoffice.github.io/simulation-systems/WorkingPractices/gh_dev_init.html#create-a-branch>`_:
+Use `fcm bc <https://metomi.github.io/fcm/doc/user_guide/code_management.html#svn_branching>`_ to `create a branch <https://metoffice.github.io/simulation-systems/WorkingPractices/working_practices.html>`_:
 
 .. code-block:: bash
 
