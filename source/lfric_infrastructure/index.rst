@@ -3,7 +3,7 @@
 **************************
 
 In this section, LFRic is introduced from a software perspective, focussing 
-on the LFRiC Atmosphere model and its underlying components.
+on the LFRic Atmosphere model and its underlying components.
 
 .. admonition:: Aims and objectives
 
