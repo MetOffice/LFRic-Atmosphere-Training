@@ -139,10 +139,8 @@ A suite of common tooling was developed within the Scientific Python ecosystem, 
 
 A widely used tool for handling scientific data is Iris. Iris is a powerful library that facilitates the analysis of meteorological and climate data, and it is specifically designed to work with both structured and unstructured grids. It offers a range of functions that simplify the manipulation and visualization of data, making it a key component in many data processing workflows.
 
-In this session, a brief overview of the basics of Iris will be provided, including its core features and functionalities.
+In this section, a brief overview of the basics of Iris will be provided, including its core features and functionalities.
 
-.. image:: /_static/unstructured_tools.png
-   :width: 650px
 
 Iris - basics and scope
 +++++++++++++++++++++++
@@ -151,8 +149,11 @@ Iris is a Python-based ecosystem and package used for the manipulation of LFRic 
 It is open-source and has been included in other tools, such as ESMValTool and MetPlus, which are based on it.
 Iris offers a unified view of data as cubes and supports metadata-aware processing. It provides analysis capabilities in mathematics, statistics, large data handling, and regridding. For visualisation, Iris relies on Matplotlib and Cartopy.
 
-.. image:: /_static/unstructured_tools.png
+.. figure:: /_static/unstructured_tools.png
    :width: 650px
+   :alt: unstructured data tools
+
+   The Scientific Python Ecosystem and unstructured data tools
 
 The core of Iris is built around CF and Numpy. CF (Climate and Forecast) conventions allow Iris to work with the encoding of climate and forecast data stored in netCDF files. Numpy, the fundamental package for numerical computations in Python, supports large-scale data processing by leveraging FORTRAN and C++ for heavy computations.
 
@@ -167,7 +168,7 @@ Despite the underlying usage of languages like FORTRAN and C++ in visualisation 
 
 Regridding unstructured data
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-In the unstructured mesh context, [ESMF ](https://earthsystemmodeling.org/) (Earth System Modelling Framework) is utilised for regridding tasks. Regridding allows for comparison between datasets defined on different meshes, enabling analysis that requires data on specific local representations, such as OSGB (Ordnance Survey National Grid) in Britain, or requires computations suited to structured grids, like zonal means.
+In the unstructured mesh context, `ESMF <https://earthsystemmodeling.org/>`_ (Earth System Modelling Framework) is utilised for regridding tasks. Regridding allows for comparison between datasets defined on different meshes, enabling analysis that requires data on specific local representations, such as OSGB (Ordnance Survey National Grid) in Britain, or requires computations suited to structured grids, like zonal means.
 
 The regridding process in the unstructured world follows two primary steps: preparation and execution. During the preparation phase, the source and target grids are compared, and weights are calculated using ESMF. The preparation step is computationally intensive, particularly with unstructured grids. In the execution phase, the calculated weights are applied to the data, and a new cube is constructed. This phase typically involves Python libraries such as DASK and SciPy.
 
@@ -186,8 +187,12 @@ Key features of regridding include:
 
 
 
-.. image:: /_static/regrid.png
+.. figure:: /_static/regrid.png
    :width: 400px
+   :alt: regridding data
+   
+   Regridding data from an unstructured mesh to a structured grid
+
 
 Visualising unstructured data
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
