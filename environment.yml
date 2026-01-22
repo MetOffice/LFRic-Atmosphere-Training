@@ -3,11 +3,11 @@ channels:
 - conda-forge
 
 dependencies:
-- python>=3.6
-- sphinx
+- python=3.12
+- sphinx<9
 - pydata-sphinx-theme
 - sphinxcontrib-video
-- sphinx-toolbox
+- sphinx-toolbox<4
 - pip:
   # works for pip packages
   - git+https://github.com/bonartm/sphinxcontrib-quizdown.git
