@@ -15,8 +15,11 @@ The figure below visualises this concept:
 * Neighbouring data points in the array are also neighbours in the physical space. This spatial organisation simplifies how we relate computational data to real-world positions.
 * The alignment between data points and physical space provides a clear, intuitive structure that makes it easy to manipulate and analyse the data.
 
-.. image:: /_static/structured_world.svg
+.. figure:: /_static/structured_world.svg
    :width: 650px
+   :alt: structured world
+   
+   Representation of a structured grid illustrating the direct correspondence between array indices and physical space.
 
 
 Key characteristics of structured grids
@@ -37,23 +40,26 @@ Challenges with structured grids
 --------------------------------
 While structured grids work well in many cases, they do have some limitations:
 
-1.	Singularities at the poles:
+1. Singularities at the poles:
 
    One of the most well-known issues with structured grids, particularly in Earth-system modelling, is the singularity at the poles. At the North and South Poles, grid cells become excessively compressed, leading to inaccuracies and computational challenges. This is a direct result of representing a spherical Earth with a flat grid, which leads to distortion near the poles.
-   The figure below demonstrates singularities at poles.
+   The figure below demonstrates singularities at the poles.
 
-.. image:: /_static/singularities.png
+.. figure:: /_static/singularities.png
    :width: 300px
    :align: center
+   :alt: singularities at poles
+   
+   Singularities occurring at the poles in structured grids due to grid cell compression.
 
 
-2.	Limited flexibility:
+2. Limited flexibility:
 
    The structured grid approach is less flexible in handling complex geometries and topologies. When trying to represent regions of interest that do not align well with the grid, or when working with more complex meshes, structured grids fall short.
 
 How to address these challenges?
 --------------------------------
-Unstructured meshes overcome issues like singularities. One example is the cubed-sphere which consists of dividing the Earth's surface into six square faces, which are then mapped onto a sphere.
-This approach removes polar singularities and provides an even distribution of data points, preventing excessive compression near the poles, leading to more accurate and stable computations.
+Unstructured meshes overcome issues like these singularities. One example is the cubed-sphere which consists of dividing the Earth's surface into six square faces that are then mapped onto a sphere.
+This approach removes polar singularities and provides an even distribution of data points, preventing excessive compression near the poles and leading to more accurate and stable computations.
 However, it brings new challenges in efficiently organising and representing the data, as assigning a 2-dimensional format can be difficult due to its non-standard layout.
 Let's learn more about unstructured meshes in the next section!
