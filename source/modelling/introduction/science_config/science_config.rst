@@ -14,5 +14,6 @@ Once a science configuration is defined, it can be used for different systems ac
 
 * **GC4** is used for several operational NWP systems across the Momentum Partnership e.g. MOGREPS, ACCESS-S1, and NCUM.
 
-* *Regional...*
+* **TO DO for Fourough** 
+* These details for limited area model configuration can be added from slide 10 of Module 5 which is there in this link https://metoffice.sharepoint.com/:p:/r/sites/metofficengmsprogrammeext/NGUX/training/Module%205/NGUX_Module-5_session-1_15Jan2026.pptx?d=w5b397e2c487c42d8a2b734430d92e8b5&csf=1&web=1&e=QYwH8L*
 
