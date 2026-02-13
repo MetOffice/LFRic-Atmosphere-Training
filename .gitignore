@@ -1,6 +1,7 @@
 *.py[co]
 *.egg-info/
 *.bat
+*.lock
 build
 build/*
 build/*/*

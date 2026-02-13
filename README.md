@@ -40,21 +40,36 @@ git branch -D main
 
 ### Development Environment
 
-Conda is the recommended Python package manager for setting up the development environment, to build the trainning pages.
+[`uv`](https://docs.astral.sh/uv/) is the recommended tool for Python environment and dependency management in this repository.
+Dependencies for building the training pages and running the tutorial notebooks are defined in `pyproject.toml`.
+Environment lockfiles are intentionally not used in this repository.
+This keeps setup flexible across operating systems and CPU architectures while still using the same dependency constraints.
 
-In order to install the standard development environment run the following command:
-
-```bash
-conda env create --file environment.yml
-```
-
-Now activate the development environment with Conda:
+Install `uv` if needed:
 
 ```bash
-conda activate lfric-atmos-training
+python3 -m pip install --user uv
 ```
 
-Once the development environment is set up you are ready to build the training materials.
+Create or update the project virtual environment:
+
+```bash
+uv sync --python 3.11
+```
+
+Now activate the virtual environment:
+
+```bash
+source .venv/bin/activate
+```
+
+If you prefer not to activate the environment, run commands with `uv run ...` instead.
+
+### Dependency Policy
+
+- Build environments from `pyproject.toml` only.
+- Do not commit or use `.lock` files for Python environments in this repository.
+- If dependency updates are needed, update constraints in `pyproject.toml` and recreate the environment with `uv sync`.
 
 ### Building Training Materials
 
@@ -63,7 +78,7 @@ The training materials are based on [Sphinx](https://www.sphinx-doc.org) and can
 To build the LFRic Atmosphere training materials in HTML format run the following command:
 
 ```bash
-make html
+uv run make html
 ```
 
 That concludes the process! You’ll find the generated HTML files within the “build” folder.

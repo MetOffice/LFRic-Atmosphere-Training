@@ -36,13 +36,15 @@ To download the tutorial materials, follow these steps:
 
 Set up the Python environment
 ----------------------------------
-To ensure compatibility with the tested versions of required packages, create a Python environment using the provided lockfile:
+Use the shared project environment managed by `uv` and defined in `pyproject.toml`:
 
  .. code-block:: console
 
-     conda create --name meshtut_safelocked_env --file tutorial_conda_env_resolved.lock
+     cd /path/to/LFRic-Atmosphere-Training
+     uv sync --python 3.11
 
-This command will create a new Conda environment named meshtut_safelocked_env with all necessary packages installed.
+The environment includes dependencies for documentation and all tutorials, including the mesh notebooks.
+It also constrains NumPy to ``numpy<2`` to avoid known binary-compatibility issues with older compiled extensions.
 
 Start the tutorial
 ----------------------
@@ -52,7 +54,7 @@ Once the environment is set up:
 
  .. code-block:: console
 
-    conda activate meshtut_safelocked_env
+    source /path/to/LFRic-Atmosphere-Training/.venv/bin/activate
 
 2. Navigate to the notebooks directory inside the cloned repository:
 
@@ -80,4 +82,3 @@ To begin the tutorial:
 
  .. image:: /_static/iris_tutorial.png
     :width: 600px
-
