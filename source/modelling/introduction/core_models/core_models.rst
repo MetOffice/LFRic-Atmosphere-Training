@@ -37,7 +37,8 @@ The diagram below illustrates coupling components in the GC approach.
 This approach, known as *inter-model* coupling, allows components operating at different spatial resolutions and temporal scales to interact efficiently. It is particularly important because ocean and sea ice processes typically evolve more slowly and on larger spatial scales than atmospheric and land processes. Separating the systems while coupling them through OASIS provides both scientific consistency and computational efficiency.
 
 
-*In the limited area model configurations... *
+*TODO for Forough*
+*Add a sentence to mention that the limited area models also use the same model components... *
 
 .. admonition:: Fun fact!
 
