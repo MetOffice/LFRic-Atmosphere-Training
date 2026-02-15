@@ -1,14 +1,16 @@
 **********************
 Science Configurations
 **********************
-A science configuration specifies a set of scientific and numerical settings for a single component model or a combination of component models. These settings include, fore example, physical parameterization, numerical schemes and model coupling choices.
-This process is illustrated in the diagram below.
+A science configuration specifies a set of scientific and numerical settings for a single component model or a combination of component models. These settings include, for example, physical parameterization, numerical schemes and model coupling choices.
 
-.. figure:: /_static/components.png
+Below diagram illustartes the Regional Atmosphere and Land (RAL) development cycle.  RAL defines the set of science configurations for the atmosphere and land used in all regional models by the Met Office and Momentum partners across the globe
+
+.. figure:: /_static/RAL.png
    :width: 650px
-   :alt: components in a GC-LFRic configuration
+   :alt: RAL cycle configuration
 
-   Components in a GC-LFRic configuration
+   RAL development cycle
+
 
 Science configurations are tested and evaluated across a set of spatial resolutions and temporal scales - e.g. Numerical Weather Prediction (NWP) to climate - to ensure they meet the required standards for accuracy and reliability. Once the evaluation is complete, the configuration is:
 
