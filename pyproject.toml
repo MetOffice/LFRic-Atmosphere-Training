@@ -30,4 +30,4 @@ dev = [
 ]
 
 [tool.uv]
-package = false 
+package = false
