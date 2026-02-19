@@ -40,37 +40,9 @@ git branch -D main
 
 ### Development Environment
 
-[`uv`](https://docs.astral.sh/uv/) is the recommended tool for Python environment and dependency management in this repository.
-Dependencies for building the training pages and running the tutorial notebooks are defined in `pyproject.toml`.
-Environment lockfiles are intentionally not used in this repository.
-This keeps setup flexible across operating systems and CPU architectures while still using the same dependency constraints.
+Dependencies are defined in `pyproject.toml`. There are two possible setup methods, `uv` and `venv` + `pip`, you only need to use one.
 
-If you cannot use `uv`, the repository can also be set up with `venv` and `pip`.
-
-Create and activate a virtual environment:
-
-```bash
-/path/to/python3.11+ -m venv .venv
-source .venv/bin/activate
-```
-
-Install dependencies:
-
-```bash
-pip install .
-```
-
-Optional dependency groups can also be installed when available:
-
-```bash
-pip install ".[notebooks,dev]"
-```
-
-If you are contributing to this repository and want an editable install:
-
-```bash
-pip install -e ".[notebooks,dev]"
-```
+#### Route 1: `uv` (recommended)
 
 Install `uv` if needed:
 
@@ -100,7 +72,7 @@ uv sync --extra notebooks --extra dev
 uv sync --all-extras
 ```
 
-Now activate the virtual environment:
+Activate the environment:
 
 ```bash
 source .venv/bin/activate
@@ -108,11 +80,37 @@ source .venv/bin/activate
 
 If you prefer not to activate the environment, run commands with `uv run ...` instead.
 
+#### Route 2: `venv` + `pip`
+
+Create and activate a virtual environment:
+
+```bash
+/path/to/python3.11+ -m venv .venv
+source .venv/bin/activate
+```
+
+Install dependencies:
+
+```bash
+pip install .
+```
+
+Install optional dependencies:
+
+```bash
+pip install ".[notebooks,dev]"
+```
+
+If you are contributing and want an editable install:
+
+```bash
+pip install -e ".[notebooks,dev]"
+```
+
 ### Dependency Policy
 
 - Build environments from `pyproject.toml` only.
-- Do not commit or use `.lock` files for Python environments in this repository.
-- If dependency updates are needed, update constraints in `pyproject.toml` and recreate the environment with `uv sync`.
+- If dependency updates are needed, update constraints in `pyproject.toml` and recreate the environment with your selected setup route.
 
 ### Building Training Materials
 
@@ -121,7 +119,11 @@ The training materials are based on [Sphinx](https://www.sphinx-doc.org) and can
 To build the LFRic Atmosphere training materials in HTML format run the following command:
 
 ```bash
+# If you are using uv:
 uv run make clean html
+
+# If you are using venv + pip:
+make clean html
 ```
 
 That concludes the process! You’ll find the generated HTML files within the “build” folder.
