@@ -22,9 +22,6 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
-env:
-  ENV_NAME: lfric-atmos-training
-
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -37,6 +34,11 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
       # Runs a single command using the runners shell
       - name: Set up Artifactory credentials
         uses: MetOffice/action-setup-artifactory@v1
@@ -44,22 +46,14 @@ jobs:
           username: "\"\""
           api-key: ${{ secrets.ARTIFACTORY_API_KEY }}
 
-      - name: Sort out conda channels in ~/.condarc
+      - name: Install dependencies from pyproject.toml
         run: |
-          conda config --remove channels defaults
-          conda config --add channels conda-forge
-          conda config --set channel_priority strict
-
-      - name: Create environment for lfric-atmos-training (to build documentation)
-        run: |
-          conda update conda
-          conda env create --name ${ENV_NAME} --file environment.yml
+          python -m pip install --upgrade pip
+          python -m pip install .
 
       - name: Build documentation
         run: |
-          eval "$(conda shell.bash hook)"
-          conda activate ${ENV_NAME}
-          make html
+          make clean html
 
       - name: Upload artifacts
         uses: actions/upload-pages-artifact@v3
@@ -78,4 +72,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
