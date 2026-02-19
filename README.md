@@ -78,15 +78,27 @@ Install `uv` if needed:
 python3 -m pip install --user uv
 ```
 
-Create or update the project virtual environment:
+Create or update the project virtual environment (documentation dependencies only):
 
 ```bash
 uv sync --python 3.11
 ```
-If you want to work with the tutorial notebooks, install the optional
-dependencies as well: `uv sync --extra notebooks`
 
-For development tools (e.g., pre-commit hooks), install: `uv sync --extra dev`
+Install optional extras as needed:
+
+```bash
+# Notebook and exercise dependencies
+uv sync --extra notebooks
+
+# Development tooling (e.g., pre-commit hooks)
+uv sync --extra dev
+
+# Both optional groups
+uv sync --extra notebooks --extra dev
+
+# Everything defined in pyproject.toml optional dependencies
+uv sync --all-extras
+```
 
 Now activate the virtual environment:
 
