@@ -38,8 +38,8 @@ Within each of these combined systems, information is exchanged at every model t
 The GAL and GOSI models are then further coupled to form the GC configuration.
 
 
-*TODO for Forough*
-*Add a sentence to mention that the limited area models also use the same model components... *
+.. TODO for Forough
+.. *Add a sentence to mention that the limited area models also use the same model components... *
 
 .. admonition:: Fun fact!
 
