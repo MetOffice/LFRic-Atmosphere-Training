@@ -41,9 +41,9 @@ Use the shared project environment managed by `uv` and defined in `pyproject.tom
  .. code-block:: console
 
      cd /path/to/LFRic-Atmosphere-Training
-     uv sync --python 3.11
+     uv sync --python 3.11 --extra notebooks
 
-The environment includes dependencies for documentation and all tutorials, including the mesh notebooks.
+The base environment contains documentation dependencies, and the ``notebooks`` extra installs the mesh tutorial requirements.
 It also constrains NumPy to ``numpy<2`` to avoid known binary-compatibility issues with older compiled extensions.
 
 Start the tutorial
