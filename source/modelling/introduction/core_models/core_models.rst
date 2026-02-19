@@ -2,7 +2,7 @@
 Component Models
 ****************
 
-The Momentum framework develops four component models: 
+The Momentum framework represents the Earth system using four primary component models: 
 
 * **Atmosphere**: `LFRic Atmosphere <https://www.metoffice.gov.uk/research/approach/modelling-systems/lfric>`_
 
@@ -12,14 +12,34 @@ The Momentum framework develops four component models:
 
 * **Sea Ice**: Sea Ice modelling Integrated Initiative (`SI³ <https://zenodo.org/records/7534900#.Y8GIF-xKg-Q>`_)
 
-In the Global Coupled (GC) approach, the atmosphere and land models are integrated together to form a *Global Atmosphere Land* (GAL) model, and the Ocean and Sea Ice models are integrated to yield the *Global Ocean and Sea Ice* (GOSI) model. 
+Together, these component models provide a comprehensive representation of the Earth system, enabling consistent simulations across weather and climate timescales.
 
-This is because the atmosphere-land (ocean-sea ice) processes are physically interconnected, meaning the two models need to exchange data every timestep, requiring them to be contained in a single executable. This is known as *intra-model coupling*.
+Coupling of Component Models
+----------------------------
 
-The GAL and GOSI models are coupled to form the GC configuration. This is done via the `OASIS <https://oasis.cerfacs.fr/en/home/>`_ coupler. OASIS allows for the exchange of information between the different components of the model at varied resolutions and timescales, known as *inter-model* coupling. This alternative approach is necessary because ocean and sea ice processes typically evolve on longer timescales and larger spatial scales than atmospheric and land processes meaning that they cannot efficiently be combined in the same executable.
+The coupling of component models approach, known as *inter-model* coupling, allows components operating at different spatial resolutions and temporal scales to interact efficiently. It is particularly important because ocean and sea ice processes typically evolve more slowly and on larger spatial scales than atmospheric and land processes. Separating the systems while coupling them provides both scientific consistency and computational efficiency. This coupling is achieved using the `OASIS <https://oasis.cerfacs.fr/en/home/>`_ coupler,  which manages the exchange of information between the two systems.
 
-*TODO for Forough*
-*Add a sentence to mention that the limited area models also use the same model components... *
+For example, in the Global Coupled (GC) approach, certain components are strongly coupled and therefore integrated into combined systems:
+
+* The atmosphere and land components are combined to form the *Global Atmosphere Land* (GAL) model.
+* The Ocean and Sea Ice components are combined to form the *Global Ocean and Sea Ice* (GOSI) model. 
+
+The diagram below illustrates coupling components in the GC approach.
+
+.. figure:: /_static/components.png
+   :width: 650px
+   :alt: components in a GC-LFRic configuration
+
+   Components coupling in a GC-LFRic configuration
+   
+   
+Within each of these combined systems, information is exchanged at every model timestep. This frequent exchange reflects the strong physical coupling between the relevant processes, such as energy, moisture, and momentum fluxes. As a result, the components must run within a single executable. This form of coupling is referred to as *intra-model coupling*.
+
+The GAL and GOSI models are then further coupled to form the GC configuration.
+
+
+.. TODO for Forough
+.. *Add a sentence to mention that the limited area models also use the same model components... *
 
 .. admonition:: Fun fact!
 
