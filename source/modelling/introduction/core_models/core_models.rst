@@ -17,14 +17,13 @@ Together, these component models provide a comprehensive representation of the E
 Coupling of Component Models
 ----------------------------
 
-In the Global Coupled (GC) approach, certain components are strongly coupled and therefore integrated into combined systems:
+The coupling of component models approach, known as *inter-model* coupling, allows components operating at different spatial resolutions and temporal scales to interact efficiently. It is particularly important because ocean and sea ice processes typically evolve more slowly and on larger spatial scales than atmospheric and land processes. Separating the systems while coupling them provides both scientific consistency and computational efficiency. This coupling is achieved using the `OASIS <https://oasis.cerfacs.fr/en/home/>`_ coupler,  which manages the exchange of information between the two systems.
+
+For example, in the Global Coupled (GC) approach, certain components are strongly coupled and therefore integrated into combined systems:
 
 * The atmosphere and land components are combined to form the *Global Atmosphere Land* (GAL) model.
 * The Ocean and Sea Ice components are combined to form the *Global Ocean and Sea Ice* (GOSI) model. 
 
-Within each of these combined systems, information is exchanged at every model timestep. This frequent exchange reflects the strong physical coupling between the relevant processes, such as energy, moisture, and momentum fluxes. As a result, the components must run within a single executable. This form of coupling is referred to as *intra-model coupling*.
-
-The GAL and GOSI models are further coupled to form the GC configuration. This coupling is achieved using the `OASIS <https://oasis.cerfacs.fr/en/home/>`_ coupler,  which manages the exchange of information between the two systems.
 The diagram below illustrates coupling components in the GC approach.
 
 .. figure:: /_static/components.png
@@ -32,9 +31,11 @@ The diagram below illustrates coupling components in the GC approach.
    :alt: components in a GC-LFRic configuration
 
    Components coupling in a GC-LFRic configuration
+   
+   
+Within each of these combined systems, information is exchanged at every model timestep. This frequent exchange reflects the strong physical coupling between the relevant processes, such as energy, moisture, and momentum fluxes. As a result, the components must run within a single executable. This form of coupling is referred to as *intra-model coupling*.
 
-
-This approach, known as *inter-model* coupling, allows components operating at different spatial resolutions and temporal scales to interact efficiently. It is particularly important because ocean and sea ice processes typically evolve more slowly and on larger spatial scales than atmospheric and land processes. Separating the systems while coupling them through OASIS provides both scientific consistency and computational efficiency.
+The GAL and GOSI models are then further coupled to form the GC configuration.
 
 
 *TODO for Forough*
