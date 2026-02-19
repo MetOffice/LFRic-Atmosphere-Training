@@ -45,6 +45,33 @@ Dependencies for building the training pages and running the tutorial notebooks 
 Environment lockfiles are intentionally not used in this repository.
 This keeps setup flexible across operating systems and CPU architectures while still using the same dependency constraints.
 
+If you cannot use `uv`, the repository can also be set up with `venv` and `pip`.
+
+Create and activate a virtual environment:
+
+```bash
+/path/to/python3.11+ -m venv .venv
+source .venv/bin/activate
+```
+
+Install dependencies:
+
+```bash
+pip install .
+```
+
+Optional dependency groups can also be installed when available:
+
+```bash
+pip install ".[notebooks,dev]"
+```
+
+If you are contributing to this repository and want an editable install:
+
+```bash
+pip install -e ".[notebooks,dev]"
+```
+
 Install `uv` if needed:
 
 ```bash
