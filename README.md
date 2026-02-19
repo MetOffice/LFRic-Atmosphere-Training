@@ -105,7 +105,7 @@ The training materials are based on [Sphinx](https://www.sphinx-doc.org) and can
 To build the LFRic Atmosphere training materials in HTML format run the following command:
 
 ```bash
-uv run make html
+uv run make clean html
 ```
 
 That concludes the process! You’ll find the generated HTML files within the “build” folder.
