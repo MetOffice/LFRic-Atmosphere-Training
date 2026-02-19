@@ -2,6 +2,7 @@
 *.egg-info/
 *.bat
 *.lock
+.venv/
 build
 build/*
 build/*/*
