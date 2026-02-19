@@ -10,6 +10,11 @@ dependencies = [
   "sphinx-toolbox<4",
   "sphinxcontrib-video",
   "sphinxcontrib-quizdown @ git+https://github.com/bonartm/sphinxcontrib-quizdown.git",
+  "sphinx-lint",
+]
+
+[project.optional-dependencies]
+notebooks = [
   "jupyterlab",
   "scitools-iris",
   "geovista",
@@ -18,6 +23,9 @@ dependencies = [
   "jupytext==1.14.4",
   "esmf-regrid",
   "numpy<2",
+]
+
+dev = [
   "pre-commit",
 ]
 
