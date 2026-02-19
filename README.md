@@ -83,6 +83,10 @@ Create or update the project virtual environment:
 ```bash
 uv sync --python 3.11
 ```
+If you want to work with the tutorial notebooks, install the optional
+dependencies as well: `uv sync --extra notebooks`
+
+For development tools (e.g., pre-commit hooks), install: `uv sync --extra dev`
 
 Now activate the virtual environment:
 
