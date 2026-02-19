@@ -14,7 +14,7 @@ The Momentum framework represents the Earth system using four primary component 
 
 Together, these component models provide a comprehensive representation of the Earth system, enabling consistent simulations across weather and climate timescales.
 
-Grouping of Component Models
+Coupling of Component Models
 ----------------------------
 
 In the Global Coupled (GC) approach, certain components are strongly coupled and therefore integrated into combined systems:
