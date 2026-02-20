@@ -34,17 +34,11 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v6
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - name: Install uv and Set up Python
+        uses: astral-sh/setup-uv@v7
         with:
           python-version: "3.11"
-
-      # Runs a single command using the runners shell
-      - name: Set up Artifactory credentials
-        uses: MetOffice/action-setup-artifactory@v1
-        with:
-          username: "\"\""
-          api-key: ${{ secrets.ARTIFACTORY_API_KEY }}
+          enable-cache: true
 
       - name: Install dependencies from pyproject.toml
         run: |
