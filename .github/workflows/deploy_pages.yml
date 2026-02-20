@@ -59,9 +59,19 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
+      - name: Setup GitHub Pages
+        if: ${{ github.repository == 'MetOffice/LFRic-Atmosphere-Training' && github.ref_name == 'main' && (github.event_name == 'push' || github.event_name == 'merge_group') }}
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact to GitHub Pages
+        if: ${{ github.repository == 'MetOffice/LFRic-Atmosphere-Training' && github.ref_name == 'main' && (github.event_name == 'push' || github.event_name == 'merge_group') }}
+        uses: actions/upload-pages-artifact@v4
+        with:
+          name: github-pages
+          path: build/html
+          retention-days: 1
+
       - name: Deploy to GitHub Pages
         id: deployment
+        if: ${{ github.repository == 'MetOffice/LFRic-Atmosphere-Training' && github.ref_name == 'main' && (github.event_name == 'push' || github.event_name == 'merge_group') }}
         uses: actions/deploy-pages@v4
