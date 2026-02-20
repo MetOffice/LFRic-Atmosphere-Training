@@ -49,24 +49,17 @@ jobs:
           uv run make clean html
 
       - name: Upload artifacts
+        if: ${{ github.repository == 'MetOffice/LFRic-Atmosphere-Training' && github.ref_name == 'main' && github.event_name == 'push' }}
         uses: actions/upload-pages-artifact@v3
         with:
           name: github-pages
           path: build/html
 
-  # Deployment job
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
       - name: Setup GitHub Pages
-        if: ${{ github.repository == 'MetOffice/LFRic-Atmosphere-Training' && github.ref_name == 'main' && (github.event_name == 'push' || github.event_name == 'merge_group') }}
+        if: ${{ github.repository == 'MetOffice/LFRic-Atmosphere-Training' && github.ref_name == 'main' && github.event_name == 'push' }}
         uses: actions/configure-pages@v5
 
       - name: Deploy to GitHub Pages
         id: deployment
-        if: ${{ github.repository == 'MetOffice/LFRic-Atmosphere-Training' && github.ref_name == 'main' && (github.event_name == 'push' || github.event_name == 'merge_group') }}
+        if: ${{ github.repository == 'MetOffice/LFRic-Atmosphere-Training' && github.ref_name == 'main' && github.event_name == 'push' }}
         uses: actions/deploy-pages@v4
