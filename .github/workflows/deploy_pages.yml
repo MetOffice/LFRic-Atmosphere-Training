@@ -46,7 +46,7 @@ jobs:
 
       - name: Build documentation
         run: |
-          make clean html
+          uv run make clean html
 
       - name: Upload artifacts
         uses: actions/upload-pages-artifact@v3
