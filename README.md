@@ -40,21 +40,77 @@ git branch -D main
 
 ### Development Environment
 
-Conda is the recommended Python package manager for setting up the development environment, to build the trainning pages.
+Dependencies are defined in `pyproject.toml`. There are two possible setup methods, `uv` and `venv` + `pip`, you only need to use one.
 
-In order to install the standard development environment run the following command:
+#### Route 1: `uv` (recommended)
 
-```bash
-conda env create --file environment.yml
-```
-
-Now activate the development environment with Conda:
+Install `uv` if needed:
 
 ```bash
-conda activate lfric-atmos-training
+python3 -m pip install --user uv
 ```
 
-Once the development environment is set up you are ready to build the training materials.
+Create or update the project virtual environment (documentation dependencies only):
+
+```bash
+uv sync --python 3.11
+```
+
+Install optional extras as needed:
+
+```bash
+# Notebook and exercise dependencies
+uv sync --extra notebooks
+
+# Development tooling (e.g., pre-commit hooks)
+uv sync --extra dev
+
+# Both optional groups
+uv sync --extra notebooks --extra dev
+
+# Everything defined in pyproject.toml optional dependencies
+uv sync --all-extras
+```
+
+Activate the environment:
+
+```bash
+source .venv/bin/activate
+```
+
+If you prefer not to activate the environment, run commands with `uv run ...` instead.
+
+#### Route 2: `venv` + `pip`
+
+Create and activate a virtual environment:
+
+```bash
+/path/to/python3.11+ -m venv .venv
+source .venv/bin/activate
+```
+
+Install dependencies:
+
+```bash
+pip install .
+```
+
+Install optional dependencies:
+
+```bash
+pip install ".[notebooks,dev]"
+```
+
+If you are contributing and want an editable install:
+
+```bash
+pip install -e ".[notebooks,dev]"
+```
+
+### Dependency Policy
+
+- Build environments from `pyproject.toml` only.
+- If dependency updates are needed, update constraints in `pyproject.toml` and recreate the environment with your selected setup route.
 
 ### Building Training Materials
 
@@ -63,7 +119,11 @@ The training materials are based on [Sphinx](https://www.sphinx-doc.org) and can
 To build the LFRic Atmosphere training materials in HTML format run the following command:
 
 ```bash
-make html
+# If you are using uv:
+uv run make clean html
+
+# If you are using venv + pip:
+make clean html
 ```
 
 That concludes the process! You’ll find the generated HTML files within the “build” folder.

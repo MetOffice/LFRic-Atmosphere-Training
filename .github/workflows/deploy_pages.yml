@@ -22,9 +22,6 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
-env:
-  ENV_NAME: lfric-atmos-training
-
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -35,47 +32,34 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
-      # Runs a single command using the runners shell
-      - name: Set up Artifactory credentials
-        uses: MetOffice/action-setup-artifactory@v1
+      - name: Install uv and Set up Python
+        uses: astral-sh/setup-uv@v7
         with:
-          username: "\"\""
-          api-key: ${{ secrets.ARTIFACTORY_API_KEY }}
+          python-version: "3.11"
+          enable-cache: true
 
-      - name: Sort out conda channels in ~/.condarc
+      - name: Install dependencies from pyproject.toml
         run: |
-          conda config --remove channels defaults
-          conda config --add channels conda-forge
-          conda config --set channel_priority strict
-
-      - name: Create environment for lfric-atmos-training (to build documentation)
-        run: |
-          conda update conda
-          conda env create --name ${ENV_NAME} --file environment.yml
+          uv sync
 
       - name: Build documentation
         run: |
-          eval "$(conda shell.bash hook)"
-          conda activate ${ENV_NAME}
-          make html
+          uv run make clean html
 
       - name: Upload artifacts
+        if: ${{ github.repository == 'MetOffice/LFRic-Atmosphere-Training' && github.ref_name == 'main' && github.event_name == 'push' }}
         uses: actions/upload-pages-artifact@v3
         with:
           name: github-pages
           path: build/html
 
-  # Deployment job
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
+      - name: Setup GitHub Pages
+        if: ${{ github.repository == 'MetOffice/LFRic-Atmosphere-Training' && github.ref_name == 'main' && github.event_name == 'push' }}
+        uses: actions/configure-pages@v5
+
       - name: Deploy to GitHub Pages
         id: deployment
+        if: ${{ github.repository == 'MetOffice/LFRic-Atmosphere-Training' && github.ref_name == 'main' && github.event_name == 'push' }}
         uses: actions/deploy-pages@v4
-
