@@ -3,6 +3,7 @@
 *.bat
 *.lock
 .venv/
+data-tutorials/
 build
 build/*
 build/*/*

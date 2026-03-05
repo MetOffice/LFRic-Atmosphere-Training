@@ -2,83 +2,107 @@
 Practical using unstructured data
 *********************************
 
-The Mesh Tutorial provides training on handling LFRic unstructured mesh data.
+The Mesh Tutorial provides practical training on handling LFRic unstructured mesh data.
 
-All tutorial content is delivered through interactive Jupyter notebooks, which combine explanatory material and practical exercises for students.
-There are five Jupyter notebook which the sections below provide guidance on how to access them.
+All tutorial content is delivered through interactive Jupyter notebooks.
+The upstream material comes from `iris-mesh-tutorial <https://github.com/scitools-classroom/iris-mesh-tutorial>`_ and is provided in this repository under:
 
-Download the tutorial from GitHub
-----------------------------------
+.. code-block:: text
 
-To download the tutorial materials, follow these steps:
+   notebooks/iris-mesh-tutorial/
 
-1. Open a terminal.
+Get the training repository
+---------------------------
+If you do not already have this repository locally, clone it:
 
-2. Create a directory where you want to store the tutorial files and move into it:
+.. code-block:: console
 
- .. code-block:: console
+   git clone https://github.com/MetOffice/LFRic-Atmosphere-Training.git
+   cd LFRic-Atmosphere-Training
 
-     mkdir data-tutorials
-     cd data-tutorials
+If you already have a local clone, move into it:
 
-3. Clone the repository into the new directory:
+.. code-block:: console
 
- .. code-block:: console
-
-     git clone https://github.com/scitools-classroom/iris-mesh-tutorial.git
-
-4. Navigate to the cloned repository:
-
- .. code-block:: console
-
-     cd iris-mesh-tutorial
-
+   cd /path/to/LFRic-Atmosphere-Training
 
 Set up the Python environment
-----------------------------------
-Use the shared project environment managed by `uv` and defined in `pyproject.toml`:
+-----------------------------
+For the full mesh and regridding practicals, use a conda environment:
 
- .. code-block:: console
+.. code-block:: console
 
-     cd /path/to/LFRic-Atmosphere-Training
-     uv sync --python 3.11 --extra notebooks
-
-The base environment contains documentation dependencies, and the ``notebooks`` extra installs the mesh tutorial requirements.
-It also constrains NumPy to ``numpy<2`` to avoid known binary-compatibility issues with older compiled extensions.
+   conda create -n lfric-mesh python=3.12 -y
+   conda activate lfric-mesh
+   conda install -c conda-forge esmpy -y
+   pip install -e .[mesh_tutorials]
+   python -m ipykernel install --user --name lfric-mesh --display-name "Python (lfric-mesh)"
 
 Start the tutorial
-----------------------
+------------------
 Once the environment is set up:
 
 1. Activate the environment:
 
- .. code-block:: console
+   .. code-block:: console
 
-    source /path/to/LFRic-Atmosphere-Training/.venv/bin/activate
+      source .venv/bin/activate
 
-2. Navigate to the notebooks directory inside the cloned repository:
+2. Move to the tutorial notebook directory:
 
- .. code-block:: console
+   .. code-block:: console
 
-    cd notebooks
+      cd notebooks/iris-mesh-tutorial/notebooks
 
 3. Start Jupyter Lab:
 
- .. code-block:: console
+   .. code-block:: console
 
-    jupyter lab
+      jupyter lab
+
+4. In Jupyter, select:
+
+   - ``Kernel -> Change Kernel -> Python (lfric-mesh)``
 
 .. important::
-    Always launch Jupyter Lab from within the notebooks directory to ensure that paths and files are correctly located.
+   Always launch Jupyter Lab from within ``notebooks/iris-mesh-tutorial/notebooks`` to ensure paths and imports work correctly.
 
-After running the jupyter lab command, a new browser window or tab should automatically open, displaying the Jupyter Lab interface.
-If the browser does not open automatically, you can manually copy and paste the URL displayed in the terminal into your browser.
+After running ``jupyter lab``, a new browser window or tab should automatically open.
+If it does not open automatically, copy the URL shown in the terminal into your browser.
 
-Get Started
-------------
-To begin the tutorial:
+Recommended learning path
+-------------------------
+The notebooks are ordered by filename so they appear in sequence in Jupyter Lab.
 
-1. In Jupyter Lab, open the notebook Mesh_Tutorial_Intro.ipynb. After opening the notebook, the introductory screen will appear, as shown below.
+1. Work through the core content in this order:
 
- .. image:: /_static/iris_tutorial.png
-    :width: 600px
+   - ``00_Mesh_Tutorial_Intro.ipynb``
+   - ``01_Load_and_Examine.ipynb``
+   - ``02_Meshes.ipynb``
+   - ``03_Plotting.ipynb``
+   - ``04_Regridding.ipynb``
+   - ``05_RegionExtraction.ipynb``
+
+2. Complete the consolidation exercises:
+
+   - ``06_Exercise_01.ipynb``
+   - ``07_Exercise_02.ipynb``
+
+Optional auxiliary content
+--------------------------
+After completing the core pathway, optional auxiliary notebooks are available:
+
+- ``80_Bonus_01_mesh_from_numbers.ipynb``
+- ``81_Bonus_02_Mesh_Connectivities_demo.ipynb``
+- ``82_Bonus_03_MeshCube_Extraction.ipynb``
+
+Upstream relationship
+---------------------
+- Upstream source: `scitools-classroom/iris-mesh-tutorial <https://github.com/scitools-classroom/iris-mesh-tutorial>`_
+- This repository contains the training-delivery copy used in LFRic Atmosphere training.
+- General improvements that are not LFRic-specific should be proposed back to the upstream project.
+
+For file-level details and maintainer/reference notes, see:
+
+- ``notebooks/README.md``
+- ``notebooks/iris-mesh-tutorial/README.md``
