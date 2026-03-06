@@ -12,8 +12,12 @@ on the LFRic Atmosphere model and its underlying components.
    * To become familiar with working practises required for model development.
 
 
-.. include:: science_apps.rst
-.. include:: code_repositories.rst
-.. include:: psykal_infrastructure.rst
-.. include:: working_practices.rst
-.. include:: practical_exercises.rst
+.. toctree::
+   :maxdepth: 1
+   :caption: Contents
+
+   science_apps.rst
+   code_repositories.rst
+   psykal_infrastructure.rst
+   working_practices.rst
+   practical_exercises.rst

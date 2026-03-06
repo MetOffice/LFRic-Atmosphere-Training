@@ -10,6 +10,10 @@ This module provides an introduction to the LFRic Atmosphere model and the Momen
    * To be aware of
    * To become familiar with
 
-.. include:: seamless_modelling.rst
-.. include:: components.rst
-.. include:: history_context.rst
+.. toctree::
+   :maxdepth: 1
+   :caption: Contents
+
+   seamless_modelling.rst
+   components.rst
+   history_context.rst

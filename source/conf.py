@@ -36,14 +36,26 @@ html_show_sourcelink = False
 html_theme_options = {
     "navigation_with_keys": True,
     "use_edit_page_button": True,
-    "navbar_end": ["theme-switcher"],
+    # Keep the header minimal: branding + utilities only.
+    "navbar_start": ["navbar-logo"],
+    "navbar_center": [],
+    "navbar_end": ["search-button", "theme-switcher"],
+    # Expand navigation in the left sidebar so top-level sections are visible.
+    "show_nav_level": 3,
+    # Keep section trees visible in the sidebar (collapsible), instead of
+    # collapsing everything to the current page context.
+    "collapse_navigation": False,
     "logo": {
         "text": "Momentum Training",
         },
-    "footer_center": ["show-accessibility"]
+    "footer_center": ["show-accessibility"],
+    # Remove the right-side "On this page" panel globally.
+    "secondary_sidebar_items": []
 }
 
 html_sidebars = {
+    # Use a global site navigation tree on the left for all pages.
+    "**": ["globaltoc.html"],
     "index": []
 }
 
@@ -61,3 +73,5 @@ html_context = {
 
 html_theme = "pydata_sphinx_theme"
 html_static_path = ['_static']
+html_css_files = ['nav-collapse.css']
+html_js_files = ['nav-collapse.js']
