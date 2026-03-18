@@ -1,0 +1,11 @@
+{# Custom global TOC sidebar: show only page entries, not in-page section anchors. #}
+{% set toctree_html = toctree(
+    maxdepth=6,
+    collapse=False,
+    includehidden=True,
+    titles_only=True
+) %}
+{% if toctree_html %}
+<h3><a href="{{ pathto(master_doc) }}">Table of Contents</a></h3>
+{{ toctree_html }}
+{% endif %}

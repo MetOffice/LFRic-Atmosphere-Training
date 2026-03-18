@@ -1,0 +1,84 @@
+.bd-sidebar-primary .sidebar-primary-item {
+  --toc-text: #4a5a73;
+  --toc-text-strong: #1f2937;
+  --toc-accent: #0d7f91;
+}
+
+.bd-sidebar-primary .sidebar-primary-item li.has-children {
+  position: relative;
+  display: block;
+}
+
+.bd-sidebar-primary .sidebar-primary-item ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.bd-sidebar-primary .sidebar-primary-item li {
+  margin: 0.2rem 0;
+}
+
+.bd-sidebar-primary .sidebar-primary-item h3,
+.bd-sidebar-primary .sidebar-primary-item h3 a {
+  color: var(--toc-text-strong);
+  font-weight: 700;
+}
+
+.bd-sidebar-primary .sidebar-primary-item li.has-children > .nav-collapse-toggle {
+  border: 0;
+  background: transparent;
+  color: var(--toc-text);
+  cursor: pointer;
+  margin-right: 0.25rem;
+  padding: 0.1rem 0.2rem;
+  line-height: 1;
+  font-size: 0.85rem;
+  vertical-align: middle;
+}
+
+.bd-sidebar-primary .sidebar-primary-item li.has-children > .nav-collapse-toggle::before {
+  content: "▸";
+  display: inline-block;
+}
+
+.bd-sidebar-primary .sidebar-primary-item li.has-children > .nav-collapse-toggle[aria-expanded="true"]::before {
+  content: "▾";
+}
+
+/* Keep text alignment consistent between rows with and without dropdown toggles. */
+.bd-sidebar-primary .sidebar-primary-item li:not(.has-children) > a {
+  padding-left: 1.35rem;
+}
+
+/* Remove underlines in the left table-of-contents links. */
+.bd-sidebar-primary .sidebar-primary-item a {
+  color: var(--toc-text);
+  text-decoration: none !important;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.bd-sidebar-primary .sidebar-primary-item a:hover,
+.bd-sidebar-primary .sidebar-primary-item a:focus {
+  color: var(--toc-text-strong);
+  text-decoration: none !important;
+}
+
+.bd-sidebar-primary .sidebar-primary-item li.current > a {
+  color: var(--toc-accent);
+  font-weight: 700;
+}
+
+.bd-sidebar-primary .sidebar-primary-item li.current {
+  border-left: 4px solid var(--toc-accent);
+  padding-left: 0.5rem;
+}
+
+/* Keep top header controls (search/theme) right-aligned on desktop. */
+@media (min-width: 992px) {
+  .bd-header .navbar-header-items {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
