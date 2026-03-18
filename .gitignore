@@ -3,6 +3,9 @@
 *.bat
 *.lock
 .venv/
+data-tutorials/
 build
 build/*
 build/*/*
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
