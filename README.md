@@ -86,13 +86,18 @@ source .venv/bin/activate
 
 If you prefer not to activate the environment, run commands with `uv run ...` instead.
 
-#### Route 2: `venv` + `pip`
+#### Route 2: `venv`/`conda` + `pip`
 
 Create and activate a virtual environment:
 
 ```bash
+# With venv
 /path/to/python3.11+ -m venv .venv
 source .venv/bin/activate
+
+# With Conda
+conda create -n lfric-workflow python=3.12 pip
+conda activate lfric-workflow
 ```
 
 Install dependencies:
