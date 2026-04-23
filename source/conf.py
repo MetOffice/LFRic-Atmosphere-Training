@@ -27,6 +27,9 @@ extensions = ['pydata_sphinx_theme',
 templates_path = ['_templates']
 exclude_patterns = []
 
+# -- Figure numbering --------------------------------------------------------
+numfig = True
+
 # -- layout -----------------------------------------------------------------
 # https://pydata-sphinx-theme.readthedocs.io/en/stable/user_guide/layout.html#
 
