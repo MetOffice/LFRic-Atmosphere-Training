@@ -40,10 +40,10 @@ git branch -D main
 
 ### Development Environment
 
-Dependencies are defined in `pyproject.toml`.
-This repository uses that file as the dependency manifest for the documentation
-and notebook environment. It is not currently installable as a Python library,
-so contributor setup should use `uv` rather than `pip install .` or
+The reference contributor environment is defined in `pyproject.toml` and
+managed with `uv`.
+This repository is not currently installable as a Python library, so
+contributor setup should use `uv` rather than `pip install .` or
 `pip install -e .`.
 
 #### `uv` setup (recommended)
@@ -90,13 +90,49 @@ source .venv/bin/activate
 
 If you prefer not to activate the environment, run commands with `uv run ...` instead.
 
+#### `pixi` setup (completely optional alternative)
+
+If you prefer a conda-first workflow, the repository also provides a
+`pixi.toml` manifest. This is a completely optional alternative setup. The
+`uv` workflow above remains the reference contributor path and the one mirrored
+by the GitHub Pages deploy workflow. A separate build-only GitHub Actions
+workflow also exercises the Pixi path.
+
+The Pixi environment is intentionally flat: it installs the documentation,
+notebook, mesh tutorial, and development tooling dependencies together in one
+environment, using conda-forge packages where available. The current
+`pixi.toml` targets the standard Linux, macOS, and Windows platforms.
+
+Install `pixi` if needed, then create the environment:
+
+```bash
+pixi install
+```
+
+Run the common checks:
+
+```bash
+pixi run html
+pixi run clean-html
+pixi run lint
+pixi run linkcheck
+```
+
+Use `pixi run html` for incremental rebuilds and `pixi run clean-html` when you
+want the same clean HTML build used by the reference `uv` workflow.
+
 ### Dependency Policy
 
-- Build environments from `pyproject.toml` only.
-- Treat `pyproject.toml` as an environment/dependency manifest for this
-  repository, not as a signal that the repository is a distributable Python
-  package.
-- If dependency updates are needed, update constraints in `pyproject.toml` and recreate the environment with your selected setup route.
+- `uv` with `pyproject.toml` remains the reference workflow for contributors
+  and the GitHub Pages deploy workflow.
+- `pixi.toml` is a completely optional alternative environment definition.
+  Keep it working when dependency changes affect the docs or notebook stack;
+  the repository also has a build-only GitHub Actions workflow that exercises
+  this path.
+- Treat these files as environment manifests for this repository, not as a
+  signal that the repository is a distributable Python package.
+- If dependency updates are needed, update constraints in `pyproject.toml` and,
+  when relevant, the corresponding entries in `pixi.toml`.
 
 ### Building Training Materials
 
@@ -105,12 +141,19 @@ The training materials are based on [Sphinx](https://www.sphinx-doc.org) and can
 To build the LFRic Atmosphere training materials in HTML format run the following command:
 
 ```bash
-# If you are using uv without activating .venv:
+# Reference uv workflow without activating .venv:
 uv run make clean html
 
 # If you have already activated .venv:
 make clean html
+
+# Optional pixi alternatives:
+pixi run clean-html
+pixi run html
 ```
+
+With Pixi, `clean-html` matches the clean build above and `html` keeps the
+faster incremental rebuild path.
 
 That concludes the process! You’ll find the generated HTML files within the “build” folder.
 

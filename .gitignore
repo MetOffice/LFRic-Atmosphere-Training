@@ -3,6 +3,7 @@
 *.bat
 *.lock
 .venv/
+.pixi/
 data-tutorials/
 build
 build/*

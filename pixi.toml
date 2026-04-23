@@ -1,0 +1,43 @@
+[workspace]
+name = "lfric-atmosphere-training"
+channels = ["conda-forge"]
+platforms = ["linux-64", "linux-aarch64", "osx-64", "osx-arm64", "win-64"]
+
+[tasks]
+help = { cmd = "make help", description = "List available Sphinx make-mode targets." }
+clean = { cmd = "make clean", description = "Remove generated Sphinx build output." }
+html = { cmd = "make html", description = "Build HTML docs incrementally without cleaning first." }
+clean-html = { cmd = "make clean html", description = "Build HTML docs from a clean Sphinx output directory." }
+linkcheck = { cmd = "make linkcheck", description = "Check external links with Sphinx's built-in linkcheck builder." }
+lint = { cmd = "sphinx-lint source", description = "Run sphinx-lint against the documentation sources." }
+lab = { cmd = "jupyter lab", cwd = "notebooks/iris-mesh-tutorial/notebooks", description = "Launch JupyterLab in the bundled mesh tutorial notebooks directory." }
+install-kernel = { cmd = '''python -m ipykernel install --user --name lfric-mesh --display-name "Python (lfric-mesh)"''', description = "Install the Pixi Python environment as a Jupyter kernel named lfric-mesh." }
+mesh-import-check = { cmd = '''python -c "import esmf_regrid, esmpy; print('mesh ok')"''', description = "Verify the mesh tutorial regridding imports are available." }
+
+[dependencies]
+python = ">=3.11,<3.13"
+sphinx = ">=7,<9"
+pydata-sphinx-theme = "*"
+sphinx-toolbox = "<4"
+sphinxcontrib-video = "*"
+sphinx-lint = "*"
+make = "*"
+jupyterlab = "*"
+scitools-iris = "*"
+geovista = "0.5.3.*"
+pyvista = ">=0.46.3,<0.47"
+vtk = "<9.6"
+ipyvtklink = "*"
+trame = "*"
+trame-vtk = "*"
+trame-vuetify = "*"
+jupyter-server-proxy = "*"
+matplotlib = "*"
+jupytext = "1.14.4.*"
+iris-esmf-regrid = "*"
+numpy = "<2"
+pre-commit = "*"
+esmpy = "*"
+
+[pypi-dependencies]
+sphinxcontrib-quizdown = { git = "https://github.com/bonartm/sphinxcontrib-quizdown.git" }
