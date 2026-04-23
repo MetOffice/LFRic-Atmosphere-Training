@@ -26,6 +26,8 @@ For example, in the Global Coupled (GC) approach, certain components are strongl
 
 The diagram below illustrates coupling components in the GC approach.
 
+.. _fig-model-gc-components:
+
 .. figure:: /_static/components.png
    :width: 650px
    :alt: components in a GC-LFRic configuration

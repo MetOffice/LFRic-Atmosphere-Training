@@ -18,5 +18,9 @@ Science configurations are constructed from component models, each of which repr
 
 This chapter first introduces the component models used within the Momentum framework and explains how they are coupled. It then describes the concept of science configurations, their testing and release process, and their role in supporting seamless modelling across research and operational applications.
 
-.. image:: /_static/seamless_modelling.png
+.. _fig-model-seamless:
+
+.. figure:: /_static/seamless_modelling.png
    :width: 650px
+
+   Seamless modelling across spatial and temporal scales.
