@@ -40,9 +40,13 @@ git branch -D main
 
 ### Development Environment
 
-Dependencies are defined in `pyproject.toml`. There are two possible setup methods, `uv` and `venv` + `pip`, you only need to use one.
+Dependencies are defined in `pyproject.toml`.
+This repository uses that file as the dependency manifest for the documentation
+and notebook environment. It is not currently installable as a Python library,
+so contributor setup should use `uv` rather than `pip install .` or
+`pip install -e .`.
 
-#### Route 1: `uv` (recommended)
+#### `uv` setup (recommended)
 
 Install `uv` if needed:
 
@@ -86,36 +90,12 @@ source .venv/bin/activate
 
 If you prefer not to activate the environment, run commands with `uv run ...` instead.
 
-#### Route 2: `venv` + `pip`
-
-Create and activate a virtual environment:
-
-```bash
-/path/to/python3.11+ -m venv .venv
-source .venv/bin/activate
-```
-
-Install dependencies:
-
-```bash
-pip install .
-```
-
-Install optional dependencies:
-
-```bash
-pip install ".[notebooks,mesh_tutorials,dev]"
-```
-
-If you are contributing and want an editable install:
-
-```bash
-pip install -e ".[notebooks,mesh_tutorials,dev]"
-```
-
 ### Dependency Policy
 
 - Build environments from `pyproject.toml` only.
+- Treat `pyproject.toml` as an environment/dependency manifest for this
+  repository, not as a signal that the repository is a distributable Python
+  package.
 - If dependency updates are needed, update constraints in `pyproject.toml` and recreate the environment with your selected setup route.
 
 ### Building Training Materials
@@ -125,10 +105,10 @@ The training materials are based on [Sphinx](https://www.sphinx-doc.org) and can
 To build the LFRic Atmosphere training materials in HTML format run the following command:
 
 ```bash
-# If you are using uv:
+# If you are using uv without activating .venv:
 uv run make clean html
 
-# If you are using venv + pip:
+# If you have already activated .venv:
 make clean html
 ```
 
