@@ -25,7 +25,9 @@ Thanks to its use of an unstructured mesh, LFRic atmosphere offers greater flexi
 * **Scalability**: Unstructured meshes enable higher-order methods, making it easier to scale models for larger, more detailed simulations.
 
 To fully benefit from these features, working with unstructured data and understanding the UGRID format, which efficiently handles this type of data, is essential.
-The figure below shows examples of unstructured meshes.
+:numref:`fig-mesh-unstructured-examples` shows examples of unstructured meshes.
+
+.. _fig-mesh-unstructured-examples:
 
 .. figure:: /_static/unstructured_examples.png
    :width: 650px
@@ -36,6 +38,8 @@ The figure below shows examples of unstructured meshes.
 
 UGRID description of unstructured data
 --------------------------------------
+.. _fig-mesh-ugrid-elements:
+
 .. figure:: /_static/mesh1.png
    :align: right
    :width: 160px
@@ -60,6 +64,8 @@ In the unstructured mesh approach, cells are described using a variety of elemen
 
 One key distinction is that in the mesh approach, each element is assigned its own description. In contrast, in structured grids, a single bound is used to describe the entire cell, which can lead to greater efficiency when describing certain elements (e.g., a line). However, this efficiency comes at the cost of flexibility, as the structured approach is less adaptable to complex geometries.
 
+.. _fig-mesh-structured-vs-unstructured:
+
 .. figure:: /_static/mesh2.png
    :width: 650px
    :alt: structured vs unstructured mesh elements
@@ -72,6 +78,8 @@ Managing unstructured data
 When working with unstructured data, the amount of data to handle increases significantly. For example, imagine 5 million cells are arranged on a flat layer.
 In the case of the Unified Model (UM) on the left, 13,400 data points (points and bounds) are needed to describe the entire space. However, in the unstructured case, because everything is described individually, around 40 million data points are required to represent the same space.
 
+
+.. _fig-mesh-data-volume:
 
 .. figure:: /_static/mesh3.png
    :width: 650px
@@ -91,7 +99,9 @@ For example, fluxes could be represented on all six faces of a cube—four horiz
 Complexity of operations
 ++++++++++++++++++++++++
 Another consideration when working with unstructured data is the increased complexity of operations. In a structured grid, extracting data from a specific region is relatively simple.
-For example, in the below figure, to extract data from rows 3 to 4 and columns 3 to 5, the array can easily be sliced to extract that data.
+For example, in :numref:`fig-mesh-data-extraction`, to extract data from rows 3 to 4 and columns 3 to 5, the array can easily be sliced to extract that data.
+
+.. _fig-mesh-data-extraction:
 
 .. figure:: /_static/data-extraction.png
    :width: 650px
@@ -163,6 +173,8 @@ Iris is a Python-based ecosystem and package used for the manipulation of LFRic 
 It is open-source and has been included in other tools, such as ESMValTool and MetPlus, which are based on it.
 Iris offers a unified view of data as cubes and supports metadata-aware processing. It provides analysis capabilities in mathematics, statistics, large data handling, and regridding. For visualisation, Iris relies on Matplotlib and Cartopy.
 
+.. _fig-mesh-unstructured-tools:
+
 .. figure:: /_static/unstructured_tools.png
    :width: 650px
    :alt: unstructured data tools
@@ -198,6 +210,8 @@ Key features of regridding include:
 - the ability to preserve metadata, and
 - efficient handling of masked data.
 
+
+.. _fig-mesh-regrid:
 
 .. figure:: /_static/regrid.png
    :width: 400px
