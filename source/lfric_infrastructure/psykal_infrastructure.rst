@@ -12,6 +12,8 @@ The software architecture that enables this is called `PSyKAl <https://psyclone.
 
 Scientific operations on full fields are implemented in the Algorithm layer. Kernels specify operations for vertical columns. Parallelism is implemented in the Parallel System layer which is auto generated with a tool called `PSyclone <https://psyclone.readthedocs.io/en/stable/>`_.
 
+.. _fig-infra-psykal:
+
 .. figure:: /_static/psykal.png
   :width: 650px
 

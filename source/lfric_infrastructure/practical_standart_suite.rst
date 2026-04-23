@@ -50,6 +50,8 @@ For other platforms, chose appropriate alternative workflow IDs.
    * Creates a low-resolution C12 mesh as input for the model
 
 
+.. _fig-infra-standard-suite:
+
 .. figure:: /_static/3/lfric_apps_standard_suite.svg
   :width: 400px
 

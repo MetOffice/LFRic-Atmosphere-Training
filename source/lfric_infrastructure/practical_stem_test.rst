@@ -15,6 +15,8 @@ Before running integration tests, it's important to document your changes and ma
 
 Start with `creating a ticket <https://metoffice.github.io/simulation-systems/WorkingPractices/working_practices.html>`_ by opening a `new ticket <https://code.metoffice.gov.uk/trac/lfric_apps/newticket>`_ on the LFRic Apps GitHub to document your model experiment.
 
+.. _fig-infra-rose-stem-ticket:
+
 .. figure:: /_static/3/practical_rose_stem_ticket.png
   :width: 625px
 
