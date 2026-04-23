@@ -17,6 +17,8 @@ Topics include:
 * :external+simulation_systems:ref:`multirepo`
 * The :external+simulation_systems:ref:`review_process`
 
+.. _fig-infra-working-practices:
+
 .. figure:: /_static/working_practices.jpg
    :width: 650px
 
