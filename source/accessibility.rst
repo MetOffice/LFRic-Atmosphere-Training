@@ -11,7 +11,7 @@
 .. _accessibility:
 
 Accessibility statement for the Momentum Training Docs website
-#######################################################
+##############################################################
 
 Details on producing an accessibility statement can be found on the `Central
 Digital & Data Office government website`_.

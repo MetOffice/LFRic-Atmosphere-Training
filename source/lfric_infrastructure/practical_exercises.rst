@@ -23,7 +23,7 @@ Setup Instructions
 
 .. include:: practical_command_line.rst
 
-.. include:: practical_standart_suite.rst
+.. include:: practical_standard_suite.rst
 
 .. include:: practical_stem_test.rst
 
