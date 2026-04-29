@@ -54,7 +54,7 @@ Then commit the change to version control:
 
 .. code-block:: bash
 
-  cd vn2.2_practical_stem_tes
+  cd vn2.2_practical_stem_test
   svn ci -m "Add log output to gungho_step"
 
 Verify that your `change <https://code.metoffice.gov.uk/trac/lfric_apps/changeset/12764/main/branches/dev/bjoernfock/vn2.2_practical_stem_test>`_ has been successfully uploaded to the repository.
