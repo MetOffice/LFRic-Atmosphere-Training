@@ -1,0 +1,31 @@
+# This workflow will test building of the docs.
+name: Test Documentation Build
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Install uv and Set up Python
+        uses: astral-sh/setup-uv@v7
+        with:
+          python-version: "3.11"
+          enable-cache: true
+
+      - name: Install dependencies from pyproject.toml
+        run: |
+          uv sync
+
+      - name: Build documentation
+        run: |
+          uv run make clean html SPHINXOPS='-Wn'
+
+      - name: Linkcheck
+        run: |
+          uv run make clean linkcheck SPHINXOPS='-Wn'

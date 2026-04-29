@@ -18,10 +18,11 @@ release = 'v1'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['pydata_sphinx_theme',
-              'sphinx_toolbox.collapse',
-              'sphinxcontrib.quizdown',
-              'sphinxcontrib.video']
+extensions = [
+    'sphinx_toolbox.collapse',
+    'sphinxcontrib.quizdown',
+    'sphinxcontrib.video'
+]
 
 
 templates_path = ['_templates']
@@ -75,3 +76,10 @@ html_theme = "pydata_sphinx_theme"
 html_static_path = ['_static']
 html_css_files = ['nav-collapse.css']
 html_js_files = ['nav-collapse.js']
+
+linkcheck_ignore = [
+    # Ignore anchor ids: https://github.com/sphinx-doc/sphinx/issues/13620
+    # TODO: Most of these should be fixable later.by removing refs to
+    # trac;
+    r'https?:\/\/code.metoffice.gov.uk.*#.*',
+]
