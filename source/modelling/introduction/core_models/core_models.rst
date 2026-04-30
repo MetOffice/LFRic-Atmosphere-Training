@@ -17,7 +17,14 @@ Together, these component models provide a comprehensive representation of the E
 Coupling of Component Models
 ----------------------------
 
-The coupling of component models approach, known as *inter-model* coupling, allows components operating at different spatial resolutions and temporal scales to interact efficiently. It is particularly important because ocean and sea ice processes typically evolve more slowly and on larger spatial scales than atmospheric and land processes. Separating the systems while coupling them provides both scientific consistency and computational efficiency. This coupling is achieved using the `OASIS <https://oasis.cerfacs.fr/en/home/>`_ coupler,  which manages the exchange of information between the two systems.
+The coupling of component models approach, known as *inter-model* coupling,
+allows components operating at different spatial resolutions and temporal
+scales to interact efficiently. It is particularly important because ocean
+and sea ice processes typically evolve more slowly and on larger spatial
+scales than atmospheric and land processes. Separating the systems while
+coupling them provides both scientific consistency and computational efficiency.
+This coupling is achieved using the `OASIS <https://oasis.cerfacs.fr/en/home/>`_
+coupler,  which manages the exchange of information between the two systems.
 
 For example, in the Global Coupled (GC) approach, certain components are strongly coupled and therefore integrated into combined systems:
 

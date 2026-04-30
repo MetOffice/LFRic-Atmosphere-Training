@@ -14,14 +14,18 @@ Before beginning the practical, ensure you have access to the following tools:
 
 Setup Instructions
 ++++++++++++++++++
-1.	Install SVN and FCM on your system if they are not already installed.
-2.	Obtain a MOSRS account if you do not already have one:
+1. Install SVN and FCM on your system if they are not already installed.
+2. Obtain a MOSRS account if you do not already have one:
 
  * Met Office staff: Contact scientific_partnerships@metoffice.gov.uk to request an account.
  * External users: Contact your local institutional sponsor.
  * If unsure: Email scientific_partnerships@metoffice.gov.uk with your affiliate institution and the reason you require access, and you will be advised on the registration process.
 
+.. _practical_3_1-caption:
+
 .. include:: practical_command_line.rst
+
+.. _practical_3_2-caption:
 
 .. include:: practical_standard_suite.rst
 

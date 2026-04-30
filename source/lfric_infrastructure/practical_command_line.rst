@@ -1,9 +1,8 @@
-.. _practical_3_1-caption:
-
 Practical 1: Run the model from command line
 --------------------------------------------
 
-Before showing how to run LFRic Atmosphere as part of Cylc workflows, this practical introduces it as a command line application. It demonstrates how to:
+Before showing how to run LFRic Atmosphere as part of Cylc workflows, this
+practical introduces it as a command line application. It demonstrates how to:
 
 *	Build and run the model from the command line.
 *	Add custom messages to the model’s standard output.
@@ -18,18 +17,19 @@ Before showing how to run LFRic Atmosphere as part of Cylc workflows, this pract
       cd  practical_command_line
       svn co https://code.metoffice.gov.uk/svn/lfric_apps/main/trunk lfric_apps
 
-2.	Set up the build environment and select the compiler.
+2. Set up the build environment and select the compiler.
 
- Instructions depend on your platform. For Met Office Azure Spice, use:
+   Instructions depend on your platform. For Met Office Azure Spice, use:
 
-   .. collapse:: Met Office Azure Spice
+      .. collapse:: Met Office Azure Spice
 
-                 .. code-block:: text
+                  .. code-block:: text
 
-                                 ml use ~lfricadmin/lmod
-                                 ml lfric
+                                    ml use ~lfricadmin/lmod
+                                    ml lfric
 
- For other platforms, see the `LFRic Development Environment <https://code.metoffice.gov.uk/trac/lfric/wiki/DevelopmentEnvironment>`_ .
+   For other platforms, see the
+   `LFRic Development Environment <https://code.metoffice.gov.uk/trac/lfric/wiki/DevelopmentEnvironment>`_ .
 
 3. Compile the model
 
@@ -39,11 +39,23 @@ Before showing how to run LFRic Atmosphere as part of Cylc workflows, this pract
       cd lfric_apps
       ./build/local_build.py -a lfric_atm
 
- The compilation may take some time and uses code from the different repositories, algorithms, and kernels. It invokes PSyclone, compiles, and links the code. The compiled model executable ``lfric_atm`` will be in the folder ``applications/lfric_atm/bin/`` once the compilation finished.
+  The compilation may take some time and uses code from the different
+  repositories, algorithms, and kernels. It invokes PSyclone, compiles,
+  and links the code. The compiled model executable ``lfric_atm`` will be in
+  the folder ``applications/lfric_atm/bin/`` once the compilation finished.
 
 **Step 2: Run the model**
 
-The code contains an example configuration, colloquially called "canned configuration", in  the namelist file `applications/lfric_atm/example/configuration.nml <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/applications/lfric_atm/example/configuration.nml>`_. This configuration sets up a "single column" run of LFRic Atmosphere. It is configured to use the mesh file in the `example <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/applications/lfric_atm/example>`_ directory which is, in reality, not a single column mesh, but a 2x2 biperiodic mesh. However, the configuration is designed in such a way that each column is computed independently from the other columns and, in fact, gives identical results for each column.
+The code contains an example configuration, colloquially called "canned
+configuration", in  the namelist file
+`applications/lfric_atm/example/configuration.nml <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/applications/lfric_atm/example/configuration.nml>`_.
+This configuration sets up a "single column" run of LFRic Atmosphere. It is
+configured to use the mesh file in the
+`example <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/applications/lfric_atm/example>`_
+directory which is, in reality, not a single column mesh, but a 2x2
+biperiodic mesh. However, the configuration is designed in such a way that
+each column is computed independently from the other columns and, in fact,
+gives identical results for each column.
 
 1. Navigate to the example configuration directory:
 
@@ -72,9 +84,19 @@ The code contains an example configuration, colloquially called "canned configur
 
 4.	Explore the outputs:
 
- ``log.txt`` and the other output files contain log messages from the I/O system, run time profiling, `checksums <https://github.com/MetOffice/simulation-systems/discussions/370>`_ of model fields after the last time step for tests, and three NetCDF files. Using the knowledge from module 2 of this training it is possible to open these files and explore the data produced by the model run.
+  ``log.txt`` and the other output files contain log messages from the I/O
+  system, run time profiling,
+  `checksums <https://github.com/MetOffice/simulation-systems/discussions/370>`_
+  of model fields after the last time step for tests, and three NetCDF files.
+  Using the knowledge from module 2 of this training it is possible to open
+  these files and explore the data produced by the model run.
 
-.. note::  The NetCDF output is configured by the file `iodef.xml  <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/applications/lfric_atm/example/iodef.xml#L46>`_ in the example directory. It controls the output streams, filenames, written fields, and output frequency.
+.. note::
+
+   The NetCDF output is configured by the file
+   `iodef.xml <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/applications/lfric_atm/example/iodef.xml#L46>`_
+   in the example directory. It controls the output streams, filenames,
+   written fields, and output frequency.
 
 **Step 3: Add a custom message to model output**
 
@@ -85,11 +107,24 @@ To gain familiarity with the model:
  .. hint:: Search the code for the log messages available in ``log.txt`` (e.g. with ``grep -R "End of timestep" *``) to find where to change the code and write such an output.
 
 
- .. important:: Note that you have to edit the file ``gungho_step_mod.x90`` in `science/gungho/source/driver <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/science/gungho/source/driver/>`_  not the autogenerated ``gungho_step_mod.f90`` in ``applications/lfric_atm/working/build_lfric_atm/driver``. Files with the ``.x90`` extension are the  PSyclone source files that developers are expected to modify. During the build, PSyclone reads these ``.x90`` files and automatically generates the corresponding ``.f90`` files in the ``working/build_*`` directory, which are then compiled. In other words, the ``working/build_*`` directory contains temporary build artefacts that are regenerated every time the model is rebuilt. Any changes made directly to the autogenerated ``.f90`` files will be silently overwritten on the next build and should never be relied upon.
+ .. important::
+
+   Note that you have to edit the file ``gungho_step_mod.x90`` in
+   `science/gungho/source/driver <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/science/gungho/source/driver/>`_
+   not the autogenerated ``gungho_step_mod.f90`` in
+   ``applications/lfric_atm/working/build_lfric_atm/driver``. Files with
+   the ``.x90`` extension are the  PSyclone source files that developers are
+   expected to modify. During the build, PSyclone reads these ``.x90``
+   files and automatically generates the corresponding ``.f90`` files in
+   the ``working/build_*`` directory, which are then compiled. In other
+   words, the ``working/build_*`` directory contains temporary build
+   artefacts that are regenerated every time the model is rebuilt. Any
+   changes made directly to the autogenerated ``.f90`` files will be silently
+   overwritten on the next build and should never be relied upon.
 
 2.	Adjust the code, re-compile, and re-run the model.
 
- You will see your new message in the output.
+   You will see your new message in the output.
 
    .. _practical_3_1-hint_code:
 
@@ -109,6 +144,10 @@ To gain familiarity with the model:
                          endif  
                          call log_event( log_scratch_space, LOG_LEVEL_INFO )  
 
-Code changes like you have implemented here belong into version control. Practical 3 will introduce ticketing and version control for LFRic code.
+Code changes like you have implemented here belong into version control.
+Practical 3 will introduce ticketing and version control for LFRic code.
 
-.. note:: Changes like the one you've implemented here should be tracked using version control. This ensures traceability and supports collaborative development. You'll learn how to document and manage your code changes using tickets and branches in Practical 3.
+.. note:: Changes like the one you've implemented here should be tracked
+   using version control. This ensures traceability and supports collaborative
+   development. You'll learn how to document and manage your code
+   changes using tickets and branches in Practical 3.
