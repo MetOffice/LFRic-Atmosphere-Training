@@ -82,4 +82,9 @@ linkcheck_ignore = [
     # TODO: Most of these should be fixable later.by removing refs to
     # trac;
     r'https?:\/\/code.metoffice.gov.uk.*#.*',
+    # Link works (at time of commenting) but doesn't like GitHub Actions
+    # HTML headers:
+    'https://oasis.cerfacs.fr/en/home/',
+    # Site deployed, and not part of the public internet:
+    'https://cylchub/services/cylc-review/',
 ]

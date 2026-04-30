@@ -13,11 +13,11 @@ programming layer — that separates:
   and performance optimisations that make the model run efficiently on computers.
 
 The software architecture that enables this is called
-`PSyKAl <https://psyclone.readthedocs.io/en/stable/introduction_to_psykal.html>`_,
+`PSyKAl <https://psyclone.readthedocs.io/en/stable/user_guide/introduction_to_psykal.html>`_,
 which stands for
-`Parallel System <https://psyclone.readthedocs.io/en/stable/introduction_to_psykal.html#psy-layer>`_,
-`Kernel <https://psyclone.readthedocs.io/en/stable/introduction_to_psykal.html#kernel-layer>`_,
-and `Algorithm <https://psyclone.readthedocs.io/en/stable/introduction_to_psykal.html#algorithm-layer>`_.
+`Parallel System <https://psyclone.readthedocs.io/en/stable/user_guide/introduction_to_psykal.html#psy-layer>`_,
+`Kernel <https://psyclone.readthedocs.io/en/stable/user_guide/introduction_to_psykal.html#kernel-layer>`_,
+and `Algorithm <https://psyclone.readthedocs.io/en/stable/user_guide/introduction_to_psykal.html#algorithm-layer>`_.
 
 Scientific operations on full fields are implemented in the Algorithm layer.
 Kernels specify operations for vertical columns. Parallelism is implemented

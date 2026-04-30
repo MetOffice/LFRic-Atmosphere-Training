@@ -79,7 +79,7 @@ This ticket will provide a reference number to associate with your development b
 **Step 2: Run the rose stem tests**
 
 Rose stem tests are organised into
-`groups <https://metoffice.github.io/simulation-systems/WorkingPractices/TestSuites/lfric_apps.html#rose-stem>`_,
+`groups <https://metoffice.github.io/simulation-systems//Development/testing.html>`_,
 allowing you to run only a subset of tests relevant to your changes.
 Here we want to run the ``lfric_atm_developer`` group:
 
@@ -94,7 +94,7 @@ adding a few lines to the log output should not break any tests.
 
 A summary of the rose stem test results can be found in the file 
 ``~/cylc-run/lfric_apps/run*/trac.log``, as explained in the
-`Testing Your Change <https://metoffice.github.io/simulation-systems/WorkingPractices/testing.html#trac-log>`_
+`Testing Your Change <https://metoffice.github.io/simulation-systems//Development/testing.html#trac-log>`_
 documentation. This is a wiki-formatted file intended to serve as test
 evidence for model development tickets. Use the file to determine how many
 tasks in the test workflow succeeded.
