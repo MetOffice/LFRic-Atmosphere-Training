@@ -10,13 +10,10 @@ It is primarily a Sphinx documentation project with a bundled copy of the
 
 - `README.md`: contributor setup, dependency policy, and the canonical local
   build instructions.
-- `pyproject.toml`: reference dependency manifest for the `uv` workflow and CI.
-  This repository is not currently installable as a Python library. Do not add
-  `requirements.txt` files or commit lockfiles here.
-- `pixi.toml`: completely optional conda-first alternative environment
-  definition. Keep it aligned with the docs and notebook stack when relevant,
-  but treat `uv` as the reference workflow unless the user explicitly asks to
-  prefer Pixi.
+- `pyproject.toml`: dependency manifest for the `uv` workflow, the `pip`
+  workflow, and CI. The project metadata is used to install dependencies, but
+  this repository does not currently expose importable Python package modules.
+  Do not add `requirements.txt` files here.
 - `Makefile`: thin wrapper around `sphinx-build -M ...`.
 - `source/`: Sphinx documentation sources.
 - `source/index.rst`: root toctree for the published training site.
@@ -39,42 +36,33 @@ It is primarily a Sphinx documentation project with a bundled copy of the
   source .venv/bin/activate
   ```
 
-- Optional Pixi setup:
+- Alternative `venv`/`conda` plus `pip` setup:
 
   ```bash
-  pixi install
-  pixi run html
+  /path/to/python3.11+ -m venv .venv
+  source .venv/bin/activate
+  pip install .
   ```
 
 - Optional extras are defined in `pyproject.toml`:
   - `dev` for contributor tooling such as `pre-commit`
   - `notebooks` for local notebook work
   - `mesh_tutorials` for the bundled mesh tutorial workflow
-- `pixi.toml` intentionally flattens these into one optional environment
-  instead of mirroring the `pyproject.toml` extras one-for-one. Keep the
-  matching version constraints aligned across the two files when relevant.
-- Some matching constraints are written differently because the tools use
-  different version-spec syntaxes. In particular, Pixi / Conda-style entries
-  such as `0.5.3.*` and `1.14.4.*` are the tooling-compatible form of the same
-  effective pin represented in `pyproject.toml` as `==0.5.3` and `==1.14.4`;
-  treat that as a syntax difference, not a real environment difference.
-- Although `pyproject.toml` contains `[project]` metadata, the repository is
-  not currently an installable Python package. Do not recommend
-  `pip install .` or `pip install -e .` as the normal setup route.
+- Use `pip install ".[notebooks,mesh_tutorials,dev]"` to install all optional
+  dependency groups in a `venv` or conda environment. For contributor work in
+  that route, `pip install -e ".[notebooks,mesh_tutorials,dev]"` is documented
+  in `README.md`.
+- The `[tool.uv] package = false` setting means `uv sync` installs the
+  dependency environment without installing the project itself. Keep this
+  distinction in mind when comparing `uv` and `pip` setup routes.
 - The mesh tutorial regridding practicals need `esmpy`. The repository
   currently references it in `notebooks/README.md`, the bundled mesh tutorial
   setup instructions, `source/mesh_overview/exercises/practical_exercises.rst`,
-  and the Pixi `mesh-import-check` task. GitHub Pages CI does not install or
-  use `esmpy`; the deploy workflow still builds with `uv sync` and
-  `uv run make clean html`.
-- The regridding package name differs by ecosystem: use `esmf-regrid` for the
-  PyPI / `pyproject.toml` dependency and `iris-esmf-regrid` for the Conda /
-  `pixi.toml` dependency.
-- `sphinxcontrib-quizdown` is not available on conda-forge. Keep it under
-  Pixi's `[pypi-dependencies]` as a Git-sourced package rather than moving it
-  into `[dependencies]`.
-- Dependency policy in `README.md` is explicit: `uv` remains the reference
-  workflow, while `pixi.toml` is an optional alternative.
+  and related notebooks. GitHub Pages CI does not install or use `esmpy`; the
+  deploy workflow still builds with `uv sync` and `uv run make clean html`.
+- Use the PyPI package name `esmf-regrid` in `pyproject.toml`.
+- Dependency policy in `README.md` is explicit: build environments from
+  `pyproject.toml` only, using either `uv` or `venv`/`conda` plus `pip`.
 
 ## Editing guidance
 
@@ -140,9 +128,8 @@ It is primarily a Sphinx documentation project with a bundled copy of the
   training content.
 - Do not change dependency-management conventions casually. If new dependencies
   are necessary, update `pyproject.toml` and keep the README setup instructions
-  consistent with that change. If the change also affects the optional Pixi
-  environment, update `pixi.toml` too.
-- Do not add packaging boilerplate or treat this repository as a distributable
-  Python library unless the user explicitly asks for that change.
+  consistent with that change.
+- Do not add packaging boilerplate or importable Python modules unless the user
+  explicitly asks for that change.
 - Do not commit generated `build/` output, virtual environments, or notebook
   checkpoint files; those are already ignored.
