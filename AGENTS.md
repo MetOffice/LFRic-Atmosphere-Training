@@ -10,10 +10,10 @@ It is primarily a Sphinx documentation project with a bundled copy of the
 
 - `README.md`: contributor setup, dependency policy, and the canonical local
   build instructions.
-- `pyproject.toml`: dependency manifest for the `uv` workflow, the `pip`
-  workflow, and CI. The project metadata is used to install dependencies, but
-  this repository does not currently expose importable Python package modules.
-  Do not add `requirements.txt` files here.
+- `pyproject.toml`: dependency manifest for the `uv` workflow and CI. The
+  project metadata is used to install dependencies, but this repository does
+  not currently expose importable Python package modules. Do not add
+  `requirements.txt` files here.
 - `Makefile`: thin wrapper around `sphinx-build -M ...`.
 - `source/`: Sphinx documentation sources.
 - `source/index.rst`: root toctree for the published training site.
@@ -29,40 +29,34 @@ It is primarily a Sphinx documentation project with a bundled copy of the
 
 - Supported Python is `>=3.11,<3.13`; GitHub Pages CI currently builds with
   Python `3.11`.
-- Preferred docs setup:
+- Agents should use `uv` for setup and task execution. Preferred docs setup:
 
   ```bash
   uv sync --python 3.11
-  source .venv/bin/activate
-  ```
-
-- Alternative `venv`/`conda` plus `pip` setup:
-
-  ```bash
-  /path/to/python3.11+ -m venv .venv
-  source .venv/bin/activate
-  pip install .
   ```
 
 - Optional extras are defined in `pyproject.toml`:
   - `dev` for contributor tooling such as `pre-commit`
   - `notebooks` for local notebook work
   - `mesh_tutorials` for the bundled mesh tutorial workflow
-- Use `pip install ".[notebooks,mesh_tutorials,dev]"` to install all optional
-  dependency groups in a `venv` or conda environment. For contributor work in
-  that route, `pip install -e ".[notebooks,mesh_tutorials,dev]"` is documented
-  in `README.md`.
+- Install optional dependency groups with `uv` as needed:
+  - `uv sync --extra dev`
+  - `uv sync --extra notebooks`
+  - `uv sync --extra mesh_tutorials`
+  - `uv sync --all-extras`
 - The `[tool.uv] package = false` setting means `uv sync` installs the
-  dependency environment without installing the project itself. Keep this
-  distinction in mind when comparing `uv` and `pip` setup routes.
+  dependency environment without installing the project itself.
 - The mesh tutorial regridding practicals need `esmpy`. The repository
   currently references it in `notebooks/README.md`, the bundled mesh tutorial
   setup instructions, `source/mesh_overview/exercises/practical_exercises.rst`,
-  and related notebooks. GitHub Pages CI does not install or use `esmpy`; the
-  deploy workflow still builds with `uv sync` and `uv run make clean html`.
+  and related notebooks. Some learner-facing notebook instructions use conda to
+  provide `esmpy`, but agents should keep repository setup and validation on
+  the `uv` workflow unless explicitly asked to test that notebook environment.
+  GitHub Pages CI does not install or use `esmpy`; the deploy workflow still
+  builds with `uv sync` and `uv run make clean html`.
 - Use the PyPI package name `esmf-regrid` in `pyproject.toml`.
 - Dependency policy in `README.md` is explicit: build environments from
-  `pyproject.toml` only, using either `uv` or `venv`/`conda` plus `pip`.
+  `pyproject.toml` only. For agents, use `uv`.
 
 ## Editing guidance
 
