@@ -3,8 +3,5 @@
 *.bat
 .venv/
 data-tutorials/
-build
-build/*
-build/*/*
-.ipynb_checkpoints/
+build/
 **/.ipynb_checkpoints/
