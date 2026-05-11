@@ -74,7 +74,7 @@ The code contains an example configuration, colloquially called "canned configur
 
  ``log.txt`` and the other output files contain log messages from the I/O system, run time profiling, `checksums <https://github.com/MetOffice/simulation-systems/discussions/370>`_ of model fields after the last time step for tests, and three NetCDF files. Using the knowledge from module 2 of this training it is possible to open these files and explore the data produced by the model run.
 
-.. note::  The NetCDF output is configured by the file `iodef.xml  <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/applications/lfric_atm/example/iodef.xml#L46>`_ in the example directory. It controls the output streams, filenames, written fields, and output frequency.
+.. note::  The NetCDF output is configured by the file `iodef.xml  <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/applications/lfric_atm/example/iodef.xml>`_ in the example directory. It controls the output streams, filenames, written fields, and output frequency.
 
 **Step 3: Add a custom message to model output**
 
@@ -93,7 +93,7 @@ To gain familiarity with the model:
 
    .. _practical_3_1-hint_code:
 
-   .. hint:: You can write to standard output by adding the following Fortran code at the end of the subroutine gungho_step in the file `gungho_step_mod.x90 <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/science/gungho/source/driver/gungho_step_mod.x90?rev=9055#L217>`_ in the folder ``science/gungho/source/driver``:
+   .. hint:: You can write to standard output by adding the following Fortran code at the end of the subroutine gungho_step in the file `gungho_step_mod.x90 <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/science/gungho/source/driver/gungho_step_mod.x90?rev=9055>`_ in the folder ``science/gungho/source/driver``:
 
       .. collapse:: Fortran code to write info message
 

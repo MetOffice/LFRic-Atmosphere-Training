@@ -24,7 +24,7 @@ This ticket will provide a reference number to associate with your development b
 
 2. Create and checkout a branch
 
-Use `fcm bc <https://metomi.github.io/fcm/doc/user_guide/code_management.html#svn_branching>`_ to `create a branch <https://metoffice.github.io/simulation-systems/WorkingPractices/working_practices.html>`_:
+Use `fcm bc <https://metomi.github.io/fcm/doc/user_guide/code_management.html#svn_branching>`_ to `create a branch <https://metoffice.github.io/simulation-systems/WorkingPractices/gh_dev_init.html#create-a-branch>`_:
 
 .. code-block:: bash
 
@@ -34,7 +34,7 @@ Replace:
 
 - ``NNN`` with your ticket number,
 - ``branchname`` with a descriptive name (e.g. practical_stem_test),
-- ``vnXX.Y`` with the `release version <https://code.metoffice.gov.uk/trac/lfric_apps/wiki#Releases>`_ (e.g. vn2.2).
+- ``vnXX.Y`` with the `release version <https://code.metoffice.gov.uk/trac/lfric_apps/wiki>`_ (e.g. vn2.2).
 
 Then, check out the branch using your MOSRS ``USERNAME``:
 
@@ -61,7 +61,7 @@ Verify that your `change <https://code.metoffice.gov.uk/trac/lfric_apps/changese
 
 **Step 2: Run the rose stem tests**
 
-Rose stem tests are organised into `groups <https://metoffice.github.io/simulation-systems/WorkingPractices/TestSuites/lfric_apps.html#rose-stem>`_, allowing you to run only a subset of tests relevant to your changes. Here we want to run the ``lfric_atm_developer`` group:
+Rose stem tests are organised into `groups <https://metoffice.github.io/simulation-systems/Development/TestSuites/lfric_apps.html#rose-stem>`_, allowing you to run only a subset of tests relevant to your changes. Here we want to run the ``lfric_atm_developer`` group:
 
 .. code-block:: bash
 
@@ -71,7 +71,7 @@ Rose stem tests are organised into `groups <https://metoffice.github.io/simulati
 
 All tasks in the rose stem test workflow should complete successfully - adding a few lines to the log output should not break any tests.
 
-A summary of the rose stem test results can be found in the file ``~/cylc-run/lfric_apps/run*/trac.log``, as explained in the `Testing Your Change <https://metoffice.github.io/simulation-systems/WorkingPractices/testing.html#trac-log>`_ documentation. This is a wiki-formatted file intended to serve as test evidence for model development tickets. Use the file to determine how many tasks in the test workflow succeeded.
+A summary of the rose stem test results can be found in the file ``~/cylc-run/lfric_apps/run*/trac.log``, as explained in the `Testing Your Change <https://metoffice.github.io/simulation-systems/Development/testing.html#trac-log>`_ documentation. This is a wiki-formatted file intended to serve as test evidence for model development tickets. Use the file to determine how many tasks in the test workflow succeeded.
 
 .. hint:: Given the benign nature of the model change, we expect all tasks in the rose stem test suite to pass. However, this depends on how the change was implemented. If you copied the :ref:`code <practical_3_1-hint_code>` from the hint in Practical 1 into ``gungho_step_mod.x90``, everything should work as intended.
 
