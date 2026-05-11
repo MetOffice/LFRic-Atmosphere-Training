@@ -1,6 +1,9 @@
 import sys
 import os
 
+from docutils import nodes
+from sphinx.errors import ExtensionError
+
 sys.path.append(os.path.abspath('../lib/'))
 
 # Configuration file for the Sphinx documentation builder.
@@ -44,6 +47,61 @@ exclude_patterns = [
 
 # -- Figure numbering --------------------------------------------------------
 numfig = True
+
+_UNNUMBERED_IMAGES = {
+    'index': {'_static/momentum_logo.png'},
+}
+
+
+def _node_location(node):
+    location = getattr(node, 'source', '<unknown source>')
+    line = getattr(node, 'line', None)
+    return f'{location}:{line}' if line else location
+
+
+def _image_uri(image):
+    return image.get('uri', '').lstrip('/')
+
+
+def _validate_figure_labelling(app, doctree):
+    errors = []
+
+    for figure in doctree.findall(nodes.figure):
+        image = next(figure.findall(nodes.image), None)
+        uri = _image_uri(image) if image else '<missing image>'
+        names = figure.get('names', [])
+        if not any(name.startswith('fig-') for name in names):
+            errors.append(
+                f"{_node_location(figure)}: figure for '{uri}' is missing "
+                "a '.. _fig-...:' label."
+            )
+        if not any(isinstance(child, nodes.caption) and child.astext().strip()
+                   for child in figure.children):
+            errors.append(
+                f"{_node_location(figure)}: figure for '{uri}' is missing "
+                'a caption.'
+            )
+
+    for image in doctree.findall(nodes.image):
+        if isinstance(image.parent, nodes.figure):
+            continue
+        uri = _image_uri(image)
+        allowed = _UNNUMBERED_IMAGES.get(app.env.docname, set())
+        if uri not in allowed:
+            errors.append(
+                f"{_node_location(image)}: image directive for '{uri}' must "
+                'be converted to a labelled figure or explicitly allowlisted.'
+            )
+
+    if errors:
+        message = 'Figure labelling validation failed:\n'
+        message += '\n'.join(f'- {error}' for error in errors)
+        raise ExtensionError(message)
+
+
+def setup(app):
+    app.connect('doctree-read', _validate_figure_labelling)
+    return {'version': '1.0', 'parallel_read_safe': True}
 
 # -- layout -----------------------------------------------------------------
 # https://pydata-sphinx-theme.readthedocs.io/en/stable/user_guide/layout.html#
