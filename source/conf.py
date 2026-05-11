@@ -48,48 +48,68 @@ exclude_patterns = [
 # -- Figure numbering --------------------------------------------------------
 numfig = True
 
-_UNNUMBERED_IMAGES = {
-    'index': {'_static/momentum_logo.png'},
-}
+def validate_figure_labelling(
+    app,
+    doctree,
+    *,
+    unnumbered_images_by_doc=None,
+):
+    """Enforce the site-wide figure labelling policy.
 
+    Issue #122 requires all content figures to have consistent numbering,
+    captions, and cross-reference targets. Sphinx can number figures once
+    ``numfig`` is enabled, but only if content uses ``figure`` directives with
+    explicit labels and captions.
 
-def _node_location(node):
-    location = getattr(node, 'source', '<unknown source>')
-    line = getattr(node, 'line', None)
-    return f'{location}:{line}' if line else location
+    This hook runs while Sphinx reads each doctree and fails the build when:
 
+    * a ``figure`` directive has no ``fig-*`` label;
+    * a ``figure`` directive has no caption; or
+    * an unallowlisted ``image`` directive remains outside a figure.
 
-def _image_uri(image):
-    return image.get('uri', '').lstrip('/')
+    ``unnumbered_images_by_doc`` intentionally defaults to a narrow allowlist
+    for decorative images that should not be numbered. Keys are Sphinx docnames
+    and values are image URIs as they appear in the doctree.
+    """
+    if unnumbered_images_by_doc is None:
+        unnumbered_images_by_doc = {
+            'index': {'_static/momentum_logo.png'},
+        }
 
+    def node_location(node):
+        location = getattr(node, 'source', '<unknown source>')
+        line = getattr(node, 'line', None)
+        return f'{location}:{line}' if line else location
 
-def _validate_figure_labelling(app, doctree):
+    def image_uri(image):
+        return image.get('uri', '').lstrip('/')
+
     errors = []
 
     for figure in doctree.findall(nodes.figure):
         image = next(figure.findall(nodes.image), None)
-        uri = _image_uri(image) if image else '<missing image>'
+        uri = image_uri(image) if image else '<missing image>'
         names = figure.get('names', [])
         if not any(name.startswith('fig-') for name in names):
             errors.append(
-                f"{_node_location(figure)}: figure for '{uri}' is missing "
+                f"{node_location(figure)}: figure for '{uri}' is missing "
                 "a '.. _fig-...:' label."
             )
         if not any(isinstance(child, nodes.caption) and child.astext().strip()
                    for child in figure.children):
             errors.append(
-                f"{_node_location(figure)}: figure for '{uri}' is missing "
+                f"{node_location(figure)}: figure for '{uri}' is missing "
                 'a caption.'
             )
 
     for image in doctree.findall(nodes.image):
         if isinstance(image.parent, nodes.figure):
             continue
-        uri = _image_uri(image)
-        allowed = _UNNUMBERED_IMAGES.get(app.env.docname, set())
+        uri = image_uri(image)
+        allowed = unnumbered_images_by_doc.get(app.env.docname, set())
         if uri not in allowed:
             errors.append(
-                f"{_node_location(image)}: image directive for '{uri}' must "
+                f"{node_location(image)}: image directive for '{uri}' must "
                 'be converted to a labelled figure or explicitly allowlisted.'
             )
 
@@ -100,7 +120,8 @@ def _validate_figure_labelling(app, doctree):
 
 
 def setup(app):
-    app.connect('doctree-read', _validate_figure_labelling)
+    """Register local Sphinx validation hooks."""
+    app.connect('doctree-read', validate_figure_labelling)
     return {'version': '1.0', 'parallel_read_safe': True}
 
 # -- layout -----------------------------------------------------------------
