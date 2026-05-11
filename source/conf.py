@@ -18,8 +18,10 @@ release = 'v1'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['pydata_sphinx_theme',
-              'sphinx_toolbox.collapse',
+# Keep pydata_sphinx_theme out of extensions. It is selected below with
+# html_theme; loading it as a general extension also runs its HTML-only hooks
+# for non-HTML builders such as linkcheck, where app.builder.theme is absent.
+extensions = ['sphinx_toolbox.collapse',
               'sphinxcontrib.quizdown',
               'sphinxcontrib.video']
 
