@@ -2,9 +2,13 @@
 Rose - managing model configurations
 ************************************
 
-.. image:: /_static/rose.png
+.. _fig-model-rose:
+
+.. figure:: /_static/rose.png
    :align: right
    :width: 200px
+
+   Rose configuration management tool.
 
 * Rose is a tool for writing, editing, updating, and running configurations of applications
 * Rose allows top-level configuration of applications for workflows used for LFRic model experiments

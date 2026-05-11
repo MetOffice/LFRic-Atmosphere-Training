@@ -120,7 +120,9 @@ When dealing with Limited Area Models (LAMs), we focus on a smaller section of t
 Cubed sphere mesh
 -----------------
 
-LFRic Atmosphere uses a cubed sphere mesh. Meshes are named after the number of cells along one edge of the cube. The visualisation shows a C16 mesh, which represents the Earth's surface by 6 x 16 x 16 = 1536 cells ("squares") in each horizontal layer. Most cell corners have four neighbour cells but at the corners of the cube only three cells meet.
+LFRic Atmosphere uses a cubed sphere mesh. Meshes are named after the number of cells along one edge of the cube. :numref:`fig-mesh-cubed-sphere-animation` shows a C16 mesh, which represents the Earth's surface by 6 x 16 x 16 = 1536 cells ("squares") in each horizontal layer. Most cell corners have four neighbour cells but at the corners of the cube only three cells meet.
+
+.. _fig-mesh-cubed-sphere-animation:
 
 .. figure:: /_static/mesh_animation.gif
 
