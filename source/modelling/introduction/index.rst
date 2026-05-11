@@ -22,5 +22,6 @@ This chapter first introduces the component models used within the Momentum fram
 
 .. figure:: /_static/seamless_modelling.png
    :width: 650px
+   :alt: Weather and climate modelling applications across spatial and temporal scales
 
    Seamless modelling across spatial and temporal scales.

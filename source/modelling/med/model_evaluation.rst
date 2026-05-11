@@ -17,6 +17,7 @@ The Met Office maintains routine tools for validation of GC configurations:
 
 .. figure:: /_static/autoassess.png
    :width: 700px
+   :alt: AutoAssess workflow for evaluating science configurations
 
    AutoAssess evaluation tools for model assessment.
 

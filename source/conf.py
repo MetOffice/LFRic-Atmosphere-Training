@@ -48,28 +48,34 @@ exclude_patterns = [
 # -- Figure numbering --------------------------------------------------------
 numfig = True
 
+UNNUMBERED_IMAGES_BY_DOC = {
+    'index': frozenset({'_static/momentum_logo.png'}),
+}
+
+
 def validate_figure_labelling(
     app,
     doctree,
     *,
-    unnumbered_images_by_doc={'index': {'_static/momentum_logo.png'}},
+    unnumbered_images_by_doc=None,
 ):
     """Enforce the site-wide figure labelling policy.
 
     Issue #122 requires all content figures to have consistent numbering,
-    captions, and cross-reference targets. Sphinx can number figures once
-    ``numfig`` is enabled, but only if content uses ``figure`` directives with
-    explicit labels and captions.
+    captions, cross-reference targets, and accessible descriptions. Sphinx can
+    number figures once ``numfig`` is enabled, but only if content uses
+    ``figure`` directives with explicit labels and captions.
 
     This hook runs while Sphinx reads each doctree and fails the build when:
 
     * a ``figure`` directive has no ``fig-*`` label;
     * a ``figure`` directive has no caption; or
+    * a ``figure`` directive has no alt text; or
     * an unallowlisted ``image`` directive remains outside a figure.
 
     ``unnumbered_images_by_doc`` intentionally defaults to a narrow allowlist
     for decorative images that should not be numbered. Keys are Sphinx docnames
-    and values are image URIs as they appear in the doctree.
+    and values are normalized image URIs.
     """
 
     def node_location(node):
@@ -81,6 +87,8 @@ def validate_figure_labelling(
         return image.get('uri', '').lstrip('/')
 
     errors = []
+    if unnumbered_images_by_doc is None:
+        unnumbered_images_by_doc = UNNUMBERED_IMAGES_BY_DOC
 
     for figure in doctree.findall(nodes.figure):
         image = next(figure.findall(nodes.image), None)
@@ -96,6 +104,11 @@ def validate_figure_labelling(
             errors.append(
                 f"{node_location(figure)}: figure for '{uri}' is missing "
                 'a caption.'
+            )
+        if image is None or not image.get('alt', '').strip():
+            errors.append(
+                f"{node_location(figure)}: figure for '{uri}' is missing "
+                'alt text.'
             )
 
     for image in doctree.findall(nodes.image):

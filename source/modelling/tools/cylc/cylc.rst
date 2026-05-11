@@ -9,6 +9,7 @@ Cylc - workflow engine
 
 .. figure:: /_static/cylc.gif
    :width: 700px
+   :alt: Cylc workflow graph visualisation
 
    Cylc workflow visualisation.
 

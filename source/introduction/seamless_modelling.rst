@@ -9,6 +9,7 @@ Since the 1990's the Met Office strategy has been to develop a single model fami
 
 .. figure:: /_static/1/intro_seamless.png
    :width: 650px
+   :alt: Met Office prediction and projection systems across spatial and temporal scales
 
    Spatial and temporal scales of Met Office prediction and projection systems.
 

@@ -33,5 +33,6 @@ PSyKAl (
 
 .. figure:: /_static/psykal.png
    :width: 650px
+   :alt: PSyKAl architecture separating natural science code from computational science code
 
    Separation of Natural and Computational Science in the PSyKAl architecture.

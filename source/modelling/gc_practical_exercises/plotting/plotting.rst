@@ -15,5 +15,6 @@ Plotting your data
 
 .. figure:: /_static/plotting.png
    :width: 650px
+   :alt: Example plotted diagnostic output from a GC practical exercise
 
    Plotting output from a GC practical exercise.

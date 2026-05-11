@@ -7,6 +7,7 @@ Rose - managing model configurations
 .. figure:: /_static/rose.png
    :align: right
    :width: 200px
+   :alt: Rose configuration management tool logo
 
    Rose configuration management tool.
 

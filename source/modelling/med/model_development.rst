@@ -20,6 +20,7 @@ The evaluation teams (regional known as RMED and global, GMED) have strong links
 
 .. figure:: /_static/seamless_dev_cycle.png
    :width: 650px
+   :alt: Development cycle for Global Coupled science configurations
 
    The seamless development cycle for Global Coupled configurations.
 
