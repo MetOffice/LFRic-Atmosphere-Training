@@ -33,7 +33,14 @@ extensions = [
 ]
 
 templates_path = ['_templates']
-exclude_patterns = []
+# These files are included by practical_exercises.rst. If Sphinx also
+# discovers them as standalone documents, labels inside the fragments are
+# registered twice and produce duplicate-label warnings.
+exclude_patterns = [
+    'lfric_infrastructure/practical_command_line.rst',
+    'lfric_infrastructure/practical_standard_suite.rst',
+    'lfric_infrastructure/practical_stem_test.rst',
+]
 
 # -- Figure numbering --------------------------------------------------------
 numfig = True
