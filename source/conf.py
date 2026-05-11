@@ -52,7 +52,7 @@ def validate_figure_labelling(
     app,
     doctree,
     *,
-    unnumbered_images_by_doc=None,
+    unnumbered_images_by_doc={'index': {'_static/momentum_logo.png'}},
 ):
     """Enforce the site-wide figure labelling policy.
 
@@ -71,10 +71,6 @@ def validate_figure_labelling(
     for decorative images that should not be numbered. Keys are Sphinx docnames
     and values are image URIs as they appear in the doctree.
     """
-    if unnumbered_images_by_doc is None:
-        unnumbered_images_by_doc = {
-            'index': {'_static/momentum_logo.png'},
-        }
 
     def node_location(node):
         location = getattr(node, 'source', '<unknown source>')
