@@ -21,7 +21,7 @@ Topics include:
 
 .. figure:: /_static/working_practices.jpg
    :width: 650px
-   :alt: Simulation Systems Working Practices web page
+   :alt: Simulation Systems Working Practices
 
    Simulation Systems Working Practices.
 
