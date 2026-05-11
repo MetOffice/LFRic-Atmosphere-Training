@@ -2,6 +2,7 @@ import sys
 import os
 
 from docutils import nodes
+from sphinx.application import Sphinx
 from sphinx.errors import ExtensionError
 
 sys.path.append(os.path.abspath('../lib/'))
@@ -48,23 +49,21 @@ exclude_patterns = [
 # -- Figure numbering --------------------------------------------------------
 numfig = True
 
-UNNUMBERED_IMAGES_BY_DOC = {
-    'index': frozenset({'_static/momentum_logo.png'}),
-}
-
 
 def validate_figure_labelling(
-    app,
-    doctree,
+    app: Sphinx,
+    doctree: nodes.document,
     *,
-    unnumbered_images_by_doc=None,
-):
+    unnumbered_images_by_doc: dict[str, set[str]] = {
+        'index': {'_static/momentum_logo.png'},
+    },
+) -> None:
     """Enforce the site-wide figure labelling policy.
 
-    Issue #122 requires all content figures to have consistent numbering,
-    captions, cross-reference targets, and accessible descriptions. Sphinx can
-    number figures once ``numfig`` is enabled, but only if content uses
-    ``figure`` directives with explicit labels and captions.
+    Content figures should have consistent numbering, captions, cross-reference
+    targets, and accessible descriptions. Sphinx can number figures once
+    ``numfig`` is enabled, but only if content uses ``figure`` directives with
+    explicit labels and captions.
 
     This hook runs while Sphinx reads each doctree and fails the build when:
 
@@ -78,17 +77,15 @@ def validate_figure_labelling(
     and values are normalized image URIs.
     """
 
-    def node_location(node):
+    def node_location(node: nodes.Node) -> str:
         location = getattr(node, 'source', '<unknown source>')
         line = getattr(node, 'line', None)
         return f'{location}:{line}' if line else location
 
-    def image_uri(image):
+    def image_uri(image: nodes.image) -> str:
         return image.get('uri', '').lstrip('/')
 
-    errors = []
-    if unnumbered_images_by_doc is None:
-        unnumbered_images_by_doc = UNNUMBERED_IMAGES_BY_DOC
+    errors: list[str] = []
 
     for figure in doctree.findall(nodes.figure):
         image = next(figure.findall(nodes.image), None)
@@ -128,7 +125,7 @@ def validate_figure_labelling(
         raise ExtensionError(message)
 
 
-def setup(app):
+def setup(app: Sphinx) -> dict[str, str | bool]:
     """Register local Sphinx validation hooks."""
     app.connect('doctree-read', validate_figure_labelling)
     return {'version': '1.0', 'parallel_read_safe': True}
