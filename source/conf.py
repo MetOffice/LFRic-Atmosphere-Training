@@ -1,5 +1,7 @@
 import sys
 import os
+from collections.abc import Mapping
+from types import MappingProxyType
 
 from docutils import nodes
 from sphinx.application import Sphinx
@@ -54,9 +56,9 @@ def validate_figure_labelling(
     app: Sphinx,
     doctree: nodes.document,
     *,
-    unnumbered_images_by_doc: dict[str, set[str]] = {
-        'index': {'_static/momentum_logo.png'},
-    },
+    unnumbered_images_by_doc: Mapping[str, frozenset[str]] = MappingProxyType({
+        'index': frozenset({'_static/momentum_logo.png'}),
+    }),
 ) -> None:
     """Enforce the site-wide figure labelling policy.
 
@@ -72,9 +74,9 @@ def validate_figure_labelling(
     * a ``figure`` directive has no alt text; or
     * an unallowlisted ``image`` directive remains outside a figure.
 
-    ``unnumbered_images_by_doc`` intentionally defaults to a narrow allowlist
-    for decorative images that should not be numbered. Keys are Sphinx docnames
-    and values are normalized image URIs.
+    ``unnumbered_images_by_doc`` intentionally defaults to an immutable narrow
+    allowlist for decorative images that should not be numbered. Keys are Sphinx
+    docnames and values are normalized image URIs.
     """
 
     def node_location(node: nodes.Node) -> str:
@@ -112,7 +114,7 @@ def validate_figure_labelling(
         if isinstance(image.parent, nodes.figure):
             continue
         uri = image_uri(image)
-        allowed = unnumbered_images_by_doc.get(app.env.docname, set())
+        allowed = unnumbered_images_by_doc.get(app.env.docname, frozenset())
         if uri not in allowed:
             errors.append(
                 f"{node_location(image)}: image directive for '{uri}' must "
