@@ -2,7 +2,7 @@
 3. LFRic code and software
 **************************
 
-In this section, LFRic is introduced from a software perspective, focussing 
+In this section, LFRic is introduced from a software perspective, focusing 
 on the LFRic Atmosphere model and its underlying components.
 
 .. admonition:: Aims and objectives

@@ -40,7 +40,7 @@ For other platforms, chose appropriate alternative workflow IDs.
 
 2. Open the workflow files in a text editor and explore its structure:
 
- * Examin the `graph <https://cylc.github.io/cylc-doc/stable/html/glossary.html#term-graph>`_ and the `apps <https://metomi.github.io/rose/doc/html/tutorial/rose/applications.html>`_ it defines. 
+ * Examine the `graph <https://cylc.github.io/cylc-doc/stable/html/glossary.html#term-graph>`_ and the `apps <https://metomi.github.io/rose/doc/html/tutorial/rose/applications.html>`_ it defines. 
  * The standard suite performs the following automatically:
 
    * Extracts the model code

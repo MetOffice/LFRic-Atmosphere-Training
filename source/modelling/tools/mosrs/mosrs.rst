@@ -2,7 +2,7 @@
 MOSRS Overview
 **************
 
-The Met Office Science Repository Service (MOSRS) is a platform used to manage and store scientific software and related resources developed by the Met Office and its collaborators. It provides version control, access management, and collaboration tools for a range of scientific projects, including atmospheric and climate modeling.
+The Met Office Science Repository Service (MOSRS) is a platform used to manage and store scientific software and related resources developed by the Met Office and its collaborators. It provides version control, access management, and collaboration tools for a range of scientific projects, including atmospheric and climate modelling.
 
 Key features of MOSRS include:
 
