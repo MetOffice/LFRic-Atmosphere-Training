@@ -14,7 +14,6 @@ Topics include:
 * :external+simulation_systems:ref:`development_index`
 * :external+simulation_systems:ref:`multirepo`
 * :external+simulation_systems:ref:`testing`
-* :external+simulation_systems:ref:`multirepo`
 * The :external+simulation_systems:ref:`review_process`
 
 .. _fig-infra-working-practices:
