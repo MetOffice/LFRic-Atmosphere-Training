@@ -74,7 +74,12 @@ The code contains an example configuration, colloquially called "canned configur
 
  ``log.txt`` and the other output files contain log messages from the I/O system, run time profiling, `checksums <https://github.com/MetOffice/simulation-systems/discussions/370>`_ of model fields after the last time step for tests, and three NetCDF files. Using the knowledge from module 2 of this training it is possible to open these files and explore the data produced by the model run.
 
-.. note::  The NetCDF output is configured by the file `iodef.xml  <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/applications/lfric_atm/example/iodef.xml>`_ in the example directory. It controls the output streams, filenames, written fields, and output frequency.
+.. note::
+
+   The NetCDF output is configured by the file 
+   `iodef.xml  <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/applications/lfric_atm/example/iodef.xml>`_
+   in the example directory. It controls the output streams, filenames, written
+   fields, and output frequency.
 
 **Step 3: Add a custom message to model output**
 
