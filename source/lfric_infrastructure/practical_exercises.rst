@@ -21,10 +21,12 @@ Setup Instructions
  * External users: Contact your local institutional sponsor.
  * If unsure: Email scientific_partnerships@metoffice.gov.uk with your affiliate institution and the reason you require access, and you will be advised on the registration process.
 
+.. _practical_3_1-caption:
+
 .. include:: practical_command_line.rst
+
+.. _practical_3_2-caption:
 
 .. include:: practical_standard_suite.rst
 
 .. include:: practical_stem_test.rst
-
-
