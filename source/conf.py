@@ -1,4 +1,5 @@
-import sys, os 
+import sys
+import os
 
 sys.path.append(os.path.abspath('../lib/'))
 
@@ -21,10 +22,15 @@ release = 'v1'
 # Keep pydata_sphinx_theme out of extensions. It is selected below with
 # html_theme; loading it as a general extension also runs its HTML-only hooks
 # for non-HTML builders such as linkcheck, where app.builder.theme is absent.
-extensions = ['sphinx_toolbox.collapse',
-              'sphinxcontrib.quizdown',
-              'sphinxcontrib.video']
-
+extensions = [
+    'sphinx_design',
+    'sphinx.ext.graphviz',
+    'sphinx.ext.intersphinx',
+    'sphinx_toolbox.collapse',
+    'sphinxcontrib.quizdown',
+    'sphinxcontrib.video',
+    'sphinx_copybutton',
+]
 
 templates_path = ['_templates']
 exclude_patterns = []
@@ -84,4 +90,26 @@ html_js_files = ['nav-collapse.js']
 linkcheck_ignore = [
     r'https://cylchub/.*',
     r'https://oasis\.cerfacs\.fr/.*',
+    'https://github.com/MetOffice/jules',       # not fully public yet :(
+    'https://cylchub/*',                        # inaccessible from GH Actions
+    'https://github.com/MetOffice/momentum_user_training.example*',
 ]
+
+# Add hyperlinks include file to avoid repeated links.
+rst_epilog = open('hyperlinks.rst.include', 'r').read()
+
+# Mapping to other Sphinx projects we want to import references from.
+intersphinx_mapping = {
+    'cylc': (
+        'https://cylc.github.io/cylc-doc/stable/html', None
+    ),
+    'rose': (
+        'http://metomi.github.io/rose/doc/html', None
+    ),
+    'simulation_systems': (
+        'https://metoffice.github.io/simulation-systems/', None
+    ),
+    'psyclone': (
+        'https://psyclone.readthedocs.io/en/stable/', None
+    ),
+}

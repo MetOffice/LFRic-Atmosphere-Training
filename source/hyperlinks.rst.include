@@ -1,0 +1,25 @@
+.. Repositories
+
+.. _LFRic Apps Repository: https://github.com/MetOffice/lfric_apps
+.. _LFRic Core Repository: https://github.com/MetOffice/lfric_core
+.. _CASIM repository: https://github.com/MetOffice/casim
+.. _JULES repository: https://github.com/MetOffice/jules
+.. _SOCRATES repository: https://github.com/MetOffice/socrates
+.. _UKCA repository: https://github.com/MetOffice/ukca
+
+.. Paths within repositories
+
+.. _GungHo: https://github.com/MetOffice/lfric_apps/tree/main/applications/gungho_model
+.. _Model Physics: https://github.com/MetOffice/lfric_apps/tree/main/science/physics_schemes
+.. _LFRic dependencies: https://github.com/MetOffice/lfric_apps/blob/main/dependencies.yaml
+.. _LFRic interfaces: https://github.com/MetOffice/lfric_apps/tree/main/interfaces
+
+.. Links that should be intersphinx
+
+.. _Simulation Systems Discussion Forum: https://github.com/MetOffice/simulation-systems/discussions/categories/lfric
+
+
+.. Local links only available at the Met Office
+.. Ensure that you add them to ``conf.py:linkcheck_ignore``
+
+.. _Cylc Review: https://cylchub/services/cylc-review/
