@@ -10,7 +10,7 @@ The Momentum framework represents the Earth system using four primary component 
 
 * **Ocean**: Nucleus for European Modelling of the Ocean (`NEMO <https://www.nemo-ocean.eu/>`_)
 
-* **Sea Ice**: Sea Ice modelling Integrated Initiative (`SI³ <https://zenodo.org/records/7534900#.Y8GIF-xKg-Q>`_)
+* **Sea Ice**: Sea Ice modelling Integrated Initiative (`SI³ <https://zenodo.org/records/7534900>`_)
 
 Together, these component models provide a comprehensive representation of the Earth system, enabling consistent simulations across weather and climate timescales.
 
