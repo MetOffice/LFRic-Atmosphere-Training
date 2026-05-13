@@ -50,16 +50,16 @@ jobs:
 
       - name: Upload artifacts
         if: ${{ github.repository == 'MetOffice/LFRic-Atmosphere-Training' && github.ref_name == 'main' && github.event_name == 'push' }}
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           name: github-pages
           path: build/html
 
       - name: Setup GitHub Pages
         if: ${{ github.repository == 'MetOffice/LFRic-Atmosphere-Training' && github.ref_name == 'main' && github.event_name == 'push' }}
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
 
       - name: Deploy to GitHub Pages
         id: deployment
         if: ${{ github.repository == 'MetOffice/LFRic-Atmosphere-Training' && github.ref_name == 'main' && github.event_name == 'push' }}
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
