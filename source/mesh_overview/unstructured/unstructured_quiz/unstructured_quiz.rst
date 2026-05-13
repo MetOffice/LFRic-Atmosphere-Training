@@ -69,7 +69,7 @@ This quiz reviews the main ideas from the chapter and tests understanding of the
    ## Describe the “newspaper” analogy used to compare structured and unstructured data.
    1. [x] Structured data is like a pamphlet (compact and simple), while unstructured data is like a novel (detailed and complex).
        > Correct! A pamphlet is compact and ordered, just like structured data.
-   1. [ ] Structured data is like a handwritten journal, while unstructured data is like a spreadsheet with labeled rows.
+   1. [ ] Structured data is like a handwritten journal, while unstructured data is like a spreadsheet with labelled rows.
        > Hint: Does this clarify complexity and structure?
    1. [ ] Structured data is like a comic book with speech bubbles, while unstructured data is like a dictionary.
        > This analogy doesn’t meaningfully reflect mesh types.
@@ -140,17 +140,17 @@ This quiz reviews the main ideas from the chapter and tests understanding of the
    1. [ ] Low-level mesh and visualisation backend
        > Incorrect—this refers to libraries like VTK or GeoVista.
 
-   ## What tool is used to compute regirding weights in the unstructured world?
+   ## What tool is used to compute regridding weights in the unstructured world?
    1. [ ] NumPy
        > NumPy is general-purpose and doesn’t support regridding directly.
    1. [ ] Cartopy
        > Cartopy is used for maps, not computing interpolation weights.
    1. [x] ESMF
-       > Correct! ESMF (Earth System Modeling Framework) handles regridding, especially for unstructured grids.
+       > Correct! ESMF (Earth System Modelling Framework) handles regridding, especially for unstructured grids.
    1. [ ] Matplotlib
        > Matplotlib only handles plotting—not weight generation.
 
-   ## Why is regirding more computationally expensive in unstructured grids?
+   ## Why is regridding more computationally expensive in unstructured grids?
    1. [ ] Because each element must be described individually
        > Partially correct, but there's more.
    1. [ ] Because weights must be computed for non-aligned, irregular shapes
@@ -160,7 +160,7 @@ This quiz reviews the main ideas from the chapter and tests understanding of the
    1. [ ] None of them
        > Incorrect! Both factors are key challenges.
 
-   ## Is the following sentence true or false: During regirding, metadata can be preserved using appropriate tools and configurations.
+   ## Is the following sentence true or false: During regridding, metadata can be preserved using appropriate tools and configurations.
    1. [x] true
        > Correct! Libraries like Iris and xESMF preserve metadata when properly configured.
    1. [ ] false

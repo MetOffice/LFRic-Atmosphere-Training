@@ -93,10 +93,19 @@ gives identical results for each column.
 
 .. note::
 
+<<<<<<< 155.build-in-ci
    The NetCDF output is configured by the file
    `iodef.xml <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/applications/lfric_atm/example/iodef.xml#L46>`_
    in the example directory. It controls the output streams, filenames,
    written fields, and output frequency.
+=======
+.. note::
+
+   The NetCDF output is configured by the file 
+   `iodef.xml  <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/applications/lfric_atm/example/iodef.xml>`_
+   in the example directory. It controls the output streams, filenames, written
+   fields, and output frequency.
+>>>>>>> main
 
 **Step 3: Add a custom message to model output**
 
@@ -128,7 +137,7 @@ To gain familiarity with the model:
 
    .. _practical_3_1-hint_code:
 
-   .. hint:: You can write to standard output by adding the following Fortran code at the end of the subroutine gungho_step in the file `gungho_step_mod.x90 <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/science/gungho/source/driver/gungho_step_mod.x90?rev=9055#L217>`_ in the folder ``science/gungho/source/driver``:
+   .. hint:: You can write to standard output by adding the following Fortran code at the end of the subroutine gungho_step in the file `gungho_step_mod.x90 <https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/science/gungho/source/driver/gungho_step_mod.x90?rev=9055>`_ in the folder ``science/gungho/source/driver``:
 
       .. collapse:: Fortran code to write info message
 

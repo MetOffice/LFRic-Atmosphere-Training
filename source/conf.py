@@ -18,11 +18,20 @@ release = 'v1'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
+<<<<<<< 155.build-in-ci
 extensions = [
     'sphinx_toolbox.collapse',
     'sphinxcontrib.quizdown',
     'sphinxcontrib.video'
 ]
+=======
+# Keep pydata_sphinx_theme out of extensions. It is selected below with
+# html_theme; loading it as a general extension also runs its HTML-only hooks
+# for non-HTML builders such as linkcheck, where app.builder.theme is absent.
+extensions = ['sphinx_toolbox.collapse',
+              'sphinxcontrib.quizdown',
+              'sphinxcontrib.video']
+>>>>>>> main
 
 
 templates_path = ['_templates']
@@ -77,6 +86,7 @@ html_static_path = ['_static']
 html_css_files = ['nav-collapse.css']
 html_js_files = ['nav-collapse.js']
 
+<<<<<<< 155.build-in-ci
 linkcheck_ignore = [
     # Ignore anchor ids: https://github.com/sphinx-doc/sphinx/issues/13620
     # TODO: Most of these should be fixable later.by removing refs to
@@ -87,4 +97,12 @@ linkcheck_ignore = [
     'https://oasis.cerfacs.fr/en/home/',
     # Site deployed, and not part of the public internet:
     'https://cylchub/services/cylc-review/',
+=======
+# These URLs are valid learner-facing targets, but cannot be checked reliably
+# from public CI: Cylc Review is an internal hostname and the OASIS site serves
+# an incomplete certificate chain to Python/OpenSSL linkcheck clients.
+linkcheck_ignore = [
+    r'https://cylchub/.*',
+    r'https://oasis\.cerfacs\.fr/.*',
+>>>>>>> main
 ]

@@ -1,0 +1,30 @@
+name: Linkcheck documentation
+
+on:
+  pull_request:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  linkcheck:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Install uv and Set up Python
+        uses: astral-sh/setup-uv@v7
+        with:
+          python-version: "3.11"
+          enable-cache: true
+
+      - name: Install dependencies from pyproject.toml
+        run: |
+          uv sync
+
+      - name: Check documentation links
+        run: |
+          uv run make linkcheck

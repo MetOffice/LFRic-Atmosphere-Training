@@ -9,7 +9,7 @@ Exercise 1: Find the appropriate workflow
 
 Starting on the Met Office Science Repository Service homepage, navigate to the correct page to find the workflow  for the practical. Spend time looking at the pages.
 
-Look for the workflow which fulfills these criteria **C64 coupled climate standard experiment @ LFRic r44221**
+Look for the workflow which fulfils these criteria **C64 coupled climate standard experiment @ LFRic r44221**
 
   * What is the missing physics from r44221 @ #638.1.1
   * Is there an atmosphere only equivalent?
@@ -72,7 +72,7 @@ Tracking the progress of your workflow
    - [ ] University of Exeter
    - [ ] IBM
 
-   ## Which templating languages are available to add logics and automation to suite.rc files?
+   ## Which templating languages are available to add logic and automation to suite.rc files?
 
    - [x] jinja2
    - [ ] C++

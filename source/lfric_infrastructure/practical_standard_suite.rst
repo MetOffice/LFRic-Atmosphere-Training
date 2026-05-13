@@ -11,10 +11,7 @@ For that we will be using the LFRic Apps Standard Suite. You will learn how to:
 
 **Step 1: Check Out the Standard Suite**
 
-LFRic Apps Standard Suites are available for several computing platforms.
-Workflow IDs are documented on the
-`LFRic Apps wiki pages <https://code.metoffice.gov.uk/trac/lfric_apps#WorkingwithLFRicApps>`_. 
-
+LFRic Apps Standard Suites are available for several computing platforms. Workflow IDs are documented on the `LFRic Apps wiki pages <https://code.metoffice.gov.uk/trac/lfric_apps>`_.
 
 Instructions to checkout the Standard Suite depend on your platform. For Met Office Azure Spice, use:
 
@@ -42,9 +39,8 @@ For other platforms, chose appropriate alternative workflow IDs.
 
 2. Open the workflow files in a text editor and explore its structure:
 
-   * Examine the `graph <https://cylc.github.io/cylc-doc/stable/html/glossary.html#term-graph>`_
-     and the `apps <https://metomi.github.io/rose/doc/html/tutorial/rose/applications.html>`_ it defines. 
-   * The standard suite performs the following automatically:
+ * Examine the `graph <https://cylc.github.io/cylc-doc/stable/html/glossary.html#term-graph>`_ and the `apps <https://metomi.github.io/rose/doc/html/tutorial/rose/applications.html>`_ it defines. 
+ * The standard suite performs the following automatically:
 
       * Extracts the model code
       * Builds the executable
