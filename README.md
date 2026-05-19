@@ -148,7 +148,7 @@ That concludes the process! Youâ€™ll find the generated HTML files within the â€
 #### Using Intersphinx Links
 
 Intersphinx has been enabled between these docs and other key
-LFRic docuentation built with Sphinx. To see a full list of references
+LFRic documentation built with Sphinx. To see a full list of references
 available run:
 
 ```console

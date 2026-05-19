@@ -5,7 +5,7 @@ Available references configured in `source/conf.py`
 
 > [!WARNING]
 > This script contains horrible things which you shouldn't copy
-> Unless your _really_ know what you are doing.
+> Unless you _really_ know what you are doing.
 """
 import sys
 from pathlib import Path

@@ -22,7 +22,7 @@ Topics include:
 
    Simulation Systems Working Practices.
 
-The pages also tells you where to get help:
+The pages also signpost where to get help:
 
 * :external+simulation_systems:ref:`Support`
 * The `Simulation Systems Discussion Forum`_
