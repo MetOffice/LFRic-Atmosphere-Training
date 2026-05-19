@@ -1,5 +1,3 @@
-.. _practical_3_1-caption:
-
 Practical 1: Run the model from command line
 --------------------------------------------
 
