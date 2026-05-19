@@ -6,9 +6,10 @@ This module provides an introduction to the LFRic Atmosphere model and the Momen
 
 .. admonition:: Aims and objectives
 
-   * To understand
-   * To be aware of
-   * To become familiar with
+   * Understand the motivation for developing the LFRic Atmosphere model and the Momentum Framework.
+   * Learn about the history and development of LFRic Atmosphere and the Momentum Framework.
+   * Familiarise yourself with the Seamless Modelling approach and how it is applied in LFRic Atmosphere.
+   * Explore the different components of the Momentum Framework and how they interact with each other.
 
 .. toctree::
    :maxdepth: 1

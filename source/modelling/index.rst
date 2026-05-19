@@ -6,11 +6,10 @@ This module covers how science configurations are developed, configured and run 
 
 .. admonition:: Aims and objectives
 
-   * To understand how science configurations are developed
-   * To be aware of working practices associated with model development
-   * To become familiar with the MOSRS and wiki ticketing and documentation
-   * To checkout, edit, and run a global workflow
-   * To checkout, edit, and run a regional workflow
+   * Understand the concept of science configurations and their role in the Momentum® Framework.
+   * Learn about the model development cycle.
+   * Explore the tools and techniques used for developing and testing science configurations.
+   * Get hands-on experience with running and analysing regional, idealised, and global science configurations.
 
 .. toctree::
    :maxdepth: 1

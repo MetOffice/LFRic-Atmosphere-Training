@@ -7,9 +7,9 @@ on the LFRic Atmosphere model and its underlying components.
 
 .. admonition:: Aims and objectives
 
-   * To understand where to find the code for the model.
-   * To learn how to compile the model and be aware of involved steps.
-   * To become familiar with working practises required for model development.
+   * Understand the structure, working practices, and components of the LFRic codebase.
+   * Learn about the software repositories, technical infrastructure, and tools used in LFRic development.
+   * Explore the practical aspects of compiling and running the LFRic model and its tests.
 
 
 .. toctree::
