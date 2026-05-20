@@ -3,6 +3,7 @@
 *.bat
 .venv/
 node_modules/
+.pixi/
 data-tutorials/
 build/
 **/.ipynb_checkpoints/
