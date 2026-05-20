@@ -1,0 +1,5 @@
+# Contributors
+
+| GitHub user      | Real Name              | Affiliation           | Date       |
+| ---------------- | -----------------      | --------------------- | ---------- |
+| jcmt             | Joao Teixeira          | Met Office            | 2026-05-20 |
