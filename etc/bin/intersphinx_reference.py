@@ -1,11 +1,15 @@
 #!/usr/bin/env python
 """List all intersphinx references available.
 
-Available references configured in `source/conf.py`
+Intersphinx references are set in `source/conf.py:intersphinx_mapping`.
+This scripts reads that variable and uses the intersphinx script to
+provide a list of references one may use in our documentation.
 
-> [!WARNING]
-> This script contains horrible things which you shouldn't copy
-> Unless you _really_ know what you are doing.
+https://www.sphinx-doc.org/en/master/usage/extensions/intersphinx.html
+
+Suggested usage:
+
+./etc/bin/instersphinx_reference.py > intersphinx.ref
 """
 import sys
 from pathlib import Path
