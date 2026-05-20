@@ -60,7 +60,8 @@ git branch -D main
 
 ### Development Environment
 
-Dependencies are defined in `pyproject.toml`. There are two possible setup methods, `uv` and `venv` + `pip`, you only need to use one.
+Dependencies are defined in `pyproject.toml`. There are three possible setup
+methods, `uv`, `venv` + `pip`, and `pixi`; you only need to use one.
 
 #### Route 1: `uv` (recommended)
 
@@ -132,10 +133,34 @@ If you are contributing and want an editable install:
 pip install -e ".[notebooks,dev]"
 ```
 
+#### Route 3: `pixi` (optional alternative)
+
+If you prefer a conda-first workflow, the repository also provides a
+`pixi.toml` manifest as an optional alternative setup.
+
+Install `pixi` if needed, then create the environment:
+
+```bash
+pixi install
+```
+
+Run the common commands:
+
+```bash
+pixi run sphinx html
+pixi run sphinx linkcheck
+```
+
+Use `pixi run sphinx html` for incremental rebuilds and
+`pixi run sphinx clean && pixi run sphinx html` for a clean HTML build.
+
 ### Dependency Policy
 
-- Build environments from `pyproject.toml` only.
-- If dependency updates are needed, update constraints in `pyproject.toml` and recreate the environment with your selected setup route.
+- Build environments from `pyproject.toml`, or the optional `pixi.toml`
+  workflow.
+- If dependency updates are needed, update constraints in `pyproject.toml`,
+  update `pixi.toml` when relevant, and recreate the environment with your
+  selected setup route.
 
 ### Building Training Materials
 
@@ -149,6 +174,11 @@ uv run make clean html linkcheck
 
 # If you are using venv + pip:
 make clean html linkcheck
+
+# If you are using pixi:
+pixi run sphinx clean
+pixi run sphinx html
+pixi run sphinx linkcheck
 ```
 
 That concludes the process! You’ll find the generated HTML files within the “build” folder.
