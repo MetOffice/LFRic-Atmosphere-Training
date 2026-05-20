@@ -9,7 +9,7 @@ permissions:
   contents: read
 
 jobs:
-  linkcheck:
+  documentation-building:
     runs-on: ubuntu-latest
 
     steps:
