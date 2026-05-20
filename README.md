@@ -131,13 +131,32 @@ To build the LFRic Atmosphere training materials in HTML format run the followin
 
 ```bash
 # If you are using uv:
-uv run make clean html
+uv run make clean html linkcheck
 
 # If you are using venv + pip:
-make clean html
+make clean html linkcheck
 ```
 
 That concludes the process! You’ll find the generated HTML files within the “build” folder.
+
+> [!NOTE]
+> You may find it useful to install `sphinx-autobuild` and develop
+> documentation in an editor while running
+> `sphinx-autobuild source/ build/` in a terminal window.
+
+
+#### Using Intersphinx Links
+
+Intersphinx has been enabled between these docs and other key
+LFRic documentation built with Sphinx. To see a full list of references
+available run:
+
+```console
+./etc/bin/intersphinx_reference.py
+
+# Or pipe to a file that you can search in your editor.
+./etc/bin/intersphinx_reference.py > intersphinx.ref
+```
 
 ### Pull Request (PR) Process
 

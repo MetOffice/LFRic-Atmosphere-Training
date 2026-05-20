@@ -154,6 +154,7 @@ A widely used tool for handling scientific data is Iris. Iris is a powerful libr
 
 In this section, a brief overview of the basics of Iris will be provided, including its core features and functionalities.
 
+.. _iris.basics:
 
 Iris - basics and scope
 +++++++++++++++++++++++

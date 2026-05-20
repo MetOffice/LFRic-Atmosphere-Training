@@ -1,86 +1,181 @@
 Practical 2: Running the LFRic Apps Standard Suite
 --------------------------------------------------
 
-Now that you ran the LFRic atmosphere model from the command line, this second practical will introduce how to run it as part of a Cylc workflow. For that we will be using the LFRic Apps Standard Suite. You will learn how to:
+In :ref:`practical_3.1` you ran the LFRic atmosphere model from the
+command line, this second practical will introduce how to run it as
+part of a :external+cylc:term:`workflow`.
+We will be using the LFRic Apps Standard Suite.
 
-* Run the model in a simple workflow
-* Locate model outputs and logs
-* Make basic configuration changes
+.. admonition:: Aims: You will learn how to:
 
-**Step 1: Check Out the Standard Suite**
-
-LFRic Apps Standard Suites are available for several computing platforms. Workflow IDs are documented on the `LFRic Apps wiki pages <https://code.metoffice.gov.uk/trac/lfric_apps>`_.
+   * Run the model in a simple Cylc workflow.
+   * Locate model outputs and logs.
+   * Make configuration changes.
 
 
-Instructions to checkout the Standard Suite depend on your platform. For Met Office Azure Spice, use:
+Step 1: Check Out the Standard Suite
+++++++++++++++++++++++++++++++++++++
 
-.. collapse:: Met Office Azure Spice
+.. TODO - this is a temporary fix - once the LFRic team have a more permenant
+.. soultion we should ditch this workflow.
 
-      .. code-block:: bash
-     
-         rosie co u-dn674
-         mv ~/roses/u-dn674 ~/cylc-src/lfric_apps_standard_suite
+.. code-block:: console
 
-.. code-block:: bash
-   
-   rosie co u-dn674
-   mv ~/roses/u-dn674 ~/cylc-src/lfric_apps_standard_suite
+   mkdir ${HOME}/cylc-src
+   cd cylc-src
 
-For other platforms, chose appropriate alternative workflow IDs.
+.. tab-set::
 
-**Step 2: Explore the workflow**
+   .. tab-item:: Met Office
 
-1.	Navigate to the suite directory:
+      .. code-block:: console
 
- .. code-block:: bash
-   
-    cd ~/cylc-src/lfric_apps_standard_suite
+         git clone \
+               git@github.com:MetOffice/momentum_user_training.example_lfric_workflow.git \
+               lfric_apps_standard_suite
+
+   .. tab-item:: Partner
+
+      Consult your site's documentation for cloning git repositories, then
+      clone:
+
+      ``MetOffice/momentum_user_training.example_lfric_workflow.git``
+
+Step 2: Explore the workflow
+++++++++++++++++++++++++++++
+
+1. Navigate to the workflow development (source) directory:
+
+   .. code-block:: bash
+
+      cd ${HOME}/cylc-src/lfric_apps_standard_suite
 
 2. Open the workflow files in a text editor and explore its structure:
 
- * Examine the `graph <https://cylc.github.io/cylc-doc/stable/html/glossary.html#term-graph>`_ and the `apps <https://metomi.github.io/rose/doc/html/tutorial/rose/applications.html>`_ it defines. 
- * The standard suite performs the following automatically:
+   * Examine the workflow's :external+cylc:term:`graph` and the
+     :external+rose:term:`rose application`.
+   * The standard suite performs the following tasks:
 
-   * Extracts the model code
-   * Builds the executable
-   * Runs a global model simulation
-   * Builds the mesh generator
-   * Creates a low-resolution C12 mesh as input for the model
+      * Extracts the model code
+      * Builds the executable
+      * Runs a global model simulation
+      * Builds the mesh generator
+      * Creates a low-resolution C12 mesh as input for the model
 
+   .. admonition:: Task
 
-.. figure:: /_static/3/lfric_apps_standard_suite.svg
-  :width: 400px
+      Can you match each task description above with a folder in the
+      ``app`` directory?
 
-  Graph of the LFRic Apps Standard Suite, a toy model for testing, learning, and developing - visualised with cylc graph.
+   .. graphviz::
+      :caption: Graph of the LFRic Apps Standard Suite.
 
+         digraph {
+            graph [fontname="sans" fontsize="25"]
+            node [fontname="sans"]
+            rankdir="LR"
+            "build_lfric_atm" -> "lfric_atm"
+            "build_mesh" -> "generate_mesh"
+            "extract" -> "build_lfric_atm"
+            "extract" -> "build_mesh"
+            "generate_mesh" -> "lfric_atm"
+         }
 
-**Step 3: Run the workflow**
+   .. n.b. To regenerate the graph, use
+   .. cylc graph . --transpose --output graph.dot
+
+Step 3: Run the workflow
+++++++++++++++++++++++++
 
 Start the workflow with:
 
 .. code-block:: bash
-   
-   cd ~/cylc-src/lfric_apps_standard_suite
+
    cylc vip
 
-While the workflow is running, open the `Cylc UI <https://cylc.github.io/cylc-doc/latest/html/user-guide/running-workflows/tasks-jobs-ui.html>`_ (with the command ``cylc gui``) while it is running and explore the model output in ``~/cylc-run/lfric_apps_standard_suite/``. 
+While the workflow is running, open the Cylc GUI explore the model output:
 
-**Step 4: View logs and outputs**
+.. tab-set::
 
-View your logs in your site's central `Cylc Review <https://cylchub/services/cylc-review/>`_ pages or, if you do not have one, launch your own Cylc Review instance with ``cylc review start`` and 
-navigate to the page in your browser. The logs are also stored under ``~/cylc-run/lfric_apps_standard_suite/run?//log//job/1/``. 
-From the logs Find out how many time steps were executed and locate the output files in NetCDF format.
+   .. tab-item:: Partner
 
-**Step 5: Modify the configuration**
+      .. code-block:: console
 
-To gain more experience with the LFRic Apps Standard Suite, make the following configuration changes:
+         cylc gui
 
-1) Reduce the number of iterated time steps in the workflow by 50%. 
-2) Reduce the length of the time step by 50%.
+   .. tab-item:: Partner (Command Line)
+
+      .. code-block:: console
+
+         cylc tui
+
+   .. tab-item:: Met Office
+
+      Navigate to `Cylc Hub <https://cylchub>`_
+
+
+Step 4: View the workflow running, logs and outputs
++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+View your logs:
+
+.. tab-set::
+
+   .. tab-item:: Cylc GUI
+
+      Navigate to or open the Cylc GUI, and click on each task to view logs.
+
+      On the command line ``cylc gui`` will open either a new gui or a
+      window on your site's Cylc Hub.
+
+      Task logs can be found by clicking on task icons.
+
+   .. tab-item:: Cylc TUI
+
+      On the command line type ``cylc tui``. 
+
+      Task logs can be found by clicking on task icons.
+
+   .. tab-item:: Cylc Review
+
+      * At the Met Office navigate to `Cylc Review <https://cylchub/services/cylc-review/>`_
+      * Navigate to your site's Cylc Review instance.
+      * Start Cylc Review with ``cylc review start``
+
+   .. tab-item:: Command line
+
+      For each task in the workflow:
+
+      .. code-block:: console
+
+         cat ~/cylc-run/lfric_apps_standard_suite/runN/log/job/1/<task_name>/job.out
+
+.. admonition:: Task
+
+   From the logs find out how many time steps were executed and locate
+   the output files in NetCDF format.
+
+Step 5: Modify the configuration
+++++++++++++++++++++++++++++++++
+
+To gain more experience with the LFRic Apps Standard Suite, make the
+following configuration changes:
+
+1. Reduce the number of iterated time steps in the workflow by 50%.
+2. Reduce the length of the time step by 50%.
 
 Then, re-run the workflow for each change (or combine them) and compare:
 
-* The number of produced NetCDF files 
+* The number of produced NetCDF files
 * The forecast duration
 
-.. hint:: In the workflow directory ``~/cylc-src/lfric_apps_standard_suite`` navigate to ``app/lfric_atm`` and edit the configuration ``rose-app.conf`` with ``rose edit`` (or a text editor). You need to modify the variables ``timestep_end`` and ``dt``. The NetCDF files can be found under the path ``~/cylc-run/lfric_apps_standard_suite/run?/work/1/lfric_atm/*nc``.
+.. hint::
+   :collapsible: closed
+
+   In the workflow directory ``~/roses/lfric_apps_standard_suite``
+   navigate to ``app/lfric_atm`` and edit the configuration
+   ``rose-app.conf``.
+
+   You need to modify the variables ``timestep_end`` and ``dt``.
+   The NetCDF files can be found under the path
+   ``~/cylc-run/lfric_apps_standard_suite/runN/work/1/lfric_atm/*nc``.

@@ -3,11 +3,26 @@
 Working Practices
 =================
 
-Developers for LFRic Atmosphere need to know the `Simulation Systems Working Practices <https://metoffice.github.io/simulation-systems>`_, which detail the development cycle and process. The `Working Practices <https://metoffice.github.io/simulation-systems/WorkingPractices/working_practices.html>`_ pages provide instructions for `ticketing <https://metoffice.github.io/simulation-systems/WorkingPractices/gh_dev_init.html#create-an-issue>`_, `branching <https://metoffice.github.io/simulation-systems/WorkingPractices/gh_dev_init.html#create-a-branch>`_, `developing <https://metoffice.github.io/simulation-systems/Development/developing_change.html>`_, working with `multiple repositories <https://metoffice.github.io/simulation-systems/WorkingPractices/multi_repository.html>`_, `testing <https://metoffice.github.io/simulation-systems/Development/testing.html>`_, and passing the code and science `reviews <https://metoffice.github.io/simulation-systems/WorkingPractices/reviews.html>`_.
+Developers for LFRic Atmosphere need to know the
+:external+simulation_systems:ref:`working_practices_index`,
+which set out how to develop LFRic.
+
+Topics include:
+
+* How to :external+simulation_systems:ref:`create_issue`
+* How to :external+simulation_systems:ref:`create_branch`
+* :external+simulation_systems:ref:`development_index`
+* :external+simulation_systems:ref:`multirepo`
+* :external+simulation_systems:ref:`testing`
+* :external+simulation_systems:ref:`multirepo`
+* The :external+simulation_systems:ref:`review_process`
 
 .. figure:: /_static/working_practices.jpg
-  :width: 650px
+   :width: 650px
 
-  Simulation Systems Working Practices.
+   Simulation Systems Working Practices.
 
-The Simulation Systems pages also include details about the `support contacts <https://metoffice.github.io/simulation-systems/FurtherDetails/who.html>`_ and a `Discussions <https://github.com/MetOffice/simulation-systems/discussions/categories/lfric>`_ forum.
+The pages also signpost where to get help:
+
+* :external+simulation_systems:ref:`Support`
+* The `Simulation Systems Discussion Forum`_
