@@ -13,6 +13,12 @@ contributing to this project. By working together under a shared understanding,
 we can continuously improve the project while creating a friendly, inclusive
 space for all contributors.
 
+### Agent Guidance
+
+This repository includes `AGENTS.md` with repository-specific guidance for AI
+coding agents and similar contributor tooling. `CLAUDE.md` is a compatibility
+symlink for tools that look for that filename; it points to the same guidance.
+
 ### Contributors Licence Agreement
 
 Please see the
