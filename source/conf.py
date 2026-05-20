@@ -81,7 +81,7 @@ html_context = {
 
 html_theme = "pydata_sphinx_theme"
 html_static_path = ['_static']
-html_css_files = ['nav-collapse.css']
+html_css_files = ['nav-collapse.css', 'admonitions.css']
 html_js_files = ['nav-collapse.js']
 
 # These URLs are valid learner-facing targets, but cannot be checked reliably
