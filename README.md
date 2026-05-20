@@ -6,7 +6,27 @@ The training is structured to cater to users with different levels of expertise,
 
 The LFRic Atmosphere self-learning training can be found at <https://metoffice.github.io/LFRic-Atmosphere-Training>
 
-## Contributing & Development
+## Contributing Guidelines
+
+The following links are here to help set clear expectations for everyone
+contributing to this project. By working together under a shared understanding,
+we can continuously improve the project while creating a friendly, inclusive
+space for all contributors.
+
+### Contributors Licence Agreement
+
+Please see the
+[Momentum Contributors Licence Agreement.](https://github.com/MetOffice/Momentum/blob/main/CLA.md)
+
+Agreement of the CLA can be shown by adding yourself to the CONTRIBUTORS file
+alongside this one, and is a requirement for contributing to this project.
+
+### Code of Conduct
+
+Please be aware of and follow the
+[Momentum Code of Conduct.](https://github.com/MetOffice/Momentum/blob/main/docs/CODE_OF_CONDUCT.md)
+
+### Working Practices
 
 The preferred way to contribute to LFRic-Atmosphere-Training is to fork the main repository, then submit a "pull request" (PR). When updating this training material, aim for clear and easy-to-understand content. Please keep in mind that this training is intended for an introductory level training.
 
