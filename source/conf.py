@@ -39,14 +39,7 @@ extensions = [
 ]
 
 templates_path = ['_templates']
-# These files are included by practical_exercises.rst. If Sphinx also
-# discovers them as standalone documents, labels inside the fragments are
-# registered twice and produce duplicate-label warnings.
-exclude_patterns = [
-    'lfric_infrastructure/practical_command_line.rst',
-    'lfric_infrastructure/practical_standard_suite.rst',
-    'lfric_infrastructure/practical_stem_test.rst',
-]
+exclude_patterns = []
 
 # -- Figure numbering --------------------------------------------------------
 numfig = True
@@ -71,7 +64,7 @@ def validate_figure_labelling(
 
     * a ``figure`` directive has no ``fig-*`` label;
     * a ``figure`` directive has no caption; or
-    * a ``figure`` directive has no alt text; or
+    * an image-backed ``figure`` directive has no alt text; or
     * an unallowlisted ``image`` directive remains outside a figure.
 
     ``unnumbered_images_by_doc`` intentionally defaults to an immutable narrow
@@ -104,7 +97,7 @@ def validate_figure_labelling(
                 f"{node_location(figure)}: figure for '{uri}' is missing "
                 'a caption.'
             )
-        if image is None or not image.get('alt', '').strip():
+        if image is not None and not image.get('alt', '').strip():
             errors.append(
                 f"{node_location(figure)}: figure for '{uri}' is missing "
                 'alt text.'
