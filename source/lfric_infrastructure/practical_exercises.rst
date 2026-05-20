@@ -7,7 +7,7 @@ Practical exercises
 Building and running the model is usually done using `Cylc Workflows`_.
 
 The following exercises demonstrate how to run simplified development
-set-ups and tests. These workflows demonstrate delveloping model and workflows.
+set-ups and tests. These workflows demonstrate developing model and workflows.
 Model applications for global and regional modelling will follow later
 in this training.
 
