@@ -1,5 +1,3 @@
-.. _practical_3.2:
-
 Practical 2: Running the LFRic Apps Standard Suite
 --------------------------------------------------
 

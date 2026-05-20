@@ -43,5 +43,3 @@ Setup Instructions
    practical_command_line.rst
    practical_standard_suite.rst
    practical_stem_test.rst
-
-
