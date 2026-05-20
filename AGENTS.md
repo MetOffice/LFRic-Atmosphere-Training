@@ -119,7 +119,8 @@ It is primarily a Sphinx documentation project with a bundled copy of the
 - Prefer small, reviewable documentation edits over broad rewrites.
 - Match existing terminology: "Momentum", "LFRic Atmosphere", "science
   configurations", and "working practices" all have established meanings in the
-  training content.
+  training content. Use the definitions in `source/glossary.rst` when you need
+  explicit project context.
 - Do not change dependency-management conventions casually. If new dependencies
   are necessary, update `pyproject.toml` and keep the README setup instructions
   consistent with that change.
