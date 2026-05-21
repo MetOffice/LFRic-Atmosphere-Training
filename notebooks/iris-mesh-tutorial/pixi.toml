@@ -1,0 +1,45 @@
+[workspace]
+name = "iris-mesh-tutorial"
+# Self-contained environment for *running and testing* the mesh tutorial
+# notebooks.
+channels = ["conda-forge"]
+platforms = ["linux-64", "linux-aarch64", "osx-64", "osx-arm64", "win-64"]
+
+[tasks]
+run-notebooks = { cmd = "python run_notebooks.py", description = "Execute every notebook headlessly and write an HTML sidecar per notebook (originals untouched). Non-zero exit if any notebook errors." }
+pair = { cmd = "jupytext --set-formats ipynb,py:percent --sync notebooks/*.ipynb", description = "Pair every notebook with a percent-format .py script and sync the two representations." }
+sync = { cmd = "jupytext --sync notebooks/*.ipynb", description = "Sync each paired .ipynb <-> .py after editing either side." }
+lab = { cmd = "jupyter lab", cwd = "notebooks", description = "Launch JupyterLab in the notebooks directory." }
+
+[dependencies]
+python = ">=3.11,<3.13"
+# --- scientific / tutorial stack (version pins mirror the proven docs env) ---
+scitools-iris = "*"
+iris-esmf-regrid = "*"
+esmpy = "*"
+geovista = "0.5.3.*"
+pyvista = ">=0.46.3,<0.47"
+vtk = "<9.6"
+matplotlib = "*"
+numpy = "<2"
+# --- notebook execution + authoring tooling ---
+jupyterlab = "*"
+nbconvert = "*"
+nbclient = "*"
+ipykernel = "*"
+jupytext = "1.14.4.*"
+# --- interactive 3D widget backends (parity with the upstream tutorial) ---
+ipyvtklink = "*"
+trame = "*"
+trame-vtk = "*"
+trame-vuetify = "*"
+jupyter-server-proxy = "*"
+
+# Mesa software OpenGL for headless rendering on Linux CI / servers that have no
+# GPU and no X display. macOS and Windows provide their own off-screen GL, so
+# this dependency is only needed on Linux.
+[target.linux-64.dependencies]
+mesalib = "*"
+
+[target.linux-aarch64.dependencies]
+mesalib = "*"

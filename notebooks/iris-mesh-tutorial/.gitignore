@@ -1,0 +1,13 @@
+# Pixi environment for this subproject
+.pixi/
+
+# Rendered notebook output (HTML sidecars) from `pixi run run-notebooks`
+_build/
+
+# Jupyter
+**/.ipynb_checkpoints/
+
+# Paired percent-format scripts generated on demand by `pixi run pair`.
+# The notebooks are kept pristine, so these stay local (support/*.py modules
+# live in a subdirectory and are unaffected by this top-level pattern).
+/notebooks/*.py

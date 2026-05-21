@@ -1,0 +1,106 @@
+name: Test notebooks with Pixi
+
+on:
+  push:
+  pull_request:
+    paths:
+      - "notebooks/iris-mesh-tutorial/**"
+      - ".github/workflows/test_notebooks_pixi.yml"
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  notebooks:
+    name: notebooks (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 30
+    strategy:
+      # Run every runner to completion even if one fails, so a flaky platform
+      # does not mask results on the others.
+      fail-fast: false
+      matrix:
+        # All three OSes on both architectures. Per-entry flags select the
+        # headless-rendering strategy and the Windows software-GL fix.
+        include:
+          # --- x86_64 ---
+          - { os: ubuntu-latest, headless: xvfb }
+          - { os: windows-latest, headless: native, mesa: true }
+          - { os: macos-26-intel, headless: native }
+          # --- arm64 ---
+          - { os: ubuntu-24.04-arm, headless: xvfb }
+          - { os: macos-latest, headless: native }
+
+    defaults:
+      run:
+        working-directory: notebooks/iris-mesh-tutorial
+
+    steps:
+      - uses: actions/checkout@v6
+
+      # A virtual X display lets the conda VTK/Mesa stack render off-screen via
+      # GLX. With DISPLAY set, run_notebooks.py uses GLX; without one it falls
+      # back to surfaceless EGL (the local-dev path). macOS/Windows render
+      # off-screen with their native OpenGL.
+      - name: Start virtual display (Xvfb)
+        if: matrix.headless == 'xvfb'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends xvfb libgl1-mesa-dri
+          nohup Xvfb :99 -screen 0 1280x1024x24 -nolisten tcp > /tmp/xvfb.log 2>&1 &
+          disown || true
+          echo "DISPLAY=:99" >> "$GITHUB_ENV"
+
+      - name: Install Pixi (Linux/macOS)
+        if: runner.os != 'Windows'
+        shell: bash
+        run: |
+          curl -fsSL https://pixi.sh/install.sh | sh
+          echo "$HOME/.pixi/bin" >> "$GITHUB_PATH"
+
+      - name: Install Pixi (Windows)
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          iwr -useb https://pixi.sh/install.ps1 | iex
+          Add-Content -Path $env:GITHUB_PATH -Value "$env:USERPROFILE\.pixi\bin"
+
+      - name: Cache Pixi environment
+        uses: actions/cache@v5
+        with:
+          path: notebooks/iris-mesh-tutorial/.pixi
+          key: ${{ runner.os }}-${{ runner.arch }}-pixi-notebooks-${{ hashFiles('notebooks/iris-mesh-tutorial/pixi.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-${{ runner.arch }}-pixi-notebooks-
+
+      - name: Install environment
+        run: pixi install --locked
+
+      # GitHub's Windows x64 runners have no usable OpenGL driver, so VTK cannot
+      # create a render context (wglChoosePixelFormatARB fails -> kernel dies).
+      # Drop Mesa's software opengl32.dll next to the environment's python.exe
+      # and force the llvmpipe software rasterizer.
+      - name: Install software OpenGL for headless Windows (Mesa)
+        if: matrix.mesa
+        shell: pwsh
+        run: |
+          $ver = "26.0.7"
+          $url = "https://github.com/pal1000/mesa-dist-win/releases/download/$ver/mesa3d-$ver-release-msvc.7z"
+          curl.exe -L -o mesa.7z $url
+          7z x mesa.7z -omesa -y | Out-Null
+          $dest = ".pixi\envs\default"
+          Write-Host "Available x64 DLLs:"; Get-ChildItem mesa\x64\*.dll | Select-Object -ExpandProperty Name
+          foreach ($d in @("opengl32.dll", "libgallium_wgl.dll", "libglapi.dll")) {
+            if (Test-Path "mesa\x64\$d") { Copy-Item "mesa\x64\$d" "$dest\" -Force; Write-Host "copied $d -> $dest" }
+          }
+          "GALLIUM_DRIVER=llvmpipe" | Out-File -FilePath $env:GITHUB_ENV -Append -Encoding utf8
+
+      - name: Execute all notebooks
+        run: pixi run --locked run-notebooks
