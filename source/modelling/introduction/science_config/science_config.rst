@@ -23,7 +23,56 @@ Once a science configuration is defined, it can be used for different systems ac
 
 * The **GC4** science configuration is used for several operational NWP systems across the Momentum Partnership e.g. MOGREPS, ACCESS-S1, and NCUM.
 
-.. **TO DO for Fourough** 
-.. These details for limited area model configuration can be added from slide 10 of Module 5 which is there in this link https://metoffice.sharepoint.com/:p:/r/sites/metofficengmsprogrammeext/NGUX/training/Module%205/NGUX_Module-5_session-1_15Jan2026.pptx?d=w5b397e2c487c42d8a2b734430d92e8b5&csf=1&web=1&e=QYwH8L*
+Regional (Limited Area) Science Configurations
+----------------------------------------------
+In addition to global configurations, the Momentum framework also defines science configurations for regional (limited area) models, focusing on the atmosphere and land components.
+These are known as Regional Atmosphere and Land (RAL) configurations.
 
-* *Regional...*
+A RAL configuration is a set of science configurations for the atmosphere and land components that is designed for use in regional models. These configurations support both:
+
+* Numerical Weather Prediction (NWP)
+* Regional climate simulations
+* Regional coupled simulations
+
+
+RAL configurations ensure that regional models across the Momentum Partnership share a consistent scientific basis, in the same way that global configurations (e.g. GC and GAL) do.
+
+RAL Development and Lifecycle
++++++++++++++++++++++++++++++
+RAL configurations follow the same principles as other science configurations:
+
+* They are developed, tested, and evaluated across multiple systems and regions
+* Evidence is gathered to assess performance across a range of applications and scales
+* Once validated, they are frozen, versioned, and released for operational and research use
+
+Within the Momentum Partnership, this process is coordinated by the RMED (Regional Model Evaluation and Development) activity, which:
+
+* Coordinates package testing across partners
+* Builds the scientific evidence base through evaluation
+* Delivers new RAL configurations for use across the partnership
+
+At any given time:
+
+* One RAL version is operationally in use
+* The next RAL version is under development and evaluation
+
+The diagram below illustrates the development process for regional modelling systems within the Momentum framework.
+
+.. figure:: /_static/rdem.png
+   :width: 650px
+   :alt: Regional Model Evaluation and Development
+
+   RMED coordinates the RAL process by working with many other groups from across the office and Momentum partnership to identify the improvement needs, evaluate new science configurations and deliver the new RAL​
+
+Versioning and Operational Use
+++++++++++++++++++++++++++++++
+
+RAL configurations are versioned in a similar way to global configurations. RALn denotes the current released version.
+For example:
+
+* RAL3 is the current operational configuration (as of January 2026)
+* It is used in operational forecasting systems such as the UKV
+* It unified previously separate tropical and mid-latitude configurations into a single framework
+* It has also been operationalised by partners including National Centre for Medium Range Weather Forecasting (NCMRWF) and Centre for Climate Research Singapore (CCRS)
+
+Future development will lead to the next release (e.g. RAL4), continuing the cycle of evaluation, improvement, and operational deployment.
