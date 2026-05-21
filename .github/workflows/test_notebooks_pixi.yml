@@ -2,6 +2,9 @@ name: Test notebooks with Pixi
 
 on:
   push:
+    paths:
+      - "notebooks/iris-mesh-tutorial/**"
+      - ".github/workflows/test_notebooks_pixi.yml"
   pull_request:
     paths:
       - "notebooks/iris-mesh-tutorial/**"
