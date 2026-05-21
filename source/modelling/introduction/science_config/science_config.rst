@@ -73,6 +73,6 @@ For example:
 * RAL3 is the current operational configuration (as of January 2026)
 * It is used in operational forecasting systems such as the UKV
 * It unified previously separate tropical and mid-latitude configurations into a single framework
-* It has also been operationalised by partners including National Centre for Medium Range Weather Forecasting (NCMRWF) and Canadian Centre for Climate Services (CCRS)
+* It has also been operationalised by partners including National Centre for Medium Range Weather Forecasting (NCMRWF) and Centre for Climate Research Singapore (CCRS)
 
 Future development will lead to the next release (e.g. RAL4), continuing the cycle of evaluation, improvement, and operational deployment.
