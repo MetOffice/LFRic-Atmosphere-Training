@@ -89,12 +89,12 @@ def validate_figure_labelling(
         if not any(name.startswith('fig-') for name in names):
             errors.append(
                 f"{node_location(figure)}: figure for '{uri}' is missing "
-                "a '.. _fig-...:' label."
+                "a '.. _fig-<name>:' label (placed above the figure)."
             )
         if not any(isinstance(child, nodes.caption) and child.astext().strip()
                    for child in figure.children):
             errors.append(
-                f"{node_location(figure)}: figure for '{uri}' is missing "
+                    f"{node_location(figure)}: figure for '{uri}' is missing "
                 'a caption.'
             )
         if image is not None and not image.get('alt', '').strip():
