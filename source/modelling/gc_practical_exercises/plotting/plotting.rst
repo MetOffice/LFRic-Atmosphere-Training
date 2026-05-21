@@ -11,5 +11,10 @@ Plotting your data
 * Run the script
 
 
-.. image:: /_static/plotting.png
+.. _fig-model-plotting:
+
+.. figure:: /_static/plotting.png
    :width: 650px
+   :alt: Example plotted diagnostic output from a GC practical exercise
+
+   Plotting output from a GC practical exercise.

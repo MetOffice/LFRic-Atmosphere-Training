@@ -67,6 +67,8 @@ Step 2: Explore the workflow
       Can you match each task description above with a folder in the
       ``app`` directory?
 
+   .. _fig-infra-standard-suite:
+
    .. graphviz::
       :caption: Graph of the LFRic Apps Standard Suite.
 
