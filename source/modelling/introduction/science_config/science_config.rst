@@ -32,6 +32,8 @@ A RAL configuration is a set of science configurations for the atmosphere and la
 
 * Numerical Weather Prediction (NWP)
 * Regional climate simulations
+* Regional coupled simulations
+
 
 RAL configurations ensure that regional models across the Momentum Partnership share a consistent scientific basis, in the same way that global configurations (e.g. GC and GAL) do.
 
