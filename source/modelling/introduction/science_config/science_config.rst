@@ -58,6 +58,8 @@ At any given time:
 
 The diagram below illustrates the development process for regional modelling systems within the Momentum framework.
 
+.. _fig-rmed-process:
+
 .. figure:: /_static/rdem.png
    :width: 650px
    :alt: Regional Model Evaluation and Development

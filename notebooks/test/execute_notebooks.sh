@@ -16,6 +16,7 @@ function linebreak {
 }
 
 THISDIR=$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")
+KERNEL_NAME="${NOTEBOOK_KERNEL_NAME:-python3}"
 
 COUNT_FAILED=0
 FAILS=()
@@ -23,7 +24,7 @@ FAILS=()
 for NOTEBOOK in ${THISDIR}/../iris-mesh-tutorial/notebooks/*.ipynb; do
     linebreak
     NAME=$(basename "${NOTEBOOK}")
-    if jupyter execute "${NOTEBOOK}"; then
+    if jupyter execute --kernel_name "${KERNEL_NAME}" "${NOTEBOOK}"; then
         echo -e "✅ ${GREEN}TEST PASSED: execute ${NAME}${RESET}"
     else
         echo -e "❌ ${RED}TEST FAILED: execute ${NAME}${RESET}"
