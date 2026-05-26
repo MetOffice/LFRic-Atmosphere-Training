@@ -24,7 +24,7 @@ The most important ideas for this practical are:
 * A Git repository is a version-controlled project. Cloning a repository creates
   a local copy on your machine.
 * The terminal runs commands in a current working directory. Commands such as
-  ``cd`` and ``git clone`` depend on where you are in the file system.
+  ``cd my_directory`` and ``git clone`` depend on where you are in the file system.
 * A conda environment keeps the Python packages for this practical separate
   from other Python installations.
 * A Jupyter kernel is the Python process that runs notebook cells. For this
