@@ -191,5 +191,5 @@ The official PSyclone documentation has more detail:
 * :external+psyclone:doc:`Introduction to PSyKAl <user_guide/introduction_to_psykal>`
 * :external+psyclone:doc:`The LFRic DSL <user_guide/lfric>`
 * :external+psyclone:doc:`The PSyclone command <user_guide/psyclone_command>`
-* `PSyclone LFRic examples <https://psyclone.readthedocs.io/en/latest/tutorials_and_examples/lfric.html>`_
+* `PSyclone LFRic examples <https://psyclone.readthedocs.io/en/stable/tutorials_and_examples/lfric_examples.html>`_
 * :external+psyclone:doc:`PSyclone Developer Guide <developer_guide/index>`
