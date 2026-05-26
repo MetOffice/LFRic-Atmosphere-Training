@@ -14,7 +14,7 @@ The upstream material comes from `iris-mesh-tutorial <https://github.com/scitool
 New to these tools?
 -------------------
 This practical is about working with LFRic unstructured mesh data. It uses
-Git, the command line, conda, and JupyterLab, but it does not teach those tools
+Git, the command line, Conda, and JupyterLab, but it does not teach those tools
 from first principles. If any of the setup commands below are unfamiliar, use
 the resources in this section as optional preparation or as reference material
 while you work through the notebooks.
