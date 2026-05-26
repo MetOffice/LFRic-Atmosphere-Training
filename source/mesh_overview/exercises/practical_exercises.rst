@@ -152,7 +152,7 @@ Once the environment is set up:
 
    .. code-block:: console
 
-      python -m jupyter lab
+      jupyter lab
 
 4. In JupyterLab, select:
 
