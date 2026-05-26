@@ -161,7 +161,7 @@ Once the environment is set up:
 .. important::
    Always launch JupyterLab from within ``notebooks/iris-mesh-tutorial/notebooks`` to ensure paths and imports work correctly.
 
-After running ``python -m jupyter lab``, a new browser window or tab should automatically open.
+After running ``jupyter lab``, a new browser window or tab should automatically open.
 If it does not open automatically, copy the URL shown in the terminal into your browser.
 
 Recommended learning path
