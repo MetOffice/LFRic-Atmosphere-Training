@@ -56,7 +56,7 @@ For a typical small code change, the workflow is:
 2. Check out the relevant GitHub repository.
 3. Create a branch for the change.
 4. Make focused commits with clear commit messages.
-5. Push the branch to GitHub.
+5. Push the branch to your fork of the repository on GitHub.
 6. Open a pull request.
 7. Use review comments and automated checks to improve the change.
 8. Merge only when the project working practices allow it.
