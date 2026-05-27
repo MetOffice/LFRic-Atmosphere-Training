@@ -56,6 +56,10 @@ the Iris and Matplotlib libraries.
 
 The resulting plot can be seen below.
 
-.. image:: /_static/iris_quickplot_example.png
-   :alt: Example plot generated using Iris quickplot
+.. _fig-iris-quickplot:
 
+.. figure:: /_static/iris_quickplot_example.png
+   :width: 600px
+   :alt: Iris quickplot example
+
+   Example output from iris.quickplot. 

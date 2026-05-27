@@ -12,15 +12,16 @@ For this practical, we recommend copying the workflow.
 
 .. code-block:: bash
 
-   mkdir ~/roses
-   cd ~/roses
-   rosie copy <suite-id>
+   $ mkdir ~/roses
+   $ cd ~/roses
+   $ rosie copy <suite-id>
 
 After this, the following information will be displayed, this is the metadata associated with the workflow
 you have just copied. To edit this information, press ``a`` on your keyboard. Once you have finished, press
 the ``Esc`` key followed by ``:wq`` to write and quit.
 
-.. code-block:: none
+.. code-block:: bash
+    
    description=  < This is where you can write information about the workflow  e.g. Copy of u-ab122/trunk@123456 >
    owner=  < Your username will appear here  >
    project=  < The associated project title e.g. GC6-climate-amip >
@@ -34,7 +35,7 @@ You will then be asked in the terminal:
 
 .. code-block:: bash
 
-   rosie copy <suite-id>
+   $ rosie copy <suite-id>
    Copy "u-ab122/trunk@123456" to "u-?????"? [y or n (default)]
 
 Press ``y`` to confirm you want to copy the workflow. You will then see the following message confirming the
