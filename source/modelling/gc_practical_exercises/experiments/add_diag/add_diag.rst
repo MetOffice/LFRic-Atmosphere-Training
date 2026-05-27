@@ -2,7 +2,7 @@
 Adding a new diagnostic
 ***********************
 
-The atmospheric diagnostic “v component of wind on pressure levels" is missing from this model. Use the following  instructions to add it back to the configuration.
+The atmospheric diagnostic “v component of wind on pressure levels" is missing from this model. Use the following instructions to add it back to the configuration.
 
 .. code-block:: bash
 
