@@ -29,7 +29,10 @@ PSyKAl (
 * Parallelism is implemented in the :external+psyclone:ref:`psy-layer` which
   is auto generated with a tool called :external+psyclone:doc:`PSyclone <index>`
 
+.. _fig-infra-psykal:
+
 .. figure:: /_static/psykal.png
    :width: 650px
+   :alt: PSyKAl architecture separating natural science code from computational science code
 
    Separation of Natural and Computational Science in the PSyKAl architecture.

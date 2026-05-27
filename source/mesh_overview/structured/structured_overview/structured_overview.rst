@@ -9,11 +9,13 @@ Consider a 2-dimensional array representing geographical data in a structured gr
 In this context, the shape of the data in the array corresponds directly to the shape of the physical space we are modelling—in this case, Earth's surface.
 Each element in the array represents a distinct location in the physical world.
 
-The figure below visualises this concept:
+:numref:`fig-mesh-structured-world` visualises this concept:
 
 * In the 2D array below, the rows represent the West to East direction, and the columns represent the South to North direction.
 * Neighbouring data points in the array are also neighbours in the physical space. This spatial organisation simplifies how we relate computational data to real-world positions.
 * The alignment between data points and physical space provides a clear, intuitive structure that makes it easy to manipulate and analyse the data.
+
+.. _fig-mesh-structured-world:
 
 .. figure:: /_static/structured_world.svg
    :width: 650px
@@ -43,7 +45,9 @@ While structured grids work well in many cases, they do have some limitations:
 1. Singularities at the poles:
 
    One of the most well-known issues with structured grids, particularly in Earth-system modelling, is the singularity at the poles. At the North and South Poles, grid cells become excessively compressed, leading to inaccuracies and computational challenges. This is a direct result of representing a spherical Earth with a flat grid, which leads to distortion near the poles.
-   The figure below demonstrates singularities at the poles.
+   :numref:`fig-mesh-singularities` demonstrates singularities at the poles.
+
+.. _fig-mesh-singularities:
 
 .. figure:: /_static/singularities.png
    :width: 300px

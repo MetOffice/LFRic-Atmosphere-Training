@@ -14,11 +14,13 @@ Topics include:
 * :external+simulation_systems:ref:`development_index`
 * :external+simulation_systems:ref:`multirepo`
 * :external+simulation_systems:ref:`testing`
-* :external+simulation_systems:ref:`multirepo`
 * The :external+simulation_systems:ref:`review_process`
+
+.. _fig-infra-working-practices:
 
 .. figure:: /_static/working_practices.jpg
    :width: 650px
+   :alt: Simulation Systems Working Practices
 
    Simulation Systems Working Practices.
 

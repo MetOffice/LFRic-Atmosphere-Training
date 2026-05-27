@@ -16,8 +16,13 @@ The evaluation teams (regional known as RMED and global, GMED) have strong links
   
    * If interested, find the PEG or CoG lead on the GMED or RMED Met Office Science Repository Service (MOSRS) pages and contact them, or you can contact Momentum_Partnership@metoffice.gov.uk.
 
-.. image:: /_static/seamless_dev_cycle.png
+.. _fig-model-dev-cycle:
+
+.. figure:: /_static/seamless_dev_cycle.png
    :width: 650px
+   :alt: Development cycle for Global Coupled science configurations
+
+   The seamless development cycle for Global Coupled configurations.
 
 In July 2022, the final UM-based GC configuration was released, 'GC5', before the implementation of the LFRic atmospheric model into GC configurations. LFRic atmosphere is the next-generation atmospheric model being developed by the Momentum framework, which is designed to be more modular and flexible than its predecessor.
 

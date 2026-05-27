@@ -13,8 +13,13 @@ The Met Office maintains routine tools for validation of GC configurations:
 * `ESMValTool <https://esmvaltool.org/>`_
 * `MetPlus <https://dtcenter.org/community-code/metplus>`_
 
-.. image:: /_static/autoassess.png
+.. _fig-model-autoassess:
+
+.. figure:: /_static/autoassess.png
    :width: 700px
+   :alt: AutoAssess workflow for evaluating science configurations
+
+   AutoAssess evaluation tools for model assessment.
 
 Regional evaluation tools
 -------------------------
