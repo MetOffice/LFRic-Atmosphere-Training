@@ -33,11 +33,19 @@ Setup Instructions
 3. If a practical or local platform still requires MOSRS/SRS access, obtain an
    account through the appropriate route:
 
-   * Met Office staff: Contact scientific_partnerships@metoffice.gov.uk to
-     request an account.
-   * External users: Contact your local institutional sponsor.
-   * If unsure: Email scientific_partnerships@metoffice.gov.uk with your
-     affiliate institution and the reason you require access.
+.. tab-set::
+
+   .. tab-item:: Met Office
+
+       Contact scientific_partnerships@metoffice.gov.uk to
+       request an account.
+      
+   .. tab-item:: Partners
+   
+      External users: Contact your local institutional sponsor.
+      
+      If unsure: Email scientific_partnerships@metoffice.gov.uk with your
+      affiliate institution and the reason you require access.
 
 .. toctree::
 
