@@ -28,7 +28,6 @@ on the LFRic Atmosphere model and its underlying components.
    :maxdepth: 1
    :caption: Contents
 
-   science_apps.rst
    code_repositories.rst
    psykal_infrastructure.rst
    working_practices.rst
