@@ -1,9 +1,9 @@
-name: Accessibility checks
+name: Accessibility checks with Pixi
 
 on:
   pull_request:
   schedule:
-    - cron: "23 5 * * 1"
+    - cron: "0 6 * * 1"
   workflow_dispatch:
 
 permissions:
@@ -14,6 +14,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
+      PIXI_VERSION: latest
       # pa11y-ci ships Puppeteer 9; use the runner's pre-installed Chrome rather
       # than Puppeteer's (old) bundled Chromium, and skip that download.
       PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: "true"
@@ -22,30 +23,25 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      - name: Install uv and Set up Python
-        uses: astral-sh/setup-uv@v7
-        with:
-          python-version: "3.11"
-          enable-cache: true
-
-      - name: Install documentation system dependencies
+      - name: Install Pixi
         run: |
-          sudo apt-get update
-          sudo apt-get install --yes graphviz
+          curl -fsSL https://pixi.sh/install.sh | sh
+          echo "$HOME/.pixi/bin" >> "$GITHUB_PATH"
 
-      - name: Install Python dependencies
-        run: uv sync
+      - name: Restore Pixi cache
+        id: pixi-cache-restore
+        uses: actions/cache/restore@v5
+        with:
+          path: |
+            .pixi/envs
+            ~/.cache/rattler/cache
+            ~/.cache/pixi
+          key: ${{ runner.os }}-${{ runner.arch }}-pixi-${{ hashFiles('pixi.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-${{ runner.arch }}-pixi-
 
       - name: Build documentation
-        run: uv run make clean html
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: "22"
-
-      - name: Install pa11y-ci
-        run: npm install pa11y-ci
+        run: pixi run --locked sphinx html
 
       - name: Run pa11y accessibility checks
         run: |
@@ -56,4 +52,15 @@ jobs:
           fi
           echo "Using Chrome at: $PUPPETEER_EXECUTABLE_PATH"
           export PUPPETEER_EXECUTABLE_PATH
-          npx pa11y-ci --config .pa11yci.js
+          pixi run --locked -e pa11y pa11y
+
+      - name: Save Pixi cache
+        if: steps.pixi-cache-restore.outputs.cache-hit != 'true'
+        id: pixi-cache-save
+        uses: actions/cache/save@v5
+        with:
+          path: |
+            .pixi/envs
+            ~/.cache/rattler/cache
+            ~/.cache/pixi
+          key: ${{ steps.pixi-cache-restore.outputs.cache-primary-key }}
