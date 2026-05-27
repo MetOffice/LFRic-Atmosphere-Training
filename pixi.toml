@@ -38,3 +38,18 @@ esmpy = "*"
 
 [pypi-dependencies]
 sphinxcontrib-quizdown = { git = "https://github.com/bonartm/sphinxcontrib-quizdown.git" }
+
+# Accessibility checking with pa11y-ci. Kept in an isolated environment so the
+# Node.js toolchain does not pull into the documentation-build environment.
+# Node is capped at < 23: pa11y-ci pulls Puppeteer 9, whose bundled-Chromium
+# unpack step breaks on newer Node. CI can instead point at a system Chrome via
+# PUPPETEER_EXECUTABLE_PATH (see the accessibility workflow).
+[feature.pa11y.dependencies]
+nodejs = ">=20,<23"
+
+[feature.pa11y.tasks]
+pa11y-install = { cmd = "npm ci", inputs = ["package.json", "package-lock.json"], outputs = ["node_modules/.package-lock.json"], description = "Install the Node tooling (pa11y-ci) used for accessibility checks." }
+pa11y = { cmd = "npx pa11y-ci --config .pa11yci.js", depends-on = ["pa11y-install"], description = "Run pa11y-ci accessibility checks over build/html (build it first with 'pixi run sphinx html')." }
+
+[environments]
+pa11y = { features = ["pa11y"], no-default-feature = true }

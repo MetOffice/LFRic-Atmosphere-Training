@@ -3,7 +3,7 @@
 // pa11y-ci configuration for the built HTML documentation.
 //
 // Discovers every page under build/html and checks it against WCAG 2.1 AA.
-// Build the site first so build/html exists.
+// Build the site first with `pixi run sphinx html` so build/html exists.
 
 const fs = require('fs');
 const path = require('path');
