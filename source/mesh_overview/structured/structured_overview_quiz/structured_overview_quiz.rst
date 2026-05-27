@@ -64,19 +64,21 @@ The following quiz reviews key concepts introduced in this chapter. Each questio
    1. [ ] Latitudes disappear near the poles
        > Incorrect! grids suffer from distortion.
 
-   ## What are some solutions to the problem of polar singularities in structured grids? (select all that apply)
-   - [ ] Using larger grid cells near the poles
-      > This doesn't solve the singularity problem.
-   - [x] Switching to an unstructured mesh like the cubed-sphere
-      > Correct! Cubed-sphere meshes eliminate pole singularities.
-   - [ ] Ignoring data near the poles
-      > Not a viable solution—this just discards valuable data.
-   - [ ] Replacing grid points with 3D coordinates
-      > Changing coordinate representation doesn't remove pole distortion.
-   - [x] Describing a reduced (or thinned) Gaussian grid as used at European Centre for Medium-Range Weather Forecasts  (ECMWF)
-      > Correct! Thinned grids reduce grid point density near the poles to manage singularities.
-   - [x] Rotating the pole
-      > Correct! Pole rotation can shift singularities away from important analysis areas.
+    ## Which of the following are recognised approaches for dealing with polar singularities in atmospheric structured grids? (select all that apply)
+    - [ ] Increasing horizontal resolution near the poles
+        > Incorrect. Increasing resolution near the poles generally worsens grid convergence issues.
+    - [x] Using an alternative grid topology such as a cubed-sphere or icosahedral mesh
+        > Correct! These avoid pole singularities by eliminating the latitude–longitude pole point.
+    - [x] Using a reduced (thinned) Gaussian grid
+        > Correct! This reduces excessive grid clustering toward the poles and mitigates computational problems.
+    - [x] Rotating the coordinate pole for a limited-area model
+        > Correct! Pole rotation can move the singularity outside the region of interest.
+    - [ ] Discarding data at high latitudes
+        > Incorrect. This removes information rather than addressing the grid problem.
+    - [x] Applying filtering or Fourier methods near the poles
+        > Correct! Polar filtering has historically been used to reduce numerical problems caused by meridian convergence.
+    - [ ] Replacing latitude–longitude coordinates with Cartesian coordinates alone
+        > Incorrect. Changing coordinate representation alone does not alter the grid topology or remove singularities.
 
    ## What is a challenge of using cubed-sphere unstructured meshes?
    1. [ ] They reintroduce polar singularities
