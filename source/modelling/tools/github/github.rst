@@ -4,7 +4,7 @@
 GitHub Overview
 ***************
 
-GitHub is the main direction of travel for active Met Office science code
+The Met Office is moving science code development to GitHub
 development. LFRic Atmosphere training already uses GitHub-hosted repositories
 for the practical code checkout and workflow examples, and this will become
 increasingly normal as science code and workflows move away from older
