@@ -17,5 +17,8 @@ The aim of this practical is to gain experience in editing, running, and analysi
    :maxdepth: 1
    :caption: Contents
 
+   copying/copying.rst
+   editing/editing.rst
    running/running.rst
+   plotting/plotting.rst
    experiments/index.rst
