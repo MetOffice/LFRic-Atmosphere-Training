@@ -32,6 +32,4 @@ Now use the following practical exercises to explore different experiment config
 
    add_diag/add_diag.rst
    10xco2/10xco2.rst
-   blk_si/blk_si.rst
    earth_rot/earth_rot.rst
-   rmv_evap/rmv_evap.rst

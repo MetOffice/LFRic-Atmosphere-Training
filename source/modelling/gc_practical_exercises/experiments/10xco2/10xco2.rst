@@ -1,5 +1,7 @@
+***********************
 Experiment 1 - CO2 x 10
-^^^^^^^^^^^^^^^^^^^^^^^
+***********************
+
 .. code-block:: bash
 
    cd app/lfric_atm
@@ -24,4 +26,3 @@ Experiment 1 - CO2 x 10
     n2o_mix_ratio=4.7957e-07
     o2_mix_ratio=0.2314
     so2_mix_ratio=0.0
-
