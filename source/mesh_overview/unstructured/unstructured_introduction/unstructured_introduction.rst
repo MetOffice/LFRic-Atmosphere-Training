@@ -176,9 +176,6 @@ Iris is a Python-based ecosystem and package used for the manipulation of LFRic 
 It is open-source and has been included in other tools, such as ESMValTool and MetPlus, which are based on it.
 Iris offers a unified view of data as cubes and supports metadata-aware processing. It provides analysis capabilities in mathematics, statistics, large data handling, and regridding. For visualisation, Iris relies on Matplotlib and Cartopy.
 
-* `Iris documentation <https://scitools-iris.readthedocs.io/>`_
-* `Iris on GitHub <https://github.com/SciTools/iris>`_
-
 .. _fig-mesh-unstructured-tools:
 
 .. figure:: /_static/unstructured_tools.png
@@ -187,15 +184,28 @@ Iris offers a unified view of data as cubes and supports metadata-aware processi
 
    The Scientific Python Ecosystem and unstructured data tools
 
-The core of Iris is built around CF and NumPy. CF (Climate and Forecast) conventions allow Iris to work with the encoding of climate and forecast data stored in netCDF files. NumPy, the fundamental package for numerical computations in Python, supports large-scale data processing by leveraging FORTRAN and C++ for heavy computations.
+The main resources for the tools and standards shown in :numref:`fig-mesh-unstructured-tools` are:
 
-NumPy facilitates the mathematical operations required for large datasets. Operations involving substantial numerical crunching are offloaded to efficient implementations in FORTRAN and C++, as Python itself is an interpreted language and is not optimized for such intensive tasks.
+* **Iris**: `Iris documentation <https://scitools-iris.readthedocs.io/>`_, `Iris on GitHub <https://github.com/SciTools/iris>`_
+* **CF conventions**: `CF conventions project page <https://cfconventions.org/>`_
+* **NumPy**: `NumPy documentation <https://numpy.org/doc/stable/>`_, `NumPy on GitHub <https://github.com/numpy/numpy>`_
+* **Dask**: `Dask documentation <https://docs.dask.org/>`_, `Dask on GitHub <https://github.com/dask/dask>`_
+* **Matplotlib**: `Matplotlib documentation <https://matplotlib.org/stable/>`_, `Matplotlib on GitHub <https://github.com/matplotlib/matplotlib>`_
+* **Cartopy**: `Cartopy documentation <https://scitools.org.uk/cartopy/docs/latest/>`_, `Cartopy on GitHub <https://github.com/SciTools/cartopy>`_
+* **ESMF and iris-esmf-regrid**: `ESMF project page <https://earthsystemmodeling.org/>`_, `ESMF on GitHub <https://github.com/esmf-org/esmf>`_, `iris-esmf-regrid documentation <https://iris-esmf-regrid.readthedocs.io/en/latest/>`_, `iris-esmf-regrid on GitHub <https://github.com/SciTools/iris-esmf-regrid>`_
+* **PyVista**: `PyVista documentation <https://docs.pyvista.org/>`_, `PyVista on GitHub <https://github.com/pyvista/pyvista>`_
+* **GeoVista**: `GeoVista documentation <https://geovista.readthedocs.io/>`_, `GeoVista on GitHub <https://github.com/bjlittle/geovista>`_
+* **VTK**: `VTK project page <https://vtk.org/>`_, `VTK source repository <https://gitlab.kitware.com/vtk/vtk>`_
+
+The core of Iris is built around CF and NumPy. CF (Climate and Forecast) conventions allow Iris to work with the encoding of climate and forecast data stored in netCDF files. NumPy provides efficient array operations implemented in compiled code and linked numerical libraries, avoiding the performance limits of pure Python loops.
+
+NumPy facilitates the mathematical operations required for large datasets. Operations involving substantial numerical processing are offloaded to efficient compiled implementations, while Python remains the user-facing interface.
 
 In traditional structured grid systems, data is plotted in 2D using Matplotlib. Cartopy, a tool used for cartographic elements, assists in this process.
 
-For unstructured grids, PyVista and VTK replace Matplotlib. VTK is a versatile tool used for both visualisation and mesh processing through C++ implementation, which also supports number crunching. GeoVista handles the cartographic elements in unstructured grids, performing similar functions as Cartopy. Both PyVista and GeoVista can leverage GPU acceleration, enhancing performance for both graphical rendering and computational analysis.
+For unstructured grid visualisation, PyVista provides Python access to VTK's rendering and mesh-processing capabilities. VTK is a versatile toolkit implemented in C++ and can use GPU acceleration for interactive rendering. GeoVista adds geospatial and cartographic helpers on top of PyVista, performing a role similar to Cartopy for map-aware visualisation.
 
-Despite the underlying usage of languages like FORTRAN and C++ in visualisation tools, Python serves as the interface for data interaction with these tools during user workflows.
+Despite the use of compiled languages such as Fortran and C++ in parts of the scientific Python stack, Python serves as the interface for data interaction with these tools during user workflows.
 
 .. _pyvista.basics:
 
@@ -205,14 +215,11 @@ PyVista - basics and scope
 PyVista is an open-source Python library that provides a high-level interface to `VTK <https://vtk.org/>`_ (Visualization Toolkit), a powerful C++ library for 3D visualisation and mesh processing.
 In the context of LFRic data, PyVista replaces Matplotlib for rendering unstructured meshes, delivering GPU-accelerated rendering that scales to high-resolution datasets.
 
-* `PyVista documentation <https://docs.pyvista.org/>`_
-* `PyVista on GitHub <https://github.com/pyvista/pyvista>`_
-
 PyVista exposes VTK's capabilities through a NumPy-friendly API, allowing scientific Python users to work with 3D geometry without writing low-level C++ code.
 It supports interactive rendering in Jupyter notebooks as well as batch (off-screen) rendering for automated workflows.
-PyVista also provides a rich set of mesh filters—such as slicing, contouring, and interpolation—making it suitable for both visualisation and computational geometry tasks.
+PyVista also provides a rich set of mesh filters, such as slicing, contouring, and interpolation, making it suitable for both visualisation and computational geometry tasks.
 
-The performance advantage of PyVista over Matplotlib becomes significant at LFRic resolutions: a C48 mesh (≈13,000 faces) renders in around 370 ms with PyVista, compared to approximately 13.5 seconds with Matplotlib, and a C1048 mesh renders in under 4 seconds rather than the roughly 2 hours Matplotlib would require.
+The performance advantage of PyVista over Matplotlib becomes significant at LFRic resolutions: a C48 mesh (approximately 13,000 faces) renders in around 370 ms with PyVista, compared to approximately 13.5 seconds with Matplotlib, and a C1048 mesh renders in under 4 seconds rather than the roughly 2 hours Matplotlib would require.
 
 .. _geovista.basics:
 
@@ -220,14 +227,11 @@ GeoVista - basics and scope
 ++++++++++++++++++++++++++++
 
 GeoVista is an open-source Python package that adds cartographic capabilities to PyVista, fulfilling a role analogous to Cartopy in the structured-grid world.
-It is the primary tool for projecting unstructured LFRic data onto map projections and overlaying standard geographic reference features.
+It helps transform geospatial data into PyVista meshes for interactive 3D rendering, including unstructured meshes such as cubed-sphere LFRic output.
 
-* `GeoVista documentation <https://geovista.readthedocs.io/>`_
-* `GeoVista on GitHub <https://github.com/bjlittle/geovista>`_
-
-GeoVista supports a wide range of map projections, coastline overlays, texture mapping, and regional extraction (e.g. cropping a cubed-sphere dataset to a specific geographic region).
-It is designed to work directly with Iris cubes, as well as with NumPy arrays and Xarray datasets, making it straightforward to integrate into existing post-processing workflows.
-Like PyVista, GeoVista can exploit GPU acceleration, which is particularly beneficial when rendering the high face-counts associated with operational LFRic resolutions.
+GeoVista supports longitude-latitude data, unstructured meshes, coastline overlays, texture mapping, and regional extraction (e.g. cropping a cubed-sphere dataset to a specific geographic region).
+Its current projection support is more limited than Cartopy's but includes common geographic rendering workflows and selected projected outputs.
+Because GeoVista renders through PyVista and VTK, it benefits from the same rendering stack when displaying the high face-counts associated with operational LFRic resolutions.
 
 
 Regridding unstructured data
@@ -257,6 +261,8 @@ Key features of regridding include:
    
    Regridding data from an unstructured mesh to a structured grid
 
+The regridding tools discussed above are documented by the `ESMF user guide <https://earthsystemmodeling.org/docs/release/latest/ESMF_usrdoc/>`_, `ESMF source repository <https://github.com/esmf-org/esmf>`_, and `iris-esmf-regrid documentation <https://iris-esmf-regrid.readthedocs.io/en/latest/>`_.
+
 
 Visualising unstructured data
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -264,8 +270,4 @@ For unstructured data visualisation, PyVista and GeoVista are the primary tools 
 
 For instance, a C48 mesh has approximately 13,000 faces, and a C1048 mesh (approximately 9.55 km grid spacing at the equator) would require excessive computation and memory resources for Matplotlib and Cartopy. It would take them around 13.5s to render a C48 and 2h for a C1048! With PyVista, a C48 mesh can be rendered in 369 ms, while a C1048 mesh takes 3.87 seconds.
 
-Unstructured visualisation tools include `VTK <https://vtk.org/>`_, a GPU-accelerated toolkit for visualisation and mesh processing, and `Paraview <https://www.paraview.org/>`_, a parallel visualisation application. PyVista provides a high-level interface for 3D visualisation, and GeoVista manages cartographic elements. The combination of these tools offers a paradigm shift by enabling efficient GPU-powered visualisation and interactive user experiences.
-
-PyVista is a 3D visualisation engine that leverages GPU power for scalable rendering. It offers both visualisation and computational capabilities, including a high-level API and filters. PyVista integrates seamlessly with modern scientific workflows, such as Jupyter notebooks.
-
-GeoVista provides cartographic capabilities for PyVista, supporting various map projections, coastlines, texture mapping, and regional extraction. It is compatible with Iris, as well as other scientific libraries like NumPy and Xarray.
+Unstructured visualisation tools include `VTK <https://vtk.org/>`_, a GPU-accelerated toolkit for visualisation and mesh processing, and `ParaView <https://www.paraview.org/>`_, a parallel visualisation application. PyVista provides a high-level Python interface for VTK, and GeoVista provides geospatial helpers for PyVista. See :ref:`pyvista.basics` and :ref:`geovista.basics` for the package summaries and links.
