@@ -186,7 +186,7 @@ development. Where workflows depend on Rosie IDs, MASS archive conventions, or
 Rosie discovery metadata, migration may need to wait for the relevant project
 guidance and tooling.
 
-For this training, you only need the high-level rule: use the GitHub workflow
+For this training, you only need the high-level rule: use the GitHub working practices
 where the practical tells you to clone from GitHub, but do not assume every
 historic Rose/Cylc workflow has already moved cleanly from MOSRS/SRS to
 GitHub.
