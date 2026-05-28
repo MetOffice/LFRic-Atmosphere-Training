@@ -37,6 +37,10 @@ The training is being updated during a transition period. Some LFRic and
 Momentum material now points to GitHub, while some older workflows and
 supporting services still use MOSRS/SRS terminology.
 
+.. note::
+
+   If you think something has become outdated please raise a ticket at 
+   https://github.com/MetOffice/LFRic-Atmosphere-Training
 You may still see references to:
 
 * Subversion repositories and FCM keywords;
