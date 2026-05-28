@@ -1,7 +1,30 @@
 Components, Science Configurations, and Systems
 ===============================================
 
-Components of the `Momentum  <https://www.metoffice.gov.uk/research/approach/modelling-systems/momentum>`_ Framework, like the atmospheric model LFRic Atmosphere, are combined to prediction and projection systems, like the ones mentioned in the graphic in the seamless modelling section. Science Configurations are rigorously tested  and define the exact setup for the individual model components. These configurations are distinguished between regional and global configurations. Additionally, there are coupled Science Configurations which detail multi-model setups, e.g. an atmosphere - ocean model.
+The `Momentum  <https://www.metoffice.gov.uk/research/approach/modelling-systems/momentum>`_ Framework is built from a set of interoperable scientific components that can be combined to create complete prediction and projection systems. One of these components is LFRic Atmosphere, the atmospheric model within the framework.
+
+To ensure scientific consistency and reproducibility, prediction systems are defined using carefully tested Science Configurations. A Science Configuration specifies the exact setup of model components, including parameter settings, domain size, resolution, and coupling options.
+
+Science Configurations are typically grouped into:
+
+* **Global configurations** — used for planetary-scale weather and climate simulations.
+* **Regional configurations** — used for high-resolution simulations over limited geographical areas.
+* **Coupled configurations** — where atmosphere, ocean, land, and sea-ice models exchange information during a simulation.
+
+A key feature of the Momentum development approach is the separation between:
+
+* **Components** — individual scientific models such as atmosphere or ocean models,
+* **Science Configurations** — validated scientific setups of those models,
+* **Operational systems** — implementations used for research, forecasting, and climate projection.
+
+Each has its own release cycle, but they build on each other and remain compatible within the wider framework.
+
+The naming and numbering conventions for Momentum Science Configurations continue the heritage of the Unified Model ecosystem. Examples include:
+
+* **GC6** — the Global Coupled Science Configuration,
+* **RAL4** — the Regional Atmosphere and Land configuration.
+
+These are among the first Science Configurations to use LFRic Atmosphere within the Momentum Framework.
 
 .. _fig-intro-components:
 
@@ -10,6 +33,4 @@ Components of the `Momentum  <https://www.metoffice.gov.uk/research/approach/mod
    :alt: Components of prediction and projection systems
 
    Key functional components needed to build prediction and projection systems with the Momentum Framework.
-
-The development approach of Momentum uniquely separates the development of components, Science Configurations, and systems. Each has its own release cycle, but they build on each other. The naming and numbering convention for Momentum Science Configurations is a continuation from the Unified Model software ecosystem to reflect the gradual introduction of the framework into research and operations. The Global Coupled Science Configuration GC6 and the Regional Atmosphere and Land configuration RAL4 will both use the LFRic Atmosphere model and mark the first Science Configurations built with Momentum.
 
