@@ -18,6 +18,7 @@ Practical 1: Run the model from command line
 
    * Build and run the LFRic Atmosphere as a command line application.
    * Add custom messages to the model’s standard output.
+   * Modify the output configuration to change what is written and how often.
 
 Step 1: Compile the model
 +++++++++++++++++++++++++
@@ -123,7 +124,9 @@ The code contains an `LFRic example`_ configuration containing:
 
    The NetCDF output is configured by the file ``iodef.xml``
    in the example directory. It controls the output streams,
-   filenames, written fields, and output frequency.
+   filenames, written fields, and output frequency. See
+   :ref:`output-control` for a full explanation of the file
+   structure and how to modify it.
 
 Step 3: Modify the Model
 ++++++++++++++++++++++++
@@ -192,3 +195,43 @@ To gain familiarity with the model:
    version control. This ensures traceability and supports collaborative
    development. You'll learn how to document and manage your code changes
    using tickets and branches in Practical 3.
+
+Step 4: Modify the Output
++++++++++++++++++++++++++
+
+Unlike the model source code, the output configuration in ``iodef.xml`` does
+not require a recompile. You can change what is written and how often by
+editing the XML, then re-running the model.
+
+1. Open ``applications/lfric_atm/example/iodef.xml`` and find the
+   ``lfric_averages`` file definition.
+
+2. Change its ``output_freq`` from ``12h`` to ``6h`` so that averaged fields
+   are written at the same frequency as the diagnostics.
+
+3. Add the ``rho`` field to the ``lfric_averages`` file with a time average
+   operation:
+
+   .. hint::
+      :collapsible: closed
+
+      Inside the ``lfric_averages`` ``<file>`` block, add:
+
+      .. code-block:: xml
+
+         <field field_ref="rho" operation="average" />
+
+4. Re-run the model (no recompile needed):
+
+   .. code-block:: console
+
+      ../bin/lfric_atm configuration.nml > log.txt
+
+5. Check that the ``lfric_averages.nc`` file now contains a ``rho`` variable
+   and has more time steps than before.
+
+.. seealso::
+
+   :ref:`output-control` explains the full ``iodef.xml`` structure, including
+   how to enable checkpoint files and how to reference fields from the LFRic
+   metadata catalogues.
