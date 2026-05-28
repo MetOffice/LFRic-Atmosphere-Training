@@ -30,4 +30,7 @@ Following GC5-UM, there was a project associated with the Next Generation Modell
 
 GC6 will be the first operational use of LFRic in a science configuration at the Met Office and across the Momentum Partnership. GC6 will be implemented in PS49 and in UKESM3 for CMIP8. The development of GC6 is ongoing, with the first release expected in early 2026.
 
-*Something about regional modelling....*
+The final UM-based regional configuration, RAL3, was released in July 2022. Following this, the RAL3-LFRic project was initiated in September 2022 under the NGMS programme to develop an LFRic-based regional configuration. Similar to the GC5-LFRic effort, this was designed as a research and validation configuration, providing a well-tested and understood baseline for future developments. The project successfully met its Acceptance Criteria and was completed in Autumn 2025.
+Building on this foundation, RAL3 science was implemented operationally at the Met Office in January 2026 and has been implemented by several Momentum Partners. Development of the next operational regional configuration, RAL4, began in Autumn 2025.
+
+RAL4 will represent the first regional science configuration to more fully exploit the LFRic modelling framework. Its development focuses on maintaining consistency with the established RAL3 science baseline, while introducing only essential changes required to meet defined Acceptance Criteria. RAL4 is being designed to support both atmosphere/land-only and fully coupled regional environmental prediction applications, with robust performance across a wide range of timescales from short-term forecasts (hours) to longer-term simulations (decades).
