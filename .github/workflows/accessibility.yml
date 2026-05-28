@@ -1,0 +1,59 @@
+name: Accessibility checks
+
+on:
+  pull_request:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  pa11y:
+    runs-on: ubuntu-latest
+
+    env:
+      # pa11y-ci ships Puppeteer 9; use the runner's pre-installed Chrome rather
+      # than Puppeteer's (old) bundled Chromium, and skip that download.
+      PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: "true"
+      PUPPETEER_SKIP_DOWNLOAD: "true"
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Install uv and Set up Python
+        uses: astral-sh/setup-uv@v7
+        with:
+          python-version: "3.11"
+          enable-cache: true
+
+      - name: Install documentation system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes graphviz
+
+      - name: Install Python dependencies
+        run: uv sync
+
+      - name: Build documentation
+        run: uv run make clean html
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install pa11y-ci
+        run: npm install pa11y-ci
+
+      - name: Run pa11y accessibility checks
+        run: |
+          PUPPETEER_EXECUTABLE_PATH="$(command -v google-chrome || command -v google-chrome-stable || command -v chromium-browser)"
+          if [ -z "$PUPPETEER_EXECUTABLE_PATH" ]; then
+            echo "::error::No Chrome/Chromium binary found on the runner." >&2
+            exit 1
+          fi
+          echo "Using Chrome at: $PUPPETEER_EXECUTABLE_PATH"
+          export PUPPETEER_EXECUTABLE_PATH
+          npx pa11y-ci --config .pa11yci.js
