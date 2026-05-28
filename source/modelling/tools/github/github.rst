@@ -195,7 +195,7 @@ MOSRS/SRS during the transition
 ===============================
 
 MOSRS/SRS is still mentioned in the training because some tools, examples, and
-legacy workflows still depend on it. This does not mean that new development
+legacy workflows still depend on it. When possible, however, new development
 should default to MOSRS/SRS when a GitHub repository is available.
 
 Current transition points to keep in mind:
