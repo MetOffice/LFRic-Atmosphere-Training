@@ -2,6 +2,7 @@
 *.egg-info/
 *.bat
 .venv/
+node_modules/
 data-tutorials/
 build/
 **/.ipynb_checkpoints/
