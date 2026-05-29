@@ -3,7 +3,7 @@ name: Accessibility checks
 on:
   pull_request:
   schedule:
-    - cron: "0 6 * * 1"
+    - cron: "23 5 * * 1"
   workflow_dispatch:
 
 permissions:
