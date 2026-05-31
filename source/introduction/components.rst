@@ -7,9 +7,12 @@ To ensure scientific consistency and reproducibility, prediction systems are def
 
 Science Configurations are typically grouped into:
 
-* **Global configurations** — used for planetary-scale weather and climate simulations.
-* **Regional configurations** — used for high-resolution simulations over limited geographical areas.
-* **Coupled configurations** — where atmosphere, ocean, land, and sea-ice models exchange information during a simulation.
+Global configurations
+   Used for planetary-scale weather and climate simulations.
+Regional configurations
+   Used for high-resolution simulations over limited geographical areas.
+Coupled configurations
+   Where atmosphere, ocean, land, and sea-ice models exchange information during a simulation.
 
 A key feature of the Momentum development approach is the separation between:
 
