@@ -89,12 +89,12 @@ def validate_figure_labelling(
         if not any(name.startswith('fig-') for name in names):
             errors.append(
                 f"{node_location(figure)}: figure for '{uri}' is missing "
-                "a '.. _fig-...:' label."
+                "a '.. _fig-<name>:' label (placed above the figure)."
             )
         if not any(isinstance(child, nodes.caption) and child.astext().strip()
                    for child in figure.children):
             errors.append(
-                f"{node_location(figure)}: figure for '{uri}' is missing "
+                    f"{node_location(figure)}: figure for '{uri}' is missing "
                 'a caption.'
             )
         if image is not None and not image.get('alt', '').strip():
@@ -171,8 +171,8 @@ html_context = {
 
 html_theme = "pydata_sphinx_theme"
 html_static_path = ['_static']
-html_css_files = ['nav-collapse.css']
-html_js_files = ['nav-collapse.js']
+html_css_files = ['nav-collapse.css', 'accessibility.css']
+html_js_files = ['nav-collapse.js', 'accessibility.js']
 
 # These URLs are valid learner-facing targets, but cannot be checked reliably
 # from public CI: Cylc Review is an internal hostname and the OASIS site serves

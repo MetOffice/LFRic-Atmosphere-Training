@@ -9,7 +9,7 @@ permissions:
   contents: read
 
 jobs:
-  linkcheck:
+  documentation-building:
     runs-on: ubuntu-latest
 
     steps:
@@ -21,10 +21,15 @@ jobs:
           python-version: "3.11"
           enable-cache: true
 
+      - name: Install documentation system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes graphviz
+
       - name: Install dependencies from pyproject.toml
         run: |
           uv sync
 
       - name: Test documentation building
         run: |
-          uv run make clean html linkcheck SPHINXOPS='-Wn'
+          uv run make clean html linkcheck SPHINXOPTS='-Wn'

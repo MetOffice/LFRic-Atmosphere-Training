@@ -82,17 +82,11 @@ Install optional extras as needed:
 # Notebook and exercise dependencies
 uv sync --extra notebooks
 
-# Mesh tutorial notebook dependencies
-uv sync --extra mesh_tutorials
-
 # Development tooling (e.g., pre-commit hooks)
 uv sync --extra dev
 
 # Both optional groups
 uv sync --extra notebooks --extra dev
-
-# Mesh tutorials + development tooling
-uv sync --extra mesh_tutorials --extra dev
 
 # Everything defined in pyproject.toml optional dependencies
 uv sync --all-extras
@@ -129,13 +123,13 @@ pip install .
 Install optional dependencies:
 
 ```bash
-pip install ".[notebooks,mesh_tutorials,dev]"
+pip install ".[notebooks,dev]"
 ```
 
 If you are contributing and want an editable install:
 
 ```bash
-pip install -e ".[notebooks,mesh_tutorials,dev]"
+pip install -e ".[notebooks,dev]"
 ```
 
 ### Dependency Policy
@@ -181,7 +175,7 @@ available run:
 ### Pull Request (PR) Process
 
 1. Create a well-documented PR with a description of changes.
-1. Request reviews from the the [Momentum Partnership Team](mailto:Momentum_Partnership@metoffice.gov.uk) or other maintainers.
+1. Request reviews from the [Momentum Partnership Team](mailto:Momentum_Partnership@metoffice.gov.uk) or other maintainers.
 1. Respond to feedback and make changes if required.
 1. Wait for approval and merging.
 

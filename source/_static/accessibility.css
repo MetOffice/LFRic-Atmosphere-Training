@@ -1,0 +1,29 @@
+/*
+ * Accessibility overrides for WCAG 2.1 AA conformance (checked with pa11y).
+ * See issue #133.
+ */
+
+/*
+ * The search field's keyboard-shortcut hint used --pst-color-border (#d1d5da),
+ * a 1.47:1 contrast ratio against the white form background. Use the muted
+ * text colour, which clears 4.5:1 in both the light and dark themes.
+ */
+.bd-search .search-button__kbd-shortcut {
+  color: var(--pst-color-text-muted);
+}
+
+/*
+ * External links on odd ("zebra") table rows had a 4.38:1 contrast ratio: the
+ * teal link colour sat on the grey --pst-color-surface (#f3f4f5). Lighten only
+ * the zebra row background in light mode so links clear 4.5:1 without
+ * restyling other surfaces.
+ */
+html[data-theme="light"] {
+  --pst-color-table-row-zebra-low-bg: #f7f8f9;
+}
+
+@media (prefers-color-scheme: light) {
+  html[data-theme="auto"] {
+    --pst-color-table-row-zebra-low-bg: #f7f8f9;
+  }
+}
