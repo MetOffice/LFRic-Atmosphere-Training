@@ -1,7 +1,8 @@
 LFRic Atmosphere features and history
 =====================================
 
-LFRic Atmosphere has been `developed <https://www.metoffice.gov.uk/research/news/2019/gungho-and-lfric>`_ by the Met Office and partners to replace the Unified Model. While LFRic Atmosphere inherited its physics parameterisations from the Unified Model, it also introduces major advances in grid structure, numerical methods, and software design.
+LFRic Atmosphere has been `developed <https://www.metoffice.gov.uk/research/news/2019/gungho-and-lfric>`_ by the Met Office and partners to replace the Unified Model. 
+While LFRic Atmosphere inherited its physics parameterisations from the Unified Model, it also introduces major advances in grid structure, numerical methods, and software design.
 
 LFRic Atmosphere incorporates several established scientific components, including:
 
@@ -16,7 +17,8 @@ Like the Unified Model, LFRic Atmosphere uses terrain-following vertical coordin
 * The **GungHo** mixed finite-element dynamical core,
 * A modern software infrastructure designed for future high-performance computing architectures.
 
-The new software infrastructure separates the scientific description of the atmosphere from the technical details of parallel computing and hardware optimisation. This makes the model easier to maintain, improves portability across different computing platforms, and supports efficient scaling to future exascale supercomputers.
+The new software infrastructure separates the scientific description of the atmosphere from the technical details of parallel 
+computing and hardware optimisation. This makes the model easier to maintain, improves portability across different computing platforms, and supports efficient scaling to future exascale supercomputers.
 
 .. _fig-intro-mesh-vertical:
 
