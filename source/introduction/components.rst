@@ -7,22 +7,22 @@ To ensure scientific consistency and reproducibility, prediction systems are def
 
 Science Configurations are typically grouped into:
 
-* **Global configurations** — used for planetary-scale weather and climate simulations.
-* **Regional configurations** — used for high-resolution simulations over limited geographical areas.
-* **Coupled configurations** — where atmosphere, ocean, land, and sea-ice models exchange information during a simulation.
+* **Global configurations** - used for planetary-scale weather and climate simulations.
+* **Regional configurations** - used for high-resolution simulations over limited geographical areas.
+* **Coupled configurations** - where atmosphere, ocean, land, and sea-ice models exchange information during a simulation.
 
 A key feature of the Momentum development approach is the separation between:
 
-* **Components** — individual scientific models such as atmosphere or ocean models,
-* **Science Configurations** — validated scientific setups of those models,
-* **Operational systems** — implementations used for research, forecasting, and climate projection.
+* **Components** - individual scientific models such as atmosphere or ocean models,
+* **Science Configurations** - validated scientific setups of those models,
+* **Operational systems** - implementations used for research, forecasting, and climate projection.
 
 Each has its own release cycle, but they build on each other and remain compatible within the wider framework.
 
 The naming and numbering conventions for Momentum Science Configurations continue the heritage of the Unified Model ecosystem. Examples include:
 
-* **GC6** — the Global Coupled Science Configuration,
-* **RAL4** — the Regional Atmosphere and Land configuration.
+* **GC6** - the Global Coupled Science Configuration,
+* **RAL4** - the Regional Atmosphere and Land configuration.
 
 These are among the first Science Configurations to use LFRic Atmosphere within the Momentum Framework.
 
