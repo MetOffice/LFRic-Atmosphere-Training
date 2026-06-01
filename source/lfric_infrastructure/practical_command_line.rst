@@ -240,7 +240,7 @@ first:
 
    cd applications/lfric_atm/example
 
-1. Open ``applications/lfric_atm/example/configuration.nml`` and add the
+1. Open ``configuration.nml`` and add the
    ``lfric_averages`` file to ``diag_active_files``:
 
    .. code-block:: fortran
@@ -267,7 +267,7 @@ first:
 
       mv lfric_averages.nc lfric_averages_12h.nc
 
-5. Open ``applications/lfric_atm/example/iodef.xml`` and find the
+5. Open ``iodef.xml`` and find the
    ``lfric_averages`` file definition.
 
 6. Change its ``output_freq`` from ``12h`` to ``6h`` so that averaged fields
