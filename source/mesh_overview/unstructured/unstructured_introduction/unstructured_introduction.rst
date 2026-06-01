@@ -256,7 +256,9 @@ toolkit implemented in C++ and can use GPU acceleration for interactive
 rendering. GeoVista adds geospatial and cartographic helpers on top
 of PyVista, performing a role similar to Cartopy for map-aware visualisation.
 
-While Matplotlib and Cartopy have traditionally been used for structured data, these tools do not scale well and struggle to handle high-resolution unstructured meshes.
+While Matplotlib and Cartopy have traditionally been used for
+structured data, these tools do not scale well and struggle to
+handle high-resolution unstructured meshes.
 
 For instance, a C48 mesh has approximately 13,000 faces, and a C1048 mesh (approximately 9.55 km grid spacing at the equator) would require excessive computation and memory resources for Matplotlib and Cartopy. It would take them around 13.5s to render a C48 and 2h for a C1048! With PyVista, a C48 mesh can be rendered in 369 ms, while a C1048 mesh takes 3.87 seconds.
 
