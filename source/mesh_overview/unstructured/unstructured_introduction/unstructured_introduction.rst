@@ -184,7 +184,9 @@ The main resources for the tools and standards shown in :numref:`fig-mesh-unstru
 * **GeoVista**: `GeoVista documentation <https://geovista.readthedocs.io/>`_, `GeoVista on GitHub <https://github.com/bjlittle/geovista>`_
 * **VTK**: `VTK project page <https://vtk.org/>`_, `VTK source repository <https://gitlab.kitware.com/vtk/vtk>`_
 
-Despite the use of compiled languages such as Fortran and C++ in parts of the scientific Python stack, Python serves as the interface for data interaction with these tools during user workflows.
+Despite the use of compiled languages such as Fortran and C++ in parts of the
+scientific Python stack, Python serves as the interface for data interaction
+with these tools during user workflows.
 
 A widely used tool for handling scientific data is Iris. Iris is a powerful library that facilitates the analysis of meteorological and climate data, and it is specifically designed to work with both structured and unstructured grids. It offers a range of functions that simplify the manipulation and visualisation of data, making it a key component in many data processing workflows.
 
