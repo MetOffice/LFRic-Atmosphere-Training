@@ -239,7 +239,10 @@ Key features of regridding include:
 
    Regridding data from an unstructured mesh to a structured grid
 
-The regridding tools discussed above are documented by the `ESMF user guide <https://earthsystemmodeling.org/docs/release/latest/ESMF_usrdoc/>`_, `ESMF source repository <https://github.com/esmf-org/esmf>`_, and `iris-esmf-regrid documentation <https://iris-esmf-regrid.readthedocs.io/en/latest/>`_.
+The regridding tools discussed above are documented by the 
+`ESMF user guide <https://earthsystemmodeling.org/docs/release/latest/ESMF_usrdoc/>`_,
+`ESMF source repository <https://github.com/esmf-org/esmf>`_, and
+`iris-esmf-regrid documentation <https://iris-esmf-regrid.readthedocs.io/en/latest/>`_.
 
 Visualising unstructured data
 +++++++++++++++++++++++++++++
