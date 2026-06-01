@@ -19,3 +19,4 @@ The aim of this practical is to gain experience in running and analysing limited
    navigation/navigation.rst
    plotting/plotting.rst
    experiments/index.rst
+   test/test.rst
