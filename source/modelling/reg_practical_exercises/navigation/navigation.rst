@@ -1,11 +1,12 @@
 ************************************
-Navigating a Regional LFRic workflow
+Navigating a Regional Nesting Suite
 ************************************
 
-In this practical you will explore the Met Office Science Repository Service, checkout a workflow and explore the  workflow.
+Once the regional nesting suite u-by395 is copied, you can navigae the suite using the ``rose edit`` command 
 
 Exercise 1: Find the appropriate workflow
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 
 Exercise 2: Explore tasks in a Regional LFRic workflow
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
