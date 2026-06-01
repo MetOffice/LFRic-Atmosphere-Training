@@ -201,7 +201,11 @@ Iris is a Python-based ecosystem and package used for the manipulation of LFRic 
 It is open-source and has been included in other tools, such as ESMValTool and MetPlus, which are based on it.
 Iris offers a unified view of data as cubes and supports metadata-aware processing. It provides analysis capabilities in mathematics, statistics, large data handling, and regridding. For visualisation, Iris relies on Matplotlib and Cartopy.
 
-The core of Iris is built around CF and NumPy. CF (Climate and Forecast) conventions allow Iris to work with the encoding of climate and forecast data stored in netCDF files. NumPy provides efficient array operations implemented in compiled code and linked numerical libraries, avoiding the performance limits of pure Python loops.
+The core of Iris is built around CF and NumPy. CF (Climate and Forecast) 
+conventions allow Iris to work with the encoding of climate and forecast
+data stored in netCDF files. NumPy provides efficient array operations
+implemented in compiled code and linked numerical libraries, avoiding
+the performance limits of pure Python loops.
 
 NumPy facilitates the mathematical operations required for large datasets. Operations involving substantial numerical processing are offloaded to efficient compiled implementations, while Python remains the user-facing interface.
 
