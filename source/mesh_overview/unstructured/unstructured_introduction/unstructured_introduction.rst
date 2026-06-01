@@ -207,7 +207,10 @@ data stored in netCDF files. NumPy provides efficient array operations
 implemented in compiled code and linked numerical libraries, avoiding
 the performance limits of pure Python loops.
 
-NumPy facilitates the mathematical operations required for large datasets. Operations involving substantial numerical processing are offloaded to efficient compiled implementations, while Python remains the user-facing interface.
+NumPy facilitates the mathematical operations required for large
+datasets. Operations involving substantial numerical processing
+are offloaded to efficient compiled implementations, while Python
+remains the user-facing interface.
 
 Regridding unstructured data
 ++++++++++++++++++++++++++++
