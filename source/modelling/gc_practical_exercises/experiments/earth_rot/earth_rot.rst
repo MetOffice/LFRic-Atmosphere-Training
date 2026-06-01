@@ -1,6 +1,6 @@
-********************************
+*********************************
 Halving the rotation of the Earth
-********************************
+*********************************
 
 In this experiment, you will halve the rotation rate of the Earth to observe
 its effect on the model climate.
