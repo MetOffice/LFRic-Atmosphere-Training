@@ -302,9 +302,19 @@ Matplotlib would require.
 GeoVista - basics and scope
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-GeoVista is an open-source Python package that adds cartographic capabilities to PyVista, fulfilling a role analogous to Cartopy in the structured-grid world.
-It helps transform geospatial data into PyVista meshes for interactive 3D rendering, including unstructured meshes such as cubed-sphere LFRic output.
+GeoVista is an open-source Python package that adds cartographic
+capabilities to PyVista, fulfilling a role analogous to Cartopy
+in the structured-grid world.
+It helps transform geospatial data into PyVista meshes for
+interactive 3D rendering, including unstructured meshes such as
+cubed-sphere LFRic output.
 
-GeoVista supports longitude-latitude data, unstructured meshes, coastline overlays, texture mapping, and regional extraction (e.g. cropping a cubed-sphere dataset to a specific geographic region).
-Its current projection support is more limited than Cartopy's but includes common geographic rendering workflows and selected projected outputs.
-Because GeoVista renders through PyVista and VTK, it benefits from the same rendering stack when displaying the high face-counts associated with operational LFRic resolutions.
+GeoVista supports longitude-latitude data, unstructured meshes,
+coastline overlays, texture mapping, and regional extraction
+(e.g. cropping a cubed-sphere dataset to a specific geographic region).
+Its current projection support is more limited than
+Cartopy's but includes common geographic rendering workflows
+and selected projected outputs.
+Because GeoVista renders through PyVista and VTK, it benefits from
+the same rendering stack when displaying the high face-counts
+associated with operational LFRic resolutions.
