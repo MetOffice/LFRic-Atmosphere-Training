@@ -262,7 +262,10 @@ handle high-resolution unstructured meshes.
 
 For instance, a C48 mesh has approximately 13,000 faces, and a C1048 mesh (approximately 9.55 km grid spacing at the equator) would require excessive computation and memory resources for Matplotlib and Cartopy. It would take them around 13.5s to render a C48 and 2h for a C1048! With PyVista, a C48 mesh can be rendered in 369 ms, while a C1048 mesh takes 3.87 seconds.
 
-Unstructured visualisation tools include `VTK <https://vtk.org/>`_, a GPU-accelerated toolkit for visualisation and mesh processing, and `ParaView <https://www.paraview.org/>`_, a parallel visualisation application. PyVista provides a high-level Python interface for VTK, and GeoVista provides geospatial helpers for PyVista.
+Unstructured visualisation tools include `VTK <https://vtk.org/>`_,
+a GPU-accelerated toolkit for visualisation and mesh processing, and
+`ParaView <https://www.paraview.org/>`_, a parallel visualisation application. PyVista provides a high-level Python interface for VTK, and GeoVista provides
+geospatial helpers for PyVista.
 
 See the subsections below for detailed package summaries and links.
 
