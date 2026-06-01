@@ -247,7 +247,8 @@ The regridding tools discussed above are documented by the
 Visualising unstructured data
 +++++++++++++++++++++++++++++
 
-In traditional structured grid systems, data is plotted in 2D using Matplotlib. Cartopy, a tool used for cartographic elements, assists in this process.
+In traditional structured grid systems, data is plotted in 2D using
+Matplotlib. Cartopy, a tool used for cartographic elements, assists in this process.
 
 For unstructured grid visualisation, PyVista provides Python access to VTK's rendering and mesh-processing capabilities. VTK is a versatile toolkit implemented in C++ and can use GPU acceleration for interactive rendering. GeoVista adds geospatial and cartographic helpers on top of PyVista, performing a role similar to Cartopy for map-aware visualisation.
 
