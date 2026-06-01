@@ -29,7 +29,7 @@ Let’s start by changing the run length of the model. The current setting is fo
     
 Change the resolution
 ---------------------
-Next, let’s change the model resolution. Navigate to the suite conf > template variables tab. Here you will find the resolution settings. The current setting is for a 2.5 degree resolution C96. Change this to C48.
+Next, let’s change the model resolution. Navigate to the suite conf > template variables tab. Here you will find the resolution settings. What are the current settings? Make sure you change the atmospheric horizontal resolution to C64 and the ocean resolution to eORCA1.
 Save your changes and exit the Rose GUI.
 
 Running the edited workflow

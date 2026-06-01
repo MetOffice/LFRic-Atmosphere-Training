@@ -12,7 +12,7 @@ Experiments with Global Models
 
    * What **diagnostic** would you plot to see the change?
 
-.. Caution:: If you decide to test your own experiment with a code or configuration change, be ready to do lots of debugging! If you want an example which is tried and tested, use the given examples below.
+.. Note:: If you decide to test your own experiment with a code or configuration change, be ready to do lots of debugging! If you want an example which is tried and tested, use the given examples below.
 
 .. admonition:: Real World Example: Snow Albedo Tuning in HadGEM3 GC3.1
 

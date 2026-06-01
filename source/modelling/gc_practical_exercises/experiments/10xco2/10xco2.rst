@@ -17,30 +17,27 @@ Step 2: Edit the configuration file
 ===================================
 1. Open ``rose-app.conf`` in a text editor of your choice.
 2. Search for the ``co2_mix_ratio`` key (located under the
-   ``[namelist:well_mixed_gases]`` section).
-3. Change the value from ``5.60353e-04`` (present-day CO2) to ``5.60353e-03``
+   ``[namelist:radiative_gases]`` section).
+3. Change the value from ``5.6062e-04`` (present-day CO2) to ``5.6062e-03``
    (10x present-day CO2), as highlighted below.
 
 .. code-block:: ini
    :caption: trunk/app/lfric_atm/rose-app.conf
-   :emphasize-lines: 6
+   :emphasize-lines: 9
 
-   [namelist:well_mixed_gases]
-    cfc113_mix_ratio=0.0
-    cfc11_mix_ratio=0.0
-    cfc12_mix_ratio=4.3919e-09
-    ch4_mix_ratio=9.8200e-07
-    co2_mix_ratio=5.6062e-03
-    hcfc22_mix_ratio=0.0
-    hfc134a_mix_ratio=3.6811e-10
-    n2_mix_ratio=0.7553
-    n2o_mix_ratio=4.7957e-07
-    o2_mix_ratio=0.2314
-    so2_mix_ratio=0.0
+   [namelist:radiative_gases]
+   ch4_mix_ratio=9.8200e-07
+   ch4_rad_opt='constant'
+   !!co2_clim_fcg_levls=
+   !!co2_clim_fcg_nyears=
+   !!co2_clim_fcg_rates=
+   !!co2_clim_fcg_years=
+   co2_mix_ratio=5.6062e-04
+   co2_rad_opt='constant'
 
 Step 3: Run the model and check the output
 ==========================================
 
-Now that you have increased the CO2 concentration, run the model using what you have learnt in the previous exercises. After the model has completed, check the output files to observe the impact of the increased CO2 on the model climate. You can use tools like ``ncdump`` or ``ncks`` to inspect the contents of the output NetCDF files and verify the changes.
+Now that you have increased the CO2 concentration, run the model using what you have learnt in the previous exercises. After the model has completed, check the output files to observe the impact of the increased CO2 on the model climate. You can use tools like ``xconv`` or ``python`` to inspect the contents of the output NetCDF files and verify the changes.
 
 You should now have successfully completed the CO2 x 10 experiment!
