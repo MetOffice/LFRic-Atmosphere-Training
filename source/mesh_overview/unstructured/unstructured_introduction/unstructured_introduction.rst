@@ -274,14 +274,28 @@ See the subsections below for detailed package summaries and links.
 PyVista - basics and scope
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-PyVista is an open-source Python library that provides a high-level interface to `VTK <https://vtk.org/>`_ (Visualization Toolkit), a powerful C++ library for 3D visualisation and mesh processing.
-In the context of LFRic data, PyVista replaces Matplotlib for rendering unstructured meshes, delivering GPU-accelerated rendering that scales to high-resolution datasets.
+PyVista is an open-source Python library that provides a high-level
+interface to `VTK <https://vtk.org/>`_ (Visualization Toolkit), a
+powerful C++ library for 3D visualisation and mesh processing.
+In the context of LFRic data, PyVista replaces Matplotlib for rendering
+unstructured meshes, delivering GPU-accelerated rendering that
+scales to high-resolution datasets.
 
-PyVista exposes VTK's capabilities through a NumPy-friendly API, allowing scientific Python users to work with 3D geometry without writing low-level C++ code.
-It supports interactive rendering in Jupyter notebooks as well as batch (off-screen) rendering for automated workflows.
-PyVista also provides a rich set of mesh filters, such as slicing, contouring, and interpolation, making it suitable for both visualisation and computational geometry tasks.
+PyVista exposes VTK's capabilities through a NumPy-friendly API,
+allowing scientific Python users to work with 3D geometry without
+writing low-level C++ code.
+It supports interactive rendering in Jupyter notebooks as well as
+batch (off-screen) rendering for automated workflows.
+PyVista also provides a rich set of mesh filters, such as slicing,
+contouring, and interpolation, making it suitable for both
+visualisation and computational geometry tasks.
 
-The performance advantage of PyVista over Matplotlib becomes significant at LFRic resolutions: a C48 mesh (approximately 13,000 faces) renders in around 370 ms with PyVista, compared to approximately 13.5 seconds with Matplotlib, and a C1048 mesh renders in under 4 seconds rather than the roughly 2 hours Matplotlib would require.
+The performance advantage of PyVista over Matplotlib becomes
+significant at LFRic resolutions: a C48 mesh (approximately 13,000
+faces) renders in around 370 ms with PyVista, compared to
+approximately 13.5 seconds with Matplotlib, and a C1048 mesh
+renders in under 4 seconds rather than the roughly 2 hours
+Matplotlib would require.
 
 .. _geovista.basics:
 
