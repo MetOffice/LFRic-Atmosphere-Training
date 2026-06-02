@@ -32,4 +32,4 @@ jobs:
 
       - name: Test documentation building
         run: |
-          uv run make clean html linkcheck SPHINXOPTS='-Wn -D linkcheck_request_headers={"*":{"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}}'
+          uv run make clean html linkcheck SPHINXOPTS='-Wn -D linkcheck_request_headers.*.User-Agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"'
