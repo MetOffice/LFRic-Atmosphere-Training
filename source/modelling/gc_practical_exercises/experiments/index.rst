@@ -32,3 +32,5 @@ Now use the following practical exercises to explore different experiment config
 
    add_diag/add_diag.rst
    earth_rot/earth_rot.rst
+   10xco2/10xco2.rst
+   add_diag/add_diag.rst
