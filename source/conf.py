@@ -185,6 +185,7 @@ linkcheck_ignore = [
     'https://github.com/MetOffice/momentum_user_training.example*',
     'https://agupubs.onlinelibrary.wiley.com/*',# inaccessible from GH Actions
     r'https://github\.com/MetOffice/LFRic-Atmosphere-Training.*',  # GitHub linkcheck can fail in CI (rate limiting/403)
+    r'https://abilitynet\.org\.uk/?$',          # anti-bot checks can intermittently return 415 in CI
 ]
 
 # Add hyperlinks include file to avoid repeated links.
