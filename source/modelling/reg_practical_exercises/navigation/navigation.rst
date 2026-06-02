@@ -26,11 +26,6 @@ Launch the Rose editor by running:
 - The ``&`` at the end runs the GUI in the background, so your terminal remains available for other commands.
 
 Step 3: Setting Up the Regional Nesting Suite
-=====================================
-
-Once the GUI is open, you can begin configuring the suite for your specific experiment or run.
-
-Step 3: Setting Up the Regional Nesting Suite
 =============================================
 
 Once the GUI is open, you can begin configuring the suite for your specific experiment or run.
