@@ -178,13 +178,22 @@ html_js_files = ['nav-collapse.js', 'accessibility.js']
 # from public CI: Cylc Review is an internal hostname and the OASIS site serves
 # an incomplete certificate chain to Python/OpenSSL linkcheck clients.
 linkcheck_ignore = [
-    'https://github.com/MetOffice/momentum_user_training.example_lfric_workflow/issues/2',  # an example (but does not exist) link appears in source/lfric_infrastructure/practical_stem_test.rst
-    r'^https?://abilitynet\.org\.uk(?:/.*)?$',                                              # anti-bot checks can intermittently return 415 in CI
-    r'^https?://agupubs\.onlinelibrary\.wiley\.com(?:/.*)?$',                               # inaccessible from GH Actions, probably anti-bot
-    r'^https?://cylchub(?:/.*)?$',                                                          # internal to Met Office
-    r'^https?://github\.com/MetOffice/jules(?:/.*)?$',                                      # private repo
-    r'^https?://github\.com/MetOffice/LFRic-Atmosphere-Training(?:/.*)?$',                  # private repo
-    r'^https?://oasis\.cerfacs\.fr(?:/.*)?$',                                               # opening in Chrome is OK, but in Python it would complain "unable to get local issuer certificate". Possibly related to certifi
+    # an example (but non-existing) link appears in
+    # source/lfric_infrastructure/practical_stem_test.rst
+    'https://github.com/MetOffice/momentum_user_training.example_lfric_workflow/issues/2',
+    # anti-bot checks can intermittently return 415 in CI
+    r'^https?://abilitynet\.org\.uk(?:/.*)?$',
+    # inaccessible from GH Actions, probably anti-bot
+    r'^https?://agupubs\.onlinelibrary\.wiley\.com(?:/.*)?$',
+    # internal to Met Office
+    r'^https?://cylchub(?:/.*)?$',
+    # private repos
+    r'^https?://github\.com/MetOffice/jules(?:/.*)?$',
+    r'^https?://github\.com/MetOffice/LFRic-Atmosphere-Training(?:/.*)?$',
+    # opening in Chrome is OK, but in Python it would complain
+    # "unable to get local issuer certificate".
+    # Possibly related to certifi
+    r'^https?://oasis\.cerfacs\.fr(?:/.*)?$',
 ]
 
 # Add hyperlinks include file to avoid repeated links.
