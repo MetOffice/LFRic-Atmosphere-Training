@@ -64,19 +64,15 @@ The following quiz reviews key concepts introduced in this chapter. Each questio
    1. [ ] Latitudes disappear near the poles
        > Incorrect! grids suffer from distortion.
 
-   ## What are some solutions to the problem of polar singularities in structured grids? (select all that apply)
-   - [ ] Using larger grid cells near the poles
-      > This doesn't solve the singularity problem.
-   - [x] Switching to an unstructured mesh like the cubed-sphere
-      > Correct! Cubed-sphere meshes eliminate pole singularities.
-   - [ ] Ignoring data near the poles
-      > Not a viable solution—this just discards valuable data.
-   - [ ] Replacing grid points with 3D coordinates
-      > Changing coordinate representation doesn't remove pole distortion.
-   - [x] Describing a reduced (or thinned) Gaussian grid as used at European Centre for Medium-Range Weather Forecasts  (ECMWF)
-      > Correct! Thinned grids reduce grid point density near the poles to manage singularities.
-   - [x] Rotating the pole
-      > Correct! Pole rotation can shift singularities away from important analysis areas.
+   ## What approach does this chapter introduce for addressing polar singularities in structured grids?
+   1. [ ] Making the pole cells larger while keeping the same latitude-longitude structure
+       > Incorrect. The chapter explains that the compression near the poles is a limitation of the structured-grid layout.
+   1. [x] Moving to an unstructured mesh such as the cubed-sphere
+       > Correct! The cubed-sphere avoids the polar singularity by mapping six square faces onto the sphere.
+   1. [ ] Ignoring data near the poles
+       > No. Discarding polar data does not address the underlying grid problem.
+   1. [ ] Replacing grid values with time coordinates
+       > Incorrect. Changing the type of coordinate stored in the data would not remove the spatial distortion.
 
    ## What is a challenge of using cubed-sphere unstructured meshes?
    1. [ ] They reintroduce polar singularities

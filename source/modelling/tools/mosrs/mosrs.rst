@@ -1,61 +1,118 @@
-**************
-MOSRS Overview
-**************
+.. _mosrs-overview:
 
-The Met Office Science Repository Service (MOSRS) is a platform used to manage and store scientific software and related resources developed by the Met Office and its collaborators. It provides version control, access management, and collaboration tools for a range of scientific projects, including atmospheric and climate modelling.
+*******************
+MOSRS/SRS Overview
+*******************
 
-Key features of MOSRS include:
+The Met Office Science Repository Service (MOSRS) and the wider Science
+Repository Service (SRS) have historically hosted Met Office science code,
+workflow repositories, Trac tickets, wiki pages, and Rosie workflow metadata.
+Many older Rose/Cylc workflows, documents, and examples still refer to this
+ecosystem.
 
-* **Centralized Repository:** Stores source code, documentation, and configuration files for various science projects.
-* **Access Control:** Manages user permissions to ensure secure and appropriate access to resources.
-* **Collaboration:** Facilitates collaboration between scientists, developers, and external partners.
-* **Documentation:** Hosts comprehensive documentation for science configurations, model development, and workflows.
-* **Issue Tracking:** Integrates with ticketing systems to track bugs, feature requests, and development tasks.
+.. TODO: Rewrite SRS content
+   See: https://github.com/MetOffice/LFRic-Atmosphere-Training/issues/103
 
-MOSRS is essential for ensuring reproducibility, transparency, and efficient management of scientific software and configurations within the Met Office community.
+.. important::
 
-GC Model on MOSRS
------------------
+   **SRS to GitHub**
 
-On MOSRS, the GC model and its associated science configurations are organized and maintained to support both development and operational use.
+   Most active development is now moving to GitHub.
 
-Details about the GC model on MOSRS include:
+   SRS is expected to become read-only for some or all repositories later in
+   2026, although it is expected to remain available in read-only form for a
+   long time.
 
-* **Repository Structure:** The GC model source code, configuration files, and documentation are stored in dedicated repositories. These repositories are organized by model version (e.g., UM-based or LFRic-based GC) and by release cycle.
-* **Science Configurations:** Each GC configuration defines a specific set of model settings, parameterizations, and input data for a particular scientific or operational purpose. These configurations are version-controlled and documented within MOSRS.
-* **Development Workflow:** Scientists and developers use MOSRS to collaborate on model development, propose changes, and review updates. Branching and merging workflows help manage contributions and maintain stability.
-* **Release Process:** New GC model versions and configurations are released through a controlled process, with documentation and release notes stored alongside the code.
-* **Documentation:** Detailed documentation is provided for each GC configuration, including scientific rationale, technical setup, and usage instructions. This ensures users can reproduce experiments and understand configuration differences.
-* **Integration with Wiki Tickets:** Tasks, bug reports, and feature requests related to the GC model are tracked using the MOSRS wiki ticket system, supporting transparent and organized development.
+   Some workflow dependencies remain, particularly around unique suite IDs,
+   Rosie-style discovery, and archive locations. These are expected to migrate
+   later than straightforward code repositories.
 
-By hosting the GC model on MOSRS, the Met Office ensures that model development is collaborative, traceable, and accessible to authorized users.
+   For this training, SRS/MOSRS content is retained where it is still relevant
+   to current practicals, legacy workflows, or background context.
 
-Regional Model on MOSRS
------------------------
-On MOSRS, regional model configurations are managed in dedicated repositories, organized by region, model version, and application purpose.
+Why MOSRS/SRS is still mentioned
+================================
 
-Key aspects of regional model management on MOSRS include:
+The training is being updated during a transition period. Some LFRic and
+Momentum material now points to GitHub, while some older workflows and
+supporting services still use MOSRS/SRS terminology.
 
-* **Repository Organization:** Regional model source code, configuration files, and documentation are stored in separate repositories or subdirectories, structured by region (e.g., UK, Europe) and model type.
-* **Tailored Configurations:** Each regional configuration is customized for specific geographic domains, resolution settings, and scientific objectives, supporting applications such as local weather forecasting or impact studies.
-* **Version Control:** All changes to regional configurations are tracked using version control, ensuring reproducibility and traceability of updates.
-* **Collaboration:** Scientists and developers collaborate on regional model development, sharing expertise and reviewing changes through MOSRS workflows.
-* **Documentation:** Comprehensive documentation accompanies each regional configuration, detailing scientific rationale, technical setup, and usage instructions.
-* **Integration with Tickets:** Updates, bug fixes, and enhancements for regional models are managed using the MOSRS wiki ticket system, supporting organized and transparent development.
+.. note::
 
-This approach ensures that regional model configurations are robust, well-documented, and accessible to authorized users, enabling effective scientific and operational use.
+   If you think something has become outdated please raise a ticket at 
+   https://github.com/MetOffice/LFRic-Atmosphere-Training
 
-Wiki Tickets on MOSRS
----------------------
+You may still see references to:
 
-Wiki tickets on MOSRS are used to manage and track updates, bug fixes, and feature requests for the models. They provide a transparent and organized way for developers and scientists to coordinate work, document progress, and communicate about ongoing tasks.
+* Subversion repositories and FCM keywords;
+* Trac tickets and wiki pages;
+* Rosie workflow IDs;
+* Rose suites that install code from older repository locations;
+* MASS archive paths that include suite or experiment identifiers;
+* internal documentation that has not yet been moved to GitHub-hosted docs.
 
-Typical usage of wiki tickets for updating models includes:
+These references are not a recommendation to start new work in MOSRS/SRS where
+a GitHub repository is available. They are included because learners may still
+encounter them in current workflows, older examples, or internal support
+material.
 
-* **Creating a Ticket:** When a new issue, enhancement, or update is needed for a model or configuration, a ticket is created in the MOSRS wiki ticket system. The ticket should describe the problem or proposed change, relevant background, and any supporting information.
-* **Assigning and Prioritizing:** Tickets can be assigned to specific team members and prioritized based on urgency or project timelines.
-* **Tracking Progress:** As work progresses, ticket comments and status updates are used to document discussions, decisions, and implementation steps. This ensures all contributors are informed and can collaborate effectively.
-* **Linking to Code Changes:** Tickets are often linked to specific branches or commits in the repository, providing traceability between the ticket and the code or configuration updates.
-* **Review and Closure:** Once the update is complete and reviewed, the ticket is closed with a summary of the resolution and any relevant documentation links.
+How to interpret the transition
+===============================
 
-Using wiki tickets ensures that updates to models are well-documented, reviewed, and traceable, supporting reproducible and collaborative development within the MOSRS environment.
+.. list-table::
+   :header-rows: 1
+
+   * - Area
+     - Current course guidance
+   * - Active code development
+     - Use GitHub where the repository has migrated. Work through branches,
+       commits, pull requests, reviews, and automated checks.
+   * - Existing MOSRS/SRS code or documentation
+     - Treat it as legacy or transitional unless project guidance says
+       otherwise.
+   * - Trac tickets
+     - In migrated projects, create GitHub issues for new work. Older Trac
+       tickets may still be useful historical references.
+   * - Rose/Cylc workflows
+     - Follow the practical instructions. Some workflows are already stored in
+       GitHub; others may still depend on Rosie, FCM, or SRS-era assumptions.
+   * - Archive and discovery metadata
+     - Be aware that Rosie IDs and MASS archive paths do not map directly to
+       GitHub repositories and branches. This is one reason workflow migration
+       is being handled carefully.
+   * - External partners
+     - Some internal Met Office links may not be accessible. Use the public
+       GitHub material where available and follow your local access route for
+       restricted repositories or services.
+
+Workflow migration context
+==========================
+
+Normal code repositories and Rose/Cylc workflows have different migration
+challenges. Historic Rosie workflows have used short identifiers not only for
+version control, but also for experiment tracking, discovery, metadata, plot
+labelling, and archive locations. GitHub repositories, branches, commits, and
+tags provide a different model.
+
+The expected direction is to use fewer, better-named workflow repositories,
+with Git branches and commits used for ordinary development. New repositories
+or forks may still be needed when a workflow has a genuinely separate long-term
+line of development.
+
+Where a workflow relies heavily on Rosie IDs, Rosie discovery metadata, or
+MASS archive paths based on suite names, migration may require additional
+project-specific guidance. This is why the course still mentions MOSRS/SRS in
+places even though GitHub is the primary direction for active development.
+
+What you should do in this course
+=================================
+
+For the practical exercises:
+
+* follow the checkout instructions exactly;
+* use GitHub where the instructions clone a GitHub repository;
+* do not replace GitHub instructions with old MOSRS/SRS equivalents;
+* treat MOSRS/SRS references as legacy context unless the practical explicitly
+  tells you to use them;
+* ask your project contact or local support route if you need access to
+  restricted Met Office services.

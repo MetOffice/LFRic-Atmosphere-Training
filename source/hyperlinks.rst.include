@@ -9,6 +9,12 @@
 
 .. Paths within repositories
 
+.. _LFRic Apps applications: https://github.com/MetOffice/lfric_apps/tree/main/applications
+.. _LFRic Atmosphere application: https://github.com/MetOffice/lfric_apps/tree/main/applications/lfric_atm
+.. _LFRic Apps science code: https://github.com/MetOffice/lfric_apps/tree/main/science
+.. _Linear model: https://github.com/MetOffice/lfric_apps/tree/main/applications/linear_model
+.. _LFRic to LFRic: https://github.com/MetOffice/lfric_apps/tree/main/applications/lfric2lfric
+.. _LFRic inputs: https://github.com/MetOffice/lfric_apps/tree/main/applications/lfricinputs
 .. _GungHo: https://github.com/MetOffice/lfric_apps/tree/main/applications/gungho_model
 .. _Model Physics: https://github.com/MetOffice/lfric_apps/tree/main/science/physics_schemes
 .. _LFRic dependencies: https://github.com/MetOffice/lfric_apps/blob/main/dependencies.yaml

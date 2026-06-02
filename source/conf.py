@@ -171,8 +171,8 @@ html_context = {
 
 html_theme = "pydata_sphinx_theme"
 html_static_path = ['_static']
-html_css_files = ['nav-collapse.css']
-html_js_files = ['nav-collapse.js']
+html_css_files = ['nav-collapse.css', 'accessibility.css']
+html_js_files = ['nav-collapse.js', 'accessibility.js']
 
 # These URLs are valid learner-facing targets, but cannot be checked reliably
 # from public CI: Cylc Review is an internal hostname and the OASIS site serves
@@ -184,6 +184,7 @@ linkcheck_ignore = [
     'https://cylchub/*',                        # inaccessible from GH Actions
     'https://github.com/MetOffice/momentum_user_training.example*',
     'https://agupubs.onlinelibrary.wiley.com/*',# inaccessible from GH Actions
+    r'https://github\.com/MetOffice/LFRic-Atmosphere-Training.*',  # GitHub linkcheck can fail in CI (rate limiting/403)
 ]
 
 # Add hyperlinks include file to avoid repeated links.

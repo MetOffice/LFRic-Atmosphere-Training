@@ -175,7 +175,7 @@ available run:
 ### Pull Request (PR) Process
 
 1. Create a well-documented PR with a description of changes.
-1. Request reviews from the the [Momentum Partnership Team](mailto:Momentum_Partnership@metoffice.gov.uk) or other maintainers.
+1. Request reviews from the [Momentum Partnership Team](mailto:Momentum_Partnership@metoffice.gov.uk) or other maintainers.
 1. Respond to feedback and make changes if required.
 1. Wait for approval and merging.
 
