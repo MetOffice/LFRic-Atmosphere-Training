@@ -31,3 +31,4 @@ This module covers how science configurations are developed, configured and run 
    med/index.rst
    gc_practical_exercises/index.rst
    reg_practical_exercises/index.rst
+   idealised_practical_exercises/index.rst
