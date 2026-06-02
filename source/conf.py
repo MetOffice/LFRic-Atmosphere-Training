@@ -183,6 +183,7 @@ linkcheck_ignore = [
     'https://github.com/MetOffice/jules',       # not fully public yet :(
     'https://cylchub/*',                        # inaccessible from GH Actions
     'https://github.com/MetOffice/momentum_user_training.example*',
+    'https://agupubs.onlinelibrary.wiley.com/*',# inaccessible from GH Actions
     r'https://github\.com/MetOffice/LFRic-Atmosphere-Training.*',  # GitHub linkcheck can fail in CI (rate limiting/403)
 ]
 

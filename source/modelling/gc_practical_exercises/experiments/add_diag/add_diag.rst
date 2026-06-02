@@ -2,44 +2,65 @@
 Adding a new diagnostic
 ***********************
 
-The atmospheric diagnostic “v component of wind on pressure levels" is missing from this model. Use the following  instructions to add it back to the configuration.
+In this exercise, you will add the atmospheric diagnostic **"v component of wind on pressure levels"** back into the model configuration. This diagnostic has been intentionally removed, and your task is to restore it by editing the relevant XML configuration file.
 
-* cd into ``app/lfric_atm/file``
-* open ``file_def_diags_user_temp.xml``
-* find ``lfric_pressure_level_tdaym``
-* add in a new field for ``v_in_w3``
+The ``v_in_w3`` field represents the northward (v) component of wind interpolated onto pressure levels. Without it, this wind component will not be written to the model output.
 
-.. code-block:: fortran
+Step 1: Navigate to the file directory
+======================================
+
+First, change into the directory that contains the diagnostic output configuration files:
+
+.. code-block:: bash
+
+   cd app/lfric_atm/file
+
+Step 2: Open the diagnostics configuration file
+================================================
+
+Open ``file_def_diags_user.xml`` in a text editor of your choice. This file defines which diagnostic fields are written to output for each field group.
+
+Step 3: Locate the pressure level output group
+==============================================
+
+Search for the field group named ``lfric_stream_g``. This group controls which fields are output on pressure levels as time-day means. You should find a block of ``<field>`` entries that includes ``u_in_w3`` (the u component of wind) but is missing ``v_in_w3``.
+
+Step 4: Add the missing field for ``v_in_w3``
+
+.. code-block:: xml
    :caption: trunk/app/lfric_atm/file/file_def_diags_user_temp.xml
-   :emphasize-lines: 3
+   :emphasize-lines: 5
 
-   <field field_ref="processed__pressure_in_w3"/>
+   <!-- Stream G - Monthly mean fields -->
+   ...
+   <field field_ref="ageofair"/>
    <field field_ref="u_in_w3"/>
    <field field_ref="v_in_w3"/>
-   <field field_ref="w_in_w3"/>
-   </field_group>
+   <field field_ref="m_v" long_name="vapour_mixing_ratio"/>
 
-Experiment 1 - CO2 x 10
-^^^^^^^^^^^^^^^^^^^^^^^
-* cd into ``app/lfric_atm``
-* open the ``rose-app.conf``
-* search for ``co2_mix_ratio``
-* change this value from 5.60353e-04 to 5.60353e-03
+Add the line ``<field field_ref="v_in_w3"/>`` to include the v component of wind in the output. Make sure to save your changes to the file.
 
-.. code-block:: fortran
-   :caption: trunk/app/lfric_atm/rose-app.conf
-   :emphasize-lines: 6
+Step 5: Run the model and check the output
+==========================================
 
-   [namelist:well_mixed_gases]
-    cfc113_mix_ratio=0.0
-    cfc11_mix_ratio=0.0
-    cfc12_mix_ratio=4.3919e-09
-    ch4_mix_ratio=9.8200e-07
-    co2_mix_ratio=5.6062e-03
-    hcfc22_mix_ratio=0.0
-    hfc134a_mix_ratio=3.6811e-10
-    n2_mix_ratio=0.7553
-    n2o_mix_ratio=4.7957e-07
-    o2_mix_ratio=0.2314
-    so2_mix_ratio=0.0
+Now that you have added the missing diagnostic, run the model using what you have learnt in the previous exercises. After the model has completed, check the output files to confirm that the ``v_in_w3`` field is now included in the pressure level diagnostics. You can use tools like ``ncdump`` or ``ncks`` to inspect the contents of the output NetCDF files and verify that the v component of wind is present.
 
+Step 6: Visualise the ``v_in_w3`` field
+========================================
+
+To quickly visualise the new diagnostic, open the NetCDF output in ``xconv`` and display a pressure-level slice of ``v_in_w3``.
+
+.. code-block:: bash
+
+   xconv lfric_stream_g.nc  # replace with your output file name
+
+In ``xconv``:
+
+#. Select the variable ``v_in_w3``.
+#. Choose a single ``time`` index (for example, the first output time).
+#. Choose one pressure level to plot.
+#. Display the field using a diverging colour scale (for example, red-blue).
+
+This gives a quick spatial check that the field is present and has realistic structure.
+
+You should now have successfully added the v component of wind back into the model output diagnostics!
