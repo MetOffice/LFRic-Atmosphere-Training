@@ -16,7 +16,7 @@ Experiments with Global Models
 
 .. admonition:: Real World Example: Snow Albedo Tuning in HadGEM3 GC3.1
 
-   `Kuhlbrodt et al. (2018) <https://doi.org/10.1029/2018MS001370>`_ describe a tuning change made during the development of the low-resolution version of HadGEM3 GC3.1:
+   `Kuhlbrodt et al. (2018) <https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2018MS001370>`_ describe a tuning change made during the development of the low-resolution version of HadGEM3 GC3.1:
 
       To achieve an acceptable simulation of Arctic sea ice thickness it proved necessary to reduce the albedo of snow on sea-ice by 2% in N96O1 for both infra-red (0.70 reduced to 0.68) and visible (0.98 to 0.96) parts of the solar spectrum, with all values well within observational constraints. This change was required due to the 1° ocean model failing to advect sufficient warm water into the Arctic Ocean through the narrow straits connecting the Atlantic with the Arctic.
 
