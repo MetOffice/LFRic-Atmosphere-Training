@@ -2,7 +2,7 @@
 The unstructured world - review quiz
 *************************************
 
-This quiz reviews the main ideas from the chapter and tests understanding of the content through multiple choice questions.
+This quiz reviews the main ideas from the chapter.
 
 .. hint::
     Each question has only one correct answer.
@@ -50,15 +50,15 @@ This quiz reviews the main ideas from the chapter and tests understanding of the
    1. [ ] All of them have the same shapes
        > No, they can vary in shape depending on geometry needs.
    
-   ## In an unstructured mesh with 5 million cells, approximately how many data points are required to describe the domain?
-   1. [ ] 5 million
-       > This underestimates the complexity—more elements are needed. Think about vertices, edges, and faces. A reasonable estimate is that around 8 data points per cell are needed, which includes: ~3–4 for edges, ~1–2 for coordinates, ~2–3 for additional metadata or spatial relationships: 5 million × 8 = 40 million data points.
-   1. [ ] 13400
-       > Far too low—this wouldn't even cover vertices. Think about vertices, edges, and faces. A reasonable estimate is that around 8 data points per cell are needed, which includes: ~3–4 for edges, ~1–2 for coordinates, ~2–3 for additional metadata or spatial relationships: 5 million × 8 = 40 million data points.
-   1. [x] 40 million
-       > Correct! Describing all nodes, edges, faces, and connectivity inflates data.
-   1. [ ] 10 million
-       > Incorrect! Is this enough to capture edges and faces too? Think about vertices, edges, and faces. A reasonable estimate is that around 8 data points per cell are needed, which includes: ~3–4 for edges, ~1–2 for coordinates, ~2–3 for additional metadata or spatial relationships: 5 million × 8 = 40 million data points.
+   ## Why does an unstructured mesh usually require more coordinate and connectivity data than a structured grid for the same domain?
+   1. [ ] The mesh is forced to align with latitude-longitude grid lines
+       > Incorrect. UGRID removes that fixed alignment, which is one reason the mesh needs explicit geometry and connectivity.
+   1. [x] Each mesh element and its relationships must be described explicitly
+       > Correct! The flexibility comes from storing the locations of mesh elements and how they connect, rather than deriving positions from regular array indices.
+   1. [ ] The same bounds can be reused for every cell
+       > No. Reusing regular bounds is closer to the structured-grid case.
+   1. [ ] Unstructured meshes avoid storing edges and faces
+       > Incorrect. Nodes, edges, faces, and connectivity are central to describing UGRID meshes.
 
    ## Is the following sentence true or false: Unstructured meshes reduce the amount of coordinate data needed compared to structured grids.
    1. [x] false
@@ -66,53 +66,35 @@ This quiz reviews the main ideas from the chapter and tests understanding of the
    1. [ ] true
        > Incorrect! More coordinate data is needed for flexibility and accuracy.
 
-   ## Describe the “newspaper” analogy used to compare structured and unstructured data.
-   1. [x] Structured data is like a pamphlet (compact and simple), while unstructured data is like a novel (detailed and complex).
-       > Correct! A pamphlet is compact and ordered, just like structured data.
-   1. [ ] Structured data is like a handwritten journal, while unstructured data is like a spreadsheet with labelled rows.
-       > Hint: Does this clarify complexity and structure?
-   1. [ ] Structured data is like a comic book with speech bubbles, while unstructured data is like a dictionary.
-       > This analogy doesn’t meaningfully reflect mesh types.
-   1. [ ] Structured data is like a calendar (organized and dated), while unstructured data is like a stack of letters with no order.
-       > While plausible, it’s not the analogy used here.
+   ## What does the newspaper analogy illustrate about structured and unstructured data?
+   1. [x] Unstructured data can describe the domain in more detail, but that detail comes with a higher data cost.
+       > Correct! The comparison is about the trade-off between compact regular structure and richer explicit description.
+   1. [ ] Unstructured data is always smaller because it avoids metadata.
+       > Incorrect. Unstructured data usually needs additional geometry and connectivity information.
+   1. [ ] Structured data is more flexible because every element is described independently.
+       > No. Independent element descriptions are a feature of the unstructured approach.
+   1. [ ] Structured and unstructured data have the same storage and processing costs.
+       > Incorrect. The chapter highlights important differences in data volume and processing complexity.
 
-   ## In a C16 mesh, how many cells exist per horizontal layer?
-   1. [x] 1536
-       > Correct! C16 meshes have 1536 horizontal cells.
-   1. [ ] 256
-       > Incorrect! C16 implies higher density than 256 cells. The “C” in C16 refers to cubed-sphere grids. These grids map the surface of a sphere (like Earth) into six faces. Each face is then subdivided into a structured grid of N × N cells, where N is the resolution parameter. For a C16 mesh, this means each face has 16 × 16 = 256 cells. Since there are 6 faces, the total number of horizontal cells is: 6x16x16 = 1536.
-   1. [ ] 16
-       > No.This refers to resolution tier, not literal cell count. The “C” in C16 refers to cubed-sphere grids. These grids map the surface of a sphere (like Earth) into six faces. Each face is then subdivided into a structured grid of N × N cells, where N is the resolution parameter. For a C16 mesh, this means each face has 16 × 16 = 256 cells. Since there are 6 faces, the total number of horizontal cells is: 6x16x16 = 1536.
-   1. [ ] 6
-       > Far too low for any realistic mesh resolution. The “C” in C16 refers to cubed-sphere grids. These grids map the surface of a sphere (like Earth) into six faces. Each face is then subdivided into a structured grid of N × N cells, where N is the resolution parameter. For a C16 mesh, this means each face has 16 × 16 = 256 cells. Since there are 6 faces, the total number of horizontal cells is: 6x16x16 = 1536.
+   ## A cubed-sphere Cn mesh has 6 x n x n horizontal cells. What happens to the horizontal cell count when n is doubled from C16 to C32?
+   1. [ ] It stays the same because there are still six cube faces
+       > Incorrect. The number of cube faces stays the same, but each face is subdivided into more cells.
+   1. [ ] It doubles
+       > Not quite. The cell count depends on n squared, so doubling n has a larger effect than doubling the count.
+   1. [x] It becomes four times larger
+       > Correct! The count depends on n squared: 6 x 32 x 32 is four times 6 x 16 x 16.
+   1. [ ] It becomes six times larger
+       > Incorrect. The factor of six is already present in both meshes because both have six cube faces.
 
-   ## Fill in the Blank: A C448 mesh has an approximate horizontal resolution of _______ km.
-   1. [ ] 26.6
-       > Incorrect! C448 implies higher resolution. The horizontal resolution of a C448 mesh can be approximated using the following relationship: Resolution (km)≈Earth’s circumference (km)/Total number of grid points around the equator
-         Earth's circumference: Approximately 40,000 km,      
-         Cubed-sphere structure: There are 6 faces of a cube, each face has N × N grid cells, where N = 448 for C448.
-         These faces are arranged so that there are effectively 4N grid points wrapping around the equator.
-         Number of grid cells around the equator: 4×𝑁=4×448=1792.          
-         Resolution estimate: 40,000 km/1792 ≈ 22.3 km.  
-         However, due to projection effects, the effective resolution is often slightly better than this estimate, so a C448 mesh has an approximate horizontal resolution of 20.6 km. 
-   1. [ ] 16.2
-       > Too fine for C448. The horizontal resolution of a C448 mesh can be approximated using the following relationship: Resolution (km)≈Earth’s circumference (km)/Total number of grid points around the equator
-         Earth's circumference: Approximately 40,000 km,      
-         Cubed-sphere structure: There are 6 faces of a cube, each face has N × N grid cells, where N = 448 for C448.
-         These faces are arranged so that there are effectively 4N grid points wrapping around the equator.
-         Number of grid cells around the equator: 4×𝑁=4×448=1792.          
-         Resolution estimate: 40,000 km/1792 ≈ 22.3 km.  
-         However, due to projection effects, the effective resolution is often slightly better than this estimate, so a C448 mesh has an approximate horizontal resolution of 20.6 km. 
-   1. [ ] 36.2
-       > Incorrect! C448 implies higher resolution. The horizontal resolution of a C448 mesh can be approximated using the following relationship: Resolution (km)≈Earth’s circumference (km)/Total number of grid points around the equator
-         Earth's circumference: Approximately 40,000 km,      
-         Cubed-sphere structure: There are 6 faces of a cube, each face has N × N grid cells, where N = 448 for C448.
-         These faces are arranged so that there are effectively 4N grid points wrapping around the equator.
-         Number of grid cells around the equator: 4×𝑁=4×448=1792.          
-         Resolution estimate: 40,000 km/1792 ≈ 22.3 km.  
-         However, due to projection effects, the effective resolution is often slightly better than this estimate, so a C448 mesh has an approximate horizontal resolution of 20.6 km. 
-   1. [x] 20.6
-       > Correct! C448 approximates 20.6 km horizontal resolution.
+   ## The cubed-sphere resolution table shows that larger C numbers have smaller representative length scales. What is the practical implication of moving to a larger C number?
+   1. [ ] The mesh becomes coarser, so there are fewer elements to process.
+       > Incorrect. Larger C numbers represent finer meshes, not coarser ones.
+   1. [x] The mesh becomes finer, so post-processing and visualisation usually handle more elements.
+       > Correct! Finer meshes provide more spatial detail, but they also increase the amount of data and computational work.
+   1. [ ] The mesh stops being unstructured and becomes a latitude-longitude grid.
+       > Incorrect. Increasing the C number changes the mesh resolution, not the underlying mesh type.
+   1. [ ] Regridding is no longer required because all datasets use the same mesh.
+       > No. Different datasets can still be defined on different meshes or grids.
 
    ## What is the role of Iris in the context of UGRID data?
    1. [ ] GPU rendering
@@ -165,4 +147,3 @@ This quiz reviews the main ideas from the chapter and tests understanding of the
        > Correct! Libraries like Iris and xESMF preserve metadata when properly configured.
    1. [ ] false
        > Not necessarily, correct tools retain it.
-

@@ -2,6 +2,7 @@
 
 .. _example mesh file: https://code.metoffice.gov.uk/trac/lfric_apps/browser/main/trunk/applications/lfric_atm/example
 .. _lfric example: https://github.com/MetOffice/lfric_apps/blob/main/applications/lfric_atm/example
+.. _iodef.xml example: https://github.com/MetOffice/lfric_apps/blob/main/applications/lfric_atm/example/iodef.xml
 
 .. Not migrated yet
 .. _LFRic Development Environment: https://code.metoffice.gov.uk/trac/lfric/wiki/DevelopmentEnvironment
@@ -17,7 +18,9 @@ Practical 1: Run the model from command line
 .. admonition:: Aims
 
    * Build and run the LFRic Atmosphere as a command line application.
-   * Add custom messages to the model’s standard output.
+   * Explore how model output is controlled via the ``iodef.xml`` configuration file.
+   * Modify the output configuration to change what is written and how often.
+   * Add custom messages to the model's standard output.
 
 Step 1: Compile the model
 +++++++++++++++++++++++++
@@ -100,7 +103,7 @@ The code contains an `LFRic example`_ configuration containing:
       cd applications/lfric_atm/example
 
 
-2. Run the example with a “single-column” configuration:
+2. Run the example with a "single-column" configuration:
 
    .. code-block:: console
 
@@ -116,14 +119,44 @@ The code contains an `LFRic example`_ configuration containing:
 
    * Run time profiling?
    * Checksums of model fields after the last time step (for tests)?
-   * Three NetCDF files. How to open NetCDF files is covered in the
-     :ref:`iris.basics` tutorial?
+   * NetCDF output files. How to open NetCDF files is covered in the
+     :ref:`iris.basics` tutorial.
 
-.. note::
+   Inspect the NetCDF header for the main diagnostic file:
 
-   The NetCDF output is configured by the file ``iodef.xml``
-   in the example directory. It controls the output streams,
-   filenames, written fields, and output frequency.
+   .. code-block:: console
+
+      ncdump -h lfric_diag.nc | less
+
+   ``ncdump`` is part of the NetCDF tools, available in the Met Office
+   ``lfric`` environment. On other platforms, install the NetCDF utilities or
+   use the :ref:`iris.basics` Python workflow instead.
+
+4. Explore the NetCDF output configuration:
+
+   The NetCDF output is controlled by both ``iodef.xml`` and the ``&io``
+   namelist settings in ``configuration.nml`` (see the `iodef.xml example`_
+   and :ref:`output-control`). Open both files and answer the following:
+
+   * How many ``<file>`` definitions are configured in ``iodef.xml``, and
+     what are their names?
+   * Which file definitions are enabled, disabled, or opened in read mode?
+   * Which diagnostic output files are selected by ``diag_active_files`` in
+     ``configuration.nml``?
+   * Roughly how many fields does ``lfric_diag`` write, and what are a few
+     examples? How does its field list compare with ``lfric_averages``?
+   * At what frequency is output written?
+
+   .. hint::
+      :collapsible: closed
+
+      Look for ``<file>`` elements — each defines one XIOS file. The ``name``
+      attribute gives the output filename. ``<field>`` elements nested inside
+      each ``<file>`` block list the model fields written to that file. The
+      ``output_freq`` attribute on ``<file>`` sets how often output is
+      written. The ``enabled`` and ``mode`` attributes describe the XML file
+      definition, while namelist settings such as ``diag_active_files`` and
+      ``write_initial`` control which definitions are used by this run.
 
 Step 3: Modify the Model
 ++++++++++++++++++++++++
@@ -192,3 +225,86 @@ To gain familiarity with the model:
    version control. This ensures traceability and supports collaborative
    development. You'll learn how to document and manage your code changes
    using tickets and branches in Practical 3.
+
+Step 4: Modify the Output
++++++++++++++++++++++++++
+
+Unlike the model source code, the output configuration does not require a
+recompile. You can change what is written and how often by editing
+``configuration.nml`` and ``iodef.xml``, then re-running the model.
+
+If you are not still in the example directory after recompiling, return to it
+first:
+
+.. code-block:: console
+
+   cd applications/lfric_atm/example
+
+1. Open ``configuration.nml`` and add the
+   ``lfric_averages`` file to ``diag_active_files``:
+
+   .. code-block:: fortran
+
+      diag_active_files='lfric_diag','lfric_averages',
+
+2. Re-run the model to create a baseline ``lfric_averages.nc`` file at the
+   default 12-hour output frequency:
+
+   .. code-block:: console
+
+      rm -f lfric_averages.nc
+      ../bin/lfric_atm configuration.nml > log_averages_12h.txt
+
+3. Inspect the file and note the time dimension and variable names:
+
+   .. code-block:: console
+
+      ncdump -h lfric_averages.nc | less
+
+4. Keep the baseline file so that you can compare it with the next run:
+
+   .. code-block:: console
+
+      mv lfric_averages.nc lfric_averages_12h.nc
+
+5. Open ``iodef.xml`` and find the
+   ``lfric_averages`` file definition.
+
+6. Change its ``output_freq`` from ``12h`` to ``6h`` so that averaged fields
+   are written at the same frequency as the diagnostics.
+
+7. Add the ``rho`` field to the ``lfric_averages`` file with a time average
+   operation:
+
+   .. hint::
+      :collapsible: closed
+
+      Inside the ``lfric_averages`` ``<file>`` block, add:
+
+      .. code-block:: xml
+
+         <field field_ref="rho" operation="average" />
+
+8. Re-run the model (no recompile needed):
+
+   .. code-block:: console
+
+      ../bin/lfric_atm configuration.nml > log_averages_6h.txt
+
+9. Compare the headers from the old and new averages files:
+
+   .. code-block:: console
+
+      ncdump -h lfric_averages_12h.nc | grep -E "time =|rho"
+      ncdump -h lfric_averages.nc | grep -E "time =|rho"
+
+   Check that the new ``lfric_averages.nc`` file contains a ``rho`` variable
+   and has more time records than the 12-hour baseline file. With the default
+   24-hour run, the 12-hour baseline should hold 2 time records and the 6-hour
+   file 4.
+
+.. seealso::
+
+   :ref:`output-control` explains the full ``iodef.xml`` structure, including
+   how to enable checkpoint files and how to reference fields from the LFRic
+   metadata catalogues.

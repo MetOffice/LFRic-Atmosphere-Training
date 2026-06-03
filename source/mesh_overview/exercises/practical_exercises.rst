@@ -11,6 +11,100 @@ The upstream material comes from `iris-mesh-tutorial <https://github.com/scitool
 
    notebooks/iris-mesh-tutorial/
 
+New to these tools?
+-------------------
+This practical is about working with LFRic unstructured mesh data. It uses
+Git, the command line, Conda, and JupyterLab, but it does not teach those tools
+from first principles. If any of the setup commands below are unfamiliar, use
+the resources in this section as optional preparation or as reference material
+while you work through the notebooks.
+
+The most important ideas for this practical are:
+
+* A Git repository is a version-controlled project. Cloning a repository creates
+  a local copy on your machine.
+* The terminal runs commands in a current working directory. Commands such as
+  ``cd my_directory`` and ``git clone`` depend on where you are in the file system.
+* A conda environment keeps the Python packages for this practical separate
+  from other Python installations.
+* A Jupyter kernel is the Python process that runs notebook cells. For this
+  practical, choose the ``Python (lfric-mesh)`` kernel so that the notebook uses
+  the packages installed in the setup steps below.
+
+.. list-table:: Recommended introductory resources
+   :header-rows: 1
+   :widths: 22 34 44
+
+   * - Area
+     - Use this when
+     - Recommended resource
+   * - Git and GitHub
+     - You need to understand repositories, commits, branches, remotes, or why
+       the training material is hosted on GitHub.
+     - Start with the official GitHub pages on `About GitHub and Git
+       <https://docs.github.com/en/get-started/start-your-journey/about-github-and-git>`_
+       and `Git basics <https://docs.github.com/en/get-started/git-basics>`_.
+   * - Cloning a repository
+     - You need help with the ``git clone`` command used below.
+     - Use GitHub's official `Cloning a repository
+       <https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository>`_
+       guide.
+   * - Branches and pull requests
+     - You want context for how changes are usually made and reviewed in a
+       GitHub-hosted project.
+     - Read GitHub's official `GitHub flow
+       <https://docs.github.com/en/get-started/using-github/github-flow>`_
+       guide.
+   * - Git as a version-control tool
+     - You want the Git project's own reference material, or a longer
+       beginner-friendly worked lesson.
+     - Use the official `Pro Git book
+       <https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control>`_
+       for background, or the `Software Carpentry Git novice lesson
+       <https://swcarpentry.github.io/git-novice/>`_ for a practical tutorial.
+   * - Terminal and file paths
+     - You are not yet comfortable with commands such as ``cd``, moving around
+       folders, or running commands from the correct directory.
+     - Work through the `Software Carpentry Unix Shell lesson
+       <https://swcarpentry.github.io/shell-novice/>`_. It is not specific to
+       LFRic, but it covers the command-line skills used here.
+   * - Jupyter and notebooks
+     - You are new to notebooks or want to understand what JupyterLab is before
+       running ``jupyter lab``.
+     - Start with the official `Project Jupyter documentation
+       <https://docs.jupyter.org/en/latest/>`_, then use the JupyterLab pages on
+       `Starting JupyterLab
+       <https://jupyterlab.readthedocs.io/en/stable/getting_started/starting.html>`_
+       and `The JupyterLab Interface
+       <https://jupyterlab.readthedocs.io/en/stable/user/interface.html>`_.
+   * - Notebook cells and kernels
+     - You need to understand how to run cells, switch kernels, or stop a kernel
+       that is still running.
+     - Use the official Jupyter Notebook `Notebook Basics
+       <https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/Notebook%20Basics.html>`_,
+       JupyterLab's `Notebooks
+       <https://jupyterlab.readthedocs.io/en/stable/user/notebook.html>`_, and
+       JupyterLab's `Managing Kernels and Terminals
+       <https://jupyterlab.readthedocs.io/en/stable/user/running.html>`_ pages.
+   * - Python environments
+     - You need help understanding ``conda create``, ``conda activate``, or why
+       the practical uses a named environment.
+     - Use the official conda `Getting started with conda
+       <https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html>`_
+       and `Managing environments
+       <https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html>`_
+       documentation. For the Jupyter kernel command used below, see IPython's
+       `Installing the IPython kernel
+       <https://ipython.readthedocs.io/en/stable/install/kernel_install.html>`_
+       page.
+
+If you are completely new to these tools, a useful preparation route is:
+
+1. Learn enough terminal usage to move between directories and run commands.
+2. Read the GitHub introduction to Git and practise cloning a repository.
+3. Read the JupyterLab interface and notebook basics pages.
+4. Return to this practical and follow the setup commands exactly.
+
 Get the training repository
 ---------------------------
 If you do not already have this repository locally, clone it:
@@ -35,7 +129,7 @@ For the full mesh and regridding practicals, use a conda environment:
    conda create -n lfric-mesh python=3.12 -y
    conda activate lfric-mesh
    conda install -c conda-forge esmpy -y
-   pip install -e .[mesh_tutorials]
+   python -m pip install -e '.[notebooks]'
    python -m ipykernel install --user --name lfric-mesh --display-name "Python (lfric-mesh)"
 
 Start the tutorial
@@ -46,7 +140,7 @@ Once the environment is set up:
 
    .. code-block:: console
 
-      source .venv/bin/activate
+      conda activate lfric-mesh
 
 2. Move to the tutorial notebook directory:
 
@@ -54,25 +148,25 @@ Once the environment is set up:
 
       cd notebooks/iris-mesh-tutorial/notebooks
 
-3. Start Jupyter Lab:
+3. Start JupyterLab:
 
    .. code-block:: console
 
       jupyter lab
 
-4. In Jupyter, select:
+4. In JupyterLab, select:
 
    - ``Kernel -> Change Kernel -> Python (lfric-mesh)``
 
 .. important::
-   Always launch Jupyter Lab from within ``notebooks/iris-mesh-tutorial/notebooks`` to ensure paths and imports work correctly.
+   Always launch JupyterLab from within ``notebooks/iris-mesh-tutorial/notebooks`` to ensure paths and imports work correctly.
 
 After running ``jupyter lab``, a new browser window or tab should automatically open.
 If it does not open automatically, copy the URL shown in the terminal into your browser.
 
 Recommended learning path
 -------------------------
-The notebooks are ordered by filename so they appear in sequence in Jupyter Lab.
+The notebooks are ordered by filename so they appear in sequence in JupyterLab.
 
 1. Work through the core content in this order:
 
