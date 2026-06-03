@@ -178,13 +178,22 @@ html_js_files = ['nav-collapse.js', 'accessibility.js']
 # from public CI: Cylc Review is an internal hostname and the OASIS site serves
 # an incomplete certificate chain to Python/OpenSSL linkcheck clients.
 linkcheck_ignore = [
-    r'https://cylchub/.*',
-    r'https://oasis\.cerfacs\.fr/.*',
-    'https://github.com/MetOffice/jules',       # not fully public yet :(
-    'https://cylchub/*',                        # inaccessible from GH Actions
-    'https://github.com/MetOffice/momentum_user_training.example*',
-    'https://agupubs.onlinelibrary.wiley.com/*',# inaccessible from GH Actions
-    r'https://github\.com/MetOffice/LFRic-Atmosphere-Training.*',  # GitHub linkcheck can fail in CI (rate limiting/403)
+    # an example (but non-existing) link appears in
+    # source/lfric_infrastructure/practical_stem_test.rst
+    'https://github.com/MetOffice/momentum_user_training.example_lfric_workflow/issues/2',
+    # anti-bot checks can intermittently return 415 in CI
+    r'^https?://abilitynet\.org\.uk(?:/.*)?$',
+    # inaccessible from GH Actions, probably anti-bot
+    r'^https?://agupubs\.onlinelibrary\.wiley\.com(?:/.*)?$',
+    # internal to Met Office
+    r'^https?://cylchub(?:/.*)?$',
+    # private repos
+    r'^https?://github\.com/MetOffice/jules(?:/.*)?$',
+    r'^https?://github\.com/MetOffice/LFRic-Atmosphere-Training(?:/.*)?$',
+    # opening in Chrome is OK, but in Python it would complain
+    # "unable to get local issuer certificate".
+    # Possibly related to certifi
+    r'^https?://oasis\.cerfacs\.fr(?:/.*)?$',
 ]
 
 # Add hyperlinks include file to avoid repeated links.
