@@ -99,9 +99,7 @@ LFRic data is produced on an unstructured grid. If required, it can be post-proc
 - **POSTPROCESS_NPROCS**  
   Defines the number of processors used for post-processing (e.g. ``1``).
 
-.. admonition:: 💡 Tips
-   :class: tip
-
+.. tips ::
    - Hover over the **hand icon** in the GUI or click the **settings icon** next to each option to view additional help.
    - Start with default values for training exercises before experimenting with custom configurations.
    - Running both UM and LFRic LAMs is recommended for validation and comparison during learning.
