@@ -8,3 +8,4 @@
 | liamjberrisford | Liam J Berrisford | University of Exeter  | 2026-05-26 |
 | harley-kelly    | Harley Kelly      | Met Office            | 2026-05-21 |
 | stephenworsley  | Stephen Worsley   | Met Office            | 2026-06-03 |
+| menonarathy     | Arathy Menon      | Met Office            | 2026-06-04 |
