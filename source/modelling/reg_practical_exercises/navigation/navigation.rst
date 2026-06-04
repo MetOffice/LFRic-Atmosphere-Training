@@ -22,13 +22,13 @@ Launch the Rose editor by running:
 
    rose edit &
 
-- This command opens the suite in a graphical interface, allowing you to view and modify its configuration.
+- This command opens the suite in the Rose graphical user interface, allowing you to view and modify its configuration.
 - The ``&`` at the end runs the GUI in the background, so your terminal remains available for other commands.
 
 Step 3: Setting Up the Regional Nesting Suite
 =============================================
 
-Once the GUI is open, you can begin configuring the suite for your specific experiment or run.
+Once the GUI is open, you can begin configuring the suite for your specific experiment or run by navigating through the tabs on the left side of the window .
 
 General Run Options
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
