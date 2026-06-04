@@ -15,6 +15,11 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
+      - name: Check rst source line length to be at most 93
+        run: |
+          max_line_length=$(find source -name '*.rst' -exec awk 'NF > max {max = NF} END {print max}' {} +)
+          test "${max_line_length}" -le 93
+
       - name: Install uv and Set up Python
         uses: astral-sh/setup-uv@v7
         with:
