@@ -130,19 +130,78 @@ To run the Limited Area Model, you will have to use a driving model to obtain th
 Nested Region 1 Set-UP
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Nested region set up help you to name the domain you are planning to run the limited area model for. You can slo choose the number of experiments you are planning with the model here (eg., if you are planning to run the limited area model at two different reolutions such as 4.4 and 1.5kms, then choose resolution as '2' here) 
+This section allows you to define the **nested domain** for your limited area model (LAM).
+You will specify both the **region name** and the **number of resolutions (experiments)** you want to run  (eg., if you are planning to run the limited area model at two different reolutions such as 4.4 and 1.5kms, then choose resolution as '2' here) 
 
-Then move on to the ``Resolution 1`` set-up to set the horizontal and vertical resolutions of the inner limited area domain. You will also have to give the path to the ancillaries (in the machine where you are running the model) which will be used to run the limited area model. 
+*See figure below: Nested region 1 setup*
 
-..note::
-   The ancillaries can be generated using the regional ancillary suite or if the ancillaries for your specific domain and resolution are already available, you can then copy those ancillaries to the machine of your choice. Please get in touch with Momentum_Partnerships@metoffice.gov.uk or all enquiries regarding the ancillaries. 
+.. image:: _static/1/nested_region1_setup.png
+   :alt: Nested region 1 setup interface
+   :align: center
+   :width: 80%
+
+Once this is set, move to **Resolution 1 setup** to configure each experiment.
 
 
-..tip::
-   When choosing a name for your nested region, resolution and configuration, you are free to enter anything you like as long as it does not contain spaces or periods. The idea is to choose names that are meaningful to you so that when you look back at your suite output directory in the future, you can remember what you did! For example, if you were setting up a 4.4 km resolution model over Exeter, with 70 vertical levels and using the RAL3 science configuration, appropriate names for the region, resolution and configuration would be something like “EXE”, “4p4_L70” and “ukv”, respectively. 
+Resolution 1 Set-Up
+~~~~~~~~~~~~~~~~~~
 
-Editing a Regional LFRic workflow
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+This section defines the **horizontal and vertical resolution** and links the required **ancillary data**.
+
+*See figure below: Resolution 1 setup*
+
+.. image:: _static/1/resolution1_setup.png
+   :alt: Resolution 1 setup interface
+   :align: center
+   :width: 80%
+
+.. note:: Ancillary data
+
+   The ancillaries can be generated using the regional ancillary suite.  
+   If the ancillaries for your specific domain and resolution are already available,  
+   you can copy those ancillaries to the machine of your choice.
+
+   Please get in touch with ``Momentum_Partnerships@metoffice.gov.uk``  
+   for all enquiries regarding the ancillaries.
+
+
+Config 1 Set-Up (Science Configuration)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This section allows you to configure the **science options** and **model behaviour** 
+for your limited area model experiment.
+
+*See figure below: Config 1 setup*
+
+.. image:: config1_setup.png
+   :alt: Config 1 setup interface
+   :align: center
+   :width: 80%
+
+🔍 In this panel, you will define the key scientific settings for your model run.
+
+
+.. tip:: 💡 Naming Your Region, Resolution & Configuration
+
+   When choosing a name for your nested region, resolution, and configuration,  
+   you are free to enter anything you like as long as it does not contain spaces or periods.
+
+   The idea is to choose names that are meaningful to you so that when you look 
+   back at your suite output directory in the future, you can remember what you did!
+
+   **Example:**
+
+   - Region: ``UK``
+   - Resolution: ``4p4_L70``
+   - Configuration: ``RAL3P2``
+
+   This corresponds to a 4.4 km resolution model over the UK with 70 vertical levels 
+   using the RAL3.2 science configuration.
+
+Once the limited area model is all set up, you can go ahead and run the model. 
+
+.. Note:: You can also edit the suite by editing the corrsponding .conf file in the suite directory, if you do not wish to use the Rose grahical user interface. 
+
 
 Tracking the progress of your workflow
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
