@@ -35,7 +35,7 @@ General Run Options
 
 Navigate to the ``General run options`` tab to define the key settings required to run your nesting suite.
 
-.. figure:: images/general_run_options1.png
+.. figure:: /_static/1/general_run_options1.png
    :width: 800px
    :align: center
 
