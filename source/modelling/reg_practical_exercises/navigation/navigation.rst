@@ -7,11 +7,11 @@ Once you have copied the regional nesting suite (e.g. ``u-by395``), the next ste
 Step 1: Navigate to the suite directory
 ---------------------------------------
 
-pen a terminal and move to the directory where your suite is located:
+Open a terminal and move to the directory where your suite is located:
 
 .. code-block:: bash
 
-   cd ~/roses/u-by395
+   cd ~/roses/<suite-id>
 
 Step 2: Open the suite in the Rose GUI
 --------------------------------------
@@ -108,11 +108,6 @@ Tips
 
 
 
-Exercise 2: Explore tasks in a Regional LFRic workflow
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Inputs and outputs for a Regional LFRic workflow
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Editing a Regional LFRic workflow
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
