@@ -2,19 +2,53 @@
 Running a Regional LFRic Workflow
 *********************************
 
-Once the suite is set-up you can run the suite using ``cylc vip``.
+Once your suite has been set up, you can run it using Cylc.
 
-Navigate to the suite directory
+Navigate to your suite directory
+----------------------------------------
+
+Open a terminal and move to the suite directory:
+
 .. code-block:: bash
 
    cd ~/roses/<suite-id>
 
-Then run the suite using the cylc vip command.
+Replace ``<suite-id>`` with the name of your suite.
+
+Run the workflow
+-----------------------
+
+Start the workflow using:
 
 .. code-block:: bash
 
    cylc vip
 
-This tells Cylc to verify, install, and then play the workflow.
+This command performs three actions:
 
-For more details on the ``cylc`` commands please refer to the Section ``Running a Rose workflow`` under the ``Exercises in Global Configurations`` section of this tutorial.
+- **Verify**: Checks the suite configuration for errors  
+- **Install**: Sets up the runtime environment  
+- **Play**: Starts executing the workflow  
+
+Monitor the workflow
+----------------------------
+
+Once the suite is running, you can monitor its progress using either of the following commands:
+
+- Graphical interface:
+
+  .. code-block:: bash
+
+     cylc gui
+
+- Terminal-based interface:
+
+  .. code-block:: bash
+
+     cylc tui
+
+These tools allow you to view task status, progress, and any failures.
+
+For more details on Cylc commands, see the section *"Running a Rose workflow"* under *"Exercises in Global Configurations"* in this tutorial.
+
+After the workflow has completed successfully, navigate to the output directory and try plotting the data.
