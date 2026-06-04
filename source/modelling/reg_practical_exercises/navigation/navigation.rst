@@ -35,11 +35,11 @@ General Run Options
 
 Navigate to the ``General run options`` tab to define the key settings required to run your nesting suite.
 
-.. figure:: /_static/1/general_run_options1.png
-   :width: 800px
-   :align: center
+.. _fig-general-run-options1:
 
-General run options panel in the Rose configuration editor.
+.. figure:: /_static/1/general_run_options1.png
+   :width: 650px
+   :alt: General run options panel in the Rose configuration editor.
 
 
 Site and Machine Selection
@@ -75,11 +75,12 @@ Post-processing Options
 
 LFRic data is produced on an unstructured grid. If required, it can be post-processed onto a structured grid for analysis.
 
+.. _fig-general-run-options2:
+
 .. figure:: images/general_run_options2.png
    :width: 800px
    :align: center
-
-   Post-processing configuration options.
+   :alt: Post-processing configuration options.
 
 - **RUN_LFRIC_POSTPROCESS**  
   Enables post-processing of LFRic output.  
@@ -98,16 +99,12 @@ LFRic data is produced on an unstructured grid. If required, it can be post-proc
 - **POSTPROCESS_NPROCS**  
   Defines the number of processors used for post-processing (e.g. ``1``).
 
+.. admonition:: 💡 Tips
+   :class: tip
 
-Tips
-~~~~
-
-- Hover over the **hand icon** in the GUI or click the **settings icon** next to each option to view additional help.
-- Start with default values for training exercises before experimenting with custom configurations.
-- Running both UM and LFRic LAMs is recommended for validation and comparison during learning.
-
-
-
+   - Hover over the **hand icon** in the GUI or click the **settings icon** next to each option to view additional help.
+   - Start with default values for training exercises before experimenting with custom configurations.
+   - Running both UM and LFRic LAMs is recommended for validation and comparison during learning.
 
 Editing a Regional LFRic workflow
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
