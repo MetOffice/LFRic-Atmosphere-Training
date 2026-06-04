@@ -24,7 +24,8 @@ The Met Office maintains routine tools for validation of GC configurations:
 Regional evaluation tools
 -------------------------
 
-  And for regional configurations:
+Regional evaluation is carried out using the Community Seamless Evaluation Toolkit (CSET). CSET provides a centralised, peer‑reviewed set of tools designed to support process‑oriented verification and evaluation for UM, LFRic, and machine learning models.
+
+It supports both deterministic and ensemble configurations, making it suitable for a wide range of regional workflows.
 
 * `CSET <https://metoffice.github.io/CSET/index.html>`_
-* *Any others*
