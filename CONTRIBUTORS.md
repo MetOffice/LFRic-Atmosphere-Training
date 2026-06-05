@@ -10,3 +10,4 @@
 | foroughgoudarzi  | Forough Goudarzi       | Met Office            | 2026-05-31 |
 | stephenworsley   | Stephen Worsley        | Met Office            | 2026-06-03 |
 | menonarathy      | Arathy Menon           | Met Office            | 2026-06-04 |
+| pp-mo            | Patrick Peglar         | Met Office            | 2026-06-05 |
