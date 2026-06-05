@@ -16,7 +16,7 @@ Alternatively, you can check out the workflow instead of copying it:
    rosie checkout <suite-id>
 
 What’s the difference?
----------------------
+----------------------
 
 **Copying a workflow**
 
