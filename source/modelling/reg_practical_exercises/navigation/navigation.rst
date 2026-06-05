@@ -179,6 +179,8 @@ for your limited area model experiment.
 
 *See figure below: Config 1 setup*
 
+.. _fig-config-setup:
+
 .. figure:: /_static/config1_setup.png
    :alt: Config 1 setup interface
    :align: center
