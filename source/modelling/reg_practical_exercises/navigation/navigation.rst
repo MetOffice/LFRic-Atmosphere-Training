@@ -35,6 +35,8 @@ General Run Options
 
 Navigate to the ``General run options`` tab to define the key settings required to run your nesting suite.
 
+.. _fig-general-run-options1:
+
 .. figure:: /_static/general_run_options1.png
    :width: 600px
    :align: center
@@ -104,6 +106,8 @@ to the next and define the start and end times for your run.
 
 The interface shown below highlights the key options available.
 
+.. _fig-cycling-options:
+
 .. figure:: /_static/cycling_options.png
    :alt: Cycling options configuration panel in the rose GUI
    :align: center
@@ -137,6 +141,8 @@ You will specify both the **region name** and the **number of resolutions (exper
 
 *See figure below: Nested region 1 setup*
 
+.. _fig-nested-region1-setup:
+
 .. figure:: /_static/nested_region1_setup.png
    :alt: Nested region 1 setup interface
    :align: center
@@ -153,6 +159,8 @@ Resolution 1 Set-Up
 This section defines the **horizontal and vertical resolution** and links the required **ancillary data**.
 
 *See figure below: Resolution 1 setup*
+
+.. _fig-resolution1-setup:
 
 .. figure:: /_static/resolution1_setup.png
    :alt: Resolution 1 setup interface
