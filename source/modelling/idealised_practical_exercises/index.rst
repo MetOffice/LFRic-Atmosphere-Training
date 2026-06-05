@@ -5,14 +5,14 @@ Exercises in Idealised Configurations
    :maxdepth: 1
    :caption: Contents
 
+   overview/overview.rst
    quiz/quiz.rst
 
-The aim of this practical is to gain experience in running and analysing limited area configurations. You will:
+The aim of this practical is to gain experience in running and analysing an idealised configuration of LFRic-Atmosphere.
 
-.. TODO: Fill in the aims of this practical
+In this section, you will:
 
-   * ....
-   * ....
-   * ....
-
-
+   * learn about different idealised configurations and their key features
+   * understand what parts of configuration files make a case 'idealised'
+   * run an idealised experiment and monitor its progress
+   * manipulate the model output and plot it
