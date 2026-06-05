@@ -7,4 +7,6 @@
 | wxtim            | Tim Pillinger          | Met Office            | 2026-05-21 |
 | liamjberrisford  | Liam J Berrisford      | University of Exeter  | 2026-05-26 |
 | harley-kelly     | Harley Kelly           | Met Office            | 2026-05-21 |
+| foroughgoudarzi  | Forough Goudarzi       | Met Office            | 2026-05-31 |
+| stephenworsley   | Stephen Worsley        | Met Office            | 2026-06-03 |
 | menonarathy      | Arathy Menon           | Met Office            | 2026-06-04 |

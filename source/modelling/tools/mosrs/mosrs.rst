@@ -39,8 +39,7 @@ supporting services still use MOSRS/SRS terminology.
 
 .. note::
 
-   If you think something has become outdated please raise a ticket at 
-   https://github.com/MetOffice/LFRic-Atmosphere-Training
+   If you think something has become outdated please raise a ticket at https://github.com/MetOffice/LFRic-Atmosphere-Training
 
 You may still see references to:
 
