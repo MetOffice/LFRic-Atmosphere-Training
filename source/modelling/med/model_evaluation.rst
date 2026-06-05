@@ -24,7 +24,6 @@ The Met Office maintains routine tools for validation of GC configurations:
 Regional evaluation tools
 -------------------------
 
-  And for regional configurations:
+For regional configurations, the following evaluation tools are available:
 
-* `CSET <https://metoffice.github.io/CSET/index.html>`_
-* *Any others*
+* `CSET <https://metoffice.github.io/CSET/index.html>`_ - CSET (Cloud Satellite Evaluation Tool) for regional model assessment and validation
