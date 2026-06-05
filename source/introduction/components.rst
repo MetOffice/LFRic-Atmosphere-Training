@@ -5,25 +5,24 @@ The `Momentum  <https://www.metoffice.gov.uk/research/approach/modelling-systems
 One of these components is LFRic Atmosphere, the atmospheric model within the framework.
 
 To ensure scientific consistency and reproducibility, prediction systems are defined using carefully tested Science Configurations. 
-A Science Configuration specifies the exact setup of model components, including parameter settings, domain size, resolution, and coupling options.
-
+A Science Configuration specifies the scientific and numerical setup of model components, including parameter settings, domain, resolution, and coupling options.
 Science Configurations are typically grouped into:
 
 Global configurations
-   Used for planetary-scale weather and climate simulations.
+   Used for global weather and climate simulations.
 Regional configurations
    Used for high-resolution simulations over limited geographical areas.
 Coupled configurations
    Where atmosphere, ocean, land, and sea-ice models exchange information during a simulation.
 
-A key feature of the Momentum development approach is the separation between:
+A key feature of the Momentum development approach is the separation between several related layers of the modelling system:
 
 Components
-   Individual scientific models such as atmosphere or ocean models
+   Individual scientific models such as atmosphere or ocean models.
 Science Configurations
-   Validated scientific setups of those models
+   Validated scientific setups of those models.
 Operational systems
-   Implementations used for research, forecasting, and climate projection
+   Implementations used for research, forecasting, and climate projection.
 
 Each has its own release cycle, but they build on each other and remain compatible within the wider framework.
 
