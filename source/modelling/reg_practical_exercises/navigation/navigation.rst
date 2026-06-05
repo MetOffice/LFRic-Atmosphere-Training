@@ -131,15 +131,18 @@ This setup provides a simple, manageable configuration for training purposes.
 
 Driving Model Set-up
 ~~~~~~~~~~~~~~~~~~~~
-To run the Limited Area Model, you will have to use a driving model to obtain the initial data from. This can be set up in the driving model window. You can start the regional model from several options such as UM global model, ECMWF forecast fields, archived analysis files, etc. These options can be chosen from the driving model window. You can also choose the resolution of the driving model, number of processors needed, etc, from this sections.
+To run the Limited Area Model, you will have to use a driving model to obtain the initial data from.
+This can be set up in the driving model window.
+You can start the regional model from several options such as UM global model, ECMWF forecast fields, archived analysis files, etc.
+These options can be chosen from the driving model window.
+You can also choose the resolution of the driving model, number of processors needed, etc, from this sections.
 
 Nested Region 1 Set-UP
 ~~~~~~~~~~~~~~~~~~~~~~
 
 This section allows you to define the **nested domain** for your limited area model (LAM).
-You will specify both the **region name** and the **number of resolutions (experiments)** you want to run  (eg., if you are planning to run the limited area model at two different resolutions such as 4.4 and 1.5kms, then choose resolution as '2' here) 
-
-*See figure below: Nested region 1 setup*
+You will specify both the **region name** and the **number of resolutions (experiments)** you want to run 
+(eg., if you are planning to run the limited area model at two different resolutions such as 4.4 and 1.5kms, then choose resolution as '2' here) 
 
 .. _fig-nested-region1-setup:
 
@@ -157,8 +160,6 @@ Resolution 1 Set-Up
 ~~~~~~~~~~~~~~~~~~~
 
 This section defines the **horizontal and vertical resolution** and links the required **ancillary data**.
-
-*See figure below: Resolution 1 setup*
 
 .. _fig-resolution1-setup:
 
@@ -184,8 +185,6 @@ Config 1 Set-Up (Science Configuration)
 
 This section allows you to configure the **science options** and **model behaviour** 
 for your limited area model experiment.
-
-*See figure below: Config 1 setup*
 
 .. _fig-config-setup:
 
