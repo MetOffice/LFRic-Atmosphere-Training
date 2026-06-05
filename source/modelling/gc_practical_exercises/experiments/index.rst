@@ -12,25 +12,24 @@ Experiments with Global Models
 
    * What **diagnostic** would you plot to see the change?
 
-.. Caution:: If you decide to test your own experiment with a code or configuration change, be ready to do lots of debugging! If you want an example which is tried and tested, use the given examples below.
+.. Note:: If you decide to test your own experiment with a code or configuration change, be ready to do lots of debugging! If you want an example which is tried and tested, use the given examples below.
 
-Main Practical
-^^^^^^^^^^^^^^
-* Run a simulation a with different experimental setup
+.. admonition:: Real World Example: Snow Albedo Tuning in HadGEM3 GC3.1
 
-* Either use an existing experiment or your previous hypothesis
+   `Kuhlbrodt et al. (2018) <https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2018MS001370>`_ describe a tuning change made during the development of the low-resolution version of HadGEM3 GC3.1:
 
-* Create a branch for each new experiment (to limit the new workflow IDs created)
+      To achieve an acceptable simulation of Arctic sea ice thickness it proved necessary to reduce the albedo of snow on sea-ice by 2% in N96O1 for both infra-red (0.70 reduced to 0.68) and visible (0.98 to 0.96) parts of the solar spectrum, with all values well within observational constraints. This change was required due to the 1° ocean model failing to advect sufficient warm water into the Arctic Ocean through the narrow straits connecting the Atlantic with the Arctic.
 
-* Plot the data and look for evidence of changes
+   This is a good example of a **configuration namelist** change — a small parameter adjustment motivated by a known model bias which had a measurable impact on a key climate variable (Arctic sea ice thickness).
 
-.. note:: Feel free to enlarge the size of these changes (e.g. 20x CO2) if your analysis is not detecting much of  an impact. Copy the output files (files explained at the end of the last section) to your local Linux workstation  and analyse the files using Python/Iris. Try to plot differences between the experiments and the control in the fields that you think will be most strongly affected. If possible make a prediction at what these   differences might show before you do the plots. Were your predictions right?
+Next steps
+^^^^^^^^^^
+Now use the following practical exercises to explore different experiment configurations. You will need to use what you learned in the running and navigating exercises to edit and run the experiments. For analysis, you can use what you learnt in the visualisation exercises. You can also use the thoughts above to design your own experiment and test it out.
 
 .. toctree::
    :maxdepth: 1
    :caption: Contents
 
    add_diag/add_diag.rst
-   blk_si/blk_si.rst
    earth_rot/earth_rot.rst
-   rmv_evap/rmv_evap.rst
+   10xco2/10xco2.rst
