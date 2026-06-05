@@ -1,7 +1,7 @@
 LFRic Atmosphere features and history
 =====================================
 
-LFRic Atmosphere is a new atmospheric model that has been `developed <https://www.metoffice.gov.uk/research/news/2019/gungho-and-lfric>`_ by the Met Office and partners as the successor to the `Unified Model <https://www.metoffice.gov.uk/research/approach/modelling-systems/unified-model>`_.
+LFRic Atmosphere is a new atmospheric model that has been `developed <https://www.metoffice.gov.uk/research/news/2019/gungho-and-lfric>`_ by the Met Office and partners as the successor to the `Unified Model <https://www.metoffice.gov.uk/research/modelling-systems/unified-model>`_.
 While LFRic Atmosphere inherited its physics parameterisations from the Unified Model, it also introduces major advances in grid structure, numerical methods, and software design.
 
 LFRic Atmosphere incorporates several established science schemes and component models, including:
