@@ -35,13 +35,12 @@ General Run Options
 
 Navigate to the ``General run options`` tab to define the key settings required to run your nesting suite.
 
-.. _fig-general-run-options1:
-
 .. figure:: /_static/general_run_options1.png
-   :width: 650px
-   :alt: Screenshot of the 'General run options' panel in the Rose configuration editor.
-
-
+   :width: 600px
+   :alt: General run options
+   
+   Screenshot of the 'General run options' panel in the Rose configuration editor.
+   
 Site and Machine Selection
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
