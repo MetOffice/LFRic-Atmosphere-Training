@@ -9,7 +9,7 @@ Where possible, the same underlying equations of motion (known as the dynamical 
 This allows scientific improvements made for one application area to benefit others and helps maintain consistency between forecasting and climate simulations.
 
 Since the 1990's the Met Office strategy has been to develop a single model family used for prediction across a range of timescales. 
-This means the same dynamical core and, where possible, the same parameterization schemes are used across a broad range of spatial and temporal scales.
+This common model-family approach supports consistency across a broad range of spatial and temporal scales.
 The image below shows Met Office prediction and projection systems configured for applications on different scales, ranging from a few days to hundreds of years.
 
 .. _fig-intro-seamless:
@@ -20,4 +20,4 @@ The image below shows Met Office prediction and projection systems configured fo
 
    Spatial and temporal scales of Met Office prediction and projection systems.
 
-The seamless modelling approach, first introduced with the Unified Model, is used for LFRic Atmosphere the atmospheric model of Momentum, The Unified Earth Environment Prediction Framework.
+The seamless modelling approach, first introduced with the Unified Model, is used for LFRic Atmosphere, the atmospheric model of Momentum: The Unified Earth Environment Prediction Framework.
