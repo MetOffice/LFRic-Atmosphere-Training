@@ -5,7 +5,7 @@ Editing a Regional Nesting Suite
 Once you have copied the regional nesting suite (e.g. ``u-by395``), the next step is to navigate to the suite directory and open it using the Rose graphical user interface (GUI).
 
 Step 1: Navigate to the suite directory
------------------------------------------
+---------------------------------------
 
 Open a terminal and move to the directory where your suite is located:
 
@@ -14,7 +14,7 @@ Open a terminal and move to the directory where your suite is located:
    cd ~/roses/<suite-id>
 
 Step 2: Open the suite in the Rose GUI
-----------------------------------------
+--------------------------------------
 
 Launch the Rose editor by running:
 
@@ -26,23 +26,24 @@ Launch the Rose editor by running:
 - The ``&`` at the end runs the GUI in the background, so your terminal remains available for other commands.
 
 Step 3: Setting Up the Regional Nesting Suite
-==============================================
+---------------------------------------------
 
-Once the GUI is open, you can begin configuring the suite for your specific experiment or run by navigating through the tabs on the left side of the window .
+Once the GUI is open, you can begin configuring the suite for your specific experiment or run by navigating through the tabs on the left side of the window.
 
 General Run Options
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
 
 Navigate to the ``General run options`` tab to define the key settings required to run your nesting suite.
 
 .. figure:: /_static/general_run_options1.png
    :width: 600px
+   :align: center
    :alt: General run options
    
    Screenshot of the 'General run options' panel in the Rose configuration editor.
    
 Site and Machine Selection
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - **SITE**  
   Select the machine where the nesting suite will run (e.g. *Met Office EX "moex-cray"*).
@@ -51,13 +52,13 @@ Site and Machine Selection
   Choose the execution host group (e.g. *MONSOON3*, *EXA/EXB*, or *EXC/EXD* depending on availability).
 
 Project Configuration
-^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
 
  **PROJECT_NAME**  
   Specify the project code used for accounting or charging the run (e.g. ``training``).
 
 Model Run Options
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^
 
 - **RUN_LFRIC_LAM_IN_DEV_MODE**  
   Enables additional graphing and debugging tasks for the LFRic LAM.  
@@ -70,16 +71,18 @@ Model Run Options
   - ``false``: Run only LFRic LAM
 
 Post-processing Options
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^
 
 LFRic data is produced on an unstructured grid. If required, it can be post-processed onto a structured grid for analysis.
 
 .. _fig-general-run-options2:
 
-.. figure:: images/general_run_options2.png
-   :width: 800px
+.. figure:: /_static/general_run_options2.png
+   :width: 600px
    :align: center
    :alt: Post-processing configuration options.
+
+   Post-processing configuration options in the general run options.
 
 - **RUN_LFRIC_POSTPROCESS**  
   Enables post-processing of LFRic output.  
@@ -94,17 +97,17 @@ LFRic data is produced on an unstructured grid. If required, it can be post-proc
    - Running both UM and LFRic LAMs is recommended for validation and comparison during learning.
 
 Cycling Options
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-In this section, you will configure the  ``cycling options `` for your model experiment
+~~~~~~~~~~~~~~~
+In this section, you will configure the ``cycling options`` for your model experiment
 using the rose GUI. These settings control how the model progresses from one cycle
 to the next and define the start and end times for your run.
 
 The interface shown below highlights the key options available.
 
-.. figure:: cycling_options.png
+.. figure:: /_static/cycling_options.png
    :alt: Cycling options configuration panel in the rose GUI
    :align: center
-   :width: 85%
+   :width: 600px
 
    Cycling options panel in the rose configuration GUI.
 
@@ -123,36 +126,40 @@ For this self-learning exercise, you can use the following configuration:
 This setup provides a simple, manageable configuration for training purposes.
 
 Driving Model Set-up
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-To run the Limited Area Model, you will have to use a driving model to obtain the initial data from. This can be set up in the driving model window. You can start the regional model from several options such as UM global model, ECMWF forecast fields, archived analysis files, etc. These options acan be chosen from the driving model window. You can also choose the resolution of the driving model, number of processors needed, etc, from this sections.
+~~~~~~~~~~~~~~~~~~~~
+To run the Limited Area Model, you will have to use a driving model to obtain the initial data from. This can be set up in the driving model window. You can start the regional model from several options such as UM global model, ECMWF forecast fields, archived analysis files, etc. These options can be chosen from the driving model window. You can also choose the resolution of the driving model, number of processors needed, etc, from this sections.
 
 Nested Region 1 Set-UP
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
 
 This section allows you to define the **nested domain** for your limited area model (LAM).
-You will specify both the **region name** and the **number of resolutions (experiments)** you want to run  (eg., if you are planning to run the limited area model at two different reolutions such as 4.4 and 1.5kms, then choose resolution as '2' here) 
+You will specify both the **region name** and the **number of resolutions (experiments)** you want to run  (eg., if you are planning to run the limited area model at two different resolutions such as 4.4 and 1.5kms, then choose resolution as '2' here) 
 
 *See figure below: Nested region 1 setup*
 
-.. image:: _static/1/nested_region1_setup.png
+.. figure:: /_static/nested_region1_setup.png
    :alt: Nested region 1 setup interface
    :align: center
-   :width: 80%
+   :width: 600px
+
+   Nested region 1 setup interface in the GUI
 
 Once this is set, move to **Resolution 1 setup** to configure each experiment.
 
 
 Resolution 1 Set-Up
-~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
 
 This section defines the **horizontal and vertical resolution** and links the required **ancillary data**.
 
 *See figure below: Resolution 1 setup*
 
-.. image:: _static/1/resolution1_setup.png
+.. figure:: /_static/resolution1_setup.png
    :alt: Resolution 1 setup interface
    :align: center
-   :width: 80%
+   :width: 600px
+
+   Resolution 1 setup interface in the GUI
 
 .. note:: Ancillary data
 
@@ -165,19 +172,21 @@ This section defines the **horizontal and vertical resolution** and links the re
 
 
 Config 1 Set-Up (Science Configuration)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This section allows you to configure the **science options** and **model behaviour** 
 for your limited area model experiment.
 
 *See figure below: Config 1 setup*
 
-.. image:: config1_setup.png
+.. figure:: /_static/config1_setup.png
    :alt: Config 1 setup interface
    :align: center
-   :width: 80%
+   :width: 600px
 
-🔍 In this panel, you will define the key scientific settings for your model run.
+   Config 1 setup interface in the GUI
+
+In this panel, you will define the key scientific settings for your model run.
 
 
 .. tip:: 💡 Naming Your Region, Resolution & Configuration
@@ -199,9 +208,6 @@ for your limited area model experiment.
 
 Once the limited area model is all set up, you can go ahead and run the model. 
 
-.. Note:: You can also edit the suite by editing the corrsponding .conf file in the suite directory, if you do not wish to use the Rose grahical user interface. 
-
-
-Tracking the progress of your workflow
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. note:: 
+   You can also edit the suite by editing the corresponding .conf file in the suite directory, if you do not wish to use the Rose graphical user interface. 
 
