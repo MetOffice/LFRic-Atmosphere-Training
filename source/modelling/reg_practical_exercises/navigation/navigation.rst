@@ -37,9 +37,9 @@ Navigate to the ``General run options`` tab to define the key settings required 
 
 .. _fig-general-run-options1:
 
-.. figure:: /_static/1/general_run_options1.png
+.. figure:: /_static/general_run_options1.png
    :width: 650px
-   :alt: General run options panel in the Rose configuration editor.
+   :alt: Screenshot of the 'General run options' panel in the Rose configuration editor.
 
 
 Site and Machine Selection
