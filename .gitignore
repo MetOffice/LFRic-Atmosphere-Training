@@ -7,3 +7,4 @@ data-tutorials/
 build/
 **/.ipynb_checkpoints/
 intersphinx.ref
+.DS_Store
