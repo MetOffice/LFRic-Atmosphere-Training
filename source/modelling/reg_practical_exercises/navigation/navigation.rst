@@ -38,7 +38,7 @@ Navigate to the ``General run options`` tab to define the key settings required 
 .. _fig-general-run-options1:
 
 .. figure:: /_static/general_run_options1.png
-   :width: 600px
+   :width: 1200px
    :align: center
    :alt: General run options
    
@@ -80,7 +80,7 @@ LFRic data is produced on an unstructured grid. If required, it can be post-proc
 .. _fig-general-run-options2:
 
 .. figure:: /_static/general_run_options2.png
-   :width: 600px
+   :width: 1200px
    :align: center
    :alt: Post-processing configuration options.
 
@@ -111,7 +111,7 @@ The interface shown below highlights the key options available.
 .. figure:: /_static/cycling_options.png
    :alt: Cycling options configuration panel in the rose GUI
    :align: center
-   :width: 600px
+   :width: 1200px
 
    Cycling options panel in the rose configuration GUI.
 
@@ -146,7 +146,7 @@ You will specify both the **region name** and the **number of resolutions (exper
 .. figure:: /_static/nested_region1_setup.png
    :alt: Nested region 1 setup interface
    :align: center
-   :width: 600px
+   :width: 1200px
 
    Nested region 1 setup interface in the GUI
 
@@ -165,7 +165,7 @@ This section defines the **horizontal and vertical resolution** and links the re
 .. figure:: /_static/resolution1_setup.png
    :alt: Resolution 1 setup interface
    :align: center
-   :width: 600px
+   :width: 1200px
 
    Resolution 1 setup interface in the GUI
 
@@ -192,7 +192,7 @@ for your limited area model experiment.
 .. figure:: /_static/config1_setup.png
    :alt: Config 1 setup interface
    :align: center
-   :width: 600px
+   :width: 1200px
 
    Config 1 setup interface in the GUI
 
