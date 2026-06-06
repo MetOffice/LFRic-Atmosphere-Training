@@ -6,6 +6,8 @@ Exercises in Idealised Configurations
    :caption: Contents
 
    overview/overview.rst
+   copying/copying.rst
+   navigation/navigation.rst
    quiz/quiz.rst
 
 The aim of this practical is to gain experience in running and analysing an idealised configuration of LFRic-Atmosphere.
