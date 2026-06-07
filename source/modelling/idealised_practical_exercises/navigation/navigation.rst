@@ -26,13 +26,10 @@ Launch the Rose editor by running:
 - The ``&`` at the end runs the GUI in the background, so your terminal remains available for other commands.
 - To bring it to the foreground, type `fg`
 
-Step 3: Setting up the suite
-----------------------------
+Step 3: Setting up the suite's top-level configuration
+------------------------------------------------------
 
 Once the GUI is open, you can begin configuring the suite for your specific experiment or run by navigating through the tabs on the left side of the window.
-
-Top-level configuration
-~~~~~~~~~~~~~~~~~~~~~~~
 
 Navigate to the ``template variables`` tab to check and, if needed, change the top-level settings required to run the idealised suite.
 
@@ -44,6 +41,9 @@ Navigate to the ``template variables`` tab to check and, if needed, change the t
    :alt: Top-level options in the idealised suite `u-dz791`.
    
    Screenshot of the Rose configuration editor showing the top-level options panel of the idealised suite `u-dz791`.
+
+Machine, LFRic version, compilation settings
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - **EX_HOST**
 
@@ -62,6 +62,10 @@ Navigate to the ``template variables`` tab to check and, if needed, change the t
 
   Which compiler to use.
   Note: Cray (`CCE`) is preferred as its faster than GNU.
+
+
+Experiment set up
+~~~~~~~~~~~~~~~~~
 
 - **EXPT_DT**
 
@@ -83,6 +87,10 @@ Navigate to the ``template variables`` tab to check and, if needed, change the t
   Select a physical configuration.
   Default: GungHo-only configuration (i.e., dynamical core only).
 
+
+Cycling options
+~~~~~~~~~~~~~~~
+
 - **EXPT_START**
 
   Experiment start date and time.
@@ -96,6 +104,9 @@ Navigate to the ``template variables`` tab to check and, if needed, change the t
 - **EXPT_RESUB**
 
   Experiment resubmission frequency, i.e. the length of continuation runs, in the cylc date-time format.
+
+Parallel execution settings
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - **TOTAL_RANKS_REQ**
 
@@ -111,6 +122,9 @@ Navigate to the ``template variables`` tab to check and, if needed, change the t
 - **HOUSEKEEPING**
 
   Clean up output directory on successful finish. Currently only removes `xios_*` log files.
+
+GitHub settings
+~~~~~~~~~~~~~~~
 
 - **MIRROR_LOC**
 
