@@ -18,8 +18,10 @@ Practical 1: Run the model from command line
 .. admonition:: Aims
 
    * Build and run the LFRic Atmosphere as a command line application.
-   * Explore how model output is controlled via the ``iodef.xml`` configuration file.
-   * Modify the output configuration to change what is written and how often.
+   * Explore how model output is controlled via the ``iodef.xml``
+     configuration file.
+   * Modify the output configuration to change what is written and
+     how often.
    * Add custom messages to the model's standard output.
 
 Step 1: Compile the model
@@ -40,7 +42,8 @@ Step 1: Compile the model
 
       .. tab-item:: Partner
 
-         Consult your site's documentation for cloning git repositories, then
+         Consult your site's documentation for cloning git
+         repositories, then
          clone the LFRic apps repository:
 
          .. code-block:: console
@@ -66,7 +69,8 @@ Step 1: Compile the model
 
       .. tab-item:: Partners
 
-         For other platforms, see the `LFRic Development Environment`_.
+         For other platforms, see the `LFRic Development
+         Environment`_.
 
 3. Compile the model
 
@@ -75,7 +79,8 @@ Step 1: Compile the model
       ./build/local_build.py lfric_atm
 
    The compilation may take some time and uses code from the different
-   repositories, algorithms, and kernels. It invokes PSyclone, compiles,
+   repositories, algorithms, and kernels. It invokes PSyclone,
+   compiles,
    and links the code. The compiled model executable ``lfric_atm``
    will be in the folder ``applications/lfric_atm/bin/`` once the
    compilation finishes.
@@ -87,13 +92,15 @@ The code contains an `LFRic example`_ configuration containing:
 
 * A "canned configuration" in ``namelist.nml``. This sets up a "single
   column" run of LFRic Atmosphere.
-* The configuration uses the example mesh file ``mesh_BiP2x2-50000x50000.nc``.
+* The configuration uses the example mesh file
+  ``mesh_BiP2x2-50000x50000.nc``.
 
 .. note::
 
    ``mesh_BiP2x2-50000x50000.nc`` is not a single column mesh, but a
    2x2 biperiodic mesh. The configuration is designed in such a way
-   that each column is computed independently from the other columns and
+   that each column is computed independently from the other columns
+   and
    gives identical results for each column.
 
 1. Navigate to the example configuration directory:
@@ -129,41 +136,57 @@ The code contains an `LFRic example`_ configuration containing:
       ncdump -h lfric_diag.nc | less
 
    ``ncdump`` is part of the NetCDF tools, available in the Met Office
-   ``lfric`` environment. On other platforms, install the NetCDF utilities or
+   ``lfric`` environment. On other platforms, install the NetCDF
+   utilities or
    use the :ref:`iris.basics` Python workflow instead.
 
 4. Explore the NetCDF output configuration:
 
-   The NetCDF output is controlled by both ``iodef.xml`` and the ``&io``
-   namelist settings in ``configuration.nml`` (see the `iodef.xml example`_
-   and :ref:`output-control`). Open both files and answer the following:
+   The NetCDF output is controlled by both ``iodef.xml`` and the
+   ``&io``
+   namelist settings in ``configuration.nml`` (see the `iodef.xml
+   example`_
+   and :ref:`output-control`). Open both files and answer the
+   following:
 
-   * How many ``<file>`` definitions are configured in ``iodef.xml``, and
+   * How many ``<file>`` definitions are configured in ``iodef.xml``,
+     and
      what are their names?
-   * Which file definitions are enabled, disabled, or opened in read mode?
-   * Which diagnostic output files are selected by ``diag_active_files`` in
+   * Which file definitions are enabled, disabled, or opened in read
+     mode?
+   * Which diagnostic output files are selected by
+     ``diag_active_files`` in
      ``configuration.nml``?
-   * Roughly how many fields does ``lfric_diag`` write, and what are a few
-     examples? How does its field list compare with ``lfric_averages``?
+   * Roughly how many fields does ``lfric_diag`` write, and what are
+     a few
+     examples? How does its field list compare with
+     ``lfric_averages``?
    * At what frequency is output written?
 
    .. hint::
       :collapsible: closed
 
-      Look for ``<file>`` elements — each defines one XIOS file. The ``name``
-      attribute gives the output filename. ``<field>`` elements nested inside
-      each ``<file>`` block list the model fields written to that file. The
+      Look for ``<file>`` elements — each defines one XIOS file.
+      The ``name``
+      attribute gives the output filename. ``<field>`` elements
+      nested inside
+      each ``<file>`` block list the model fields written to that
+      file. The
       ``output_freq`` attribute on ``<file>`` sets how often output is
-      written. The ``enabled`` and ``mode`` attributes describe the XML file
-      definition, while namelist settings such as ``diag_active_files`` and
-      ``write_initial`` control which definitions are used by this run.
+      written. The ``enabled`` and ``mode`` attributes describe the
+      XML file
+      definition, while namelist settings such as
+      ``diag_active_files`` and
+      ``write_initial`` control which definitions are used by this
+      run.
 
 Step 3: Modify the Model
 ++++++++++++++++++++++++
 
 To gain familiarity with the model:
 
-1. Add your own print statement at the end of each time step (and a different
+1. Add your own print statement at the end of each time step (and a
+   different
    print statement after time step 72).
 
    .. hint::
@@ -182,10 +205,12 @@ To gain familiarity with the model:
 
       **Why**
 
-      Files with the ``.x90`` extension are the PSyclone source files that
+      Files with the ``.x90`` extension are the PSyclone source files
+      that
       developers are expected to modify. During the build, PSyclone
       reads these ``.x90`` files and automatically generates the
-      corresponding ``.f90`` files in the ``working/build_*`` directory, which
+      corresponding ``.f90`` files in the ``working/build_*``
+      directory, which
       are then compiled. The ``working/build_*`` directory
       contains temporary build artefacts that are regenerated every
       time the model is rebuilt. Any changes made directly to the
@@ -209,31 +234,39 @@ To gain familiarity with the model:
 
       .. code-block:: fortran
 
-         write( log_scratch_space, '(A)' ) "###_INFO_#1 END OF TIME STEP"
+         write( log_scratch_space, '(A)' ) "###_INFO_#1 END OF TIME
+         STEP"
          call log_event( log_scratch_space, LOG_LEVEL_INFO )
 
          if (model_clock%get_step() .lt. 72) then
-            write( log_scratch_space, '(A)' ) "###_INFO_#2 THE WEATHER IS FINE"
+            write( log_scratch_space, '(A)' ) "###_INFO_#2 THE
+            WEATHER IS FINE"
          else
-            write( log_scratch_space, '(A)' ) "###_INFO_#2 ENJOY THE MODEL TUTORIAL"
+            write( log_scratch_space, '(A)' ) "###_INFO_#2 ENJOY THE
+            MODEL TUTORIAL"
          endif
          call log_event( log_scratch_space, LOG_LEVEL_INFO )
 
 .. note:: Version Control.
 
-   Changes like the one you've implemented here should be tracked using
-   version control. This ensures traceability and supports collaborative
-   development. You'll learn how to document and manage your code changes
+   Changes like the one you've implemented here should be tracked
+   using
+   version control. This ensures traceability and supports
+   collaborative
+   development. You'll learn how to document and manage your code
+   changes
    using tickets and branches in Practical 3.
 
 Step 4: Modify the Output
 +++++++++++++++++++++++++
 
-Unlike the model source code, the output configuration does not require a
+Unlike the model source code, the output configuration does not
+require a
 recompile. You can change what is written and how often by editing
 ``configuration.nml`` and ``iodef.xml``, then re-running the model.
 
-If you are not still in the example directory after recompiling, return to it
+If you are not still in the example directory after recompiling,
+return to it
 first:
 
 .. code-block:: console
@@ -247,7 +280,8 @@ first:
 
       diag_active_files='lfric_diag','lfric_averages',
 
-2. Re-run the model to create a baseline ``lfric_averages.nc`` file at the
+2. Re-run the model to create a baseline ``lfric_averages.nc`` file
+   at the
    default 12-hour output frequency:
 
    .. code-block:: console
@@ -261,7 +295,8 @@ first:
 
       ncdump -h lfric_averages.nc | less
 
-4. Keep the baseline file so that you can compare it with the next run:
+4. Keep the baseline file so that you can compare it with the next
+   run:
 
    .. code-block:: console
 
@@ -270,10 +305,12 @@ first:
 5. Open ``iodef.xml`` and find the
    ``lfric_averages`` file definition.
 
-6. Change its ``output_freq`` from ``12h`` to ``6h`` so that averaged fields
+6. Change its ``output_freq`` from ``12h`` to ``6h`` so that averaged
+   fields
    are written at the same frequency as the diagnostics.
 
-7. Add the ``rho`` field to the ``lfric_averages`` file with a time average
+7. Add the ``rho`` field to the ``lfric_averages`` file with a time
+   average
    operation:
 
    .. hint::
@@ -298,13 +335,18 @@ first:
       ncdump -h lfric_averages_12h.nc | grep -E "time =|rho"
       ncdump -h lfric_averages.nc | grep -E "time =|rho"
 
-   Check that the new ``lfric_averages.nc`` file contains a ``rho`` variable
-   and has more time records than the 12-hour baseline file. With the default
-   24-hour run, the 12-hour baseline should hold 2 time records and the 6-hour
+   Check that the new ``lfric_averages.nc`` file contains a ``rho``
+   variable
+   and has more time records than the 12-hour baseline file. With the
+   default
+   24-hour run, the 12-hour baseline should hold 2 time records and
+   the 6-hour
    file 4.
 
 .. seealso::
 
    :ref:`output-control` explains the full ``iodef.xml`` structure, including
-   how to enable checkpoint files and how to reference fields from the LFRic
+   how to enable checkpoint files and how to reference fields from
+   the LFRic
    metadata catalogues.
+

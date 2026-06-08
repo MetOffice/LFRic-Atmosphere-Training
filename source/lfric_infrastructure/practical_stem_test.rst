@@ -8,13 +8,15 @@ Practical 3: Run integration tests
 
 .. admonition:: Aims
 
-   * Run the LFRic :external+rose:doc:`tutorial/rose/furthertopics/rose-stem`
+   * Run the LFRic
+     :external+rose:doc:`tutorial/rose/furthertopics/rose-stem`
      tests.
    * Break a test, and explore the output of the test workflow.
 
 In earlier exercises, you learned how to check out the model,
 modify the source, and run it from the command line
-(:ref:`practical_3.1`) and using a Cylc Workflow (:ref:`practical_3.3`).
+(:ref:`practical_3.1`) and using a Cylc Workflow
+(:ref:`practical_3.3`).
 
 This practical introduces integration testing using
 :ref:`rose stem`, which helps test your changes.
@@ -35,7 +37,8 @@ Step 1: Document and version control your code changes
    but changes to LFRic require use of the more robust
    :external+simulation_systems:doc:`WorkingPractices/forking` approach.
 
-Before running integration tests, it's important to document your changes
+Before running integration tests, it's important to document your
+changes
 and manage them using version control. This ensures traceability and
 compliance with LFRic model development practices.
 
@@ -48,12 +51,14 @@ compliance with LFRic model development practices.
    This issue will provide a reference number to associate with your
    development branch.
 
-   For the purposes of this tutorial we shall pretend to have created issue
+   For the purposes of this tutorial we shall pretend to have created
+   issue
    number ``2`` (`example issue`_).
 
 2. Create and checkout a branch
 
-   Use ``git switch`` to :external+simulation_systems:ref:`create_branch`:
+   Use ``git switch`` to
+   :external+simulation_systems:ref:`create_branch`:
 
    .. code-block:: bash
 
@@ -70,7 +75,8 @@ compliance with LFRic model development practices.
    .. code-block:: bash
 
       # Check you diff
-      git diff           # difftool if you have a graphical diff program
+      git diff           # difftool if you have a graphical diff
+      program
 
       # Commit your change to version control.
       git commit -a -m "Add log output to gungho_step"
@@ -79,7 +85,8 @@ compliance with LFRic model development practices.
 
    .. note::
 
-      Git is a distrubuted version control system, so you would normally
+      Git is a distrubuted version control system, so you would
+      normally
       have to use ``git push`` to your changes to GitHub.
 
 Step 2: Run the rose stem tests
@@ -92,7 +99,8 @@ Here we want to run the ``scripts`` group:
 
 .. note::
 
-   Normally you should run the ``developer`` group. ``scripts`` is a subset
+   Normally you should run the ``developer`` group. ``scripts`` is a
+   subset
    of developer which runs faster.
 
 .. tab-set::
@@ -107,7 +115,8 @@ Here we want to run the ``scripts`` group:
 
       .. code-block:: console
 
-         cylc vip -z group=developer -n myfeature.developer ./rose-stem
+         cylc vip -z group=developer -n myfeature.developer
+         ./rose-stem
 
 .. note:: what the arguments to Cylc mean
    :collapsible: closed
@@ -122,7 +131,8 @@ All tasks in the rose stem test workflow should complete successfully.
 Adding a few lines to the log output should not break any tests.
 
 A summary of the rose stem test results can be found in the file
-``~/cylc-run/lfric_apps_standard_suite/runN/trac.log``, as explained in the
+``~/cylc-run/lfric_apps_standard_suite/runN/trac.log``, as explained
+in the
 :external+simulation_systems:doc:`testing your changes <Development/testing>`
 
 This is a wiki-formatted file intended to serve as test evidence for
@@ -132,15 +142,18 @@ in the test workflow succeeded.
 .. hint::
 
    Given the benign nature of the model change, we expect all tasks in
-   the rose stem test suite to pass. However, this depends on how the change
-   was implemented. If you copied the code from the hint in Practical 1
+   the rose stem test suite to pass. However, this depends on how the
+   change
+   was implemented. If you copied the code from the hint in Practical
+   1
    into ``gungho_step_mod.x90`` everything should work as intended.
 
 Step 3: Break the stem test
 +++++++++++++++++++++++++++
 
 To explore how the testing framework handles style violations, you can
-deliberately introduce a trailing whitespace in your code. For example,
+deliberately introduce a trailing whitespace in your code. For
+example,
 by adding a space at the end of a line in ``gungho_step_mod.x90``.
 This will cause the ``style_checker`` task to fail,
 demonstrating how the system enforces coding standards.
@@ -172,3 +185,4 @@ To avoid running the full test workflow, you can use:
 
    The error message from the ``style checker`` test will be in
    ``~/cylc-run/lfric_apps/run*/log/job/1/myfeature.broken/01/job.err``.
+

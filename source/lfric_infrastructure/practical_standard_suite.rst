@@ -31,12 +31,14 @@ Step 1: Check Out the Standard Suite
       .. code-block:: console
 
          git clone \
-               git@github.com:MetOffice/momentum_user_training.example_lfric_workflow.git \
+               git@github.com:MetOffice/momentum_user_training.example_lfric_workflow.git
+               \
                lfric_apps_standard_suite
 
    .. tab-item:: Partner
 
-      Consult your site's documentation for cloning git repositories, then
+      Consult your site's documentation for cloning git repositories,
+      then
       clone:
 
       ``MetOffice/momentum_user_training.example_lfric_workflow.git``
@@ -95,7 +97,8 @@ Start the workflow with:
 
    cylc vip
 
-While the workflow is running, open the Cylc GUI explore the model output:
+While the workflow is running, open the Cylc GUI explore the model
+output:
 
 .. tab-set::
 
@@ -125,7 +128,8 @@ View your logs:
 
    .. tab-item:: Cylc GUI
 
-      Navigate to or open the Cylc GUI, and click on each task to view logs.
+      Navigate to or open the Cylc GUI, and click on each task to
+      view logs.
 
       On the command line ``cylc gui`` will open either a new gui or a
       window on your site's Cylc Hub.
@@ -134,13 +138,14 @@ View your logs:
 
    .. tab-item:: Cylc TUI
 
-      On the command line type ``cylc tui``. 
+      On the command line type ``cylc tui``.
 
       Task logs can be found by clicking on task icons.
 
    .. tab-item:: Cylc Review
 
-      * At the Met Office navigate to `Cylc Review <https://cylchub/services/cylc-review/>`_
+      * At the Met Office navigate to `Cylc Review
+        <https://cylchub/services/cylc-review/>`_
       * Navigate to your site's Cylc Review instance.
       * Start Cylc Review with ``cylc review start``
 
@@ -150,7 +155,8 @@ View your logs:
 
       .. code-block:: console
 
-         cat ~/cylc-run/lfric_apps_standard_suite/runN/log/job/1/<task_name>/job.out
+         cat
+         ~/cylc-run/lfric_apps_standard_suite/runN/log/job/1/<task_name>/job.out
 
 .. admonition:: Task
 
@@ -166,7 +172,8 @@ following configuration changes:
 1. Reduce the number of iterated time steps in the workflow by 50%.
 2. Reduce the length of the time step by 50%.
 
-Then, re-run the workflow for each change (or combine them) and compare:
+Then, re-run the workflow for each change (or combine them) and
+compare:
 
 * The number of produced NetCDF files
 * The forecast duration
@@ -181,3 +188,4 @@ Then, re-run the workflow for each change (or combine them) and compare:
    You need to modify the variables ``timestep_end`` and ``dt``.
    The NetCDF files can be found under the path
    ``~/cylc-run/lfric_apps_standard_suite/runN/work/1/lfric_atm/*nc``.
+

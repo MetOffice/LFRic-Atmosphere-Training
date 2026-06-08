@@ -1,7 +1,8 @@
 .. -----------------------------------------------------------------------------
     Momentum-LFRic documentation master file, created by
    sphinx-quickstart on Wed Apr 10 13:40:47 2024.
-   You can adapt this file completely to your liking, but it should at least
+   You can adapt this file completely to your liking, but it should
+   at least
    contain the root `toctree` directive.
    -----------------------------------------------------------------------------
 
@@ -13,23 +14,29 @@
 Accessibility statement for the Momentum Training Docs website
 ##############################################################
 
-Details on producing an accessibility statement can be found on the `Central
+Details on producing an accessibility statement can be found on the
+`Central
 Digital & Data Office government website`_.
 
 This accessibility statement applies to content published on the
-`Momentum Training <https://verbose-adventure-lmv2egq.pages.github.io/>`_ domain.
+`Momentum Training
+<https://verbose-adventure-lmv2egq.pages.github.io/>`_ domain.
 
-This website is run by the `Met Office`_. We want as many people as possible to
-be able to use this website. For example, that means you should be able to:
+This website is run by the `Met Office`_. We want as many people as
+possible to
+be able to use this website. For example, that means you should be
+able to:
 
 - zoom in up to 240% without problems
 - change the colours of the site
 - navigate most of the website using a keyboard
 - navigate most of the website using speech recognition software
 - use most of the website using a screen reader on supported browsers
-- we’ve also made the website text as simple as possible to understand
+- we’ve also made the website text as simple as possible to
+  understand
 
-`AbilityNet`_ has advice on making your device easier to use if you have a
+`AbilityNet`_ has advice on making your device easier to use if you
+have a
 disability.
 
 How accessible this website is
@@ -37,10 +44,13 @@ How accessible this website is
 
 We know some parts of this website are not fully accessible:
 
-- some links do not clearly explain where they lead, or that they lead to
+- some links do not clearly explain where they lead, or that they
+  lead to
   external sites.
-- there are some external links to websites that may not be accessible.
-- some images do not have a a capture and a descriptive alternative text 
+- there are some external links to websites that may not be
+  accessible.
+- some images do not have a a capture and a descriptive alternative
+  text
 
 Feedback and contact information
 --------------------------------
@@ -50,36 +60,47 @@ accessible PDF, large print, easy read, audio recording or braille:
 
 - email Momentum_Partnership@metoffice.gov.uk
 
-We aim to respond to all reasonable requests for accessible information.
+We aim to respond to all reasonable requests for accessible
+information.
 
 Reporting accessibility problems with this website
 --------------------------------------------------
 
-We're always looking to improve the accessibility of this website. If you find
-any problems not listed on this page or think we're not meeting accessibility
+We're always looking to improve the accessibility of this website. If
+you find
+any problems not listed on this page or think we're not meeting
+accessibility
 requirements, email Momentum_Partnership@metoffice.gov.uk.
 
 Enforcement procedure
 ---------------------
 
-The Equality and Human Rights Commission (EHRC) is responsible for enforcing the
-Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility
-Regulations 2018 (the 'accessibility regulations'). If you're not happy with how
-we respond to your complaint, contact the `Equality Advisory and Support Service`_
+The Equality and Human Rights Commission (EHRC) is responsible for
+enforcing the
+Public Sector Bodies (Websites and Mobile Applications) (No. 2)
+Accessibility
+Regulations 2018 (the 'accessibility regulations'). If you're not
+happy with how
+we respond to your complaint, contact the `Equality Advisory and
+Support Service`_
 (EASS).
 
 Technical information about this website's accessibility
 --------------------------------------------------------
 
-The Met Office is committed to making this website accessible, in accordance
-with the Public Sector Bodies (Websites and Mobile Applications) (No. 2)
+The Met Office is committed to making this website accessible, in
+accordance
+with the Public Sector Bodies (Websites and Mobile Applications) (No.
+2)
 Accessibility Regulations 2018.
 
 Compliance status
 -----------------
 
-This website is partially compliant with the `Web Content Accessibility
-Guidelines version 2.2`_ AA standard, due to the non-compliances listed
+This website is partially compliant with the `Web Content
+Accessibility
+Guidelines version 2.2`_ AA standard, due to the non-compliances
+listed
 below.
 
 Non-accessible content
@@ -90,48 +111,65 @@ The content listed below is non-accessible for the following reasons.
 Non-compliance with the accessibility regulations
 -------------------------------------------------
 
-- Some links do not clearly explain where they lead, or that they lead to
-  external sites. This fails `WCAG 2.1 success criteria 2.4.4 Link Purpose (In
+- Some links do not clearly explain where they lead, or that they
+  lead to
+  external sites. This fails `WCAG 2.1 success criteria 2.4.4 Link
+  Purpose (In
   Context)`_.
 
 Disproportionate burden
 -----------------------
 
-- The pages generated by Sphinx contain some duplicate and empty form labels in
-  the header. Most are visually hidden but there are some such as the GitHub
-  etc. icons by the search field which are visible. This fails `WCAG 2.4.6
-  Headings and Labels`_ and `WCAG 3.3.2 Labels or Instructions`_. Sphinx is a
-  third-party, open source code base, and so is beyond the scope of this project
+- The pages generated by Sphinx contain some duplicate and empty form
+  labels in
+  the header. Most are visually hidden but there are some such as the
+  GitHub
+  etc. icons by the search field which are visible. This fails `WCAG
+  2.4.6
+  Headings and Labels`_ and `WCAG 3.3.2 Labels or Instructions`_.
+  Sphinx is a
+  third-party, open source code base, and so is beyond the scope of
+  this project
   to fix, although we will apply updates as the code base develops.
 
 Content that's not within the scope of the accessibility regulations
 --------------------------------------------------------------------
 
 The `Public Sector Bodies (Websites and Mobile Applications) (No. 2)
-Accessibility Regulations 2018 legislation`_ does not require us to fix
-external, third-party websites that are neither funded nor developed by, nor
+Accessibility Regulations 2018 legislation`_ does not require us to
+fix
+external, third-party websites that are neither funded nor developed
+by, nor
 under the control of the Met Office.
 
 How we tested this website
 --------------------------
 
-We have aimed to use an accessible tool, but we have not formally tested it.
-Tests will be carried out by the Momentum training documentation developers. They aim to use the
-`WAVE`_ Web Accessibility Evaluation tool, the `lighthouse`_ tool, `axe DevTools
-on Chrome`_ tool, and the built-in Chrome and Firefox accessibility dev-tools.
+We have aimed to use an accessible tool, but we have not formally
+tested it.
+Tests will be carried out by the Momentum training documentation
+developers. They aim to use the
+`WAVE`_ Web Accessibility Evaluation tool, the `lighthouse`_ tool,
+`axe DevTools
+on Chrome`_ tool, and the built-in Chrome and Firefox accessibility
+dev-tools.
 
 What we're doing to improve accessibility
 -----------------------------------------
 
-We always consider accessibility when writing documentation and aim to re-write
-inaccessible, complex text as we continue development. This website will be
-audited for accessibility at least yearly to highlight potential accessibility
+We always consider accessibility when writing documentation and aim
+to re-write
+inaccessible, complex text as we continue development. This website
+will be
+audited for accessibility at least yearly to highlight potential
+accessibility
 issues.
 
 Preparation of this accessibility statement
 -------------------------------------------
 
-This statement was prepared on 12th September 2025. It was last reviewed on 2th September 2025.
+This statement was prepared on 12th September 2025. It was last
+reviewed on 2th September 2025.
 
 .. _Central Digital & Data Office government website:
    https://www.gov.uk/government/publications/sample-accessibility-statement/sample-accessibility-statement-for-a-fictional-public-sector-website
@@ -160,3 +198,4 @@ This statement was prepared on 12th September 2025. It was last reviewed on 2th 
 .. _WAVE: https://wave.webaim.org/
 .. _lighthouse: https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk
 .. _axe DevTools on Chrome: https://www.deque.com/axe/devtools/
+

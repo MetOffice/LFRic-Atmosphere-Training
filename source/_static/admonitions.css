@@ -2,3 +2,4 @@ div.admonition.admonition-aims-and-objectives > .admonition-title::after {
   color: #080 ;
   content: "\f05d"; /* fa-solid fa-bullseye */
 }
+

@@ -1,6 +1,11 @@
 [tool.setuptools]
 py-modules = []
 
+[tool.doc8]
+# Disabled because https://github.com/PyCQA/doc8/issues/200
+# And "unknown target errors" (linkcheck should pick these up?)
+ignore = ['D000']
+
 [project]
 name = "lfric-atmosphere-training"
 version = "0.1.0"
@@ -38,6 +43,7 @@ notebooks = [
 
 dev = [
   "jupyter",
+  "doc8",
 ]
 
 [tool.uv]
