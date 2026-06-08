@@ -31,8 +31,7 @@ Step 1: Check Out the Standard Suite
       .. code-block:: console
 
          git clone \
-               git@github.com:MetOffice/momentum_user_training.example_lfric_workflow.git
-               \
+               git@github.com:MetOffice/momentum_user_training.example_lfric_workflow.git \
                lfric_apps_standard_suite
 
    .. tab-item:: Partner
@@ -155,8 +154,7 @@ View your logs:
 
       .. code-block:: console
 
-         cat
-         ~/cylc-run/lfric_apps_standard_suite/runN/log/job/1/<task_name>/job.out
+         cat ~/cylc-run/lfric_apps_standard_suite/runN/log/job/1/<task_name>/job.out
 
 .. admonition:: Task
 

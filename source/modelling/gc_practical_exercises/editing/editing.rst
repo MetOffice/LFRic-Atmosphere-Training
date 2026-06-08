@@ -17,8 +17,7 @@ edit`` command:
 
    $ cd ~/roses/<suite-id>
    $ ls
-   app  flow.cylc  meta  opt  README_cylc8  rose-suite.conf
-   rose-suite.info  site  tests.cylc
+   app  flow.cylc  meta  opt  README_cylc8  rose-suite.conf  rose-suite.info  site  tests.cylc
    $ rose edit
 
 This will open up the Rose Graphical User Interface (GUI) for editing

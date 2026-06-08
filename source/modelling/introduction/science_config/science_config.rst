@@ -97,7 +97,7 @@ modelling systems within the Momentum framework.
    RMED coordinates the RAL process by working with many other groups
    from across the office and Momentum partnership to identify the
    improvement needs, evaluate new science configurations and deliver
-   the new RAL​
+   the new RAL.
 
 Versioning and Operational Use
 ++++++++++++++++++++++++++++++

@@ -75,8 +75,7 @@ compliance with LFRic model development practices.
    .. code-block:: bash
 
       # Check you diff
-      git diff           # difftool if you have a graphical diff
-      program
+      git diff           # difftool if you have a graphical diff program
 
       # Commit your change to version control.
       git commit -a -m "Add log output to gungho_step"
@@ -115,8 +114,7 @@ Here we want to run the ``scripts`` group:
 
       .. code-block:: console
 
-         cylc vip -z group=developer -n myfeature.developer
-         ./rose-stem
+         cylc vip -z group=developer -n myfeature.developer ./rose-stem
 
 .. note:: what the arguments to Cylc mean
    :collapsible: closed

@@ -10,7 +10,7 @@ Step 1: Navigate to the application directory
 =============================================
 Start by changing into the ``lfric_atm`` application directory:
 
-.. code-block:: bash
+.. code-block:: console
 
    cd app/lfric_atm
 
