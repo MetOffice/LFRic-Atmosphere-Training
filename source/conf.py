@@ -195,7 +195,7 @@ linkcheck_ignore = [
     # Possibly related to certifi
     r'^https?://oasis\.cerfacs\.fr(?:/.*)?$',
     r'^https://www.sciencedirect.com/science/article/pii/S0743731518305306$',
-    r^'https?://code\.metoffice\.gov\.uk(?:/.*)?$'
+    r'^https?://code\.metoffice\.gov\.uk(?:/.*)?$'
 ]
 
 # Add hyperlinks include file to avoid repeated links.
