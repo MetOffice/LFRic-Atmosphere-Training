@@ -47,3 +47,23 @@ Quiz: Idealised Configurations
    > Try again! Gravity is not a radiative gas property; it belongs in `[namelist:planet]`.
    1. [ ] Gravity is set in `[namelist:radiative_gases]`, while CO2 concentration is set in `[namelist:planet]`
    > Try again! This is the wrong way round - gravity is a planetary constant, CO2 concentration is a radiative gas property.
+
+   ## What parameters control the effect of rotation in LFRic?
+   1. [x] The global switch is ``rotating`` in the ``formulation`` section, while the rotation rate itself is controlled by ``omega``.
+   > Correct! LFRic-Atmosphere is quite flexible!
+   1. [ ] It's ``omega`` in the ``planet`` namelist of course!
+   > Try again! There's another parameter that switches rotation on/off.
+   1. [ ] The rotation rate is fixed to be that of the modern-day Earth and cannot be changed.
+   > Try again! The rotation rate cn be changed.
+   1. [ ] The parameter is called ``rotation_omega`` and if it's zero the rotation is off.
+   > No, the parameter name is wrong, although setting ``omega=0.0`` in ``[namelist:planet]`` is valid.
+
+   ## What does "CRM" stand for?
+   1. [x] Cloud-Resolving Model
+   > Correct! A CRM resolves convection explicitly rather than parameterising it, making it ideal for studying cloud processes in detail.
+   1. [ ] Climate Radiation Module
+   > Try again! CRM is not about a standalone radiation module.
+   1. [ ] Convective Representation Method
+   > Try again! CRM does not refer to a parameterisation method; it refers to a model that resolves convection directly.
+   1. [ ] Coupled Regional Model
+   > Try again! CRM is not about regional coupling.
