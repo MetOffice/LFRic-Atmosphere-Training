@@ -35,6 +35,6 @@ Other idealised and extraterrestrial configurations
 
 There are many other configurations of LFRic-Atmosphere that can be categorised as 'idealised', to name but a few:
 
-* a global aquaplanet configuration, i.e. Earth without continents (and a slab ocean)
-* temperature or wind forcing test cases (e.g., the Held-Suarez test) for Earth and other planets
+* a global aquaplanet configuration, i.e. Earth without continents (and a slab ocean),
+* temperature or wind forcing test cases (e.g., the Held-Suarez test) for Earth and other planets,
 * a setup with radiative transfer and idealised chemistry for hot extrasolar gas giants.
