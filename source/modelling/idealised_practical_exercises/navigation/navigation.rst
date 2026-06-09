@@ -24,7 +24,7 @@ Launch the Rose editor by running:
 
 - This command opens the suite in the Rose graphical user interface, allowing you to view and modify its configuration.
 - The ``&`` at the end runs the GUI in the background, so your terminal remains available for other commands.
-- To bring it to the foreground, type `fg`
+- To bring it to the foreground, type ``fg``
 
 Step 3: Setting up the suite's top-level configuration
 ------------------------------------------------------
@@ -38,9 +38,9 @@ Navigate to the ``template variables`` tab to check and, if needed, change the t
 .. figure:: /_static/idealised_top_level_options.png
    :width: 1200px
    :align: center
-   :alt: Top-level options in the idealised suite `u-dz791`.
+   :alt: Top-level options in the idealised suite ``u-dz791``.
    
-   Screenshot of the Rose configuration editor showing the top-level options panel of the idealised suite `u-dz791`.
+   Screenshot of the Rose configuration editor showing the top-level options panel of the idealised suite ``u-dz791``.
 
 Machine, LFRic version, compilation settings
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -52,7 +52,7 @@ Machine, LFRic version, compilation settings
 
 - **VN**
 
-  LFRic Apps version. Currently it's set to `3.0` but we will upgrade this suite soon.
+  LFRic Apps version.
 
 - **BUILD_LFRIC**
 
@@ -61,7 +61,7 @@ Machine, LFRic version, compilation settings
 - **COMPILER**
 
   Which compiler to use.
-  Note: Cray (`CCE`) is preferred as its faster than GNU.
+  Note: Cray (``CCE``) is preferred as its faster than GNU.
 
 
 Experiment set up
@@ -73,7 +73,7 @@ Experiment set up
 
 - **LFRIC_RES**
 
-  Select a horizontal mesh. The convention for bi-periodic Cartesian meshes is to name them as `(number of x-points)x(number of y-points)-(dx)x(dy)`, where `dx` and `dy` are grid steps in the x- and y-directions, respectively.
+  Select a horizontal mesh. The convention for bi-periodic Cartesian meshes is to name them as ``(number of x-points)x(number of y-points)-(dx)x(dy)``, where ``dx`` and ``dy`` are grid steps in the x- and y-directions, respectively.
   Default: 128 by 128 points with the grid spacing of 2000 m.
 
 - **LFRIC_LEVS**
@@ -99,7 +99,7 @@ Cycling options
 
 - **EXPT_RUNLEN**
 
-  Experiment run length in the cylc date-time format, e.g. `PT10H30M`, `P20D`, etc.
+  Experiment run length in the cylc date-time format, e.g. ``PT10H30M``, ``P20D``, etc.
 
 - **EXPT_RESUB**
 
@@ -116,12 +116,12 @@ Parallel execution settings
 - **LFRIC_CRUN_WALLCLOCK**
 
   Wallclock time to allocate to each continuation run.
-  Given in the cylc date-time format, e.g. `PT1H`.
+  Given in the cylc date-time format, e.g. ``PT1H``.
   Note: the limit is 3 hours on the Met Office ex1a zone and Monsoon.
 
 - **HOUSEKEEPING**
 
-  Clean up output directory on successful finish. Currently only removes `xios_*` log files.
+  Clean up output directory on successful finish. Currently only removes ``xios_*`` log files.
 
 GitHub settings
 ~~~~~~~~~~~~~~~
@@ -129,7 +129,7 @@ GitHub settings
 - **MIRROR_LOC**
 
   Alias for the git mirror location.
-  Check your `~/.gitconfig` when setting this up.
+  Check your ``~/.gitconfig`` when setting this up.
 
 - **USE_MIRRORS**
 

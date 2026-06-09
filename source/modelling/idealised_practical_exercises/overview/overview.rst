@@ -17,7 +17,7 @@ We will focus on the so-called the cloud-resolving model (CRM) configuration, wh
 
 This configuration is used for studying convective processes on Earth and other planets.
 
-In the practical, we will use a dynamics-only configuration in `u-dz791`.
+In the practical, we will use a dynamics-only configuration in ``u-dz791``.
 This suite is set up for simulating thermo-compositional convection in hydrogen-rich atmospheres.
 
 .. _fig-crm-examples:

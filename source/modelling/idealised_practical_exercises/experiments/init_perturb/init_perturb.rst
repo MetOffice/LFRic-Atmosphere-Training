@@ -26,9 +26,9 @@ In the configuration file the namelist is
 Step 1: Change perturbation magnitude
 -------------------------------------
 
-1. Open Rose GUI or ``app/lfric_atm/rose-app.conf`` a text editor of your choice.
-2. Search for the ``perturb_init`` key
-3. Change the value from ``0`` to ``1`` (or ``2``)
+1. Open Rose GUI or ``app/lfric_atm/rose-app.conf`` in a text editor of your choice.
+2. Search for the ``perturb_init`` key.
+3. Change the value from ``0`` to ``1`` (or ``2``).
 
 Step 2: Run the model
 ---------------------
@@ -36,7 +36,7 @@ Step 2: Run the model
 Now that you have changed the configuration, run the model using what you have learnt in the previous exercises.
 Check the output using Python or another tool of your choice
 
-Step 3. Compare with the default configurations
------------------------------------------------
+Step 3. Compare with the control experiment
+-------------------------------------------
 
 Using a Python script or Jupyter Notebook, make plots for both experiments and compare them to each other to see the effect of the perturbation magnitude.
