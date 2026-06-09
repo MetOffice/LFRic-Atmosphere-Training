@@ -1,47 +1,42 @@
 *******************************************
-Experiment 1 - Size of initial perturbation
+Experiment 3 - Size of initial perturbation
 *******************************************
 
-In this experiment, the initial temperature field is perturbed by a small random noise to induce convective motions, which subsequently grow larger due to convective instability.
+The initial temperature field in the suite is perturbed by a small random noise to induce convective motions, which subsequently grow larger due to convective instability.
 To test the sensitivity of the experiment outcome to this perturbation, we suggest changing the amplitude of this perturbation and comparing the results to the control experiment.
 
-The parameters that control the initial perturbation are:
+The parameters that control the initial perturbation are: ``perturb_init`` (to switch it on), ``perturb_magnitude`` (base-10 logarithm of the perturbation magnitude), and ``perturb_seed`` - random seed.
+In the GUI, they are stored in the **lfric_atm** -> Run Task Settings -> Job -> Initial Conditions.
 
-
-
-Step 1: Navigate to the application directory
-=============================================
-Start by changing into the ``lfric_atm`` application directory:
-
-.. code-block:: bash
-
-   cd app/lfric_atm
-
-Step 2: Edit the configuration file
-===================================
-1. Open ``rose-app.conf`` in a text editor of your choice.
-2. Search for the ``co2_mix_ratio`` key (located under the
-   ``[namelist:radiative_gases]`` section).
-3. Change the value from ``5.6062e-04`` (present-day CO2) to ``5.6062e-03``
-   (10x present-day CO2), as highlighted below.
+In the configuration file the namelist is 
 
 .. code-block:: ini
-   :caption: trunk/app/lfric_atm/rose-app.conf
-   :emphasize-lines: 9
+   :caption: app/lfric_atm/rose-app.conf
+   :emphasize-lines: 3,4,5
 
-   [namelist:radiative_gases]
-   ch4_mix_ratio=9.8200e-07
-   ch4_rad_opt='constant'
-   !!co2_clim_fcg_levls=
-   !!co2_clim_fcg_nyears=
-   !!co2_clim_fcg_rates=
-   !!co2_clim_fcg_years=
-   co2_mix_ratio=5.6062e-04
-   co2_rad_opt='constant'
+   [namelist:idealised]
+   f_lon_deg=0.0
+   perturb_init=.true.
+   perturb_magnitude=1
+   perturb_seed=180906
+   test='specified_profiles'
 
-Step 3: Run the model and check the output
-==========================================
+.. Note:: There are other perturbation options in the "Temperature" tab, e.g. `perturb` and `pert_width_scaling`, but we are not using them in this practical.
 
-Now that you have increased the CO2 concentration, run the model using what you have learnt in the previous exercises. After the model has completed, check the output files to observe the impact of the increased CO2 on the model climate. You can use tools like ``ncdump``, ``xconv``, or ``python`` to inspect the contents of the output NetCDF files and verify the changes.
+Step 1: Change perturbation magnitude
+-------------------------------------
 
-You should now have successfully completed the CO2 x 10 experiment!
+1. Open Rose GUI or ``app/lfric_atm/rose-app.conf`` a text editor of your choice.
+2. Search for the ``perturb_init`` key
+3. Change the value from ``0`` to ``1`` (or ``2``)
+
+Step 2: Run the model
+---------------------
+
+Now that you have changed the configuration, run the model using what you have learnt in the previous exercises.
+Check the output using Python or another tool of your choice
+
+Step 3. Compare with the default configurations
+-----------------------------------------------
+
+Using a Python script or Jupyter Notebook, make plots for both experiments and compare them to each other to see the effect of the perturbation magnitude.

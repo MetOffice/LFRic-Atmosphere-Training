@@ -1,9 +1,23 @@
-****************************************
-Experiments with the Idealised CRM Suite
-****************************************
+***********************************************
+Experiments with the Extraterrestrial CRM Suite
+***********************************************
 
 We will now run a couple of simulations using the `u-dz791` suite.
 This suite is designed to model convection in hydrogen-rich atmospheres of other planets in a highly simplified setup - the default configuration uses only the dynamical core (GungHo).
+
+
+Key features
+------------
+  * The dynamical core only. All parameterizations are switched off.
+  * No rotation.
+  * Hydrogen-dominated atmosphere. In the dynamics-only setup this is controlled via the gas constants: isobaric heat capacity `cp=14300` and the dry gas constant `rd=4124.00`.
+  * Initial temperature profile: isothermal (uses a branch for a corrected procedure - see `dependencies.yaml`).
+  * Initial vapour profile: step-wise profile with more vapour in the upper atmosphere to sustain compositional convection.
+  * Initial wind profile: zero.
+
+
+Science motivation
+------------------
 
 In the context of hydrogen-rich atmospheres, we are particularly keen to explore how convection works in a presence of a compositional gradient, e.g. a large vertical gradient of water vapour.
 
@@ -14,8 +28,10 @@ In the context of hydrogen-rich atmospheres, we are particularly keen to explore
    Consequently, in atmospheres with non-dilute amounts of the condensable (>10% by mass; see e.g. Pierrehumbert & Ding 2016), the background temperature gradient can no longer be solely relied on to predict convective stability.
    This effect is not as important for convection on Earth since water vapour only contributes up to a few percent by mass, hence lying comfortably in the dilute regime.
 
+
 Suggested experiments
-^^^^^^^^^^^^^^^^^^^^^
+---------------------
+
 The following practical exercises are suggested to explore the idealised setup further.
 You will need to use what you learned in the running and navigating exercises to edit and run the experiments.
 For analysis, you can use what you learnt in the visualisation exercises.
@@ -24,11 +40,11 @@ For analysis, you can use what you learnt in the visualisation exercises.
    :maxdepth: 1
    :caption: Contents
 
+   rotation/rotation.rst
+   back_to_earth/back_to_earth.rst
    init_perturb/init_perturb.rst
 
-
-
-.. admonition:: Example for previous studies: changing the water vapour profile
+.. admonition:: Example from previous studies: changing the water vapour profile
 
    `Habib & Pierrehumbert (2024) <https://doi.org/10.3847/1538-4357/ad04e2>`_ use another cloud-resolving model and find that destabilizing mean molecular weight gradients can lead to compositional convection in otherwise thermally stable atmospheres.
    They test this using high-resolution non-condensing simulations for a range of background compositions and thermal profiles.

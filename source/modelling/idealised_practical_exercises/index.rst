@@ -23,3 +23,5 @@ In this section, you will:
    experiments/index.rst
    plotting/plotting.rst
    quiz/quiz.rst
+
+.. Warning:: The science suite that we will be using is very much work in progress (Alex's PhD!) so there could be mistakes, please be patient with us.
