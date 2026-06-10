@@ -1,21 +1,21 @@
 ************************************
 Exercises in Regional Configurations
 ************************************
+The aim of this practical is to gain hands-on experience in running and analysing limited-area (regional) configurations.
 
-The aim of this practical is to gain experience in running and analysing limited area configurations. You will:
+In this exercise, you will:
 
-.. TODO: Fill in the aims of this practical
-
-   * ....
-   * ....
-   * ....
-
+- Learn how to copy a regional nesting suite  
+- Modify the nesting suite configuration  
+- Run the workflow  
+- Analyse and plot the resulting data  
 
 .. toctree::
    :maxdepth: 1
    :caption: Contents
 
-   running/running.rst
+   copying/copying.rst
    navigation/navigation.rst
+   running/running.rst
    plotting/plotting.rst
-   experiments/index.rst
+   
