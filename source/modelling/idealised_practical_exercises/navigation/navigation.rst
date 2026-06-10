@@ -2,7 +2,9 @@
 Navigating the Idealised Suite
 ******************************
 
-Once you have copied the regional nesting suite (e.g. ``u-dz791``), the next step is to navigate to the suite directory and open it using the Rose graphical user interface (GUI).
+Once you have copied the regional nesting suite (e.g. ``u-dz791``),
+the next step is to navigate to the suite directory and open it
+using the Rose graphical user interface (GUI).
 
 Step 1: Navigate to the suite directory
 ---------------------------------------
@@ -22,16 +24,21 @@ Launch the Rose editor by running:
 
    rose edit &
 
-- This command opens the suite in the Rose graphical user interface, allowing you to view and modify its configuration.
-- The ``&`` at the end runs the GUI in the background, so your terminal remains available for other commands.
+- This command opens the suite in the Rose graphical user interface,
+  allowing you to view and modify its configuration.
+- The ``&`` at the end runs the GUI in the background, so your terminal
+  remains available for other commands.
 - To bring it to the foreground, type ``fg``
 
 Step 3: Setting up the suite's top-level configuration
 ------------------------------------------------------
 
-Once the GUI is open, you can begin configuring the suite for your specific experiment or run by navigating through the tabs on the left side of the window.
+Once the GUI is open, you can begin configuring the suite for your
+specific experiment or run by navigating through the tabs on the
+left side of the window.
 
-Navigate to the ``template variables`` tab to check and, if needed, change the top-level settings required to run the idealised suite.
+Navigate to the ``template variables`` tab to check and, if needed,
+change the top-level settings required to run the idealised suite.
 
 .. _fig-idealised_top_level_options:
 
@@ -39,8 +46,9 @@ Navigate to the ``template variables`` tab to check and, if needed, change the t
    :width: 1200px
    :align: center
    :alt: Top-level options in the idealised suite ``u-dz791``.
-   
-   Screenshot of the Rose configuration editor showing the top-level options panel of the idealised suite ``u-dz791``.
+
+   Screenshot of the Rose configuration editor showing the top-level
+   options panel of the idealised suite ``u-dz791``.
 
 Machine, LFRic version, compilation settings
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -73,14 +81,19 @@ Experiment set up
 
 - **LFRIC_RES**
 
-  Select a horizontal mesh. The convention for bi-periodic Cartesian meshes is to name them as ``(number of x-points)x(number of y-points)-(dx)x(dy)``, where ``dx`` and ``dy`` are grid steps in the x- and y-directions, respectively.
+  Select a horizontal mesh. The convention for bi-periodic Cartesian
+  meshes is to name them as
+  ``(number of x-points)x(number of y-points)-(dx)x(dy)``, where
+  ``dx`` and ``dy`` are grid steps in the x- and y-directions, respectively.
   Default: 128 by 128 points with the grid spacing of 2000 m.
 
 - **LFRIC_LEVS**
 
-  Select a vertical levels set. Default: 200 uniformly spaced levels from 0 to 900 km.
+  Select a vertical levels set. Default: 200 uniformly spaced levels
+  from 0 to 900 km.
   Yes, *km*.
-  It's a hydrogen-dominated atmosphere, so the scale height is much larger than that for Earth's air.
+  It's a hydrogen-dominated atmosphere, so the scale height is much larger
+  than that for Earth's air.
 
 - **PHYSICS_CONF**
 
@@ -99,11 +112,13 @@ Cycling options
 
 - **EXPT_RUNLEN**
 
-  Experiment run length in the cylc date-time format, e.g. ``PT10H30M``, ``P20D``, etc.
+  Experiment run length in the cylc date-time format, e.g.
+  ``PT10H30M``, ``P20D``, etc.
 
 - **EXPT_RESUB**
 
-  Experiment resubmission frequency, i.e. the length of continuation runs, in the cylc date-time format.
+  Experiment resubmission frequency, i.e. the length of
+  continuation runs, in the cylc date-time format.
 
 Parallel execution settings
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -121,7 +136,8 @@ Parallel execution settings
 
 - **HOUSEKEEPING**
 
-  Clean up output directory on successful finish. Currently only removes ``xios_*`` log files.
+  Clean up output directory on successful finish. Currently only
+  removes ``xios_*`` log files.
 
 GitHub settings
 ~~~~~~~~~~~~~~~
@@ -139,4 +155,5 @@ GitHub settings
 - **USE_TOKENS**
 
   If true, switches sources to use https URLs instead of ssh.
-  This requires a personal access token to be setup to authenticate with GitHub.
+  This requires a personal access token to be setup to
+  authenticate with GitHub.

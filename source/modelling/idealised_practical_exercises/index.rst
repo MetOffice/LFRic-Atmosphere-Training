@@ -2,7 +2,8 @@
 Exercises in Idealised Configurations
 *************************************
 
-The aim of this practical is to gain experience in running and analysing an idealised configuration of LFRic-Atmosphere.
+The aim of this practical is to gain experience in running and
+analysing an idealised configuration of LFRic-Atmosphere.
 
 In this section, you will:
 
@@ -24,4 +25,8 @@ In this section, you will:
    plotting/plotting.rst
    quiz/quiz.rst
 
-.. Warning:: The science suite that we will be using is very much work in progress (Alex's PhD!) so there could be mistakes, please be patient with us.
+.. Warning::
+
+   The science suite that we will be using is very much work in
+   progress (Alex's PhD!) so there could be mistakes, please be
+   patient with us.

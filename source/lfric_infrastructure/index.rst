@@ -67,7 +67,8 @@ PSyclone, and supporting scientific libraries used by the practicals.
 Where a course uses Azure Spice, treat it as this prepared Met Office platform
 route rather than as a portable installation requirement.
 
-On partner or external platforms, follow your site's `LFRic Development Environment`_
+On partner or external platforms, follow your site's
+`LFRic Development Environment`_
 documentation to provide an equivalent environment before starting the
 practicals. The exact compiler and library versions are platform-specific and
 are owned by the supported LFRic build environment and repository dependency

@@ -68,13 +68,15 @@ rotation is actually switched off in the equations formulation section:
 
          Rose GUI: dynamics parameters enabling rotation (``formulation`` namelist).
 
-**So we first enable rotation and then we can also play with the rotation rate.**
+**So we first enable rotation and then we can also play with
+the rotation rate.**
 
 
 Step 1: Switch on rotation
 --------------------------
 
-1. Open Rose GUI or ``app/lfric_atm/rose-app.conf`` in a text editor of your choice.
+1. Open Rose GUI or ``app/lfric_atm/rose-app.conf`` in a text
+   editor of your choice
 2. Search for the ``rotating`` key.
 3. Change it to ``.true.``.
 
@@ -87,4 +89,5 @@ Check the output using Python or another tool of your choice.
 Step 3. Compare with the control experiment
 -------------------------------------------
 
-Using a Python script or Jupyter Notebook, make plots for both experiments and compare them to each other to see the effect of rotation.
+Using a Python script or Jupyter Notebook, make plots for both
+experiments and compare them to each other to see the effect of rotation.

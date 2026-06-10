@@ -70,4 +70,3 @@ The resulting plot can be seen below.
    :alt: Iris quickplot example
 
    Example output from iris.quickplot.
-

@@ -147,7 +147,10 @@ pamphlet—simple and compact. In the unstructured case, however,
 it's like reading an entire novel. This illustrates an important
 concept:
 
-.. important:: While unstructured data offers greater flexibility, it also comes with a higher data cost.
+.. important::
+
+   While unstructured data offers greater flexibility,
+   it also comes with a higher data cost.
 
 UGRID can support both 2D and 3D meshes. In the GungHo formulation,
 cells are 3D, and it's even possible to represent LFRic data on a 3D
@@ -268,7 +271,8 @@ data formats, such as UGRID.
 
    The Scientific Python Ecosystem and unstructured data tools
 
-The main resources for the tools and standards shown in :numref:`fig-mesh-unstructured-tools` are:
+The main resources for the tools and standards shown in
+:numref:`fig-mesh-unstructured-tools` are:
 
 * **Iris**: `Iris documentation <https://scitools-iris.readthedocs.io/>`_,
   `Iris on GitHub <https://github.com/SciTools/iris>`_
@@ -280,9 +284,11 @@ The main resources for the tools and standards shown in :numref:`fig-mesh-unstru
   `Dask on GitHub <https://github.com/dask/dask>`_
 * **Matplotlib**: `Matplotlib documentation <https://matplotlib.org/stable/>`_,
   `Matplotlib on GitHub <https://github.com/matplotlib/matplotlib>`_
-* **Cartopy**: `Cartopy documentation <https://scitools.org.uk/cartopy/docs/latest/>`_,
+* **Cartopy**:
+  `Cartopy documentation <https://scitools.org.uk/cartopy/docs/latest/>`_,
   `Cartopy on GitHub <https://github.com/SciTools/cartopy>`_
-* **ESMF and iris-esmf-regrid**: `ESMF project page <https://earthsystemmodeling.org/>`_,
+* **ESMF and iris-esmf-regrid**:
+  `ESMF project page <https://earthsystemmodeling.org/>`_,
   `ESMF on GitHub <https://github.com/esmf-org/esmf>`_,
   `iris-esmf-regrid documentation <https://iris-esmf-regrid.readthedocs.io/en/latest/>`_,
   `iris-esmf-regrid on GitHub <https://github.com/SciTools/iris-esmf-regrid>`_
@@ -321,7 +327,7 @@ metadata-aware processing. It provides analysis capabilities in
 mathematics, statistics, large data handling, and regridding. For
 visualisation, Iris relies on Matplotlib and Cartopy.
 
-The core of Iris is built around CF and NumPy. CF (Climate and Forecast) 
+The core of Iris is built around CF and NumPy. CF (Climate and Forecast)
 conventions allow Iris to work with the encoding of climate and forecast
 data stored in netCDF files. NumPy provides efficient array operations
 implemented in compiled code and linked numerical libraries, avoiding
@@ -381,7 +387,7 @@ Key features of regridding include:
 
    Regridding data from an unstructured mesh to a structured grid
 
-The regridding tools discussed above are documented by the 
+The regridding tools discussed above are documented by the
 `ESMF user guide <https://earthsystemmodeling.org/docs/release/latest/ESMF_usrdoc/>`_,
 `ESMF source repository <https://github.com/esmf-org/esmf>`_, and
 `iris-esmf-regrid documentation <https://iris-esmf-regrid.readthedocs.io/en/latest/>`_.
@@ -390,7 +396,8 @@ Visualising unstructured data
 +++++++++++++++++++++++++++++
 
 In traditional structured grid systems, data is plotted in 2D using
-Matplotlib. Cartopy, a tool used for cartographic elements, assists in this process.
+Matplotlib. Cartopy, a tool used for cartographic elements, assists
+in this process.
 
 For unstructured grid visualisation, PyVista provides Python access
 to VTK's rendering and mesh-processing capabilities. VTK is a versatile
