@@ -32,7 +32,6 @@ extensions = [
     'sphinx_design',
     'sphinx.ext.graphviz',
     'sphinx.ext.intersphinx',
-    'sphinx_toolbox.collapse',
     'sphinxcontrib.quizdown',
     'sphinxcontrib.video',
     'sphinx_copybutton',
