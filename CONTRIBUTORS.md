@@ -12,4 +12,5 @@
 | stephenworsley   | Stephen Worsley        | Met Office            | 2026-06-03 |
 | menonarathy      | Arathy Menon           | Met Office            | 2026-06-04 |
 | pp-mo            | Patrick Peglar         | Met Office            | 2026-06-05 |
+| CorboPy          | Alex Corbett           | University of Bristol | 2026-06-10 |
 | angelamynard     | Angela Mynard          | Met Office            | 2026-06-09 |
