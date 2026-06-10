@@ -14,7 +14,12 @@ will follow later in this training.
 Prerequisites
 -------------
 
-Before beginning the practical, ensure you have access to the following tools:
+Before beginning the practical exercises, read
+:ref:`lfric-platform-prerequisites`. In particular, check that you have access
+to a supported LFRic build environment, the required source repositories,
+Rose/Cylc workflow tooling, and the source-control tools used by your site.
+
+In addition, ensure the practical setup route for your site provides:
 
 * Git and GitHub access for the repositories used in the practicals.
   Active LFRic Atmosphere development is moving through GitHub-hosted
@@ -27,7 +32,9 @@ Before beginning the practical, ensure you have access to the following tools:
 
 Setup Instructions
 ++++++++++++++++++
-1. Install Git and any site-specific workflow tools required on your platform.
+1. Use the Met Office LFRic module stack or your site's supported LFRic
+   platform instructions to make the required build and workflow tools
+   available.
 2. Make sure you have access to the GitHub repositories used in the
    practicals.
 3. If a practical or local platform still requires MOSRS/SRS access, obtain an
