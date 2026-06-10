@@ -10,7 +10,6 @@ requires-python = ">=3.11"
 dependencies = [
   "sphinx>=8.2",
   "pydata-sphinx-theme!=0.17.0",
-  "sphinx-toolbox<4",
   "sphinxcontrib-video",
   "sphinxcontrib-quizdown @ git+https://github.com/bonartm/sphinxcontrib-quizdown.git",
   "sphinx-copybutton",
