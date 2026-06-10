@@ -40,6 +40,9 @@ jobs:
           python-version: "3.11"
           enable-cache: true
 
+      - name: Install Graphviz
+        run: sudo apt-get update && sudo apt-get install -y graphviz
+
       - name: Install dependencies from pyproject.toml
         run: |
           uv sync
