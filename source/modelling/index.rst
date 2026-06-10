@@ -50,4 +50,4 @@ configured and run within the Momentum® Framework.
    med/index.rst
    gc_practical_exercises/index.rst
    reg_practical_exercises/index.rst
-
+   idealised_practical_exercises/index.rst

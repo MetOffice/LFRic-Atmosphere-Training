@@ -14,20 +14,18 @@ component models, including:
 
 * `JULES <https://jules.jchmr.org/about>`_ - the land surface model,
 * `SOCRATES repository`_ - the radiative transfer scheme,
-* `CASIM
-  <https://code.metoffice.gov.uk/trac/monc/wiki/CASIMDocStart>`_ -
+* `CASIM <https://code.metoffice.gov.uk/trac/monc/wiki/CASIMDocStart>`_ -
   the cloud and aerosol microphysics scheme,
-* `UKCA
-  <https://www.metoffice.gov.uk/research/approach/collaboration/jwcrp/ukca>`_
+* `UKCA <https://www.metoffice.gov.uk/research/approach/collaboration/jwcrp/ukca>`_
   - the atmospheric chemistry and aerosol model.
 
-Like the Unified Model, LFRic Atmosphere uses terrain-following
-vertical coordinates, so model levels (two-dimensional horizontal
-slices of the atmosphere) follow the shape of the lower boundary near
-the surface.
+Like the Unified Model, LFRic Atmosphere uses terrain-following vertical
+coordinates, so model levels (two-dimensional horizontal slices of the
+atmosphere) follow the shape of the lower boundary near the surface. Unlike
+the Unified Model, LFRic employs:
 
-* A **cubed-sphere mesh**, a grid structure designed to avoid the
-  pole singularity in traditional latitude-longitude grids,
+* A **cubed-sphere mesh**, a grid structure designed to
+  avoid the pole singularity in traditional latitude-longitude grids.
 * The **GungHo** mixed finite-element dynamical core,
 * A modern software infrastructure designed for future
   high-performance computing architectures.
