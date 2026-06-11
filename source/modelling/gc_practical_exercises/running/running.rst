@@ -11,14 +11,6 @@ Installing and Running the Workflow
 ====================================
 
 Navigate into the ``roses/<suite-id>`` directory you created.
-List the available optional configurations:
-
-.. code-block:: console
-
-   ls opt/
-
-In this case the optional configurations are sites to use - these files
-will be in the form ``rose-suite-<SITE>.conf``.
 
 Validate the workflow, install it to ``~/cylc-run`` and play it using:
 
@@ -28,6 +20,12 @@ Validate the workflow, install it to ``~/cylc-run`` and play it using:
 
    # Or for ease of typing:
    cylc vip -O <SITE>
+
+Site settings are stored as Rose
+:external+rose:ref:`optional configuration` files. For example a configuration
+file ``opt/rose-suite-yoursite.conf`` would be selected using
+``-O yoursite``.
+
 
 .. seealso::
 
