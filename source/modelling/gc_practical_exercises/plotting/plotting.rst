@@ -149,4 +149,4 @@ The resulting plot can be seen below.
    :width: 600px
    :alt: Iris quickplot example
 
-   Example output from iris.quickplot. 
+   Example output from iris.quickplot.
