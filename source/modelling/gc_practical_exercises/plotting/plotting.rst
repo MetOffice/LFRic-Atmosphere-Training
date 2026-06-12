@@ -10,11 +10,91 @@ GUI tools and using Python with the Iris library.
 Using GUI tools
 ---------------
 
-For quick visualisation of NetCDF data files, you can use
-terminal-based GUI tools
-such as ``xconv`` and ``ncview``. These tools allow you to inspect
-data quickly
-without writing any code.
+For quick visualisation and inspection of NetCDF data files, you can use
+graphical tools such as **ncview** and **xconv**. These tools provide a
+fast way to explore datasets without writing any code, making them useful
+for checking file contents, verifying dimensions, and performing an
+initial quality check before more detailed analysis.
+
+ncview
+~~~~~~
+
+``ncview`` is a lightweight graphical browser for NetCDF files. It can
+display 2D fields, animate data through time, inspect values, and switch
+between variables and dimensions. It is particularly useful for obtaining
+a quick overview of model output or observational datasets.
+
+Example:
+
+.. code-block:: console
+
+   ncview temperature.nc
+
+Useful tasks include:
+
+* Browsing available variables in a file
+* Stepping through time slices
+* Viewing simple animations
+* Examining data ranges and missing values
+
+Documentation and setup:
+
+* ncview documentation: https://cirrus.ucsd.edu/ncview/
+
+xconv
+~~~~~
+
+``xconv`` is a graphical data exploration and conversion tool commonly
+used within the atmospheric and climate modelling community. It supports
+NetCDF files as well as several meteorological data formats and provides
+facilities for plotting, inspecting dimensions, and converting data
+between formats.
+
+Example:
+
+.. code-block:: console
+
+   xconv
+
+After launching the application:
+
+#. Open a NetCDF file.
+#. Select a variable from the variable list.
+#. Use **Plot Data** to display the selected field.
+#. Navigate dimensions such as time, level, latitude, and longitude
+   using the GUI controls.
+
+Documentation and setup:
+
+* xconv documentation:
+  https://ncas-cms.github.io/xconv-doc/html/index.html
+* xconv setup guide:
+  https://ncas-cms.github.io/xconv-doc/html/setup.html
+
+When should I use GUI tools?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+GUI tools are ideal for:
+
+* Quickly checking that a file contains the expected variables
+* Exploring dimensions and metadata
+* Verifying model output before analysis
+* Performing a rapid visual quality-control check
+
+For reproducible analysis, processing large datasets, or creating
+publication-quality figures, command-line tools and scripting languages
+such as Python are generally more appropriate.
+
+If these tools are installed via environment modules on your system,
+you may first need to load them before use:
+
+.. code-block:: console
+
+   module load ncview
+   module load xconv
+
+Refer to your local HPC documentation for the exact module names
+available on your platform.
 
 Using Python
 ------------
@@ -69,4 +149,4 @@ The resulting plot can be seen below.
    :width: 600px
    :alt: Iris quickplot example
 
-   Example output from iris.quickplot.
+   Example output from iris.quickplot. 

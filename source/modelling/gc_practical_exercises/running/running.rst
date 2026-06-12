@@ -1,23 +1,35 @@
 ***************************
-Running a Rose Workflow
+Running a Cylc Workflow
 ***************************
 
-Now that you have successfully copied and edited a workflow, you are
-ready to run it! This section will guide you through the process of
-installing and running your workflow, monitoring its progress, and
-verifying that it has completed successfully.
+Now that you have successfully copied and edited a workflow,
+you are ready to run it! This section will guide you through
+the process of installing and running your workflow, monitoring its
+progress, and verifying that it has completed successfully.
 
 Installing and Running the Workflow
 ====================================
 
-Navigate into the ``roses/<suite-id>`` directory you just created and
-use the ``cylc vip`` command, remembering to use the ``-O`` flag to
-specify the platform you are running on. This tells Cylc to verify,
-install, and then play the workflow.
+Navigate into the ``roses/<suite-id>`` directory you created.
 
-.. code-block:: bash
+Validate the workflow, install it to ``~/cylc-run`` and play it using:
 
-    cylc vip -O <SITE_FILE>
+.. code-block:: console
+
+   cylc validate-install-play --opt-conf-key=<SITE>
+
+   # Or for ease of typing:
+   cylc vip -O <SITE>
+
+Site settings are stored as Rose
+:external+rose:ref:`optional configuration` files. For example a configuration
+file ``opt/rose-suite-yoursite.conf`` would be selected using
+``-O yoursite``.
+
+
+.. seealso::
+
+   Cylc :external+cylc:ref:`installing_workflows.compound_commands`
 
 .. note::
 
