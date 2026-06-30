@@ -253,25 +253,22 @@ The regridding tools discussed above are documented by the
 Visualising unstructured data
 +++++++++++++++++++++++++++++
 
-In traditional structured grid systems, data is plotted in 2D using
-Matplotlib. Cartopy, a tool used for cartographic elements, assists in this process.
+Structured-grid workflows commonly use Matplotlib for 2D plotting,
+with Cartopy adding map projections and other cartographic features.
+Those tools remain useful for many latitude-longitude datasets, but
+they do not scale well to high-resolution unstructured meshes.
 
-For unstructured grid visualisation, PyVista provides Python access
-to VTK's rendering and mesh-processing capabilities. VTK is a versatile
-toolkit implemented in C++ and can use GPU acceleration for interactive
-rendering. GeoVista adds geospatial and cartographic helpers on top
-of PyVista, performing a role similar to Cartopy for map-aware visualisation.
+The unstructured workflow therefore uses tools built around 3D mesh
+rendering. PyVista provides Python access to the `Visualization Toolkit
+(VTK) <https://vtk.org/>`_, a C++ library for 3D visualisation and mesh
+processing. VTK can use GPU-accelerated rendering, which is important
+for datasets with many mesh faces. GeoVista adds geospatial and
+cartographic helpers on top of PyVista, performing a role similar to
+Cartopy for map-aware visualisation.
 
-While Matplotlib and Cartopy have traditionally been used for
-structured data, these tools do not scale well and struggle to
-handle high-resolution unstructured meshes.
-
-For instance, a C48 mesh has approximately 13,000 faces, and a C1048 mesh (approximately 9.55 km grid spacing at the equator) would require excessive computation and memory resources for Matplotlib and Cartopy. It would take them around 13.5s to render a C48 and 2h for a C1048! With PyVista, a C48 mesh can be rendered in 369 ms, while a C1048 mesh takes 3.87 seconds.
-
-Unstructured visualisation tools include `VTK <https://vtk.org/>`_,
-a GPU-accelerated toolkit for visualisation and mesh processing, and
-`ParaView <https://www.paraview.org/>`_, a parallel visualisation application. PyVista provides a high-level Python interface for VTK, and GeoVista provides
-geospatial helpers for PyVista.
+`ParaView <https://www.paraview.org/>`_ is another tool in this
+ecosystem. It is a parallel visualisation application for large
+scientific datasets.
 
 See the subsections below for detailed package summaries and links.
 
@@ -280,28 +277,33 @@ See the subsections below for detailed package summaries and links.
 PyVista - basics and scope
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-PyVista is an open-source Python library that provides a high-level
-interface to `VTK <https://vtk.org/>`_ (Visualization Toolkit), a
-powerful C++ library for 3D visualisation and mesh processing.
-In the context of LFRic data, PyVista replaces Matplotlib for rendering
-unstructured meshes, delivering GPU-accelerated rendering that
-scales to high-resolution datasets.
+PyVista is the main Python interface used here for rendering LFRic
+unstructured meshes. It gives Scientific Python users a NumPy-friendly
+API for 3D geometry, so they can build visualisation workflows without
+writing C++ code.
 
-PyVista exposes VTK's capabilities through a NumPy-friendly API,
-allowing scientific Python users to work with 3D geometry without
-writing low-level C++ code.
-It supports interactive rendering in Jupyter notebooks as well as
-batch (off-screen) rendering for automated workflows.
-PyVista also provides a rich set of mesh filters, such as slicing,
-contouring, and interpolation, making it suitable for both
-visualisation and computational geometry tasks.
+For the workflows covered in this training, PyVista supports:
 
-The performance advantage of PyVista over Matplotlib becomes
-significant at LFRic resolutions: a C48 mesh (approximately 13,000
-faces) renders in around 370 ms with PyVista, compared to
-approximately 13.5 seconds with Matplotlib, and a C1048 mesh
-renders in under 4 seconds rather than the roughly 2 hours
-Matplotlib would require.
+* interactive rendering in Jupyter notebooks;
+* batch (off-screen) rendering for automated workflows; and
+* mesh filters such as slicing, contouring, and interpolation, which
+  support both visualisation and computational geometry tasks.
+
+The performance advantage over Matplotlib becomes significant at LFRic
+resolutions. For example:
+
+.. list-table::
+   :header-rows: 1
+
+   * - Mesh
+     - PyVista time
+     - Matplotlib time
+   * - C48 (approximately 13,000 faces)
+     - approximately 370 ms
+     - approximately 14 s
+   * - C1048
+     - under 4 s
+     - approximately 2 hours
 
 .. _geovista.basics:
 
@@ -321,6 +323,6 @@ coastline overlays, texture mapping, and regional extraction
 Its current projection support is more limited than
 Cartopy's but includes common geographic rendering workflows
 and selected projected outputs.
-Because GeoVista renders through PyVista and VTK, it benefits from
-the same rendering stack when displaying the high face-counts
-associated with operational LFRic resolutions.
+Because GeoVista uses the same rendering stack as PyVista, it can display
+the high face-count datasets associated with operational LFRic
+resolutions.
