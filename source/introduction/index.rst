@@ -30,3 +30,4 @@ For learners who want more technical detail, the paper `LFRic: Meeting the chall
    seamless_modelling.rst
    components.rst
    history_context.rst
+   quiz.rst
