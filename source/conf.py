@@ -7,6 +7,9 @@ from docutils import nodes
 from sphinx.application import Sphinx
 from sphinx.errors import ExtensionError
 
+sys.path.insert(0, os.path.abspath(os.path.join(
+    os.path.dirname(__file__), '_extensions'
+)))
 sys.path.append(os.path.abspath('../lib/'))
 
 # Configuration file for the Sphinx documentation builder.
@@ -32,7 +35,7 @@ extensions = [
     'sphinx_design',
     'sphinx.ext.graphviz',
     'sphinx.ext.intersphinx',
-    'sphinxcontrib.quizdown',
+    'quizdown',
     'sphinxcontrib.video',
     'sphinx_copybutton',
 ]

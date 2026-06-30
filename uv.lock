@@ -1754,7 +1754,6 @@ dependencies = [
     { name = "sphinx-copybutton" },
     { name = "sphinx-design" },
     { name = "sphinx-lint" },
-    { name = "sphinxcontrib-quizdown" },
     { name = "sphinxcontrib-video" },
 ]
 
@@ -1799,7 +1798,6 @@ requires-dist = [
     { name = "sphinx-copybutton" },
     { name = "sphinx-design" },
     { name = "sphinx-lint" },
-    { name = "sphinxcontrib-quizdown", git = "https://github.com/bonartm/sphinxcontrib-quizdown.git" },
     { name = "sphinxcontrib-video" },
     { name = "trame", marker = "extra == 'notebooks'" },
     { name = "trame-vtk", marker = "extra == 'notebooks'" },
@@ -3703,15 +3701,6 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/68/bc/9104308fc285eb3e0b31b67688235db556cd5b0ef31d96f30e45f2e51cae/sphinxcontrib_qthelp-2.0.0.tar.gz", hash = "sha256:4fe7d0ac8fc171045be623aba3e2a8f613f8682731f9153bb2e40ece16b9bbab", size = 17165, upload-time = "2024-07-29T01:09:56.435Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/27/83/859ecdd180cacc13b1f7e857abf8582a64552ea7a061057a6c716e790fce/sphinxcontrib_qthelp-2.0.0-py3-none-any.whl", hash = "sha256:b18a828cdba941ccd6ee8445dbe72ffa3ef8cbe7505d8cd1fa0d42d3f2d5f3eb", size = 88743, upload-time = "2024-07-29T01:09:54.885Z" },
-]
-
-[[package]]
-name = "sphinxcontrib-quizdown"
-version = "0.3"
-source = { git = "https://github.com/bonartm/sphinxcontrib-quizdown.git#d9f24a7a2305ad5b196e06597b1779c9414d1d85" }
-dependencies = [
-    { name = "docutils" },
-    { name = "sphinx" },
 ]
 
 [[package]]
