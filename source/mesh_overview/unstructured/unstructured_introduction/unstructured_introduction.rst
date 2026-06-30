@@ -223,7 +223,13 @@ Different types of regridders are available depending on the source and target g
 
 Each regridder offers various features, including the ability to read and write cubes, perform area-weighted regridding, and preserve metadata during operations. Additionally, the capability to load and save regridders is supported.
 
-For datasets with masked data, the regridding process ensures that the mask is handled correctly. If the mask from the source grid covers more than a specified threshold of a target grid cell, that target cell is included in the mask. Otherwise, it is excluded from the target grid.
+.. admonition:: Masked data during regridding
+
+   Some datasets contain masked data: values that should not be
+   used in analysis. During regridding, the source data mask is carried
+   across to the target grid. If masked source data covers more than the
+   configured threshold for a target cell, that target cell is masked too.
+   Otherwise, the target cell remains unmasked.
 
 Key features of regridding include:
 
