@@ -154,9 +154,15 @@ Once the environment is set up:
 
       jupyter lab
 
-4. In JupyterLab, select:
+4. In the JupyterLab file browser, open the first tutorial notebook,
+   ``00_Mesh_Tutorial_Intro.ipynb``.
+
+5. With the notebook open, select:
 
    - ``Kernel -> Change Kernel -> Python (lfric-mesh)``
+
+   If JupyterLab asks you to choose a kernel as the notebook opens, select
+   ``Python (lfric-mesh)`` from that dialog instead.
 
 .. important::
    Always launch JupyterLab from within ``notebooks/iris-mesh-tutorial/notebooks`` to ensure paths and imports work correctly.
