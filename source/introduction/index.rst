@@ -22,6 +22,7 @@ For learners who want more technical detail, the paper `LFRic: Meeting the chall
    * Describe the history and evolution of LFRic Atmosphere and its relationship to the Unified Model.
    * Summarise the principles of seamless modelling and explain why they are important for Earth system prediction.
    * Identify the major components of the Momentum Framework and describe how they work together to build prediction and projection systems.
+   * Describe the role of the ocean and sea-ice components in coupled Momentum configurations.
 
 .. toctree::
    :maxdepth: 1
@@ -29,4 +30,5 @@ For learners who want more technical detail, the paper `LFRic: Meeting the chall
 
    seamless_modelling.rst
    components.rst
+   ocean_and_sea_ice.rst
    history_context.rst
