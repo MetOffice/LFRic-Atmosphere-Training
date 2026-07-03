@@ -198,7 +198,8 @@ linkcheck_ignore = [
     r'^https?://oasis\.cerfacs\.fr(?:/.*)?$',
     r'^https://www.sciencedirect.com/science/article/pii/S0743731518305306$',
     r'^https?://code\.metoffice\.gov\.uk(?:/.*)?$',
-    r'https://doi.org/.*'
+    r'https://doi.org/.*',
+    r'https://cirrus.ucsd.edu/ncview/.*',
 ]
 
 # Add hyperlinks include file to avoid repeated links.
