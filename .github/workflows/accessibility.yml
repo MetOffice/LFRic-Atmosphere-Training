@@ -20,7 +20,7 @@ jobs:
       PUPPETEER_SKIP_DOWNLOAD: "true"
 
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
 
       - name: Install uv and Set up Python
         uses: astral-sh/setup-uv@v7
@@ -40,7 +40,7 @@ jobs:
         run: uv run make clean html
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: "22"
 
