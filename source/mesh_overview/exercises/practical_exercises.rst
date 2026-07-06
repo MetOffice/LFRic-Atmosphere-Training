@@ -1,3 +1,5 @@
+.. _mesh-practical-exercises:
+
 *********************************
 Practical using unstructured data
 *********************************
@@ -92,25 +94,17 @@ The most important ideas for this practical are:
      - You are new to notebooks or want to understand what JupyterLab
        is before
        running ``jupyter lab``.
-     - Start with the official `Project Jupyter documentation
-       <https://docs.jupyter.org/en/latest/>`_, then use the
-       JupyterLab pages on
-       `Starting JupyterLab
-       <https://jupyterlab.readthedocs.io/en/stable/getting_started/starting.html>`_
-       and `The JupyterLab Interface
-       <https://jupyterlab.readthedocs.io/en/stable/user/interface.html>`_.
+     - Start with :ref:`using-jupyter-notebooks`, then use the official
+       `Project Jupyter documentation <https://docs.jupyter.org/en/latest/>`_
+       for more detail.
    * - Notebook cells and kernels
      - You need to understand how to run cells, switch kernels, or
        stop a kernel
        that is still running.
-     - Use the official Jupyter Notebook `Notebook Basics
-       <https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/Notebook%20Basics.html>`_,
+     - Use :ref:`using-jupyter-notebooks` for the course workflow, then
        JupyterLab's `Notebooks
-       <https://jupyterlab.readthedocs.io/en/stable/user/notebook.html>`_,
-       and
-       JupyterLab's `Managing Kernels and Terminals
-       <https://jupyterlab.readthedocs.io/en/stable/user/running.html>`_
-       pages.
+       <https://jupyterlab.readthedocs.io/en/stable/user/notebook.html>`_ page
+       for more detail.
    * - Python environments
      - You need help understanding ``conda create``, ``conda
        activate``, or why
