@@ -44,7 +44,7 @@ This will give you a clean, editable version to experiment with safely.
 
             rosie copy u-by395
 
-   .. tab-item:: Partner
+   .. tab-item:: Monsoon
 
       .. code-block:: bash
 
