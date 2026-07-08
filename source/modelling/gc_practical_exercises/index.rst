@@ -3,6 +3,7 @@ Exercises in Global Configurations
 **********************************
 
 The aim of this practical is to gain experience in editing, running, and analysing global configurations. You will:
+
 .. admonition:: In this module you will learn about...
 
    * copying a global configuration case and understanding its structure

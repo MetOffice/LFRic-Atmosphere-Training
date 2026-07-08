@@ -8,12 +8,25 @@ Editing with Rose GUI
 
 To edit and view the workflow data, navigate into the ``roses/<suite-id>`` directory you just made and run the ``rose edit`` command:
 
-.. code-block:: bash
+.. tab-set::
 
-   $ cd ~/roses/<suite-id>
-   $ ls
-   app  flow.cylc  meta  opt  README_cylc8  rose-suite.conf  rose-suite.info  site  tests.cylc
-   $ rose edit
+   .. tab-item:: Met Office
+
+      .. code-block:: console
+
+            $ cd ~/roses/<suite-id>
+            $ ls
+            app  flow.cylc  meta  opt  README_cylc8  rose-suite.conf  rose-suite.info  site  tests.cylc
+            $ rose edit
+
+   .. tab-item:: Monsoon
+
+      .. code-block:: console
+
+            $ cd ~/roses/<suite-id>
+            $ ls
+            app  flow.cylc  meta  opt  README_cylc8  rose-suite.conf  rose-suite.info  site  tests.cylc
+            $ rose edit 
 
 This will open up the Rose Graphical User Interface (GUI) for editing the workflow. You can navigate through the different sections using the tabs at the left of the window.
 
