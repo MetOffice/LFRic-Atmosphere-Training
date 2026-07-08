@@ -34,27 +34,33 @@ Platform and prerequisites
 
 The practical pages in this module assume access to a prepared Unix-like
 development platform that can build and run LFRic Atmosphere. They are not a
-from-a-clean-operating-system installation guide.
+from-a-clean-operating-system installation guide.z
 
-At the Met Office, use the managed LFRic training environment and load the
-supported module stack as shown in :ref:`practical_3.1`:
+.. tab-set::
 
-.. code-block:: console
+   .. tab-item:: Met Office
 
-   ml use ~lfricadmin/lmod
-   ml lfric
+      At the Met Office, use the managed LFRic training environment and load the
+      supported module stack as shown in :ref:`practical_3.1`:
+
+      .. code-block:: console
+
+          ml use ~lfricadmin/lmod
+          ml lfric
+
+   .. tab-item:: Non Met Office
+
+      On non Met Office platforms, follow your site's `LFRic Development Environment`_
+      documentation to provide an equivalent environment before starting the
+      practicals. The exact compiler and library versions are platform-specific and
+      are owned by the supported LFRic build environment and repository dependency
+      files rather than by this training course. The ``Partner`` tabs in the
+      practicals identify where local site instructions are expected. 
 
 That module stack selects the compiler, MPI implementation, Python tools,
 PSyclone, and supporting scientific libraries used by the practicals.
 Where a course uses Azure Spice, treat it as this prepared Met Office platform
 route rather than as a portable installation requirement.
-
-On partner or external platforms, follow your site's `LFRic Development Environment`_
-documentation to provide an equivalent environment before starting the
-practicals. The exact compiler and library versions are platform-specific and
-are owned by the supported LFRic build environment and repository dependency
-files rather than by this training course. The ``Partner`` tabs in the
-practicals identify where local site instructions are expected.
 
 .. list-table:: Tools and access expected by this module
    :header-rows: 1
