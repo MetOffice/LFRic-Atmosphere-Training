@@ -38,7 +38,7 @@ Step 1: Compile the model
             git clone git@github.com:MetOffice/lfric_apps.git
             cd lfric_apps
 
-      .. tab-item:: Partner
+      .. tab-item:: Non Met Office
 
          Consult your site's documentation for cloning git repositories, then
          clone the LFRic apps repository:
@@ -64,7 +64,7 @@ Step 1: Compile the model
             ml use ~lfricadmin/lmod
             ml lfric
 
-      .. tab-item:: Partners
+      .. tab-item:: Non Met Office
 
          For other platforms, see the `LFRic Development Environment`_.
 
@@ -128,9 +128,17 @@ The code contains an `LFRic example`_ configuration containing:
 
       ncdump -h lfric_diag.nc | less
 
-   ``ncdump`` is part of the NetCDF tools, available in the Met Office
-   ``lfric`` environment. On other platforms, install the NetCDF utilities or
-   use the :ref:`iris.basics` Python workflow instead.
+   .. tab-set::
+
+      .. tab-item:: Met Office
+
+         ``ncdump`` is part of the NetCDF tools available in the Met Office
+         ``lfric`` environment.
+
+      .. tab-item:: Non Met Office
+
+         Install the NetCDF utilities using your site's supported package or
+         module route, or use the :ref:`iris.basics` Python workflow instead.
 
 4. Explore the NetCDF output configuration:
 

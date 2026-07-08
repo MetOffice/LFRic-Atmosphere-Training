@@ -32,27 +32,31 @@ In addition, ensure the practical setup route for your site provides:
 
 Setup Instructions
 ++++++++++++++++++
-1. Use the Met Office LFRic module stack or your site's supported LFRic
-   platform instructions to make the required build and workflow tools
-   available.
-2. Make sure you have access to the GitHub repositories used in the
-   practicals.
-3. If a practical or local platform still requires MOSRS/SRS access, obtain an
-   account through the appropriate route:
+
+Use the tab that matches your platform before starting the practicals.
 
 .. tab-set::
 
    .. tab-item:: Met Office
 
-       Contact scientific_partnerships@metoffice.gov.uk to
-       request an account.
-      
-   .. tab-item:: Partners
-   
-      External users: Contact your local institutional sponsor.
-      
-      If unsure: Email scientific_partnerships@metoffice.gov.uk with your
-      affiliate institution and the reason you require access.
+      1. Load the Met Office LFRic module stack described in
+         :ref:`lfric-platform-prerequisites` so the required build and workflow
+         tools are available.
+      2. Make sure you have access to the GitHub repositories used in the
+         practicals.
+      3. If a practical still requires MOSRS/SRS access, contact
+         scientific_partnerships@metoffice.gov.uk to request an account.
+
+   .. tab-item:: Non Met Office
+
+      1. Follow your site's supported LFRic platform instructions to make the
+         required build and workflow tools available.
+      2. Make sure you have access to the GitHub repositories used in the
+         practicals through your site's normal access route.
+      3. If a practical or local platform still requires MOSRS/SRS access,
+         contact your local institutional sponsor. If unsure, email
+         scientific_partnerships@metoffice.gov.uk with your affiliate
+         institution and the reason you require access.
 
 .. toctree::
 

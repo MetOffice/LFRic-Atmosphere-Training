@@ -34,7 +34,7 @@ Platform and prerequisites
 
 The practical pages in this module assume access to a prepared Unix-like
 development platform that can build and run LFRic Atmosphere. They are not a
-from-a-clean-operating-system installation guide.z
+from-a-clean-operating-system installation guide.
 
 .. tab-set::
 
@@ -54,11 +54,13 @@ from-a-clean-operating-system installation guide.z
       documentation to provide an equivalent environment before starting the
       practicals. The exact compiler and library versions are platform-specific and
       are owned by the supported LFRic build environment and repository dependency
-      files rather than by this training course. The ``Partner`` tabs in the
-      practicals identify where local site instructions are expected. 
+      files rather than by this training course. The ``Non Met Office`` tabs in
+      the practicals identify where local site instructions are expected.
 
-That module stack selects the compiler, MPI implementation, Python tools,
-PSyclone, and supporting scientific libraries used by the practicals.
+The Met Office module stack selects the compiler, MPI implementation, Python
+tools, PSyclone, and supporting scientific libraries used by the practicals. On
+non Met Office platforms, the equivalent site-supported environment should
+provide those tools.
 Where a course uses Azure Spice, treat it as this prepared Met Office platform
 route rather than as a portable installation requirement.
 
@@ -75,8 +77,8 @@ route rather than as a portable installation requirement.
        site-supported Linux or HPC environment.
    * - Git and GitHub repository access
      - Cloning LFRic Apps, the example workflow, and any training branches.
-     - Follow your site's GitHub access guidance. Met Office and partner tabs
-       give the repository URLs used by each practical.
+     - Follow your site's GitHub access guidance. Met Office and non Met Office
+       tabs give the repository URLs used by each practical.
    * - Fortran/C/C++ build toolchain, MPI, NetCDF/HDF5, and build utilities
      - Compiling the atmosphere executable and linked science components.
      - Use the ``lfric`` module stack at the Met Office, or the toolchain

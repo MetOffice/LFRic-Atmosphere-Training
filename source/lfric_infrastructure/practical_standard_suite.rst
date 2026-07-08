@@ -34,7 +34,7 @@ Step 1: Check Out the Standard Suite
                git@github.com:MetOffice/momentum_user_training.example_lfric_workflow.git \
                lfric_apps_standard_suite
 
-   .. tab-item:: Partner
+   .. tab-item:: Non Met Office
 
       Consult your site's documentation for cloning git repositories, then
       clone:
@@ -95,25 +95,28 @@ Start the workflow with:
 
    cylc vip
 
-While the workflow is running, open the Cylc GUI explore the model output:
+While the workflow is running, open the Cylc interface to explore the model
+output:
 
 .. tab-set::
 
-   .. tab-item:: Partner
+   .. tab-item:: Met Office
+
+      Navigate to `Cylc Hub <https://cylchub>`_ and open the workflow there.
+
+   .. tab-item:: Non Met Office
+
+      Use the Cylc interface supported by your site:
 
       .. code-block:: console
 
          cylc gui
 
-   .. tab-item:: Partner (Command Line)
+      If a graphical interface is not available, use the terminal interface:
 
       .. code-block:: console
 
          cylc tui
-
-   .. tab-item:: Met Office
-
-      Navigate to `Cylc Hub <https://cylchub>`_
 
 
 Step 4: View the workflow running, logs and outputs
