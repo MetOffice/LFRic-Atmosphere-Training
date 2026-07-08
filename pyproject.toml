@@ -10,9 +10,7 @@ requires-python = ">=3.11"
 dependencies = [
   "sphinx>=8.2",
   "pydata-sphinx-theme!=0.17.0",
-  "sphinx-toolbox<4",
   "sphinxcontrib-video",
-  "sphinxcontrib-quizdown @ git+https://github.com/bonartm/sphinxcontrib-quizdown.git",
   "sphinx-copybutton",
   "sphinx-design",
   "sphinx-lint",
@@ -23,21 +21,22 @@ notebooks = [
   "jupyterlab",
   "scitools-iris",
   "geovista==0.5.3",
-  "pyvista>=0.46.3,<0.47",
-  "vtk<9.6",
+  "pyvista>=0.46.3,<0.49",
+  "vtk<9.7",
   "ipyvtklink",
   "trame",
   "trame-vtk",
   "trame-vuetify",
   "jupyter-server-proxy",
   "matplotlib",
-  "jupytext==1.14.4",
+  "jupytext==1.19.4",
   "esmf-regrid",
-  "numpy<2",
+  "numpy<3",
 ]
 
 dev = [
   "jupyter",
+  "sphinx-autobuild",
 ]
 
 [tool.uv]

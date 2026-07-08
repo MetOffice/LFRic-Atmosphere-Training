@@ -32,13 +32,16 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
 
       - name: Install uv and Set up Python
         uses: astral-sh/setup-uv@v7
         with:
           python-version: "3.11"
           enable-cache: true
+
+      - name: Install Graphviz
+        run: sudo apt-get update && sudo apt-get install -y graphviz
 
       - name: Install dependencies from pyproject.toml
         run: |

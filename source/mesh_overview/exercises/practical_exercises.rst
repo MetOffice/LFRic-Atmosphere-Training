@@ -1,3 +1,5 @@
+.. _mesh-practical-exercises:
+
 *********************************
 Practical using unstructured data
 *********************************
@@ -14,10 +16,11 @@ The upstream material comes from `iris-mesh-tutorial <https://github.com/scitool
 New to these tools?
 -------------------
 This practical is about working with LFRic unstructured mesh data. It uses
-Git, the command line, Conda, and JupyterLab, but it does not teach those tools
-from first principles. If any of the setup commands below are unfamiliar, use
-the resources in this section as optional preparation or as reference material
-while you work through the notebooks.
+Git, the command line, Conda, Python, and JupyterLab. If you are new to Python
+or have not used notebooks before, read :ref:`using-jupyter-notebooks` before
+starting the setup below. If the Git, terminal, or environment setup commands
+are unfamiliar, use the resources in this section as optional preparation or as
+reference material while you work through the notebooks.
 
 The most important ideas for this practical are:
 
@@ -71,21 +74,16 @@ The most important ideas for this practical are:
    * - Jupyter and notebooks
      - You are new to notebooks or want to understand what JupyterLab is before
        running ``jupyter lab``.
-     - Start with the official `Project Jupyter documentation
-       <https://docs.jupyter.org/en/latest/>`_, then use the JupyterLab pages on
-       `Starting JupyterLab
-       <https://jupyterlab.readthedocs.io/en/stable/getting_started/starting.html>`_
-       and `The JupyterLab Interface
-       <https://jupyterlab.readthedocs.io/en/stable/user/interface.html>`_.
+     - Start with :ref:`using-jupyter-notebooks`, then use the official
+       `Project Jupyter documentation <https://docs.jupyter.org/en/latest/>`_
+       for more detail.
    * - Notebook cells and kernels
      - You need to understand how to run cells, switch kernels, or stop a kernel
        that is still running.
-     - Use the official Jupyter Notebook `Notebook Basics
-       <https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/Notebook%20Basics.html>`_,
+     - Use :ref:`using-jupyter-notebooks` for the course workflow, then
        JupyterLab's `Notebooks
-       <https://jupyterlab.readthedocs.io/en/stable/user/notebook.html>`_, and
-       JupyterLab's `Managing Kernels and Terminals
-       <https://jupyterlab.readthedocs.io/en/stable/user/running.html>`_ pages.
+       <https://jupyterlab.readthedocs.io/en/stable/user/notebook.html>`_ page
+       for more detail.
    * - Python environments
      - You need help understanding ``conda create``, ``conda activate``, or why
        the practical uses a named environment.
@@ -154,9 +152,15 @@ Once the environment is set up:
 
       jupyter lab
 
-4. In JupyterLab, select:
+4. In the JupyterLab file browser, open the first tutorial notebook,
+   ``00_Mesh_Tutorial_Intro.ipynb``.
+
+5. With the notebook open, select:
 
    - ``Kernel -> Change Kernel -> Python (lfric-mesh)``
+
+   If JupyterLab asks you to choose a kernel as the notebook opens, select
+   ``Python (lfric-mesh)`` from that dialog instead.
 
 .. important::
    Always launch JupyterLab from within ``notebooks/iris-mesh-tutorial/notebooks`` to ensure paths and imports work correctly.

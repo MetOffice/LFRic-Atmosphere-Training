@@ -72,16 +72,16 @@ Step 2: Explore the workflow
    .. graphviz::
       :caption: Graph of the LFRic Apps Standard Suite.
 
-         digraph {
-            graph [fontname="sans" fontsize="25"]
-            node [fontname="sans"]
-            rankdir="LR"
-            "build_lfric_atm" -> "lfric_atm"
-            "build_mesh" -> "generate_mesh"
-            "extract" -> "build_lfric_atm"
-            "extract" -> "build_mesh"
-            "generate_mesh" -> "lfric_atm"
-         }
+      digraph {
+         graph [fontname="sans" fontsize="25"]
+         node [fontname="sans"]
+         rankdir="LR"
+         "build_lfric_atm" -> "lfric_atm"
+         "build_mesh" -> "generate_mesh"
+         "extract" -> "build_lfric_atm"
+         "extract" -> "build_mesh"
+         "generate_mesh" -> "lfric_atm"
+      }
 
    .. n.b. To regenerate the graph, use
    .. cylc graph . --transpose --output graph.dot

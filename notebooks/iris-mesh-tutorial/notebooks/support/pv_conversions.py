@@ -1,4 +1,9 @@
-"""Utility functions for converting Iris Cubes to PyVista (plottable) objects."""
+"""Utility functions for converting Iris Cubes to PyVista (plottable) objects.
+
+
+NOTE: these are now effectively **obsolete**
+Please *replace* uses with calls to `iris.experimental.geovista.cube_to_polydata`
+"""
 
 from geovista import Transform
 

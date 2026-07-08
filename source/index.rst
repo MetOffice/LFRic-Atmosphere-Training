@@ -24,6 +24,7 @@ Momentum Training - LFRic Atmosphere
    - Workflow engine `Cylc <https://cylc.github.io/cylc-doc/stable/html/tutorial/index.html>`_:  A system that automatically executes tasks according to schedules and dependencies.
    - Configuration management system `Rose <https://metomi.github.io/rose/doc/html/tutorial/rose/index.html>`_: A toolkit for writing, editing, and running application configurations.
    - Version control with `FCM <https://metomi.github.io/fcm/doc/user_guide/>`_ and `Git <https://www.astropython.com/git-novice/>`_: Tools for tracking and managing changes in code.
+   - Python and Jupyter notebooks: The :ref:`using-jupyter-notebooks` page explains how to launch JupyterLab, choose the correct kernel, run notebook cells, and find beginner-friendly Python resources.
 
 -------------------------------
 Contents of the training course
@@ -37,3 +38,4 @@ Contents of the training course
    lfric_infrastructure/index.rst
    modelling/index.rst
    glossary
+   appendices/index.rst

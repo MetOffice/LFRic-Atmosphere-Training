@@ -32,7 +32,7 @@ To fully benefit from these features, working with unstructured data and underst
 .. figure:: /_static/unstructured_examples.png
    :width: 650px
    :alt: unstructured mesh examples
-   
+
    Examples of unstructured meshes used in scientific computing.
 
 
@@ -106,7 +106,7 @@ For example, in :numref:`fig-mesh-data-extraction`, to extract data from rows 3 
 .. figure:: /_static/data-extraction.png
    :width: 650px
    :alt: data extraction in structured grid
-   
+
    Regional data extraction in a structured grid by slicing the array.
 
 Extracting data in unstructured meshes
@@ -163,6 +163,31 @@ As described in the previous sections, LFRic is using an unstructured cubed-sphe
 
 A suite of common tooling was developed within the Scientific Python ecosystem, which provides a foundation for managing and analysing complex scientific data. This toolkit includes a variety of libraries and resources designed to assist in the manipulation of unstructured data formats, such as UGRID.
 
+.. _fig-mesh-unstructured-tools:
+
+.. figure:: /_static/unstructured_tools.png
+   :width: 650px
+   :alt: unstructured data tools
+
+   The Scientific Python Ecosystem and unstructured data tools
+
+The main resources for the tools and standards shown in :numref:`fig-mesh-unstructured-tools` are:
+
+* **Iris**: `Iris documentation <https://scitools-iris.readthedocs.io/>`_, `Iris on GitHub <https://github.com/SciTools/iris>`_
+* **CF conventions**: `CF conventions project page <https://cfconventions.org/>`_
+* **NumPy**: `NumPy documentation <https://numpy.org/doc/stable/>`_, `NumPy on GitHub <https://github.com/numpy/numpy>`_
+* **Dask**: `Dask documentation <https://docs.dask.org/>`_, `Dask on GitHub <https://github.com/dask/dask>`_
+* **Matplotlib**: `Matplotlib documentation <https://matplotlib.org/stable/>`_, `Matplotlib on GitHub <https://github.com/matplotlib/matplotlib>`_
+* **Cartopy**: `Cartopy documentation <https://scitools.org.uk/cartopy/docs/latest/>`_, `Cartopy on GitHub <https://github.com/SciTools/cartopy>`_
+* **ESMF and iris-esmf-regrid**: `ESMF project page <https://earthsystemmodeling.org/>`_, `ESMF on GitHub <https://github.com/esmf-org/esmf>`_, `iris-esmf-regrid documentation <https://iris-esmf-regrid.readthedocs.io/en/latest/>`_, `iris-esmf-regrid on GitHub <https://github.com/SciTools/iris-esmf-regrid>`_
+* **PyVista**: `PyVista documentation <https://docs.pyvista.org/>`_, `PyVista on GitHub <https://github.com/pyvista/pyvista>`_
+* **GeoVista**: `GeoVista documentation <https://geovista.readthedocs.io/>`_, `GeoVista on GitHub <https://github.com/bjlittle/geovista>`_
+* **VTK**: `VTK project page <https://vtk.org/>`_, `VTK source repository <https://gitlab.kitware.com/vtk/vtk>`_
+
+Despite the use of compiled languages such as Fortran and C++ in parts of the
+scientific Python stack, Python serves as the interface for data interaction
+with these tools during user workflows.
+
 A widely used tool for handling scientific data is Iris. Iris is a powerful library that facilitates the analysis of meteorological and climate data, and it is specifically designed to work with both structured and unstructured grids. It offers a range of functions that simplify the manipulation and visualisation of data, making it a key component in many data processing workflows.
 
 In this section, a brief overview of the basics of Iris will be provided, including its core features and functionalities.
@@ -176,27 +201,20 @@ Iris is a Python-based ecosystem and package used for the manipulation of LFRic 
 It is open-source and has been included in other tools, such as ESMValTool and MetPlus, which are based on it.
 Iris offers a unified view of data as cubes and supports metadata-aware processing. It provides analysis capabilities in mathematics, statistics, large data handling, and regridding. For visualisation, Iris relies on Matplotlib and Cartopy.
 
-.. _fig-mesh-unstructured-tools:
+The core of Iris is built around CF and NumPy. CF (Climate and Forecast) 
+conventions allow Iris to work with the encoding of climate and forecast
+data stored in netCDF files. NumPy provides efficient array operations
+implemented in compiled code and linked numerical libraries, avoiding
+the performance limits of pure Python loops.
 
-.. figure:: /_static/unstructured_tools.png
-   :width: 650px
-   :alt: unstructured data tools
-
-   The Scientific Python Ecosystem and unstructured data tools
-
-The core of Iris is built around CF and NumPy. CF (Climate and Forecast) conventions allow Iris to work with the encoding of climate and forecast data stored in netCDF files. NumPy, the fundamental package for numerical computations in Python, supports large-scale data processing by leveraging FORTRAN and C++ for heavy computations.
-
-NumPy facilitates the mathematical operations required for large datasets. Operations involving substantial numerical crunching are offloaded to efficient implementations in FORTRAN and C++, as Python itself is an interpreted language and is not optimized for such intensive tasks.
-
-In traditional structured grid systems, data is plotted in 2D using Matplotlib. Cartopy, a tool used for cartographic elements, assists in this process.
-
-For unstructured grids, PyVista and VTK replace Matplotlib. VTK is a versatile tool used for both visualisation and mesh processing through C++ implementation, which also supports number crunching. GeoVista handles the cartographic elements in unstructured grids, performing similar functions as Cartopy. Both PyVista and GeoVista can leverage GPU acceleration, enhancing performance for both graphical rendering and computational analysis.
-
-Despite the underlying usage of languages like FORTRAN and C++ in visualisation tools, Python serves as the interface for data interaction with these tools during user workflows.
-
+NumPy facilitates the mathematical operations required for large
+datasets. Operations involving substantial numerical processing
+are offloaded to efficient compiled implementations, while Python
+remains the user-facing interface.
 
 Regridding unstructured data
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+++++++++++++++++++++++++++++
+
 In the unstructured mesh context, `ESMF <https://earthsystemmodeling.org/>`_ (Earth System Modelling Framework) is utilised for regridding tasks. Regridding allows for comparison between datasets defined on different meshes, enabling analysis that requires data on specific local representations, such as OSGB (Ordnance Survey National Grid) in Britain, or requires computations suited to structured grids, like zonal means.
 
 The regridding process in the unstructured world follows two primary steps: preparation and execution. During the preparation phase, the source and target grids are compared, and weights are calculated using ESMF. The preparation step is computationally intensive, particularly with unstructured grids. In the execution phase, the calculated weights are applied to the data, and a new cube is constructed. This phase typically involves Python libraries such as DASK and SciPy.
@@ -205,7 +223,13 @@ Different types of regridders are available depending on the source and target g
 
 Each regridder offers various features, including the ability to read and write cubes, perform area-weighted regridding, and preserve metadata during operations. Additionally, the capability to load and save regridders is supported.
 
-For datasets with masked data, the regridding process ensures that the mask is handled correctly. If the mask from the source grid covers more than a specified threshold of a target grid cell, that target cell is included in the mask. Otherwise, it is excluded from the target grid.
+.. admonition:: Masked data during regridding
+
+   Some datasets contain masked data: values that should not be
+   used in analysis. During regridding, the source data mask is carried
+   across to the target grid. If masked source data covers more than the
+   configured threshold for a target cell, that target cell is masked too.
+   Otherwise, the target cell remains unmasked.
 
 Key features of regridding include:
 
@@ -213,24 +237,92 @@ Key features of regridding include:
 - the ability to preserve metadata, and
 - efficient handling of masked data.
 
-
 .. _fig-mesh-regrid:
 
 .. figure:: /_static/regrid.png
    :width: 400px
    :alt: regridding data
-   
+
    Regridding data from an unstructured mesh to a structured grid
 
+The regridding tools discussed above are documented by the 
+`ESMF user guide <https://earthsystemmodeling.org/docs/release/latest/ESMF_usrdoc/>`_,
+`ESMF source repository <https://github.com/esmf-org/esmf>`_, and
+`iris-esmf-regrid documentation <https://iris-esmf-regrid.readthedocs.io/en/latest/>`_.
 
 Visualising unstructured data
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-For unstructured data visualisation, PyVista and GeoVista are the primary tools used. While Matplotlib and Cartopy have traditionally been used for structured data, these tools do not scale well and struggle to handle high-resolution unstructured meshes.
++++++++++++++++++++++++++++++
 
-For instance, a C48 mesh has approximately 13,000 faces, and a C1048 mesh (approximately 9.55 km grid spacing at the equator) would require excessive computation and memory resources for Matplotlib and Cartopy. It would take them around 13.5s to render a C48 and 2h for a C1048! With PyVista, a C48 mesh can be rendered in 369 ms, while a C1048 mesh takes 3.87 seconds.
+Structured-grid workflows commonly use Matplotlib for 2D plotting,
+with Cartopy adding map projections and other cartographic features.
+Those tools remain useful for many latitude-longitude datasets, but
+they do not scale well to high-resolution unstructured meshes.
 
-Unstructured visualisation tools include VTK, a GPU-accelerated toolkit for visualisation and mesh processing, and Paraview, a parallel visualisation application. PyVista provides a high-level interface for 3D visualisation, and GeoVista manages cartographic elements. The combination of these tools offers a paradigm shift by enabling efficient GPU-powered visualisation and interactive user experiences.
+The unstructured workflow therefore uses tools built around 3D mesh
+rendering. PyVista provides Python access to the `Visualization Toolkit
+(VTK) <https://vtk.org/>`_, a C++ library for 3D visualisation and mesh
+processing. VTK can use GPU-accelerated rendering, which is important
+for datasets with many mesh faces. GeoVista adds geospatial and
+cartographic helpers on top of PyVista, performing a role similar to
+Cartopy for map-aware visualisation.
 
-PyVista is a 3D visualisation engine that leverages GPU power for scalable rendering. It offers both visualisation and computational capabilities, including a high-level API and filters. PyVista integrates seamlessly with modern scientific workflows, such as Jupyter notebooks.
+`ParaView <https://www.paraview.org/>`_ is another tool in this
+ecosystem. It is a parallel visualisation application for large
+scientific datasets.
 
-GeoVista provides cartographic capabilities for PyVista, supporting various map projections, coastlines, texture mapping, and regional extraction. It is compatible with Iris, as well as other scientific libraries like NumPy and Xarray.
+See the subsections below for detailed package summaries and links.
+
+.. _pyvista.basics:
+
+PyVista - basics and scope
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+PyVista is the main Python interface used here for rendering LFRic
+unstructured meshes. It gives Scientific Python users a NumPy-friendly
+API for 3D geometry, so they can build visualisation workflows without
+writing C++ code.
+
+For the workflows covered in this training, PyVista supports:
+
+* interactive rendering in Jupyter notebooks;
+* batch (off-screen) rendering for automated workflows; and
+* mesh filters such as slicing, contouring, and interpolation, which
+  support both visualisation and computational geometry tasks.
+
+The performance advantage over Matplotlib becomes significant at LFRic
+resolutions. For example:
+
+.. list-table::
+   :header-rows: 1
+
+   * - Mesh
+     - PyVista time
+     - Matplotlib time
+   * - C48 (approximately 13,000 faces)
+     - approximately 370 ms
+     - approximately 14 s
+   * - C1048
+     - under 4 s
+     - approximately 2 hours
+
+.. _geovista.basics:
+
+GeoVista - basics and scope
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+GeoVista is an open-source Python package that adds cartographic
+capabilities to PyVista, fulfilling a role analogous to Cartopy
+in the structured-grid world.
+It helps transform geospatial data into PyVista meshes for
+interactive 3D rendering, including unstructured meshes such as
+cubed-sphere LFRic output.
+
+GeoVista supports longitude-latitude data, unstructured meshes,
+coastline overlays, texture mapping, and regional extraction
+(e.g. cropping a cubed-sphere dataset to a specific geographic region).
+Its current projection support is more limited than
+Cartopy's but includes common geographic rendering workflows
+and selected projected outputs.
+Because GeoVista uses the same rendering stack as PyVista, it can display
+the high face-count datasets associated with operational LFRic
+resolutions.
