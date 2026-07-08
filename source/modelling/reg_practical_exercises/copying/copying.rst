@@ -3,17 +3,37 @@ Getting Started: Copying a Workflow for the Regional Nesting Suite
 
 To begin working with the regional nesting suite, you first need to create your own copy of an existing workflow.
 
-As introduced in the *Global Modelling Practical*, you can do this using the ``rose`` command-line tool. Replace ``<suite-id>`` with the ID of the workflow you want to use:
+As introduced in the *Global Modelling Practical*, you can do this using the ``rosie`` command-line tool:
 
-.. code-block:: bash
+.. tab-set::
 
-   rosie copy <suite-id>
+    .. tab-item:: Met Office
+
+        .. code-block:: bash
+
+            rosie copy u-by395
+   
+    .. tab-item:: Monsoon
+
+      .. code-block:: bash
+
+            rosie copy u-by395/u-by395_lfric_monsoon3
 
 Alternatively, you can check out the workflow instead of copying it:
 
-.. code-block:: bash
+.. tab-set::
 
-   rosie checkout <suite-id>
+    .. tab-item:: Met Office
+
+        .. code-block:: bash
+
+            rosie checkout u-by395
+
+    .. tab-item:: Monsoon
+
+      .. code-block:: bash
+
+            rosie copy u-by395/u-by395_lfric_monsoon3
 
 What's the difference?
 -----------------------

@@ -9,9 +9,19 @@ Step 1: Navigate to the suite directory
 
 Open a terminal and move to the directory where your suite is located:
 
-.. code-block:: bash
+.. tab-set::
 
-   cd ~/roses/<suite-id>
+    .. tab-item:: Met Office
+
+        .. code-block:: bash
+
+            cd ~/roses/u-by395
+
+    .. tab-item:: Monsoon
+
+        .. code-block:: bash
+
+            cd ~/roses/u-by395/u-by395_lfric_monsoon3
 
 Step 2: Open the suite in the Rose GUI
 ---------------------------------------
