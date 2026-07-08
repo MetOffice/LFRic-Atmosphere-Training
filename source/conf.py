@@ -192,6 +192,8 @@ linkcheck_ignore = [
     # private repos
     r'^https?://github\.com/MetOffice/jules(?:/.*)?$',
     r'^https?://github\.com/MetOffice/LFRic-Atmosphere-Training(?:/.*)?$',
+    # intermittent connection timeouts from GH Actions
+    r'^https?://gitlab\.in2p3\.fr(?:/.*)?$',
     # opening in Chrome is OK, but in Python it would complain
     # "unable to get local issuer certificate".
     # Possibly related to certifi
