@@ -35,13 +35,17 @@ What should you do?
 
 For this hands-on exercise, go ahead and **copy the workflow**, just as you did in the global modelling practical.
 This will give you a clean, editable version to experiment with safely.
+
 .. tab-set::
 
-      .. tab-item:: Met Office
-         .. code-block:: bash
+   .. tab-item:: Met Office
+
+      .. code-block:: bash
 
             rosie copy u-by395
-      .. tab-item:: Partner
-         .. code-block:: bash
+
+   .. tab-item:: Partner
+
+      .. code-block:: bash
 
             rosie copy u-by395/u-by395_lfric_monsoon3
