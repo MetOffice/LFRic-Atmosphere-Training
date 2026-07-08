@@ -63,6 +63,13 @@ Glossary
       Next generation Atmosphere Model, named after
       Lewis Fry Richardson, a British mathematician.
 
+
+   Masked Data
+      Data values that are deliberately marked as unavailable, invalid, or not
+      relevant for analysis. A mask tells software to ignore those values in
+      calculations or plots, while keeping the original shape and location of
+      the data.
+
    MOGREPS
       ...
 
