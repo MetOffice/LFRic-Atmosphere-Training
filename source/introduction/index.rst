@@ -34,3 +34,4 @@ For learners who want more technical detail, the paper `LFRic: Meeting the chall
    land_surface_and_jules.rst
    ocean_and_sea_ice.rst
    history_context.rst
+   quiz.rst
