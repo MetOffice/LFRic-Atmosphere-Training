@@ -29,7 +29,7 @@ notebooks = [
   "trame-vuetify",
   "jupyter-server-proxy",
   "matplotlib",
-  "jupytext==1.19.3",
+  "jupytext==1.19.4",
   "esmf-regrid",
   "numpy<3",
 ]
