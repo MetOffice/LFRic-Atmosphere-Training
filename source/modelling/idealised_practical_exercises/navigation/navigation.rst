@@ -39,7 +39,7 @@ Navigate to the ``template variables`` tab to check and, if needed, change the t
    :width: 1200px
    :align: center
    :alt: Top-level options in the idealised suite ``u-dz791``.
-   
+
    Screenshot of the Rose configuration editor showing the top-level options panel of the idealised suite ``u-dz791``.
 
 Machine, LFRic version, compilation settings

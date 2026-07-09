@@ -11,12 +11,12 @@ This pooling of knowledge and resource helps to ensure that the configurations a
 
 .. admonition:: Interested in getting involved in evaluation of science configurations?
 
-   One way to get involved is by joining a **PEG (Priority Evaluation Group)** or a **CoG (Collaboration Group)**.  
+   One way to get involved is by joining a **PEG (Priority Evaluation Group)** or a **CoG (Collaboration Group)**.
 
-   * **PEGs** focus on a few key systemic biases, making them a great way to become involved. 
-   
+   * **PEGs** focus on a few key systemic biases, making them a great way to become involved.
+
    * **CoGs** are larger groups that focus on a wider range of issues, allowing for more comprehensive evaluation and development of the configurations.
-  
+
    * If interested, find the PEG or CoG lead on the GMED or RMED Met Office Science Repository Service (MOSRS) pages and contact them, or you can contact Momentum_Partnership@metoffice.gov.uk.
 
 .. _fig-model-dev-cycle:

@@ -40,7 +40,7 @@ We know some parts of this website are not fully accessible:
 - some links do not clearly explain where they lead, or that they lead to
   external sites.
 - there are some external links to websites that may not be accessible.
-- some images do not have a a capture and a descriptive alternative text 
+- some images do not have a a capture and a descriptive alternative text
 
 Feedback and contact information
 --------------------------------

@@ -6,7 +6,7 @@ A science configuration specifies a set of scientific and numerical settings for
 Science configurations are tested and evaluated across a set of spatial resolutions and temporal scales - e.g. Numerical Weather Prediction (NWP) to climate - to ensure they meet the required standards for accuracy and reliability. Once the evaluation is complete, the configuration is:
 
 1. **Frozen**, so that the scientific settings are fixed
-2. **Versioned and numbered**, enabling clear identification and traceability 
+2. **Versioned and numbered**, enabling clear identification and traceability
 3. **Released** as a standard package for use in modelling systems for research and operational purposes.
 
 Released science configurations form the scientific foundation of prediction and projection systems. Dedicated workflows are constructed around these configurations using the Momentum technical infrastructure. These workflows support activities such as:

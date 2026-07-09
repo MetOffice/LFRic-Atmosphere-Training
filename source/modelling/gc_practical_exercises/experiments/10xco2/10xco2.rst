@@ -21,7 +21,7 @@ Start by changing into the ``lfric_atm`` application directory:
 
       .. code-block:: console
 
-         cd app/lfric_atm 
+         cd app/lfric_atm
 
 Step 2: Edit the configuration file
 ===================================
@@ -63,7 +63,7 @@ Step 2: Edit the configuration file
          !!co2_clim_fcg_rates=
          !!co2_clim_fcg_years=
          co2_mix_ratio=5.6062e-04
-         co2_rad_opt='constant' 
+         co2_rad_opt='constant'
 
 Step 3: Run the model and check the output
 ==========================================

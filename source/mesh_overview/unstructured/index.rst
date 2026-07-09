@@ -11,4 +11,3 @@ It explains the motivation for moving beyond traditional structured grids, explo
 
    unstructured_introduction/unstructured_introduction
    unstructured_quiz/unstructured_quiz
-   

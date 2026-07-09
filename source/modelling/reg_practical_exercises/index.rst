@@ -5,10 +5,10 @@ The aim of this practical is to gain hands-on experience in running and analysin
 
 In this exercise, you will:
 
-- Learn how to copy a regional nesting suite  
-- Modify the nesting suite configuration  
-- Run the workflow  
-- Analyse and plot the resulting data  
+- Learn how to copy a regional nesting suite
+- Modify the nesting suite configuration
+- Run the workflow
+- Analyse and plot the resulting data
 
 .. toctree::
    :maxdepth: 1
@@ -18,4 +18,4 @@ In this exercise, you will:
    navigation/navigation.rst
    running/running.rst
    plotting/plotting.rst
-   
+

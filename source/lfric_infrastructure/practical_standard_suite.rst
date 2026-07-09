@@ -134,7 +134,7 @@ View your logs:
 
    .. tab-item:: Cylc TUI
 
-      On the command line type ``cylc tui``. 
+      On the command line type ``cylc tui``.
 
       Task logs can be found by clicking on task icons.
 

@@ -1,10 +1,10 @@
 Components, Science Configurations, and Systems
 ===============================================
 
-The `Momentum  <https://www.metoffice.gov.uk/research/approach/modelling-systems/momentum>`_ Framework is built from a set of interoperable scientific components that can be combined to create complete prediction and projection systems. 
+The `Momentum  <https://www.metoffice.gov.uk/research/approach/modelling-systems/momentum>`_ Framework is built from a set of interoperable scientific components that can be combined to create complete prediction and projection systems.
 One of these components is LFRic Atmosphere, the atmospheric model within the framework.
 
-To ensure scientific consistency and reproducibility, prediction systems are defined using carefully tested Science Configurations. 
+To ensure scientific consistency and reproducibility, prediction systems are defined using carefully tested Science Configurations.
 A Science Configuration specifies the scientific and numerical setup of model components, including parameter settings, domain, resolution, and coupling options.
 Science Configurations are typically grouped into:
 
