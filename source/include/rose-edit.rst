@@ -19,9 +19,9 @@
 
       .. note::
 
-         You must be using ``cazcylc1`` to access ``rose-edit``.
+         You must be using Cylc host to access ``rose-edit``.
          You will need to have used X11-forwarding (``ssh -X``) to
-         access both the lander and ``cazcylc1``.
+         access both the lander and Cylc host.
 
 
 .. admonition:: What does the ``rose-edit &`` command do?
