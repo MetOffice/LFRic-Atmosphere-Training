@@ -38,6 +38,7 @@ notebooks = [
 ]
 
 dev = [
+  "doc8",
   "jupyter",
   "sphinx-autobuild",
 ]
