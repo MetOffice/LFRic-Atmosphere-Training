@@ -153,7 +153,7 @@ the Iris and Matplotlib libraries.
 
    # Load a cube from a NetCDF file.
    surface_temperature_cube = iris.load_cube(
-	   path_to_data / "output_file.nc", "surface_temperature"
+       path_to_data / "output_file.nc", "surface_temperature"
    )
 
    # Change the units from Kelvin to Celsius.
