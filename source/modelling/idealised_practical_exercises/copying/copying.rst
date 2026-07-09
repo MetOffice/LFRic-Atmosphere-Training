@@ -26,7 +26,7 @@ Replace ``<suite-id>`` with the ID of the workflow you want to use:
 
       .. important::
 
-         These tutorials require you to be on ``cazcylc1``.
+         These tutorials require you to be on a Cylc host.
 
       .. code-block:: bash
 
