@@ -8,7 +8,7 @@ Experiments with Global Models
 
    * Where you might change this - is it in the **configuration namelist** settings within the workflow or in a ** source code**?
 
-   * Browse the source code and workflow to look see how you might make this change. 
+   * Browse the source code and workflow to look see how you might make this change.
 
    * What **diagnostic** would you plot to see the change?
 

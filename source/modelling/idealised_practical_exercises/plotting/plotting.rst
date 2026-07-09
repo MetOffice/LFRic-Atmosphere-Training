@@ -32,7 +32,7 @@ Once your environment is set up, begin by importing the necessary packages:
     import iris.plot as iplt
     import iris.quickplot as qplt
     import dask.array as da
-    import cf_units 
+    import cf_units
 
     # Suppress repeated NumPy masked-array casting warnings from sample data loading
     import warnings
@@ -91,7 +91,7 @@ Below are helper functions for calculating :math:`\theta_v` and :math:`T_v`. You
         """Calculates virtual temperature and adds as a new cube to the CubeList
 
         Args:
-            cubelist (CubeList): CubeList containing at least "air_temperature" and 
+            cubelist (CubeList): CubeList containing at least "air_temperature" and
                                     "vapour_mixing_ratio" cubes
             rd (float): Specific gas constant (J kg^-1 K^-1)
             rv (float, optional): Specific gas constant for water vapor. Defaults to 461.5.
@@ -151,7 +151,7 @@ Below are helper functions for calculating :math:`\theta_v` and :math:`T_v`. You
         """Calculates virtual potential temperature and adds as a new cube to the CubeList
 
         Args:
-            cubelist (CubeList): CubeList containing at least "air_temperature", 
+            cubelist (CubeList): CubeList containing at least "air_temperature",
                                     "air_pressure", and "vapour_mixing_ratio"/"humidity_mixing_ratio" cubes
             rd (float): Specific gas constant (J kg^-1 K^-1)
             cp (float): Specific heat capacity at constant pressure (J kg^-1 K^-1)
@@ -199,7 +199,7 @@ Below are helper functions for calculating :math:`\theta_v` and :math:`T_v`. You
             f"Temperature, pressure, and vapour mixing ratio cubes must have same shape, "
             f"but got {T.shape}, {p.shape}, and {qv.shape}"
         )
-        
+
         epsilon = rd / rv
         theta_v_data = T_data * (p0 / p_data) ** (rd / cp) * (1 + qv_data / epsilon) / (1 + qv_data)
 
@@ -259,7 +259,7 @@ Below is a helper function for converting from UGRID to X/Y:
     def reshape_ugrid_cube_to_xy_grid(cube, nx, ny, delta_x, delta_y):
         """
         Reshape an iris cube on a UGRID into a cube with defined x/y distance coordinates.
-        
+
         Originally written by Denis Sergeev (Bristol). See https://github.com/exoclim/aeolus/
 
         Parameters
@@ -280,7 +280,7 @@ Below is a helper function for converting from UGRID to X/Y:
         iris.cube.Cube
             Reshaped cube with x/y coordinates
         """
-        
+
         # Promote auxiliary time coordinate to dimension coordinate if necessary
         try:
             iris.util.promote_aux_coord_to_dim_coord(cube, "time")
@@ -317,7 +317,7 @@ Below is a helper function for converting from UGRID to X/Y:
             reshaped = np.reshape(data, new_shape)
         else:
             raise TypeError(f"Unsupported data type for cube core data: {type(data)}")
-        
+
         # Create new cube with reshaped data
         new_cube = iris.cube.Cube(
             iris.util.reverse(reshaped, new_shape.index(y_coord.shape[0])),
@@ -338,11 +338,11 @@ Below is a helper function for converting from UGRID to X/Y:
     </details>
 
 To reshape your UGRID cubes to a regular X/Y grid, you need to provide the domain dimensions
-and grid spacing of your simulation. You can either define this yourself (see example below) 
-or use the existing ``projection_x_coordinate`` and ``projection_y_coordinate`` mesh 
-coordinates directly. Generally, the latter is preferred, but sometimes the mesh coordinates 
-don't always give you what you expect! So, for the purposes of this tutorial, we'll simply 
-define our grid parameters manually. 
+and grid spacing of your simulation. You can either define this yourself (see example below)
+or use the existing ``projection_x_coordinate`` and ``projection_y_coordinate`` mesh
+coordinates directly. Generally, the latter is preferred, but sometimes the mesh coordinates
+don't always give you what you expect! So, for the purposes of this tutorial, we'll simply
+define our grid parameters manually.
 
 
 .. code-block:: python
@@ -420,7 +420,7 @@ This will give you vertical profiles of virtual potential temperature at the dom
 Domain-Average Profiles
 ------------------------
 
-You can also compute and plot domain-averaged vertical profiles using the function below. 
+You can also compute and plot domain-averaged vertical profiles using the function below.
 This function takes the cubelist, computes the horizontal mean for each cube, and plots the initial and final state in a grid layout.
 
 .. code-block:: python
@@ -439,28 +439,28 @@ This function takes the cubelist, computes the horizontal mean for each cube, an
         n = len(cubelist)
         rows = int(np.ceil(n / col_lim))
         fig, axs = plt.subplots(rows, col_lim, figsize=(col_lim * 3, rows * 3), squeeze=False)
-        axs = axs.flatten() 
-        
+        axs = axs.flatten()
+
         for ax, cube in zip(axs, cubelist):
-            
+
             # Take horizontal means
             cube = cube.collapsed(['projection_x_coordinate', 'projection_y_coordinate'], iris.analysis.MEAN)
-            
+
             # Extract the first (initial) and last (final) time steps
             initial_data = cube.core_data()[0]
             final_data = cube.core_data()[-1]
-            
+
             # Trigger Dask array computation into memory if the data is lazily loaded
             initial_data = initial_data.compute() if isinstance(initial_data, da.Array) else initial_data
             final_data = final_data.compute() if isinstance(final_data, da.Array) else final_data
-            
+
             name = cube.name()
             unit = cube.units
             time_coord = cube.coord("time").points
-            
+
             # Extract vertical coordinate
             z = (cube.coords('full_levels') or cube.coords('half_levels'))[0].points
-                        
+
             ax.plot(initial_data, z, label=f"t={time_coord[0]} s", linewidth=1)
             ax.plot(final_data, z, label=f"t={time_coord[-1]} s", linewidth=1)
 
@@ -469,7 +469,7 @@ This function takes the cubelist, computes the horizontal mean for each cube, an
                 xlabel_unit = unit.format(cf_units.UT_UTF8)
             else:
                 xlabel_unit = "kg/kg"
-                
+
             ax.set_xlabel(f'{name} ({xlabel_unit})')
             ax.set_ylabel("Vertical level")
 
@@ -494,16 +494,16 @@ Animations
 It is also fairly straightforward to create an animation using `iris.plot`. The below example shows how to do this for vertical slices in a interactive Jupyter notebook:
 
 .. code-block:: python
-    
+
     # Ensure inline animation rendering in Jupyter
     plt.rcParams['animation.html'] = 'html5'
 
-    upward_air_velocity_cube = cubelist.extract_cube('upward_air_velocity') 
+    upward_air_velocity_cube = cubelist.extract_cube('upward_air_velocity')
     cube_iter = upward_air_velocity_cube[:,:110,64,:].slices_over('time') # Crop to 0:110 vertical levels
     ani = iplt.animate(cube_iter, qplt.pcolormesh)
 
     # Display inline in notebook
     HTML(ani.to_jshtml(fps=10))
 
-This will create an animation of vertical slices of upward air velocity through the domain centre between vertical levels 0—110 over time. 
+This will create an animation of vertical slices of upward air velocity through the domain centre between vertical levels 0—110 over time.
 Try experimenting with different fields, slice indices, and animation settings to explore the temporal evolution of your simulation!

@@ -17,7 +17,7 @@ Like the Unified Model, LFRic Atmosphere uses terrain-following vertical coordin
 * The **GungHo** mixed finite-element dynamical core,
 * A modern software infrastructure designed for future high-performance computing architectures.
 
-The new software infrastructure separates the scientific description of the atmosphere from the technical details of parallel 
+The new software infrastructure separates the scientific description of the atmosphere from the technical details of parallel
 computing and hardware optimisation. This makes the model easier to maintain, improves portability across different computing platforms, and supports efficient scaling to future exascale supercomputers.
 
 .. _fig-intro-mesh-vertical:

@@ -21,7 +21,7 @@ Start by changing into the ``lfric_atm`` application directory:
 
       .. code-block:: console
 
-         cd app/lfric_atm 
+         cd app/lfric_atm
 
 Step 2: Edit the configuration file
 ===================================
@@ -61,7 +61,7 @@ Step 2: Edit the configuration file
          p_zero=100000.0
          radius=6371229.0
          rd=287.05
-         scaling_factor=1.0 
+         scaling_factor=1.0
 
 Step 3: Run the model and check the output
 ==========================================

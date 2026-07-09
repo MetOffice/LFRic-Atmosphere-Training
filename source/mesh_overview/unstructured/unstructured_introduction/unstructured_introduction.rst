@@ -201,7 +201,7 @@ Iris is a Python-based ecosystem and package used for the manipulation of LFRic 
 It is open-source and has been included in other tools, such as ESMValTool and MetPlus, which are based on it.
 Iris offers a unified view of data as cubes and supports metadata-aware processing. It provides analysis capabilities in mathematics, statistics, large data handling, and regridding. For visualisation, Iris relies on Matplotlib and Cartopy.
 
-The core of Iris is built around CF and NumPy. CF (Climate and Forecast) 
+The core of Iris is built around CF and NumPy. CF (Climate and Forecast)
 conventions allow Iris to work with the encoding of climate and forecast
 data stored in netCDF files. NumPy provides efficient array operations
 implemented in compiled code and linked numerical libraries, avoiding
@@ -245,7 +245,7 @@ Key features of regridding include:
 
    Regridding data from an unstructured mesh to a structured grid
 
-The regridding tools discussed above are documented by the 
+The regridding tools discussed above are documented by the
 `ESMF user guide <https://earthsystemmodeling.org/docs/release/latest/ESMF_usrdoc/>`_,
 `ESMF source repository <https://github.com/esmf-org/esmf>`_, and
 `iris-esmf-regrid documentation <https://iris-esmf-regrid.readthedocs.io/en/latest/>`_.

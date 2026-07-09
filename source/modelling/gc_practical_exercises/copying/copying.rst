@@ -77,7 +77,7 @@ You will then be asked in the terminal:
       .. code-block:: console
 
             $ rosie copy u-dz612
-            Copy "u-dz612/trunk@123456" to "u-?????"? [y or n (default)] 
+            Copy "u-dz612/trunk@123456" to "u-?????"? [y or n (default)]
 
 Press ``y`` to confirm you want to copy the workflow. You will then see the following message confirming the
 workflow has been copied.
@@ -98,6 +98,6 @@ workflow has been copied.
 
             [INFO] u-?????: created at https://code.metoffice.gov.uk/svn/roses-u/?/?/?/?/?
             [INFO] u-?????: copied items from u-dz612/trunk@123456
-            [INFO] u-?????: local copy created at ~/roses/u-????? 
+            [INFO] u-?????: local copy created at ~/roses/u-?????
 
 Congratulations, you have successfully copied workflow ``u-dz612`` and made the new suite-id ``u-????``! You can now navigate to the workflow directory and start working on it.

@@ -32,7 +32,7 @@ Validate the workflow, install it to ``~/cylc-run`` and play it using:
             cylc validate-install-play --opt-conf-key=monsoon
 
             # Or for ease of typing:
-            cylc vip -O monsoon 
+            cylc vip -O monsoon
 
 Site settings are stored as Rose
 :external+rose:ref:`optional configuration` files. For example a configuration
@@ -65,7 +65,7 @@ Use one of the following Cylc commands to monitor task states:
 
       .. code-block:: console
 
-         cylc tui 
+         cylc tui
 
 Both interfaces show nearly identical information — the choice is down to personal preference:
 
@@ -100,7 +100,7 @@ If you have a workflow that has finished running and you wish to make a change a
 
       .. code-block:: console
 
-         cylc vr <suite-id>/run# 
+         cylc vr <suite-id>/run#
 
 This will verify and reinstall the workflow, capturing any changes you have made, and then continue running from where it left off.
 
@@ -121,7 +121,7 @@ To stop a running workflow:
 
       .. code-block:: console
 
-         cylc stop <SUITE-ID> 
+         cylc stop <SUITE-ID>
 
 .. note::
 

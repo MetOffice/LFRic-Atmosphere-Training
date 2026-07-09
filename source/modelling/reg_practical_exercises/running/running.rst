@@ -26,9 +26,9 @@ Start the workflow using:
 
 This command performs three actions:
 
-- **Verify**: Checks the suite configuration for errors  
-- **Install**: Sets up the runtime environment  
-- **Play**: Starts executing the workflow  
+- **Verify**: Checks the suite configuration for errors
+- **Install**: Sets up the runtime environment
+- **Play**: Starts executing the workflow
 
 Monitor the workflow
 ----------------------------

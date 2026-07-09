@@ -23,7 +23,7 @@ First, change into the directory that contains the diagnostic output configurati
 
       .. code-block:: console
 
-         cd app/lfric_atm/file 
+         cd app/lfric_atm/file
 
 Step 2: Open the diagnostics configuration file
 ================================================
@@ -63,7 +63,7 @@ Step 4: Add the missing field for ``v_in_w3``
             <field field_ref="ageofair"/>
             <field field_ref="u_in_w3"/>
             <field field_ref="v_in_w3"/>
-            <field field_ref="m_v" long_name="vapour_mixing_ratio"/> 
+            <field field_ref="m_v" long_name="vapour_mixing_ratio"/>
 
 Add the line ``<field field_ref="v_in_w3"/>`` to include the v component of wind in the output. Make sure to save your changes to the file.
 
@@ -89,7 +89,7 @@ To quickly visualise the new diagnostic, open the NetCDF output in ``xconv`` and
 
       .. code-block:: console
 
-         xconv lfric_stream_g.nc  # replace with your output file name 
+         xconv lfric_stream_g.nc  # replace with your output file name
 
 In ``xconv``:
 

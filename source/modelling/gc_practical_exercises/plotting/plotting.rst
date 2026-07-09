@@ -36,7 +36,7 @@ Example:
 
       .. code-block:: console
 
-         ncview temperature.nc 
+         ncview temperature.nc
 
 Useful tasks include:
 
@@ -72,7 +72,7 @@ Example:
 
       .. code-block:: console
 
-         xconv 
+         xconv
 
 After launching the application:
 
@@ -120,7 +120,7 @@ you may first need to load them before use:
       .. code-block:: console
 
             module load ncview
-            module load xconv 
+            module load xconv
 
 Refer to your local HPC documentation for the exact module names
 available on your platform.
@@ -175,4 +175,4 @@ The resulting plot can be seen below.
    :width: 600px
    :alt: Iris quickplot example
 
-   Example output from iris.quickplot. 
+   Example output from iris.quickplot.
