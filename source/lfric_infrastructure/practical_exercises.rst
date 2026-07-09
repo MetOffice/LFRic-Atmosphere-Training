@@ -43,6 +43,7 @@ Setup Instructions
 .. tab-set::
 
    .. tab-item:: Met Office
+      :sync: met-office
 
        Contact scientific_partnerships@metoffice.gov.uk to
        request an account.

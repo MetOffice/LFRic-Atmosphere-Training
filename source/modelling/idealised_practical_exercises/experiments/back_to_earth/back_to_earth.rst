@@ -42,9 +42,14 @@ Step 2: Change the gas constants
 Step 3: Change the water vapour profile
 ---------------------------------------
 
-.. Warning:: This step has to be done in a text editor because we are changing an *optional* configuration.
+.. Warning::
 
-Open the ``rose-app-gungho.conf`` optional configuration (in ``app/lfric_atm/opt/``) in the text editor of your choice.
+   This step has to be done in a text editor because
+   we are changing an *optional* configuration. Optional
+   configurations are not supported by rose edit.
+
+Open the ``rose-app-gungho.conf`` optional configuration
+(in ``app/lfric_atm/opt/``) in the text editor of your choice.
 
 Change the initial vapour profile values and corresponding heights.
 
@@ -68,4 +73,5 @@ Check the output using Python or another tool of your choice.
 Step 5. Compare with the control experiment
 -------------------------------------------
 
-Using a Python script or Jupyter Notebook, make plots for both experiments and compare them to each other.
+Using a Python script or Jupyter Notebook, make plots for
+both experiments and compare them to each other.

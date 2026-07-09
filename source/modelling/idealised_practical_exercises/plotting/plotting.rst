@@ -22,6 +22,8 @@ To follow along with this guide, you will need the following Python packages:
 - ``dask``: For handling large datasets
 - ``matplotlib``: For creating visualisations
 
+.. include:: /include/iris.rst
+
 Once your environment is set up, begin by importing the necessary packages:
 
 .. code-block:: python
