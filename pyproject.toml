@@ -1,6 +1,9 @@
 [tool.setuptools]
 py-modules = []
 
+[tool.doc8]
+ignore = ["D000", "D001"]
+
 [project]
 name = "lfric-atmosphere-training"
 version = "0.1.0"
@@ -35,6 +38,7 @@ notebooks = [
 ]
 
 dev = [
+  "doc8",
   "jupyter",
   "sphinx-autobuild",
 ]
