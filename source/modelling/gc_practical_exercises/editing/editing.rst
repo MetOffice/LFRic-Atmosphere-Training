@@ -8,12 +8,25 @@ Editing with Rose GUI
 
 To edit and view the workflow data, navigate into the ``roses/<suite-id>`` directory you just made and run the ``rose edit`` command:
 
-.. code-block:: bash
+.. tab-set::
 
-   $ cd ~/roses/<suite-id>
-   $ ls
-   app  flow.cylc  meta  opt  README_cylc8  rose-suite.conf  rose-suite.info  site  tests.cylc
-   $ rose edit
+   .. tab-item:: Met Office
+
+      .. code-block:: console
+
+            $ cd ~/roses/<suite-id>
+            $ ls
+            app  flow.cylc  meta  opt  README_cylc8  rose-suite.conf  rose-suite.info  site  tests.cylc
+            $ rose edit
+
+   .. tab-item:: Monsoon
+
+      .. code-block:: console
+
+            $ cd ~/roses/<suite-id>
+            $ ls
+            app  flow.cylc  meta  opt  README_cylc8  rose-suite.conf  rose-suite.info  site  tests.cylc
+            $ rose edit
 
 This will open up the Rose Graphical User Interface (GUI) for editing the workflow. You can navigate through the different sections using the tabs at the left of the window.
 
@@ -26,7 +39,7 @@ Change the run time
 To change the time settings, you need to first open the rose GUI. Next, navigate to the suite conf > template variables tab. Here you will find the runtime settings.
 
 Let’s start by changing the run length of the model. The current setting is for a 20 year and 6 month run P20Y6M. Note: the format is P<years>Y<months>M<days>D. Change this so that the end date is 01-01-1990 00:00:00.
-    
+
 Change the resolution
 ---------------------
 Next, let’s change the model resolution. Navigate to the suite conf > template variables tab. Here you will find the resolution settings. What are the current settings? Make sure you change the atmospheric horizontal resolution to C64 and the ocean resolution to eORCA1.

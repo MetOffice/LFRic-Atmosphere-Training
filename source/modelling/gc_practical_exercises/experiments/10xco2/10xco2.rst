@@ -9,9 +9,19 @@ Step 1: Navigate to the application directory
 =============================================
 Start by changing into the ``lfric_atm`` application directory:
 
-.. code-block:: bash
+.. tab-set::
 
-   cd app/lfric_atm
+   .. tab-item:: Met Office
+
+      .. code-block:: console
+
+         cd app/lfric_atm
+
+   .. tab-item:: Monsoon
+
+      .. code-block:: console
+
+         cd app/lfric_atm
 
 Step 2: Edit the configuration file
 ===================================
@@ -21,19 +31,39 @@ Step 2: Edit the configuration file
 3. Change the value from ``5.6062e-04`` (present-day CO2) to ``5.6062e-03``
    (10x present-day CO2), as highlighted below.
 
-.. code-block:: ini
-   :caption: trunk/app/lfric_atm/rose-app.conf
-   :emphasize-lines: 9
+.. tab-set::
 
-   [namelist:radiative_gases]
-   ch4_mix_ratio=9.8200e-07
-   ch4_rad_opt='constant'
-   !!co2_clim_fcg_levls=
-   !!co2_clim_fcg_nyears=
-   !!co2_clim_fcg_rates=
-   !!co2_clim_fcg_years=
-   co2_mix_ratio=5.6062e-04
-   co2_rad_opt='constant'
+   .. tab-item:: Met Office
+
+      .. code-block:: console
+         :caption: trunk/app/lfric_atm/rose-app.conf
+         :emphasize-lines: 9
+
+         [namelist:radiative_gases]
+         ch4_mix_ratio=9.8200e-07
+         ch4_rad_opt='constant'
+         !!co2_clim_fcg_levls=
+         !!co2_clim_fcg_nyears=
+         !!co2_clim_fcg_rates=
+         !!co2_clim_fcg_years=
+         co2_mix_ratio=5.6062e-04
+         co2_rad_opt='constant'
+
+   .. tab-item:: Monsoon
+
+      .. code-block:: console
+         :caption: trunk/app/lfric_atm/rose-app.conf
+         :emphasize-lines: 9
+
+         [namelist:radiative_gases]
+         ch4_mix_ratio=9.8200e-07
+         ch4_rad_opt='constant'
+         !!co2_clim_fcg_levls=
+         !!co2_clim_fcg_nyears=
+         !!co2_clim_fcg_rates=
+         !!co2_clim_fcg_years=
+         co2_mix_ratio=5.6062e-04
+         co2_rad_opt='constant'
 
 Step 3: Run the model and check the output
 ==========================================

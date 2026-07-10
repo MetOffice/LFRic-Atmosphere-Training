@@ -6,6 +6,7 @@ This directory is a local training-delivery copy of:
 Use this copy through the LFRic Atmosphere training guidance in:
 
 - `source/mesh_overview/exercises/practical_exercises.rst`
+- `source/appendices/jupyter_notebooks.rst`
 
 ## Learner quick start (this repository)
 

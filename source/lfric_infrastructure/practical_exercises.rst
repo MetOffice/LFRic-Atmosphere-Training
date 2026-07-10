@@ -47,11 +47,11 @@ Setup Instructions
 
        Contact scientific_partnerships@metoffice.gov.uk to
        request an account.
-      
+
    .. tab-item:: Partners
-   
+
       External users: Contact your local institutional sponsor.
-      
+
       If unsure: Email scientific_partnerships@metoffice.gov.uk with your
       affiliate institution and the reason you require access.
 

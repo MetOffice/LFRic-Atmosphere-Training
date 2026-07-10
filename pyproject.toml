@@ -1,6 +1,9 @@
 [tool.setuptools]
 py-modules = []
 
+[tool.doc8]
+ignore = ["D000", "D001"]
+
 [project]
 name = "lfric-atmosphere-training"
 version = "0.1.0"
@@ -29,13 +32,15 @@ notebooks = [
   "trame-vuetify",
   "jupyter-server-proxy",
   "matplotlib",
-  "jupytext==1.19.3",
+  "jupytext==1.19.4",
   "esmf-regrid",
   "numpy<3",
 ]
 
 dev = [
+  "doc8",
   "jupyter",
+  "sphinx-autobuild",
 ]
 
 [tool.uv]

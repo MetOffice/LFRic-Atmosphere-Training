@@ -22,9 +22,9 @@ Once your suite has been set up, you can run it using cylc:
 
 As a reminder, this command performs three actions:
 
-- **Verify**: Checks the suite configuration for errors  
-- **Install**: Sets up the runtime environment  
-- **Play**: Starts executing the workflow  
+- **Verify**: Checks the suite configuration for errors
+- **Install**: Sets up the runtime environment
+- **Play**: Starts executing the workflow
 
 Monitor the workflow
 --------------------

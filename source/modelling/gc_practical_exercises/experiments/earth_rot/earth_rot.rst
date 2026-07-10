@@ -9,9 +9,19 @@ Step 1: Navigate to the application directory
 =============================================
 Start by changing into the ``lfric_atm`` application directory:
 
-.. code-block:: bash
+.. tab-set::
 
-   cd app/lfric_atm
+   .. tab-item:: Met Office
+
+      .. code-block:: console
+
+         cd app/lfric_atm
+
+   .. tab-item:: Monsoon
+
+      .. code-block:: console
+
+         cd app/lfric_atm
 
 Step 2: Edit the configuration file
 ===================================
@@ -21,18 +31,37 @@ Step 2: Edit the configuration file
 3. Change the value from ``7.292116E-5`` (Earth's rotation rate) to ``3.646058E-5``
    (half of Earth's rotation rate), as highlighted below.
 
-.. code-block:: ini
-   :caption: trunk/app/lfric_atm/rose-app.conf
-   :emphasize-lines: 4
+.. tab-set::
 
-   [namelist:planet]
-    cp=1005.0
-    gravity=9.80665
-    omega=3.646058E-5
-    p_zero=100000.0
-    radius=6371229.0
-    rd=287.05
-    scaling_factor=1.0
+   .. tab-item:: Met Office
+
+      .. code-block:: console
+         :caption: trunk/app/lfric_atm/rose-app.conf
+         :emphasize-lines: 4
+
+         [namelist:planet]
+         cp=1005.0
+         gravity=9.80665
+         omega=3.646058E-5
+         p_zero=100000.0
+         radius=6371229.0
+         rd=287.05
+         scaling_factor=1.0
+
+   .. tab-item:: Monsoon
+
+      .. code-block:: console
+         :caption: trunk/app/lfric_atm/rose-app.conf
+         :emphasize-lines: 4
+
+         [namelist:planet]
+         cp=1005.0
+         gravity=9.80665
+         omega=3.646058E-5
+         p_zero=100000.0
+         radius=6371229.0
+         rd=287.05
+         scaling_factor=1.0
 
 Step 3: Run the model and check the output
 ==========================================

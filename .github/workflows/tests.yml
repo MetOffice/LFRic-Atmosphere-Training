@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
 
       - name: Check rst source line length to be at most 93
         run: |
@@ -33,7 +33,10 @@ jobs:
 
       - name: Install dependencies from pyproject.toml
         run: |
-          uv sync
+          uv sync --extra dev
+
+      - name: Lint Restructured Text
+        run: uv run doc8 source/
 
       - name: Test documentation building
         run: |

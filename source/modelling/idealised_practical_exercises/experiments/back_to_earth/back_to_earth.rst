@@ -75,3 +75,6 @@ Step 5. Compare with the control experiment
 
 Using a Python script or Jupyter Notebook, make plots for
 both experiments and compare them to each other.
+
+Using a Python script or Jupyter Notebook, make plots for both experiments
+and compare them to each other.

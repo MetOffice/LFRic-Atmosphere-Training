@@ -11,9 +11,19 @@ Step 1: Navigate to the file directory
 
 First, change into the directory that contains the diagnostic output configuration files:
 
-.. code-block:: bash
+.. tab-set::
 
-   cd app/lfric_atm/file
+   .. tab-item:: Met Office
+
+      .. code-block:: console
+
+         cd app/lfric_atm/file
+
+   .. tab-item:: Monsoon
+
+      .. code-block:: console
+
+         cd app/lfric_atm/file
 
 Step 2: Open the diagnostics configuration file
 ================================================
@@ -27,16 +37,33 @@ Search for the field group named ``lfric_stream_g``. This group controls which f
 
 Step 4: Add the missing field for ``v_in_w3``
 
-.. code-block:: xml
-   :caption: trunk/app/lfric_atm/file/file_def_diags_user_temp.xml
-   :emphasize-lines: 5
+.. tab-set::
 
-   <!-- Stream G - Monthly mean fields -->
-   ...
-   <field field_ref="ageofair"/>
-   <field field_ref="u_in_w3"/>
-   <field field_ref="v_in_w3"/>
-   <field field_ref="m_v" long_name="vapour_mixing_ratio"/>
+   .. tab-item:: Met Office
+
+      .. code-block:: xml
+         :caption: trunk/app/lfric_atm/file/file_def_diags_user_temp.xml
+         :emphasize-lines: 5
+
+            <!-- Stream G - Monthly mean fields -->
+            ...
+            <field field_ref="ageofair"/>
+            <field field_ref="u_in_w3"/>
+            <field field_ref="v_in_w3"/>
+            <field field_ref="m_v" long_name="vapour_mixing_ratio"/>
+
+   .. tab-item:: Monsoon
+
+      .. code-block:: xml
+         :caption: trunk/app/lfric_atm/file/file_def_diags_user_temp.xml
+         :emphasize-lines: 5
+
+            <!-- Stream G - Monthly mean fields -->
+            ...
+            <field field_ref="ageofair"/>
+            <field field_ref="u_in_w3"/>
+            <field field_ref="v_in_w3"/>
+            <field field_ref="m_v" long_name="vapour_mixing_ratio"/>
 
 Add the line ``<field field_ref="v_in_w3"/>`` to include the v component of wind in the output. Make sure to save your changes to the file.
 
@@ -50,9 +77,19 @@ Step 6: Visualise the ``v_in_w3`` field
 
 To quickly visualise the new diagnostic, open the NetCDF output in ``xconv`` and display a pressure-level slice of ``v_in_w3``.
 
-.. code-block:: bash
+.. tab-set::
 
-   xconv lfric_stream_g.nc  # replace with your output file name
+   .. tab-item:: Met Office
+
+      .. code-block:: console
+
+         xconv lfric_stream_g.nc  # replace with your output file name
+
+   .. tab-item:: Monsoon
+
+      .. code-block:: console
+
+         xconv lfric_stream_g.nc  # replace with your output file name
 
 In ``xconv``:
 

@@ -8,7 +8,7 @@ To test the sensitivity of the experiment outcome to this perturbation, we sugge
 The parameters that control the initial perturbation are: ``perturb_init`` (to switch it on), ``perturb_magnitude`` (base-10 logarithm of the perturbation magnitude), and ``perturb_seed`` - random seed.
 In the GUI, they are stored in the **lfric_atm** -> Run Task Settings -> Job -> Initial Conditions.
 
-In the configuration file the namelist is 
+In the configuration file the namelist is
 
 .. code-block:: ini
    :caption: app/lfric_atm/rose-app.conf

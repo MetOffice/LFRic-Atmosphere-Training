@@ -14,6 +14,8 @@ In this section, you will:
    * run an idealised experiment and monitor its progress
    * manipulate the model output and plot it
 
+.. Warning:: The science suite that we will be using is very much work in
+progress (Alex's PhD!) so there could be mistakes, please be patient with us.
 
 .. toctree::
    :maxdepth: 1
@@ -26,3 +28,4 @@ In this section, you will:
    experiments/index.rst
    plotting/plotting.rst
    quiz/quiz.rst
+
