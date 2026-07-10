@@ -50,5 +50,3 @@ Replace ``<suite-id>`` with the ID of the workflow you want to use:
       - Links to the original (shared) workflow
       - Typically used for collaborative or trunk development
       - Changes may affect or depend on the main version
-   
-   rosie copy u-dz791
