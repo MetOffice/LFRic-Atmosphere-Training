@@ -4,9 +4,21 @@ Running an Idealised Workflow
 
 Once your suite has been set up, you can run it using cylc:
 
-.. code-block:: bash
+.. tab-set::
 
-   cylc vip
+   .. tab-item:: Met Office
+      :sync: met-office
+
+      .. code-block:: bash
+
+         cylc vip
+
+   .. tab-item:: Monsoon
+      :sync: monsoon
+
+      .. code-block:: bash
+
+         cylc vip
 
 As a reminder, this command performs three actions:
 
@@ -19,17 +31,7 @@ Monitor the workflow
 
 Once the suite is running, you can monitor its progress using either of the following commands:
 
-- Graphical interface:
-
-  .. code-block:: bash
-
-     cylc gui
-
-- Terminal-based interface:
-
-  .. code-block:: bash
-
-     cylc tui
+.. include:: /include/cylc-gui.rst
 
 These tools allow you to view task status, progress, and any failures.
 

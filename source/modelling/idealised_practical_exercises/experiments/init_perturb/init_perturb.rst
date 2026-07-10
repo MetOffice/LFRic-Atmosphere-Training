@@ -21,12 +21,19 @@ In the configuration file the namelist is
    perturb_seed=180906
    test='specified_profiles'
 
-.. Note:: There are other perturbation options in the "Temperature" tab, e.g. `perturb` and `pert_width_scaling`, but we are not using them in this practical.
+.. Note::
+
+   There are other perturbation options in the "Temperature"
+   tab, e.g. `perturb` and `pert_width_scaling`, but we are not
+   using them in this practical.
 
 Step 1: Change perturbation magnitude
 -------------------------------------
 
-1. Open Rose GUI or ``app/lfric_atm/rose-app.conf`` in a text editor of your choice.
+.. include:: /include/rose-edit.rst
+
+1. Open Rose GUI or ``app/lfric_atm/rose-app.conf``
+   in a text editor of your choice.
 2. Search for the ``perturb_init`` key.
 3. Change the value from ``0`` to ``1`` (or ``2``).
 

@@ -27,6 +27,7 @@ Step 1: Check Out the Standard Suite
 .. tab-set::
 
    .. tab-item:: Met Office
+      :sync: met-office
 
       .. code-block:: console
 
@@ -112,6 +113,7 @@ While the workflow is running, open the Cylc GUI explore the model output:
          cylc tui
 
    .. tab-item:: Met Office
+      :sync: met-office
 
       Navigate to `Cylc Hub <https://cylchub>`_
 

@@ -150,7 +150,7 @@ html_theme_options = {
         },
     "footer_center": ["show-accessibility"],
     # Remove the right-side "On this page" panel globally.
-    "secondary_sidebar_items": []
+    "secondary_sidebar_items": [],
 }
 
 html_sidebars = {

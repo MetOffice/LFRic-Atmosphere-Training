@@ -9,22 +9,25 @@ Step 1: Navigate to the suite directory
 
 Open a terminal and change to the directory where your suite is located:
 
-.. code-block:: bash
+.. tab-set::
 
-   cd ~/roses/<suite-id>
+   .. tab-item:: Met Office
+
+      .. code-block:: bash
+
+         cd ~/roses/u-dz791
+
+   .. tab-item:: Monsoon
+
+      .. code-block:: bash
+
+         cd ~/roses/u-dz791
+
 
 Step 2: Open the suite in the Rose GUI
 --------------------------------------
 
-Launch the Rose editor by running:
-
-.. code-block:: bash
-
-   rose edit &
-
-- This command opens the suite in the Rose graphical user interface, allowing you to view and modify its configuration.
-- The ``&`` at the end runs the GUI in the background, so your terminal remains available for other commands.
-- To bring it to the foreground, type ``fg``
+.. include:: /include/rose-edit.rst
 
 Step 3: Setting up the suite's top-level configuration
 ------------------------------------------------------
