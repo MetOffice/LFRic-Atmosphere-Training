@@ -37,4 +37,5 @@ Contents of the training course
    mesh_overview/index.rst
    lfric_infrastructure/index.rst
    modelling/index.rst
+   glossary
    appendices/index.rst
