@@ -150,7 +150,7 @@ html_theme_options = {
         },
     "footer_center": ["show-accessibility"],
     # Remove the right-side "On this page" panel globally.
-    "secondary_sidebar_items": []
+    "secondary_sidebar_items": [],
 }
 
 html_sidebars = {
@@ -198,7 +198,8 @@ linkcheck_ignore = [
     r'^https?://oasis\.cerfacs\.fr(?:/.*)?$',
     r'^https://www.sciencedirect.com/science/article/pii/S0743731518305306$',
     r'^https?://code\.metoffice\.gov\.uk(?:/.*)?$',
-    r'https://doi.org/.*'
+    r'https://doi.org/.*',
+    r'https://cirrus.ucsd.edu/ncview/.*',
 ]
 
 # Add hyperlinks include file to avoid repeated links.

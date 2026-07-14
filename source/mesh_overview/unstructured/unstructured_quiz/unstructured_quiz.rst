@@ -49,7 +49,7 @@ This quiz reviews the main ideas from the chapter.
        > Incorrect! Unstructured grids support variable cell sizes.
    1. [ ] All of them have the same shapes
        > No, they can vary in shape depending on geometry needs.
-   
+
    ## Why does an unstructured mesh usually require more coordinate and connectivity data than a structured grid for the same domain?
    1. [ ] The mesh is forced to align with latitude-longitude grid lines
        > Incorrect. UGRID removes that fixed alignment, which is one reason the mesh needs explicit geometry and connectivity.
@@ -116,7 +116,7 @@ This quiz reviews the main ideas from the chapter.
    1. [ ] Cartographic visualisation for unstructured data
        > No. Iris focuses more on analysis than mapping.
    1. [x] Earth Science data processing
-       > Correct! Iris helps process, analyze, and transform scientific datasets. 
+       > Correct! Iris helps process, analyze, and transform scientific datasets.
    1. [ ] 3D mesh visualisation and GPU acceleration
        > These are handled by tools like PyVista, not Iris.
    1. [ ] Low-level mesh and visualisation backend

@@ -27,6 +27,7 @@ Step 1: Check Out the Standard Suite
 .. tab-set::
 
    .. tab-item:: Met Office
+      :sync: met-office
 
       .. code-block:: console
 
@@ -137,7 +138,7 @@ View your logs:
 
    .. tab-item:: Cylc TUI
 
-      On the command line type ``cylc tui``. 
+      On the command line type ``cylc tui``.
 
       Task logs can be found by clicking on task icons.
 

@@ -44,6 +44,7 @@ For analysis, you can use what you learnt in the visualisation exercises.
    back_to_earth/back_to_earth.rst
    init_perturb/init_perturb.rst
 
+
 .. admonition:: Example from previous studies: changing the water vapour profile
 
    `Habib & Pierrehumbert (2024) <https://doi.org/10.3847/1538-4357/ad04e2>`_ use another cloud-resolving model and find that destabilizing mean molecular weight gradients can lead to compositional convection in otherwise thermally stable atmospheres.

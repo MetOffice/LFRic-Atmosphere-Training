@@ -32,6 +32,7 @@ Step 1: Compile the model
    .. tab-set::
 
       .. tab-item:: Met Office
+         :sync: met-office
 
          .. code-block:: console
 
@@ -58,6 +59,7 @@ Step 1: Compile the model
    .. tab-set::
 
       .. tab-item:: Met Office
+         :sync: met-office
 
          .. code-block:: text
 

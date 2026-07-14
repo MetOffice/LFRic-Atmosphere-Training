@@ -24,9 +24,19 @@ a quick overview of model output or observational datasets.
 
 Example:
 
-.. code-block:: console
+.. tab-set::
 
-   ncview temperature.nc
+   .. tab-item:: Met Office
+
+      .. code-block:: console
+
+         ncview temperature.nc
+
+   .. tab-item:: Monsoon
+
+      .. code-block:: console
+
+         ncview temperature.nc
 
 Useful tasks include:
 
@@ -50,9 +60,19 @@ between formats.
 
 Example:
 
-.. code-block:: console
+.. tab-set::
 
-   xconv
+   .. tab-item:: Met Office
+
+      .. code-block:: console
+
+         xconv
+
+   .. tab-item:: Monsoon
+
+      .. code-block:: console
+
+         xconv
 
 After launching the application:
 
@@ -86,10 +106,21 @@ such as Python are generally more appropriate.
 If these tools are installed via environment modules on your system,
 you may first need to load them before use:
 
-.. code-block:: console
+.. tab-set::
 
-   module load ncview
-   module load xconv
+   .. tab-item:: Met Office
+
+      .. code-block:: console
+
+            module load ncview
+            module load xconv
+
+   .. tab-item:: Monsoon
+
+      .. code-block:: console
+
+            module load ncview
+            module load xconv
 
 Refer to your local HPC documentation for the exact module names
 available on your platform.
@@ -122,7 +153,7 @@ the Iris and Matplotlib libraries.
 
    # Load a cube from a NetCDF file.
    surface_temperature_cube = iris.load_cube(
-	   path_to_data / "output_file.nc", "surface_temperature"
+       path_to_data / "output_file.nc", "surface_temperature"
    )
 
    # Change the units from Kelvin to Celsius.
@@ -144,4 +175,4 @@ The resulting plot can be seen below.
    :width: 600px
    :alt: Iris quickplot example
 
-   Example output from iris.quickplot. 
+   Example output from iris.quickplot.

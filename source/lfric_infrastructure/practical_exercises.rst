@@ -38,6 +38,7 @@ Use the tab that matches your platform before starting the practicals.
 .. tab-set::
 
    .. tab-item:: Met Office
+      :sync: met-office
 
       1. Load the Met Office LFRic module stack described in
          :ref:`lfric-platform-prerequisites` so the required build and workflow

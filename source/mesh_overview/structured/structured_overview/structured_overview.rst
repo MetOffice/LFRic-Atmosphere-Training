@@ -20,7 +20,7 @@ Each element in the array represents a distinct location in the physical world.
 .. figure:: /_static/structured_world.svg
    :width: 650px
    :alt: structured world
-   
+
    Representation of a structured grid illustrating the direct correspondence between array indices and physical space.
 
 
@@ -53,7 +53,7 @@ While structured grids work well in many cases, they do have some limitations:
    :width: 300px
    :align: center
    :alt: singularities at poles
-   
+
    Singularities occurring at the poles in structured grids due to grid cell compression.
 
 

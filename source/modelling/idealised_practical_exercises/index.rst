@@ -4,6 +4,9 @@ Exercises in Idealised Configurations
 
 The aim of this practical is to gain experience in running and analysing an idealised configuration of LFRic-Atmosphere.
 
+If you experience issues this is a work in progress
+please email momentum_partnerships@metoffice.gov.uk
+
 In this section, you will:
 
    * learn about different idealised configurations and their key features
@@ -11,6 +14,8 @@ In this section, you will:
    * run an idealised experiment and monitor its progress
    * manipulate the model output and plot it
 
+.. Warning:: The science suite that we will be using is very much work in
+   progress (Alex's PhD!) so there could be mistakes, please be patient with us.
 
 .. toctree::
    :maxdepth: 1
@@ -24,4 +29,3 @@ In this section, you will:
    plotting/plotting.rst
    quiz/quiz.rst
 
-.. Warning:: The science suite that we will be using is very much work in progress (Alex's PhD!) so there could be mistakes, please be patient with us.

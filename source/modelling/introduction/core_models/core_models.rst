@@ -2,7 +2,7 @@
 Component Models
 ****************
 
-The Momentum framework represents the Earth system using four primary component models: 
+The Momentum framework represents the Earth system using four primary component models:
 
 * **Atmosphere**: `LFRic Atmosphere <https://www.metoffice.gov.uk/research/approach/modelling-systems/lfric>`_
 
@@ -28,7 +28,7 @@ The coupling of component models approach, known as *inter-model* coupling, allo
 For example, in the Global Coupled (GC) approach, certain components are strongly coupled and therefore integrated into combined systems:
 
 * The atmosphere and land components are combined to form the *Global Atmosphere Land* (GAL) model.
-* The Ocean and Sea Ice components are combined to form the *Global Ocean and Sea Ice* (GOSI) model. 
+* The Ocean and Sea Ice components are combined to form the *Global Ocean and Sea Ice* (GOSI) model.
 
 The diagram below illustrates coupling components in the GC approach.
 
@@ -39,8 +39,8 @@ The diagram below illustrates coupling components in the GC approach.
    :alt: components in a GC-LFRic configuration
 
    Components coupling in a GC-LFRic configuration
-   
-   
+
+
 Within each of these combined systems, information is exchanged at every model timestep. This frequent exchange reflects the strong physical coupling between the relevant processes, such as energy, moisture, and momentum fluxes. As a result, the components must run within a single executable. This form of coupling is referred to as *intra-model coupling*.
 
 The GAL and GOSI models are then further coupled to form the GC configuration.
