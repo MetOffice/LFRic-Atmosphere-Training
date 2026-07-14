@@ -9,11 +9,20 @@ Navigate to your suite directory
 
 Open a terminal and move to the suite directory:
 
-.. code-block:: bash
+.. tab-set::
 
-   cd ~/roses/<suite-id>
+    .. tab-item:: Met Office
 
-Replace ``<suite-id>`` with the name of your suite.
+        .. code-block:: bash
+
+            cd ~/roses/u-by395
+
+    .. tab-item:: Monsoon
+
+        .. code-block:: bash
+
+            cd ~/roses/u-by395/u-by395_lfric_monsoon3
+
 
 Run the workflow
 -----------------------

@@ -14,3 +14,4 @@
 | pp-mo            | Patrick Peglar         | Met Office            | 2026-06-05 |
 | CorboPy          | Alex Corbett           | University of Bristol | 2026-06-10 |
 | angelamynard     | Angela Mynard          | Met Office            | 2026-06-09 |
+| jonnyhtw         | Jonny Williams         | NCAS                  | 2026-07-08 |
