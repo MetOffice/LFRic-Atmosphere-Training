@@ -40,9 +40,9 @@ For analysis, you can use what you learnt in the visualisation exercises.
    :maxdepth: 1
    :caption: Contents
 
-   rotation/rotation.rst
-   back_to_earth/back_to_earth.rst
-   init_perturb/init_perturb.rst
+   rotation.rst
+   back_to_earth.rst
+   init_perturb.rst
 
 
 .. admonition:: Example from previous studies: changing the water vapour profile

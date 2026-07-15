@@ -21,11 +21,10 @@ In this section, you will:
    :maxdepth: 1
    :caption: Contents
 
-   overview/overview.rst
-   copying/copying.rst
-   navigation/navigation.rst
-   running/running.rst
-   experiments/index.rst
-   plotting/plotting.rst
-   quiz/quiz.rst
-
+   overview.rst
+   copying.rst
+   navigation.rst
+   running.rst
+   index.rst
+   plotting.rst
+   quiz.rst
