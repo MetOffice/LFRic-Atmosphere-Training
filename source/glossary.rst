@@ -31,13 +31,13 @@ Glossary
       Earth System Model Evaluation Tool
 
    ESNZ
-   Earth Sciences New Zealand
+      Earth Sciences New Zealand
 
    MOSRS
-   Met Office Science Repository Service
+      Met Office Science Repository Service
 
    NCMRWF
-   National Centre for Medium Range Weather Forecasting
+      National Centre for Medium Range Weather Forecasting
 
    NWP
-   Numerical Weather Predicition
+      Numerical Weather Predicition
