@@ -2,10 +2,11 @@
 Exercises in Idealised Configurations
 *************************************
 
-The aim of this practical is to gain experience in running and analysing an idealised configuration of LFRic-Atmosphere.
+The aim of this practical is to gain experience in running and analysing an
+idealised configuration of LFRic-Atmosphere.
 
-If you experience issues this is a work in progress
-please email momentum_partnerships@metoffice.gov.uk
+If you experience issues this is a work in progress please email
+momentum_partnerships@metoffice.gov.uk
 
 In this section, you will:
 
@@ -25,6 +26,6 @@ In this section, you will:
    copying.rst
    navigation.rst
    running.rst
-   index.rst
+   experiments/index.rst
    plotting.rst
    quiz.rst
