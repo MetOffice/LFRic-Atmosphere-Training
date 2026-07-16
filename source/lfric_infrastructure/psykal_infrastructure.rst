@@ -132,8 +132,8 @@ Built-ins
 ---------
 
 Not every operation needs a user-written kernel. Some common operations are
-provided as LFRic built-ins. Built-ins are requested from the algorithm layer in
-a similar way to kernels, but their implementation is supplied by the
+provided as LFRic built-ins. Built-ins are requested from the algorithm layer
+in a similar way to kernels, but their implementation is supplied by the
 infrastructure rather than by a separate kernel module.
 
 Built-ins reduce the amount of scientific code that has to be maintained and
@@ -200,7 +200,7 @@ Further reading
 
 The official PSyclone documentation has more detail:
 
-* :external+psyclone:doc:`Introduction to PSyKAl <user_guide/introduction_to_psykal>`
+* :external+psyclone:doc:`PSyKAl Intro <user_guide/introduction_to_psykal>`
 * :external+psyclone:doc:`The LFRic DSL <user_guide/lfric>`
 * :external+psyclone:doc:`The PSyclone command <user_guide/psyclone_command>`
 * `PSyclone LFRic examples <https://psyclone.readthedocs.io/en/stable/tutorials_and_examples/lfric_examples.html>`_

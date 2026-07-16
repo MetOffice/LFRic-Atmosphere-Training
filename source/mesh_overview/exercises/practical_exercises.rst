@@ -4,10 +4,13 @@
 Practical using unstructured data
 *********************************
 
-The Mesh Tutorial provides practical training on handling LFRic unstructured mesh data.
+The Mesh Tutorial provides practical training on handling LFRic unstructured
+mesh data.
 
-All tutorial content is delivered through interactive Jupyter notebooks.
-The upstream material comes from `iris-mesh-tutorial <https://github.com/scitools-classroom/iris-mesh-tutorial>`_ and is provided in this repository under:
+All tutorial content is delivered through interactive Jupyter notebooks. The
+upstream material comes from `iris-mesh-tutorial
+<https://github.com/scitools-classroom/iris-mesh-tutorial>`_ and is provided in
+this repository under:
 
 .. code-block:: text
 
@@ -15,24 +18,25 @@ The upstream material comes from `iris-mesh-tutorial <https://github.com/scitool
 
 New to these tools?
 -------------------
-This practical is about working with LFRic unstructured mesh data. It uses
-Git, the command line, Conda, Python, and JupyterLab. If you are new to Python
-or have not used notebooks before, read :ref:`using-jupyter-notebooks` before
+This practical is about working with LFRic unstructured mesh data. It uses Git,
+the command line, Conda, Python, and JupyterLab. If you are new to Python or
+have not used notebooks before, read :ref:`using-jupyter-notebooks` before
 starting the setup below. If the Git, terminal, or environment setup commands
 are unfamiliar, use the resources in this section as optional preparation or as
 reference material while you work through the notebooks.
 
 The most important ideas for this practical are:
 
-* A Git repository is a version-controlled project. Cloning a repository creates
-  a local copy on your machine.
+* A Git repository is a version-controlled project. Cloning a repository
+  creates a local copy on your machine.
 * The terminal runs commands in a current working directory. Commands such as
-  ``cd my_directory`` and ``git clone`` depend on where you are in the file system.
+  ``cd my_directory`` and ``git clone`` depend on where you are in the file
+  system.
 * A conda environment keeps the Python packages for this practical separate
   from other Python installations.
 * A Jupyter kernel is the Python process that runs notebook cells. For this
-  practical, choose the ``Python (lfric-mesh)`` kernel so that the notebook uses
-  the packages installed in the setup steps below.
+  practical, choose the ``Python (lfric-mesh)`` kernel so that the notebook
+  uses the packages installed in the setup steps below.
 
 .. list-table:: Recommended introductory resources
    :header-rows: 1
@@ -78,8 +82,8 @@ The most important ideas for this practical are:
        `Project Jupyter documentation <https://docs.jupyter.org/en/latest/>`_
        for more detail.
    * - Notebook cells and kernels
-     - You need to understand how to run cells, switch kernels, or stop a kernel
-       that is still running.
+     - You need to understand how to run cells, switch kernels, or stop a
+       kernel that is still running.
      - Use :ref:`using-jupyter-notebooks` for the course workflow, then
        JupyterLab's `Notebooks
        <https://jupyterlab.readthedocs.io/en/stable/user/notebook.html>`_ page
@@ -109,8 +113,8 @@ If you do not already have this repository locally, clone it:
 
 .. code-block:: console
 
-   git clone https://github.com/MetOffice/LFRic-Atmosphere-Training.git
-   cd LFRic-Atmosphere-Training
+   git clone https://github.com/MetOffice/LFRic-Atmosphere-Training.git cd
+   LFRic-Atmosphere-Training
 
 If you already have a local clone, move into it:
 
@@ -124,11 +128,10 @@ For the full mesh and regridding practicals, use a conda environment:
 
 .. code-block:: console
 
-   conda create -n lfric-mesh python=3.12 -y
-   conda activate lfric-mesh
-   conda install -c conda-forge esmpy -y
-   python -m pip install -e '.[notebooks]'
-   python -m ipykernel install --user --name lfric-mesh --display-name "Python (lfric-mesh)"
+   conda create -n lfric-mesh python=3.12 -y conda activate lfric-mesh conda
+   install -c conda-forge esmpy -y python -m pip install -e '.[notebooks]'
+   python -m ipykernel install --user --name lfric-mesh --display-name "Python
+   (lfric-mesh)"
 
 Start the tutorial
 ------------------
@@ -165,8 +168,9 @@ Once the environment is set up:
 .. important::
    Always launch JupyterLab from within ``notebooks/iris-mesh-tutorial/notebooks`` to ensure paths and imports work correctly.
 
-After running ``jupyter lab``, a new browser window or tab should automatically open.
-If it does not open automatically, copy the URL shown in the terminal into your browser.
+After running ``jupyter lab``, a new browser window or tab should automatically
+open. If it does not open automatically, copy the URL shown in the terminal
+into your browser.
 
 Recommended learning path
 -------------------------
@@ -196,9 +200,12 @@ After completing the core pathway, optional auxiliary notebooks are available:
 
 Upstream relationship
 ---------------------
-- Upstream source: `scitools-classroom/iris-mesh-tutorial <https://github.com/scitools-classroom/iris-mesh-tutorial>`_
-- This repository contains the training-delivery copy used in LFRic Atmosphere training.
-- General improvements that are not LFRic-specific should be proposed back to the upstream project.
+- Upstream source: `scitools-classroom/iris-mesh-tutorial
+  <https://github.com/scitools-classroom/iris-mesh-tutorial>`_
+- This repository contains the training-delivery copy used in LFRic Atmosphere
+  training.
+- General improvements that are not LFRic-specific should be proposed back to
+  the upstream project.
 
 For file-level details and maintainer/reference notes, see:
 
