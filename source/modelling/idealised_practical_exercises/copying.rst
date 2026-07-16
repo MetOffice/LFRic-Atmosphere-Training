@@ -1,9 +1,11 @@
 Getting Started: Copying a Workflow for the Idealised Suite
 ===========================================================
 
-To begin working with the idealised suite, you first need to create your own copy of an existing workflow.
+To begin working with the idealised suite, you first need to create your own
+copy of an existing workflow.
 
-As introduced in the *Global Modelling Practical* and repeated in the *Regional Modelling Practical*, you can do this using the ``rose`` command-line tool.
+As introduced in the *Global Modelling Practical* and repeated in the *Regional
+Modelling Practical*, you can do this using the ``rose`` command-line tool.
 Replace ``<suite-id>`` with the ID of the workflow you want to use:
 
 .. tab-set::
@@ -15,11 +17,8 @@ Replace ``<suite-id>`` with the ID of the workflow you want to use:
 
          rosie copy u-dz791
 
-         # Alternatively, you can check out the workflow
-         # instead of copying it:
-         rosie checkout u-dz791
-         # or
-         rosie co u-dz791
+         # Alternatively, you can check out the workflow # instead of copying
+         it: rosie checkout u-dz791 # or rosie co u-dz791
 
    .. tab-item:: Monsoon
       :sync: monsoon
@@ -32,11 +31,8 @@ Replace ``<suite-id>`` with the ID of the workflow you want to use:
 
          rosie copy u-dz791
 
-         # Alternatively, you can check out the workflow
-         # instead of copying it:
-         rosie checkout u-dz791
-         # or
-         rosie co u-dz791
+         # Alternatively, you can check out the workflow # instead of copying
+         it: rosie checkout u-dz791 # or rosie co u-dz791
 
 
 .. note:: Reminder: what's the difference between ``copy`` and ``checkout``?

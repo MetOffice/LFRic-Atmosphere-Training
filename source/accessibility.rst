@@ -17,7 +17,7 @@ Details on producing an accessibility statement can be found on the `Central
 Digital & Data Office government website`_.
 
 This accessibility statement applies to content published on the
-`Momentum Training <https://verbose-adventure-lmv2egq.pages.github.io/>`_ domain.
+`Momentum Training <https://metoffice.github.io/LFRic-Atmosphere-Training/>`_ domain.
 
 This website is run by the `Met Office`_. We want as many people as possible to
 be able to use this website. For example, that means you should be able to:
