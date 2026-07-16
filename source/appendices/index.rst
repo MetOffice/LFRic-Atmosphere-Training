@@ -9,4 +9,5 @@ before starting the practical exercises.
    :maxdepth: 1
    :caption: Contents
 
+   monsoon3
    jupyter_notebooks

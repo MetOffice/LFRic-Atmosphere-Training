@@ -23,6 +23,8 @@ For this practical, we recommend copying the workflow.
 
    .. tab-item:: Monsoon
 
+      .. include:: /include/monsoon3-help.rst
+
       .. code-block:: console
 
             $ mkdir ~/roses

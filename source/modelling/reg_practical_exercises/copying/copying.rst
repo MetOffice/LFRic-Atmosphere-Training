@@ -15,6 +15,8 @@ As introduced in the *Global Modelling Practical*, you can do this using the ``r
    
     .. tab-item:: Monsoon
 
+      .. include:: /include/monsoon3-help.rst
+
       .. code-block:: bash
 
             rosie copy u-by395/u-by395_lfric_monsoon3

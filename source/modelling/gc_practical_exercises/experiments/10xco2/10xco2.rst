@@ -19,6 +19,8 @@ Start by changing into the ``lfric_atm`` application directory:
 
    .. tab-item:: Monsoon
 
+      .. include:: /include/monsoon3-help.rst
+
       .. code-block:: console
 
          cd app/lfric_atm

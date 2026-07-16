@@ -19,6 +19,8 @@ Open a terminal and change to the directory where your suite is located:
 
    .. tab-item:: Monsoon
 
+      .. include:: /include/monsoon3-help.rst
+
       .. code-block:: bash
 
          cd ~/roses/u-dz791
@@ -27,7 +29,7 @@ Open a terminal and change to the directory where your suite is located:
 Step 2: Open the suite in the Rose GUI
 --------------------------------------
 
-.. include:: /include/rose-edit.rst
+.. include:: /include/rose-edit-no-monsoon-help.rst
 
 Step 3: Setting up the suite's top-level configuration
 ------------------------------------------------------

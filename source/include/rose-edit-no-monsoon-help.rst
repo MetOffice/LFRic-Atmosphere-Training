@@ -1,5 +1,4 @@
-.. reusable note on using rose edit
-.. to use use .. include:: /include/cylc-gui.rst
+.. reusable note on using rose edit without the Monsoon3 help link
 
 .. tab-set::
 
@@ -12,8 +11,6 @@
 
    .. tab-item:: Monsoon
       :sync: monsoon
-
-      .. include:: /include/monsoon3-help.rst
 
       .. code-block:: bash
 

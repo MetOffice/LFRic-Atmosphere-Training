@@ -16,6 +16,8 @@ Once your suite has been set up, you can run it using cylc:
    .. tab-item:: Monsoon
       :sync: monsoon
 
+      .. include:: /include/monsoon3-help.rst
+
       .. code-block:: bash
 
          cylc vip

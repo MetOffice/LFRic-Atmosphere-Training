@@ -27,6 +27,8 @@ Validate the workflow, install it to ``~/cylc-run`` and play it using:
 
    .. tab-item:: Monsoon
 
+      .. include:: /include/monsoon3-help.rst
+
       .. code-block:: console
 
             cylc validate-install-play --opt-conf-key=monsoon

@@ -21,6 +21,8 @@ To edit and view the workflow data, navigate into the ``roses/<suite-id>`` direc
 
    .. tab-item:: Monsoon
 
+      .. include:: /include/monsoon3-help.rst
+
       .. code-block:: console
 
             $ cd ~/roses/<suite-id>
