@@ -55,10 +55,11 @@ Step 4: Add the missing field for ``v_in_w3``
          :caption: trunk/app/lfric_atm/file/file_def_diags_user_temp.xml
          :emphasize-lines: 5
 
-            <!-- Stream G - Monthly mean fields --> ... <field
-            field_ref="ageofair"/> <field field_ref="u_in_w3"/> <field
-            field_ref="v_in_w3"/> <field field_ref="m_v"
-            long_name="vapour_mixing_ratio"/>
+            <!-- Stream G - Monthly mean fields --> ...
+            <field field_ref="ageofair"/>
+            <field field_ref="u_in_w3"/>
+            <field field_ref="v_in_w3"/>
+            <field field_ref="m_v" long_name="vapour_mixing_ratio"/>
 
    .. tab-item:: Monsoon
 
@@ -66,10 +67,11 @@ Step 4: Add the missing field for ``v_in_w3``
          :caption: trunk/app/lfric_atm/file/file_def_diags_user_temp.xml
          :emphasize-lines: 5
 
-            <!-- Stream G - Monthly mean fields --> ... <field
-            field_ref="ageofair"/> <field field_ref="u_in_w3"/> <field
-            field_ref="v_in_w3"/> <field field_ref="m_v"
-            long_name="vapour_mixing_ratio"/>
+            <!-- Stream G - Monthly mean fields --> ...
+            <field field_ref="ageofair"/>
+            <field field_ref="u_in_w3"/>
+            <field field_ref="v_in_w3"/>
+            <field field_ref="m_v" long_name="vapour_mixing_ratio"/>
 
 Add the line ``<field field_ref="v_in_w3"/>`` to include the v component of
 wind in the output. Make sure to save your changes to the file.
