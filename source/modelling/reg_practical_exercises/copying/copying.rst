@@ -12,7 +12,7 @@ As introduced in the *Global Modelling Practical*, you can do this using the ``r
         .. code-block:: bash
 
             rosie copy u-by395
-   
+
     .. tab-item:: Monsoon
 
       .. include:: /include/monsoon3-help.rst
