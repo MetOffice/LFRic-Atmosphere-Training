@@ -2,7 +2,8 @@
 Tools review quiz
 *****************
 
-This quiz reviews how the modelling tools introduced in this section fit into a typical workflow.
+This quiz reviews how the modelling tools introduced in this section
+fit into a typical workflow.
 
 .. quizdown::
 
