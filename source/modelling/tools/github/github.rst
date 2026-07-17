@@ -62,7 +62,8 @@ For a typical small code change, the workflow is:
 8. Merge only when the project working practices allow it.
 
 In real LFRic development, follow the
-:external+simulation_systems:ref:`Simulation Systems Working Practices <working_practices_index>`.
+:external+simulation_systems:ref:`Simulation Systems Working Practices
+<working_practices_index>`.
 The sequence above is only the introductory mental model.
 
 Git and GitHub core terms
@@ -186,9 +187,9 @@ development. Where workflows depend on Rosie IDs, MASS archive conventions, or
 Rosie discovery metadata, migration may need to wait for the relevant project
 guidance and tooling.
 
-For this training, you only need the high-level rule: use the GitHub working practices
-where the practical tells you to clone from GitHub, but do not assume every
-historic Rose/Cylc workflow has already moved cleanly from MOSRS/SRS to
+For this training, you only need the high-level rule: use the GitHub working
+practices where the practical tells you to clone from GitHub, but do not assume
+every historic Rose/Cylc workflow has already moved cleanly from MOSRS/SRS to
 GitHub.
 
 MOSRS/SRS during the transition
