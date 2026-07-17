@@ -16,8 +16,8 @@ Accessibility statement for the Momentum Training Docs website
 Details on producing an accessibility statement can be found on the `Central
 Digital & Data Office government website`_.
 
-This accessibility statement applies to content published on the
-`Momentum Training <https://metoffice.github.io/LFRic-Atmosphere-Training/>`_ domain.
+This accessibility statement applies to content published on the `Momentum
+Training <https://metoffice.github.io/LFRic-Atmosphere-Training/>`_ domain.
 
 This website is run by the `Met Office`_. We want as many people as possible to
 be able to use this website. For example, that means you should be able to:
@@ -62,11 +62,11 @@ requirements, email Momentum_Partnership@metoffice.gov.uk.
 Enforcement procedure
 ---------------------
 
-The Equality and Human Rights Commission (EHRC) is responsible for enforcing the
-Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility
-Regulations 2018 (the 'accessibility regulations'). If you're not happy with how
-we respond to your complaint, contact the `Equality Advisory and Support Service`_
-(EASS).
+The Equality and Human Rights Commission (EHRC) is responsible for enforcing
+the Public Sector Bodies (Websites and Mobile Applications) (No. 2)
+Accessibility Regulations 2018 (the 'accessibility regulations'). If you're not
+happy with how we respond to your complaint, contact the `Equality Advisory and
+Support Service`_ (EASS).
 
 Technical information about this website's accessibility
 --------------------------------------------------------
@@ -101,8 +101,8 @@ Disproportionate burden
   the header. Most are visually hidden but there are some such as the GitHub
   etc. icons by the search field which are visible. This fails `WCAG 2.4.6
   Headings and Labels`_ and `WCAG 3.3.2 Labels or Instructions`_. Sphinx is a
-  third-party, open source code base, and so is beyond the scope of this project
-  to fix, although we will apply updates as the code base develops.
+  third-party, open source code base, and so is beyond the scope of this
+  project to fix, although we will apply updates as the code base develops.
 
 Content that's not within the scope of the accessibility regulations
 --------------------------------------------------------------------
@@ -116,9 +116,10 @@ How we tested this website
 --------------------------
 
 We have aimed to use an accessible tool, but we have not formally tested it.
-Tests will be carried out by the Momentum training documentation developers. They aim to use the
-`WAVE`_ Web Accessibility Evaluation tool, the `lighthouse`_ tool, `axe DevTools
-on Chrome`_ tool, and the built-in Chrome and Firefox accessibility dev-tools.
+Tests will be carried out by the Momentum training documentation developers.
+They aim to use the `WAVE`_ Web Accessibility Evaluation tool, the
+`lighthouse`_ tool, `axe DevTools on Chrome`_ tool, and the built-in Chrome and
+Firefox accessibility dev-tools.
 
 What we're doing to improve accessibility
 -----------------------------------------
@@ -131,7 +132,8 @@ issues.
 Preparation of this accessibility statement
 -------------------------------------------
 
-This statement was prepared on 12th September 2025. It was last reviewed on 2th September 2025.
+This statement was prepared on 12th September 2025. It was last reviewed on 2th
+September 2025.
 
 .. _Central Digital & Data Office government website:
    https://www.gov.uk/government/publications/sample-accessibility-statement/sample-accessibility-statement-for-a-fictional-public-sector-website
