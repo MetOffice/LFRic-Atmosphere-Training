@@ -2,10 +2,13 @@
 The structured world - review quiz
 **********************************
 
-The following quiz reviews key concepts introduced in this chapter. Each question is designed to assess comprehension of the material in a focused and practical manner.
+The following quiz reviews key concepts introduced in this chapter. Each
+question is designed to assess comprehension of the material in a focused and
+practical manner.
 
 .. hint::
-    Unless otherwise specified, each question has only one correct answer.
+
+   Unless otherwise specified, each question has only one correct answer.
 
 .. quizdown::
 
