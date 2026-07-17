@@ -36,6 +36,8 @@ Example:
 
    .. tab-item:: Monsoon
 
+      .. include:: /include/monsoon3-help.rst
+
       .. code-block:: console
 
          ncview temperature.nc

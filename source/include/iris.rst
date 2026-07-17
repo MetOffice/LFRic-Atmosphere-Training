@@ -13,6 +13,8 @@
    .. tab-item:: Monsoon
       :sync: monsoon
 
+      .. include:: /include/monsoon3-help.rst
+
       .. code-block:: bash
 
          module load scitools

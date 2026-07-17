@@ -1,7 +1,4 @@
-.. reusable note on using rose edit
-.. to use use .. include:: /include/cylc-gui.rst
-
-.. include:: /include/x11-forwarding.rst
+.. reusable note on using rose edit without the Monsoon3 help link
 
 .. tab-set::
 
@@ -15,15 +12,15 @@
    .. tab-item:: Monsoon
       :sync: monsoon
 
-      .. include:: /include/monsoon3-help.rst
-
       .. code-block:: bash
 
          rose edit &
 
       .. note::
 
-         You must be using the Cylc host to access ``rose-edit``.
+         You must be using Cylc host to access ``rose-edit``.
+         You will need to have used X11-forwarding (``ssh -X``) to
+         access both the lander and Cylc host.
 
 
 .. admonition:: What does the ``rose-edit &`` command do?

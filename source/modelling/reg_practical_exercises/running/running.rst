@@ -19,6 +19,8 @@ Open a terminal and move to the suite directory:
 
     .. tab-item:: Monsoon
 
+        .. include:: /include/monsoon3-help.rst
+
         .. code-block:: bash
 
             cd ~/roses/u-by395/u-by395_lfric_monsoon3
