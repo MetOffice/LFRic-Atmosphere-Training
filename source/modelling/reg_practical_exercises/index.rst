@@ -1,7 +1,8 @@
 ************************************
 Exercises in Regional Configurations
 ************************************
-The aim of this practical is to gain hands-on experience in running and analysing limited-area (regional) configurations.
+The aim of this practical is to gain hands-on experience in running and
+analysing limited-area (regional) configurations.
 
 In this exercise, you will:
 
