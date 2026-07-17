@@ -28,6 +28,8 @@ Step 2: Open the suite in the Rose GUI
 
 Launch the Rose editor by running:
 
+.. include:: /include/x11-forwarding.rst
+
 .. code-block:: bash
 
    rose edit &
@@ -229,4 +231,3 @@ Once the limited area model is all set up, you can go ahead and run the model.
 
 .. note::
    You can also edit the suite by editing the corresponding .conf file in the suite directory, if you do not wish to use the Rose graphical user interface.
-

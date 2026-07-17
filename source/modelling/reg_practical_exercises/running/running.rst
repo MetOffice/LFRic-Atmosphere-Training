@@ -44,6 +44,8 @@ Monitor the workflow
 
 Once the suite is running, you can monitor its progress using either of the following commands:
 
+.. include:: /include/x11-forwarding.rst
+
 - Graphical interface:
 
   .. code-block:: bash
