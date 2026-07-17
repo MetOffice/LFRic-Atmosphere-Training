@@ -1,6 +1,8 @@
 .. reusable note on using rose edit
 .. to use use .. include:: /include/cylc-gui.rst
 
+.. include:: /include/x11-forwarding.rst
+
 .. tab-set::
 
    .. tab-item:: Met Office
@@ -19,9 +21,7 @@
 
       .. note::
 
-         You must be using Cylc host to access ``rose-edit``.
-         You will need to have used X11-forwarding (``ssh -X``) to
-         access both the lander and Cylc host.
+         You must be using the Cylc host to access ``rose-edit``.
 
 
 .. admonition:: What does the ``rose-edit &`` command do?

@@ -14,6 +14,8 @@ fast way to explore datasets without writing any code, making them useful
 for checking file contents, verifying dimensions, and performing an
 initial quality check before more detailed analysis.
 
+.. include:: /include/x11-forwarding.rst
+
 ncview
 ~~~~~~
 

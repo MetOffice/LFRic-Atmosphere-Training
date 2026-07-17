@@ -77,6 +77,8 @@ Step 6: Visualise the ``v_in_w3`` field
 
 To quickly visualise the new diagnostic, open the NetCDF output in ``xconv`` and display a pressure-level slice of ``v_in_w3``.
 
+.. include:: /include/x11-forwarding.rst
+
 .. tab-set::
 
    .. tab-item:: Met Office

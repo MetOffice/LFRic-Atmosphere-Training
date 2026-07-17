@@ -8,6 +8,8 @@ Editing with Rose GUI
 
 To edit and view the workflow data, navigate into the ``roses/<suite-id>`` directory you just made and run the ``rose edit`` command:
 
+.. include:: /include/x11-forwarding.rst
+
 .. tab-set::
 
    .. tab-item:: Met Office

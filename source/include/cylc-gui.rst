@@ -1,6 +1,8 @@
 .. Re-usable chunk on how to use Cylc GUI or TUI
 .. to use use .. include:: /include/cylc-gui.rst
 
+.. include:: /include/x11-forwarding.rst
+
 .. tab-set::
    :sync-group: site
 

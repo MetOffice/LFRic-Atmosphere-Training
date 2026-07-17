@@ -99,6 +99,8 @@ Start the workflow with:
 While the workflow is running, open the Cylc interface to explore the model
 output:
 
+.. include:: /include/x11-forwarding.rst
+
 .. tab-set::
 
    .. tab-item:: Met Office
