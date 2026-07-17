@@ -2,7 +2,7 @@
 py-modules = []
 
 [tool.doc8]
-ignore = ["D000", "D001"]
+ignore = ["D000"]
 
 [project]
 name = "lfric-atmosphere-training"
