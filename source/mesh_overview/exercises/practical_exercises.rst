@@ -113,8 +113,8 @@ If you do not already have this repository locally, clone it:
 
 .. code-block:: console
 
-   git clone https://github.com/MetOffice/LFRic-Atmosphere-Training.git cd
-   LFRic-Atmosphere-Training
+   git clone https://github.com/MetOffice/LFRic-Atmosphere-Training.git
+   cd LFRic-Atmosphere-Training
 
 If you already have a local clone, move into it:
 
@@ -128,10 +128,11 @@ For the full mesh and regridding practicals, use a conda environment:
 
 .. code-block:: console
 
-   conda create -n lfric-mesh python=3.12 -y conda activate lfric-mesh conda
-   install -c conda-forge esmpy -y python -m pip install -e '.[notebooks]'
-   python -m ipykernel install --user --name lfric-mesh --display-name "Python
-   (lfric-mesh)"
+   conda create -n lfric-mesh python=3.12 -y
+   conda activate lfric-mesh
+   conda install -c conda-forge esmpy -y
+   python -m pip install -e '.[notebooks]'
+   python -m ipykernel install --user --name lfric-mesh --display-name "Python(lfric-mesh)"
 
 Start the tutorial
 ------------------
