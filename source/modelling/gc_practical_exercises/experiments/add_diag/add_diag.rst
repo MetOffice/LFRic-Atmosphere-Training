@@ -55,7 +55,8 @@ Step 4: Add the missing field for ``v_in_w3``
          :caption: trunk/app/lfric_atm/file/file_def_diags_user_temp.xml
          :emphasize-lines: 5
 
-            <!-- Stream G - Monthly mean fields --> ...
+            <!-- Stream G - Monthly mean fields -->
+            ...
             <field field_ref="ageofair"/>
             <field field_ref="u_in_w3"/>
             <field field_ref="v_in_w3"/>
@@ -67,7 +68,8 @@ Step 4: Add the missing field for ``v_in_w3``
          :caption: trunk/app/lfric_atm/file/file_def_diags_user_temp.xml
          :emphasize-lines: 5
 
-            <!-- Stream G - Monthly mean fields --> ...
+            <!-- Stream G - Monthly mean fields -->
+            ...
             <field field_ref="ageofair"/>
             <field field_ref="u_in_w3"/>
             <field field_ref="v_in_w3"/>

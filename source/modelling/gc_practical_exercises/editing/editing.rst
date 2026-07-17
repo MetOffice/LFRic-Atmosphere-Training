@@ -17,17 +17,21 @@ directory you just made and run the ``rose edit`` command:
 
       .. code-block:: console
 
-            $ cd ~/roses/<suite-id> $ ls app  flow.cylc  meta  opt
-            README_cylc8  rose-suite.conf  rose-suite.info  site  tests.cylc $
-            rose edit
+         $ cd ~/roses/<suite-id>
+         $ ls
+         app  flow.cylc  meta  opt
+         README_cylc8  rose-suite.conf  rose-suite.info  site  tests.cylc
+         $ rose edit
 
    .. tab-item:: Monsoon
 
       .. code-block:: console
 
-            $ cd ~/roses/<suite-id> $ ls app  flow.cylc  meta  opt
-            README_cylc8  rose-suite.conf  rose-suite.info  site  tests.cylc $
-            rose edit
+         $ cd ~/roses/<suite-id>
+         $ ls
+         app  flow.cylc  meta  opt
+         README_cylc8  rose-suite.conf  rose-suite.info  site  tests.cylc
+         $ rose edit
 
 This will open up the Rose Graphical User Interface (GUI) for editing the
 workflow. You can navigate through the different sections using the tabs at the
