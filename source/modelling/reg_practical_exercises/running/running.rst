@@ -44,7 +44,8 @@ This command performs three actions:
 Monitor the workflow
 ----------------------------
 
-Once the suite is running, you can monitor its progress using either of the following commands:
+Once the suite is running, you can monitor its progress using either of the
+following commands:
 
 .. include:: /include/x11-forwarding.rst
 
@@ -62,6 +63,8 @@ Once the suite is running, you can monitor its progress using either of the foll
 
 These tools allow you to view task status, progress, and any failures.
 
-For more details on Cylc commands, see the section *"Running a Rose workflow"* under *"Exercises in Global Configurations"* in this tutorial.
+For more details on Cylc commands, see the section *"Running a Rose workflow"*
+under *"Exercises in Global Configurations"* in this tutorial.
 
-After the workflow has completed successfully, navigate to the output directory and try plotting the data.
+After the workflow has completed successfully, navigate to the output directory
+and try plotting the data.
