@@ -2,7 +2,8 @@
 Exercises in Global Configurations
 **********************************
 
-The aim of this practical is to gain experience in editing, running, and analysing global configurations. You will:
+The aim of this practical is to gain experience in editing, running, and
+analysing global configurations. You will:
 
 .. admonition:: In this module you will learn about...
 
@@ -17,7 +18,8 @@ The aim of this practical is to gain experience in editing, running, and analysi
 .. admonition:: At the end of this module you should be able to...
 
    * copy an existing global configuration and set up a new experiment
-   * edit configuration files to change model parameters, physics options, and domain settings
+   * edit configuration files to change model parameters, physics options, and
+     domain settings
    * submit and run a global configuration case successfully
    * navigate the run directory structure and access model logs and diagnostics
    * identify and interpret key output files from model runs
