@@ -50,7 +50,9 @@ Important points
 
 * Do not assume that a service named in one part of the course can be reached
   from every other Monsoon3 service. Follow the connection route in the
-  official guide.
+  official guide. For example:
+  * Github repositories should be accessed using https, not ssh.
+  * Some Cylc tools and Rose edit will not work on compute nodes.
 * Complete the site-supported repository authentication setup before running
   Rosie commands.
 * Do not place passwords, authentication codes, tokens, or private connection
