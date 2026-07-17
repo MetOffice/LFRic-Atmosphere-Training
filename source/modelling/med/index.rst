@@ -2,7 +2,8 @@
 Evaluation and Development
 **************************
 
-This section covers how the science configurations are developed and evaluated within the Momentum® Framework.
+This section covers how the science configurations are developed and evaluated
+within the Momentum® Framework.
 
 .. admonition:: Aims and objectives
 
