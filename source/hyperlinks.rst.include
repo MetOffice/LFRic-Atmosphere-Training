@@ -2,10 +2,16 @@
 
 .. _LFRic Apps Repository: https://github.com/MetOffice/lfric_apps
 .. _LFRic Core Repository: https://github.com/MetOffice/lfric_core
+
 .. _CASIM repository: https://github.com/MetOffice/casim
 .. _JULES repository: https://github.com/MetOffice/jules
 .. _SOCRATES repository: https://github.com/MetOffice/socrates
 .. _UKCA repository: https://github.com/MetOffice/ukca
+
+.. Documentation sites
+
+.. _LFRic Apps Documentation: https://metoffice.github.io/lfric_apps/
+.. _LFRic Core Documentation: https://metoffice.github.io/lfric_core/
 
 .. Paths within repositories
 
