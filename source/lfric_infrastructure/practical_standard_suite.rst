@@ -25,6 +25,7 @@ Step 1: Check Out the Standard Suite
    cd cylc-src
 
 .. tab-set::
+   :sync-group: site
 
    .. tab-item:: Met Office
       :sync: met-office
@@ -35,7 +36,22 @@ Step 1: Check Out the Standard Suite
                git@github.com:MetOffice/momentum_user_training.example_lfric_workflow.git \
                lfric_apps_standard_suite
 
-   .. tab-item:: Non Met Office
+   .. tab-item:: Monsoon
+      :sync: monsoon
+
+      Clone over HTTPS on Monsoon3, authenticating with a personal access
+      token as described in `Git on Monsoon3`_:
+
+      .. code-block:: console
+
+         git clone \
+               https://github.com/MetOffice/momentum_user_training.example_lfric_workflow.git \
+               lfric_apps_standard_suite
+
+   .. tab-item:: Other
+      :sync: other
+
+      .. include:: /include/other-platform-hpc.rst
 
       Consult your site's documentation for cloning git repositories, then
       clone:
@@ -102,12 +118,28 @@ output:
 .. include:: /include/x11-forwarding.rst
 
 .. tab-set::
+   :sync-group: site
 
    .. tab-item:: Met Office
+      :sync: met-office
 
       Navigate to `Cylc Hub <https://cylchub>`_ and open the workflow there.
 
-   .. tab-item:: Non Met Office
+   .. tab-item:: Monsoon
+      :sync: monsoon
+
+      .. include:: /include/monsoon3-help.rst
+
+      Use the terminal interface:
+
+      .. code-block:: console
+
+         cylc tui
+
+   .. tab-item:: Other
+      :sync: other
+
+      .. include:: /include/other-platform.rst
 
       Use the Cylc interface supported by your site:
 

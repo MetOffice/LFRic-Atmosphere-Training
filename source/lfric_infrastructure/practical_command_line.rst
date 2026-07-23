@@ -24,6 +24,7 @@ Step 1: Compile the model
 1. Checkout the code from github:
 
    .. tab-set::
+      :sync-group: site
 
       .. tab-item:: Met Office
          :sync: met-office
@@ -33,7 +34,22 @@ Step 1: Compile the model
             git clone git@github.com:MetOffice/lfric_apps.git
             cd lfric_apps
 
-      .. tab-item:: Non Met Office
+      .. tab-item:: Monsoon
+         :sync: monsoon
+
+         Clone over HTTPS on Monsoon3. SSH access to GitHub is not available
+         from the Monsoon3 services, so authenticate with a personal access
+         token as described in `Git on Monsoon3`_:
+
+         .. code-block:: console
+
+            git clone https://github.com/MetOffice/lfric_apps.git
+            cd lfric_apps
+
+      .. tab-item:: Other
+         :sync: other
+
+         .. include:: /include/other-platform-hpc.rst
 
          Consult your site's documentation for cloning git repositories, then
          clone the LFRic apps repository:
@@ -50,19 +66,7 @@ Step 1: Compile the model
 
 2. Set up the build environment and select the compiler.
 
-   .. tab-set::
-
-      .. tab-item:: Met Office
-         :sync: met-office
-
-         .. code-block:: text
-
-            ml use ~lfricadmin/lmod
-            ml lfric
-
-      .. tab-item:: Non Met Office
-
-         For other platforms, see the `LFRic Development Environment`_.
+   .. include:: /include/lfric-modules.rst
 
 3. Compile the model
 
@@ -125,13 +129,22 @@ The code contains an `LFRic example`_ configuration containing:
       ncdump -h lfric_diag.nc | less
 
    .. tab-set::
+      :sync-group: site
 
       .. tab-item:: Met Office
+         :sync: met-office
 
          ``ncdump`` is part of the NetCDF tools available in the Met Office
          ``lfric`` environment.
 
-      .. tab-item:: Non Met Office
+      .. tab-item:: Monsoon
+         :sync: monsoon
+
+         ``ncdump`` is part of the NetCDF tools available in the Monsoon3
+         ``lfric`` environment.
+
+      .. tab-item:: Other
+         :sync: other
 
          Install the NetCDF utilities using your site's supported package or
          module route, or use the :ref:`iris.basics` Python workflow instead.
