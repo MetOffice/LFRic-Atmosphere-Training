@@ -9,33 +9,33 @@ Editing with Rose GUI
 ---------------------
 
 To edit and view the workflow data, navigate into the ``roses/<suite-id>``
-directory you just made and run the ``rose edit`` command:
-
-.. include:: /include/x11-forwarding.rst
+directory you just made. You should see the following files:
 
 .. tab-set::
+   :sync-group: site
 
    .. tab-item:: Met Office
+      :sync: met-office
 
-      .. code-block:: console
-
-         $ cd ~/roses/<suite-id>
-         $ ls
-         app  flow.cylc  meta  opt
-         README_cylc8  rose-suite.conf  rose-suite.info  site  tests.cylc
-         $ rose edit
+      .. include:: /include/snippets/gc-suite-listing.rst
 
    .. tab-item:: Monsoon
+      :sync: monsoon
 
       .. include:: /include/monsoon3-help.rst
 
-      .. code-block:: console
+      .. include:: /include/snippets/gc-suite-listing.rst
 
-         $ cd ~/roses/<suite-id>
-         $ ls
-         app  flow.cylc  meta  opt
-         README_cylc8  rose-suite.conf  rose-suite.info  site  tests.cylc
-         $ rose edit
+   .. tab-item:: Other
+      :sync: other
+
+      .. include:: /include/other-platform-hpc.rst
+
+      .. include:: /include/snippets/gc-suite-listing.rst
+
+Then run the ``rose edit`` command:
+
+.. include:: /include/rose-edit.rst
 
 This will open up the Rose Graphical User Interface (GUI) for editing the
 workflow. You can navigate through the different sections using the tabs at the
