@@ -31,6 +31,8 @@
    .. tab-item:: Other
       :sync: other
 
+      .. include:: /include/other-platform.rst
+
       .. code-block:: console
 
          rose edit &

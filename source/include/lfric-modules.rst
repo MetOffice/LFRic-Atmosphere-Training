@@ -25,6 +25,8 @@
    .. tab-item:: Other
       :sync: other
 
+      .. include:: /include/other-platform-hpc.rst
+
       Follow your site's `LFRic Development Environment`_ documentation to
       provide an equivalent environment. The exact compiler and library
       versions are platform-specific and are owned by the supported LFRic

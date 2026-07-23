@@ -23,6 +23,8 @@
    .. tab-item:: Other
       :sync: other
 
+      .. include:: /include/other-platform.rst
+
       Use your preferred environment manager to create an environment and
       install these tools. A typical workflow might be:
 
