@@ -31,15 +31,22 @@ Once your environment is set up, begin by importing the necessary packages:
 
 .. code-block:: python
 
-    import numpy as np import matplotlib.pyplot as plt import iris import
-    iris.plot as iplt import iris.quickplot as qplt import dask.array as da
+    import numpy as np
+    import matplotlib.pyplot as plt
+    import iris
+    import iris.plot as iplt
+    import iris.quickplot as qplt
+    import dask.array as da
     import cf_units
 
-    # Suppress repeated NumPy masked-array casting warnings from sample data
-    loading import warnings warnings.filterwarnings('ignore')
+    # Suppress repeated NumPy masked-array casting warnings from sample
+    # data loading
+    import warnings
+    warnings.filterwarnings('ignore')
 
     # Use microsecond date precision to align with upcoming Iris default
-    behaviour iris.FUTURE.date_microseconds = True
+    # behaviour
+    iris.FUTURE.date_microseconds = True
 
 Loading Model Output
 --------------------
@@ -49,13 +56,19 @@ load this data using Iris:
 
 .. code-block:: python
 
-    # Define paths to model output files path = 'path/to/your/lfric_diag.nc'
+    # Define paths to model output files
+    path = 'path/to/your/lfric_diag.nc'
 
-    # Load all cubes from the file as a CubeList cubelist = iris.load(path)
+    # Load all cubes from the file as a CubeList
+    cubelist = iris.load(path)
 
-    # Print cubelist info print(f"Loaded {len(cubelist)} fields from {path}\n")
-    print(f"Time coordinate: {cubelist[0].coord('time').points[0]} s to
-    {cubelist[0].coord('time').points[-1]} s\n") print(cubelist)
+    # Print cubelist info
+    print(f"Loaded {len(cubelist)} fields from {path}\n")
+    print(
+        f"Time coordinate: {cubelist[0].coord('time').points[0]} s "
+        f"to {cubelist[0].coord('time').points[-1]} s\n"
+    )
+    print(cubelist)
 
 This will display all the available fields in your output file.
 
@@ -92,32 +105,35 @@ You can copy these into your analysis script or Jupyter notebook.
 .. code-block:: python
 
     def add_virtual_temperature(cubelist, rd, rv=461.5):
-        """Calculates virtual temperature and adds as a new cube to the
-        CubeList
+        """Calculates virtual temperature and adds it to the CubeList.
 
         Args:
-            cubelist (CubeList): CubeList containing at least "air_temperature"
-            and
-                                    "vapour_mixing_ratio" cubes
-            rd (float): Specific gas constant (J kg^-1 K^-1) rv (float,
-            optional): Specific gas constant for water vapor. Defaults to
-            461.5.
+            cubelist (CubeList): CubeList containing at least
+                "air_temperature" and "vapour_mixing_ratio" cubes
+            rd (float): Specific gas constant (J kg^-1 K^-1)
+            rv (float, optional): Specific gas constant for water vapour.
+                Defaults to 461.5.
 
         Returns:
             CubeList: CubeList with the virtual temperature cube added
-        """ # Check to make sure virtual temperature is not already in the
-        CubeList if "virtual_temperature" in [cube.name() for cube in
-        cubelist]:
-            print("Virtual temperature cube already exists in the CubeList.
-            Skipping.") return cubelist
+        """
+        # Check virtual temperature is not already in the CubeList
+        if "virtual_temperature" in [cube.name() for cube in cubelist]:
+            print(
+                "Virtual temperature cube already exists in the CubeList. "
+                "Skipping."
+            )
+            return cubelist
 
         try:
             T = cubelist.extract_cube("air_temperature")
         except iris.exceptions.ConstraintMismatchError as e:
             print(
-                f"Error: {e}\n" "Virtual temperature cannot be calculated
-                without the 'air_temperature' cube."
-            ) raise
+                f"Error: {e}\n"
+                "Virtual temperature cannot be calculated without the "
+                "'air_temperature' cube."
+            )
+            raise
 
         try:
             qv = cubelist.extract_cube("vapour_mixing_ratio")
@@ -126,65 +142,71 @@ You can copy these into your analysis script or Jupyter notebook.
                 qv = cubelist.extract_cube("humidity_mixing_ratio")
             except iris.exceptions.ConstraintMismatchError as e:
                 print(
-                    f"Error: {e}\n" "Virtual temperature cannot be calculated
-                    without the 'vapour_mixing_ratio' " "or
-                    'humidity_mixing_ratio' cube."
-                ) raise
+                    f"Error: {e}\n"
+                    "Virtual temperature cannot be calculated without the "
+                    "'vapour_mixing_ratio' or 'humidity_mixing_ratio' cube."
+                )
+                raise
 
-        T_data = T.core_data() qv_data = qv.core_data()
+        T_data = T.core_data()
+        qv_data = qv.core_data()
 
         assert T.shape == qv.shape, (
             f"Temperature and vapour mixing ratio cubes must have same shape, "
             f"but got {T.shape} and {qv.shape}"
         )
 
-        epsilon = rd / rv Tv_data = T_data * (1 + qv_data / epsilon) / (1 +
-        qv_data)
+        epsilon = rd / rv
+        Tv_data = T_data * (1 + qv_data / epsilon) / (1 + qv_data)
 
-        Tv = T.copy(data=Tv_data) Tv.rename("virtual_temperature") Tv.units =
-        "K"
+        Tv = T.copy(data=Tv_data)
+        Tv.rename("virtual_temperature")
+        Tv.units = "K"
 
-        cubelist.append(Tv) print("Virtual temperature cube added.")
+        cubelist.append(Tv)
+        print("Virtual temperature cube added.")
 
         return cubelist
 
 
     def add_virtual_potential_temperature(cubelist, rd, cp, p0=1e5, rv=461.5):
-        """Calculates virtual potential temperature and adds as a new cube to
-        the CubeList
+        """Calculates virtual potential temperature and adds it to the CubeList.
 
         Args:
             cubelist (CubeList): CubeList containing at least
-            "air_temperature",
-                                    "air_pressure", and
-                                    "vapour_mixing_ratio"/"humidity_mixing_ratio"
-                                    cubes
-            rd (float): Specific gas constant (J kg^-1 K^-1) cp (float):
-            Specific heat capacity at constant pressure (J kg^-1 K^-1) p0
-            (float, optional): Reference pressure in Pa. Defaults to 1e5. rv
-            (float, optional): Specific gas constant for water vapor. Defaults
-            to 461.5.
+                "air_temperature", "air_pressure", and
+                "vapour_mixing_ratio"/"humidity_mixing_ratio" cubes
+            rd (float): Specific gas constant (J kg^-1 K^-1)
+            cp (float): Specific heat capacity at constant pressure
+                (J kg^-1 K^-1)
+            p0 (float, optional): Reference pressure in Pa. Defaults to 1e5.
+            rv (float, optional): Specific gas constant for water vapour.
+                Defaults to 461.5.
 
         Returns:
             CubeList: CubeList with the virtual potential temperature cube
-            added
+                added
         """
-
-        # Check to make sure virtual potential temperature is not already in
-        the CubeList if "virtual_potential_temperature" in [cube.name() for
-        cube in cubelist]:
-            print("Virtual potential temperature cube already exists in the
-            CubeList. Skipping.") return cubelist
+        # Check virtual potential temperature is not already in the CubeList
+        if "virtual_potential_temperature" in [
+            cube.name() for cube in cubelist
+        ]:
+            print(
+                "Virtual potential temperature cube already exists in the "
+                "CubeList. Skipping."
+            )
+            return cubelist
 
         try:
-            T = cubelist.extract_cube("air_temperature") p =
-            cubelist.extract_cube("air_pressure")
+            T = cubelist.extract_cube("air_temperature")
+            p = cubelist.extract_cube("air_pressure")
         except iris.exceptions.ConstraintMismatchError as e:
             print(
-                f"Error: {e}\n" "Virtual potential temperature cannot be
-                calculated without the 'air_temperature' " "and 'air_pressure'
-                cubes."
-            ) raise
+                f"Error: {e}\n"
+                "Virtual potential temperature cannot be calculated without "
+                "the 'air_temperature' and 'air_pressure' cubes."
+            )
+            raise
 
         try:
             qv = cubelist.extract_cube("vapour_mixing_ratio")
@@ -193,26 +215,36 @@ You can copy these into your analysis script or Jupyter notebook.
                 qv = cubelist.extract_cube("humidity_mixing_ratio")
             except iris.exceptions.ConstraintMismatchError as e:
                 print(
-                    f"Error: {e}\n" "Virtual potential temperature cannot be
-                    calculated without the 'vapour_mixing_ratio' " "or
-                    'humidity_mixing_ratio' cube."
-                ) raise
+                    f"Error: {e}\n"
+                    "Virtual potential temperature cannot be calculated "
+                    "without the 'vapour_mixing_ratio' or "
+                    "'humidity_mixing_ratio' cube."
+                )
+                raise
 
-        T_data = T.core_data() p_data = p.core_data() qv_data = qv.core_data()
+        T_data = T.core_data()
+        p_data = p.core_data()
+        qv_data = qv.core_data()
 
         assert T.shape == p.shape == qv.shape, (
-            f"Temperature, pressure, and vapour mixing ratio cubes must have
-            same shape, " f"but got {T.shape}, {p.shape}, and {qv.shape}"
+            f"Temperature, pressure, and vapour mixing ratio cubes must have "
+            f"same shape, but got {T.shape}, {p.shape}, and {qv.shape}"
         )
 
-        epsilon = rd / rv theta_v_data = T_data * (p0 / p_data) ** (rd / cp) *
-        (1 + qv_data / epsilon) / (1 + qv_data)
+        epsilon = rd / rv
+        theta_v_data = (
+            T_data
+            * (p0 / p_data) ** (rd / cp)
+            * (1 + qv_data / epsilon)
+            / (1 + qv_data)
+        )
 
         theta_v = T.copy(data=theta_v_data)
-        theta_v.rename("virtual_potential_temperature") theta_v.units = "K"
+        theta_v.rename("virtual_potential_temperature")
+        theta_v.units = "K"
 
-        cubelist.append(theta_v) print("Virtual potential temperature cube
-        added.")
+        cubelist.append(theta_v)
+        print("Virtual potential temperature cube added.")
 
         return cubelist
 
@@ -226,15 +258,16 @@ match your model configuration):
 
 .. code-block:: python
 
-    # Gas constants (change based on the background gas) rd = 4124      #
-    Specific gas constant (J kg^-1 K^-1) cp = 14300     # Specific heat
-    capacity at constant pressure (J kg^-1 K^-1)
+    # Gas constants (change based on the background gas)
+    rd = 4124      # Specific gas constant (J kg^-1 K^-1)
+    cp = 14300     # Specific heat capacity at constant pressure (J kg^-1 K^-1)
 
-    # Add derived diagnostics to your cubelist cubelist =
-    add_virtual_temperature(cubelist, rd) cubelist =
-    add_virtual_potential_temperature(cubelist, rd, cp)
+    # Add derived diagnostics to your cubelist
+    cubelist = add_virtual_temperature(cubelist, rd)
+    cubelist = add_virtual_potential_temperature(cubelist, rd, cp)
 
-    # Check that the new cubes have been added print(cubelist)
+    # Check that the new cubes have been added
+    print(cubelist)
 
 Converting from UGRID to X/Y Grid
 ==================================
@@ -271,8 +304,7 @@ Below is a helper function for converting from UGRID to X/Y:
 .. code-block:: python
 
     def reshape_ugrid_cube_to_xy_grid(cube, nx, ny, delta_x, delta_y):
-        """ Reshape an iris cube on a UGRID into a cube with defined x/y
-        distance coordinates.
+        """Reshape a UGRID iris cube onto defined x/y distance coordinates.
 
         Originally written by Denis Sergeev (Bristol). See
         https://github.com/exoclim/aeolus/
@@ -297,45 +329,61 @@ Below is a helper function for converting from UGRID to X/Y:
         """
 
         # Promote auxiliary time coordinate to dimension coordinate if
-        necessary try:
+        # necessary
+        try:
             iris.util.promote_aux_coord_to_dim_coord(cube, "time")
         except iris.exceptions.CoordinateNotFoundError:
             pass
 
-        # Calculate domain sizes domain_size_x = nx * delta_x domain_size_y =
-        ny * delta_y
+        # Calculate domain sizes
+        domain_size_x = nx * delta_x
+        domain_size_y = ny * delta_y
 
-        # Define new shape new_shape = cube.shape[:-1] + (ny, nx)
+        # Define new shape
+        new_shape = cube.shape[:-1] + (ny, nx)
 
-        # Create spatial coordinates x_coord = iris.coords.DimCoord(
+        # Create spatial coordinates
+        x_coord = iris.coords.DimCoord(
             np.linspace(-domain_size_x / 2, domain_size_x / 2, nx + 1)[:-1],
-            standard_name="projection_x_coordinate", units="m",
-        ) y_coord = iris.coords.DimCoord(
+            standard_name="projection_x_coordinate",
+            units="m",
+        )
+        y_coord = iris.coords.DimCoord(
             np.linspace(-domain_size_y / 2, domain_size_y / 2, ny + 1)[:-1],
-            standard_name="projection_y_coordinate", units="m",
-        ) x_coord.guess_bounds() y_coord.guess_bounds()
+            standard_name="projection_y_coordinate",
+            units="m",
+        )
+        x_coord.guess_bounds()
+        y_coord.guess_bounds()
 
-        # Reshape data (supports both numpy and dask arrays) data =
-        cube.core_data()
+        # Reshape data (supports both numpy and dask arrays)
+        data = cube.core_data()
 
         if isinstance(data, da.Array):
             reshaped = da.reshape(data, new_shape)
         elif isinstance(data, (np.ndarray, np.ma.MaskedArray)):
             reshaped = np.reshape(data, new_shape)
         else:
-            raise TypeError(f"Unsupported data type for cube core data:
-            {type(data)}")
+            raise TypeError(
+                f"Unsupported data type for cube core data: {type(data)}"
+            )
 
-        # Create new cube with reshaped data new_cube = iris.cube.Cube(
+        # Create new cube with reshaped data
+        new_cube = iris.cube.Cube(
             iris.util.reverse(reshaped, new_shape.index(y_coord.shape[0])),
-            dim_coords_and_dims=[(c, cube.coord_dims(c)[0]) for c in
-            cube.dim_coords] + [
-                (y_coord, len(new_shape) - 2), (x_coord, len(new_shape) - 1),
+            dim_coords_and_dims=[
+                (c, cube.coord_dims(c)[0]) for c in cube.dim_coords
+            ]
+            + [
+                (y_coord, len(new_shape) - 2),
+                (x_coord, len(new_shape) - 1),
             ],
         )
 
-        # Copy metadata from original cube new_cube.metadata =
-        iris.common.metadata.CubeMetadata(**cube.metadata._asdict())
+        # Copy metadata from original cube
+        new_cube.metadata = iris.common.metadata.CubeMetadata(
+            **cube.metadata._asdict()
+        )
 
         return new_cube
 
@@ -354,16 +402,19 @@ tutorial, we'll simply define our grid parameters manually.
 
 .. code-block:: python
 
-    # Define your domain parameters (adjust these to match your simulation) nx
-    = 128        # Number of grid points in x direction ny = 128        #
-    Number of grid points in y direction delta_x = 2000  # Grid spacing in x
-    direction (metres) delta_y = 2000  # Grid spacing in y direction (metres)
+    # Define your domain parameters (adjust these to match your simulation)
+    nx = 128        # Number of grid points in x direction
+    ny = 128        # Number of grid points in y direction
+    delta_x = 2000  # Grid spacing in x direction (metres)
+    delta_y = 2000  # Grid spacing in y direction (metres)
 
-    # Extract a cube to regrid (e.g., air temperature) air_temp_cube =
-    cubelist.extract_cube("air_temperature")
+    # Extract a cube to regrid (e.g., air temperature)
+    air_temp_cube = cubelist.extract_cube("air_temperature")
 
-    # Regrid to X/Y coordinates air_temp_xy =
-    reshape_ugrid_cube_to_xy_grid(air_temp_cube, nx, ny, delta_x, delta_y)
+    # Regrid to X/Y coordinates
+    air_temp_xy = reshape_ugrid_cube_to_xy_grid(
+        air_temp_cube, nx, ny, delta_x, delta_y
+    )
 
     print(air_temp_xy)
 
@@ -378,14 +429,18 @@ data along a surface (e.g., through the domain centre):
 
 .. code-block:: python
 
-    # Cube to plot cube = cubelist.extract_cube('air_temperature')
+    # Cube to plot
+    cube = cubelist.extract_cube('air_temperature')
 
-    # Choose a time step and x slice index to plot time_step = 30 y_index = 64
-    # Centre of the domain
+    # Choose a time step and y slice index to plot
+    time_step = 30
+    y_index = 64  # Centre of the domain
 
-    # Create the plot fig, ax = plt.subplots(figsize=(10, 8))
+    # Create the plot
+    fig, ax = plt.subplots(figsize=(10, 8))
     qplt.pcolormesh(cube[time_step, :, y_index, :], cmap='RdBu_r')
-    plt.title(f'Air Temperature slice at timestep {time_step}') plt.show()
+    plt.title(f'Air Temperature slice at timestep {time_step}')
+    plt.show()
 
 This will give you a vertical cross-section of air temperature through the
 domain centre at the specified time step. You can adjust the time step and
@@ -401,23 +456,31 @@ temperature):
 
 .. code-block:: python
 
-    cube = cubelist.extract_cube("virtual_potential_temperature") z =
-    cube.coords('full_levels')[0].points
+    cube = cubelist.extract_cube("virtual_potential_temperature")
+    z = cube.coords('full_levels')[0].points
 
-    # Define location and time steps num_timesteps = cube.shape[0] timesteps =
-    [0, num_timesteps//2, -1] # Define time steps to plot x_index = nx // 2  #
-    Centre of domain in x direction y_index = ny // 2  # Centre of domain in y
-    direction
+    # Define location and time steps
+    num_timesteps = cube.shape[0]
+    timesteps = [0, num_timesteps // 2, -1]  # Time steps to plot
+    x_index = nx // 2  # Centre of domain in x direction
+    y_index = ny // 2  # Centre of domain in y direction
 
-    # Get height coordinate for plotting time = cube.coord("time").points
+    # Get height coordinate for plotting
+    time = cube.coord("time").points
 
-    # Create the plot fig, ax = plt.subplots(figsize=(5, 5)) for i in
-    timesteps:
-        plt.plot(cube.data[i, :100, y_index, x_index], z[:100],
-        label=f'{time[i]} s')
-    plt.xlabel('Virtual potential temperature (K)') plt.ylabel('Vertical
-    level') plt.title('Virtual potential temperature profile at domain centre')
-    plt.legend() plt.show()
+    # Create the plot
+    fig, ax = plt.subplots(figsize=(5, 5))
+    for i in timesteps:
+        plt.plot(
+            cube.data[i, :100, y_index, x_index],
+            z[:100],
+            label=f'{time[i]} s',
+        )
+    plt.xlabel('Virtual potential temperature (K)')
+    plt.ylabel('Vertical level')
+    plt.title('Virtual potential temperature profile at domain centre')
+    plt.legend()
+    plt.show()
 
 This will give you vertical profiles of virtual potential temperature at the
 domain centre for the initial, middle, and final time steps of the simulation.
@@ -431,10 +494,10 @@ for each cube, and plots the initial and final state in a grid layout.
 
 .. code-block:: python
 
-    def plot_initial_final_profiles(cubelist: iris.cube.CubeList, col_lim: int
-    = 3) -> None:
-        """ Plots horizontally-averaged initial and final vertical profiles for
-        all cubes in the cubelist.
+    def plot_initial_final_profiles(
+        cubelist: iris.cube.CubeList, col_lim: int = 3
+    ) -> None:
+        """Plot horizontally-averaged initial and final vertical profiles.
 
         Parameters
         ----------
@@ -442,57 +505,73 @@ for each cube, and plots the initial and final state in a grid layout.
             Iris cubes containing data of shape (t, z, y, x)
         col_lim : int, default 3
             The maximum number of columns allowed in the subplot grid layout.
-        """ n = len(cubelist) rows = int(np.ceil(n / col_lim)) fig, axs =
-        plt.subplots(rows, col_lim, figsize=(col_lim * 3, rows * 3),
-        squeeze=False) axs = axs.flatten()
+        """
+        n = len(cubelist)
+        rows = int(np.ceil(n / col_lim))
+        fig, axs = plt.subplots(
+            rows, col_lim, figsize=(col_lim * 3, rows * 3), squeeze=False
+        )
+        axs = axs.flatten()
 
         for ax, cube in zip(axs, cubelist):
 
-            # Take horizontal means cube =
-            cube.collapsed(['projection_x_coordinate',
-            'projection_y_coordinate'], iris.analysis.MEAN)
+            # Take horizontal means
+            cube = cube.collapsed(
+                ['projection_x_coordinate', 'projection_y_coordinate'],
+                iris.analysis.MEAN,
+            )
 
             # Extract the first (initial) and last (final) time steps
-            initial_data = cube.core_data()[0] final_data =
-            cube.core_data()[-1]
+            initial_data = cube.core_data()[0]
+            final_data = cube.core_data()[-1]
 
-            # Trigger Dask array computation into memory if the data is lazily
-            loaded initial_data = initial_data.compute() if
-            isinstance(initial_data, da.Array) else initial_data final_data =
-            final_data.compute() if isinstance(final_data, da.Array) else
-            final_data
+            # Trigger Dask array computation into memory if the data is
+            # lazily loaded
+            if isinstance(initial_data, da.Array):
+                initial_data = initial_data.compute()
+            if isinstance(final_data, da.Array):
+                final_data = final_data.compute()
 
-            name = cube.name() unit = cube.units time_coord =
-            cube.coord("time").points
+            name = cube.name()
+            unit = cube.units
+            time_coord = cube.coord("time").points
 
-            # Extract vertical coordinate z = (cube.coords('full_levels') or
-            cube.coords('half_levels'))[0].points
+            # Extract vertical coordinate
+            z = (
+                cube.coords('full_levels') or cube.coords('half_levels')
+            )[0].points
 
             ax.plot(initial_data, z, label=f"t={time_coord[0]} s", linewidth=1)
             ax.plot(final_data, z, label=f"t={time_coord[-1]} s", linewidth=1)
 
-            # Handle formatting for mixing ratio units to avoid stripping down
-            to "1" if cube.name() not in ['vapour_mixing_ratio',
-            'cloud_liquid_water_mixing_ratio']:
+            # Handle formatting for mixing ratio units to avoid stripping
+            # down to "1"
+            if cube.name() not in [
+                'vapour_mixing_ratio',
+                'cloud_liquid_water_mixing_ratio',
+            ]:
                 xlabel_unit = unit.format(cf_units.UT_UTF8)
             else:
                 xlabel_unit = "kg/kg"
 
-            ax.set_xlabel(f'{name} ({xlabel_unit})') ax.set_ylabel("Vertical
-            level")
+            ax.set_xlabel(f'{name} ({xlabel_unit})')
+            ax.set_ylabel("Vertical level")
 
             # Use a logarithmic scale for profiles that span orders of
-            magnitude if cube.name() in ['air_density', 'air_pressure']:
+            # magnitude
+            if cube.name() in ['air_density', 'air_pressure']:
                 ax.set_xscale('log')
 
         axs[0].legend(fontsize="small", loc="best")
 
-        # Remove any remaining empty axes for ax in axs[len(cubelist):]:
+        # Remove any remaining empty axes
+        for ax in axs[len(cubelist):]:
             fig.delaxes(ax)
 
         fig.suptitle('Initial & final profiles (domain-averaged)')
 
-        fig.tight_layout() plt.show()
+        fig.tight_layout()
+        plt.show()
 
 Animations
 ----------
@@ -507,11 +586,13 @@ notebook:
     plt.rcParams['animation.html'] = 'html5'
 
     upward_air_velocity_cube = cubelist.extract_cube('upward_air_velocity')
-    cube_iter = upward_air_velocity_cube[:,:110,64,:].slices_over('time') #
-    Crop to 0:110 vertical levels ani = iplt.animate(cube_iter,
-    qplt.pcolormesh)
 
-    # Display inline in notebook HTML(ani.to_jshtml(fps=10))
+    # Crop to 0:110 vertical levels
+    cube_iter = upward_air_velocity_cube[:, :110, 64, :].slices_over('time')
+    ani = iplt.animate(cube_iter, qplt.pcolormesh)
+
+    # Display inline in notebook
+    HTML(ani.to_jshtml(fps=10))
 
 This will create an animation of vertical slices of upward air velocity through
 the domain centre between vertical levels 0—110 over time. Try experimenting

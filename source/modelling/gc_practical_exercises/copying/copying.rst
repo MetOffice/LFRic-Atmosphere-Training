@@ -114,6 +114,6 @@ following message confirming the workflow has been copied.
       .. include:: /include/snippets/rosie-copy-confirm.rst
 
 Congratulations, you have successfully copied workflow ``u-dz612`` and made the
-new suite ID ``u-?????``. Make a note of that new ID: the rest of this practical
-refers to it as ``<suite-id>``. You can now navigate to the workflow directory
-and start working on it.
+new suite ID ``u-?????``. Make a note of that new ID: the rest of this
+practical refers to it as ``<suite-id>``. You can now navigate to the workflow
+directory and start working on it.

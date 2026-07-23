@@ -113,13 +113,15 @@ first need to load them before use:
 
       .. code-block:: console
 
-            module load ncview module load xconv
+            module load ncview
+            module load xconv
 
    .. tab-item:: Monsoon
 
       .. code-block:: console
 
-            module load ncview module load xconv
+            module load ncview
+            module load xconv
 
 Refer to your local HPC documentation for the exact module names available on
 your platform.
@@ -134,11 +136,15 @@ the Iris and Matplotlib libraries.
 
 .. code-block:: python
 
-   import os from pathlib import Path
+   import os
+   from pathlib import Path
 
-   import iris import iris.quickplot as qplt import matplotlib.pyplot as plt
+   import iris
+   import iris.quickplot as qplt
+   import matplotlib.pyplot as plt
 
-   # Set the path to the data. path_to_data = Path("path/to/your/data")
+   # Set the path to the data.
+   path_to_data = Path("path/to/your/data")
 
    # List what that path contains (up to 10 files).
    print(os.listdir(path_to_data)[:10])
@@ -146,17 +152,21 @@ the Iris and Matplotlib libraries.
    # Load one output file to inspect available cubes.
    print(iris.load(path_to_data / "data_file.pp"))
 
-   # Load a cube from a NetCDF file. surface_temperature_cube = iris.load_cube(
+   # Load a cube from a NetCDF file.
+   surface_temperature_cube = iris.load_cube(
        path_to_data / "output_file.nc", "surface_temperature"
    )
 
    # Change the units from Kelvin to Celsius.
    surface_temperature_cube.convert_units("celsius")
 
-   # Choose the time slice to plot (e.g. the first time slice). time_slice = 0
+   # Choose the time slice to plot (e.g. the first time slice).
+   time_slice = 0
 
-   # Plot the data. qplt.contourf(surface_temperature_cube[time_slice, :, :])
-   plt.gca().coastlines() plt.show()
+   # Plot the data.
+   qplt.contourf(surface_temperature_cube[time_slice, :, :])
+   plt.gca().coastlines()
+   plt.show()
 
 The resulting plot can be seen below.
 

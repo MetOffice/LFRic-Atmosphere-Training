@@ -17,8 +17,10 @@ Replace ``<suite-id>`` with the ID of the workflow you want to use:
 
          rosie copy u-dz791
 
-         # Alternatively, you can check out the workflow # instead of copying
-         it: rosie checkout u-dz791 # or rosie co u-dz791
+         # Alternatively, you can check out the workflow instead of copying it:
+         rosie checkout u-dz791
+         # or the short form
+         rosie co u-dz791
 
    .. tab-item:: Monsoon
       :sync: monsoon
@@ -33,8 +35,10 @@ Replace ``<suite-id>`` with the ID of the workflow you want to use:
 
          rosie copy u-dz791
 
-         # Alternatively, you can check out the workflow # instead of copying
-         it: rosie checkout u-dz791 # or rosie co u-dz791
+         # Alternatively, you can check out the workflow instead of copying it:
+         rosie checkout u-dz791
+         # or the short form
+         rosie co u-dz791
 
 
 .. note:: Reminder: what's the difference between ``copy`` and ``checkout``?
