@@ -4,12 +4,6 @@
 .. _lfric example: https://github.com/MetOffice/lfric_apps/blob/main/applications/lfric_atm/example
 .. _iodef.xml example: https://github.com/MetOffice/lfric_apps/blob/main/applications/lfric_atm/example/iodef.xml
 
-.. Not migrated yet
-.. _LFRic Development Environment: https://code.metoffice.gov.uk/trac/lfric/wiki/DevelopmentEnvironment
-
-.. Possibly private, not worth using intersphinx.
-.. _Git on MONSooN: https://code.metoffice.gov.uk/doc/monsoon3/github.html#github
-
 .. _practical_3.1:
 
 Practical 1: Run the model from command line
@@ -30,21 +24,37 @@ Step 1: Compile the model
 1. Checkout the code from github:
 
    .. tab-set::
+      :sync-group: site
 
       .. tab-item:: Met Office
          :sync: met-office
 
-         .. code-block:: console
+         .. code-block:: bash
 
             git clone git@github.com:MetOffice/lfric_apps.git
             cd lfric_apps
 
-      .. tab-item:: Non Met Office
+      .. tab-item:: Monsoon
+         :sync: monsoon
+
+         Clone over HTTPS on Monsoon3. SSH access to GitHub is not available
+         from the Monsoon3 services, so authenticate with a personal access
+         token as described in `Git on Monsoon3`_:
+
+         .. code-block:: bash
+
+            git clone https://github.com/MetOffice/lfric_apps.git
+            cd lfric_apps
+
+      .. tab-item:: Other
+         :sync: other
+
+         .. include:: /include/other-platform-hpc.rst
 
          Consult your site's documentation for cloning git repositories, then
          clone the LFRic apps repository:
 
-         .. code-block:: console
+         .. code-block:: bash
 
             # either
             git clone git@github.com:MetOffice/lfric_apps.git
@@ -56,23 +66,11 @@ Step 1: Compile the model
 
 2. Set up the build environment and select the compiler.
 
-   .. tab-set::
-
-      .. tab-item:: Met Office
-         :sync: met-office
-
-         .. code-block:: text
-
-            ml use ~lfricadmin/lmod
-            ml lfric
-
-      .. tab-item:: Non Met Office
-
-         For other platforms, see the `LFRic Development Environment`_.
+   .. include:: /include/lfric-modules.rst
 
 3. Compile the model
 
-   .. code-block:: console
+   .. code-block:: bash
 
       ./build/local_build.py lfric_atm
 
@@ -100,14 +98,14 @@ The code contains an `LFRic example`_ configuration containing:
 
 1. Navigate to the example configuration directory:
 
-   .. code-block:: console
+   .. code-block:: bash
 
       cd applications/lfric_atm/example
 
 
 2. Run the example with a "single-column" configuration:
 
-   .. code-block:: console
+   .. code-block:: bash
 
       ../bin/lfric_atm configuration.nml > log.txt
 
@@ -126,18 +124,27 @@ The code contains an `LFRic example`_ configuration containing:
 
    Inspect the NetCDF header for the main diagnostic file:
 
-   .. code-block:: console
+   .. code-block:: bash
 
       ncdump -h lfric_diag.nc | less
 
    .. tab-set::
+      :sync-group: site
 
       .. tab-item:: Met Office
+         :sync: met-office
 
          ``ncdump`` is part of the NetCDF tools available in the Met Office
          ``lfric`` environment.
 
-      .. tab-item:: Non Met Office
+      .. tab-item:: Monsoon
+         :sync: monsoon
+
+         ``ncdump`` is part of the NetCDF tools available in the Monsoon3
+         ``lfric`` environment.
+
+      .. tab-item:: Other
+         :sync: other
 
          Install the NetCDF utilities using your site's supported package or
          module route, or use the :ref:`iris.basics` Python workflow instead.
@@ -246,7 +253,7 @@ recompile. You can change what is written and how often by editing
 If you are not still in the example directory after recompiling, return to it
 first:
 
-.. code-block:: console
+.. code-block:: bash
 
    cd applications/lfric_atm/example
 
@@ -260,20 +267,20 @@ first:
 2. Re-run the model to create a baseline ``lfric_averages.nc`` file at the
    default 12-hour output frequency:
 
-   .. code-block:: console
+   .. code-block:: bash
 
       rm -f lfric_averages.nc
       ../bin/lfric_atm configuration.nml > log_averages_12h.txt
 
 3. Inspect the file and note the time dimension and variable names:
 
-   .. code-block:: console
+   .. code-block:: bash
 
       ncdump -h lfric_averages.nc | less
 
 4. Keep the baseline file so that you can compare it with the next run:
 
-   .. code-block:: console
+   .. code-block:: bash
 
       mv lfric_averages.nc lfric_averages_12h.nc
 
@@ -297,13 +304,13 @@ first:
 
 8. Re-run the model (no recompile needed):
 
-   .. code-block:: console
+   .. code-block:: bash
 
       ../bin/lfric_atm configuration.nml > log_averages_6h.txt
 
 9. Compare the headers from the old and new averages files:
 
-   .. code-block:: console
+   .. code-block:: bash
 
       ncdump -h lfric_averages_12h.nc | grep -E "time =|rho"
       ncdump -h lfric_averages.nc | grep -E "time =|rho"

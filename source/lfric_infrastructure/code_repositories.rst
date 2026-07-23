@@ -1,7 +1,9 @@
 Code Repositories
 =================
 
-LFRic Atmosphere is built from several GitHub repositories. The
+LFRic Atmosphere is built from several GitHub repositories. Each of the two
+main repositories publishes its own documentation site:
+`LFRic Apps Documentation`_ and `LFRic Core Documentation`_. The
 `LFRic Apps Repository`_ is the home for LFRic-based science applications and
 libraries, including the Momentum Atmosphere model application and the GungHo
 dynamical core. Those applications are based on infrastructure provided by
@@ -19,6 +21,7 @@ Repository map
      - What it contains
      - When you are likely to use it
    * - `LFRic Apps Repository`_
+       (`docs <LFRic Apps Documentation_>`__)
      - The home for LFRic-based science applications and libraries, including
        the Momentum Atmosphere model application and the GungHo dynamical core.
        These applications use the infrastructure developed in
@@ -26,6 +29,7 @@ Repository map
      - Start here when working with the atmosphere model, science application
        configurations, or practical examples in this training.
    * - `LFRic Core Repository`_
+       (`docs <LFRic Core Documentation_>`__)
      - The underlying infrastructure for the Momentum Atmosphere model and
        associated applications.
      - Use this when a change belongs in the shared LFRic infrastructure rather

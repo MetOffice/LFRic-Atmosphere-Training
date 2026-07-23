@@ -36,6 +36,7 @@ Setup Instructions
 Use the tab that matches your platform before starting the practicals.
 
 .. tab-set::
+   :sync-group: site
 
    .. tab-item:: Met Office
       :sync: met-office
@@ -48,7 +49,24 @@ Use the tab that matches your platform before starting the practicals.
       3. If a practical still requires MOSRS/SRS access, contact
          scientific_partnerships@metoffice.gov.uk to request an account.
 
-   .. tab-item:: Non Met Office
+   .. tab-item:: Monsoon
+      :sync: monsoon
+
+      .. include:: /include/monsoon3-help.rst
+
+      1. Load the Monsoon3 LFRic module stack described in
+         :ref:`lfric-platform-prerequisites` so the required build and workflow
+         tools are available.
+      2. Make sure you have access to the GitHub repositories used in the
+         practicals. Clone over HTTPS rather than SSH, following
+         `Git on Monsoon3`_.
+      3. Complete the site-supported MOSRS authentication setup before running
+         any Rosie commands.
+
+   .. tab-item:: Other
+      :sync: other
+
+      .. include:: /include/other-platform-hpc.rst
 
       1. Follow your site's supported LFRic platform instructions to make the
          required build and workflow tools available.

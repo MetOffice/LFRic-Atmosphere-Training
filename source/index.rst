@@ -26,6 +26,44 @@ Momentum Training - LFRic Atmosphere
    - Version control with `FCM <https://metomi.github.io/fcm/doc/user_guide/>`_ and `Git <https://www.astropython.com/git-novice/>`_: Tools for tracking and managing changes in code.
    - Python and Jupyter notebooks: The :ref:`using-jupyter-notebooks` page explains how to launch JupyterLab, choose the correct kernel, run notebook cells, and find beginner-friendly Python resources.
 
+.. _platform-tabs:
+
+--------------------------
+Choosing your platform
+--------------------------
+
+Many of the practical pages give instructions that depend on the computer you
+are working on. Those instructions are presented in tabs. Pick the tab that
+matches your platform once, and the rest of the site follows your choice.
+
+.. list-table::
+   :header-rows: 1
+   :widths: 20 80
+
+   * - Tab
+     - Use it when
+   * - **Met Office**
+     - You are working on a Met Office system, using the managed LFRic
+       environment and the Met Office module stack.
+   * - **Monsoon**
+     - You are working on Monsoon3, the collaborative HPC service shared with
+       Momentum partners. Monsoon3 splits access, interactive workflow
+       management, and HPC work across separate services, so some commands
+       must be run from a particular service. See :ref:`monsoon3-where-to-run-commands`.
+   * - **Other**
+     - You are working on your own machine, or on a system run by another
+       institution. You provide the environment yourself.
+
+.. important::
+
+   Support for the **Other** route is limited. It is enough for the
+   visualisation and analysis material, where you only need Python, Iris, and
+   the training repository. It is **not** enough for the exercises that build
+   and run the model: those need a supported LFRic build environment, Met
+   Office repository access, shared ancillary data, and HPC batch queues. Where
+   an exercise cannot be completed on your own machine, the **Other** tab says
+   so.
+
 -------------------------------
 Contents of the training course
 -------------------------------

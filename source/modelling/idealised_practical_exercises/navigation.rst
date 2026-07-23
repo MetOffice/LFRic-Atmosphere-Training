@@ -2,36 +2,25 @@
 Navigating the Idealised Suite
 ******************************
 
-Once you have copied the regional nesting suite (e.g. ``u-dz791``), the next
-step is to navigate to the suite directory and open it using the Rose graphical
-user interface (GUI).
+Once you have copied the idealised suite ``u-dz791``, the next step is to
+navigate to your copy and open it using the Rose graphical user interface
+(GUI).
 
 Step 1: Navigate to the suite directory
 ---------------------------------------
 
-Open a terminal and change to the directory where your suite is located:
+Open a terminal and change to the directory where your copy of the suite is
+located, replacing ``<suite-id>`` with the new suite ID that ``rosie copy``
+reported:
 
-.. tab-set::
+.. code-block:: bash
 
-   .. tab-item:: Met Office
-
-      .. code-block:: bash
-
-         cd ~/roses/u-dz791
-
-   .. tab-item:: Monsoon
-
-      .. include:: /include/monsoon3-help.rst
-
-      .. code-block:: bash
-
-         cd ~/roses/u-dz791
-
+   cd ~/roses/<suite-id>
 
 Step 2: Open the suite in the Rose GUI
 --------------------------------------
 
-.. include:: /include/rose-edit-no-monsoon-help.rst
+.. include:: /include/rose-edit.rst
 
 Step 3: Setting up the suite's top-level configuration
 ------------------------------------------------------

@@ -2,46 +2,26 @@
 Editing a Regional Nesting Suite
 ************************************
 
-Once you have copied the regional nesting suite (e.g. ``u-by395``), the next
-step is to navigate to the suite directory and open it using the Rose graphical
-user interface (GUI).
+Once you have copied the regional nesting suite, the next step is to navigate
+to your copy and open it using the Rose graphical user interface (GUI).
 
 Step 1: Navigate to the suite directory
 ----------------------------------------
 
-Open a terminal and move to the directory where your suite is located:
+Open a terminal and move to the directory where your copy of the suite is
+located, replacing ``<suite-id>`` with the new suite ID that ``rosie``
+reported:
 
-.. tab-set::
+.. code-block:: bash
 
-    .. tab-item:: Met Office
-
-        .. code-block:: bash
-
-            cd ~/roses/u-by395
-
-    .. tab-item:: Monsoon
-
-        .. include:: /include/monsoon3-help.rst
-
-        .. code-block:: bash
-
-            cd ~/roses/u-by395/u-by395_lfric_monsoon3
+   cd ~/roses/<suite-id>
 
 Step 2: Open the suite in the Rose GUI
 ---------------------------------------
 
 Launch the Rose editor by running:
 
-.. include:: /include/x11-forwarding.rst
-
-.. code-block:: bash
-
-   rose edit &
-
-- This command opens the suite in the Rose graphical user interface, allowing
-  you to view and modify its configuration.
-- The ``&`` at the end runs the GUI in the background, so your terminal remains
-  available for other commands.
+.. include:: /include/rose-edit.rst
 
 Step 3: Setting Up the Regional Nesting Suite
 ----------------------------------------------
@@ -73,13 +53,14 @@ Site and Machine Selection
   Select the machine where the nesting suite will run (e.g. *Met Office EX
   "moex-cray"*).
 
-- **EX HOST** Choose the execution host group (e.g. *MONSOON3*, *EXA/EXB*, or
-  *EXC/EXD* depending on availability).
+- **EX HOST**
+  Choose the execution host group (e.g. *MONSOON3*, *EXA/EXB*, or *EXC/EXD*
+  depending on availability).
 
 Project Configuration
 ^^^^^^^^^^^^^^^^^^^^^
 
- **PROJECT_NAME**
+- **PROJECT_NAME**
   Specify the project code used for accounting or charging the run (e.g.
   ``training``).
 

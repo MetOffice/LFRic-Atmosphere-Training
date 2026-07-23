@@ -11,8 +11,6 @@ Before starting a practical on Monsoon3, sign in to and follow the official
 `Monsoon3 User Guide`_. It is the source of truth for the current service
 configuration and access requirements.
 
-.. _Monsoon3 User Guide: https://code.metoffice.gov.uk/doc/monsoon3/index.html
-
 Where to run commands
 =====================
 
@@ -51,8 +49,9 @@ Important points
 * Do not assume that a service named in one part of the course can be reached
   from every other Monsoon3 service. Follow the connection route in the
   official guide. For example:
-  * Github repositories should be accessed using https, not ssh.
-  * Some Cylc tools and Rose edit will not work on compute nodes.
+
+  * GitHub repositories should be accessed over HTTPS, not SSH.
+  * Some Cylc tools, and ``rose edit``, will not work on compute nodes.
 * Complete the site-supported repository authentication setup before running
   Rosie commands.
 * Do not place passwords, authentication codes, tokens, or private connection

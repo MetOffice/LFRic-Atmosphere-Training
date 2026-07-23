@@ -41,7 +41,11 @@ extensions = [
 ]
 
 templates_path = ['_templates']
-exclude_patterns = []
+
+# ``source/include`` holds re-usable fragments pulled in with ``.. include::``.
+# They are not standalone pages, so keep them out of the document set to avoid
+# spurious "not included in any toctree" warnings.
+exclude_patterns = ['include/**']
 
 # -- Figure numbering --------------------------------------------------------
 numfig = True

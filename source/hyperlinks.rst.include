@@ -2,10 +2,16 @@
 
 .. _LFRic Apps Repository: https://github.com/MetOffice/lfric_apps
 .. _LFRic Core Repository: https://github.com/MetOffice/lfric_core
+
 .. _CASIM repository: https://github.com/MetOffice/casim
 .. _JULES repository: https://github.com/MetOffice/jules
 .. _SOCRATES repository: https://github.com/MetOffice/socrates
 .. _UKCA repository: https://github.com/MetOffice/ukca
+
+.. Documentation sites
+
+.. _LFRic Apps Documentation: https://metoffice.github.io/lfric_apps/
+.. _LFRic Core Documentation: https://metoffice.github.io/lfric_core/
 
 .. Paths within repositories
 
@@ -19,6 +25,14 @@
 .. _Model Physics: https://github.com/MetOffice/lfric_apps/tree/main/science/physics_schemes
 .. _LFRic dependencies: https://github.com/MetOffice/lfric_apps/blob/main/dependencies.yaml
 .. _LFRic interfaces: https://github.com/MetOffice/lfric_apps/tree/main/interfaces
+
+.. Site documentation referenced by the shared site tabs in ``source/include``.
+.. Ensure that you add them to ``conf.py:linkcheck_ignore`` if they are not
+.. reachable from the public internet.
+
+.. _LFRic Development Environment: https://code.metoffice.gov.uk/trac/lfric/wiki/DevelopmentEnvironment
+.. _Monsoon3 User Guide: https://code.metoffice.gov.uk/doc/monsoon3/index.html
+.. _Git on Monsoon3: https://code.metoffice.gov.uk/doc/monsoon3/github.html#github
 
 .. Links that should be intersphinx
 

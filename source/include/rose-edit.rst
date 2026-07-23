@@ -1,12 +1,13 @@
-.. reusable note on using rose edit
-.. to use use .. include:: /include/cylc-gui.rst
+.. Re-usable chunk on opening a suite in the Rose GUI.
+.. To use it: .. include:: /include/rose-edit.rst
 
 .. include:: /include/x11-forwarding.rst
 
 .. tab-set::
+   :sync-group: site
 
    .. tab-item:: Met Office
-      :sync: metoffice
+      :sync: met-office
 
       .. code-block:: bash
 
@@ -23,10 +24,20 @@
 
       .. note::
 
-         You must be using the Cylc host to access ``rose-edit``.
+         You must be on the Cylc host to run ``rose edit``. It is not
+         available on the compute nodes. X11 forwarding must be enabled on
+         every hop, including the lander and the Cylc host.
 
+   .. tab-item:: Other
+      :sync: other
 
-.. admonition:: What does the ``rose-edit &`` command do?
+      .. include:: /include/other-platform.rst
+
+      .. code-block:: bash
+
+         rose edit &
+
+.. admonition:: What does the ``rose edit &`` command do?
    :collapsible: closed
 
    - This command opens the suite in the Rose graphical user

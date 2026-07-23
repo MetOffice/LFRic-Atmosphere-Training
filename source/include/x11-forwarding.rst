@@ -6,9 +6,9 @@
    computer first (for example, XQuartz on macOS), then connect from a terminal
    using generic host details supplied by your service:
 
-   .. code-block:: console
+   .. code-block:: bash
 
-      $ ssh -AY <remote-host>
+      ssh -AY <remote-host>
 
    Repeat the options for every additional SSH hop. The ``-Y`` option enables
    trusted X11 forwarding. The ``-A`` option forwards your SSH authentication

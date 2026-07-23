@@ -15,24 +15,38 @@ Navigate into the ``roses/<suite-id>`` directory you created.
 Validate the workflow, install it to ``~/cylc-run`` and play it using:
 
 .. tab-set::
+   :sync-group: site
 
    .. tab-item:: Met Office
+      :sync: met-office
 
-      .. code-block:: console
+      .. code-block:: bash
 
-            cylc validate-install-play --opt-conf-key=meto-exab
+         cylc validate-install-play --opt-conf-key=meto-exab
 
-            # Or for ease of typing: cylc vip -O meto-exab
+         # Or for ease of typing: cylc vip -O meto-exab
 
    .. tab-item:: Monsoon
+      :sync: monsoon
 
       .. include:: /include/monsoon3-help.rst
 
-      .. code-block:: console
+      .. code-block:: bash
 
-            cylc validate-install-play --opt-conf-key=monsoon
+         cylc validate-install-play --opt-conf-key=monsoon
 
-            # Or for ease of typing: cylc vip -O monsoon
+         # Or for ease of typing: cylc vip -O monsoon
+
+   .. tab-item:: Other
+      :sync: other
+
+      .. include:: /include/other-platform-hpc.rst
+
+      .. code-block:: bash
+
+         cylc validate-install-play --opt-conf-key=<yoursite>
+
+         # Or for ease of typing: cylc vip -O <yoursite>
 
 Site settings are stored as Rose :external+rose:ref:`optional configuration`
 files. For example a configuration file ``opt/rose-suite-yoursite.conf`` would
@@ -53,25 +67,7 @@ Monitoring Progress
 
 Use one of the following Cylc commands to monitor task states:
 
-.. tab-set::
-
-   .. tab-item:: Met Office
-
-      .. code-block:: console
-
-         cylc tui
-
-   .. tab-item:: Monsoon
-
-      .. code-block:: console
-
-         cylc tui
-
-Both interfaces show nearly identical information — the choice is down to
-personal preference:
-
-* **cylc gui** — easier to interact with, but requires an X11 connection.
-* **cylc tui** — lightweight and works well in any terminal without X11.
+.. include:: /include/cylc-gui.rst
 
 Verifying the Workflow Has Run Successfully
 ===========================================
@@ -94,20 +90,30 @@ If you have a workflow that has finished running and you wish to make a change
 and restart it, use the ``cylc vr`` command:
 
 .. tab-set::
+   :sync-group: site
 
    .. tab-item:: Met Office
+      :sync: met-office
 
-      .. code-block:: console
+      .. code-block:: bash
 
          cylc vr <suite-id>/run#
 
    .. tab-item:: Monsoon
+      :sync: monsoon
 
-      .. code-block:: console
+      .. code-block:: bash
 
          cylc vr <suite-id>/run#
 
-This will verify and reinstall the workflow, capturing any changes you have
+   .. tab-item:: Other
+      :sync: other
+
+      .. code-block:: bash
+
+         cylc vr <suite-id>/run#
+
+This will validate and reinstall the workflow, capturing any changes you have
 made, and then continue running from where it left off.
 
 Stopping or Cleaning a Workflow
@@ -116,18 +122,28 @@ Stopping or Cleaning a Workflow
 To stop a running workflow:
 
 .. tab-set::
+   :sync-group: site
 
    .. tab-item:: Met Office
+      :sync: met-office
 
-      .. code-block:: console
+      .. code-block:: bash
 
-         cylc stop <SUITE-ID>
+         cylc stop <suite-id>
 
    .. tab-item:: Monsoon
+      :sync: monsoon
 
-      .. code-block:: console
+      .. code-block:: bash
 
-         cylc stop <SUITE-ID>
+         cylc stop <suite-id>
+
+   .. tab-item:: Other
+      :sync: other
+
+      .. code-block:: bash
+
+         cylc stop <suite-id>
 
 .. note::
 
@@ -136,18 +152,28 @@ To stop a running workflow:
 To remove an installed workflow:
 
 .. tab-set::
+   :sync-group: site
 
    .. tab-item:: Met Office
+      :sync: met-office
 
-      .. code-block:: console
+      .. code-block:: bash
 
-         cylc clean <SUITE-ID>
+         cylc clean <suite-id>
 
    .. tab-item:: Monsoon
+      :sync: monsoon
 
-      .. code-block:: console
+      .. code-block:: bash
 
-         cylc clean <SUITE-ID>
+         cylc clean <suite-id>
+
+   .. tab-item:: Other
+      :sync: other
+
+      .. code-block:: bash
+
+         cylc clean <suite-id>
 
 This removes the workflow from the system, but the suite directory will still
 exist in ``~/roses``. You can remove this manually if you wish.
