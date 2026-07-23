@@ -1,5 +1,5 @@
-.. Re-usable chunk on how to use Cylc GUI or TUI
-.. to use use .. include:: /include/cylc-gui.rst
+.. Re-usable chunk on how to monitor a workflow with the Cylc GUI or TUI.
+.. To use it: .. include:: /include/cylc-gui.rst
 
 .. include:: /include/x11-forwarding.rst
 
@@ -9,15 +9,38 @@
    .. tab-item:: Met Office
       :sync: met-office
 
-      .. code-block:: bash
+      .. code-block:: console
 
          cylc gui
-         # or alternatively
+         # or, if you prefer the terminal interface
          cylc tui
 
    .. tab-item:: Monsoon
       :sync: monsoon
 
-      .. code-block:: bash
+      .. include:: /include/monsoon3-help.rst
+
+      .. code-block:: console
 
          cylc tui
+
+      .. note::
+
+         Use ``cylc tui`` on Monsoon3. ``cylc gui`` needs a browser or an X11
+         connection that is not available from every Monsoon3 service.
+
+   .. tab-item:: Other
+      :sync: other
+
+      .. code-block:: console
+
+         cylc gui
+         # or, if a graphical interface is not available
+         cylc tui
+
+Both interfaces show nearly identical information, so the choice is largely
+personal preference:
+
+* ``cylc gui`` — easier to interact with, but needs a browser or an X11
+  connection.
+* ``cylc tui`` — lightweight and works in any terminal without X11.

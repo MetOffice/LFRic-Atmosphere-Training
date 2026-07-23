@@ -1,12 +1,13 @@
-.. reusable note on using iris
-.. to use use .. include:: /include/cylc-gui.rst
+.. Re-usable chunk on making Iris and the scientific Python stack available.
+.. To use it: .. include:: /include/iris.rst
 
 .. tab-set::
+   :sync-group: site
 
    .. tab-item:: Met Office
-      :sync: metoffice
+      :sync: met-office
 
-      .. code-block:: bash
+      .. code-block:: console
 
          module load scitools
 
@@ -15,22 +16,22 @@
 
       .. include:: /include/monsoon3-help.rst
 
-      .. code-block:: bash
+      .. code-block:: console
 
          module load scitools
 
    .. tab-item:: Other
       :sync: other
 
-      Use your preferred environment manager to create an environment
-      and install these tools from PyPi. A typical workflow might include:
+      Use your preferred environment manager to create an environment and
+      install these tools. A typical workflow might be:
 
-      .. code-block:: bash
+      .. code-block:: console
 
-         conda create -n my_env python pip
-         pip install iris dask numpy matplotlib
+         conda create -n my_env python
+         conda activate my_env
+         conda install -c conda-forge iris dask numpy matplotlib
 
-      .. seealso::
+.. seealso::
 
-         - [Iris Documentation](
-            https://scitools-iris.readthedocs.io/en/stable/)
+   `Iris documentation <https://scitools-iris.readthedocs.io/en/stable/>`_

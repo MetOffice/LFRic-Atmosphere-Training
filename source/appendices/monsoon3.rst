@@ -11,8 +11,6 @@ Before starting a practical on Monsoon3, sign in to and follow the official
 `Monsoon3 User Guide`_. It is the source of truth for the current service
 configuration and access requirements.
 
-.. _Monsoon3 User Guide: https://code.metoffice.gov.uk/doc/monsoon3/index.html
-
 Where to run commands
 =====================
 

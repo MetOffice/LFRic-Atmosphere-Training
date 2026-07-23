@@ -4,12 +4,6 @@
 .. _lfric example: https://github.com/MetOffice/lfric_apps/blob/main/applications/lfric_atm/example
 .. _iodef.xml example: https://github.com/MetOffice/lfric_apps/blob/main/applications/lfric_atm/example/iodef.xml
 
-.. Not migrated yet
-.. _LFRic Development Environment: https://code.metoffice.gov.uk/trac/lfric/wiki/DevelopmentEnvironment
-
-.. Possibly private, not worth using intersphinx.
-.. _Git on MONSooN: https://code.metoffice.gov.uk/doc/monsoon3/github.html#github
-
 .. _practical_3.1:
 
 Practical 1: Run the model from command line

@@ -25,8 +25,6 @@ on the LFRic Atmosphere model and its underlying components.
    * follow the practical workflow for checking out code, compiling, running a simple configuration, making a small change, and using tests as evidence;
    * locate and modify ``iodef.xml`` to control which fields are written, at what frequency, and to which output files.
 
-.. _LFRic Development Environment: https://code.metoffice.gov.uk/trac/lfric/wiki/DevelopmentEnvironment
-
 .. _lfric-platform-prerequisites:
 
 Platform and prerequisites
