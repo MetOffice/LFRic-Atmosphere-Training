@@ -32,7 +32,7 @@ Example:
    .. tab-item:: Met Office
       :sync: met-office
 
-      .. code-block:: console
+      .. code-block:: bash
 
          ncview temperature.nc
 
@@ -41,7 +41,7 @@ Example:
 
       .. include:: /include/monsoon3-help.rst
 
-      .. code-block:: console
+      .. code-block:: bash
 
          ncview temperature.nc
 
@@ -50,7 +50,7 @@ Example:
 
       .. include:: /include/other-platform.rst
 
-      .. code-block:: console
+      .. code-block:: bash
 
          ncview temperature.nc
 
@@ -81,14 +81,14 @@ Example:
    .. tab-item:: Met Office
       :sync: met-office
 
-      .. code-block:: console
+      .. code-block:: bash
 
          xconv
 
    .. tab-item:: Monsoon
       :sync: monsoon
 
-      .. code-block:: console
+      .. code-block:: bash
 
          xconv
 
@@ -97,7 +97,7 @@ Example:
 
       .. include:: /include/other-platform.rst
 
-      .. code-block:: console
+      .. code-block:: bash
 
          xconv
 
@@ -137,7 +137,7 @@ first need to load them before use:
    .. tab-item:: Met Office
       :sync: met-office
 
-      .. code-block:: console
+      .. code-block:: bash
 
          module load ncview
          module load xconv
@@ -145,7 +145,7 @@ first need to load them before use:
    .. tab-item:: Monsoon
       :sync: monsoon
 
-      .. code-block:: console
+      .. code-block:: bash
 
          module load ncview
          module load xconv

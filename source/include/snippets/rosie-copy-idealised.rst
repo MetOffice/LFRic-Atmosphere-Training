@@ -1,7 +1,7 @@
 .. Copy or check out the idealised suite u-dz791.
 .. To use it: .. include:: /include/snippets/rosie-copy-idealised.rst
 
-.. code-block:: console
+.. code-block:: bash
 
    rosie copy u-dz791
 

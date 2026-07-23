@@ -18,27 +18,27 @@ trunk development. For this practical, we recommend copying the workflow.
    .. tab-item:: Met Office
       :sync: met-office
 
-      .. code-block:: console
+      .. code-block:: bash
 
-         $ rosie copy u-dz612
+         rosie copy u-dz612
 
    .. tab-item:: Monsoon
       :sync: monsoon
 
       .. include:: /include/monsoon3-help.rst
 
-      .. code-block:: console
+      .. code-block:: bash
 
-         $ rosie copy u-dz612
+         rosie copy u-dz612
 
    .. tab-item:: Other
       :sync: other
 
       .. include:: /include/other-platform-hpc.rst
 
-      .. code-block:: console
+      .. code-block:: bash
 
-         $ rosie copy u-dz612
+         rosie copy u-dz612
 
 After this, the following information will be displayed, this is the metadata
 associated with the workflow you have just copied. To edit this information,

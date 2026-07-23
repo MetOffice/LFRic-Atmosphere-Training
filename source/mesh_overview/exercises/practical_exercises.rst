@@ -111,14 +111,14 @@ Get the training repository
 ---------------------------
 If you do not already have this repository locally, clone it:
 
-.. code-block:: console
+.. code-block:: bash
 
    git clone https://github.com/MetOffice/LFRic-Atmosphere-Training.git
    cd LFRic-Atmosphere-Training
 
 If you already have a local clone, move into it:
 
-.. code-block:: console
+.. code-block:: bash
 
    cd /path/to/LFRic-Atmosphere-Training
 
@@ -137,7 +137,7 @@ depends on your platform.
       stack already provides the UGRID-capable Iris and GeoVista packages used
       here:
 
-      .. code-block:: console
+      .. code-block:: bash
 
          module load scitools
 
@@ -150,7 +150,7 @@ depends on your platform.
 
       Load the science software stack:
 
-      .. code-block:: console
+      .. code-block:: bash
 
          module load scitools
 
@@ -163,7 +163,7 @@ depends on your platform.
 
       Create a conda environment and register it as a Jupyter kernel:
 
-      .. code-block:: console
+      .. code-block:: bash
 
          conda create -n lfric-mesh python=3.12 -y
          conda activate lfric-mesh
@@ -184,13 +184,13 @@ Once the environment is set up:
 
 1. Move to the tutorial notebook directory:
 
-   .. code-block:: console
+   .. code-block:: bash
 
       cd notebooks/iris-mesh-tutorial/notebooks
 
 2. Start JupyterLab:
 
-   .. code-block:: console
+   .. code-block:: bash
 
       jupyter lab
 

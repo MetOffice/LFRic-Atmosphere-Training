@@ -99,13 +99,13 @@ Here we want to run the ``scripts`` group:
 
    .. tab-item:: Faster Style Checks
 
-      .. code-block:: console
+      .. code-block:: bash
 
          cylc vip -z group=scripts -n myfeature.style ./rose-stem
 
    .. tab-item:: Full Developer Tests
 
-      .. code-block:: console
+      .. code-block:: bash
 
          cylc vip -z group=developer -n myfeature.developer ./rose-stem
 
@@ -151,7 +151,7 @@ To avoid running the full test workflow, you can use:
 
    .. tab-item:: Workflow finished
 
-      .. code-block:: console
+      .. code-block:: bash
 
          cylc vip -z group=scripts -n myfeature.style ./rose-stem
 
@@ -160,7 +160,7 @@ To avoid running the full test workflow, you can use:
       If a task failed last time you can modify your workflow and
       rerun a set of tasks:
 
-      .. code-block:: console
+      .. code-block:: bash
 
          cylc validate-reinstall myfeature.broken
          cylc trigger myfeature.broken \

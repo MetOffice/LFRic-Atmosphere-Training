@@ -20,7 +20,7 @@ Validate the workflow, install it to ``~/cylc-run`` and play it using:
    .. tab-item:: Met Office
       :sync: met-office
 
-      .. code-block:: console
+      .. code-block:: bash
 
          cylc validate-install-play --opt-conf-key=meto-exab
 
@@ -31,7 +31,7 @@ Validate the workflow, install it to ``~/cylc-run`` and play it using:
 
       .. include:: /include/monsoon3-help.rst
 
-      .. code-block:: console
+      .. code-block:: bash
 
          cylc validate-install-play --opt-conf-key=monsoon
 
@@ -42,7 +42,7 @@ Validate the workflow, install it to ``~/cylc-run`` and play it using:
 
       .. include:: /include/other-platform-hpc.rst
 
-      .. code-block:: console
+      .. code-block:: bash
 
          cylc validate-install-play --opt-conf-key=<yoursite>
 
@@ -95,21 +95,21 @@ and restart it, use the ``cylc vr`` command:
    .. tab-item:: Met Office
       :sync: met-office
 
-      .. code-block:: console
+      .. code-block:: bash
 
          cylc vr <suite-id>/run#
 
    .. tab-item:: Monsoon
       :sync: monsoon
 
-      .. code-block:: console
+      .. code-block:: bash
 
          cylc vr <suite-id>/run#
 
    .. tab-item:: Other
       :sync: other
 
-      .. code-block:: console
+      .. code-block:: bash
 
          cylc vr <suite-id>/run#
 
@@ -127,21 +127,21 @@ To stop a running workflow:
    .. tab-item:: Met Office
       :sync: met-office
 
-      .. code-block:: console
+      .. code-block:: bash
 
          cylc stop <suite-id>
 
    .. tab-item:: Monsoon
       :sync: monsoon
 
-      .. code-block:: console
+      .. code-block:: bash
 
          cylc stop <suite-id>
 
    .. tab-item:: Other
       :sync: other
 
-      .. code-block:: console
+      .. code-block:: bash
 
          cylc stop <suite-id>
 
@@ -157,21 +157,21 @@ To remove an installed workflow:
    .. tab-item:: Met Office
       :sync: met-office
 
-      .. code-block:: console
+      .. code-block:: bash
 
          cylc clean <suite-id>
 
    .. tab-item:: Monsoon
       :sync: monsoon
 
-      .. code-block:: console
+      .. code-block:: bash
 
          cylc clean <suite-id>
 
    .. tab-item:: Other
       :sync: other
 
-      .. code-block:: console
+      .. code-block:: bash
 
          cylc clean <suite-id>
 

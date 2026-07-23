@@ -11,7 +11,7 @@
 
    Set the following before starting JupyterLab:
 
-   .. code-block:: console
+   .. code-block:: bash
 
       export MESA_GL_VERSION_OVERRIDE=3.3
 

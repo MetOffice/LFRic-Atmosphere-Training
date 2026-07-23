@@ -7,7 +7,7 @@
    .. tab-item:: Met Office
       :sync: met-office
 
-      .. code-block:: console
+      .. code-block:: bash
 
          module load scitools
 
@@ -16,7 +16,7 @@
 
       .. include:: /include/monsoon3-help.rst
 
-      .. code-block:: console
+      .. code-block:: bash
 
          module load scitools
 
@@ -28,7 +28,7 @@
       Use your preferred environment manager to create an environment and
       install these tools. A typical workflow might be:
 
-      .. code-block:: console
+      .. code-block:: bash
 
          conda create -n my_env python
          conda activate my_env

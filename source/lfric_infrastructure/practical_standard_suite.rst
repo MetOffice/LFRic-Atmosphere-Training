@@ -19,7 +19,7 @@ Step 1: Check Out the Standard Suite
 .. TODO - this is a temporary fix - once the LFRic team have a more permenant
 .. soultion we should ditch this workflow.
 
-.. code-block:: console
+.. code-block:: bash
 
    mkdir ${HOME}/cylc-src
    cd cylc-src
@@ -30,7 +30,7 @@ Step 1: Check Out the Standard Suite
    .. tab-item:: Met Office
       :sync: met-office
 
-      .. code-block:: console
+      .. code-block:: bash
 
          git clone \
                git@github.com:MetOffice/momentum_user_training.example_lfric_workflow.git \
@@ -42,7 +42,7 @@ Step 1: Check Out the Standard Suite
       Clone over HTTPS on Monsoon3, authenticating with a personal access
       token as described in `Git on Monsoon3`_:
 
-      .. code-block:: console
+      .. code-block:: bash
 
          git clone \
                https://github.com/MetOffice/momentum_user_training.example_lfric_workflow.git \
@@ -132,7 +132,7 @@ output:
 
       Use the terminal interface:
 
-      .. code-block:: console
+      .. code-block:: bash
 
          cylc tui
 
@@ -143,13 +143,13 @@ output:
 
       Use the Cylc interface supported by your site:
 
-      .. code-block:: console
+      .. code-block:: bash
 
          cylc gui
 
       If a graphical interface is not available, use the terminal interface:
 
-      .. code-block:: console
+      .. code-block:: bash
 
          cylc tui
 
@@ -186,7 +186,7 @@ View your logs:
 
       For each task in the workflow:
 
-      .. code-block:: console
+      .. code-block:: bash
 
          cat ~/cylc-run/lfric_apps_standard_suite/runN/log/job/1/<task_name>/job.out
 

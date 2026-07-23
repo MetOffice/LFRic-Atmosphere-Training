@@ -9,7 +9,7 @@
    .. tab-item:: Met Office
       :sync: met-office
 
-      .. code-block:: console
+      .. code-block:: bash
 
          cylc gui
          # or, if you prefer the terminal interface
@@ -20,7 +20,7 @@
 
       .. include:: /include/monsoon3-help.rst
 
-      .. code-block:: console
+      .. code-block:: bash
 
          cylc tui
 
@@ -34,7 +34,7 @@
 
       .. include:: /include/other-platform.rst
 
-      .. code-block:: console
+      .. code-block:: bash
 
          cylc gui
          # or, if a graphical interface is not available

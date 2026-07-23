@@ -9,7 +9,7 @@
    .. tab-item:: Met Office
       :sync: met-office
 
-      .. code-block:: console
+      .. code-block:: bash
 
          rose edit &
 
@@ -18,7 +18,7 @@
 
       .. include:: /include/monsoon3-help.rst
 
-      .. code-block:: console
+      .. code-block:: bash
 
          rose edit &
 
@@ -33,7 +33,7 @@
 
       .. include:: /include/other-platform.rst
 
-      .. code-block:: console
+      .. code-block:: bash
 
          rose edit &
 

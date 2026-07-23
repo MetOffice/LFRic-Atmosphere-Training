@@ -12,7 +12,7 @@ Open a terminal and move to the directory where your copy of the suite is
 located, replacing ``<suite-id>`` with the new suite ID that ``rosie``
 reported:
 
-.. code-block:: console
+.. code-block:: bash
 
    cd ~/roses/<suite-id>
 

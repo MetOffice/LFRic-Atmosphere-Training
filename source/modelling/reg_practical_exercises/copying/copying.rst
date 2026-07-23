@@ -14,7 +14,7 @@ so the source you copy differs by platform:
    .. tab-item:: Met Office
       :sync: met-office
 
-      .. code-block:: console
+      .. code-block:: bash
 
          rosie copy u-by395
 
@@ -23,7 +23,7 @@ so the source you copy differs by platform:
 
       .. include:: /include/monsoon3-help.rst
 
-      .. code-block:: console
+      .. code-block:: bash
 
          rosie copy u-by395/u-by395_lfric_monsoon3
 
@@ -32,7 +32,7 @@ so the source you copy differs by platform:
 
       .. include:: /include/other-platform-hpc.rst
 
-      .. code-block:: console
+      .. code-block:: bash
 
          rosie copy u-by395
 
@@ -44,14 +44,14 @@ Alternatively, you can check out the workflow instead of copying it:
    .. tab-item:: Met Office
       :sync: met-office
 
-      .. code-block:: console
+      .. code-block:: bash
 
          rosie checkout u-by395
 
    .. tab-item:: Monsoon
       :sync: monsoon
 
-      .. code-block:: console
+      .. code-block:: bash
 
          rosie checkout u-by395/u-by395_lfric_monsoon3
 
@@ -60,7 +60,7 @@ Alternatively, you can check out the workflow instead of copying it:
 
       .. include:: /include/other-platform-hpc.rst
 
-      .. code-block:: console
+      .. code-block:: bash
 
          rosie checkout u-by395
 

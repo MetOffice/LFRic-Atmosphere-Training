@@ -7,7 +7,7 @@
    .. tab-item:: Met Office
       :sync: met-office
 
-      .. code-block:: console
+      .. code-block:: bash
 
          module use ~lfricadmin/lmod
          module load lfric
@@ -17,7 +17,7 @@
 
       .. include:: /include/monsoon3-help.rst
 
-      .. code-block:: console
+      .. code-block:: bash
 
          module use /home/users/lfricadmin.mon/lmod
          module load lfric

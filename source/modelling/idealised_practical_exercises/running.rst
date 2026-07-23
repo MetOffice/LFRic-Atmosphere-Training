@@ -10,7 +10,7 @@ Once your suite has been set up, you can run it using Cylc:
    .. tab-item:: Met Office
       :sync: met-office
 
-      .. code-block:: console
+      .. code-block:: bash
 
          cylc vip
 
@@ -19,7 +19,7 @@ Once your suite has been set up, you can run it using Cylc:
 
       .. include:: /include/monsoon3-help.rst
 
-      .. code-block:: console
+      .. code-block:: bash
 
          cylc vip
 
@@ -28,7 +28,7 @@ Once your suite has been set up, you can run it using Cylc:
 
       .. include:: /include/other-platform-hpc.rst
 
-      .. code-block:: console
+      .. code-block:: bash
 
          cylc vip
 

@@ -56,7 +56,7 @@ Open a terminal and move to the root of the training repository. If your
 repository is somewhere else, replace the path in the first command with your
 local path:
 
-.. code-block:: console
+.. code-block:: bash
 
    cd /path/to/LFRic-Atmosphere-Training
 
@@ -66,13 +66,13 @@ Make the tutorial environment available:
 
 Move into the notebook directory:
 
-.. code-block:: console
+.. code-block:: bash
 
    cd notebooks/iris-mesh-tutorial/notebooks
 
 Start JupyterLab:
 
-.. code-block:: console
+.. code-block:: bash
 
    jupyter lab
 

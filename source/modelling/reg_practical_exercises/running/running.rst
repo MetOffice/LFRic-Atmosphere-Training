@@ -10,7 +10,7 @@ Navigate to your suite directory
 Open a terminal and move to the suite directory, replacing ``<suite-id>`` with
 the suite ID that ``rosie`` reported when you copied the workflow:
 
-.. code-block:: console
+.. code-block:: bash
 
    cd ~/roses/<suite-id>
 
@@ -25,7 +25,7 @@ Validate the workflow, install it to ``~/cylc-run``, and play it using:
    .. tab-item:: Met Office
       :sync: met-office
 
-      .. code-block:: console
+      .. code-block:: bash
 
          cylc vip --opt-conf-key=meto-exab
 
@@ -34,7 +34,7 @@ Validate the workflow, install it to ``~/cylc-run``, and play it using:
 
       .. include:: /include/monsoon3-help.rst
 
-      .. code-block:: console
+      .. code-block:: bash
 
          cylc vip --opt-conf-key=monsoon
 
@@ -43,7 +43,7 @@ Validate the workflow, install it to ``~/cylc-run``, and play it using:
 
       .. include:: /include/other-platform-hpc.rst
 
-      .. code-block:: console
+      .. code-block:: bash
 
          cylc vip --opt-conf-key=<yoursite>
 
