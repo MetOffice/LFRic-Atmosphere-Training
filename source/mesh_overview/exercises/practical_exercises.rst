@@ -32,11 +32,11 @@ The most important ideas for this practical are:
 * The terminal runs commands in a current working directory. Commands such as
   ``cd my_directory`` and ``git clone`` depend on where you are in the file
   system.
-* A conda environment keeps the Python packages for this practical separate
-  from other Python installations.
-* A Jupyter kernel is the Python process that runs notebook cells. For this
-  practical, choose the ``Python (lfric-mesh)`` kernel so that the notebook
-  uses the packages installed in the setup steps below.
+* A Python environment holds the packages this practical needs. At the Met
+  Office and on Monsoon3 that environment comes from ``module load scitools``;
+  on your own machine you build one with conda.
+* A Jupyter kernel is the Python process that runs notebook cells. Choose the
+  kernel that matches the environment you set up below.
 
 .. list-table:: Recommended introductory resources
    :header-rows: 1
@@ -124,50 +124,105 @@ If you already have a local clone, move into it:
 
 Set up the Python environment
 -----------------------------
-For the full mesh and regridding practicals, use a conda environment:
+The tutorial needs Iris, GeoVista, and the regridding tools. How you get them
+depends on your platform.
 
-.. code-block:: console
+.. tab-set::
+   :sync-group: site
 
-   conda create -n lfric-mesh python=3.12 -y
-   conda activate lfric-mesh
-   conda install -c conda-forge esmpy -y
-   python -m pip install -e '.[notebooks]'
-   python -m ipykernel install --user --name lfric-mesh --display-name "Python(lfric-mesh)"
+   .. tab-item:: Met Office
+      :sync: met-office
+
+      You do not need a separate environment. The Met Office science software
+      stack already provides the UGRID-capable Iris and GeoVista packages used
+      here:
+
+      .. code-block:: console
+
+         module load scitools
+
+      The notebooks then run under the default Python 3 kernel.
+
+   .. tab-item:: Monsoon
+      :sync: monsoon
+
+      .. include:: /include/monsoon3-help.rst
+
+      Load the science software stack:
+
+      .. code-block:: console
+
+         module load scitools
+
+      The notebooks then run under the default Python 3 kernel.
+
+   .. tab-item:: Other
+      :sync: other
+
+      .. include:: /include/other-platform.rst
+
+      Create a conda environment and register it as a Jupyter kernel:
+
+      .. code-block:: console
+
+         conda create -n lfric-mesh python=3.12 -y
+         conda activate lfric-mesh
+         conda install -c conda-forge esmpy -y
+         python -m pip install -e '.[notebooks]'
+         python -m ipykernel install --user --name lfric-mesh \
+             --display-name "Python (lfric-mesh)"
+
+      Activate this environment in every new terminal before starting
+      JupyterLab, and select the ``Python (lfric-mesh)`` kernel in the
+      notebooks.
+
+.. include:: /include/opengl-software-rendering.rst
 
 Start the tutorial
 ------------------
 Once the environment is set up:
 
-1. Activate the environment:
-
-   .. code-block:: console
-
-      conda activate lfric-mesh
-
-2. Move to the tutorial notebook directory:
+1. Move to the tutorial notebook directory:
 
    .. code-block:: console
 
       cd notebooks/iris-mesh-tutorial/notebooks
 
-3. Start JupyterLab:
+2. Start JupyterLab:
 
    .. code-block:: console
 
       jupyter lab
 
-4. In the JupyterLab file browser, open the first tutorial notebook,
+3. In the JupyterLab file browser, open the first tutorial notebook,
    ``00_Mesh_Tutorial_Intro.ipynb``.
 
-5. With the notebook open, select:
+4. Choose the kernel for your platform:
 
-   - ``Kernel -> Change Kernel -> Python (lfric-mesh)``
+   .. tab-set::
+      :sync-group: site
 
-   If JupyterLab asks you to choose a kernel as the notebook opens, select
-   ``Python (lfric-mesh)`` from that dialog instead.
+      .. tab-item:: Met Office
+         :sync: met-office
+
+         Use the default Python 3 kernel provided by ``scitools``.
+
+      .. tab-item:: Monsoon
+         :sync: monsoon
+
+         Use the default Python 3 kernel provided by ``scitools``.
+
+      .. tab-item:: Other
+         :sync: other
+
+         Select ``Kernel -> Change Kernel -> Python (lfric-mesh)``. If
+         JupyterLab asks you to choose a kernel as the notebook opens, select
+         ``Python (lfric-mesh)`` from that dialog instead.
 
 .. important::
-   Always launch JupyterLab from within ``notebooks/iris-mesh-tutorial/notebooks`` to ensure paths and imports work correctly.
+   Always launch JupyterLab from within
+   ``notebooks/iris-mesh-tutorial/notebooks`` to ensure paths and imports work
+   correctly.
 
 After running ``jupyter lab``, a new browser window or tab should automatically
 open. If it does not open automatically, copy the URL shown in the terminal

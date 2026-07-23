@@ -19,9 +19,11 @@ viewing results. A notebook is a document made from cells:
 * A kernel is the Python process that runs the code cells.
 * A Python environment contains the packages available to the kernel.
 
-For the mesh tutorial practical, the important rule is to use the
-``Python (lfric-mesh)`` kernel created in the setup steps. That kernel uses the
-same Python environment as the tutorial dependencies.
+For the mesh tutorial practical, the important rule is to use the kernel that
+matches the environment from the setup steps: the default Python 3 kernel if
+you loaded ``scitools`` at the Met Office or on Monsoon3, or the
+``Python (lfric-mesh)`` kernel if you built a conda environment on your own
+machine.
 
 .. _fig-appendix-jupyterlab-interface:
 
@@ -39,8 +41,8 @@ Before launching JupyterLab
 Before starting a notebook, make sure you have:
 
 1. A local copy of the training repository.
-2. A Python environment with the notebook dependencies installed.
-3. A Jupyter kernel registered for that environment.
+2. A Python environment with the notebook dependencies available.
+3. A Jupyter kernel for that environment.
 
 For the mesh tutorial, the setup commands are given in
 :doc:`the practical using unstructured data
@@ -58,11 +60,9 @@ local path:
 
    cd /path/to/LFRic-Atmosphere-Training
 
-Activate the tutorial environment:
+Make the tutorial environment available:
 
-.. code-block:: console
-
-   conda activate lfric-mesh
+.. include:: /include/iris.rst
 
 Move into the notebook directory:
 
@@ -91,10 +91,11 @@ Opening and running a notebook
 
 1. In the JupyterLab file browser, open the first tutorial notebook:
    ``00_Mesh_Tutorial_Intro.ipynb``.
-2. If JupyterLab asks you to select a kernel, choose
-   ``Python (lfric-mesh)``.
-3. If the notebook has already opened with a different kernel, select
-   ``Kernel -> Change Kernel -> Python (lfric-mesh)``.
+2. If JupyterLab asks you to select a kernel, choose the one for your
+   environment: the default Python 3 kernel under ``scitools``, or
+   ``Python (lfric-mesh)`` for a conda environment.
+3. If the notebook has already opened with a different kernel, use
+   ``Kernel -> Change Kernel`` to switch.
 4. Read each Markdown cell, then run the next code cell.
 5. To run a cell, click in it and press ``Shift`` + ``Enter``. You can also use
    the run button in the notebook toolbar.
@@ -149,19 +150,24 @@ Common problems
    * - Symptom
      - What to try
    * - ``jupyter: command not found`` or ``jupyter lab`` is not recognised.
-     - Activate the environment first with ``conda activate lfric-mesh``. If it
-       still fails, return to the setup commands in :doc:`the practical using
-       unstructured data <../mesh_overview/exercises/practical_exercises>` and
-       reinstall the notebook dependencies.
+     - Make the environment available first, with ``module load scitools`` or
+       ``conda activate lfric-mesh``. If it still fails, return to the setup
+       commands in :doc:`the practical using unstructured data
+       <../mesh_overview/exercises/practical_exercises>`.
    * - The ``Python (lfric-mesh)`` kernel is missing.
      - Activate the environment and rerun the kernel registration command from
        :doc:`the practical using unstructured data
        <../mesh_overview/exercises/practical_exercises>`: ``python -m
        ipykernel install --user --name lfric-mesh --display-name "Python
-       (lfric-mesh)"``.
+       (lfric-mesh)"``. This applies to the conda route only.
    * - A notebook opens, but ``import`` statements fail.
-     - Check that the selected kernel is ``Python (lfric-mesh)``. Package import
-       errors often mean the notebook is using a different Python environment.
+     - Check that the selected kernel matches the environment you set up.
+       Package import errors often mean the notebook is using a different
+       Python environment.
+   * - Opening a 3D view crashes the kernel.
+     - See the OpenGL note in :doc:`the practical using unstructured data
+       <../mesh_overview/exercises/practical_exercises>`. Set
+       ``MESA_GL_VERSION_OVERRIDE=3.3`` before starting JupyterLab.
    * - A notebook cannot find data files or support modules.
      - Stop JupyterLab and restart it from
        ``notebooks/iris-mesh-tutorial/notebooks``.
