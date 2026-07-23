@@ -27,16 +27,28 @@ overview of model output or observational datasets.
 Example:
 
 .. tab-set::
+   :sync-group: site
 
    .. tab-item:: Met Office
+      :sync: met-office
 
       .. code-block:: console
 
          ncview temperature.nc
 
    .. tab-item:: Monsoon
+      :sync: monsoon
 
       .. include:: /include/monsoon3-help.rst
+
+      .. code-block:: console
+
+         ncview temperature.nc
+
+   .. tab-item:: Other
+      :sync: other
+
+      .. include:: /include/other-platform.rst
 
       .. code-block:: console
 
@@ -64,14 +76,26 @@ for plotting, inspecting dimensions, and converting data between formats.
 Example:
 
 .. tab-set::
+   :sync-group: site
 
    .. tab-item:: Met Office
+      :sync: met-office
 
       .. code-block:: console
 
          xconv
 
    .. tab-item:: Monsoon
+      :sync: monsoon
+
+      .. code-block:: console
+
+         xconv
+
+   .. tab-item:: Other
+      :sync: other
+
+      .. include:: /include/other-platform.rst
 
       .. code-block:: console
 
@@ -108,20 +132,31 @@ If these tools are installed via environment modules on your system, you may
 first need to load them before use:
 
 .. tab-set::
+   :sync-group: site
 
    .. tab-item:: Met Office
+      :sync: met-office
 
       .. code-block:: console
 
-            module load ncview
-            module load xconv
+         module load ncview
+         module load xconv
 
    .. tab-item:: Monsoon
+      :sync: monsoon
 
       .. code-block:: console
 
-            module load ncview
-            module load xconv
+         module load ncview
+         module load xconv
+
+   .. tab-item:: Other
+      :sync: other
+
+      .. include:: /include/other-platform.rst
+
+      Install ``ncview`` and ``xconv`` yourself, or use the Python route
+      below instead.
 
 Refer to your local HPC documentation for the exact module names available on
 your platform.

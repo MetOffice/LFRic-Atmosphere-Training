@@ -18,20 +18,26 @@ First, change into the directory that contains the diagnostic output
 configuration files:
 
 .. tab-set::
+   :sync-group: site
 
    .. tab-item:: Met Office
+      :sync: met-office
 
-      .. code-block:: console
-
-         cd app/lfric_atm/file
+      .. include:: /include/snippets/lfric-atm-file-dir.rst
 
    .. tab-item:: Monsoon
+      :sync: monsoon
 
       .. include:: /include/monsoon3-help.rst
 
-      .. code-block:: console
+      .. include:: /include/snippets/lfric-atm-file-dir.rst
 
-         cd app/lfric_atm/file
+   .. tab-item:: Other
+      :sync: other
+
+      .. include:: /include/other-platform-hpc.rst
+
+      .. include:: /include/snippets/lfric-atm-file-dir.rst
 
 Step 2: Open the diagnostics configuration file
 ================================================
@@ -42,40 +48,34 @@ defines which diagnostic fields are written to output for each field group.
 Step 3: Locate the pressure level output group
 ==============================================
 
-Search for the field group named ``lfric_stream_g``. This group controls which
-fields are output on pressure levels as time-day means. You should find a block
-of ``<field>`` entries that includes ``u_in_w3`` (the u component of wind) but
-is missing ``v_in_w3``.
+Search for the field group named ``lfric_stream_g``. You should find a block of
+``<field>`` entries that includes ``u_in_w3`` (the u component of wind) but is
+missing ``v_in_w3``.
 
 Step 4: Add the missing field for ``v_in_w3``
+=============================================
 
 .. tab-set::
+   :sync-group: site
 
    .. tab-item:: Met Office
+      :sync: met-office
 
-      .. code-block:: xml
-         :caption: trunk/app/lfric_atm/file/file_def_diags_user_temp.xml
-         :emphasize-lines: 5
-
-            <!-- Stream G - Monthly mean fields -->
-            ...
-            <field field_ref="ageofair"/>
-            <field field_ref="u_in_w3"/>
-            <field field_ref="v_in_w3"/>
-            <field field_ref="m_v" long_name="vapour_mixing_ratio"/>
+      .. include:: /include/snippets/diags-user-xml.rst
 
    .. tab-item:: Monsoon
+      :sync: monsoon
 
-      .. code-block:: xml
-         :caption: trunk/app/lfric_atm/file/file_def_diags_user_temp.xml
-         :emphasize-lines: 5
+      .. include:: /include/monsoon3-help.rst
 
-            <!-- Stream G - Monthly mean fields -->
-            ...
-            <field field_ref="ageofair"/>
-            <field field_ref="u_in_w3"/>
-            <field field_ref="v_in_w3"/>
-            <field field_ref="m_v" long_name="vapour_mixing_ratio"/>
+      .. include:: /include/snippets/diags-user-xml.rst
+
+   .. tab-item:: Other
+      :sync: other
+
+      .. include:: /include/other-platform.rst
+
+      .. include:: /include/snippets/diags-user-xml.rst
 
 Add the line ``<field field_ref="v_in_w3"/>`` to include the v component of
 wind in the output. Make sure to save your changes to the file.
@@ -99,18 +99,26 @@ and display a pressure-level slice of ``v_in_w3``.
 .. include:: /include/x11-forwarding.rst
 
 .. tab-set::
+   :sync-group: site
 
    .. tab-item:: Met Office
+      :sync: met-office
 
-      .. code-block:: console
-
-         xconv lfric_stream_g.nc  # replace with your output file name
+      .. include:: /include/snippets/xconv-stream-g.rst
 
    .. tab-item:: Monsoon
+      :sync: monsoon
 
-      .. code-block:: console
+      .. include:: /include/monsoon3-help.rst
 
-         xconv lfric_stream_g.nc  # replace with your output file name
+      .. include:: /include/snippets/xconv-stream-g.rst
+
+   .. tab-item:: Other
+      :sync: other
+
+      .. include:: /include/other-platform.rst
+
+      .. include:: /include/snippets/xconv-stream-g.rst
 
 In ``xconv``:
 
