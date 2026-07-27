@@ -27,7 +27,7 @@ Validate the workflow, install it to ``~/cylc-run``, and play it using:
 
       .. code-block:: bash
 
-         cylc vip --opt-conf-key=meto-exab
+         cylc vip
 
    .. tab-item:: Monsoon
       :sync: monsoon
@@ -36,7 +36,7 @@ Validate the workflow, install it to ``~/cylc-run``, and play it using:
 
       .. code-block:: bash
 
-         cylc vip --opt-conf-key=monsoon
+         cylc vip
 
    .. tab-item:: Other
       :sync: other
@@ -45,7 +45,7 @@ Validate the workflow, install it to ``~/cylc-run``, and play it using:
 
       .. code-block:: bash
 
-         cylc vip --opt-conf-key=<yoursite>
+         cylc vip
 
 ``cylc vip`` is short for ``cylc validate-install-play``, and performs three
 actions:
@@ -54,9 +54,13 @@ actions:
 - **Install**: Sets up the runtime environment
 - **Play**: Starts executing the workflow
 
-Site settings are stored as Rose :external+rose:ref:`optional configuration`
-files, so a configuration file ``opt/rose-suite-yoursite.conf`` is selected
-with ``-O yoursite``. This works the same way as in the global practical.
+.. note::
+
+   Unlike the global suite, the regional nesting suite takes its platform
+   from the ``SITE`` and ``EX HOST`` settings you chose in the Rose GUI, so
+   no ``--opt-conf-key`` is needed here. If your copy does ship optional
+   configurations, they are in ``opt/`` and are selected with ``-O``, as
+   described in the global practical.
 
 Monitor the workflow
 ----------------------------
