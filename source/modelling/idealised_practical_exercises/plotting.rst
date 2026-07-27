@@ -582,6 +582,8 @@ notebook:
 
 .. code-block:: python
 
+    from IPython.display import HTML
+
     # Ensure inline animation rendering in Jupyter
     plt.rcParams['animation.html'] = 'html5'
 
