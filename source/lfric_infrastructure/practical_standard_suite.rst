@@ -51,7 +51,7 @@ Step 1: Check Out the Standard Suite
    .. tab-item:: Other
       :sync: other
 
-      .. include:: /include/other-platform-hpc.rst
+      .. include:: /include/other-platform.rst
 
       Consult your site's documentation for cloning git repositories, then
       clone:
