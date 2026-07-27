@@ -22,7 +22,7 @@ Step 1: Check Out the Standard Suite
 .. code-block:: bash
 
    mkdir ${HOME}/cylc-src
-   cd cylc-src
+   cd ${HOME}/cylc-src
 
 .. tab-set::
    :sync-group: site
