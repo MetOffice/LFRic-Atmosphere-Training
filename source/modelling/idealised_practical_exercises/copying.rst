@@ -4,8 +4,10 @@ Getting Started: Copying a Workflow for the Idealised Suite
 To begin working with the idealised suite, you first need to create your own
 copy of an existing workflow.
 
-As introduced in the *Global Modelling Practical* and repeated in the *Regional
-Modelling Practical*, you can do this using the ``rosie`` command-line tool:
+As introduced in the *Global Modelling Practical*, you can do this using the
+``rosie`` command-line tool — see there for :ref:`the difference between
+copying and checking out <rosie-copy-vs-checkout>`. As in the earlier
+practicals, **copy** the workflow rather than checking it out:
 
 .. tab-set::
    :sync-group: site
@@ -36,15 +38,3 @@ Modelling Practical*, you can do this using the ``rosie`` command-line tool:
 The command reports the new suite ID it created, and the local copy it made
 under ``~/roses``. Make a note of that ID: the rest of this practical refers to
 it as ``<suite-id>``.
-
-.. note:: Reminder: what's the difference between ``copy`` and ``checkout``?
-
-   :Copying a workflow:
-      - Creates an independent version in your ``~/roses`` directory
-      - Allows you to modify it freely without affecting the original
-      - Recommended for this practical
-
-   :Checking out a workflow:
-      - Links to the original (shared) workflow
-      - Typically used for collaborative or trunk development
-      - Changes may affect or depend on the main version

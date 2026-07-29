@@ -5,8 +5,10 @@ To begin working with the regional nesting suite, you first need to create your
 own copy of an existing workflow.
 
 As introduced in the *Global Modelling Practical*, you can do this using the
-``rosie`` command-line tool. Monsoon3 uses a dedicated branch of the workflow,
-so the source you copy differs by platform:
+``rosie`` command-line tool — see there for :ref:`the difference between
+copying and checking out <rosie-copy-vs-checkout>`. As in that practical,
+**copy** the workflow rather than checking it out. Monsoon3 uses a dedicated
+branch of the workflow, so the source you copy differs by platform:
 
 .. tab-set::
    :sync-group: site
@@ -67,25 +69,3 @@ Alternatively, you can check out the workflow instead of copying it:
 Either command reports the new suite ID it created, and the local copy it made
 under ``~/roses``. Make a note of that ID: the rest of this practical refers to
 it as ``<suite-id>``.
-
-What's the difference?
------------------------
-
-**Copying a workflow**
-
-- Creates an independent version in your ``~/roses`` directory
-- Allows you to modify it freely without affecting the original
-- Recommended for this practical
-
-**Checking out a workflow**
-
-- Links to the original (shared) workflow
-- Typically used for collaborative or trunk development
-- Changes may affect or depend on the main version
-
-What should you do?
---------------------
-
-For this hands-on exercise, go ahead and **copy the workflow**, just as you did
-in the global modelling practical. This will give you a clean, editable version
-to experiment with safely.

@@ -6,11 +6,30 @@ workflow or create a new one. For this practical, a workflow has been provided
 for you to copy. For a regional workflow example please use ``u-by395``, for a
 global workflow example please use ``u-dz612``.
 
-You can copy or checkout an existing workflow using the rose command-line tool,
-replacing ``u-dz612`` with the actual suite ID. Remember that copying a
-workflow will create a new instance of the workflow in your ``~/roses``
-directory, while checking out will link to the original workflow allowing for
-trunk development. For this practical, we recommend copying the workflow.
+You can copy or check out an existing workflow using the ``rosie`` command-line
+tool, replacing ``u-dz612`` with the actual suite ID.
+
+.. _rosie-copy-vs-checkout:
+
+.. admonition:: What's the difference between copying and checking out?
+
+   **Copying a workflow**
+
+   - Creates an independent version in your ``~/roses`` directory
+   - Allows you to modify it freely without affecting the original
+   - Recommended for the practicals in this course
+
+   **Checking out a workflow**
+
+   - Links to the original (shared) workflow
+   - Typically used for collaborative or trunk development
+   - Changes may affect or depend on the main version
+
+   Both commands are described in the Rose command reference:
+   :external+rose:ref:`rosie copy <command-rosie-create>` and
+   :external+rose:ref:`rosie checkout <command-rosie-checkout>`.
+
+For this practical, we recommend copying the workflow.
 
 .. tab-set::
    :sync-group: site
