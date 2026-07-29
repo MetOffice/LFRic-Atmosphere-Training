@@ -1,10 +1,10 @@
-***********************************************
-Experiments with the Extraterrestrial CRM Suite
-***********************************************
+******************************************
+Designing Extraterrestrial CRM Experiments
+******************************************
 
-We will now run a couple of simulations using the ``u-dz791`` suite. This suite
+We will now run a series of simulations using the ``u-dz791`` suite. This suite
 is designed to model convection in hydrogen-rich atmospheres of other planets
-in a highly simplified setup - the default configuration uses only the
+in a highly simplified setup — the default configuration uses only the
 dynamical core (GungHo).
 
 
@@ -54,13 +54,10 @@ further. You will need to use what you learned in the running and navigating
 exercises to edit and run the experiments. For analysis, you can use what you
 learnt in the visualisation exercises.
 
-.. toctree::
-   :maxdepth: 1
-   :caption: Contents
-
-   rotation.rst
-   back_to_earth.rst
-   init_perturb.rst
+* :doc:`Adding Planetary Rotation <07_adding_planetary_rotation>`
+* :doc:`Using an Earth-Like Atmosphere <08_using_earth_like_atmosphere>`
+* :doc:`Testing Initial Temperature Perturbations
+  <09_testing_initial_temperature_perturbations>`
 
 
 .. admonition:: Example from previous studies: changing the water vapour profile

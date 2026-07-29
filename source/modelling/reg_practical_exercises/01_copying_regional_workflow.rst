@@ -1,5 +1,5 @@
-Getting Started: Copying a Workflow for the Regional Nesting Suite
-===================================================================
+Copying a Regional Nesting Workflow
+===================================
 
 To begin working with the regional nesting suite, you first need to create your
 own copy of an existing workflow.

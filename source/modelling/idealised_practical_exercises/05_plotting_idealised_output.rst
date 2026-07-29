@@ -1,6 +1,6 @@
-****************************
-Plotting and Analysis
-****************************
+***********************************************
+Plotting and Analysing Idealised Model Output
+***********************************************
 
 After running your idealised CRM workflow, you will want to visualise and
 analyse the output data. This section provides guidance on loading, processing,

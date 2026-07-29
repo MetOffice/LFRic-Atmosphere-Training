@@ -1,6 +1,6 @@
-***********************
-Adding a new diagnostic
-***********************
+****************************************
+Adding a Pressure-Level Wind Diagnostic
+****************************************
 
 In this exercise, you will add the atmospheric diagnostic **"v component of
 wind on pressure levels"** back into the model configuration. This diagnostic

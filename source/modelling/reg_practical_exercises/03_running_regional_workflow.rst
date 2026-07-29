@@ -2,7 +2,7 @@
 Running a Regional LFRic Workflow
 *********************************
 
-Once your suite has been set up, you can run it using Cylc.
+Once your regional suite has been set up, you can run it using Cylc.
 
 Navigate to your suite directory
 ----------------------------------------

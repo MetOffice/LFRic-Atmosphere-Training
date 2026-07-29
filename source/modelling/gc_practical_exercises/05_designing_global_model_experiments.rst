@@ -1,6 +1,6 @@
-******************************
-Experiments with Global Models
-******************************
+**********************************
+Designing Global Model Experiments
+**********************************
 
 .. admonition:: Thought experiment: How would you design your experiment?
 
@@ -51,10 +51,8 @@ navigating exercises to edit and run the experiments. For analysis, you can use
 what you learnt in the visualisation exercises. You can also use the thoughts
 above to design your own experiment and test it out.
 
-.. toctree::
-   :maxdepth: 1
-   :caption: Contents
-
-   add_diag/add_diag.rst
-   earth_rot/earth_rot.rst
-   10xco2/10xco2.rst
+* :doc:`Adding a Pressure-Level Wind Diagnostic
+  <06_adding_pressure_level_diagnostic>`
+* :doc:`Halving Earth's Rotation Rate <07_halving_earth_rotation>`
+* :doc:`Increasing Atmospheric CO₂ Tenfold
+  <08_increasing_atmospheric_co2>`

@@ -1,9 +1,9 @@
 ********************************
-Experiment 2 - Back to Earth Air
+Using an Earth-Like Atmosphere
 ********************************
 
-In this experiment, we go back to the Earth atmospheric composition and test if
-convective mixing in this suite behaves in a familiar way.
+In this experiment, we restore Earth-like atmospheric properties and test
+whether convective mixing in this suite behaves in a familiar way.
 
 Step 1: Change the vertical extent of the model
 -----------------------------------------------
@@ -76,9 +76,6 @@ the output using Python or another tool of your choice.
 
 Step 5. Compare with the control experiment
 -------------------------------------------
-
-Using a Python script or Jupyter Notebook, make plots for both experiments and
-compare them to each other.
 
 Using a Python script or Jupyter Notebook, make plots for both experiments and
 compare them to each other.

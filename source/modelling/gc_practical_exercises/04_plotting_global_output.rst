@@ -1,5 +1,5 @@
-Plotting your data
-==================
+Plotting Global Model Output
+============================
 
 Once you have run your workflow, you will likely want to visualise the output
 data. There are several ways you can do this. Here we cover two methods: using

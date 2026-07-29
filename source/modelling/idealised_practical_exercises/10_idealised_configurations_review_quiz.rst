@@ -1,6 +1,6 @@
-******************************
-Quiz: Idealised Configurations
-******************************
+************************************
+Idealised Configurations Review Quiz
+************************************
 
 .. quizdown::
 

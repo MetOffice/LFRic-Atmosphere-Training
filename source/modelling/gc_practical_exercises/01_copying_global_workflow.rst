@@ -1,5 +1,5 @@
-Copying an Existing Workflow
-============================
+Copying a Global Workflow
+=========================
 
 To start, you will need to obtain a workflow. You can either copy an existing
 workflow or create a new one. For this practical, a workflow has been provided

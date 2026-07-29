@@ -2,7 +2,7 @@
 Running an Idealised Workflow
 *****************************
 
-Once your suite has been set up, you can run it using cylc:
+Once your idealised suite has been set up, you can run it using Cylc:
 
 .. tab-set::
 

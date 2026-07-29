@@ -1,6 +1,9 @@
-import sys
+import json
 import os
+import sys
 from collections.abc import Mapping
+from html import escape
+from pathlib import Path
 from types import MappingProxyType
 
 from docutils import nodes
@@ -24,6 +27,68 @@ project = 'Momentum Training - LFRic'
 copyright = 'Met Office'
 author = 'Met Office'
 release = 'v1'
+
+# Preserve published links when learner-facing pages are renamed. Keys and
+# values are Sphinx document names without the ``.html`` suffix.
+html_redirects: Mapping[str, str] = MappingProxyType({
+    'modelling/gc_practical_exercises/copying/copying':
+        'modelling/gc_practical_exercises/01_copying_global_workflow',
+    'modelling/gc_practical_exercises/editing/editing':
+        'modelling/gc_practical_exercises/02_editing_global_workflow',
+    'modelling/gc_practical_exercises/running/running':
+        'modelling/gc_practical_exercises/03_running_global_workflow',
+    'modelling/gc_practical_exercises/plotting/plotting':
+        'modelling/gc_practical_exercises/04_plotting_global_output',
+    'modelling/gc_practical_exercises/experiments/index':
+        'modelling/gc_practical_exercises/'
+        '05_designing_global_model_experiments',
+    'modelling/gc_practical_exercises/experiments/add_diag/add_diag':
+        'modelling/gc_practical_exercises/'
+        '06_adding_pressure_level_diagnostic',
+    'modelling/gc_practical_exercises/experiments/earth_rot/earth_rot':
+        'modelling/gc_practical_exercises/07_halving_earth_rotation',
+    'modelling/gc_practical_exercises/experiments/10xco2/10xco2':
+        'modelling/gc_practical_exercises/'
+        '08_increasing_atmospheric_co2',
+    'modelling/reg_practical_exercises/copying/copying':
+        'modelling/reg_practical_exercises/01_copying_regional_workflow',
+    'modelling/reg_practical_exercises/navigation/navigation':
+        'modelling/reg_practical_exercises/02_editing_regional_workflow',
+    'modelling/reg_practical_exercises/running/running':
+        'modelling/reg_practical_exercises/03_running_regional_workflow',
+    'modelling/reg_practical_exercises/plotting/plotting':
+        'modelling/reg_practical_exercises/04_plotting_regional_output',
+    'modelling/idealised_practical_exercises/overview':
+        'modelling/idealised_practical_exercises/'
+        '01_understanding_idealised_configurations',
+    'modelling/idealised_practical_exercises/copying':
+        'modelling/idealised_practical_exercises/'
+        '02_copying_idealised_workflow',
+    'modelling/idealised_practical_exercises/navigation':
+        'modelling/idealised_practical_exercises/'
+        '03_navigating_idealised_workflow',
+    'modelling/idealised_practical_exercises/running':
+        'modelling/idealised_practical_exercises/'
+        '04_running_idealised_workflow',
+    'modelling/idealised_practical_exercises/plotting':
+        'modelling/idealised_practical_exercises/'
+        '05_plotting_idealised_output',
+    'modelling/idealised_practical_exercises/experiments/index':
+        'modelling/idealised_practical_exercises/'
+        '06_designing_extraterrestrial_crm_experiments',
+    'modelling/idealised_practical_exercises/experiments/rotation':
+        'modelling/idealised_practical_exercises/'
+        '07_adding_planetary_rotation',
+    'modelling/idealised_practical_exercises/experiments/back_to_earth':
+        'modelling/idealised_practical_exercises/'
+        '08_using_earth_like_atmosphere',
+    'modelling/idealised_practical_exercises/experiments/init_perturb':
+        'modelling/idealised_practical_exercises/'
+        '09_testing_initial_temperature_perturbations',
+    'modelling/idealised_practical_exercises/quiz':
+        'modelling/idealised_practical_exercises/'
+        '10_idealised_configurations_review_quiz',
+})
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -122,9 +187,69 @@ def validate_figure_labelling(
         raise ExtensionError(message)
 
 
+def write_html_redirects(
+    app: Sphinx,
+    exception: Exception | None,
+) -> None:
+    """Write redirects for renamed pages after a successful HTML build."""
+    if exception is not None or app.builder.name != 'html':
+        return
+
+    output_root = Path(app.outdir)
+    missing_targets: list[str] = []
+
+    for old_docname, new_docname in html_redirects.items():
+        redirect_path = output_root / f'{old_docname}.html'
+        target_path = output_root / f'{new_docname}.html'
+
+        if not target_path.is_file():
+            missing_targets.append(new_docname)
+            continue
+
+        relative_target = os.path.relpath(
+            target_path,
+            start=redirect_path.parent,
+        ).replace(os.sep, '/')
+        safe_target = escape(relative_target, quote=True)
+        javascript_target = json.dumps(relative_target)
+
+        redirect_path.parent.mkdir(parents=True, exist_ok=True)
+        redirect_path.write_text(
+            '<!doctype html>\n'
+            '<html lang="en">\n'
+            '<head>\n'
+            '  <meta charset="utf-8">\n'
+            '  <meta name="viewport" '
+            'content="width=device-width, initial-scale=1">\n'
+            '  <title>Page moved</title>\n'
+            f'  <link rel="canonical" href="{safe_target}">\n'
+            '  <script>\n'
+            '    window.location.replace('
+            f'{javascript_target} + window.location.hash);\n'
+            '  </script>\n'
+            '</head>\n'
+            '<body>\n'
+            '  <main>\n'
+            '    <h1>Page moved</h1>\n'
+            f'    <p>This page has moved to <a href="{safe_target}">'
+            'the renamed training page</a>.</p>\n'
+            '  </main>\n'
+            '</body>\n'
+            '</html>\n',
+            encoding='utf-8',
+        )
+
+    if missing_targets:
+        targets = '\n'.join(f'- {target}' for target in missing_targets)
+        raise ExtensionError(
+            f'Cannot write redirects; target pages are missing:\n{targets}'
+        )
+
+
 def setup(app: Sphinx) -> dict[str, str | bool]:
     """Register local Sphinx validation hooks."""
     app.connect('doctree-read', validate_figure_labelling)
+    app.connect('build-finished', write_html_redirects)
     return {'version': '1.0', 'parallel_read_safe': True}
 
 # -- layout -----------------------------------------------------------------

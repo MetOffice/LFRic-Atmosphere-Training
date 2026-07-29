@@ -1,6 +1,6 @@
-***********************
-Experiment 1 - CO2 x 10
-***********************
+************************************
+Increasing Atmospheric CO₂ Tenfold
+************************************
 
 In this experiment, you will increase the atmospheric CO2 concentration by a
 factor of 10 to observe its effect on the model climate.

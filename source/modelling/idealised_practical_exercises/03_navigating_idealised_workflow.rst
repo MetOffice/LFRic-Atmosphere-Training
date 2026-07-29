@@ -1,10 +1,10 @@
-******************************
-Navigating the Idealised Suite
-******************************
+********************************
+Navigating an Idealised Workflow
+********************************
 
-Once you have copied the regional nesting suite (e.g. ``u-dz791``), the next
-step is to navigate to the suite directory and open it using the Rose graphical
-user interface (GUI).
+Once you have copied the idealised suite (e.g. ``u-dz791``), the next step is
+to navigate to the suite directory and open it using the Rose graphical user
+interface (GUI).
 
 Step 1: Navigate to the suite directory
 ---------------------------------------

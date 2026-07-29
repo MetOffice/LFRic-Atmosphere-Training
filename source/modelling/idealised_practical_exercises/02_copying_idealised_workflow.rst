@@ -1,5 +1,5 @@
-Getting Started: Copying a Workflow for the Idealised Suite
-===========================================================
+Copying an Idealised Workflow
+=============================
 
 To begin working with the idealised suite, you first need to create your own
 copy of an existing workflow.

@@ -1,6 +1,6 @@
-******************
-Plotting your data
-******************
+******************************
+Plotting Regional Model Output
+******************************
 
 Access and visualise output
 ----------------------------------
@@ -23,6 +23,7 @@ quickly without writing any code.
 You can also visualise the output data using the ``CSET`` tool, or develop your
 own custom analysis scripts.
 
-A sample Python script is provided in the ``Plotting your data`` section of the
-``Exercises in Global Configurations`` part of this tutorial. This can be used
-as a starting point for creating your own plots and exploring the model output.
+A sample Python script is provided in the ``Plotting Global Model Output``
+section of the ``Exercises in Global Configurations`` part of this tutorial.
+This can be used as a starting point for creating your own plots and exploring
+the model output.

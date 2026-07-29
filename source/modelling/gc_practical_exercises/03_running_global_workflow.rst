@@ -1,6 +1,6 @@
-***************************
-Running a Cylc Workflow
-***************************
+*************************
+Running a Global Workflow
+*************************
 
 Now that you have successfully copied and edited a workflow, you are ready to
 run it! This section will guide you through the process of installing and

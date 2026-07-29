@@ -1,6 +1,6 @@
-************************************
-Editing a Regional Nesting Suite
-************************************
+***********************************
+Editing a Regional Nesting Workflow
+***********************************
 
 Once you have copied the regional nesting suite (e.g. ``u-by395``), the next
 step is to navigate to the suite directory and open it using the Rose graphical

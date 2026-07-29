@@ -1,6 +1,6 @@
-*******************************************
-Experiment 3 - Size of initial perturbation
-*******************************************
+*****************************************
+Testing Initial Temperature Perturbations
+*****************************************
 
 The initial temperature field in the suite is perturbed by a small random noise
 to induce convective motions, which subsequently grow larger due to convective

@@ -1,6 +1,6 @@
-******************************
-Experiment 1 - Adding rotation
-******************************
+*************************
+Adding Planetary Rotation
+*************************
 
 In this experiment, we will enable the effects of rotation.
 

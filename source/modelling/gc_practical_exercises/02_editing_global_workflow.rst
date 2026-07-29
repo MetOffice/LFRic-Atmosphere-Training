@@ -1,5 +1,5 @@
-Editing a Workflow
-==================
+Editing a Global Workflow
+=========================
 
 Now that you have successfully copied a workflow, you may want to make some
 changes to it. This could be to change the model configuration, add additional

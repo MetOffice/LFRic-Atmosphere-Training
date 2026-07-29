@@ -1,5 +1,5 @@
-What is an idealised configuration?
-===================================
+Understanding Idealised Configurations
+======================================
 
 Here, we use the term 'idealised' to mean a minimal configuration of
 LFRic-Atmosphere that is typically used in research applications.
