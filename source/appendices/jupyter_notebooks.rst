@@ -19,11 +19,32 @@ viewing results. A notebook is a document made from cells:
 * A kernel is the Python process that runs the code cells.
 * A Python environment contains the packages available to the kernel.
 
-For the mesh tutorial practical, the important rule is to use the kernel that
-matches the environment from the setup steps: the default Python 3 kernel if
-you loaded ``scitools`` at the Met Office or on Monsoon3, or the
-``Python (lfric-mesh)`` kernel if you built a conda environment on your own
-machine.
+.. important::
+
+   For the mesh tutorial practical, you **must** use the kernel that
+   matches the environment from the setup steps:
+
+   .. tab-set::
+      :sync-group: site
+
+      .. tab-item:: Met Office
+         :sync: met-office
+
+         * Ensure that you use ``module load scitools``
+         * Use scitools as your kernel.
+
+      .. tab-item:: Monsoon
+         :sync: monsoon
+
+         * Ensure that you use ``module load scitools``
+         * Use scitools as your kernel.
+
+      .. tab-item:: Other
+         :sync: other
+
+         Build your own environment ``Python (lfric-mesh)``,
+         and use that kernel.
+
 
 .. _fig-appendix-jupyterlab-interface:
 
