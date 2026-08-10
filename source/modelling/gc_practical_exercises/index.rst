@@ -29,10 +29,18 @@ analysing global configurations.
 
 .. toctree::
    :maxdepth: 1
-   :caption: Contents
+   :caption: Workflow exercises
 
-   copying/copying.rst
-   editing/editing.rst
-   running/running.rst
-   plotting/plotting.rst
-   experiments/index.rst
+   01_copying_global_workflow.rst
+   02_editing_global_workflow.rst
+   03_running_global_workflow.rst
+   04_plotting_global_output.rst
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Global model experiments
+
+   05_designing_global_model_experiments.rst
+   06_adding_pressure_level_diagnostic.rst
+   07_halving_earth_rotation.rst
+   08_increasing_atmospheric_co2.rst

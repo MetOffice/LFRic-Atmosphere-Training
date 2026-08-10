@@ -36,12 +36,25 @@ momentum_partnerships@metoffice.gov.uk.
 
 .. toctree::
    :maxdepth: 1
-   :caption: Contents
+   :caption: Workflow exercises
 
-   overview.rst
-   copying.rst
-   navigation.rst
-   running.rst
-   experiments/index.rst
-   plotting.rst
-   quiz.rst
+   01_understanding_idealised_configurations.rst
+   02_copying_idealised_workflow.rst
+   03_navigating_idealised_workflow.rst
+   04_running_idealised_workflow.rst
+   05_plotting_idealised_output.rst
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Idealised model experiments
+
+   06_designing_extraterrestrial_crm_experiments.rst
+   07_adding_planetary_rotation.rst
+   08_using_earth_like_atmosphere.rst
+   09_testing_initial_temperature_perturbations.rst
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Review
+
+   10_idealised_configurations_review_quiz.rst

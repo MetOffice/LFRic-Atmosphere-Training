@@ -1,8 +1,23 @@
-*****************************
-Running an Idealised Workflow
-*****************************
+*********************************
+Running a Regional LFRic Workflow
+*********************************
 
-Once your suite has been set up, you can run it using Cylc:
+Once your suite has been set up, you can run it using Cylc.
+
+Navigate to your suite directory
+----------------------------------------
+
+Open a terminal and move to the suite directory, replacing ``<suite-id>`` with
+the suite ID that ``rosie`` reported when you copied the workflow:
+
+.. code-block:: bash
+
+   cd ~/roses/<suite-id>
+
+Run the workflow
+-----------------------
+
+Validate the workflow, install it to ``~/cylc-run``, and play it using:
 
 .. tab-set::
    :sync-group: site
@@ -41,12 +56,14 @@ actions:
 
 .. note::
 
-   Unlike the global and regional suites, the idealised suite selects its
-   platform from the ``EX_HOST`` template variable you set in the Rose GUI, so
-   no ``--opt-conf-key`` is needed here.
+   Unlike the global suite, the regional nesting suite takes its platform
+   from the ``SITE`` and ``EX HOST`` settings you chose in the Rose GUI, so
+   no ``--opt-conf-key`` is needed here. If your copy does ship optional
+   configurations, they are in ``opt/`` and are selected with ``-O``, as
+   described in the global practical.
 
 Monitor the workflow
---------------------
+----------------------------
 
 Once the suite is running, you can monitor its progress using either of the
 following commands:
@@ -56,7 +73,7 @@ following commands:
 These tools allow you to view task status, progress, and any failures.
 
 For more details on Cylc commands, see :doc:`Running a Cylc Workflow
-</modelling/gc_practical_exercises/running/running>` under *Exercises in
+<../gc_practical_exercises/03_running_global_workflow>` under *Exercises in
 Global Configurations*.
 
 After the workflow has completed successfully, navigate to the output directory

@@ -29,9 +29,9 @@ analysing limited-area (regional) configurations.
 
 .. toctree::
    :maxdepth: 1
-   :caption: Contents
+   :caption: Workflow exercises
 
-   copying/copying.rst
-   navigation/navigation.rst
-   running/running.rst
-   plotting/plotting.rst
+   01_copying_regional_workflow.rst
+   02_editing_regional_workflow.rst
+   03_running_regional_workflow.rst
+   04_plotting_regional_output.rst

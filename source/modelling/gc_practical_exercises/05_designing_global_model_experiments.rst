@@ -51,10 +51,6 @@ navigating exercises to edit and run the experiments. For analysis, you can use
 what you learnt in the visualisation exercises. You can also use the thoughts
 above to design your own experiment and test it out.
 
-.. toctree::
-   :maxdepth: 1
-   :caption: Contents
-
-   add_diag/add_diag.rst
-   earth_rot/earth_rot.rst
-   10xco2/10xco2.rst
+* :doc:`06_adding_pressure_level_diagnostic`
+* :doc:`07_halving_earth_rotation`
+* :doc:`08_increasing_atmospheric_co2`
