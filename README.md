@@ -2,6 +2,8 @@
 
 [![Test documentation](https://github.com/MetOffice/LFRic-Atmosphere-Training/actions/workflows/tests.yml/badge.svg)](https://github.com/MetOffice/LFRic-Atmosphere-Training/actions/workflows/tests.yml)
 
+[![Legal](https://github.com/MetOffice/LFRic-Atmosphere-Training/actions/workflows/cla-check.yaml/badge.svg)](https://github.com/MetOffice/LFRic-Atmosphere-Training/actions/workflows/cla-check.yaml)
+
 # ⛈️ LFRic-Atmosphere-Training
 
 This repository hosts the materials for self-learning of the Momentum LFRic Atmosphere. This training is designed to provide an introductory level training for the LFRic Atmospheric model and its associated workflows. The training material includes an overview about the model, development working practices, visualisation of mesh data, LFRic based Science Configurations, and practical exercises for hands-on learning.
