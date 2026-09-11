@@ -44,7 +44,7 @@ moisture.
 .. figure:: /_static/1/coupling_schematic.png
    :width: 650px
    :alt: Schematic showing the three submodels (Atmosphere, Ocean and Rivers)
-   and what they pass through the OASIS3-MCT coupler.
+      and what they pass through the OASIS3-MCT coupler.
 
    Schematic showing the three submodels that are run as separate executables
    (Atmosphere, Ocean and Rivers) and what they pass through the OASIS3-MCT coupler.
