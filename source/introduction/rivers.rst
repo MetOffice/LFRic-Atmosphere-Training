@@ -13,7 +13,7 @@ incompatible with the rivers latitude-longitude grid) so instead the river
 component is compiled into a separate executable and passes information
 from/to the atmosphere and to the ocean via the OASIS3-MCT coupler.
 
-The river model used in Momentum is the `Total Runoff Integrating Pathways 
+The river model used in Momentum is the `Total Runoff Integrating Pathways
 <https://gmao.gsfc.nasa.gov/media/gmaoftp/sarith/ROUTING_MODEL/docs/oKI_trip.pdf>`_
 (TRIP) model developed at the NASA/Goddard Space Flight Center (Oki and Sud,
 1998).
@@ -54,7 +54,6 @@ moisture.
 References
 -----------------
 
-* Oki and Sud (1998), `Design of Total Runoﬀ Integrating Pathways (TRIP)-a global 
-  river channel network. 
+* Oki and Sud (1998), `Design of Total Runoﬀ Integrating Pathways (TRIP)-a global
+  river channel network.
   <https://gmao.gsfc.nasa.gov/media/gmaoftp/sarith/ROUTING_MODEL/docs/oKI_trip.pdf>`_.
-
