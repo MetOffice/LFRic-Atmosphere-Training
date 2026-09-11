@@ -52,7 +52,7 @@ Glossary
    TRIP
       Total Runoff Integrating Pathways
       River model developed at the NASA/Goddard Space Flight Center
-      (Oki and Sud, 1998).
+      [Oki_and_Sud_1998]_.
 
       .. seealso::
 
