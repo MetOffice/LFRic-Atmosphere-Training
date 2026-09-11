@@ -77,3 +77,4 @@ Contents of the training course
    modelling/index.rst
    glossary
    appendices/index.rst
+   references.rst

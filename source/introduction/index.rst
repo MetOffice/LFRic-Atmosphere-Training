@@ -50,5 +50,6 @@ gives an overview of the model infrastructure and its scalability goals.
    components.rst
    land_surface_and_jules.rst
    ocean_and_sea_ice.rst
+   rivers.rst
    history_context.rst
    quiz.rst
