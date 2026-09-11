@@ -9,7 +9,7 @@ river mouths and also to maintain water conservation.
 
 The Momentum framework is unable to compile the river component within the
 atmosphere and land executable (due to the LFRic cube-sphere grid being
-incompatible with the rivers latitude-longitude grid) so instead the river
+incompatible with the rivers latitude-longitude grid). Instead the river
 component is compiled into a separate executable and passes information
 from/to the atmosphere and to the ocean via the :term:`OASIS3-MCT` coupler.
 
