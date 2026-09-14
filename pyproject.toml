@@ -25,7 +25,7 @@ notebooks = [
   "scitools-iris",
   "geovista==0.5.3",
   "pyvista>=0.46.3,<0.49",
-  "vtk<9.7",
+  "vtk<9.8",
   "ipyvtklink",
   "trame",
   "trame-vtk",
