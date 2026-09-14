@@ -9,6 +9,26 @@ The training is structured to cater to users with different levels of expertise,
 
 The LFRic Atmosphere self-learning training can be found at <https://metoffice.github.io/LFRic-Atmosphere-Training>
 
+## Using the materials
+
+Read the course online, working through the modules in order or choosing the
+sections you need from the contents. You do not need to build the documentation
+to follow the course. Before starting a practical, follow its setup instructions
+and select the tab for your platform: **Met Office**, **Monsoon**, or **Other**.
+
+## Questions and feedback
+
+Please use [GitHub Discussions](https://github.com/MetOffice/LFRic-Atmosphere-Training/discussions)
+to ask for help, share feedback, or suggest improvements, including anything
+you would prefer not to put in a pull request or issue. You do not need to have
+a proposed fix to start a discussion.
+
+For a specific error or broken link, you can also
+[open an issue](https://github.com/MetOffice/LFRic-Atmosphere-Training/issues).
+Include the page or notebook name and, when asking for help with a practical,
+your platform and any error message. To contribute an edit, follow the guidance
+below; for email contact details, see [Contacts](#contacts).
+
 # 📜 I want to contribute
 
 ## Contributing Guidelines

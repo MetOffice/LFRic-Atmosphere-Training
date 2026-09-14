@@ -16,6 +16,14 @@ Momentum Training - LFRic Atmosphere
 
 **LFRic Atmosphere** is the atmospheric model component of Momentum. It is the successor to the Unified Model. This course is designed for new users of LFRic Atmosphere. See the `Momentum website <https://www.metoffice.gov.uk/research/approach/modelling-systems/momentum>`_ for information about the other components of the modelling framework.
 
+.. seealso::
+
+   For help, questions, or feedback on the training, please use
+   `GitHub Discussions
+   <https://github.com/MetOffice/LFRic-Atmosphere-Training/discussions>`_.
+   You are welcome to start a discussion without opening an issue or
+   preparing a pull request.
+
 .. note::
    **Target users and prior knowledge**: This course is designed for new users of LFRic who have a general background in climate science. It is assumed you will have experience in working in Linux terminal and have basic understanding of python and other coding languages. Throughout the course there will be notes on where to refresh skills needed for each section.
 
