@@ -217,6 +217,6 @@ linkcheck_ignore = [
     r'^https?://code\.metoffice\.gov\.uk(?:/.*)?$',
     r'https://doi.org/.*',
     r'https://cirrus.ucsd.edu/ncview/.*',
-    r'https://gitlab.kitware.com/.*',
+    r'https://gitlab.kitware.com/vtk/vtk',
     r'https://zenodo.org/.*',
 ]
