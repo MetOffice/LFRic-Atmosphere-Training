@@ -26,9 +26,7 @@ Experiments with Global Models
 
 .. admonition:: Real World Example: Snow Albedo Tuning in HadGEM3 GC3.1
 
-   `Kuhlbrodt et al. (2018)
-   <https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2018MS001370>`_
-   describe a tuning change made during the development of the low-resolution
+   Kuhlbrodt et al. (2018) [Kuhlbrodt_et_al_2018]_ describe a tuning change made during the development of the low-resolution
    version of HadGEM3 GC3.1:
 
       To achieve an acceptable simulation of Arctic sea ice thickness it proved
