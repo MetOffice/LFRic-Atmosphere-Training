@@ -125,12 +125,6 @@ def validate_figure_labelling(
         message += '\n'.join(f'- {error}' for error in errors)
         raise ExtensionError(message)
 
-
-def setup(app: Sphinx) -> dict[str, str | bool]:
-    """Register local Sphinx validation hooks."""
-    app.connect('doctree-read', validate_figure_labelling)
-    return {'version': '1.0', 'parallel_read_safe': True}
-
 # -- layout -----------------------------------------------------------------
 # https://pydata-sphinx-theme.readthedocs.io/en/stable/user_guide/layout.html#
 
@@ -220,3 +214,34 @@ linkcheck_ignore = [
     r'https://gitlab.kitware.com/vtk/vtk',
     r'https://zenodo.org/.*',
 ]
+
+
+def MOSRS_map_replace(app, docname, source):
+    """Replace MOSRS placeholder tokens in a document source string.
+
+    Designed to allow us to centralize workflow ID references.
+
+    n.b. Cannot be a normal substitution because we want to use it in code
+    blocks. This hook occurs very early in the Sphinx workflow.
+    """
+    result = source[0]
+    for key in app.config.MOSRS_SUITE_MAP:
+        result = result.replace(key, app.config.MOSRS_SUITE_MAP[key])
+    source[0] = result
+
+
+# {name: suite_id} mapping
+MOSRS_SUITE_MAP = {
+    '|global_workflow_example|': 'u-dz612',
+    '|regional_workflow_example|': 'u-by395',
+    '|idealised suite|': 'u-dz791',
+}
+
+
+def setup(app: Sphinx) -> dict[str, str | bool]:
+    """Register local Sphinx validation hooks."""
+    app.connect('doctree-read', validate_figure_labelling)
+    app.add_config_value('MOSRS_SUITE_MAP', {}, True)
+    app.connect('source-read', MOSRS_map_replace)
+
+    return {'version': '1.0', 'parallel_read_safe': True}
