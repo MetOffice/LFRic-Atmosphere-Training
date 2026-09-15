@@ -36,11 +36,10 @@ large vertical gradient of water vapour.
    weight of the background gas surpasses that of water vapour,
    hydrogen-dominated atmospheres exhibit a stabilising molecular-weight
    gradient, as the condensable has a greater mean molecular weight than that
-   of the background gas (`Ledoux, 1947 <https://doi.org/10.1086/144905>`_).
-   Consequently, in atmospheres with non-dilute amounts of the condensable
-   (>10% by mass; see e.g. `Pierrehumbert & Ding, 2016
-   <https://doi.org/10.1098/rspa.2016.0107>`_), the background temperature
-   gradient can no longer be solely relied on to predict convective stability.
+   of the background gas [Ledoux_1947]_. Consequently, in atmospheres with
+   non-dilute amounts of the condensable (>10% by mass; see e.g.
+   [Pierrehumbert_and_Ding_2016]_), the background temperature gradient can no
+   longer be solely relied on to predict convective stability.
    This effect is not as important for convection on Earth since water vapour
    only contributes up to a few percent by mass, hence lying comfortably in the
    dilute regime.
@@ -61,8 +60,7 @@ learnt in the visualisation exercises.
 
 .. admonition:: Example from previous studies: changing the water vapour profile
 
-   `Habib & Pierrehumbert (2024) <https://doi.org/10.3847/1538-4357/ad04e2>`_
-   use another cloud-resolving model and find that destabilizing mean molecular
+   Habib & Pierrehumbert (2024) [Habib_and_Pierrehumbert_2024]_ use another cloud-resolving model and find that destabilizing mean molecular
    weight gradients can lead to compositional convection in otherwise thermally
    stable atmospheres. They test this using high-resolution non-condensing
    simulations for a range of background compositions and thermal profiles.
