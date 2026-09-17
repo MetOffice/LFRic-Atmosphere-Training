@@ -122,9 +122,8 @@ Parameterisations
    :width: 650px
    :alt: ORCA tripolar ocean mesh over the Northern Hemisphere, with embedded ellipses and computed normals used to avoid an Arctic Ocean pole singularity
 
-   ORCA mesh conception used by NEMO global ocean configurations. Source: `NEMO
-   ocean engine reference manual <https://doi.org/10.5281/zenodo.6334656>`_,
-   Figure 15.1.
+   ORCA mesh conception used by NEMO global ocean configurations. Source: NEMO
+   ocean engine reference manual [Madec_et_al_2022]_, Figure 15.1.
 
 .. _fig-intro-si3-thickness-categories:
 
@@ -133,28 +132,23 @@ Parameterisations
    :alt: SI3 schematic showing a sea-ice grid cell divided into open water and multiple ice-thickness categories with different ice thickness, snow depth, and concentration
 
    Representation of the sea-ice pack using multiple ice-thickness categories
-   in SI3. Source: `SI3: Sea Ice modelling Integrated Initiative - the NEMO sea
-   ice engine <https://doi.org/10.5281/zenodo.7534900>`_, Figure 1.1.
+   in SI3. Source: SI3, the NEMO sea ice engine [Vancoppenolle_et_al_2023]_,
+   Figure 1.1.
 
 Further resources
 -----------------
 
 The following references provide the scientific and technical background:
 
-* `NEMO ocean engine reference manual
-  <https://doi.org/10.5281/zenodo.6334656>`_ and `NEMO citation guidance
-  <https://sites.nemo-ocean.io/user-guide/cite.html>`_.
-* `SI3: Sea Ice modelling Integrated Initiative - the NEMO sea ice engine
-  <https://doi.org/10.5281/zenodo.7534900>`_.
-* Guiavarc'h et al. (2025), `GOSI9: UK Global Ocean and Sea Ice configurations
-  <https://doi.org/10.5194/gmd-18-377-2025>`_.
-* Blockley et al. (2024), `The sea ice component of GC5: coupling SI3 to
-  HadGEM3 using conductive fluxes <https://doi.org/10.5194/gmd-17-6799-2024>`_.
-* O'Dea et al. (2017), `The CO5 configuration of the 7 km Atlantic Margin
-  Model: large-scale biases and sensitivity to forcing, physics options and
-  vertical resolution <https://doi.org/10.5194/gmd-10-2947-2017>`_.
-* Graham et al. (2018), `AMM15: a new high-resolution NEMO configuration for
-  operational simulation of the European north-west shelf
-  <https://doi.org/10.5194/gmd-11-681-2018>`_.
+* NEMO ocean engine reference manual [Madec_et_al_2022]_ and `NEMO citation
+  guidance <https://sites.nemo-ocean.io/user-guide/cite.html>`_.
+* SI3, the NEMO sea ice engine [Vancoppenolle_et_al_2023]_.
+* Guiavarc'h et al. (2025) [Guiavarch_et_al_2025]_, GOSI9 global ocean and sea
+  ice configurations.
+* Blockley et al. (2024) [Blockley_et_al_2024]_, the sea ice component of GC5.
+* O'Dea et al. (2017) [ODea_et_al_2017]_, the CO5 Atlantic Margin Model
+  configuration.
+* Graham et al. (2018) [Graham_et_al_2018]_, the AMM15 north-west European
+  shelf configuration.
 * `Joint Marine Modelling Programme repositories
   <https://github.com/JMMP-Group>`_.

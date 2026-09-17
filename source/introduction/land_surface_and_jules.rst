@@ -71,20 +71,15 @@ Further resources
 
 The JULES model description papers provide the scientific background:
 
-* M. J. Best et al. (2011), `The Joint UK Land Environment Simulator (JULES),
-        model description, Part 1: energy and water fluxes
-        <https://doi.org/10.5194/gmd-4-677-2011>`_.
-* D. B. Clark et al. (2011), `The Joint UK Land Environment Simulator (JULES),
-        model description, Part 2: carbon fluxes and vegetation
-        <https://doi.org/10.5194/gmd-4-701-2011>`_.
+* Best et al. (2011) [Best_et_al_2011]_, model description Part 1: energy and
+  water fluxes.
+* Clark et al. (2011) [Clark_et_al_2011]_, model description Part 2: carbon
+  fluxes and vegetation dynamics.
 
 See also:
 
-* H. S. Rumbold et al. (2023), `Assessing methods for representing soil
-  heterogeneity through a flexible approach within the Joint UK Land
-  Environment Simulator (JULES) at version 3.4.1
-  <https://gmd.copernicus.org/articles/16/1875/2023/>`_ section 2.1 for
-  further scheme description.
+* Rumbold et al. (2023) [Rumbold_et_al_2023]_, section 2.1, for further scheme
+  description.
 
 
 The `JULES user documentation <https://metoffice.github.io/jules/latest/>`_ and
