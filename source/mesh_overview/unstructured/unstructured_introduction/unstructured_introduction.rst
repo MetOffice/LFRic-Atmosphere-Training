@@ -119,15 +119,26 @@ layer. In the case of the Unified Model (UM) on the left, 13,400 data points
 unstructured case, because everything is described individually, around 40
 million data points are required to represent the same space.
 
+.. list-table:: Comparison of data volume between structured grid and
+   unstructured mesh for representing the same space.
+   :widths: 30 35 35
+   :header-rows: 1
 
-.. _fig-mesh-data-volume:
-
-.. figure:: /_static/mesh3.png
-   :width: 650px
-   :alt: structured vs unstructured data volume
-
-   Comparison of data volume between structured grid (right) and unstructured
-   mesh (left) for representing the same space.
+   * -
+     - Structured grid (UM 2560 × 1920)
+     - Unstructured mesh (LFRic C905)
+   * - Data points
+     - 4,900,000
+     - 4,900,000
+   * - Geospatial Data
+     - | Points: 4,480
+       | Bounds: 8,960
+     - | Points: 9,800,000
+       | Node connectivity: 19,700,000
+       | Face centre: 9,800,000
+   * - Geospatial total
+     - 13,400
+     - 39,300,000
 
 Flexibility vs. data volume
 +++++++++++++++++++++++++++
@@ -245,7 +256,7 @@ in the manipulation of unstructured data formats, such as UGRID.
 
 .. _fig-mesh-unstructured-tools:
 
-.. figure:: /_static/unstructured_tools.png
+.. figure:: /_static/unstructured_tools.svg
    :width: 650px
    :alt: unstructured data tools
 
