@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="34cm" height="15cm" viewBox="166 137 674 290" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #bfd0ff" x="186.775" y="201.9" width="150.45" height="54"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="186.775" y="201.9" width="150.45" height="54"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="262" y="224.781">
+      <tspan x="262" y="224.781">Model Development</tspan>
+      <tspan x="262" y="240.781">Research Cycle</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #f2c7c7" x="410.1" y="201.9" width="150.45" height="54"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="410.1" y="201.9" width="150.45" height="54"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="485.325" y="224.781">
+      <tspan x="485.325" y="224.781">Model Development</tspan>
+      <tspan x="485.325" y="240.781">Release Cycle</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #efffbf" x="662.586" y="200.9" width="163.625" height="61.2"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="662.586" y="200.9" width="163.625" height="61.2"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="744.398" y="227.381">
+      <tspan x="744.398" y="227.381">Operational</tspan>
+      <tspan x="744.398" y="243.381">Implementation/use</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #c9f8fc" x="364.575" y="381.7" width="230.425" height="44.3"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="364.575" y="381.7" width="230.425" height="44.3"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="479.787" y="407.731">
+      <tspan x="479.787" y="407.731">Model Evaluation/verification</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="687.756" y1="268.393" x2="523.493" y2="375.383"/>
+    <polygon style="fill: #000000" points="694.041,264.3 688.39,273.947 687.756,268.393 682.932,265.568 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="694.041,264.3 688.39,273.947 687.756,268.393 682.932,265.568 "/>
+    <polygon style="fill: #000000" points="517.209,379.476 522.859,369.829 523.493,375.383 528.317,378.208 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="517.209,379.476 522.859,369.829 523.493,375.383 528.317,378.208 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="450.118" y1="265.334" x2="477.382" y2="372.266"/>
+    <polygon style="fill: #000000" points="448.265,258.067 455.581,266.521 450.118,265.334 445.891,268.992 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="448.265,258.067 455.581,266.521 450.118,265.334 445.891,268.992 "/>
+    <polygon style="fill: #000000" points="479.235,379.533 471.919,371.079 477.382,372.266 481.609,368.608 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="479.235,379.533 471.919,371.079 477.382,372.266 481.609,368.608 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="270.054" y1="261.371" x2="437.678" y2="375.244"/>
+    <polygon style="fill: #000000" points="263.85,257.157 274.931,258.64 270.054,261.371 269.312,266.912 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="263.85,257.157 274.931,258.64 270.054,261.371 269.312,266.912 "/>
+    <polygon style="fill: #000000" points="443.882,379.458 432.8,377.975 437.678,375.244 438.42,369.703 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="443.882,379.458 432.8,377.975 437.678,375.244 438.42,369.703 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="337.225" y1="228.9" x2="400.364" y2="228.9"/>
+    <polygon style="fill: #000000" points="407.864,228.9 397.864,233.9 400.364,228.9 397.864,223.9 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="407.864,228.9 397.864,233.9 400.364,228.9 397.864,223.9 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="560.55" y1="228.9" x2="651.873" y2="230.192"/>
+    <polygon style="fill: #000000" points="659.372,230.298 649.303,235.156 651.873,230.192 649.444,225.157 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="659.372,230.298 649.303,235.156 651.873,230.192 649.444,225.157 "/>
+  </g>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="480" y="287">
+    <tspan x="480" y="287">Assessment Metrics</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="672" y="349">
+    <tspan x="672" y="349">Routine Verification</tspan>
+    <tspan x="672" y="365">Monitoring/Feedback</tspan>
+    <tspan x="672" y="381">Forecaster Feedback</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="167" y="312">
+    <tspan x="167" y="312">Research projects</tspan>
+    <tspan x="167" y="328">Diagnostic Studies</tspan>
+    <tspan x="167" y="344">PEGs</tspan>
+    <tspan x="167" y="360">Observations and Field experiments</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="595" y="283">
+    <tspan x="595" y="283"></tspan>
+  </text>
+  <text font-size="12.8014" style="fill: #0000ff;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="195" y="175.001">
+    <tspan x="195" y="175.001">'Top down' &amp; 'Bottom up'</tspan>
+    <tspan x="195" y="191.003">Key systematic errors</tspan>
+  </text>
+  <text font-size="12.8014" style="fill: #0000ff;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="409" y="175.001">
+    <tspan x="409" y="175.001">GC - GA, GL, GO, GSI &amp; GC</tspan>
+  </text>
+  <text font-size="12.8014" style="fill: #0000ff;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="661.586" y="174.001">
+    <tspan x="661.586" y="174.001">GloSea, MOGREPS, UKESM1</tspan>
+    <tspan x="661.586" y="190.003">ACCESS, NCUM...</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:700" x="411" y="152">
+    <tspan x="411" y="152">Release cycle - model "trunk"</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:700" x="661.586" y="151">
+    <tspan x="661.586" y="151">System dependent</tspan>
+  </text>
+  <text font-size="14.1111" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:700" x="197" y="152">
+    <tspan x="197" y="152">Multi-year timescales</tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="243" y="175">
+    <tspan x="243" y="175"></tspan>
+  </text>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="459" y="175">
+    <tspan x="459" y="175"></tspan>
+  </text>
+</svg>

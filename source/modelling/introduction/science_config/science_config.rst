@@ -85,7 +85,7 @@ systems within the Momentum framework.
 
 .. _fig-developing-regional-models:
 
-.. figure:: /_static/develop-regional-models.png
+.. figure:: /_static/develop-regional-models.svg
    :width: 650px
    :alt: Regional Model Evaluation and Development
 

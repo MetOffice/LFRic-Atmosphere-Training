@@ -32,11 +32,33 @@ the development process.
 
 .. _fig-model-dev-cycle:
 
-.. figure:: /_static/seamless_dev_cycle.png
+.. figure:: /_static/seamless_dev_cycle.svg
    :width: 650px
    :alt: Development cycle for Global Coupled science configurations
 
    The seamless development cycle for Global Coupled configurations.
+
+.. table:: Types of trialling template
+
+   +-------------------------------+-----------------------+----------------------------------+
+   | Individual component testing  | Package testing       | Final production/parallel suites |
+   +===============================+=======================+==================================+
+   | NWP case studies                                      | Full hybrid-VAR DA Trials        |
+   +-------------------------------+-----------------------+----------------------------------+
+   | AMIP                          | AMIP +4K              | MOGREPS                          |
+   +-------------------------------+-----------------------+----------------------------------+
+   | Short coupled climate runs                            | GloSea Hindcast ensemble         |
+   +-------------------------------+-----------------------+----------------------------------+
+   | Seasonal testbed                                      | CMIP6/UKCP1                      |
+   +-------------------------------+-----------------------+----------------------------------+
+   | Forced Ocean                  | Coupled instant 4xCO₂ | Parallel suites                  |
+   +-------------------------------+-----------------------+----------------------------------+
+   | Coupled NWP case studies      | Coupled NWP           |                                  |
+   +-------------------------------+-----------------------+----------------------------------+
+   | Low Res DA runs               | DA/model Trials       |                                  |
+   +-------------------------------+-----------------------+----------------------------------+
+   | AMIP +4k (future climate)     | LAM testing (LBC)     |                                  |
+   +-------------------------------+-----------------------+----------------------------------+
 
 In July 2022, the final UM-based GC configuration was released, 'GC5', before
 the implementation of the LFRic atmospheric model into GC configurations. LFRic

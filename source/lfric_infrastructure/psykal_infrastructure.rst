@@ -78,7 +78,7 @@ code into three layers:
 
 .. _fig-infra-psykal:
 
-.. figure:: /_static/psykal.png
+.. figure:: /_static/psykal_flow.svg
    :width: 650px
    :alt: PSyKAl architecture separating natural science code from computational science code
 
