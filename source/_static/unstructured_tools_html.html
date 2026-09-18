@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Unstructured Tools</title>
+    <style>
+      :root {
+        --bg: #ffffff;
+        --ink: #1f2937;
+        --lime: #9ae66e;
+        --panel: #f7f7f7;
+        --arrow: #2f4963;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--ink);
+      }
+
+      .stage {
+        width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+      }
+
+      .panel {
+        position: relative;
+        width: fit-content;
+        min-height: 0;
+        border: 3px solid var(--lime);
+        border-radius: 14px;
+        background: var(--panel);
+        padding: 18px 20px 22px;
+      }
+
+      .metoffice {
+        position: absolute;
+        top: 18px;
+        left: 20px;
+        width: 180px;
+        background: #000000;
+        border: 1px solid rgba(0,0,0,0.15);
+        border-radius: 8px;
+        padding: 10px 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .metoffice img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .content {
+        position: relative;
+        width: 760px;
+        height: 210px;
+        margin-top: 0;
+      }
+
+      .iris {
+        position: absolute;
+        top: 18px;
+        left: 245px;
+      }
+
+      .cartopy {
+        position: absolute;
+        left: 80px;
+        top: 140px;
+      }
+
+      .esmf {
+        position: absolute;
+        left: 345px;
+        top: 140px;
+      }
+
+      .geovista {
+        position: absolute;
+        left: 610px;
+        top: 140px;
+      }
+
+      .logo-card {
+        position: absolute;
+        width: 170px;
+        height: 90px;
+        background: white;
+        border: 1px solid rgba(0,0,0,0.12);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+      }
+
+      .logo-card img {
+        max-width: 140px;
+        max-height: 54px;
+        display: block;
+      }
+
+      .iris img { max-width: 150px; max-height: 58px; }
+      .cartopy img { max-width: 120px; }
+      .esmf img { max-width: 130px; }
+      .geovista img { max-width: 130px; }
+
+      .extra-logos {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(150px, 1fr));
+        gap: 18px;
+        margin-top: 30px;
+      }
+
+      .extra-logo {
+        height: 90px;
+        background: white;
+        border: 1px solid rgba(0,0,0,0.12);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+      }
+
+      .extra-logo img {
+        max-width: 130px;
+        max-height: 52px;
+        display: block;
+      }
+
+      .connector {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+      }
+
+      .connector path {
+        fill: none;
+        stroke: var(--arrow);
+        stroke-width: 3;
+        marker-end: url(#arrowhead);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="stage">
+      <div class="panel">
+        <div class="metoffice">
+          <img src="./logos/MO_MASTER_for_dark_backg_RBG.png" alt="Met Office" />
+        </div>
+
+        <div class="content">
+          <svg class="connector" viewBox="0 0 900 330" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- <defs>
+              <marker id="arrowhead" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
+                <path d="M 0 0 L 8 4 L 0 8 z" fill="#2f4963"/>
+              </marker>
+            </defs> -->
+
+            <path d="M 360 130, 180 165" />
+            <path d="M 360 130, 250 165" />
+            <path d="M 360 130, 695 165" />
+          </svg>
+
+          <div class="logo-card iris">
+            <img src="./logos/iris-logo-title.svg" alt="Iris" />
+          </div>
+
+          <div class="logo-card cartopy">
+            <img src="./logos/cartopy.png" alt="Cartopy" />
+          </div>
+
+          <div class="logo-card esmf">
+            <img src="./logos/iris-esmf.svg" alt="Iris ESMF" />
+          </div>
+
+          <div class="logo-card geovista">
+            <img src="./logos/geovistalogo2.svg" alt="GeoVista" />
+          </div>
+        </div>
+      </div>
+
+      <div class="extra-logos">
+        <div class="extra-logo"><img src="./logos/c++.svg" alt="C++" /></div>
+        <div class="extra-logo"><img src="./logos/dask_horizontal.svg" alt="Dask" /></div>
+        <div class="extra-logo"><img src="./logos/fortran.svg" alt="Fortran" /></div>
+        <div class="extra-logo"><img src="./logos/matplotlib.svg" alt="Matplotlib" /></div>
+        <div class="extra-logo"><img src="./logos/numpylogo.svg" alt="NumPy" /></div>
+        <div class="extra-logo"><img src="./logos/pyvista_logo.svg" alt="PyVista" /></div>
+        <div class="extra-logo"><img src="./logos/vtk.svg" alt="VTK" /></div>
+        <div class="extra-logo"><img src="./logos/cf_globe.svg" alt="CF Globe" /></div>
+        <div class="extra-logo"><img src="./logos/geovistalogo.svg" alt="GeoVista" /></div>
+        <div class="extra-logo"><img src="./logos/esmf.png" alt="ESMF" /></div>
+      </div>
+    </div>
+  </body>
+</html>

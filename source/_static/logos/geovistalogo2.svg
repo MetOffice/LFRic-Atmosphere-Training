@@ -1,0 +1,4420 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 780 250"
+   version="1.1"
+   id="svg1124"
+   width="780"
+   height="250"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:bx="https://boxy-svg.com">
+  <defs
+     id="defs24">
+    <path
+       id="path-0"
+       d="m 79.918,220.799 c 12.032,-31.205 17.648,-37.248 30.738,-48.156 7.818,-6.664 13.138,-12.113 18.442,-17.418 4.942,-3.917 12.532,-11.27 14.345,-11.27 2.163,-1.652 4.901,-3.219 7.684,-4.611 4.52,-2.26 7.666,-5.458 11.271,-6.66 0.512,-2.382 6.921,-3.335 8.709,-5.123 7.505,-1.536 15.385,-8.336 19.979,-11.782 4.94,-0.513 9.602,-1.471 12.807,-3.074 4.122,-0.512 7.436,-3.586 10.246,-3.586 2.363,0 7.566,0.119 8.709,-1.025 5.063,0 8.024,-1.024 11.783,-1.024 8.574,-0.513 16.127,0 23.566,0 10.618,0 19.827,0.986 28.176,3.073 13.217,2.234 24.169,2.502 35.348,4.099 10.788,2.825 16.543,9.833 24.078,14.856 6.573,6.574 10.983,12.008 16.394,17.418 5.413,6.84 10.466,11.602 14.344,17.418 6.619,7.132 6.523,15.42 10.246,21.005 2.366,7.415 3.264,13.188 5.635,17.93 0.512,6.026 3.066,12.258 4.098,17.418 v 2.049 c 0,2.149 0.116,7.288 1.537,8.709"
+       style="fill:none" />
+    <filter
+       id="posterize-filter-0"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       bx:preset="posterize 1 r 3 0.9">
+      <feColorMatrix
+         type="saturate"
+         values="0.9"
+         id="feColorMatrix3" />
+      <feComponentTransfer
+         id="feComponentTransfer11">
+        <feFuncR
+           type="discrete"
+           tableValues="0 0.333 0.667 1"
+           id="feFuncR5" />
+        <feFuncG
+           type="discrete"
+           tableValues=""
+           id="feFuncG7" />
+        <feFuncB
+           type="discrete"
+           tableValues=""
+           id="feFuncB9" />
+      </feComponentTransfer>
+    </filter>
+    <path
+       id="path-1"
+       d="m 171.107,226.548 c 15.047,-7.755 22.455,-11.996 30.225,-15.881 4.545,-4.545 7.825,-7.383 10.758,-11.783 2.457,-5.833 4.688,-9.375 6.66,-13.319 2.599,-2.599 2.675,-6.773 4.611,-8.709 0.512,-2.009 3.073,-3.637 3.073,-5.123 h 0.513 c 0,-1.768 0.686,-1.711 1.537,-2.562"
+       style="fill:none" />
+    <filter
+       id="contrast-filter-0"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       bx:preset="contrast 1 0.7">
+      <feComponentTransfer
+         id="feComponentTransfer21">
+        <feFuncR
+           type="linear"
+           slope="0.7"
+           intercept="0.15000000000000002"
+           id="feFuncR15" />
+        <feFuncG
+           type="linear"
+           slope="0.7"
+           intercept="0.15000000000000002"
+           id="feFuncG17" />
+        <feFuncB
+           type="linear"
+           slope="0.7"
+           intercept="0.15000000000000002"
+           id="feFuncB19" />
+      </feComponentTransfer>
+    </filter>
+  </defs>
+  <rect
+     x="0.67199999"
+     y="129.144"
+     width="4.7670002"
+     height="4.7719998"
+     id="rect32"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)"
+     style="filter:url(#posterize-filter-0)" />
+  <rect
+     x="6.783"
+     y="135.261"
+     width="4.7670002"
+     height="4.7719998"
+     id="rect34"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)"
+     style="filter:url(#posterize-filter-0)" />
+  <rect
+     x="6.783"
+     y="141.379"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#87a524;filter:url(#posterize-filter-0)"
+     id="rect36"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="6.783"
+     y="147.496"
+     width="4.7670002"
+     height="4.7719998"
+     id="rect38"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)"
+     style="filter:url(#posterize-filter-0)" />
+  <rect
+     x="12.894"
+     y="159.73199"
+     width="4.7670002"
+     height="4.7719998"
+     id="rect40"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)"
+     style="filter:url(#posterize-filter-0)" />
+  <rect
+     x="19.006001"
+     y="43.495998"
+     width="4.7670002"
+     height="4.7719998"
+     id="rect42"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)"
+     style="filter:url(#posterize-filter-0)" />
+  <rect
+     x="31.228001"
+     y="31.261"
+     width="4.7670002"
+     height="4.7719998"
+     id="rect44"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)"
+     style="filter:url(#posterize-filter-0)" />
+  <rect
+     x="31.228001"
+     y="110.791"
+     width="4.7670002"
+     height="4.7719998"
+     id="rect46"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)"
+     style="filter:url(#posterize-filter-0)" />
+  <rect
+     x="31.228001"
+     y="116.908"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#87a524;filter:url(#posterize-filter-0)"
+     id="rect48"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="37.339001"
+     y="25.143999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a3c23f;filter:url(#posterize-filter-0)"
+     id="rect50"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="37.339001"
+     y="92.438004"
+     width="4.7670002"
+     height="4.7719998"
+     id="rect52"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)"
+     style="filter:url(#posterize-filter-0)" />
+  <rect
+     x="37.339001"
+     y="98.555"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8ba928;filter:url(#posterize-filter-0)"
+     id="rect54"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="37.339001"
+     y="104.673"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8ba928;filter:url(#posterize-filter-0)"
+     id="rect56"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="37.339001"
+     y="110.791"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8ba927;filter:url(#posterize-filter-0)"
+     id="rect58"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="37.339001"
+     y="116.908"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8aa827;filter:url(#posterize-filter-0)"
+     id="rect60"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="37.339001"
+     y="123.026"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#89a826;filter:url(#posterize-filter-0)"
+     id="rect62"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="37.339001"
+     y="129.144"
+     width="4.7670002"
+     height="4.7719998"
+     id="rect64"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)"
+     style="filter:url(#posterize-filter-0)" />
+  <rect
+     x="43.450001"
+     y="19.025999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#adcc48;filter:url(#posterize-filter-0)"
+     id="rect66"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="43.450001"
+     y="86.32"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8eac2a;filter:url(#posterize-filter-0)"
+     id="rect68"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="43.450001"
+     y="92.438004"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8eac2b;filter:url(#posterize-filter-0)"
+     id="rect70"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="43.450001"
+     y="98.555"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8ead2b;filter:url(#posterize-filter-0)"
+     id="rect72"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="43.450001"
+     y="104.673"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8eac2b;filter:url(#posterize-filter-0)"
+     id="rect74"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="43.450001"
+     y="110.791"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8eac2b;filter:url(#posterize-filter-0)"
+     id="rect76"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="43.450001"
+     y="116.908"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8eac2a;filter:url(#posterize-filter-0)"
+     id="rect78"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="43.450001"
+     y="123.026"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8dab2a;filter:url(#posterize-filter-0)"
+     id="rect80"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="43.450001"
+     y="129.144"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8ba928;filter:url(#posterize-filter-0)"
+     id="rect82"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="43.450001"
+     y="135.261"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8aa827;filter:url(#posterize-filter-0)"
+     id="rect84"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="49.561001"
+     y="12.908"
+     width="4.7670002"
+     height="4.7719998"
+     id="rect86"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)"
+     style="filter:url(#posterize-filter-0)" />
+  <rect
+     x="49.561001"
+     y="80.202003"
+     width="4.7670002"
+     height="4.7719998"
+     id="rect88"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)"
+     style="filter:url(#posterize-filter-0)" />
+  <rect
+     x="49.561001"
+     y="86.32"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#91af2d;filter:url(#posterize-filter-0)"
+     id="rect90"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="49.561001"
+     y="92.438004"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#91b02e;filter:url(#posterize-filter-0)"
+     id="rect92"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="49.561001"
+     y="98.555"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#92b02e;filter:url(#posterize-filter-0)"
+     id="rect94"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="49.561001"
+     y="104.673"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#92b02e;filter:url(#posterize-filter-0)"
+     id="rect96"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="49.561001"
+     y="110.791"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#91af2e;filter:url(#posterize-filter-0)"
+     id="rect98"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="49.561001"
+     y="116.908"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#91af2d;filter:url(#posterize-filter-0)"
+     id="rect100"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="49.561001"
+     y="123.026"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#90ae2c;filter:url(#posterize-filter-0)"
+     id="rect102"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="49.561001"
+     y="129.144"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8eac2b;filter:url(#posterize-filter-0)"
+     id="rect104"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="49.561001"
+     y="135.261"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8dab2a;filter:url(#posterize-filter-0)"
+     id="rect106"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="55.672001"
+     y="19.025999"
+     width="4.7670002"
+     height="4.7719998"
+     id="rect108"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)"
+     style="filter:url(#posterize-filter-0)" />
+  <rect
+     x="55.672001"
+     y="67.967003"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#90ae2d;filter:url(#posterize-filter-0)"
+     id="rect110"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="55.672001"
+     y="80.202003"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#93b230;filter:url(#posterize-filter-0)"
+     id="rect112"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="55.672001"
+     y="86.32"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#94b331;filter:url(#posterize-filter-0)"
+     id="rect114"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="55.672001"
+     y="92.438004"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#95b331;filter:url(#posterize-filter-0)"
+     id="rect116"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="55.672001"
+     y="98.555"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#95b331;filter:url(#posterize-filter-0)"
+     id="rect118"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="55.672001"
+     y="104.673"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#95b331;filter:url(#posterize-filter-0)"
+     id="rect120"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="55.672001"
+     y="110.791"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#95b331;filter:url(#posterize-filter-0)"
+     id="rect122"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="55.672001"
+     y="116.908"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#94b230;filter:url(#posterize-filter-0)"
+     id="rect124"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="55.672001"
+     y="123.026"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#93b230;filter:url(#posterize-filter-0)"
+     id="rect126"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="55.672001"
+     y="129.144"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#92b02e;filter:url(#posterize-filter-0)"
+     id="rect128"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="55.672001"
+     y="135.261"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#90ae2c;filter:url(#posterize-filter-0)"
+     id="rect130"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="61.783001"
+     y="6.7909999"
+     width="4.7670002"
+     height="4.7719998"
+     id="rect132"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)"
+     style="filter:url(#posterize-filter-0)" />
+  <rect
+     x="61.783001"
+     y="12.908"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9fbe3b;filter:url(#posterize-filter-0)"
+     id="rect134"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="61.783001"
+     y="55.731998"
+     width="4.7670002"
+     height="4.7719998"
+     id="rect136"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)"
+     style="filter:url(#posterize-filter-0)" />
+  <rect
+     x="61.783001"
+     y="61.848999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#91b02e;filter:url(#posterize-filter-0)"
+     id="rect138"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="61.783001"
+     y="67.967003"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#93b230;filter:url(#posterize-filter-0)"
+     id="rect140"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="61.783001"
+     y="74.084999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#95b331;filter:url(#posterize-filter-0)"
+     id="rect142"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="61.783001"
+     y="80.202003"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#97b533;filter:url(#posterize-filter-0)"
+     id="rect144"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="61.783001"
+     y="86.32"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#97b633;filter:url(#posterize-filter-0)"
+     id="rect146"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="61.783001"
+     y="92.438004"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#98b634;filter:url(#posterize-filter-0)"
+     id="rect148"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="61.783001"
+     y="98.555"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#98b734;filter:url(#posterize-filter-0)"
+     id="rect150"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="61.783001"
+     y="104.673"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#98b734;filter:url(#posterize-filter-0)"
+     id="rect152"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="61.783001"
+     y="110.791"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#98b634;filter:url(#posterize-filter-0)"
+     id="rect154"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="61.783001"
+     y="116.908"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#97b633;filter:url(#posterize-filter-0)"
+     id="rect156"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="61.783001"
+     y="123.026"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#96b532;filter:url(#posterize-filter-0)"
+     id="rect158"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="61.783001"
+     y="129.144"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#94b331;filter:url(#posterize-filter-0)"
+     id="rect160"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="61.783001"
+     y="135.261"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#93b12f;filter:url(#posterize-filter-0)"
+     id="rect162"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="67.893997"
+     y="12.908"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#adcc48;filter:url(#posterize-filter-0)"
+     id="rect164"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="67.893997"
+     y="37.379002"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#accb47;filter:url(#posterize-filter-0)"
+     id="rect166"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="67.893997"
+     y="61.848999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#94b331;filter:url(#posterize-filter-0)"
+     id="rect168"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="67.893997"
+     y="67.967003"
+     width="4.7670002"
+     height="4.7719998"
+     id="rect170"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)"
+     style="filter:url(#posterize-filter-0)" />
+  <rect
+     x="67.893997"
+     y="74.084999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#98b634;filter:url(#posterize-filter-0)"
+     id="rect172"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="67.893997"
+     y="80.202003"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9ab836;filter:url(#posterize-filter-0)"
+     id="rect174"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="67.893997"
+     y="86.32"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9bb937;filter:url(#posterize-filter-0)"
+     id="rect176"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="67.893997"
+     y="92.438004"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9bba37;filter:url(#posterize-filter-0)"
+     id="rect178"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="67.893997"
+     y="98.555"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9cba38;filter:url(#posterize-filter-0)"
+     id="rect180"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="67.893997"
+     y="104.673"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9cba38;filter:url(#posterize-filter-0)"
+     id="rect182"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="67.893997"
+     y="110.791"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9bba37;filter:url(#posterize-filter-0)"
+     id="rect184"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="67.893997"
+     y="116.908"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9bb936;filter:url(#posterize-filter-0)"
+     id="rect186"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="67.893997"
+     y="123.026"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9ab836;filter:url(#posterize-filter-0)"
+     id="rect188"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="67.893997"
+     y="129.144"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#98b634;filter:url(#posterize-filter-0)"
+     id="rect190"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="67.893997"
+     y="135.261"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#96b432;filter:url(#posterize-filter-0)"
+     id="rect192"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="74.005997"
+     y="6.7909999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#b2d04c;filter:url(#posterize-filter-0)"
+     id="rect194"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="74.005997"
+     y="12.908"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#b6d550;filter:url(#posterize-filter-0)"
+     id="rect196"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="74.005997"
+     y="19.025999"
+     width="4.7670002"
+     height="4.7719998"
+     id="rect198"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)"
+     style="filter:url(#posterize-filter-0)" />
+  <rect
+     x="74.005997"
+     y="43.495998"
+     width="4.7670002"
+     height="4.7719998"
+     id="rect200"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)"
+     style="filter:url(#posterize-filter-0)" />
+  <rect
+     x="74.005997"
+     y="49.613998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#92b12f;filter:url(#posterize-filter-0)"
+     id="rect202"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="74.005997"
+     y="55.731998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#95b331;filter:url(#posterize-filter-0)"
+     id="rect204"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="74.005997"
+     y="61.848999"
+     width="4.7670002"
+     height="4.7719998"
+     id="rect206"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)"
+     style="filter:url(#posterize-filter-0)" />
+  <rect
+     x="74.005997"
+     y="74.084999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9bb936;filter:url(#posterize-filter-0)"
+     id="rect208"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="74.005997"
+     y="80.202003"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9dbb39;filter:url(#posterize-filter-0)"
+     id="rect210"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="74.005997"
+     y="86.32"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9ebc3a;filter:url(#posterize-filter-0)"
+     id="rect212"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="74.005997"
+     y="92.438004"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9fbd3a;filter:url(#posterize-filter-0)"
+     id="rect214"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="74.005997"
+     y="98.555"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9fbd3b;filter:url(#posterize-filter-0)"
+     id="rect216"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="74.005997"
+     y="104.673"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9fbe3b;filter:url(#posterize-filter-0)"
+     id="rect218"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="74.005997"
+     y="110.791"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9fbd3a;filter:url(#posterize-filter-0)"
+     id="rect220"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="74.005997"
+     y="116.908"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9ebc3a;filter:url(#posterize-filter-0)"
+     id="rect222"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="74.005997"
+     y="123.026"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9dbb38;filter:url(#posterize-filter-0)"
+     id="rect224"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="74.005997"
+     y="129.144"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9ab936;filter:url(#posterize-filter-0)"
+     id="rect226"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="74.005997"
+     y="135.261"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#99b735;filter:url(#posterize-filter-0)"
+     id="rect228"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="74.005997"
+     y="141.379"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#97b533;filter:url(#posterize-filter-0)"
+     id="rect230"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="80.116997"
+     y="0.67299998"
+     width="4.7670002"
+     height="4.7719998"
+     id="rect232"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)"
+     style="filter:url(#posterize-filter-0)" />
+  <rect
+     x="80.116997"
+     y="6.7909999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a6c441;filter:url(#posterize-filter-0)"
+     id="rect234"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="80.116997"
+     y="43.495998"
+     width="4.7670002"
+     height="4.7719998"
+     id="rect236"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)"
+     style="filter:url(#posterize-filter-0)" />
+  <rect
+     x="80.116997"
+     y="49.613998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#96b432;filter:url(#posterize-filter-0)"
+     id="rect238"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="80.116997"
+     y="55.731998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#98b734;filter:url(#posterize-filter-0)"
+     id="rect240"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="80.116997"
+     y="74.084999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9fbd3b;filter:url(#posterize-filter-0)"
+     id="rect242"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="80.116997"
+     y="80.202003"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a0bf3c;filter:url(#posterize-filter-0)"
+     id="rect244"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="80.116997"
+     y="86.32"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a2c03d;filter:url(#posterize-filter-0)"
+     id="rect246"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="80.116997"
+     y="92.438004"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a2c13e;filter:url(#posterize-filter-0)"
+     id="rect248"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="80.116997"
+     y="98.555"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a3c13e;filter:url(#posterize-filter-0)"
+     id="rect250"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="80.116997"
+     y="104.673"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a3c13e;filter:url(#posterize-filter-0)"
+     id="rect252"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="80.116997"
+     y="110.791"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a2c13e;filter:url(#posterize-filter-0)"
+     id="rect254"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="80.116997"
+     y="116.908"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a1c03d;filter:url(#posterize-filter-0)"
+     id="rect256"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="80.116997"
+     y="123.026"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a0bf3c;filter:url(#posterize-filter-0)"
+     id="rect258"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="80.116997"
+     y="129.144"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9fbd3a;filter:url(#posterize-filter-0)"
+     id="rect260"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="80.116997"
+     y="135.261"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9dbb38;filter:url(#posterize-filter-0)"
+     id="rect262"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="80.116997"
+     y="141.379"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9bb936;filter:url(#posterize-filter-0)"
+     id="rect264"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="80.116997"
+     y="147.496"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#98b634;filter:url(#posterize-filter-0)"
+     id="rect266"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="80.116997"
+     y="153.614"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#96b432;filter:url(#posterize-filter-0)"
+     id="rect268"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="86.227997"
+     y="0.67299998"
+     width="4.7670002"
+     height="4.7719998"
+     id="rect270"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)"
+     style="filter:url(#posterize-filter-0)" />
+  <rect
+     x="86.227997"
+     y="6.7909999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#98b634;filter:url(#posterize-filter-0)"
+     id="rect272"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="86.227997"
+     y="43.495998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#95b432;filter:url(#posterize-filter-0)"
+     id="rect274"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="86.227997"
+     y="49.613998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#98b634;filter:url(#posterize-filter-0)"
+     id="rect276"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="86.227997"
+     y="55.731998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9bb937;filter:url(#posterize-filter-0)"
+     id="rect278"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="86.227997"
+     y="80.202003"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a3c23f;filter:url(#posterize-filter-0)"
+     id="rect280"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="86.227997"
+     y="86.32"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a5c340;filter:url(#posterize-filter-0)"
+     id="rect282"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="86.227997"
+     y="92.438004"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a6c441;filter:url(#posterize-filter-0)"
+     id="rect284"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="86.227997"
+     y="98.555"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a6c541;filter:url(#posterize-filter-0)"
+     id="rect286"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="86.227997"
+     y="104.673"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a6c541;filter:url(#posterize-filter-0)"
+     id="rect288"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="86.227997"
+     y="110.791"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a5c441;filter:url(#posterize-filter-0)"
+     id="rect290"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="86.227997"
+     y="116.908"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a4c340;filter:url(#posterize-filter-0)"
+     id="rect292"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="86.227997"
+     y="123.026"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a3c13e;filter:url(#posterize-filter-0)"
+     id="rect294"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="86.227997"
+     y="129.144"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a1c03d;filter:url(#posterize-filter-0)"
+     id="rect296"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="86.227997"
+     y="135.261"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9fbe3b;filter:url(#posterize-filter-0)"
+     id="rect298"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="86.227997"
+     y="141.379"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9dbb38;filter:url(#posterize-filter-0)"
+     id="rect300"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="86.227997"
+     y="147.496"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9ab936;filter:url(#posterize-filter-0)"
+     id="rect302"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="86.227997"
+     y="153.614"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#98b634;filter:url(#posterize-filter-0)"
+     id="rect304"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="86.227997"
+     y="159.73199"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#95b331;filter:url(#posterize-filter-0)"
+     id="rect306"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="86.227997"
+     y="165.849"
+     width="4.7670002"
+     height="4.7719998"
+     id="rect308"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)"
+     style="filter:url(#posterize-filter-0)" />
+  <rect
+     x="92.338997"
+     y="25.143999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8eac2b;filter:url(#posterize-filter-0)"
+     id="rect310"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="92.338997"
+     y="31.261"
+     width="4.7670002"
+     height="4.7719998"
+     id="rect312"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)"
+     style="filter:url(#posterize-filter-0)" />
+  <rect
+     x="92.338997"
+     y="43.495998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#97b533;filter:url(#posterize-filter-0)"
+     id="rect314"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="92.338997"
+     y="49.613998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9ab836;filter:url(#posterize-filter-0)"
+     id="rect316"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="92.338997"
+     y="55.731998"
+     width="4.7670002"
+     height="4.7719998"
+     id="rect318"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)"
+     style="filter:url(#posterize-filter-0)" />
+  <rect
+     x="92.338997"
+     y="61.848999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9fbe3b;filter:url(#posterize-filter-0)"
+     id="rect320"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="92.338997"
+     y="86.32"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a8c643;filter:url(#posterize-filter-0)"
+     id="rect322"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="92.338997"
+     y="92.438004"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a9c744;filter:url(#posterize-filter-0)"
+     id="rect324"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="92.338997"
+     y="98.555"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#aac845;filter:url(#posterize-filter-0)"
+     id="rect326"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="92.338997"
+     y="104.673"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a9c844;filter:url(#posterize-filter-0)"
+     id="rect328"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="92.338997"
+     y="110.791"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a9c744;filter:url(#posterize-filter-0)"
+     id="rect330"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="92.338997"
+     y="116.908"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a7c643;filter:url(#posterize-filter-0)"
+     id="rect332"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="92.338997"
+     y="123.026"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a6c441;filter:url(#posterize-filter-0)"
+     id="rect334"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="92.338997"
+     y="129.144"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a4c33f;filter:url(#posterize-filter-0)"
+     id="rect336"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="92.338997"
+     y="135.261"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a1c03d;filter:url(#posterize-filter-0)"
+     id="rect338"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="92.338997"
+     y="141.379"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9fbe3b;filter:url(#posterize-filter-0)"
+     id="rect340"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="92.338997"
+     y="147.496"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9cbb38;filter:url(#posterize-filter-0)"
+     id="rect342"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="92.338997"
+     y="153.614"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9ab836;filter:url(#posterize-filter-0)"
+     id="rect344"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="92.338997"
+     y="159.73199"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#97b533;filter:url(#posterize-filter-0)"
+     id="rect346"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="92.338997"
+     y="165.849"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#94b230;filter:url(#posterize-filter-0)"
+     id="rect348"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="92.338997"
+     y="171.967"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#91af2d;filter:url(#posterize-filter-0)"
+     id="rect350"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="92.338997"
+     y="178.08501"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8eac2a;filter:url(#posterize-filter-0)"
+     id="rect352"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="92.338997"
+     y="184.202"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#89a726;filter:url(#posterize-filter-0)"
+     id="rect354"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="92.338997"
+     y="190.32001"
+     width="4.7670002"
+     height="4.7719998"
+     id="rect356"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)"
+     style="filter:url(#posterize-filter-0)" />
+  <rect
+     x="98.449997"
+     y="19.025999"
+     width="4.7670002"
+     height="4.7719998"
+     id="rect358"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)"
+     style="filter:url(#posterize-filter-0)" />
+  <rect
+     x="98.449997"
+     y="25.143999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8fad2c;filter:url(#posterize-filter-0)"
+     id="rect360"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="98.449997"
+     y="31.261"
+     width="4.7670002"
+     height="4.7719998"
+     id="rect362"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)"
+     style="filter:url(#posterize-filter-0)" />
+  <rect
+     x="98.449997"
+     y="37.379002"
+     width="4.7670002"
+     height="4.7719998"
+     id="rect364"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)"
+     style="filter:url(#posterize-filter-0)" />
+  <rect
+     x="98.449997"
+     y="43.495998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#98b735;filter:url(#posterize-filter-0)"
+     id="rect366"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="98.449997"
+     y="49.613998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9bba37;filter:url(#posterize-filter-0)"
+     id="rect368"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="98.449997"
+     y="55.731998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9ebd3a;filter:url(#posterize-filter-0)"
+     id="rect370"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="98.449997"
+     y="86.32"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#abc946;filter:url(#posterize-filter-0)"
+     id="rect372"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="98.449997"
+     y="92.438004"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#accb47;filter:url(#posterize-filter-0)"
+     id="rect374"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="98.449997"
+     y="98.555"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#adcb47;filter:url(#posterize-filter-0)"
+     id="rect376"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="98.449997"
+     y="104.673"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#adcb48;filter:url(#posterize-filter-0)"
+     id="rect378"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="98.449997"
+     y="110.791"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#accb47;filter:url(#posterize-filter-0)"
+     id="rect380"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="98.449997"
+     y="116.908"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#aac945;filter:url(#posterize-filter-0)"
+     id="rect382"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="98.449997"
+     y="123.026"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a8c743;filter:url(#posterize-filter-0)"
+     id="rect384"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="98.449997"
+     y="129.144"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a6c541;filter:url(#posterize-filter-0)"
+     id="rect386"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="98.449997"
+     y="135.261"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a4c23f;filter:url(#posterize-filter-0)"
+     id="rect388"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="98.449997"
+     y="141.379"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a1bf3c;filter:url(#posterize-filter-0)"
+     id="rect390"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="98.449997"
+     y="147.496"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9ebc3a;filter:url(#posterize-filter-0)"
+     id="rect392"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="98.449997"
+     y="153.614"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9bb937;filter:url(#posterize-filter-0)"
+     id="rect394"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="98.449997"
+     y="159.73199"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#98b634;filter:url(#posterize-filter-0)"
+     id="rect396"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="98.449997"
+     y="165.849"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#95b331;filter:url(#posterize-filter-0)"
+     id="rect398"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="98.449997"
+     y="171.967"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#92b02e;filter:url(#posterize-filter-0)"
+     id="rect400"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="98.449997"
+     y="178.08501"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8fad2b;filter:url(#posterize-filter-0)"
+     id="rect402"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="98.449997"
+     y="184.202"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8aa927;filter:url(#posterize-filter-0)"
+     id="rect404"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="98.449997"
+     y="190.32001"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#87a524;filter:url(#posterize-filter-0)"
+     id="rect406"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="98.449997"
+     y="196.438"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#87a524;filter:url(#posterize-filter-0)"
+     id="rect408"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="104.561"
+     y="6.7909999"
+     width="4.7670002"
+     height="4.7719998"
+     id="rect410"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)"
+     style="filter:url(#posterize-filter-0)" />
+  <rect
+     x="104.561"
+     y="19.025999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8caa29;filter:url(#posterize-filter-0)"
+     id="rect412"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="104.561"
+     y="25.143999"
+     width="4.7670002"
+     height="4.7719998"
+     id="rect414"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)"
+     style="filter:url(#posterize-filter-0)" />
+  <rect
+     x="104.561"
+     y="37.379002"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#97b533;filter:url(#posterize-filter-0)"
+     id="rect416"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="104.561"
+     y="43.495998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9ab836;filter:url(#posterize-filter-0)"
+     id="rect418"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="104.561"
+     y="49.613998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9dbb39;filter:url(#posterize-filter-0)"
+     id="rect420"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="104.561"
+     y="55.731998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a0be3b;filter:url(#posterize-filter-0)"
+     id="rect422"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="104.561"
+     y="61.848999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a3c23e;filter:url(#posterize-filter-0)"
+     id="rect424"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="104.561"
+     y="67.967003"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a6c441;filter:url(#posterize-filter-0)"
+     id="rect426"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="104.561"
+     y="80.202003"
+     width="4.7670002"
+     height="4.7719998"
+     id="rect428"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)"
+     style="filter:url(#posterize-filter-0)" />
+  <rect
+     x="104.561"
+     y="86.32"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#aecc48;filter:url(#posterize-filter-0)"
+     id="rect430"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="104.561"
+     y="92.438004"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#afce4a;filter:url(#posterize-filter-0)"
+     id="rect432"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="104.561"
+     y="98.555"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#b0cf4b;filter:url(#posterize-filter-0)"
+     id="rect434"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="104.561"
+     y="104.673"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#b0cf4b;filter:url(#posterize-filter-0)"
+     id="rect436"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="104.561"
+     y="110.791"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#afce4a;filter:url(#posterize-filter-0)"
+     id="rect438"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="104.561"
+     y="116.908"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#adcc48;filter:url(#posterize-filter-0)"
+     id="rect440"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="104.561"
+     y="123.026"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#abca46;filter:url(#posterize-filter-0)"
+     id="rect442"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="104.561"
+     y="129.144"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a8c744;filter:url(#posterize-filter-0)"
+     id="rect444"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="104.561"
+     y="135.261"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a5c441;filter:url(#posterize-filter-0)"
+     id="rect446"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="104.561"
+     y="141.379"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a3c13e;filter:url(#posterize-filter-0)"
+     id="rect448"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="104.561"
+     y="147.496"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9fbe3b;filter:url(#posterize-filter-0)"
+     id="rect450"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="104.561"
+     y="153.614"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9cbb38;filter:url(#posterize-filter-0)"
+     id="rect452"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="104.561"
+     y="159.73199"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#99b835;filter:url(#posterize-filter-0)"
+     id="rect454"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="104.561"
+     y="165.849"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#96b432;filter:url(#posterize-filter-0)"
+     id="rect456"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="104.561"
+     y="171.967"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#93b12f;filter:url(#posterize-filter-0)"
+     id="rect458"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="104.561"
+     y="178.08501"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#90ae2c;filter:url(#posterize-filter-0)"
+     id="rect460"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="104.561"
+     y="184.202"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8ba928;filter:url(#posterize-filter-0)"
+     id="rect462"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="104.561"
+     y="190.32001"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#88a625;filter:url(#posterize-filter-0)"
+     id="rect464"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="104.561"
+     y="196.438"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#87a524;filter:url(#posterize-filter-0)"
+     id="rect466"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="104.561"
+     y="202.55499"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#87a524;filter:url(#posterize-filter-0)"
+     id="rect468"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="110.672"
+     y="19.025999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8caa29;filter:url(#posterize-filter-0)"
+     id="rect470"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="110.672"
+     y="25.143999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#91af2d;filter:url(#posterize-filter-0)"
+     id="rect472"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="110.672"
+     y="31.261"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#94b230;filter:url(#posterize-filter-0)"
+     id="rect474"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="110.672"
+     y="37.379002"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#97b633;filter:url(#posterize-filter-0)"
+     id="rect476"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="110.672"
+     y="43.495998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9bb937;filter:url(#posterize-filter-0)"
+     id="rect478"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="110.672"
+     y="49.613998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9ebc39;filter:url(#posterize-filter-0)"
+     id="rect480"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="110.672"
+     y="55.731998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a1c03d;filter:url(#posterize-filter-0)"
+     id="rect482"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="110.672"
+     y="61.848999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a4c33f;filter:url(#posterize-filter-0)"
+     id="rect484"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="110.672"
+     y="86.32"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#b0cf4b;filter:url(#posterize-filter-0)"
+     id="rect486"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="110.672"
+     y="92.438004"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#b2d14d;filter:url(#posterize-filter-0)"
+     id="rect488"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="110.672"
+     y="98.555"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#b3d24e;filter:url(#posterize-filter-0)"
+     id="rect490"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="110.672"
+     y="104.673"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#b3d24e;filter:url(#posterize-filter-0)"
+     id="rect492"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="110.672"
+     y="110.791"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#b2d14c;filter:url(#posterize-filter-0)"
+     id="rect494"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="110.672"
+     y="116.908"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#b0ce4a;filter:url(#posterize-filter-0)"
+     id="rect496"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="110.672"
+     y="123.026"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#adcc48;filter:url(#posterize-filter-0)"
+     id="rect498"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="110.672"
+     y="129.144"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#aac945;filter:url(#posterize-filter-0)"
+     id="rect500"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="110.672"
+     y="135.261"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a7c642;filter:url(#posterize-filter-0)"
+     id="rect502"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="110.672"
+     y="141.379"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a4c23f;filter:url(#posterize-filter-0)"
+     id="rect504"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="110.672"
+     y="147.496"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a1bf3c;filter:url(#posterize-filter-0)"
+     id="rect506"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="110.672"
+     y="153.614"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9dbc39;filter:url(#posterize-filter-0)"
+     id="rect508"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="110.672"
+     y="159.73199"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9ab936;filter:url(#posterize-filter-0)"
+     id="rect510"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="110.672"
+     y="165.849"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#97b533;filter:url(#posterize-filter-0)"
+     id="rect512"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="110.672"
+     y="171.967"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#94b230;filter:url(#posterize-filter-0)"
+     id="rect514"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="110.672"
+     y="178.08501"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#90ae2d;filter:url(#posterize-filter-0)"
+     id="rect516"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="110.672"
+     y="184.202"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8caa29;filter:url(#posterize-filter-0)"
+     id="rect518"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="110.672"
+     y="190.32001"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#89a725;filter:url(#posterize-filter-0)"
+     id="rect520"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="110.672"
+     y="196.438"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#87a524;filter:url(#posterize-filter-0)"
+     id="rect522"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="110.672"
+     y="202.55499"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#87a524;filter:url(#posterize-filter-0)"
+     id="rect524"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="116.783"
+     y="19.025999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8dab2a;filter:url(#posterize-filter-0)"
+     id="rect526"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="116.783"
+     y="25.143999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#91b02e;filter:url(#posterize-filter-0)"
+     id="rect528"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="116.783"
+     y="31.261"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#95b331;filter:url(#posterize-filter-0)"
+     id="rect530"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="116.783"
+     y="37.379002"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#98b634;filter:url(#posterize-filter-0)"
+     id="rect532"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="116.783"
+     y="43.495998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9bba37;filter:url(#posterize-filter-0)"
+     id="rect534"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="116.783"
+     y="49.613998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9fbd3a;filter:url(#posterize-filter-0)"
+     id="rect536"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="116.783"
+     y="55.731998"
+     width="4.7670002"
+     height="4.7719998"
+     id="rect538"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)"
+     style="filter:url(#posterize-filter-0)" />
+  <rect
+     x="116.783"
+     y="67.967003"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a8c743;filter:url(#posterize-filter-0)"
+     id="rect540"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="116.783"
+     y="86.32"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#b2d14d;filter:url(#posterize-filter-0)"
+     id="rect542"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="116.783"
+     y="92.438004"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#b5d44f;filter:url(#posterize-filter-0)"
+     id="rect544"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="116.783"
+     y="98.555"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#b7d651;filter:url(#posterize-filter-0)"
+     id="rect546"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="116.783"
+     y="104.673"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#b6d551;filter:url(#posterize-filter-0)"
+     id="rect548"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="116.783"
+     y="110.791"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#b4d34f;filter:url(#posterize-filter-0)"
+     id="rect550"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="116.783"
+     y="116.908"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#b1d04c;filter:url(#posterize-filter-0)"
+     id="rect552"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="116.783"
+     y="123.026"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#aecd49;filter:url(#posterize-filter-0)"
+     id="rect554"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="116.783"
+     y="129.144"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#abca46;filter:url(#posterize-filter-0)"
+     id="rect556"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="116.783"
+     y="135.261"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a8c643;filter:url(#posterize-filter-0)"
+     id="rect558"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="116.783"
+     y="141.379"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a5c340;filter:url(#posterize-filter-0)"
+     id="rect560"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="116.783"
+     y="147.496"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a1c03d;filter:url(#posterize-filter-0)"
+     id="rect562"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="116.783"
+     y="153.614"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9ebd3a;filter:url(#posterize-filter-0)"
+     id="rect564"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="116.783"
+     y="159.73199"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9bb937;filter:url(#posterize-filter-0)"
+     id="rect566"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="116.783"
+     y="165.849"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#97b634;filter:url(#posterize-filter-0)"
+     id="rect568"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="116.783"
+     y="171.967"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#94b230;filter:url(#posterize-filter-0)"
+     id="rect570"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="116.783"
+     y="178.08501"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#91af2d;filter:url(#posterize-filter-0)"
+     id="rect572"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="116.783"
+     y="184.202"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8caa29;filter:url(#posterize-filter-0)"
+     id="rect574"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="116.783"
+     y="190.32001"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#89a726;filter:url(#posterize-filter-0)"
+     id="rect576"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="116.783"
+     y="196.438"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#87a524;filter:url(#posterize-filter-0)"
+     id="rect578"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="116.783"
+     y="202.55499"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#87a524;filter:url(#posterize-filter-0)"
+     id="rect580"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="122.894"
+     y="6.7909999"
+     width="4.7670002"
+     height="4.7719998"
+     id="rect582"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)"
+     style="filter:url(#posterize-filter-0)" />
+  <rect
+     x="122.894"
+     y="19.025999"
+     width="4.7670002"
+     height="4.7719998"
+     id="rect584"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)"
+     style="filter:url(#posterize-filter-0)" />
+  <rect
+     x="122.894"
+     y="25.143999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#91b02e;filter:url(#posterize-filter-0)"
+     id="rect586"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="122.894"
+     y="31.261"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#95b331;filter:url(#posterize-filter-0)"
+     id="rect588"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="122.894"
+     y="37.379002"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#98b634;filter:url(#posterize-filter-0)"
+     id="rect590"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="122.894"
+     y="43.495998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9bba37;filter:url(#posterize-filter-0)"
+     id="rect592"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="122.894"
+     y="49.613998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9fbd3a;filter:url(#posterize-filter-0)"
+     id="rect594"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="122.894"
+     y="55.731998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a2c13e;filter:url(#posterize-filter-0)"
+     id="rect596"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="122.894"
+     y="61.848999"
+     width="4.7670002"
+     height="4.7719998"
+     id="rect598"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)"
+     style="filter:url(#posterize-filter-0)" />
+  <rect
+     x="122.894"
+     y="67.967003"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a9c744;filter:url(#posterize-filter-0)"
+     id="rect600"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="122.894"
+     y="86.32"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#b3d24d;filter:url(#posterize-filter-0)"
+     id="rect602"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="122.894"
+     y="92.438004"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#b6d550;filter:url(#posterize-filter-0)"
+     id="rect604"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="122.894"
+     y="98.555"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#b9d853;filter:url(#posterize-filter-0)"
+     id="rect606"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="122.894"
+     y="104.673"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#b9d853;filter:url(#posterize-filter-0)"
+     id="rect608"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="122.894"
+     y="110.791"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#b6d450;filter:url(#posterize-filter-0)"
+     id="rect610"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="122.894"
+     y="116.908"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#b2d14d;filter:url(#posterize-filter-0)"
+     id="rect612"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="122.894"
+     y="123.026"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#afce4a;filter:url(#posterize-filter-0)"
+     id="rect614"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="122.894"
+     y="129.144"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#acca46;filter:url(#posterize-filter-0)"
+     id="rect616"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="122.894"
+     y="135.261"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a8c743;filter:url(#posterize-filter-0)"
+     id="rect618"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="122.894"
+     y="141.379"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a5c340;filter:url(#posterize-filter-0)"
+     id="rect620"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="122.894"
+     y="147.496"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a2c03d;filter:url(#posterize-filter-0)"
+     id="rect622"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="122.894"
+     y="153.614"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9ebd3a;filter:url(#posterize-filter-0)"
+     id="rect624"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="122.894"
+     y="159.73199"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9bb937;filter:url(#posterize-filter-0)"
+     id="rect626"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="122.894"
+     y="165.849"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#98b634;filter:url(#posterize-filter-0)"
+     id="rect628"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="122.894"
+     y="171.967"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#94b331;filter:url(#posterize-filter-0)"
+     id="rect630"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="122.894"
+     y="178.08501"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#91af2d;filter:url(#posterize-filter-0)"
+     id="rect632"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="122.894"
+     y="184.202"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8dab29;filter:url(#posterize-filter-0)"
+     id="rect634"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="122.894"
+     y="190.32001"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#89a726;filter:url(#posterize-filter-0)"
+     id="rect636"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="122.894"
+     y="196.438"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#87a524;filter:url(#posterize-filter-0)"
+     id="rect638"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="129.006"
+     y="19.025999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8dab2a;filter:url(#posterize-filter-0)"
+     id="rect640"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="129.006"
+     y="25.143999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#91b02e;filter:url(#posterize-filter-0)"
+     id="rect642"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="129.006"
+     y="31.261"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#95b331;filter:url(#posterize-filter-0)"
+     id="rect644"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="129.006"
+     y="37.379002"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#98b634;filter:url(#posterize-filter-0)"
+     id="rect646"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="129.006"
+     y="43.495998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9bba37;filter:url(#posterize-filter-0)"
+     id="rect648"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="129.006"
+     y="49.613998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9fbd3a;filter:url(#posterize-filter-0)"
+     id="rect650"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="129.006"
+     y="61.848999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a5c441;filter:url(#posterize-filter-0)"
+     id="rect652"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="129.006"
+     y="67.967003"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a9c744;filter:url(#posterize-filter-0)"
+     id="rect654"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="129.006"
+     y="80.202003"
+     width="4.7670002"
+     height="4.7719998"
+     id="rect656"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)"
+     style="filter:url(#posterize-filter-0)" />
+  <rect
+     x="129.006"
+     y="86.32"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#b3d14d;filter:url(#posterize-filter-0)"
+     id="rect658"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="129.006"
+     y="92.438004"
+     width="4.7670002"
+     height="4.7719998"
+     id="rect660"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)"
+     style="filter:url(#posterize-filter-0)" />
+  <rect
+     x="129.006"
+     y="98.555"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#b8d752;filter:url(#posterize-filter-0)"
+     id="rect662"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="129.006"
+     y="104.673"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#b8d752;filter:url(#posterize-filter-0)"
+     id="rect664"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="129.006"
+     y="110.791"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#b5d450;filter:url(#posterize-filter-0)"
+     id="rect666"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="129.006"
+     y="116.908"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#b2d14d;filter:url(#posterize-filter-0)"
+     id="rect668"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="129.006"
+     y="123.026"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#afce4a;filter:url(#posterize-filter-0)"
+     id="rect670"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="129.006"
+     y="129.144"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#acca46;filter:url(#posterize-filter-0)"
+     id="rect672"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="129.006"
+     y="135.261"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a8c743;filter:url(#posterize-filter-0)"
+     id="rect674"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="129.006"
+     y="141.379"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a5c340;filter:url(#posterize-filter-0)"
+     id="rect676"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="129.006"
+     y="147.496"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a1c03d;filter:url(#posterize-filter-0)"
+     id="rect678"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="129.006"
+     y="153.614"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9ebd3a;filter:url(#posterize-filter-0)"
+     id="rect680"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="129.006"
+     y="159.73199"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9bb937;filter:url(#posterize-filter-0)"
+     id="rect682"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="129.006"
+     y="165.849"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#98b634;filter:url(#posterize-filter-0)"
+     id="rect684"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="129.006"
+     y="171.967"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#94b230;filter:url(#posterize-filter-0)"
+     id="rect686"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="129.006"
+     y="178.08501"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#91af2d;filter:url(#posterize-filter-0)"
+     id="rect688"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="129.006"
+     y="184.202"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8cab29;filter:url(#posterize-filter-0)"
+     id="rect690"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="129.006"
+     y="190.32001"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#89a726;filter:url(#posterize-filter-0)"
+     id="rect692"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="135.117"
+     y="0.67299998"
+     width="4.7670002"
+     height="4.7719998"
+     id="rect694"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)"
+     style="filter:url(#posterize-filter-0)" />
+  <rect
+     x="135.117"
+     y="6.7909999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#87a524;filter:url(#posterize-filter-0)"
+     id="rect696"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="135.117"
+     y="12.908"
+     width="4.7670002"
+     height="4.7719998"
+     id="rect698"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)"
+     style="filter:url(#posterize-filter-0)" />
+  <rect
+     x="135.117"
+     y="19.025999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8dab29;filter:url(#posterize-filter-0)"
+     id="rect700"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="135.117"
+     y="25.143999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#91af2d;filter:url(#posterize-filter-0)"
+     id="rect702"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="135.117"
+     y="31.261"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#94b331;filter:url(#posterize-filter-0)"
+     id="rect704"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="135.117"
+     y="37.379002"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#98b634;filter:url(#posterize-filter-0)"
+     id="rect706"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="135.117"
+     y="43.495998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9bb937;filter:url(#posterize-filter-0)"
+     id="rect708"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="135.117"
+     y="49.613998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9ebd3a;filter:url(#posterize-filter-0)"
+     id="rect710"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="135.117"
+     y="55.731998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a1c03d;filter:url(#posterize-filter-0)"
+     id="rect712"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="135.117"
+     y="61.848999"
+     width="4.7670002"
+     height="4.7719998"
+     id="rect714"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)"
+     style="filter:url(#posterize-filter-0)" />
+  <rect
+     x="135.117"
+     y="67.967003"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a8c743;filter:url(#posterize-filter-0)"
+     id="rect716"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="135.117"
+     y="74.084999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#abca46;filter:url(#posterize-filter-0)"
+     id="rect718"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="135.117"
+     y="80.202003"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#aecd49;filter:url(#posterize-filter-0)"
+     id="rect720"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="135.117"
+     y="86.32"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#b1d04b;filter:url(#posterize-filter-0)"
+     id="rect722"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="135.117"
+     y="92.438004"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#b3d24e;filter:url(#posterize-filter-0)"
+     id="rect724"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="135.117"
+     y="104.673"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#b5d44f;filter:url(#posterize-filter-0)"
+     id="rect726"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="135.117"
+     y="110.791"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#b3d24d;filter:url(#posterize-filter-0)"
+     id="rect728"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="135.117"
+     y="116.908"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#b1cf4b;filter:url(#posterize-filter-0)"
+     id="rect730"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="135.117"
+     y="123.026"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#aecc48;filter:url(#posterize-filter-0)"
+     id="rect732"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="135.117"
+     y="129.144"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#aac945;filter:url(#posterize-filter-0)"
+     id="rect734"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="135.117"
+     y="135.261"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a7c643;filter:url(#posterize-filter-0)"
+     id="rect736"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="135.117"
+     y="141.379"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a4c33f;filter:url(#posterize-filter-0)"
+     id="rect738"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="135.117"
+     y="147.496"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a1bf3d;filter:url(#posterize-filter-0)"
+     id="rect740"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="135.117"
+     y="153.614"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9ebc39;filter:url(#posterize-filter-0)"
+     id="rect742"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="135.117"
+     y="159.73199"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9ab936;filter:url(#posterize-filter-0)"
+     id="rect744"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="135.117"
+     y="165.849"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#97b533;filter:url(#posterize-filter-0)"
+     id="rect746"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="135.117"
+     y="171.967"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#94b230;filter:url(#posterize-filter-0)"
+     id="rect748"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="135.117"
+     y="178.08501"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#90af2d;filter:url(#posterize-filter-0)"
+     id="rect750"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="135.117"
+     y="184.202"
+     width="4.7670002"
+     height="4.7719998"
+     id="rect752"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)"
+     style="filter:url(#posterize-filter-0)" />
+  <rect
+     x="141.228"
+     y="6.7909999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#87a524;filter:url(#posterize-filter-0)"
+     id="rect754"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="141.228"
+     y="12.908"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#89a726;filter:url(#posterize-filter-0)"
+     id="rect756"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="141.228"
+     y="19.025999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8caa29;filter:url(#posterize-filter-0)"
+     id="rect758"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="141.228"
+     y="25.143999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8fae2c;filter:url(#posterize-filter-0)"
+     id="rect760"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="141.228"
+     y="31.261"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#93b12f;filter:url(#posterize-filter-0)"
+     id="rect762"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="141.228"
+     y="37.379002"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#96b432;filter:url(#posterize-filter-0)"
+     id="rect764"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="141.228"
+     y="43.495998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#99b835;filter:url(#posterize-filter-0)"
+     id="rect766"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="141.228"
+     y="49.613998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9cbb38;filter:url(#posterize-filter-0)"
+     id="rect768"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="141.228"
+     y="55.731998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a0be3b;filter:url(#posterize-filter-0)"
+     id="rect770"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="141.228"
+     y="61.848999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a3c13e;filter:url(#posterize-filter-0)"
+     id="rect772"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="141.228"
+     y="67.967003"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a6c441;filter:url(#posterize-filter-0)"
+     id="rect774"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="141.228"
+     y="74.084999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a8c743;filter:url(#posterize-filter-0)"
+     id="rect776"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="141.228"
+     y="80.202003"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#accb47;filter:url(#posterize-filter-0)"
+     id="rect778"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="141.228"
+     y="86.32"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#aecd49;filter:url(#posterize-filter-0)"
+     id="rect780"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="141.228"
+     y="92.438004"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#b0cf4b;filter:url(#posterize-filter-0)"
+     id="rect782"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="141.228"
+     y="98.555"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#b1d04c;filter:url(#posterize-filter-0)"
+     id="rect784"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="141.228"
+     y="104.673"
+     width="4.7670002"
+     height="4.7719998"
+     id="rect786"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)"
+     style="filter:url(#posterize-filter-0)" />
+  <rect
+     x="141.228"
+     y="116.908"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#aecd49;filter:url(#posterize-filter-0)"
+     id="rect788"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="141.228"
+     y="123.026"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#acca47;filter:url(#posterize-filter-0)"
+     id="rect790"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="141.228"
+     y="129.144"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a8c743;filter:url(#posterize-filter-0)"
+     id="rect792"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="141.228"
+     y="135.261"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a5c440;filter:url(#posterize-filter-0)"
+     id="rect794"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="141.228"
+     y="141.379"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a2c13d;filter:url(#posterize-filter-0)"
+     id="rect796"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="141.228"
+     y="147.496"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9fbe3b;filter:url(#posterize-filter-0)"
+     id="rect798"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="141.228"
+     y="153.614"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9cba38;filter:url(#posterize-filter-0)"
+     id="rect800"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="141.228"
+     y="159.73199"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#99b735;filter:url(#posterize-filter-0)"
+     id="rect802"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="141.228"
+     y="165.849"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#95b432;filter:url(#posterize-filter-0)"
+     id="rect804"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="141.228"
+     y="171.967"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#92b12f;filter:url(#posterize-filter-0)"
+     id="rect806"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="141.228"
+     y="178.08501"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8fad2b;filter:url(#posterize-filter-0)"
+     id="rect808"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="147.339"
+     y="6.7909999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#87a524;filter:url(#posterize-filter-0)"
+     id="rect810"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="147.339"
+     y="12.908"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#88a625;filter:url(#posterize-filter-0)"
+     id="rect812"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="147.339"
+     y="19.025999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8caa28;filter:url(#posterize-filter-0)"
+     id="rect814"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="147.339"
+     y="25.143999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8fad2b;filter:url(#posterize-filter-0)"
+     id="rect816"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="147.339"
+     y="31.261"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#92b02e;filter:url(#posterize-filter-0)"
+     id="rect818"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="147.339"
+     y="37.379002"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#95b331;filter:url(#posterize-filter-0)"
+     id="rect820"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="147.339"
+     y="43.495998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#98b634;filter:url(#posterize-filter-0)"
+     id="rect822"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="147.339"
+     y="49.613998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9bba37;filter:url(#posterize-filter-0)"
+     id="rect824"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="147.339"
+     y="55.731998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9ebd3a;filter:url(#posterize-filter-0)"
+     id="rect826"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="147.339"
+     y="61.848999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a1c03d;filter:url(#posterize-filter-0)"
+     id="rect828"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="147.339"
+     y="67.967003"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a4c23f;filter:url(#posterize-filter-0)"
+     id="rect830"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="147.339"
+     y="74.084999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a7c542;filter:url(#posterize-filter-0)"
+     id="rect832"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="147.339"
+     y="80.202003"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#aac845;filter:url(#posterize-filter-0)"
+     id="rect834"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="147.339"
+     y="86.32"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#accb47;filter:url(#posterize-filter-0)"
+     id="rect836"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="147.339"
+     y="92.438004"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#adcc48;filter:url(#posterize-filter-0)"
+     id="rect838"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="147.339"
+     y="98.555"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#aecd49;filter:url(#posterize-filter-0)"
+     id="rect840"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="147.339"
+     y="104.673"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#aecd49;filter:url(#posterize-filter-0)"
+     id="rect842"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="147.339"
+     y="110.791"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#adcc48;filter:url(#posterize-filter-0)"
+     id="rect844"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="147.339"
+     y="123.026"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#aac845;filter:url(#posterize-filter-0)"
+     id="rect846"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="147.339"
+     y="129.144"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a6c541;filter:url(#posterize-filter-0)"
+     id="rect848"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="147.339"
+     y="135.261"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a3c23f;filter:url(#posterize-filter-0)"
+     id="rect850"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="147.339"
+     y="141.379"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a1bf3c;filter:url(#posterize-filter-0)"
+     id="rect852"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="147.339"
+     y="147.496"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9ebc39;filter:url(#posterize-filter-0)"
+     id="rect854"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="147.339"
+     y="153.614"
+     width="4.7670002"
+     height="4.7719998"
+     id="rect856"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)"
+     style="filter:url(#posterize-filter-0)" />
+  <rect
+     x="153.45"
+     y="6.7909999"
+     width="4.7670002"
+     height="4.7719998"
+     id="rect858"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)"
+     style="filter:url(#posterize-filter-0)" />
+  <rect
+     x="153.45"
+     y="12.908"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#87a524;filter:url(#posterize-filter-0)"
+     id="rect860"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="153.45"
+     y="19.025999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8aa827;filter:url(#posterize-filter-0)"
+     id="rect862"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="153.45"
+     y="25.143999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8dac2a;filter:url(#posterize-filter-0)"
+     id="rect864"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="153.45"
+     y="31.261"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#91af2d;filter:url(#posterize-filter-0)"
+     id="rect866"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="153.45"
+     y="37.379002"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#94b230;filter:url(#posterize-filter-0)"
+     id="rect868"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="153.45"
+     y="43.495998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#97b533;filter:url(#posterize-filter-0)"
+     id="rect870"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="153.45"
+     y="49.613998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9ab835;filter:url(#posterize-filter-0)"
+     id="rect872"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="153.45"
+     y="55.731998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9dbb38;filter:url(#posterize-filter-0)"
+     id="rect874"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="153.45"
+     y="61.848999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9fbe3b;filter:url(#posterize-filter-0)"
+     id="rect876"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="153.45"
+     y="67.967003"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a2c03d;filter:url(#posterize-filter-0)"
+     id="rect878"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="153.45"
+     y="74.084999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a4c33f;filter:url(#posterize-filter-0)"
+     id="rect880"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="153.45"
+     y="80.202003"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a7c642;filter:url(#posterize-filter-0)"
+     id="rect882"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="153.45"
+     y="86.32"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a9c744;filter:url(#posterize-filter-0)"
+     id="rect884"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="153.45"
+     y="92.438004"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#aac945;filter:url(#posterize-filter-0)"
+     id="rect886"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="153.45"
+     y="98.555"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#abc946;filter:url(#posterize-filter-0)"
+     id="rect888"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="153.45"
+     y="104.673"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#abc946;filter:url(#posterize-filter-0)"
+     id="rect890"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="153.45"
+     y="110.791"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#aac845;filter:url(#posterize-filter-0)"
+     id="rect892"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="153.45"
+     y="116.908"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a9c744;filter:url(#posterize-filter-0)"
+     id="rect894"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="153.45"
+     y="129.144"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a4c23f;filter:url(#posterize-filter-0)"
+     id="rect896"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="153.45"
+     y="135.261"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a1c03d;filter:url(#posterize-filter-0)"
+     id="rect898"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="153.45"
+     y="141.379"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9fbd3a;filter:url(#posterize-filter-0)"
+     id="rect900"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="153.45"
+     y="178.08501"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a8c743;filter:url(#posterize-filter-0)"
+     id="rect902"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="153.45"
+     y="184.202"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#94b331;filter:url(#posterize-filter-0)"
+     id="rect904"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="159.561"
+     y="12.908"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#87a524;filter:url(#posterize-filter-0)"
+     id="rect906"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="159.561"
+     y="19.025999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#89a726;filter:url(#posterize-filter-0)"
+     id="rect908"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="159.561"
+     y="25.143999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8caa29;filter:url(#posterize-filter-0)"
+     id="rect910"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="159.561"
+     y="31.261"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8fad2c;filter:url(#posterize-filter-0)"
+     id="rect912"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="159.561"
+     y="37.379002"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#92b02f;filter:url(#posterize-filter-0)"
+     id="rect914"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="159.561"
+     y="43.495998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#95b331;filter:url(#posterize-filter-0)"
+     id="rect916"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="159.561"
+     y="49.613998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#98b634;filter:url(#posterize-filter-0)"
+     id="rect918"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="159.561"
+     y="55.731998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9ab936;filter:url(#posterize-filter-0)"
+     id="rect920"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="159.561"
+     y="61.848999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9dbc39;filter:url(#posterize-filter-0)"
+     id="rect922"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="159.561"
+     y="67.967003"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9fbe3b;filter:url(#posterize-filter-0)"
+     id="rect924"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="159.561"
+     y="74.084999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a2c03d;filter:url(#posterize-filter-0)"
+     id="rect926"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="159.561"
+     y="80.202003"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a4c340;filter:url(#posterize-filter-0)"
+     id="rect928"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="159.561"
+     y="92.438004"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a7c542;filter:url(#posterize-filter-0)"
+     id="rect930"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="159.561"
+     y="98.555"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a7c643;filter:url(#posterize-filter-0)"
+     id="rect932"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="159.561"
+     y="104.673"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a7c642;filter:url(#posterize-filter-0)"
+     id="rect934"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="159.561"
+     y="110.791"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a7c542;filter:url(#posterize-filter-0)"
+     id="rect936"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="159.561"
+     y="116.908"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a6c441;filter:url(#posterize-filter-0)"
+     id="rect938"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="159.561"
+     y="129.144"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a1c03d;filter:url(#posterize-filter-0)"
+     id="rect940"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="159.561"
+     y="135.261"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9fbe3b;filter:url(#posterize-filter-0)"
+     id="rect942"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="159.561"
+     y="171.967"
+     width="4.7670002"
+     height="4.7719998"
+     id="rect944"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)"
+     style="filter:url(#posterize-filter-0)" />
+  <rect
+     x="159.561"
+     y="178.08501"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9ebd3a;filter:url(#posterize-filter-0)"
+     id="rect946"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="165.672"
+     y="19.025999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#88a625;filter:url(#posterize-filter-0)"
+     id="rect948"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="165.672"
+     y="25.143999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8ba927;filter:url(#posterize-filter-0)"
+     id="rect950"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="165.672"
+     y="31.261"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8eac2a;filter:url(#posterize-filter-0)"
+     id="rect952"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="165.672"
+     y="37.379002"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#90af2d;filter:url(#posterize-filter-0)"
+     id="rect954"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="165.672"
+     y="43.495998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#93b12f;filter:url(#posterize-filter-0)"
+     id="rect956"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="165.672"
+     y="49.613998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#96b432;filter:url(#posterize-filter-0)"
+     id="rect958"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="165.672"
+     y="55.731998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#98b734;filter:url(#posterize-filter-0)"
+     id="rect960"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="165.672"
+     y="61.848999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9bb936;filter:url(#posterize-filter-0)"
+     id="rect962"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="165.672"
+     y="67.967003"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9dbb39;filter:url(#posterize-filter-0)"
+     id="rect964"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="165.672"
+     y="74.084999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9fbd3a;filter:url(#posterize-filter-0)"
+     id="rect966"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="165.672"
+     y="80.202003"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a1c03d;filter:url(#posterize-filter-0)"
+     id="rect968"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="165.672"
+     y="86.32"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a3c13e;filter:url(#posterize-filter-0)"
+     id="rect970"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="165.672"
+     y="92.438004"
+     width="4.7670002"
+     height="4.7719998"
+     id="rect972"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)"
+     style="filter:url(#posterize-filter-0)" />
+  <rect
+     x="165.672"
+     y="98.555"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a4c23f;filter:url(#posterize-filter-0)"
+     id="rect974"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="165.672"
+     y="104.673"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a4c33f;filter:url(#posterize-filter-0)"
+     id="rect976"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="165.672"
+     y="110.791"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a3c23f;filter:url(#posterize-filter-0)"
+     id="rect978"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="165.672"
+     y="123.026"
+     width="4.7670002"
+     height="4.7719998"
+     id="rect980"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)"
+     style="filter:url(#posterize-filter-0)" />
+  <rect
+     x="171.783"
+     y="19.025999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#87a524;filter:url(#posterize-filter-0)"
+     id="rect982"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="171.783"
+     y="25.143999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#89a726;filter:url(#posterize-filter-0)"
+     id="rect984"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="171.783"
+     y="31.261"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8caa28;filter:url(#posterize-filter-0)"
+     id="rect986"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="171.783"
+     y="37.379002"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8fad2b;filter:url(#posterize-filter-0)"
+     id="rect988"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="171.783"
+     y="43.495998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#91af2d;filter:url(#posterize-filter-0)"
+     id="rect990"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="171.783"
+     y="49.613998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#94b230;filter:url(#posterize-filter-0)"
+     id="rect992"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="171.783"
+     y="55.731998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#96b432;filter:url(#posterize-filter-0)"
+     id="rect994"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="171.783"
+     y="61.848999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#98b734;filter:url(#posterize-filter-0)"
+     id="rect996"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="171.783"
+     y="67.967003"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9ab936;filter:url(#posterize-filter-0)"
+     id="rect998"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="171.783"
+     y="74.084999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9cbb38;filter:url(#posterize-filter-0)"
+     id="rect1000"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="171.783"
+     y="80.202003"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9ebd3a;filter:url(#posterize-filter-0)"
+     id="rect1002"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="171.783"
+     y="86.32"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a0be3b;filter:url(#posterize-filter-0)"
+     id="rect1004"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="171.783"
+     y="92.438004"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a0bf3c;filter:url(#posterize-filter-0)"
+     id="rect1006"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="171.783"
+     y="98.555"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a1bf3c;filter:url(#posterize-filter-0)"
+     id="rect1008"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="171.783"
+     y="104.673"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#a1bf3c;filter:url(#posterize-filter-0)"
+     id="rect1010"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="177.894"
+     y="25.143999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#87a524;filter:url(#posterize-filter-0)"
+     id="rect1012"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="177.894"
+     y="31.261"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8aa827;filter:url(#posterize-filter-0)"
+     id="rect1014"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="177.894"
+     y="37.379002"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8caa29;filter:url(#posterize-filter-0)"
+     id="rect1016"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="177.894"
+     y="43.495998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8fad2b;filter:url(#posterize-filter-0)"
+     id="rect1018"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="177.894"
+     y="49.613998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#91af2e;filter:url(#posterize-filter-0)"
+     id="rect1020"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="177.894"
+     y="55.731998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#94b230;filter:url(#posterize-filter-0)"
+     id="rect1022"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="177.894"
+     y="61.848999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#95b432;filter:url(#posterize-filter-0)"
+     id="rect1024"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="177.894"
+     y="67.967003"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#97b634;filter:url(#posterize-filter-0)"
+     id="rect1026"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="177.894"
+     y="74.084999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#99b735;filter:url(#posterize-filter-0)"
+     id="rect1028"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="177.894"
+     y="80.202003"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9bba37;filter:url(#posterize-filter-0)"
+     id="rect1030"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="177.894"
+     y="86.32"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#9cbb38;filter:url(#posterize-filter-0)"
+     id="rect1032"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="184.006"
+     y="31.261"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#88a625;filter:url(#posterize-filter-0)"
+     id="rect1034"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="184.006"
+     y="37.379002"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8aa827;filter:url(#posterize-filter-0)"
+     id="rect1036"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="184.006"
+     y="43.495998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8dab29;filter:url(#posterize-filter-0)"
+     id="rect1038"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="184.006"
+     y="49.613998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8fad2b;filter:url(#posterize-filter-0)"
+     id="rect1040"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="184.006"
+     y="55.731998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#91af2d;filter:url(#posterize-filter-0)"
+     id="rect1042"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="184.006"
+     y="61.848999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#93b12f;filter:url(#posterize-filter-0)"
+     id="rect1044"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="184.006"
+     y="67.967003"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#95b331;filter:url(#posterize-filter-0)"
+     id="rect1046"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="184.006"
+     y="74.084999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#96b432;filter:url(#posterize-filter-0)"
+     id="rect1048"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="184.006"
+     y="80.202003"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#98b634;filter:url(#posterize-filter-0)"
+     id="rect1050"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="190.117"
+     y="37.379002"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#88a625;filter:url(#posterize-filter-0)"
+     id="rect1052"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="190.117"
+     y="43.495998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8aa827;filter:url(#posterize-filter-0)"
+     id="rect1054"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="190.117"
+     y="49.613998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8caa29;filter:url(#posterize-filter-0)"
+     id="rect1056"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="190.117"
+     y="55.731998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8eac2b;filter:url(#posterize-filter-0)"
+     id="rect1058"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="190.117"
+     y="61.848999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#90ae2c;filter:url(#posterize-filter-0)"
+     id="rect1060"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="190.117"
+     y="67.967003"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#92b02e;filter:url(#posterize-filter-0)"
+     id="rect1062"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="190.117"
+     y="74.084999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#93b12f;filter:url(#posterize-filter-0)"
+     id="rect1064"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="190.117"
+     y="80.202003"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#95b331;filter:url(#posterize-filter-0)"
+     id="rect1066"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="190.117"
+     y="86.32"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#96b432;filter:url(#posterize-filter-0)"
+     id="rect1068"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="196.228"
+     y="43.495998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#88a625;filter:url(#posterize-filter-0)"
+     id="rect1070"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="196.228"
+     y="49.613998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8aa827;filter:url(#posterize-filter-0)"
+     id="rect1072"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="196.228"
+     y="55.731998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8caa28;filter:url(#posterize-filter-0)"
+     id="rect1074"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="196.228"
+     y="61.848999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8dac2a;filter:url(#posterize-filter-0)"
+     id="rect1076"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="196.228"
+     y="67.967003"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8fad2b;filter:url(#posterize-filter-0)"
+     id="rect1078"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="196.228"
+     y="74.084999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#90ae2d;filter:url(#posterize-filter-0)"
+     id="rect1080"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="196.228"
+     y="80.202003"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#91af2d;filter:url(#posterize-filter-0)"
+     id="rect1082"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="196.228"
+     y="86.32"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#92b02e;filter:url(#posterize-filter-0)"
+     id="rect1084"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="196.228"
+     y="92.438004"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#92b02e;filter:url(#posterize-filter-0)"
+     id="rect1086"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="196.228"
+     y="98.555"
+     width="4.7670002"
+     height="4.7719998"
+     id="rect1088"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)"
+     style="filter:url(#posterize-filter-0)" />
+  <rect
+     x="202.339"
+     y="55.731998"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#89a726;filter:url(#posterize-filter-0)"
+     id="rect1090"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="202.339"
+     y="61.848999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8aa827;filter:url(#posterize-filter-0)"
+     id="rect1092"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="202.339"
+     y="67.967003"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8caa29;filter:url(#posterize-filter-0)"
+     id="rect1094"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="202.339"
+     y="74.084999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8dab2a;filter:url(#posterize-filter-0)"
+     id="rect1096"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="202.339"
+     y="80.202003"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8eac2a;filter:url(#posterize-filter-0)"
+     id="rect1098"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="202.339"
+     y="86.32"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8eac2b;filter:url(#posterize-filter-0)"
+     id="rect1100"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="202.339"
+     y="92.438004"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8fad2b;filter:url(#posterize-filter-0)"
+     id="rect1102"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="202.339"
+     y="98.555"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8fad2c;filter:url(#posterize-filter-0)"
+     id="rect1104"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="202.339"
+     y="104.673"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8fad2c;filter:url(#posterize-filter-0)"
+     id="rect1106"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="202.339"
+     y="110.791"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8fad2b;filter:url(#posterize-filter-0)"
+     id="rect1108"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="208.45"
+     y="67.967003"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#89a726;filter:url(#posterize-filter-0)"
+     id="rect1110"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="208.45"
+     y="74.084999"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#8aa827;filter:url(#posterize-filter-0)"
+     id="rect1112"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <rect
+     x="214.561"
+     y="86.32"
+     width="4.7670002"
+     height="4.7719998"
+     style="fill:#88a625;filter:url(#posterize-filter-0)"
+     id="rect1114"
+     transform="matrix(1.000705,0,0,0.997959,14.922451,21.21227)" />
+  <text
+     style="font-weight:700;font-size:105px;font-family:RobotoBold;white-space:pre;fill:#9bc456;filter:url(#contrast-filter-0)"
+     x="248.28"
+     y="160.92599"
+     id="text1120">GeoVista</text>
+  <path
+     style="fill:#d8d8d8;stroke:#000000"
+     d="M 299.693,26.867"
+     id="path1122" />
+</svg>

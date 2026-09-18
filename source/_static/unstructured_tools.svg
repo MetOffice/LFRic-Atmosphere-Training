@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="title desc">
+  <title id="title">Unstructured tools</title>
+  <desc id="desc">Met Office and IRIS box at the top with three supporting tool cards underneath and connector arrows.</desc>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2f4963"/>
+    </marker>
+    <style>
+      .panel { fill: #f7f7f7; stroke: #9ae66e; stroke-width: 3; }
+      .card { fill: #ffffff; stroke: rgba(0,0,0,0.18); stroke-width: 1.2; }
+      .arrow { fill: none; stroke: #2f4963; stroke-width: 3; marker-end: url(#arrowhead); }
+      .metoffice-bg { fill: #000000; }
+    </style>
+  </defs>
+
+  <rect class="panel" x="20" y="20" width="910" height="260" rx="16"/>
+
+  <rect class="metoffice-bg" x="40" y="40" width="180" height="82" rx="8"/>
+  <image href="./logos/MO_MASTER_for_dark_backg_RBG.png" x="52" y="52" width="156" height="58" preserveAspectRatio="xMidYMid meet"/>
+
+  <rect class="card" x="275" y="40" width="170" height="90" rx="10"/>
+  <image href="./logos/iris-logo-title.svg" x="291" y="53" width="138" height="64" preserveAspectRatio="xMidYMid meet"/>
+
+  <path class="arrow" d="M 360 130 C 300 135, 220 120, 165 120"/>
+  <path class="arrow" d="M 360 130 C 360 135, 390 120, 430 120"/>
+  <path class="arrow" d="M 360 130 C 420 135, 560 120, 695 120"/>
+
+  <rect class="card" x="90" y="170" width="170" height="90" rx="10"/>
+  <image href="./logos/cartopy.png" x="122" y="188" width="106" height="52" preserveAspectRatio="xMidYMid meet"/>
+
+  <rect class="card" x="355" y="170" width="170" height="90" rx="10"/>
+  <image href="./logos/iris-esmf.svg" x="387" y="188" width="106" height="52" preserveAspectRatio="xMidYMid meet"/>
+
+  <rect class="card" x="620" y="170" width="170" height="90" rx="10"/>
+  <image href="./logos/geovistalogo2.svg" x="647" y="187" width="116" height="56" preserveAspectRatio="xMidYMid meet"/>
+</svg>
