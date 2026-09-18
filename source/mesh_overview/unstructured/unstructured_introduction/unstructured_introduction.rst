@@ -256,7 +256,7 @@ in the manipulation of unstructured data formats, such as UGRID.
 
 .. _fig-mesh-unstructured-tools:
 
-.. figure:: /_static/unstructured_tools.png
+.. figure:: /_static/unstructured_tools.svg
    :width: 650px
    :alt: unstructured data tools
 
