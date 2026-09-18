@@ -45,12 +45,7 @@ RAL4
 These are among the first Science Configurations to use LFRic Atmosphere within
 the Momentum Framework.
 
-.. _fig-intro-components:
+Key functional components needed to build prediction and projection systems
+with the Momentum Framework:
 
-.. figure:: /_static/1/intro_components.png
-   :width: 650px
-   :alt: Components of prediction and projection systems
-
-   Key functional components needed to build prediction and projection systems
-   with the Momentum Framework.
-
+.. include:: /_static/1/intro_components.html
