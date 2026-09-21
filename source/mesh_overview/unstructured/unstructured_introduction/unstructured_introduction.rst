@@ -130,7 +130,7 @@ The two figures below contrast the structures of grids and meshes.
       .. figure:: /_static/meshes.svg
          :alt: unstructured mesh elements
 
-         Unstructured m`esh elements (faces, nodes and edges)
+         Unstructured mesh elements (faces, nodes and edges)
 
 
 Managing unstructured data
