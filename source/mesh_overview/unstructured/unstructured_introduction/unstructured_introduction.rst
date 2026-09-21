@@ -156,8 +156,8 @@ million data points are required to represent the same space.
    * - Geospatial Data
      - | Points: 4,480
        | Bounds: 8,960
-     - | Points: 9,800,000
-       | Node connectivity: 19,700,000
+     - | Nodes: 9,800,000
+       | Face-node connectivity: 19,700,000
        | Face centre: 9,800,000
    * - Geospatial total
      - 13,400
