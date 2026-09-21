@@ -60,9 +60,9 @@ UGRID description of unstructured data
 .. figure:: /_static/data_on_faces.svg
    :align: right
    :width: 50%
-   :alt: UGRID mesh elements showing data stored on edges
+   :alt: UGRID mesh elements showing data stored on faces
 
-   UGRID mesh elements showing data stored on edges
+   UGRID mesh elements showing data stored on faces
 
 .. _fig-mesh-ugrid-elements-nodes:
 
