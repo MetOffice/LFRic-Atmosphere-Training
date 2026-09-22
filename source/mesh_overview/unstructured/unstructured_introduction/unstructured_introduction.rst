@@ -54,14 +54,24 @@ unstructured meshes.
 
 UGRID description of unstructured data
 --------------------------------------
-.. _fig-mesh-ugrid-elements:
 
-.. figure:: /_static/mesh1.png
+.. _fig-mesh-ugrid-elements-faces:
+
+.. figure:: /_static/data_on_faces.svg
    :align: right
-   :width: 160px
-   :alt: UGRID mesh elements
+   :width: 50%
+   :alt: UGRID mesh elements showing data stored on faces
 
-   UGRID mesh elements: nodes, edges, and faces
+   UGRID mesh elements showing data stored on faces
+
+.. _fig-mesh-ugrid-elements-nodes:
+
+.. figure:: /_static/data_on_nodes.svg
+   :align: right
+   :width: 50%
+   :alt: UGRID mesh elements showing data stored on nodes
+
+   UGRID mesh elements showing data stored on nodes
 
 The UGRID format is more flexible than structured grids because the nodes,
 edges, and faces do not need to align with predefined grid lines, such as
@@ -100,14 +110,27 @@ certain elements (e.g., a line). However, this efficiency comes at the cost of
 flexibility, as the structured approach is less adaptable to complex
 geometries.
 
-.. _fig-mesh-structured-vs-unstructured:
+The two figures below contrast the structures of grids and meshes.
 
-.. figure:: /_static/mesh2.png
-   :width: 650px
-   :alt: structured vs unstructured mesh elements
+.. grid::
 
-   Comparison of structured grid elements (points and bounds) versus
-   unstructured mesh elements (faces, nodes, edges, etc.).
+   .. grid-item::
+
+      .. _fig-mesh-structured:
+
+      .. figure:: /_static/grids.svg
+         :alt: structured grid elements
+
+         Structured grid elements (points and bounds)
+
+   .. grid-item::
+
+      .. _fig-mesh-unstructured:
+
+      .. figure:: /_static/meshes.svg
+         :alt: unstructured mesh elements
+
+         Unstructured mesh elements (faces, nodes and edges)
 
 
 Managing unstructured data
@@ -119,15 +142,26 @@ layer. In the case of the Unified Model (UM) on the left, 13,400 data points
 unstructured case, because everything is described individually, around 40
 million data points are required to represent the same space.
 
+.. list-table:: Comparison of data volume between structured grid and
+   unstructured mesh for representing the same space.
+   :widths: 30 35 35
+   :header-rows: 1
 
-.. _fig-mesh-data-volume:
-
-.. figure:: /_static/mesh3.png
-   :width: 650px
-   :alt: structured vs unstructured data volume
-
-   Comparison of data volume between structured grid (right) and unstructured
-   mesh (left) for representing the same space.
+   * -
+     - Structured grid (UM 2560 × 1920)
+     - Unstructured mesh (LFRic C905)
+   * - Data points
+     - 4,900,000
+     - 4,900,000
+   * - Geospatial Data
+     - | Points: 4,480
+       | Bounds: 8,960
+     - | Nodes: 9,800,000
+       | Face-node connectivity: 19,700,000
+       | Face centre: 9,800,000
+   * - Geospatial total
+     - 13,400
+     - 39,300,000
 
 Flexibility vs. data volume
 +++++++++++++++++++++++++++
@@ -245,7 +279,7 @@ in the manipulation of unstructured data formats, such as UGRID.
 
 .. _fig-mesh-unstructured-tools:
 
-.. figure:: /_static/unstructured_tools.png
+.. figure:: /_static/unstructured_tools.svg
    :width: 650px
    :alt: unstructured data tools
 

@@ -54,7 +54,7 @@ The diagram below illustrates coupling components in the GC approach.
 
 .. _fig-model-gc-components:
 
-.. figure:: /_static/components.png
+.. figure:: /_static/components.svg
    :width: 650px
    :alt: components in a GC-LFRic configuration
 

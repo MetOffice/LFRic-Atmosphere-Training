@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="688"
+   height="329"
+   viewBox="0 0 688 329"
+   role="img"
+   aria-label="Developing Regional Modelling Systems diagram"
+   version="1.1"
+   id="svg39"
+   sodipodi:docname="develop-regional-models.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview41"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="1.0927052"
+     inkscape:cx="434.24338"
+     inkscape:cy="193.55632"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="0"
+     inkscape:window-y="40"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg39" />
+  <defs
+     id="defs5">
+    <marker
+       id="arrowhead"
+       markerWidth="12"
+       markerHeight="12"
+       refX="9"
+       refY="6"
+       orient="auto">
+      <path
+         d="M0,0 L12,6 L0,12 Z"
+         fill="#0d5d82"
+         id="path2" />
+    </marker>
+    <marker
+       id="arrowhead-3"
+       markerWidth="12"
+       markerHeight="12"
+       refX="9"
+       refY="6"
+       orient="auto">
+      <path
+         d="M 0,0 12,6 0,12 Z"
+         fill="#0d5d82"
+         id="path2-6" />
+    </marker>
+  </defs>
+  <rect
+     width="688"
+     height="329"
+     fill="#ffffff"
+     id="rect7" />
+  <ellipse
+     cx="347.67307"
+     cy="166.28481"
+     rx="331.99518"
+     ry="151.88809"
+     fill="#dfeef4"
+     stroke="#0d5d82"
+     stroke-width="5.91844"
+     id="ellipse9" />
+  <g
+     font-family="Arial, Helvetica, sans-serif"
+     fill="#0d5d82"
+     text-anchor="middle"
+     id="g15"
+     transform="translate(2.7615107,-32.062491)">
+    <text
+       x="344"
+       y="94"
+       font-size="32px"
+       font-weight="500"
+       id="text11">Developing Regional</text>
+    <text
+       x="344"
+       y="142"
+       font-size="42px"
+       font-weight="500"
+       id="text13">Modelling Systems</text>
+  </g>
+  <rect
+     x="60.761509"
+     y="137.93752"
+     width="214"
+     height="90"
+     fill="#0d5d82"
+     id="rect17" />
+  <text
+     x="167.76151"
+     y="175.93752"
+     font-family="Arial, Helvetica, sans-serif"
+     font-size="30px"
+     font-weight="700"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text19">Understand</text>
+  <text
+     x="167.76151"
+     y="209.93752"
+     font-family="Arial, Helvetica, sans-serif"
+     font-size="30px"
+     font-weight="700"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text21">model</text>
+  <rect
+     x="402.76151"
+     y="137.93752"
+     width="244.21591"
+     height="90"
+     fill="#0d5d82"
+     id="rect23"
+     style="stroke-width:1.06827" />
+  <text
+     x="525.76154"
+     y="175.93752"
+     font-family="Arial, Helvetica, sans-serif"
+     font-size="28px"
+     font-weight="700"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text25">Deliver improved</text>
+  <text
+     x="525.76154"
+     y="209.93752"
+     font-family="Arial, Helvetica, sans-serif"
+     font-size="30px"
+     font-weight="700"
+     text-anchor="middle"
+     fill="#ffffff"
+     id="text27">model</text>
+  <g
+     fill="none"
+     stroke="#0d5d82"
+     stroke-width="5"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     id="g33"
+     transform="translate(0.76151069,-32.062491)">
+    <path
+       d="M 278,214 H 386"
+       marker-end="url(#arrowhead)"
+       id="path31" />
+  </g>
+  <g
+     fill="none"
+     stroke="#0d5d82"
+     stroke-width="5"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     id="g33-7"
+     transform="matrix(-0.9999871,-0.00442003,0.00507993,-0.87008469,680.34032,455.03499)">
+    <path
+       d="m 162.87148,261.30682 c 1.00946,-51.2343 79.26381,-89.43228 172.06778,-90.73779 86.44889,-2.61306 116.04155,32.68826 171.17762,75.57725"
+       marker-end="url(#arrowhead-3)"
+       id="path31-5"
+       style="marker-end:url(#arrowhead-3)"
+       sodipodi:nodetypes="ccc" />
+  </g>
+</svg>
