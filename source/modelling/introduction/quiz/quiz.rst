@@ -168,14 +168,3 @@ Quiz: Science Configurations
    > Correct! The development cycle is about 2 years.
    1. [ ] 5 years
    > Try again! The development cycle is shorter than that.
-
-   ## Regional model question placeholder. Maybe add more questions or replace some existing ones.
-   > hint: Write a hint here.
-   1. [x] Option A
-   > Correct! Write feedback here.
-   1. [ ] Option B
-   > Try again! Write feedback here.
-   1. [ ] Option C
-   > Try again! Write feedback here.
-   1. [ ] Option D
-   > Try again! Write feedback here.
