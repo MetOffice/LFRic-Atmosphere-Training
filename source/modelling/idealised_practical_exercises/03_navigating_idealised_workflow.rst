@@ -2,8 +2,8 @@
 Navigating the Idealised Suite
 ******************************
 
-Once you have copied the idealised suite ``u-dz791``, the next step is to
-navigate to your copy and open it using the Rose graphical user interface
+Once you have copied the idealised suite ``|idealised suite|``, the next step
+is to navigate to your copy and open it using the Rose graphical user interface
 (GUI).
 
 Step 1: Navigate to the suite directory
@@ -37,10 +37,10 @@ top-level settings required to run the idealised suite.
 .. figure:: /_static/idealised_top_level_options.png
    :width: 1200px
    :align: center
-   :alt: Top-level options in the idealised suite ``u-dz791``.
+   :alt: Top-level options in the idealised suite ``|idealised suite|``.
 
    Screenshot of the Rose configuration editor showing the top-level options
-   panel of the idealised suite ``u-dz791``.
+   panel of the idealised suite ``|idealised suite|``.
 
 Machine, LFRic version, compilation settings
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
