@@ -5,14 +5,8 @@ Quiz: Idealised Configurations
 .. quizdown::
 
    ---
-   title: Idealised Configuration Quiz
-   description: Test your understanding of idealised applications of LFRic-Atmosphere.
-   shuffle: true
-   show_answers: true
-   show_score: true
-   show_correct_answers: true
-   show_incorrect_answers: true
-   show_question_count: true
+   shuffle_questions: true
+   shuffle_answers: true
    ---
 
    ## What planetary parameters are hard-wired and cannot be changed in LFRic-Atmosphere?

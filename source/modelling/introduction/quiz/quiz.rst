@@ -5,14 +5,8 @@ Quiz: Science Configurations
 .. quizdown::
 
    ---
-   title: Configurations Quiz
-   description: Test your understanding of model configurations.
-   shuffle: true
-   show_answers: true
-   show_score: true
-   show_correct_answers: true
-   show_incorrect_answers: true
-   show_question_count: true
+   shuffle_questions: true
+   shuffle_answers: true
    ---
 
    ## What is a science configuration in the context of Momentum framework?
