@@ -48,7 +48,7 @@ Quiz: Idealised Configurations
    1. [ ] It's ``omega`` in the ``planet`` namelist of course!
    > Try again! There's another parameter that switches rotation on/off.
    1. [ ] The rotation rate is fixed to be that of the modern-day Earth and cannot be changed.
-   > Try again! The rotation rate cn be changed.
+   > Try again! The rotation rate can be changed.
    1. [ ] The parameter is called ``rotation_omega`` and if it's zero the rotation is off.
    > No, the parameter name is wrong, although setting ``omega=0.0`` in ``[namelist:planet]`` is valid.
 

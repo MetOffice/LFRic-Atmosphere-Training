@@ -38,7 +38,7 @@ practical manner.
        > Rows run from West to East, so this is incorrect.
 
    ## Why are structured grids considered intuitive for modelling physical space?
-   1. [x] The physical location on Earth relates directly to the location within the data array on
+   1. [x] The physical location on Earth relates directly to the location within the data array
        > Correct! This is what makes structured grids easy to use.
    1. [ ] They use random placement to approximate locations
        > Random placement is a characteristic of unstructured grids.

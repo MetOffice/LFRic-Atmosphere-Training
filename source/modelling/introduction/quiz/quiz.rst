@@ -65,7 +65,7 @@ Quiz: Science Configurations
    > Try again! GC6 will be the first to use LFRic operationally.
 
    ## What is LFRic named after?
-   > hint: He was a pioneer in weather prediction 1. look for the initials.
+   > hint: He was a pioneer in weather prediction; look for the initials.
    1. [ ] A famous climate model
    > Try again! LFRic is not named after a model.
    1. [ ] Low-Frequency Radiative Instability Code
