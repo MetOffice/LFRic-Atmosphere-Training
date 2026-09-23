@@ -19,12 +19,6 @@ You will learn about the principles of seamless modelling, how prediction
 systems are constructed from reusable scientific components, and the key
 features that distinguish LFRic Atmosphere from earlier modelling systems.
 
-For learners who want more technical detail, the paper `LFRic: Meeting the
-challenges of scalability and performance portability in Weather and Climate
-models <https://www.sciencedirect.com/science/article/pii/S0743731518305306>`_
-gives an overview of the model infrastructure and its scalability goals.
-
-
 .. admonition:: Aims and objectives
 
    By the end of this module, you will be able to:
@@ -53,3 +47,10 @@ gives an overview of the model infrastructure and its scalability goals.
    rivers.rst
    history_context.rst
    quiz.rst
+
+.. seealso::
+
+   For more technical detail, the paper `LFRic: Meeting the challenges of
+   scalability and performance portability in Weather and Climate models
+   <https://www.sciencedirect.com/science/article/pii/S0743731518305306>`_
+   gives an overview of the model infrastructure and its scalability goals.
