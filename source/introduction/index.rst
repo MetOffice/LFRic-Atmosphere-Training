@@ -48,6 +48,9 @@ features that distinguish LFRic Atmosphere from earlier modelling systems.
    history_context.rst
    quiz.rst
 
+Further reading
+===============
+
 .. seealso::
 
    For more technical detail, the paper `LFRic: Meeting the challenges of

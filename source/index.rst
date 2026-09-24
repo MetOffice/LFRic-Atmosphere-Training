@@ -17,14 +17,6 @@ Momentum follows a seamless modelling approach, using the same model components 
 
 **LFRic Atmosphere** is the atmospheric model component of Momentum. It is the successor to the Unified Model. See the `Momentum website <https://www.metoffice.gov.uk/research/approach/modelling-systems/momentum>`_ for information about the other components of the modelling framework.
 
-.. seealso::
-
-   For help, questions, or feedback on the training, please use
-   `GitHub Discussions
-   <https://github.com/MetOffice/LFRic-Atmosphere-Training/discussions>`_.
-   You are welcome to start a discussion without opening an issue or
-   preparing a pull request.
-
 ----------------------
 Who this course is for
 ----------------------
@@ -36,22 +28,16 @@ a Linux terminal and have some experience of Python.
 The course also uses Cylc, Rose, version control (FCM and Git) and Jupyter
 notebooks. You do not need to know these in advance. Where a section relies on
 one of them, we explain what you need and suggest where to find out more.
-Links to introductory material are listed below.
+Links to introductory material are listed under :ref:`further-reading` at
+the end of this page.
 
-.. seealso::
+.. tip::
 
-   - `Cylc tutorial <https://cylc.github.io/cylc-doc/stable/html/tutorial/index.html>`_:
-     Cylc is a workflow engine that runs tasks according to schedules and
-     dependencies.
-   - `Rose tutorial <https://metomi.github.io/rose/doc/html/tutorial/rose/index.html>`_:
-     Rose is a toolkit for writing, editing, and running application
-     configurations.
-   - `FCM user guide <https://metomi.github.io/fcm/doc/user_guide/>`_ and
-     `Git novice lesson <https://www.astropython.com/git-novice/>`_: tools for
-     tracking and managing changes in code.
-   - :ref:`using-jupyter-notebooks`: how to launch JupyterLab, choose the
-     correct kernel, run notebook cells, and find beginner-friendly Python
-     resources.
+   For help, questions, or feedback on the training, please use
+   `GitHub Discussions
+   <https://github.com/MetOffice/LFRic-Atmosphere-Training/discussions>`_.
+   You are welcome to start a discussion without opening an issue or
+   preparing a pull request.
 
 .. _platform-tabs:
 
@@ -106,7 +92,30 @@ Contents of the training course
    appendices/index.rst
    references.rst
 
+.. _further-reading:
+
+---------------
+Further reading
+---------------
+
 .. seealso::
+
+   Introductory material for tools used in the course:
+
+   - `Cylc tutorial <https://cylc.github.io/cylc-doc/stable/html/tutorial/index.html>`_:
+     Cylc is a workflow engine that runs tasks according to schedules and
+     dependencies.
+   - `Rose tutorial <https://metomi.github.io/rose/doc/html/tutorial/rose/index.html>`_:
+     Rose is a toolkit for writing, editing, and running application
+     configurations.
+   - `FCM user guide <https://metomi.github.io/fcm/doc/user_guide/>`_ and
+     `Git novice lesson <https://www.astropython.com/git-novice/>`_: tools for
+     tracking and managing changes in code.
+   - :ref:`using-jupyter-notebooks`: how to launch JupyterLab, choose the
+     correct kernel, run notebook cells, and find beginner-friendly Python
+     resources.
+
+   Background on Momentum:
 
    - `Momentum Partnership <https://www.metoffice.gov.uk/research/approach/collaboration/momentum-partnership>`_
    - `Unified Model <https://www.metoffice.gov.uk/research/approach/modelling-systems/unified-model>`_
