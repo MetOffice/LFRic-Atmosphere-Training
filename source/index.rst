@@ -6,14 +6,22 @@
 Momentum Training - LFRic Atmosphere
 ====================================
 
-**Momentum**:sup:`®` is a software framework for modelling Earth's environment, developed and used by the Momentum Partnership. The framework includes rigorously evaluated Science Configurations, which define how to configure components of the framework to build prediction and projection systems, both regional and global.
+**Momentum**:sup:`®` is a software framework for modelling Earth's environment,
+developed and used by the Momentum Partnership. The framework includes
+rigorously evaluated Science Configurations, which define how to configure
+components of the framework to build prediction and projection systems, both
+regional and global.
 
 .. image:: /_static/momentum_logo.png
    :alt: Momentum: The Unified Earth Environment Prediction Framework
    :align: center
    :width: 400px
 
-Momentum follows a seamless modelling approach, using the same model components across temporal and spatial scales, similar to the Unified Model. The framework includes model components for the atmosphere, land surface, ocean, sea-ice, and other parts of the Earth system. It contains software for data assimilation, verification, and technical tasks like workflow management.
+Momentum follows a seamless modelling approach, using the same model components
+across temporal and spatial scales, similar to the Unified Model. The framework
+includes model components for the atmosphere, land surface, ocean, sea-ice, and
+other parts of the Earth system. It contains software for data assimilation,
+verification, and technical tasks like workflow management.
 
 **LFRic Atmosphere** is the atmospheric model component of Momentum. It is the successor to the Unified Model. See the `Momentum website <https://www.metoffice.gov.uk/research/approach/modelling-systems/momentum>`_ for information about the other components of the modelling framework.
 
