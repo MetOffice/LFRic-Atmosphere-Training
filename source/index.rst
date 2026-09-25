@@ -101,7 +101,6 @@ Contents of the training course
 
 .. _further-reading:
 
----------------
 Further reading
 ---------------
 
