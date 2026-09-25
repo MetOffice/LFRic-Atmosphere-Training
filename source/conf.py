@@ -189,7 +189,7 @@ intersphinx_mapping = {
         'https://cylc.github.io/cylc-doc/stable/html', None
     ),
     'rose': (
-        'http://metomi.github.io/rose/doc/html', None
+        'https://metomi.github.io/rose/doc/html', None
     ),
     'simulation_systems': (
         'https://metoffice.github.io/simulation-systems/', None

@@ -6,34 +6,45 @@
 Momentum Training - LFRic Atmosphere
 ====================================
 
-**Momentum**:sup:`®` is a software framework for modelling Earth's environment, developed and used by the `Momentum Partnership <https://www.metoffice.gov.uk/research/approach/collaboration/momentum-partnership>`_. The framework includes rigorously evaluated Science Configurations, which define how to configure components of the framework to build prediction and projection systems, both regional and global.
+**Momentum**:sup:`®` is a software framework for modelling Earth's environment,
+developed and used by the Momentum Partnership. The framework includes
+rigorously evaluated Science Configurations, which define how to configure
+components of the framework to build prediction and projection systems, both
+regional and global.
 
 .. image:: /_static/momentum_logo.png
    :alt: Momentum: The Unified Earth Environment Prediction Framework
    :align: center
    :width: 400px
 
-`Momentum <https://www.metoffice.gov.uk/research/approach/modelling-systems/momentum>`_ follows a seamless modelling approach, using the same model components across temporal and spatial scales, similar to the `Unified Model <https://www.metoffice.gov.uk/research/approach/modelling-systems/unified-model>`_. The framework includes model components for the atmosphere, land surface, ocean, sea-ice, and other parts of the Earth system. It contains software for data assimilation, verification, and technical tasks like workflow management.
+Momentum follows a seamless modelling approach, using the same model components
+across temporal and spatial scales, similar to the Unified Model. The framework
+includes model components for the atmosphere, land surface, ocean, sea-ice, and
+other parts of the Earth system. It contains software for data assimilation,
+verification, and technical tasks like workflow management.
 
-**LFRic Atmosphere** is the atmospheric model component of Momentum. It is the successor to the Unified Model. This course is designed for new users of LFRic Atmosphere. See the `Momentum website <https://www.metoffice.gov.uk/research/approach/modelling-systems/momentum>`_ for information about the other components of the modelling framework.
+**LFRic Atmosphere** is the atmospheric model component of Momentum. It is the successor to the Unified Model. See the `Momentum website <https://www.metoffice.gov.uk/research/approach/modelling-systems/momentum>`_ for information about the other components of the modelling framework.
 
-.. seealso::
+Who this course is for
+----------------------
+
+This course is designed for new users of LFRic Atmosphere who have a general
+background in weather or climate science. You should be comfortable working in
+a Linux terminal and have some experience of Python.
+
+The course also uses Cylc, Rose, version control (FCM and Git) and Jupyter
+notebooks. You do not need to know these in advance. Where a section relies on
+one of them, we explain what you need and suggest where to find out more.
+Links to introductory material are listed under :ref:`further-reading` at
+the end of this page.
+
+.. tip::
 
    For help, questions, or feedback on the training, please use
    `GitHub Discussions
    <https://github.com/MetOffice/LFRic-Atmosphere-Training/discussions>`_.
    You are welcome to start a discussion without opening an issue or
    preparing a pull request.
-
-.. note::
-   **Target users and prior knowledge**: This course is designed for new users of LFRic who have a general background in climate science. It is assumed you will have experience in working in Linux terminal and have basic understanding of python and other coding languages. Throughout the course there will be notes on where to refresh skills needed for each section.
-
-   Before diving into this course, it's helpful to have some foundational knowledge in the following areas:
-
-   - Workflow engine `Cylc <https://cylc.github.io/cylc-doc/stable/html/tutorial/index.html>`_:  A system that automatically executes tasks according to schedules and dependencies.
-   - Configuration management system `Rose <https://metomi.github.io/rose/doc/html/tutorial/rose/index.html>`_: A toolkit for writing, editing, and running application configurations.
-   - Version control with `FCM <https://metomi.github.io/fcm/doc/user_guide/>`_ and `Git <https://www.astropython.com/git-novice/>`_: Tools for tracking and managing changes in code.
-   - Python and Jupyter notebooks: The :ref:`using-jupyter-notebooks` page explains how to launch JupyterLab, choose the correct kernel, run notebook cells, and find beginner-friendly Python resources.
 
 .. _platform-tabs:
 
@@ -87,3 +98,30 @@ Contents of the training course
    glossary
    appendices/index.rst
    references.rst
+
+.. _further-reading:
+
+Further reading
+---------------
+
+.. seealso::
+
+   Introductory material for tools used in the course:
+
+   - :external+cylc:doc:`Cylc Tutorial <tutorial/index>`
+     Cylc is a workflow engine that runs tasks according to schedules and
+     dependencies.
+   - :external+rose:doc:`Rose Tutorial <tutorial/rose/index>`
+     Rose is a toolkit for writing, editing, and running application
+     configurations.
+   - `FCM user guide <https://metomi.github.io/fcm/doc/user_guide/>`_ and
+     `Git novice lesson <https://metoffice.github.io/git-novice/>`_: tools for
+     tracking and managing changes in code.
+   - :ref:`using-jupyter-notebooks`: how to launch JupyterLab, choose the
+     correct kernel, run notebook cells, and find beginner-friendly Python
+     resources.
+
+   Background on Momentum:
+
+   - `Momentum Partnership <https://www.metoffice.gov.uk/research/approach/collaboration/momentum-partnership>`_
+   - `Unified Model <https://www.metoffice.gov.uk/research/approach/modelling-systems/unified-model>`_
