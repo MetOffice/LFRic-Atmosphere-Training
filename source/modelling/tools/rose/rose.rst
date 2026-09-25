@@ -36,7 +36,7 @@ config-edit GUI which makes use of metadata for display and on-the-fly
 validation purposes.
 
 
-.. note::
+.. seealso::
 
    More information and training material:
-   https://metomi.github.io/rose/doc/html/tutorial/rose/metadata.html
+   :external+rose:doc:`Rose Tutorial <tutorial/rose/index>`
