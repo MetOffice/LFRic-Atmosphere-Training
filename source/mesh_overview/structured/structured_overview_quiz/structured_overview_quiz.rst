@@ -29,16 +29,16 @@ practical manner.
 
    ## In a structured 2D grid representing Earth's surface, what direction do rows typically represent?
    1. [ ] South to North
-       > Columns represent longitude, while rows represent latitude.
+       > South to North is the direction of the columns, not the rows.
    1. [ ] North to South
-       > This might seem logical, but in many datasets, rows increase from top to bottom—West to East.
+       > North to South is along the columns, not the rows, and the columns run South to North.
    1. [x] West to East
        > Correct! In structured 2D Earth grids, rows span from West to East.
    1. [ ] East to West
-       > Rows increase from West to East, so this is incorrect.
+       > Rows run from West to East, so this is incorrect.
 
    ## Why are structured grids considered intuitive for modelling physical space?
-   1. [x] The physical location on Earth relates directly to the location within the data array on
+   1. [x] The physical location on Earth relates directly to the location within the data array
        > Correct! This is what makes structured grids easy to use.
    1. [ ] They use random placement to approximate locations
        > Random placement is a characteristic of unstructured grids.

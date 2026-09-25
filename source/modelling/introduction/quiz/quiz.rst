@@ -5,14 +5,8 @@ Quiz: Science Configurations
 .. quizdown::
 
    ---
-   title: Configurations Quiz
-   description: Test your understanding of model configurations.
-   shuffle: true
-   show_answers: true
-   show_score: true
-   show_correct_answers: true
-   show_incorrect_answers: true
-   show_question_count: true
+   shuffle_questions: true
+   shuffle_answers: true
    ---
 
    ## What is a science configuration in the context of Momentum framework?
@@ -71,7 +65,7 @@ Quiz: Science Configurations
    > Try again! GC6 will be the first to use LFRic operationally.
 
    ## What is LFRic named after?
-   > hint: He was a pioneer in weather prediction 1. look for the initials.
+   > hint: He was a pioneer in weather prediction; look for the initials.
    1. [ ] A famous climate model
    > Try again! LFRic is not named after a model.
    1. [ ] Low-Frequency Radiative Instability Code
@@ -168,14 +162,3 @@ Quiz: Science Configurations
    > Correct! The development cycle is about 2 years.
    1. [ ] 5 years
    > Try again! The development cycle is shorter than that.
-
-   ## Regional model question placeholder. Maybe add more questions or replace some existing ones.
-   > hint: Write a hint here.
-   1. [x] Option A
-   > Correct! Write feedback here.
-   1. [ ] Option B
-   > Try again! Write feedback here.
-   1. [ ] Option C
-   > Try again! Write feedback here.
-   1. [ ] Option D
-   > Try again! Write feedback here.
