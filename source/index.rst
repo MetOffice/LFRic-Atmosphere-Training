@@ -110,14 +110,14 @@ Further reading
 
    Introductory material for tools used in the course:
 
-   - `Cylc tutorial <https://cylc.github.io/cylc-doc/stable/html/tutorial/index.html>`_:
+   - :external+cylc:doc:`Cylc Tutorial <tutorial/index>`
      Cylc is a workflow engine that runs tasks according to schedules and
      dependencies.
-   - `Rose tutorial <https://metomi.github.io/rose/doc/html/tutorial/rose/index.html>`_:
+   - :external+rose:doc:`Rose Tutorial <tutorial/rose/index>`
      Rose is a toolkit for writing, editing, and running application
      configurations.
    - `FCM user guide <https://metomi.github.io/fcm/doc/user_guide/>`_ and
-     `Git novice lesson <https://www.astropython.com/git-novice/>`_: tools for
+     `Git novice lesson <https://metoffice.github.io/git-novice/>`_: tools for
      tracking and managing changes in code.
    - :ref:`using-jupyter-notebooks`: how to launch JupyterLab, choose the
      correct kernel, run notebook cells, and find beginner-friendly Python
