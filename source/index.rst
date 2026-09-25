@@ -25,7 +25,6 @@ verification, and technical tasks like workflow management.
 
 **LFRic Atmosphere** is the atmospheric model component of Momentum. It is the successor to the Unified Model. See the `Momentum website <https://www.metoffice.gov.uk/research/approach/modelling-systems/momentum>`_ for information about the other components of the modelling framework.
 
-----------------------
 Who this course is for
 ----------------------
 
