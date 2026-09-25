@@ -1,10 +1,8 @@
-.. _Cylc Workflows: https://cylc.github.io/cylc-doc/stable/html/tutorial/introduction.html
-
-
 Practical exercises
 ===================
 
-Building and running the model is usually done using `Cylc Workflows`_.
+Building and running the model is usually done using
+:external+cylc:doc:`Cylc Workflows <tutorial/index>`.
 
 The following exercises demonstrate how to run simplified development
 set-ups and tests. These workflows demonstrate how model and workflow
