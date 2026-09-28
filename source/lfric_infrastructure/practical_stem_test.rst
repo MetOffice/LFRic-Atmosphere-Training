@@ -85,6 +85,14 @@ compliance with LFRic model development practices.
 Step 2: Run the rose stem tests
 +++++++++++++++++++++++++++++++
 
+.. note:: Isambard 3
+
+   The rose stem tests cannot yet be run on Isambard 3: LFRic Apps has no
+   rose stem site definition for it, and the tests need a newer Cylc than the
+   Isambard 3 LFRic environment provides. You can still complete Step 1 there,
+   and read Steps 2 and 3 to see how the tests are run and what a failure
+   looks like.
+
 Rose stem tests are organised into
 :external+simulation_systems:doc:`groups <Development/TestSuites/lfric_apps>`
 allowing you to run only a subset of tests relevant to your changes.
