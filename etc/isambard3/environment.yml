@@ -1,0 +1,35 @@
+# Python analysis environment for the LFRic Atmosphere training on Isambard 3.
+#
+# Built by etc/isambard3/build-python-env.sh into a dated, shared prefix and
+# used alongside the lfric-env module (which provides the LFRic build and
+# workflow tooling: rose, cylc, psyclone, ...). Version pins mirror
+# notebooks/iris-mesh-tutorial/pixi.toml, the proven notebook environment.
+name: lfric-training
+channels:
+  - conda-forge
+dependencies:
+  - python >=3.11,<3.13
+  # scientific / tutorial stack
+  - scitools-iris
+  - iris-esmf-regrid
+  - esmpy
+  - geovista 0.5.3.*
+  - pyvista >=0.46.3,<0.47
+  - vtk <9.6
+  - matplotlib
+  - cartopy
+  - numpy <2
+  # headless OpenGL (Isambard 3 login nodes have no GPU)
+  - mesalib
+  # notebooks
+  - jupyterlab
+  - nbconvert
+  - nbclient
+  - ipykernel
+  - jupytext 1.14.4.*
+  # interactive 3D widget backends
+  - ipyvtklink
+  - trame
+  - trame-vtk
+  - trame-vuetify
+  - jupyter-server-proxy
