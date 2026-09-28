@@ -34,7 +34,8 @@ The most important ideas for this practical are:
   system.
 * A Python environment holds the packages this practical needs. At the Met
   Office and on Monsoon3 that environment comes from ``module load scitools``;
-  on your own machine you build one with conda.
+  on Isambard 3 you activate the course's shared environment; on your own
+  machine you build one with conda.
 * A Jupyter kernel is the Python process that runs notebook cells. Choose the
   kernel that matches the environment you set up below.
 
@@ -156,6 +157,20 @@ depends on your platform.
 
       The notebooks then run under the default Python 3 kernel.
 
+   .. tab-item:: Isambard 3
+      :sync: isambard3
+
+      .. include:: /include/isambard3-help.rst
+
+      You do not need to build an environment. Activate the course's shared
+      Python environment, which provides Iris, GeoVista, the regridding tools
+      and JupyterLab:
+
+      .. include:: /include/isambard3-python-env.rst
+
+      Activate it in every new terminal before starting JupyterLab. The
+      notebooks then run under the default Python 3 kernel.
+
    .. tab-item:: Other
       :sync: other
 
@@ -190,9 +205,44 @@ Once the environment is set up:
 
 2. Start JupyterLab:
 
-   .. code-block:: bash
+   .. tab-set::
+      :sync-group: site
 
-      jupyter lab
+      .. tab-item:: Met Office
+         :sync: met-office
+
+         .. code-block:: bash
+
+            jupyter lab
+
+      .. tab-item:: Monsoon
+         :sync: monsoon
+
+         .. code-block:: bash
+
+            jupyter lab
+
+      .. tab-item:: Isambard 3
+         :sync: isambard3
+
+         JupyterLab runs on the login node and you open it through an SSH
+         tunnel from your own computer. Choose a free port, then start it:
+
+         .. code-block:: bash
+
+            PORT=28765   # replace with your own choice
+            jupyter lab --no-browser --port="$PORT" \
+                --ip="$(hostname -s).hsn.cm.i3.isambard.ac.uk"
+
+         Then open the tunnel and the browser as described in
+         :ref:`isambard3-jupyterlab`.
+
+      .. tab-item:: Other
+         :sync: other
+
+         .. code-block:: bash
+
+            jupyter lab
 
 3. In the JupyterLab file browser, open the first tutorial notebook,
    ``00_Mesh_Tutorial_Intro.ipynb``.
@@ -212,6 +262,12 @@ Once the environment is set up:
 
          Use the default Python 3 kernel provided by ``scitools``.
 
+      .. tab-item:: Isambard 3
+         :sync: isambard3
+
+         Use the default Python 3 kernel provided by the course's Python
+         environment.
+
       .. tab-item:: Other
          :sync: other
 
@@ -226,7 +282,7 @@ Once the environment is set up:
 
 After running ``jupyter lab``, a new browser window or tab should automatically
 open. If it does not open automatically, copy the URL shown in the terminal
-into your browser.
+into your browser. On Isambard 3 no browser opens; follow the tunnel steps above instead.
 
 Recommended learning path
 -------------------------
