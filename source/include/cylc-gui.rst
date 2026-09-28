@@ -29,6 +29,19 @@
          Use ``cylc tui`` on Monsoon3. ``cylc gui`` needs a browser or an X11
          connection that is not available from every Monsoon3 service.
 
+   .. tab-item:: Isambard 3
+      :sync: isambard3
+
+      .. include:: /include/isambard3-help.rst
+
+      .. code-block:: bash
+
+         cylc tui
+
+      .. note::
+
+         Use ``cylc tui`` on Isambard 3. ``cylc gui`` is not installed there.
+
    .. tab-item:: Other
       :sync: other
 
