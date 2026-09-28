@@ -46,6 +46,19 @@ Step 1: Compile the model
             git clone https://github.com/MetOffice/lfric_apps.git
             cd lfric_apps
 
+      .. tab-item:: Isambard 3
+         :sync: isambard3
+
+         .. include:: /include/isambard3-help.rst
+
+         Clone over HTTPS into your scratch space:
+
+         .. code-block:: bash
+
+            cd "$SCRATCHDIR"
+            git clone https://github.com/MetOffice/lfric_apps.git
+            cd lfric_apps
+
       .. tab-item:: Other
          :sync: other
 
@@ -70,9 +83,52 @@ Step 1: Compile the model
 
 3. Compile the model
 
-   .. code-block:: bash
+   .. tab-set::
+      :sync-group: site
 
-      ./build/local_build.py lfric_atm
+      .. tab-item:: Met Office
+         :sync: met-office
+
+         .. code-block:: bash
+
+            ./build/local_build.py lfric_atm
+
+      .. tab-item:: Monsoon
+         :sync: monsoon
+
+         .. code-block:: bash
+
+            ./build/local_build.py lfric_atm
+
+      .. tab-item:: Isambard 3
+         :sync: isambard3
+
+         Compile on a compute node: the login nodes limit how many processes
+         you can run. The build fetches LFRic Core and the physics
+         repositories from ``git@github.com:`` URLs, so first tell Git to use
+         HTTPS instead, for this terminal only:
+
+         .. code-block:: bash
+
+            export GIT_CONFIG_COUNT=1
+            export GIT_CONFIG_KEY_0=url.https://github.com/.insteadOf
+            export GIT_CONFIG_VALUE_0=git@github.com:
+
+         Then build with 24 cores. ``srun`` waits for a compute node, runs the
+         build there, and returns when it finishes (a few minutes):
+
+         .. code-block:: bash
+
+            srun --partition=grace --ntasks=1 --cpus-per-task=24 \
+                --mem-per-cpu=1600M --time=01:00:00 \
+                ./build/local_build.py lfric_atm -j 24
+
+      .. tab-item:: Other
+         :sync: other
+
+         .. code-block:: bash
+
+            ./build/local_build.py lfric_atm
 
    The compilation may take some time and uses code from the different
    repositories, algorithms, and kernels. It invokes PSyclone, compiles,
@@ -105,9 +161,46 @@ The code contains an `LFRic example`_ configuration containing:
 
 2. Run the example with a "single-column" configuration:
 
-   .. code-block:: bash
+   .. tab-set::
+      :sync-group: site
 
-      ../bin/lfric_atm configuration.nml > log.txt
+      .. tab-item:: Met Office
+         :sync: met-office
+
+         .. code-block:: bash
+
+            ../bin/lfric_atm configuration.nml > log.txt
+
+      .. tab-item:: Monsoon
+         :sync: monsoon
+
+         .. code-block:: bash
+
+            ../bin/lfric_atm configuration.nml > log.txt
+
+      .. tab-item:: Isambard 3
+         :sync: isambard3
+
+         Run the model on a compute node. It takes under a minute there, but
+         much longer on a shared login node:
+
+         .. code-block:: bash
+
+            srun --partition=grace --ntasks=1 --cpus-per-task=4 \
+                --time=00:30:00 ../bin/lfric_atm configuration.nml > log.txt
+
+         Later steps run the model again with ``../bin/lfric_atm``. Put the
+         same ``srun ...`` options in front of each of those commands. To
+         recompile, repeat the ``srun ... ./build/local_build.py`` command
+         from the ``lfric_apps`` directory, in a terminal where the
+         ``GIT_CONFIG_*`` variables are set.
+
+      .. tab-item:: Other
+         :sync: other
+
+         .. code-block:: bash
+
+            ../bin/lfric_atm configuration.nml > log.txt
 
    The namelist file ``configuration.nml`` configures the model run.
    Note the we redirect the ``stdout`` to ``log.txt`` so we can look
@@ -142,6 +235,12 @@ The code contains an `LFRic example`_ configuration containing:
 
          ``ncdump`` is part of the NetCDF tools available in the Monsoon3
          ``lfric`` environment.
+
+      .. tab-item:: Isambard 3
+         :sync: isambard3
+
+         ``ncdump`` is part of the Cray NetCDF tools loaded by the Isambard 3
+         ``lfric-env`` module.
 
       .. tab-item:: Other
          :sync: other
