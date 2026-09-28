@@ -48,6 +48,23 @@ Step 1: Check Out the Standard Suite
                https://github.com/MetOffice/momentum_user_training.example_lfric_workflow.git \
                lfric_apps_standard_suite
 
+   .. tab-item:: Isambard 3
+      :sync: isambard3
+
+      .. include:: /include/isambard3-help.rst
+
+      .. code-block:: bash
+
+         git clone \
+               https://github.com/MetOffice/momentum_user_training.example_lfric_workflow.git \
+               lfric_apps_standard_suite
+
+      .. warning::
+
+         This workflow has not yet been tested on Isambard 3, and its
+         repository is not publicly readable. Ask your University of Exeter
+         contact whether it is available to you.
+
    .. tab-item:: Other
       :sync: other
 
@@ -131,6 +148,18 @@ output:
       .. include:: /include/monsoon3-help.rst
 
       Use the terminal interface:
+
+      .. code-block:: bash
+
+         cylc tui
+
+   .. tab-item:: Isambard 3
+      :sync: isambard3
+
+      .. include:: /include/isambard3-help.rst
+
+      Use the terminal interface. ``cylc gui`` is not installed on
+      Isambard 3:
 
       .. code-block:: bash
 
