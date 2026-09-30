@@ -25,6 +25,11 @@ copied earlier:
 
       .. include:: /include/snippets/lfric-atm-app-dir.rst
 
+   .. tab-item:: Isambard 3
+      :sync: isambard3
+
+      .. include:: /include/isambard3-no-global-suite.rst
+
    .. tab-item:: Other
       :sync: other
 
@@ -54,6 +59,11 @@ Step 2: Edit the configuration file
       .. include:: /include/monsoon3-help.rst
 
       .. include:: /include/snippets/radiative-gases-namelist.rst
+
+   .. tab-item:: Isambard 3
+      :sync: isambard3
+
+      .. include:: /include/isambard3-no-global-suite.rst
 
    .. tab-item:: Other
       :sync: other
