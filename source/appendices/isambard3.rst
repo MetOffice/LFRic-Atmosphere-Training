@@ -75,6 +75,32 @@ it, so you do not need to install conda yourself:
 You can have both environments active at the same time: load the module first,
 then activate the Python environment.
 
+.. _isambard3-mosrs:
+
+Using MOSRS and Rosie
+=====================
+
+Some practicals check out a workflow from the Met Office Science Repository
+Service (MOSRS) with ``rosie``. You need your own MOSRS account for this; if
+you do not have one, see :ref:`mosrs-overview`.
+
+With the LFRic environment loaded, cache your MOSRS password so that
+``rosie`` and ``svn`` do not ask for it each time:
+
+.. code-block:: bash
+
+   mosrs-cache-password
+
+The first time, the command lists any one-off settings it needs in
+``~/.subversion`` and ``~/.gnupg``, with the exact lines to add. Add them and
+run it again.
+
+.. note::
+
+   The password is cached on the login node where you ran the command, and
+   you land on a login node at random each time you log in. If ``rosie`` asks
+   for your password again, run ``mosrs-cache-password`` again.
+
 .. _isambard3-jupyterlab:
 
 Running JupyterLab
@@ -136,8 +162,7 @@ Important points
 * Anyone who has your Jupyter token can run code as you. Do not share it, and
   stop JupyterLab when you are not using it.
 * GitHub repositories can be cloned over HTTPS without an SSH key.
-* Rosie commands need your own MOSRS account and the usual MOSRS password
-  caching set up. If you do not have one, see :ref:`mosrs-overview`.
+* Rosie commands need your own MOSRS account; see :ref:`isambard3-mosrs`.
 * Do not place passwords, authentication codes, tokens, or private connection
   details in course files, terminal transcripts, issues, or pull requests.
 
