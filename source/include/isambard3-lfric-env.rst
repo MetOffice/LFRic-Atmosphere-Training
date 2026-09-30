@@ -1,4 +1,4 @@
-.. Re-usable chunk: load the LFRic build and workflow environment on Isambard 3.
+.. Re-usable chunk: load the LFRic environment on Isambard 3.
 .. The module version is pinned here only; bump it here when a new build of
 .. https://github.com/ickc/lfric-env-isambard is published.
 .. To use it: .. include:: /include/isambard3-lfric-env.rst

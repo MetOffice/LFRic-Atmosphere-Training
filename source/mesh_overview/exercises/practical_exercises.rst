@@ -282,7 +282,8 @@ Once the environment is set up:
 
 After running ``jupyter lab``, a new browser window or tab should automatically
 open. If it does not open automatically, copy the URL shown in the terminal
-into your browser. On Isambard 3 no browser opens; follow the tunnel steps above instead.
+into your browser. On Isambard 3 no browser opens; follow the tunnel steps
+above instead.
 
 Recommended learning path
 -------------------------
