@@ -45,6 +45,12 @@ top-level settings required to run the idealised suite.
 Machine, LFRic version, compilation settings
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. note:: Isambard 3
+
+   The Isambard 3 launcher sets ``EX_HOST='isambard3'``, ``VN``, and
+   ``COMPILER='gnu'`` for you. Leave them as they are. A Grace node on
+   Isambard 3 has 144 cores rather than 128.
+
 - **EX_HOST**
 
   Select what machine to run the experiment on. Currently only the Met Office
