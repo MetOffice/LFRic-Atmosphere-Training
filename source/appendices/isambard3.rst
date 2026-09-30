@@ -156,6 +156,34 @@ When you have finished, stop JupyterLab with :kbd:`Control-c` in the Isambard 3
 terminal, then stop the tunnel. See also the official
 `Jupyter guidance <Isambard Jupyter_>`_.
 
+.. _isambard3-cylc:
+
+Cylc workflows and login nodes
+==============================
+
+A Cylc workflow's scheduler runs on the login node where you started it, and
+submits the workflow's tasks to Slurm. You can monitor and control it from any
+login node: ``cylc tui``, ``cylc pause``, ``cylc play`` (to resume),
+``cylc stop`` and ``cylc cat-log`` all work.
+
+The exception is a scheduler that has died without shutting down cleanly, for
+example because its login node was restarted. Its workflow then still looks
+like it is running. From a different login node, restarting it fails:
+
+.. code-block:: text
+
+   ERROR - Cannot determine whether workflow is running on login01.head.cm.i3.isambard.ac.uk.
+   CRITICAL - Cannot tell if the workflow is running
+
+This happens because Cylc checks the old login node over SSH, which Isambard 3
+does not allow. If you are sure the workflow is not running (``cylc ping
+<workflow>`` fails), remove its stale contact file and start it again:
+
+.. code-block:: bash
+
+   rm ~/cylc-run/<workflow>/runN/.service/contact
+   cylc play <workflow>
+
 Important points
 ================
 
