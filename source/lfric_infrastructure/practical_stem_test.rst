@@ -87,11 +87,26 @@ Step 2: Run the rose stem tests
 
 .. note:: Isambard 3
 
-   The rose stem tests cannot yet be run on Isambard 3: LFRic Apps has no
-   rose stem site definition for it, and the tests need a newer Cylc than the
-   Isambard 3 LFRic environment provides. You can still complete Step 1 there,
-   and read Steps 2 and 3 to see how the tests are run and what a failure
-   looks like.
+   LFRic Apps does not yet include a rose stem site for Isambard 3. Add one
+   to your ``lfric_apps`` clone from `lfric-env-isambard`_ before running the
+   tests. Run these from the ``lfric_apps`` directory, with the Isambard 3
+   LFRic environment loaded:
+
+   .. code-block:: bash
+
+      git clone https://github.com/ickc/lfric-env-isambard.git \
+          "$SCRATCHDIR/lfric-env-isambard"
+      git apply \
+          "$SCRATCHDIR/lfric-env-isambard/patches/rose-stem/lfric_apps-isambard3-site.patch"
+      echo '{% do site_vars.update({"USE_TOKENS": true}) %}' \
+          >> rose-stem/site/isambard3/variables.cylc
+
+   The last line makes the tests fetch their dependencies from GitHub over
+   HTTPS. Leave these changes uncommitted: rose stem tests your working
+   copy, including uncommitted changes.
+
+   Only the ``scripts`` group ("Faster Style Checks" below) is supported on
+   Isambard 3. The ``developer`` group is not.
 
 Rose stem tests are organised into
 :external+simulation_systems:doc:`groups <Development/TestSuites/lfric_apps>`
