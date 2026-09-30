@@ -158,8 +158,7 @@ output:
 
       .. include:: /include/isambard3-help.rst
 
-      Use the terminal interface. ``cylc gui`` is not installed on
-      Isambard 3:
+      Use the terminal interface:
 
       .. code-block:: bash
 

@@ -40,7 +40,9 @@
 
       .. note::
 
-         Use ``cylc tui`` on Isambard 3. ``cylc gui`` is not installed there.
+         Use ``cylc tui`` on Isambard 3. ``cylc gui`` is installed, but
+         it needs an SSH tunnel to your browser, like JupyterLab does
+         (see :ref:`isambard3-jupyterlab`).
 
    .. tab-item:: Other
       :sync: other

@@ -33,9 +33,8 @@
 
       .. include:: /include/isambard3-help.rst
 
-      The Rose configuration editor (``rose edit``) is not available on
-      Isambard 3: it was removed in Rose 2, which is the version provided
-      there. Instead, open the ``rose-suite.conf`` and ``app/*/rose-app.conf``
+      The Rose configuration editor (``rose edit``) is not installed on
+      Isambard 3. Instead, open the ``rose-suite.conf`` and ``app/*/rose-app.conf``
       files in a text editor. They are plain INI-style files, and the setting
       names are the same as those shown in ``rose edit``. For example:
 
