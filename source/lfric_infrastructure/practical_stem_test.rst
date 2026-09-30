@@ -94,6 +94,7 @@ Step 2: Run the rose stem tests
 
    .. code-block:: bash
 
+      # Skip the clone if you already have it from Practical 2
       git clone https://github.com/ickc/lfric-env-isambard.git \
           "$SCRATCHDIR/lfric-env-isambard"
       git apply \
