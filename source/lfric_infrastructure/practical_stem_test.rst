@@ -99,12 +99,9 @@ Step 2: Run the rose stem tests
           "$SCRATCHDIR/lfric-env-isambard"
       git apply \
           "$SCRATCHDIR/lfric-env-isambard/patches/rose-stem/lfric_apps-isambard3-site.patch"
-      echo '{% do site_vars.update({"USE_TOKENS": true}) %}' \
-          >> rose-stem/site/isambard3/variables.cylc
 
-   The last line makes the tests fetch their dependencies from GitHub over
-   HTTPS. Leave these changes uncommitted: rose stem tests your working
-   copy, including uncommitted changes.
+   Leave these changes uncommitted: rose stem tests your working copy,
+   including uncommitted changes.
 
    Only the ``scripts`` group ("Faster Style Checks" below) is supported on
    Isambard 3. The ``developer`` group is not.
