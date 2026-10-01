@@ -56,7 +56,7 @@ def validate_figure_labelling(
     doctree: nodes.document,
     *,
     unnumbered_images_by_doc: Mapping[str, frozenset[str]] = MappingProxyType({
-        'index': frozenset({'_static/momentum_logo.png'}),
+        'index': frozenset({'_static/logos/Momentum-Black-Mono.svg'}),
     }),
 ) -> None:
     """Enforce the site-wide figure labelling policy.
@@ -179,6 +179,7 @@ html_theme = "pydata_sphinx_theme"
 html_static_path = ['_static']
 html_css_files = ['nav-collapse.css', 'accessibility.css']
 html_js_files = ['nav-collapse.js', 'accessibility.js']
+html_favicon = '_static/logos/Momentum-Black-Mono-Icon.svg'
 
 # Add hyperlinks include file to avoid repeated links.
 rst_epilog = open('hyperlinks.rst.include', 'r').read()
