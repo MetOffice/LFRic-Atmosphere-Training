@@ -45,16 +45,14 @@ practicals, **copy** the workflow rather than checking it out:
          rosie checkout u-dz791
          svn update -r 368986 ~/roses/u-dz791
 
-      Then get the launcher, and the LFRic metadata it uses to upgrade the
-      workflow. Skip the ``git clone`` if you already have it from
-      :ref:`practical_3.2`:
+      Then get the launcher. If you already have it from
+      :ref:`practical_3.2`, run ``git -C "$SCRATCHDIR/lfric-env-isambard"
+      pull`` instead:
 
       .. code-block:: bash
 
          git clone https://github.com/ickc/lfric-env-isambard.git \
                "$SCRATCHDIR/lfric-env-isambard"
-         git -C "$SCRATCHDIR/lfric-env-isambard" submodule update --init \
-               vendor/lfric_apps vendor/lfric_core vendor/physics/jules
 
       Wherever the rest of this practical says ``<suite-id>``, use
       ``u-dz791``.
