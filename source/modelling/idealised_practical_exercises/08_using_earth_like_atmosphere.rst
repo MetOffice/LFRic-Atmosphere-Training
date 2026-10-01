@@ -21,6 +21,20 @@ In the top-level configuration, change the ``LFRIC_LEVS`` to
     Screenshot of the Rose GUI showing the top-level panel in the
     extraterrestrial CRM suite.
 
+.. note:: Isambard 3
+
+   Do not edit ``LFRIC_LEVS`` in ``rose-suite.conf``. If you do, the
+   launcher no longer recognises your checkout and stops with "site patch
+   does not apply". Instead, give the new value when you run the model in
+   Step 4:
+
+   .. code-block:: bash
+
+      bash "$SCRATCHDIR/lfric-env-isambard/examples/science-suites/run-suite.sh" \
+            u-dz791 -S "LFRIC_LEVS='uniform_l100_75km'"
+
+   If you already edited it, change it back to ``'uniform_l200_900km'``.
+
 
 Step 2: Change the gas constants
 --------------------------------
