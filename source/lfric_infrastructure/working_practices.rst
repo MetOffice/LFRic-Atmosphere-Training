@@ -18,8 +18,8 @@ Topics include:
 
 .. _fig-infra-working-practices:
 
-.. figure:: /_static/working_practices.jpg
-   :width: 650px
+.. figure:: /_static/working_practices.svg
+   :width: 95%
    :alt: Simulation Systems Working Practices
 
    Simulation Systems Working Practices.
