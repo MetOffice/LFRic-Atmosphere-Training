@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="47cm" height="26cm" viewBox="299 10 922 511" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="300" y="11" width="920" height="509"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="300" y="11" width="920" height="509"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="760" y="269.381">
+      <tspan x="760" y="269.381"></tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="526.182" y="427.071" width="145.05" height="78.4444"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="526.182" y="427.071" width="145.05" height="78.4444"/>
+    <text font-size="9.03111" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="598.707" y="446.454">
+      <tspan x="598.707" y="446.454">JULES,</tspan>
+      <tspan x="598.707" y="457.743">SOCRATES,</tspan>
+      <tspan x="598.707" y="469.032">CASIM,</tspan>
+      <tspan x="598.707" y="480.321">NEMO/CICE/IOIPSL/MOCI</tspan>
+      <tspan x="598.707" y="491.609">AUX files</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="319.293" y="24.4437" width="880" height="340"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="319.293" y="24.4437" width="880" height="340"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="759.293" y="198.325">
+      <tspan x="759.293" y="198.325"></tspan>
+    </text>
+  </g>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 1.6; stroke: #000000" x="342.735" y="130" width="110" height="150"/>
+  <text font-size="9.03111" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:700" x="352.735" y="145.383">
+    <tspan x="352.735" y="145.383">First Steps</tspan>
+  </text>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 1.6; stroke: #000000" x="480" y="130.125" width="237.788" height="149.75"/>
+  <text font-size="9.03111" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:700" x="489.986" y="144.173">
+    <tspan x="489.986" y="144.173">Code and/or Documentation Development</tspan>
+  </text>
+  <g>
+    <rect style="fill: #359bc0" x="352.885" y="240" width="86.65" height="26"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="352.885" y="240" width="86.65" height="26"/>
+    <text font-size="9.03111" style="fill: #1d1d1d;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="396.21" y="255.738">
+      <tspan x="396.21" y="255.738">Create Branch</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #e47452" x="537.15" y="60" width="100.2" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="537.15" y="60" width="100.2" height="38"/>
+    <text font-size="9.03111" style="fill: #1d1d1d;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="587.25" y="76.0939">
+      <tspan x="587.25" y="76.0939">Major Concerns/</tspan>
+      <tspan x="587.25" y="87.3828">Severe Problems</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #359bc0" x="494.443" y="193.906" width="84.75" height="26"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="494.443" y="193.906" width="84.75" height="26"/>
+    <text font-size="9.03111" style="fill: #1d1d1d;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="536.818" y="209.645">
+      <tspan x="536.818" y="209.645">Update Ticket</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #359bc0" x="536.146" y="150" width="128.2" height="26"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="536.146" y="150" width="128.2" height="26"/>
+    <text font-size="9.03111" style="fill: #1d1d1d;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="600.246" y="165.738">
+      <tspan x="600.246" y="165.738">Develop Your Changes</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #359bc0" x="600.392" y="193.906" width="105.55" height="26"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="600.392" y="193.906" width="105.55" height="26"/>
+    <text font-size="9.03111" style="fill: #1d1d1d;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="653.167" y="209.645">
+      <tspan x="653.167" y="209.645">Commit to Branch</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #359bc0" x="546.471" y="240" width="107.55" height="26"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="546.471" y="240" width="107.55" height="26"/>
+    <text font-size="9.03111" style="fill: #1d1d1d;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="600.246" y="255.738">
+      <tspan x="600.246" y="255.738">Test Your Changes</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #e47452" x="757.775" y="186" width="98.15" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="757.775" y="186" width="98.15" height="38"/>
+    <text font-size="9.03111" style="fill: #1d1d1d;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="806.85" y="202.094">
+      <tspan x="806.85" y="202.094">Check Your Docs</tspan>
+      <tspan x="806.85" y="213.383">and Approvals</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #55c6b4" x="877.818" y="192" width="93.3" height="26"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="877.818" y="192" width="93.3" height="26"/>
+    <text font-size="9.03111" style="fill: #1d1d1d;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="924.468" y="207.738">
+      <tspan x="924.468" y="207.738">Review Process</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #55c6b4" x="986.501" y="192" width="98.35" height="26"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="986.501" y="192" width="98.35" height="26"/>
+    <text font-size="9.03111" style="fill: #1d1d1d;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1035.68" y="207.738">
+      <tspan x="1035.68" y="207.738">Commit to Trunk</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #e47452" x="1100.57" y="192" width="81.9" height="26"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1100.57" y="192" width="81.9" height="26"/>
+    <text font-size="9.03111" style="fill: #1d1d1d;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1141.52" y="207.738">
+      <tspan x="1141.52" y="207.738">Ticket Closed</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #e47452" x="536.4" y="300" width="150.85" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="536.4" y="300" width="150.85" height="38"/>
+    <text font-size="9.03111" style="fill: #1d1d1d;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="611.825" y="316.094">
+      <tspan x="611.825" y="316.094">Other Sci/Tech or Code/Sys</tspan>
+      <tspan x="611.825" y="327.383">Review Suggestions</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #e47452" x="350.71" y="150" width="91" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="350.71" y="150" width="91" height="38"/>
+    <text font-size="9.03111" style="fill: #1d1d1d;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="396.21" y="166.094">
+      <tspan x="396.21" y="166.094">Must Knows,</tspan>
+      <tspan x="396.21" y="177.383">Dos and Don'ts</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #359bc0" x="350.71" y="201.331" width="91" height="26"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="350.71" y="201.331" width="91" height="26"/>
+    <text font-size="9.03111" style="fill: #1d1d1d;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="396.21" y="217.069">
+      <tspan x="396.21" y="217.069">Create a Ticket</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="453.538" y1="205" x2="472.462" y2="205"/>
+    <polygon style="fill: #000000" points="476.962,205 470.962,208 472.462,205 470.962,202 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="476.962,205 470.962,208 472.462,205 470.962,202 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="589.099" y1="99.0028" x2="591.28" y2="122.611"/>
+    <polygon style="fill: #000000" points="591.694,127.092 588.155,121.393 591.28,122.611 594.129,120.841 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="591.694,127.092 588.155,121.393 591.28,122.611 594.129,120.841 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="636.287" y1="192.901" x2="622.311" y2="181.306"/>
+    <polygon style="fill: #000000" points="618.847,178.433 625.381,179.955 622.311,181.306 621.549,184.572 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="618.847,178.433 625.381,179.955 622.311,181.306 621.549,184.572 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="718.592" y1="205" x2="750.042" y2="205"/>
+    <polygon style="fill: #000000" points="754.542,205 748.542,208 750.042,205 748.542,202 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="754.542,205 748.542,208 750.042,205 748.542,202 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="556.09" y1="220.911" x2="575.526" y2="235.035"/>
+    <polygon style="fill: #000000" points="579.166,237.681 572.549,236.58 575.526,235.035 576.076,231.727 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="579.166,237.681 572.549,236.58 575.526,235.035 576.076,231.727 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="583.844" y1="345.721" x2="514.158" y2="412.269"/>
+    <polygon style="fill: #000000" points="589.268,340.542 585.489,351.064 583.844,345.721 578.583,343.832 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="589.268,340.542 585.489,351.064 583.844,345.721 578.583,343.832 "/>
+    <polygon style="fill: #000000" points="508.734,417.449 512.513,406.927 514.158,412.269 519.419,414.159 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="508.734,417.449 512.513,406.927 514.158,412.269 519.419,414.159 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="609.557" y1="299.003" x2="608.235" y2="287.355"/>
+    <polygon style="fill: #000000" points="607.728,282.883 611.385,288.507 608.235,287.355 605.424,289.183 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="607.728,282.883 611.385,288.507 608.235,287.355 605.424,289.183 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="580.015" y1="177.005" x2="562.588" y2="189.068"/>
+    <polygon style="fill: #000000" points="558.888,191.629 562.114,185.747 562.588,189.068 565.529,190.68 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="558.888,191.629 562.114,185.747 562.588,189.068 565.529,190.68 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="856.7" y1="205" x2="870.122" y2="205"/>
+    <polygon style="fill: #000000" points="874.622,205 868.622,208 870.122,205 868.622,202 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="874.622,205 868.622,208 870.122,205 868.622,202 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1085.83" y1="205" x2="1092.92" y2="205"/>
+    <polygon style="fill: #000000" points="1097.42,205 1091.42,208 1092.92,205 1091.42,202 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1097.42,205 1091.42,208 1092.92,205 1091.42,202 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="616.325" y1="238.995" x2="632.008" y2="225.335"/>
+    <polygon style="fill: #000000" points="635.402,222.38 632.848,228.583 632.008,225.335 628.907,224.058 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="635.402,222.38 632.848,228.583 632.008,225.335 628.907,224.058 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="972.124" y1="205" x2="978.759" y2="205"/>
+    <polygon style="fill: #000000" points="983.259,205 977.259,208 978.759,205 977.259,202 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="983.259,205 977.259,208 978.759,205 977.259,202 "/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 697.95,320.135 A 357.965,357.965 0 0 0 911.073,218.961"/>
+    <polygon style="fill: #000000" points="690.488,320.868 700.055,315.083 697.964,320.267 700.857,325.05 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="690.488,320.868 700.055,315.083 697.964,320.267 700.857,325.05 "/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 906.194,190.997 A 578.926,578.926 0 0 0 647.996,84.7364"/>
+    <polygon style="fill: #000000" points="640.571,83.6827 651.135,80.0219 648.008,84.6554 649.838,89.9374 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="640.571,83.6827 651.135,80.0219 648.008,84.6554 649.838,89.9374 "/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 1026.5,191.386 A 350.361,350.361 0 0 0 647.382,56.2737"/>
+    <polygon style="fill: #000000" points="640.175,58.3401 648.272,50.6304 647.346,56.1433 651.201,60.1918 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="640.175,58.3401 648.272,50.6304 647.346,56.1433 651.201,60.1918 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="732.025" y="110" width="166.4" height="55.8667"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="732.025" y="110" width="166.4" height="55.8667"/>
+    <text font-size="9.03111" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="815.225" y="129.383">
+      <tspan x="815.225" y="129.383">Sci/Tech or Code/Sys Review</tspan>
+      <tspan x="815.225" y="140.672">has Non-Trivial Concerns</tspan>
+      <tspan x="815.225" y="151.961">\"Reject &amp; Assign\"</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="912.875" y="110" width="153.05" height="55.8667"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="912.875" y="110" width="153.05" height="55.8667"/>
+    <text font-size="9.03111" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="989.4" y="129.383">
+      <tspan x="989.4" y="129.383">Committed Change Failed</tspan>
+      <tspan x="989.4" y="140.672">Nightly OR Weekly Tests</tspan>
+      <tspan x="989.4" y="151.961">with Major Fix Needed</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="754.425" y="260" width="111.85" height="44.5778"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="754.425" y="260" width="111.85" height="44.5778"/>
+    <text font-size="9.03111" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="810.35" y="279.383">
+      <tspan x="810.35" y="279.383">Merge Difficulties</tspan>
+      <tspan x="810.35" y="290.672">or a Minor Fix</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #359bc0" x="411.55" y="420" width="161.8" height="26"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="411.55" y="420" width="161.8" height="26"/>
+    <text font-size="9.03111" style="fill: #1d1d1d;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="492.45" y="435.738">
+      <tspan x="492.45" y="435.738">Dealing with Linked Changes</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="524.35" y="374.343" width="297.25" height="33.2889"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="524.35" y="374.343" width="297.25" height="33.2889"/>
+    <text font-size="9.03111" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="672.975" y="393.726">
+      <tspan x="672.975" y="393.726">Concurrent testing, documentation and code-changes</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="976" y="328" width="140" height="148"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 1.6; stroke: #000000" x="976" y="328" width="140" height="148"/>
+  </g>
+  <text font-size="9.03111" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:700" x="984" y="344.383">
+    <tspan x="984" y="344.383">Key</tspan>
+  </text>
+  <g>
+    <rect style="fill: #55c6b4" x="977.162" y="440" width="136.4" height="26"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="977.162" y="440" width="136.4" height="26"/>
+    <text font-size="9.03111" style="fill: #1d1d1d;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1045.36" y="455.738">
+      <tspan x="1045.36" y="455.738">Reviewer Responsibility</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #e47452" x="982.725" y="350" width="125.275" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="982.725" y="350" width="125.275" height="38"/>
+    <text font-size="9.03111" style="fill: #1d1d1d;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1045.36" y="366.094">
+      <tspan x="1045.36" y="366.094">Things to pay</tspan>
+      <tspan x="1045.36" y="377.383">attention to</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #359bc0" x="982.725" y="401.331" width="125.275" height="26"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="982.725" y="401.331" width="125.275" height="26"/>
+    <text font-size="9.03111" style="fill: #1d1d1d;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="1045.36" y="417.069">
+      <tspan x="1045.36" y="417.069">Your Responsibility</tspan>
+    </text>
+  </g>
+</svg>
