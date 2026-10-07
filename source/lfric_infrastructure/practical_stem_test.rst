@@ -1,4 +1,3 @@
-.. _create a branch: https://metoffice.github.io/simulation-systems/WorkingPractices/gh_dev_init.html#create-a-branch
 .. _example issue: https://github.com/MetOffice/momentum_user_training.example_lfric_workflow/issues/2
 
 .. _practical_3.3:
