@@ -12,7 +12,7 @@ rigorously evaluated Science Configurations, which define how to configure
 components of the framework to build prediction and projection systems, both
 regional and global.
 
-.. image:: /_static/momentum_logo.png
+.. image:: /_static/logos/Momentum-Black-Mono.svg
    :alt: Momentum: The Unified Earth Environment Prediction Framework
    :align: center
    :width: 400px
