@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
-<svg width="47cm" height="26cm" viewBox="299 10 922 511" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="100%" height="auto" viewBox="299 -30 922 551" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Simulation Systems Working Practices</title>
   <g>
-    <rect style="fill: #ffffff" x="300" y="11" width="920" height="509"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="300" y="11" width="920" height="509"/>
+    <rect style="fill: #ffffff" x="299" y="-30" width="922" height="551"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="300" y="-30" width="920" height="550"/>
     <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="760" y="269.381">
       <tspan x="760" y="269.381"></tspan>
     </text>
   </g>
+  <text font-size="20" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-weight:700" x="760" y="0">Simulation Systems Working Practices</text>
   <g>
     <rect style="fill: #ffffff" x="526.182" y="427.071" width="145.05" height="78.4444"/>
     <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="526.182" y="427.071" width="145.05" height="78.4444"/>

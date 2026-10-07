@@ -18,11 +18,9 @@ Topics include:
 
 .. _fig-infra-working-practices:
 
-.. figure:: /_static/working_practices.svg
-   :width: 95%
-   :alt: Simulation Systems Working Practices
+.. raw:: html
+   :file: ../_static/working_practices.svg
 
-   Simulation Systems Working Practices.
 
 The pages also signpost where to get help:
 
