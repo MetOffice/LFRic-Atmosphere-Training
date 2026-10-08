@@ -178,18 +178,19 @@ The code contains an `LFRic example`_ configuration containing:
       .. tab-item:: Isambard 3
          :sync: isambard3
 
-         First limit the model to 4 OpenMP threads. Otherwise it starts one
-         thread for each of the login node's 144 cores, but can only use 16,
-         and runs very slowly. With 4 threads it takes a few seconds:
+         Check that the model is limited to 4 OpenMP threads, as set up in
+         :ref:`isambard3-getting-started`. Otherwise it starts one thread for
+         each of the login node's 144 cores, but can only use 16, and runs
+         very slowly. With 4 threads it takes a few seconds:
 
          .. code-block:: bash
 
-            export OMP_NUM_THREADS=4
+            echo "$OMP_NUM_THREADS"    # should print 4
             ../bin/lfric_atm configuration.nml > log.txt
 
-         The setting lasts until you close the terminal. In a new terminal,
-         set it again before running the model, and set the ``GIT_CONFIG_*``
-         variables again before recompiling.
+         If it prints nothing, run ``export OMP_NUM_THREADS=4`` first. In a
+         new terminal, set the ``GIT_CONFIG_*`` variables again before
+         recompiling.
 
       .. tab-item:: Other
          :sync: other

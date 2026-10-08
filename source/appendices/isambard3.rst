@@ -60,12 +60,25 @@ Cylc) come from a pre-built environment built with `lfric-env-isambard`_.
 
 Your University of Exeter contact will tell you the directory where the
 course's environments are installed. Once, after you first log in, save it in
-``~/.bashrc`` so that every new terminal knows it, then log in again:
+``~/.bashrc`` so that every new terminal knows it:
 
 .. code-block:: bash
 
    # Replace <DIRECTORY> with the directory you were given
    echo 'export LFRIC_TRAINING_PREFIX=<DIRECTORY>' >> ~/.bashrc
+
+At the same time, limit the number of threads programs start on the login
+nodes. Each user can use up to 16 cores there, but programs that use OpenMP,
+including LFRic Atmosphere and the numerical libraries behind Python, start
+up to one thread for each of the node's 144 cores by default and then run
+very slowly. The course's workflows set their own thread counts for the
+model, so this does not change them:
+
+.. code-block:: bash
+
+   echo 'export OMP_NUM_THREADS=4' >> ~/.bashrc
+
+Then log out and log in again, so that both settings take effect.
 
 Load the environment in every new terminal before building or running the
 model:
