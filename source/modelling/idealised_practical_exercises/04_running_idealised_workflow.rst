@@ -82,9 +82,31 @@ Global Configurations*.
 After the workflow has completed successfully, navigate to the output directory
 and try plotting the data.
 
-.. note:: Isambard 3
+.. tab-set::
+   :sync-group: site
 
-   The model output is in the work directory of each cycle, one file every
-   10 minutes of model time:
-   ``~/cylc-run/u-dz791/runN/work/<cycle>/lfric_atm/lfric_crm_diag_*.nc``.
+   .. tab-item:: Met Office
+      :sync: met-office
+
+      The model output is in the work directory of the ``lfric_atm`` task
+      of each cycle.
+
+   .. tab-item:: Monsoon
+      :sync: monsoon
+
+      The model output is in the work directory of the ``lfric_atm`` task
+      of each cycle.
+
+   .. tab-item:: Isambard 3
+      :sync: isambard3
+
+      The model output is in the work directory of each cycle, one file every
+      10 minutes of model time:
+      ``~/cylc-run/u-dz791/runN/work/<cycle>/lfric_atm/lfric_crm_diag_*.nc``.
+
+   .. tab-item:: Other
+      :sync: other
+
+      The model output is in the work directory of the ``lfric_atm`` task
+      of each cycle.
 

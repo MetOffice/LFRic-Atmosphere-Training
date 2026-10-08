@@ -268,10 +268,29 @@ View your logs:
    From the logs find out how many time steps were executed and locate
    the output files in NetCDF format.
 
-.. note:: Isambard 3
+.. tab-set::
+   :sync-group: site
 
-   The model runs on several MPI ranks, and each writes its own log. Look in
-   ``~/cylc-run/u-dn704/runN/work/1/lfric_atm/PET00.lfric_atm.Log``.
+   .. tab-item:: Met Office
+      :sync: met-office
+
+      The model writes its log to the ``job.out`` of the ``lfric_atm`` task.
+
+   .. tab-item:: Monsoon
+      :sync: monsoon
+
+      The model writes its log to the ``job.out`` of the ``lfric_atm`` task.
+
+   .. tab-item:: Isambard 3
+      :sync: isambard3
+
+      The model runs on several MPI ranks, and each writes its own log. Look in
+      ``~/cylc-run/u-dn704/runN/work/1/lfric_atm/PET00.lfric_atm.Log``.
+
+   .. tab-item:: Other
+      :sync: other
+
+      The model writes its log to the ``job.out`` of the ``lfric_atm`` task.
 
 Step 5: Modify the configuration
 ++++++++++++++++++++++++++++++++
@@ -298,15 +317,37 @@ Then, re-run the workflow for each change (or combine them) and compare:
    The NetCDF files can be found under the path
    ``~/cylc-run/lfric_apps_standard_suite/runN/work/1/lfric_atm/*nc``.
 
-.. note:: Isambard 3
+.. tab-set::
+   :sync-group: site
 
-   Edit ``~/roses/u-dn704/app/lfric_atm/rose-app.conf``. You do not need to
-   rebuild the model to re-run it. Remove the previous output, then reinstall
-   the workflow and run only the model task again:
+   .. tab-item:: Met Office
+      :sync: met-office
 
-   .. code-block:: bash
+      Make the changes as the hint above says, then run the workflow again as
+      in Step 3.
 
-      rm ~/cylc-run/u-dn704/runN/work/1/lfric_atm/*.nc
-      cd ~/roses/u-dn704
-      cylc vr u-dn704
-      cylc trigger u-dn704//1/lfric_atm
+   .. tab-item:: Monsoon
+      :sync: monsoon
+
+      Make the changes as the hint above says, then run the workflow again as
+      in Step 3.
+
+   .. tab-item:: Isambard 3
+      :sync: isambard3
+
+      Edit ``~/roses/u-dn704/app/lfric_atm/rose-app.conf``. You do not need to
+      rebuild the model to re-run it. Remove the previous output, then reinstall
+      the workflow and run only the model task again:
+
+      .. code-block:: bash
+
+         rm ~/cylc-run/u-dn704/runN/work/1/lfric_atm/*.nc
+         cd ~/roses/u-dn704
+         cylc vr u-dn704
+         cylc trigger u-dn704//1/lfric_atm
+
+   .. tab-item:: Other
+      :sync: other
+
+      Make the changes as the hint above says, then run the workflow again as
+      in Step 3.
