@@ -51,8 +51,19 @@ The LFRic environment
 =====================
 
 The LFRic build and workflow tools (compiler, MPI, XIOS, PSyclone, Rose and
-Cylc) come from a pre-built environment built with `lfric-env-isambard`_. Load
-it in every new terminal before building or running the model:
+Cylc) come from a pre-built environment built with `lfric-env-isambard`_.
+
+Your University of Exeter contact will tell you the directory where the
+course's environments are installed. Once, after you first log in, save it in
+``~/.bashrc`` so that every new terminal knows it, then log in again:
+
+.. code-block:: bash
+
+   # Replace <DIRECTORY> with the directory you were given
+   echo 'export LFRIC_TRAINING_PREFIX=<DIRECTORY>' >> ~/.bashrc
+
+Load the environment in every new terminal before building or running the
+model:
 
 .. include:: /include/isambard3-lfric-env.rst
 
