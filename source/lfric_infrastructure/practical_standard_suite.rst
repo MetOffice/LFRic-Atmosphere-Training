@@ -72,7 +72,7 @@ Step 1: Check Out the Standard Suite
       .. code-block:: bash
 
          git clone https://github.com/ickc/lfric-env-isambard.git \
-               "$SCRATCHDIR/lfric-env-isambard"
+               "$SCRATCH/lfric-env-isambard"
 
       In the rest of this practical, use ``~/roses/u-dn704`` wherever the
       text says ``~/cylc-src/lfric_apps_standard_suite``, and ``u-dn704``
@@ -160,7 +160,7 @@ Start the workflow with:
 
       .. code-block:: bash
 
-         bash "$SCRATCHDIR/lfric-env-isambard/examples/science-suites/run-suite.sh" \
+         bash "$SCRATCH/lfric-env-isambard/examples/science-suites/run-suite.sh" \
                u-dn704
 
       This adds the Isambard 3 settings to your copy of the workflow, then

@@ -55,7 +55,7 @@ Step 1: Compile the model
 
          .. code-block:: bash
 
-            cd "$SCRATCHDIR"
+            cd "$SCRATCH"
             git clone https://github.com/MetOffice/lfric_apps.git
             cd lfric_apps
 

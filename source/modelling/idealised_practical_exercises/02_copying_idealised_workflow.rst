@@ -46,13 +46,13 @@ practicals, **copy** the workflow rather than checking it out:
          svn update -r 368986 ~/roses/u-dz791
 
       Then get the launcher. If you already have it from
-      :ref:`practical_3.2`, run ``git -C "$SCRATCHDIR/lfric-env-isambard"
+      :ref:`practical_3.2`, run ``git -C "$SCRATCH/lfric-env-isambard"
       pull`` instead:
 
       .. code-block:: bash
 
          git clone https://github.com/ickc/lfric-env-isambard.git \
-               "$SCRATCHDIR/lfric-env-isambard"
+               "$SCRATCH/lfric-env-isambard"
 
       Wherever the rest of this practical says ``<suite-id>``, use
       ``u-dz791``.

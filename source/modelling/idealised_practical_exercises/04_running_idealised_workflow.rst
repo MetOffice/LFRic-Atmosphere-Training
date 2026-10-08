@@ -30,7 +30,7 @@ Once your suite has been set up, you can run it using Cylc:
 
       .. code-block:: bash
 
-         bash "$SCRATCHDIR/lfric-env-isambard/examples/science-suites/run-suite.sh" \
+         bash "$SCRATCH/lfric-env-isambard/examples/science-suites/run-suite.sh" \
                u-dz791
 
       This adapts your checkout in ``~/roses/u-dz791`` to Isambard 3 the

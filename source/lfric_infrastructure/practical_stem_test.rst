@@ -96,9 +96,9 @@ Step 2: Run the rose stem tests
 
       # Skip the clone if you already have it from Practical 2
       git clone https://github.com/ickc/lfric-env-isambard.git \
-          "$SCRATCHDIR/lfric-env-isambard"
+          "$SCRATCH/lfric-env-isambard"
       git apply \
-          "$SCRATCHDIR/lfric-env-isambard/patches/rose-stem/lfric_apps-isambard3-site.patch"
+          "$SCRATCH/lfric-env-isambard/patches/rose-stem/lfric_apps-isambard3-site.patch"
 
    Leave these changes uncommitted: rose stem tests your working copy,
    including uncommitted changes.
