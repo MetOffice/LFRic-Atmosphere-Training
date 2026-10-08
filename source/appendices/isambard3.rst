@@ -40,10 +40,15 @@ Where to run commands
    * - Type of work
      - Where to run it
    * - Editing files, cloning repositories, Rosie commands, starting Cylc
-       workflows, ``rose edit``
+       workflows
      - A login node. You land on one at random each time you log in.
-   * - Compiling and running LFRic Atmosphere
-     - A compute node, through Slurm. The practicals give the commands.
+   * - Compiling LFRic Atmosphere and running the small example in
+       Practical 1
+     - A login node. Each user there can use up to 16 cores and 16 GB of
+       memory; the practical gives the settings that fit.
+   * - The tasks of a Cylc workflow, such as model builds and runs
+     - Compute nodes. Cylc submits them to Slurm for you, so they may wait in
+       the queue before they start.
    * - The Jupyter notebooks and plotting in this course
      - A login node. These workloads are small enough to run there.
 

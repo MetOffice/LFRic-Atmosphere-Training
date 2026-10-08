@@ -103,10 +103,9 @@ Step 1: Compile the model
       .. tab-item:: Isambard 3
          :sync: isambard3
 
-         Compile on a compute node: the login nodes limit how many processes
-         you can run. The build fetches LFRic Core and the physics
-         repositories from ``git@github.com:`` URLs, so first tell Git to use
-         HTTPS instead, for this terminal only:
+         The build fetches LFRic Core and the physics repositories from
+         ``git@github.com:`` URLs, which need a GitHub SSH key. Tell Git to
+         use HTTPS instead, for this terminal only:
 
          .. code-block:: bash
 
@@ -114,14 +113,12 @@ Step 1: Compile the model
             export GIT_CONFIG_KEY_0=url.https://github.com/.insteadOf
             export GIT_CONFIG_VALUE_0=git@github.com:
 
-         Then build with 24 cores. ``srun`` waits for a compute node, runs the
-         build there, and returns when it finishes (a few minutes):
+         Then compile on the login node. Each user can use up to 16 cores
+         there, so build with 16 (about 4 minutes):
 
          .. code-block:: bash
 
-            srun --partition=grace --ntasks=1 --cpus-per-task=24 \
-                --mem-per-cpu=1600M --time=01:00:00 \
-                ./build/local_build.py lfric_atm -j 24
+            ./build/local_build.py lfric_atm -j 16
 
       .. tab-item:: Other
          :sync: other
@@ -181,19 +178,18 @@ The code contains an `LFRic example`_ configuration containing:
       .. tab-item:: Isambard 3
          :sync: isambard3
 
-         Run the model on a compute node. It takes under a minute there, but
-         much longer on a shared login node:
+         First limit the model to 4 OpenMP threads. Otherwise it starts one
+         thread for each of the login node's 144 cores, but can only use 16,
+         and runs very slowly. With 4 threads it takes a few seconds:
 
          .. code-block:: bash
 
-            srun --partition=grace --ntasks=1 --cpus-per-task=4 \
-                --time=00:30:00 ../bin/lfric_atm configuration.nml > log.txt
+            export OMP_NUM_THREADS=4
+            ../bin/lfric_atm configuration.nml > log.txt
 
-         Later steps run the model again with ``../bin/lfric_atm``. Put the
-         same ``srun ...`` options in front of each of those commands. To
-         recompile, repeat the ``srun ... ./build/local_build.py`` command
-         from the ``lfric_apps`` directory, in a terminal where the
-         ``GIT_CONFIG_*`` variables are set.
+         The setting lasts until you close the terminal. In a new terminal,
+         set it again before running the model, and set the ``GIT_CONFIG_*``
+         variables again before recompiling.
 
       .. tab-item:: Other
          :sync: other
