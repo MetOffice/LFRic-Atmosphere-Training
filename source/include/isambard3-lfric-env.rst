@@ -7,4 +7,4 @@
 .. code-block:: bash
 
    module use "$LFRIC_TRAINING_PREFIX/modulefiles"
-   module load lfric-env/v2026.09.28/cray
+   module load lfric-env/v2026.10.08/cray
