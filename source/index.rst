@@ -70,6 +70,11 @@ matches your platform once, and the rest of the site follows your choice.
        Momentum partners. Monsoon3 splits access, interactive workflow
        management, and HPC work across separate services, so some commands
        must be run from a particular service. See :ref:`monsoon3-where-to-run-commands`.
+   * - **Isambard 3**
+     - You are working on Isambard 3, the Bristol Centre for Supercomputing
+       Grace system, using the course's pre-built LFRic and Python
+       environments. Access is arranged through the University of Exeter.
+       See :ref:`isambard3-getting-started`.
    * - **Other**
      - You are working on your own machine, or on a system run by another
        institution. You provide the environment yourself.

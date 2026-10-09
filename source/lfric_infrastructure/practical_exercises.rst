@@ -63,6 +63,21 @@ Use the tab that matches your platform before starting the practicals.
       3. Complete the site-supported MOSRS authentication setup before running
          any Rosie commands.
 
+   .. tab-item:: Isambard 3
+      :sync: isambard3
+
+      .. include:: /include/isambard3-help.rst
+
+      1. Load the Isambard 3 LFRic environment described in
+         :ref:`lfric-platform-prerequisites` so the required build and workflow
+         tools are available.
+      2. The LFRic repositories on GitHub are public, so you can clone them
+         over HTTPS without a GitHub SSH key. The practicals show how to make
+         the model build fetch its dependencies over HTTPS too.
+      3. The Rosie commands in later practicals need a MOSRS account. If a
+         practical requires MOSRS/SRS access, ask your University of Exeter
+         contact.
+
    .. tab-item:: Other
       :sync: other
 

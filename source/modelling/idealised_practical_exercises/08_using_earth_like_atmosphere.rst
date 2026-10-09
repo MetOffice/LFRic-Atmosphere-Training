@@ -21,7 +21,6 @@ In the top-level configuration, change the ``LFRIC_LEVS`` to
     Screenshot of the Rose GUI showing the top-level panel in the
     extraterrestrial CRM suite.
 
-
 Step 2: Change the gas constants
 --------------------------------
 

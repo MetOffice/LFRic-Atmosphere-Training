@@ -22,6 +22,18 @@
          module use /home/users/lfricadmin.mon/lmod
          module load lfric
 
+   .. tab-item:: Isambard 3
+      :sync: isambard3
+
+      .. include:: /include/isambard3-help.rst
+
+      .. include:: /include/isambard3-lfric-env.rst
+
+      This loads the Cray GNU programming environment, Cray MPICH and
+      NetCDF/HDF5, and a Spack-built stack with XIOS, PSyclone, Rose and Cylc.
+      It also sets ``FC``, ``CXX`` and ``LDMPI`` for the LFRic build, so do
+      not set these yourself.
+
    .. tab-item:: Other
       :sync: other
 

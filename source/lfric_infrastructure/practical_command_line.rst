@@ -46,6 +46,19 @@ Step 1: Compile the model
             git clone https://github.com/MetOffice/lfric_apps.git
             cd lfric_apps
 
+      .. tab-item:: Isambard 3
+         :sync: isambard3
+
+         .. include:: /include/isambard3-help.rst
+
+         Clone over HTTPS into your scratch space:
+
+         .. code-block:: bash
+
+            cd "$SCRATCH"
+            git clone https://github.com/MetOffice/lfric_apps.git
+            cd lfric_apps
+
       .. tab-item:: Other
          :sync: other
 
@@ -70,9 +83,49 @@ Step 1: Compile the model
 
 3. Compile the model
 
-   .. code-block:: bash
+   .. tab-set::
+      :sync-group: site
 
-      ./build/local_build.py lfric_atm
+      .. tab-item:: Met Office
+         :sync: met-office
+
+         .. code-block:: bash
+
+            ./build/local_build.py lfric_atm
+
+      .. tab-item:: Monsoon
+         :sync: monsoon
+
+         .. code-block:: bash
+
+            ./build/local_build.py lfric_atm
+
+      .. tab-item:: Isambard 3
+         :sync: isambard3
+
+         The build fetches LFRic Core and the physics repositories from
+         ``git@github.com:`` URLs, which need a GitHub SSH key. Tell Git to
+         use HTTPS instead, for this terminal only:
+
+         .. code-block:: bash
+
+            export GIT_CONFIG_COUNT=1
+            export GIT_CONFIG_KEY_0=url.https://github.com/.insteadOf
+            export GIT_CONFIG_VALUE_0=git@github.com:
+
+         Then compile on the login node. Each user can use up to 16 cores
+         there, so build with 16 (about 4 minutes):
+
+         .. code-block:: bash
+
+            ./build/local_build.py lfric_atm -j 16
+
+      .. tab-item:: Other
+         :sync: other
+
+         .. code-block:: bash
+
+            ./build/local_build.py lfric_atm
 
    The compilation may take some time and uses code from the different
    repositories, algorithms, and kernels. It invokes PSyclone, compiles,
@@ -105,9 +158,46 @@ The code contains an `LFRic example`_ configuration containing:
 
 2. Run the example with a "single-column" configuration:
 
-   .. code-block:: bash
+   .. tab-set::
+      :sync-group: site
 
-      ../bin/lfric_atm configuration.nml > log.txt
+      .. tab-item:: Met Office
+         :sync: met-office
+
+         .. code-block:: bash
+
+            ../bin/lfric_atm configuration.nml > log.txt
+
+      .. tab-item:: Monsoon
+         :sync: monsoon
+
+         .. code-block:: bash
+
+            ../bin/lfric_atm configuration.nml > log.txt
+
+      .. tab-item:: Isambard 3
+         :sync: isambard3
+
+         Check that the model is limited to 4 OpenMP threads, as set up in
+         :ref:`isambard3-getting-started`. Otherwise it starts one thread for
+         each of the login node's 144 cores, but can only use 16, and runs
+         very slowly. With 4 threads it takes a few seconds:
+
+         .. code-block:: bash
+
+            echo "$OMP_NUM_THREADS"    # should print 4
+            ../bin/lfric_atm configuration.nml > log.txt
+
+         If it prints nothing, run ``export OMP_NUM_THREADS=4`` first. In a
+         new terminal, set the ``GIT_CONFIG_*`` variables again before
+         recompiling.
+
+      .. tab-item:: Other
+         :sync: other
+
+         .. code-block:: bash
+
+            ../bin/lfric_atm configuration.nml > log.txt
 
    The namelist file ``configuration.nml`` configures the model run.
    Note the we redirect the ``stdout`` to ``log.txt`` so we can look
@@ -142,6 +232,12 @@ The code contains an `LFRic example`_ configuration containing:
 
          ``ncdump`` is part of the NetCDF tools available in the Monsoon3
          ``lfric`` environment.
+
+      .. tab-item:: Isambard 3
+         :sync: isambard3
+
+         ``ncdump`` is part of the Cray NetCDF tools loaded by the Isambard 3
+         ``lfric-env`` module.
 
       .. tab-item:: Other
          :sync: other
@@ -229,7 +325,7 @@ To gain familiarity with the model:
          write( log_scratch_space, '(A)' ) "###_INFO_#1 END OF TIME STEP"
          call log_event( log_scratch_space, LOG_LEVEL_INFO )
 
-         if (model_clock%get_step() .lt. 72) then
+         if (model_clock%get_step() < 72) then
             write( log_scratch_space, '(A)' ) "###_INFO_#2 THE WEATHER IS FINE"
          else
             write( log_scratch_space, '(A)' ) "###_INFO_#2 ENJOY THE MODEL TUTORIAL"
