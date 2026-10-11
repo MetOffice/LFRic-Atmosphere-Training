@@ -18,7 +18,7 @@ branch of the workflow, so the source you copy differs by platform:
 
       .. code-block:: bash
 
-         rosie copy u-by395
+         rosie copy |regional_workflow_example|
 
    .. tab-item:: Monsoon
       :sync: monsoon
@@ -27,7 +27,7 @@ branch of the workflow, so the source you copy differs by platform:
 
       .. code-block:: bash
 
-         rosie copy u-by395/u-by395_lfric_monsoon3
+         rosie copy |regional_workflow_example|/|regional_workflow_example|_lfric_monsoon3
 
    .. tab-item:: Other
       :sync: other
@@ -36,7 +36,7 @@ branch of the workflow, so the source you copy differs by platform:
 
       .. code-block:: bash
 
-         rosie copy u-by395
+         rosie copy |regional_workflow_example|
 
 Alternatively, you can check out the workflow instead of copying it:
 
@@ -48,14 +48,14 @@ Alternatively, you can check out the workflow instead of copying it:
 
       .. code-block:: bash
 
-         rosie checkout u-by395
+         rosie checkout |regional_workflow_example|
 
    .. tab-item:: Monsoon
       :sync: monsoon
 
       .. code-block:: bash
 
-         rosie checkout u-by395/u-by395_lfric_monsoon3
+         rosie checkout |regional_workflow_example|/|regional_workflow_example|_lfric_monsoon3
 
    .. tab-item:: Other
       :sync: other
@@ -64,7 +64,7 @@ Alternatively, you can check out the workflow instead of copying it:
 
       .. code-block:: bash
 
-         rosie checkout u-by395
+         rosie checkout |regional_workflow_example|
 
 Either command reports the new suite ID it created, and the local copy it made
 under ``~/roses``. Make a note of that ID: the rest of this practical refers to
