@@ -48,4 +48,10 @@ the Momentum Framework.
 Key functional components needed to build prediction and projection systems
 with the Momentum Framework:
 
-.. include:: /_static/1/intro_components.html
+.. _fig-intro_components:
+
+.. figure:: /_static/1/intro_components.svg
+   :alt: Key functional components needed to build prediction and projection systems with the Momentum Framework
+
+   Key functional components needed to build prediction and projection systems with the Momentum Framework
+
