@@ -38,6 +38,9 @@ jobs:
       - name: Lint Restructured Text
         run: uv run doc8 source/
 
+      - name: Check for intersphinx non-use
+        run: uv run ./etc/bin/intersphinx_reference.py --check-for-explicit-links
+
       - name: Test documentation building
         run: |
           uv run make clean html linkcheck SPHINXOPTS='-Wn'

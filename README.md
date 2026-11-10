@@ -242,9 +242,6 @@ LFRic documentation built with Sphinx. To see a full list of references
 available run:
 
 ```console
-./etc/bin/intersphinx_reference.py
-
-# Or pipe to a file that you can search in your editor.
 ./etc/bin/intersphinx_reference.py > intersphinx.ref
 ```
 
