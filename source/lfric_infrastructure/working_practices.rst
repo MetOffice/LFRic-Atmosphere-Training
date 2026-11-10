@@ -18,11 +18,10 @@ Topics include:
 
 .. _fig-infra-working-practices:
 
-.. figure:: /_static/working_practices.jpg
-   :width: 650px
-   :alt: Simulation Systems Working Practices
+.. mermaid:: ../_static/__working_practice.mmd
 
-   Simulation Systems Working Practices.
+Diagram from
+:external+simulation_systems:std:doc:`WorkingPractices/working_practices`
 
 The pages also signpost where to get help:
 

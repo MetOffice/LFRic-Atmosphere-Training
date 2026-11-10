@@ -1,11 +1,21 @@
-import sys
 import os
+import re
+import sys
 from collections.abc import Mapping
+from pathlib import Path
 from types import MappingProxyType
 
+import requests
 from docutils import nodes
 from sphinx.application import Sphinx
 from sphinx.errors import ExtensionError
+
+
+RE_MERMAID_DIRECTIVE = re.compile(
+    r"(?m)^[ \t]*\.\.[ \t]*mermaid::[^\r\n]*\r?\n((?:^[ \t]+"
+    r"[^\r\n]*(?:\r?\n|$)|^[ \t]*\r?\n)*)"
+)
+
 
 sys.path.insert(0, os.path.abspath(os.path.join(
     os.path.dirname(__file__), '_extensions'
@@ -38,6 +48,7 @@ extensions = [
     'quizdown',
     'sphinxcontrib.video',
     'sphinx_copybutton',
+    'sphinxcontrib.mermaid',
 ]
 
 templates_path = ['_templates']
@@ -49,6 +60,27 @@ exclude_patterns = ['include/**']
 
 # -- Figure numbering --------------------------------------------------------
 numfig = True
+
+
+def extract_mermaid_diagram(
+    source: str, target: str, index: int, sourcename: str
+) -> None:
+    """Fetch a reStructuredText file and save one Mermaid directive body.
+
+    Args:
+        source: URL of the reStructuredText file to fetch.
+        target: Filename to write within the ``source/_static`` directory.
+        index: Which instance of a mermaid directive in source file to return.
+    """
+    data = requests.get(source)
+    mermaids = [
+        match.group(1) for match in RE_MERMAID_DIRECTIVE.finditer(data.text)
+    ]
+    target = Path(__file__).parent / f'_static/{target}'
+    text = mermaids[index] + (
+        f'  source["<a href={source}>Source {sourcename}</a>"]'
+    )
+    target.write_text(text)
 
 
 def validate_figure_labelling(
@@ -129,6 +161,15 @@ def validate_figure_labelling(
 def setup(app: Sphinx) -> dict[str, str | bool]:
     """Register local Sphinx validation hooks."""
     app.connect('doctree-read', validate_figure_labelling)
+    extract_mermaid_diagram(
+        (
+            'https://raw.githubusercontent.com/MetOffice/simulation-systems'
+            '/refs/heads/main/source/WorkingPractices/working_practices.rst'
+        ),
+        "__working_practice.mmd",
+        0,
+        '<br>Simulation Systems<br>Working Practices'
+    )
     return {'version': '1.0', 'parallel_read_safe': True}
 
 # -- layout -----------------------------------------------------------------
