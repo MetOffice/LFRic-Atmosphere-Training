@@ -2,7 +2,8 @@
 Experiments with the Extraterrestrial CRM Suite
 ***********************************************
 
-We will now run a couple of simulations using the ``u-dz791`` suite. This suite
+We will now run a couple of simulations using the ``|idealised suite|`` suite.
+This suite
 is designed to model convection in hydrogen-rich atmospheres of other planets
 in a highly simplified setup - the default configuration uses only the
 dynamical core (GungHo).

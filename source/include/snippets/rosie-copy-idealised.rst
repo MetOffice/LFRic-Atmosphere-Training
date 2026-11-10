@@ -1,11 +1,11 @@
-.. Copy or check out the idealised suite u-dz791.
+.. Copy or check out the idealised suite |idealised suite|.
 .. To use it: .. include:: /include/snippets/rosie-copy-idealised.rst
 
 .. code-block:: bash
 
-   rosie copy u-dz791
+   rosie copy |idealised suite|
 
    # Alternatively, you can check out the workflow instead of copying it:
-   rosie checkout u-dz791
+   rosie checkout |idealised suite|
    # or the short form
-   rosie co u-dz791
+   rosie co |idealised suite|
