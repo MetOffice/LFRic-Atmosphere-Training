@@ -242,8 +242,7 @@ LFRic documentation built with Sphinx. To see a full list of references
 available run:
 
 ```console
-./etc/bin/intersphinx_reference.py
-cat intersphinx.ref
+./etc/bin/intersphinx_reference.py > intersphinx.ref
 ```
 
 #### Pull Request (PR) Process

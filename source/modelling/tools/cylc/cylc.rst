@@ -17,5 +17,5 @@ Cylc - workflow engine
 
 .. seealso::
 
-   * :external+cylc:doc:`Cylc Workflows <tutorial/index>`
+   * :external+cylc:doc:`Cylc Documentation <index>`
    * `The Cylc Discussion (Discourse) Forum <https://cylc.discourse.group>`_

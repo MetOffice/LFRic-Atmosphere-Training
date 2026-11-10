@@ -35,8 +35,8 @@ def parse_args(argv=None):
         '--check-for-explicit-links',
         action='store_true',
         help=(
-            'Inspect intersphinx inventories directly instead of'
-            ' capturing output.'
+            'Fail if a URL which could be mapped with intersphinx is'
+            'given explicitly in source.'
         ),
     )
     return parser.parse_args(argv)
@@ -56,11 +56,14 @@ def check_links():
     status = 0
     for target in intersphinx_mapping.values():
         url = target[0]
-        res = run(['grep', '-r', url, str(SOURCE)], capture_output=True)
+        res = run(
+            ['grep', '-r', url, str(SOURCE), '--exclude', 'conf.py'],
+            capture_output=True
+        )
         out = [i for i in res.stdout.decode().split('\n') if i]
-        if len(out) > 1:
+        if len(out) > 0:
             print(
-                f' 😢 URL used {len(out)} times in source - use intersphinx:'
+                f' 😢 URL reused {len(out)} times in source - use intersphinx:'
                 f'\n    {url}'
             )
             status = 1
