@@ -18,9 +18,10 @@ Topics include:
 
 .. _fig-infra-working-practices:
 
-.. raw:: html
-   :file: ../_static/working_practices.svg
+.. mermaid:: ../_static/__working_practice.mmd
 
+Diagram from
+:external+simulation_systems:std:doc:`WorkingPractices/working_practices`
 
 The pages also signpost where to get help:
 

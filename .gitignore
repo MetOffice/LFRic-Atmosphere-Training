@@ -9,3 +9,4 @@ build/
 **/.ipynb_checkpoints/
 intersphinx.ref
 .DS_Store
+*__*.mmd

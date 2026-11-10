@@ -17,6 +17,8 @@ dependencies = [
   "sphinx-copybutton",
   "sphinx-design",
   "sphinx-lint",
+  "sphinxcontrib-mermaid",
+  "requests",
 ]
 
 [project.optional-dependencies]
