@@ -23,6 +23,26 @@ Once your suite has been set up, you can run it using Cylc:
 
          cylc vip
 
+   .. tab-item:: Isambard 3
+      :sync: isambard3
+
+      .. include:: /include/isambard3-help.rst
+
+      .. code-block:: bash
+
+         bash "$SCRATCH/lfric-env-isambard/examples/science-suites/run-suite.sh" \
+               u-dz791
+
+      This adapts your checkout in ``~/roses/u-dz791`` to Isambard 3 the
+      first time, then runs ``cylc vip`` on it. Run it on a login node; Cylc
+      submits the tasks to Slurm. The build takes about ten minutes once its
+      job starts, then each of the two 30-minute cycles takes about two
+      minutes.
+
+      To run an experiment after changing the configuration, run the same
+      command again. It keeps your changes and starts a new run,
+      ``u-dz791/runN``, which builds the model again.
+
    .. tab-item:: Other
       :sync: other
 
@@ -61,3 +81,32 @@ Global Configurations*.
 
 After the workflow has completed successfully, navigate to the output directory
 and try plotting the data.
+
+.. tab-set::
+   :sync-group: site
+
+   .. tab-item:: Met Office
+      :sync: met-office
+
+      The model output is in the work directory of the ``lfric_atm`` task
+      of each cycle.
+
+   .. tab-item:: Monsoon
+      :sync: monsoon
+
+      The model output is in the work directory of the ``lfric_atm`` task
+      of each cycle.
+
+   .. tab-item:: Isambard 3
+      :sync: isambard3
+
+      The model output is in the work directory of each cycle, one file every
+      10 minutes of model time:
+      ``~/cylc-run/u-dz791/runN/work/<cycle>/lfric_atm/lfric_crm_diag_*.nc``.
+
+   .. tab-item:: Other
+      :sync: other
+
+      The model output is in the work directory of the ``lfric_atm`` task
+      of each cycle.
+

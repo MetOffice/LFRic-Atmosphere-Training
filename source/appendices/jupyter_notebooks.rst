@@ -39,6 +39,13 @@ viewing results. A notebook is a document made from cells:
          * Ensure that you use ``module load scitools``
          * Use scitools as your kernel.
 
+      .. tab-item:: Isambard 3
+         :sync: isambard3
+
+         * Ensure that you have activated the course's Python environment
+           (see :ref:`isambard3-getting-started`).
+         * Use the default Python 3 kernel.
+
       .. tab-item:: Other
          :sync: other
 
@@ -102,6 +109,11 @@ the local URL printed in the terminal into your browser. It will usually start
 with ``http://localhost:`` and may include a ``token=`` value. Treat that URL as
 private while the notebook server is running.
 
+.. note::
+
+   On Isambard 3, start JupyterLab on the login node and reach it through an
+   SSH tunnel, as described in :ref:`isambard3-jupyterlab`.
+
 .. important::
    Start JupyterLab from ``notebooks/iris-mesh-tutorial/notebooks`` when working
    through the mesh tutorial. Several notebooks use paths relative to this
@@ -113,7 +125,8 @@ Opening and running a notebook
 1. In the JupyterLab file browser, open the first tutorial notebook:
    ``00_Mesh_Tutorial_Intro.ipynb``.
 2. If JupyterLab asks you to select a kernel, choose the one for your
-   environment: the default Python 3 kernel under ``scitools``, or
+   environment: the default Python 3 kernel under ``scitools`` or the
+   Isambard 3 course environment, or
    ``Python (lfric-mesh)`` for a conda environment.
 3. If the notebook has already opened with a different kernel, use
    ``Kernel -> Change Kernel`` to switch.

@@ -20,6 +20,15 @@
 
          module load scitools
 
+   .. tab-item:: Isambard 3
+      :sync: isambard3
+
+      .. include:: /include/isambard3-help.rst
+
+      Activate the course's shared Python environment:
+
+      .. include:: /include/isambard3-python-env.rst
+
    .. tab-item:: Other
       :sync: other
 

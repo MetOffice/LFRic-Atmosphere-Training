@@ -26,6 +26,11 @@ directory you just made. You should see the following files:
 
       .. include:: /include/snippets/gc-suite-listing.rst
 
+   .. tab-item:: Isambard 3
+      :sync: isambard3
+
+      .. include:: /include/isambard3-no-global-suite.rst
+
    .. tab-item:: Other
       :sync: other
 

@@ -51,16 +51,28 @@ Once your environment is set up, begin by importing the necessary packages:
 Loading Model Output
 --------------------
 
-The output from your idealised CRM simulation will be in NetCDF format. You can
-load this data using Iris:
+The output from your idealised CRM simulation will be in NetCDF format. The
+workflow writes one file per output period, named
+``lfric_crm_diag_<start>-<end>.nc``, in the ``work/<cycle>/lfric_atm``
+directory of each cycle. Each file holds a single output time. You can load all
+of them with Iris and join them into one time series:
 
 .. code-block:: python
 
-    # Define paths to model output files
-    path = 'path/to/your/lfric_diag.nc'
+    # Define paths to model output files: every diagnostic file from every
+    # cycle of the run
+    path = '~/cylc-run/<suite-id>/runN/work/*/lfric_atm/lfric_crm_diag_*.nc'
 
-    # Load all cubes from the file as a CubeList
+    # Load all cubes from the files as a CubeList
     cubelist = iris.load(path)
+
+    # Join the files along time. Time is loaded as an auxiliary coordinate,
+    # so make it a dimension first, and remove the attributes that differ
+    # between files (such as their creation time)
+    for cube in cubelist:
+        iris.util.promote_aux_coord_to_dim_coord(cube, "time")
+    iris.util.equalise_attributes(cubelist)
+    cubelist = cubelist.concatenate()
 
     # Print cubelist info
     print(f"Loaded {len(cubelist)} fields from {path}\n")
@@ -418,6 +430,18 @@ tutorial, we'll simply define our grid parameters manually.
 
     print(air_temp_xy)
 
+The plots below use x/y indices, so reshape every cube in the CubeList in the
+same way:
+
+.. code-block:: python
+
+    cubelist_xy = iris.cube.CubeList(
+        reshape_ugrid_cube_to_xy_grid(cube, nx, ny, delta_x, delta_y)
+        for cube in cubelist
+    )
+
+    print(cubelist_xy)
+
 Visualisations
 ====================
 
@@ -430,16 +454,17 @@ data along a surface (e.g., through the domain centre):
 .. code-block:: python
 
     # Cube to plot
-    cube = cubelist.extract_cube('air_temperature')
+    cube = cubelist_xy.extract_cube('air_temperature')
 
-    # Choose a time step and y slice index to plot
-    time_step = 30
-    y_index = 64  # Centre of the domain
+    # Choose an output time index and y slice index to plot
+    time_step = -1  # Last output time
+    y_index = ny // 2  # Centre of the domain
 
     # Create the plot
+    time = cube.coord('time').points[time_step]
     fig, ax = plt.subplots(figsize=(10, 8))
     qplt.pcolormesh(cube[time_step, :, y_index, :], cmap='RdBu_r')
-    plt.title(f'Air Temperature slice at timestep {time_step}')
+    plt.title(f'Air Temperature slice at {time} s')
     plt.show()
 
 This will give you a vertical cross-section of air temperature through the
@@ -456,7 +481,7 @@ temperature):
 
 .. code-block:: python
 
-    cube = cubelist.extract_cube("virtual_potential_temperature")
+    cube = cubelist_xy.extract_cube("virtual_potential_temperature")
     z = cube.coords('full_levels')[0].points
 
     # Define location and time steps
@@ -573,6 +598,8 @@ for each cube, and plots the initial and final state in a grid layout.
         fig.tight_layout()
         plt.show()
 
+    plot_initial_final_profiles(cubelist_xy)
+
 Animations
 ----------
 
@@ -587,10 +614,12 @@ notebook:
     # Ensure inline animation rendering in Jupyter
     plt.rcParams['animation.html'] = 'html5'
 
-    upward_air_velocity_cube = cubelist.extract_cube('upward_air_velocity')
+    upward_air_velocity_cube = cubelist_xy.extract_cube('upward_air_velocity')
 
     # Crop to 0:110 vertical levels
-    cube_iter = upward_air_velocity_cube[:, :110, 64, :].slices_over('time')
+    cube_iter = upward_air_velocity_cube[:, :110, ny // 2, :].slices_over(
+        'time'
+    )
     ani = iplt.animate(cube_iter, qplt.pcolormesh)
 
     # Display inline in notebook

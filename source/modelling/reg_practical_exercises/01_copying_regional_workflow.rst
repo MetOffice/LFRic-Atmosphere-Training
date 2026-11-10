@@ -29,6 +29,11 @@ branch of the workflow, so the source you copy differs by platform:
 
          rosie copy u-by395/u-by395_lfric_monsoon3
 
+   .. tab-item:: Isambard 3
+      :sync: isambard3
+
+      .. include:: /include/isambard3-no-regional-suite.rst
+
    .. tab-item:: Other
       :sync: other
 
@@ -56,6 +61,11 @@ Alternatively, you can check out the workflow instead of copying it:
       .. code-block:: bash
 
          rosie checkout u-by395/u-by395_lfric_monsoon3
+
+   .. tab-item:: Isambard 3
+      :sync: isambard3
+
+      .. include:: /include/isambard3-no-regional-suite.rst
 
    .. tab-item:: Other
       :sync: other

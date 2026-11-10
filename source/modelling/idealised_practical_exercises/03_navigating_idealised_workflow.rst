@@ -45,6 +45,31 @@ top-level settings required to run the idealised suite.
 Machine, LFRic version, compilation settings
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. tab-set::
+   :sync-group: site
+
+   .. tab-item:: Met Office
+      :sync: met-office
+
+      Set these to match your platform, as described below.
+
+   .. tab-item:: Monsoon
+      :sync: monsoon
+
+      Set these to match your platform, as described below.
+
+   .. tab-item:: Isambard 3
+      :sync: isambard3
+
+      The Isambard 3 launcher sets ``EX_HOST='isambard3'``, ``VN``, and
+      ``COMPILER='gnu'`` for you. Leave them as they are. A Grace node on
+      Isambard 3 has 144 cores rather than 128.
+
+   .. tab-item:: Other
+      :sync: other
+
+      Set these to match your platform, as described below.
+
 - **EX_HOST**
 
   Select what machine to run the experiment on. Currently only the Met Office

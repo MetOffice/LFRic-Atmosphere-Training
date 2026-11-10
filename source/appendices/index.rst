@@ -10,4 +10,5 @@ before starting the practical exercises.
    :caption: Contents
 
    monsoon3
+   isambard3
    jupyter_notebooks

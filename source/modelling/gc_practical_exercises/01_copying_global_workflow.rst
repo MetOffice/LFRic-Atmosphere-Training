@@ -50,6 +50,11 @@ For this practical, we recommend copying the workflow.
 
          rosie copy u-dz612
 
+   .. tab-item:: Isambard 3
+      :sync: isambard3
+
+      .. include:: /include/isambard3-no-global-suite.rst
+
    .. tab-item:: Other
       :sync: other
 
@@ -77,6 +82,11 @@ followed by ``:wq`` to write and quit.
 
       .. include:: /include/snippets/rosie-copy-metadata.rst
 
+   .. tab-item:: Isambard 3
+      :sync: isambard3
+
+      .. include:: /include/isambard3-no-global-suite.rst
+
    .. tab-item:: Other
       :sync: other
 
@@ -103,6 +113,11 @@ You will then be asked in the terminal:
          $ rosie copy u-dz612
          Copy "u-dz612/trunk@123456" to "u-?????"? [y or n (default)]
 
+   .. tab-item:: Isambard 3
+      :sync: isambard3
+
+      .. include:: /include/isambard3-no-global-suite.rst
+
    .. tab-item:: Other
       :sync: other
 
@@ -126,6 +141,11 @@ following message confirming the workflow has been copied.
       :sync: monsoon
 
       .. include:: /include/snippets/rosie-copy-confirm.rst
+
+   .. tab-item:: Isambard 3
+      :sync: isambard3
+
+      .. include:: /include/isambard3-no-global-suite.rst
 
    .. tab-item:: Other
       :sync: other
