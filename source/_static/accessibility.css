@@ -27,3 +27,7 @@ html[data-theme="light"] {
     --pst-color-table-row-zebra-low-bg: #f7f8f9;
   }
 }
+
+#flowchart-source-22 > g > foreignobject > div > span > p > a {
+  background: #f7f8f9
+}
