@@ -33,10 +33,5 @@
       build environment and the repository dependency files, not by this
       training course.
 
-.. note::
-
-   ``ml`` is a shorthand for ``module``, so ``ml lfric`` and
-   ``module load lfric`` are equivalent.
-
 The module stack selects the compiler, MPI implementation, Python tools,
 PSyclone, and supporting scientific libraries used by the practicals.
