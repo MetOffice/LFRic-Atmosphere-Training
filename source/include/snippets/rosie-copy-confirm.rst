@@ -3,6 +3,7 @@
 
 .. code-block:: console
 
-   [INFO] u-?????: created at https://code.metoffice.gov.uk/svn/roses-u/?/?/?/?/?
-   [INFO] u-?????: copied items from u-dz612/trunk@123456
+   [INFO] u-?????: created at
+      https://code.metoffice.gov.uk/svn/roses-u/?/?/?/?/?
+   [INFO] u-?????: copied items from |global_workflow_example|/trunk@123456
    [INFO] u-?????: local copy created at ~/roses/u-?????

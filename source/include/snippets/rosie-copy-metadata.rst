@@ -3,7 +3,7 @@
 
 .. code-block:: console
 
-   description=  < This is where you can write information about the workflow  e.g. Copy of u-ab122/trunk@123456 >
+   description=  < This is where you can write information about the workflow  e.g. Copy of |idealised suite|/trunk@123456 >
    owner=  < Your username will appear here  >
    project=  < The associated project title e.g. GC6-climate-amip >
    title= < The title of the workflow should be put here e.g. Global AtmosOnly Climate Workflow >
