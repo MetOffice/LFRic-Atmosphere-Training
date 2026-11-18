@@ -37,6 +37,11 @@ Validate the workflow, install it to ``~/cylc-run`` and play it using:
 
          # Or for ease of typing: cylc vip -O monsoon
 
+   .. tab-item:: Isambard 3
+      :sync: isambard3
+
+      .. include:: /include/isambard3-no-global-suite.rst
+
    .. tab-item:: Other
       :sync: other
 
@@ -106,6 +111,11 @@ and restart it, use the ``cylc vr`` command:
 
          cylc vr <suite-id>/run#
 
+   .. tab-item:: Isambard 3
+      :sync: isambard3
+
+      .. include:: /include/isambard3-no-global-suite.rst
+
    .. tab-item:: Other
       :sync: other
 
@@ -138,6 +148,11 @@ To stop a running workflow:
 
          cylc stop <suite-id>
 
+   .. tab-item:: Isambard 3
+      :sync: isambard3
+
+      .. include:: /include/isambard3-no-global-suite.rst
+
    .. tab-item:: Other
       :sync: other
 
@@ -167,6 +182,11 @@ To remove an installed workflow:
       .. code-block:: bash
 
          cylc clean <suite-id>
+
+   .. tab-item:: Isambard 3
+      :sync: isambard3
+
+      .. include:: /include/isambard3-no-global-suite.rst
 
    .. tab-item:: Other
       :sync: other

@@ -33,6 +33,11 @@
 .. _LFRic Development Environment: https://code.metoffice.gov.uk/trac/lfric/wiki/DevelopmentEnvironment
 .. _Monsoon3 User Guide: https://code.metoffice.gov.uk/doc/monsoon3/index.html
 .. _Git on Monsoon3: https://code.metoffice.gov.uk/doc/monsoon3/github.html#github
+.. _Isambard 3: https://www.bristol.ac.uk/supercomputing/
+.. _Isambard documentation: https://docs.isambard.ac.uk/
+.. _Isambard login: https://docs.isambard.ac.uk/user-documentation/guides/login/
+.. _Isambard Jupyter: https://docs.isambard.ac.uk/user-documentation/guides/jupyter/
+.. _lfric-env-isambard: https://github.com/ickc/lfric-env-isambard
 
 .. Links that should be intersphinx
 

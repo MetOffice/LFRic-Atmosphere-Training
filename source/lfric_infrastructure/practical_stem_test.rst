@@ -85,6 +85,48 @@ compliance with LFRic model development practices.
 Step 2: Run the rose stem tests
 +++++++++++++++++++++++++++++++
 
+.. tab-set::
+   :sync-group: site
+
+   .. tab-item:: Met Office
+      :sync: met-office
+
+      No extra set-up is needed.
+
+   .. tab-item:: Monsoon
+      :sync: monsoon
+
+      No extra set-up is needed.
+
+   .. tab-item:: Isambard 3
+      :sync: isambard3
+
+      LFRic Apps does not yet include a rose stem site for Isambard 3. Add one
+      to your ``lfric_apps`` clone from `lfric-env-isambard`_ before running the
+      tests. Run these from the ``lfric_apps`` directory, with the Isambard 3
+      LFRic environment loaded:
+
+      .. code-block:: bash
+
+         # Skip the clone if you already have it from Practical 2
+         git clone https://github.com/ickc/lfric-env-isambard.git \
+             "$SCRATCH/lfric-env-isambard"
+         git apply \
+             "$SCRATCH/lfric-env-isambard/patches/rose-stem/lfric_apps-isambard3-site.patch"
+
+      Leave these changes uncommitted: rose stem tests your working copy,
+      including uncommitted changes.
+
+      Only the ``scripts`` group ("Faster Style Checks" below) is supported on
+      Isambard 3. The ``developer`` group is not.
+
+   .. tab-item:: Other
+      :sync: other
+
+      Rose stem needs a site configuration for your platform. LFRic Apps keeps
+      them in ``rose-stem/site/``. If yours is not there, consult your site's
+      documentation or LFRic contact before running the tests.
+
 Rose stem tests are organised into
 :external+simulation_systems:doc:`groups <Development/TestSuites/lfric_apps>`
 allowing you to run only a subset of tests relevant to your changes.

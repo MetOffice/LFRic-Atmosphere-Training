@@ -39,8 +39,9 @@ Step 1: Change perturbation magnitude
 
 1. Open Rose GUI or ``app/lfric_atm/rose-app.conf`` in a text editor of your
    choice.
-2. Search for the ``perturb_init`` key.
-3. Change the value from ``0`` to ``1`` (or ``2``).
+2. Search for the ``perturb_magnitude`` key.
+3. Change the value from ``1`` to ``2`` (or ``3``). Each step of 1 makes the
+   perturbation ten times larger.
 
 Step 2: Run the model
 ---------------------

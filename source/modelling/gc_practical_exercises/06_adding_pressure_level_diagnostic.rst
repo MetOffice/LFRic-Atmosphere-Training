@@ -32,6 +32,11 @@ configuration files:
 
       .. include:: /include/snippets/lfric-atm-file-dir.rst
 
+   .. tab-item:: Isambard 3
+      :sync: isambard3
+
+      .. include:: /include/isambard3-no-global-suite.rst
+
    .. tab-item:: Other
       :sync: other
 
@@ -69,6 +74,11 @@ Step 4: Add the missing field for ``v_in_w3``
       .. include:: /include/monsoon3-help.rst
 
       .. include:: /include/snippets/diags-user-xml.rst
+
+   .. tab-item:: Isambard 3
+      :sync: isambard3
+
+      .. include:: /include/isambard3-no-global-suite.rst
 
    .. tab-item:: Other
       :sync: other
@@ -112,6 +122,11 @@ and display a pressure-level slice of ``v_in_w3``.
       .. include:: /include/monsoon3-help.rst
 
       .. include:: /include/snippets/xconv-stream-g.rst
+
+   .. tab-item:: Isambard 3
+      :sync: isambard3
+
+      .. include:: /include/isambard3-no-global-suite.rst
 
    .. tab-item:: Other
       :sync: other

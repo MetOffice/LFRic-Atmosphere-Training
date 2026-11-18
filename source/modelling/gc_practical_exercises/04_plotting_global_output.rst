@@ -45,6 +45,11 @@ Example:
 
          ncview temperature.nc
 
+   .. tab-item:: Isambard 3
+      :sync: isambard3
+
+      .. include:: /include/isambard3-no-global-suite.rst
+
    .. tab-item:: Other
       :sync: other
 
@@ -91,6 +96,11 @@ Example:
       .. code-block:: bash
 
          xconv
+
+   .. tab-item:: Isambard 3
+      :sync: isambard3
+
+      .. include:: /include/isambard3-no-global-suite.rst
 
    .. tab-item:: Other
       :sync: other
@@ -149,6 +159,11 @@ first need to load them before use:
 
          module load ncview
          module load xconv
+
+   .. tab-item:: Isambard 3
+      :sync: isambard3
+
+      .. include:: /include/isambard3-no-global-suite.rst
 
    .. tab-item:: Other
       :sync: other

@@ -1,3 +1,5 @@
+.. _practical_3.2:
+
 Practical 2: Running the LFRic Apps Standard Suite
 --------------------------------------------------
 
@@ -47,6 +49,34 @@ Step 1: Check Out the Standard Suite
          git clone \
                https://github.com/MetOffice/momentum_user_training.example_lfric_workflow.git \
                lfric_apps_standard_suite
+
+   .. tab-item:: Isambard 3
+      :sync: isambard3
+
+      .. include:: /include/isambard3-help.rst
+
+      The repository above is not available outside the Met Office. On
+      Isambard 3, use the Met Office workflow ``u-dn704`` instead. It has the
+      same tasks, and runs a global model on a C12 mesh. Check it out from
+      MOSRS (see :ref:`isambard3-mosrs`), at the revision that has been
+      tested on Isambard 3:
+
+      .. code-block:: bash
+
+         mosrs-cache-password
+         rosie checkout u-dn704
+         svn update -r 361458 ~/roses/u-dn704
+
+      Then get the scripts that adapt and launch it on Isambard 3:
+
+      .. code-block:: bash
+
+         git clone https://github.com/ickc/lfric-env-isambard.git \
+               "$SCRATCH/lfric-env-isambard"
+
+      In the rest of this practical, use ``~/roses/u-dn704`` wherever the
+      text says ``~/cylc-src/lfric_apps_standard_suite``, and ``u-dn704``
+      wherever it uses ``lfric_apps_standard_suite`` as the workflow name.
 
    .. tab-item:: Other
       :sync: other
@@ -108,9 +138,41 @@ Step 3: Run the workflow
 
 Start the workflow with:
 
-.. code-block:: bash
+.. tab-set::
+   :sync-group: site
 
-   cylc vip
+   .. tab-item:: Met Office
+      :sync: met-office
+
+      .. code-block:: bash
+
+         cylc vip
+
+   .. tab-item:: Monsoon
+      :sync: monsoon
+
+      .. code-block:: bash
+
+         cylc vip
+
+   .. tab-item:: Isambard 3
+      :sync: isambard3
+
+      .. code-block:: bash
+
+         bash "$SCRATCH/lfric-env-isambard/examples/science-suites/run-suite.sh" \
+               u-dn704
+
+      This adds the Isambard 3 settings to your copy of the workflow, then
+      runs ``cylc vip`` on it. Run it on a login node; Cylc submits the tasks
+      to Slurm. The build takes about ten minutes once its job starts.
+
+   .. tab-item:: Other
+      :sync: other
+
+      .. code-block:: bash
+
+         cylc vip
 
 While the workflow is running, open the Cylc interface to explore the model
 output:
@@ -129,6 +191,17 @@ output:
       :sync: monsoon
 
       .. include:: /include/monsoon3-help.rst
+
+      Use the terminal interface:
+
+      .. code-block:: bash
+
+         cylc tui
+
+   .. tab-item:: Isambard 3
+      :sync: isambard3
+
+      .. include:: /include/isambard3-help.rst
 
       Use the terminal interface:
 
@@ -195,6 +268,30 @@ View your logs:
    From the logs find out how many time steps were executed and locate
    the output files in NetCDF format.
 
+.. tab-set::
+   :sync-group: site
+
+   .. tab-item:: Met Office
+      :sync: met-office
+
+      The model writes its log to the ``job.out`` of the ``lfric_atm`` task.
+
+   .. tab-item:: Monsoon
+      :sync: monsoon
+
+      The model writes its log to the ``job.out`` of the ``lfric_atm`` task.
+
+   .. tab-item:: Isambard 3
+      :sync: isambard3
+
+      The model runs on several MPI ranks, and each writes its own log. Look in
+      ``~/cylc-run/u-dn704/runN/work/1/lfric_atm/PET00.lfric_atm.Log``.
+
+   .. tab-item:: Other
+      :sync: other
+
+      The model writes its log to the ``job.out`` of the ``lfric_atm`` task.
+
 Step 5: Modify the configuration
 ++++++++++++++++++++++++++++++++
 
@@ -219,3 +316,38 @@ Then, re-run the workflow for each change (or combine them) and compare:
    You need to modify the variables ``timestep_end`` and ``dt``.
    The NetCDF files can be found under the path
    ``~/cylc-run/lfric_apps_standard_suite/runN/work/1/lfric_atm/*nc``.
+
+.. tab-set::
+   :sync-group: site
+
+   .. tab-item:: Met Office
+      :sync: met-office
+
+      Make the changes as the hint above says, then run the workflow again as
+      in Step 3.
+
+   .. tab-item:: Monsoon
+      :sync: monsoon
+
+      Make the changes as the hint above says, then run the workflow again as
+      in Step 3.
+
+   .. tab-item:: Isambard 3
+      :sync: isambard3
+
+      Edit ``~/roses/u-dn704/app/lfric_atm/rose-app.conf``. You do not need to
+      rebuild the model to re-run it. Remove the previous output, then reinstall
+      the workflow and run only the model task again:
+
+      .. code-block:: bash
+
+         rm ~/cylc-run/u-dn704/runN/work/1/lfric_atm/*.nc
+         cd ~/roses/u-dn704
+         cylc vr u-dn704
+         cylc trigger u-dn704//1/lfric_atm
+
+   .. tab-item:: Other
+      :sync: other
+
+      Make the changes as the hint above says, then run the workflow again as
+      in Step 3.

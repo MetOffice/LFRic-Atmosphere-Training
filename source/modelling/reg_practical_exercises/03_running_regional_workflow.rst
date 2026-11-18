@@ -38,6 +38,11 @@ Validate the workflow, install it to ``~/cylc-run``, and play it using:
 
          cylc vip
 
+   .. tab-item:: Isambard 3
+      :sync: isambard3
+
+      .. include:: /include/isambard3-no-regional-suite.rst
+
    .. tab-item:: Other
       :sync: other
 
